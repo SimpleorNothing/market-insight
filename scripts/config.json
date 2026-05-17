@@ -1,31 +1,76 @@
 {
-  "_comment": "RSS 소스 및 사업부 컨텍스트 설정. 비개발자도 편집 가능합니다.",
+  "_comment": "DA Market Insight 설정. 글로벌 가전 산업 뉴스 자동 수집·분류용. 비개발자도 편집 가능.",
+  "_competitorPolicy": "Tier 1 (글로벌 빅4): LG, Whirlpool, Bosch, Haier — 전용 검색 피드 보유. Tier 2 (Miele, Electrolux, Daikin, Dyson)는 통합 검색에 포함.",
+  "_regionPolicy": "한국·미국·유럽 균형 (1:1:1). 가중치는 weight 필드로 조정.",
 
   "rssSources": [
     {
       "name": "매일경제 산업",
       "url": "https://www.mk.co.kr/rss/40300001/",
-      "weight": 1.0
-    },
-    {
-      "name": "한국경제 산업",
-      "url": "http://rss.hankyung.com/feed/industry.xml",
+      "region": "KR",
       "weight": 1.0
     },
     {
       "name": "전자신문",
       "url": "https://rss.etnews.com/Section901.xml",
+      "region": "KR",
       "weight": 1.0
     },
     {
-      "name": "디지털타임스 산업",
-      "url": "https://www.dt.co.kr/rss/section_rss.jsp?menuid=801",
+      "name": "Google News - 한국 가전 산업",
+      "_query": "가전 OR 삼성전자 OR LG전자 OR 냉장고 OR 세탁기 OR 에어컨 when:1d",
+      "url": "https://news.google.com/rss/search?q=%EA%B0%80%EC%A0%84+OR+%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90+OR+LG%EC%A0%84%EC%9E%90+OR+%EB%83%89%EC%9E%A5%EA%B3%A0+OR+%EC%84%B8%ED%83%81%EA%B8%B0+OR+%EC%97%90%EC%96%B4%EC%BB%A8+when%3A1d&hl=ko&gl=KR&ceid=KR%3Ako",
+      "region": "KR",
       "weight": 1.0
     },
     {
-      "name": "조선비즈 산업",
-      "url": "https://biz.chosun.com/site/data/rss/industry.xml",
+      "name": "Google News - US Home Appliances",
+      "_query": "\"home appliances\" OR \"smart appliances\" OR \"GE Appliances\" when:2d",
+      "url": "https://news.google.com/rss/search?q=%22home+appliances%22+OR+%22smart+appliances%22+OR+%22GE+Appliances%22+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "US",
       "weight": 1.0
+    },
+    {
+      "name": "Google News - LG Global",
+      "_query": "\"LG Electronics\" appliances OR \"LG Home\" when:2d",
+      "url": "https://news.google.com/rss/search?q=%22LG+Electronics%22+appliances+OR+%22LG+Home%22+when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "Global",
+      "weight": 1.2
+    },
+    {
+      "name": "Google News - Whirlpool",
+      "_query": "Whirlpool earnings OR Whirlpool appliances OR Whirlpool launch when:7d",
+      "url": "https://news.google.com/rss/search?q=Whirlpool+earnings+OR+Whirlpool+appliances+OR+Whirlpool+launch+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "US",
+      "weight": 1.2
+    },
+    {
+      "name": "Google News - Bosch & Miele EU",
+      "_query": "Bosch appliances OR Miele OR Siemens home OR Liebherr when:7d",
+      "url": "https://news.google.com/rss/search?q=Bosch+appliances+OR+Miele+OR+Siemens+home+OR+Liebherr+when%3A7d&hl=en&gl=US&ceid=US%3Aen",
+      "region": "EU",
+      "weight": 1.2
+    },
+    {
+      "name": "Google News - Haier",
+      "_query": "Haier appliances OR \"Haier Group\" OR \"Haier Smart\" when:7d",
+      "url": "https://news.google.com/rss/search?q=Haier+appliances+OR+%22Haier+Group%22+OR+%22Haier+Smart%22+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "Global",
+      "weight": 1.0
+    },
+    {
+      "name": "Google News - EU Energy Regulation",
+      "_query": "EU energy label OR ecodesign appliances OR EU regulation appliance when:14d",
+      "url": "https://news.google.com/rss/search?q=EU+energy+label+OR+ecodesign+appliances+OR+%22EU+regulation%22+appliance+when%3A14d&hl=en&gl=US&ceid=US%3Aen",
+      "region": "EU",
+      "weight": 0.8
+    },
+    {
+      "name": "Google News - Tier 2 (Electrolux, Daikin, Dyson)",
+      "_query": "Electrolux OR Daikin OR Dyson appliances when:7d",
+      "url": "https://news.google.com/rss/search?q=Electrolux+OR+Daikin+OR+Dyson+appliances+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "Global",
+      "weight": 0.9
     }
   ],
 
@@ -35,43 +80,75 @@
 
   "businessUnits": {
     "냉장고": {
-      "keywords": ["냉장고", "비스포크 냉장고", "쇼케이스", "냉동고", "와인셀러"],
-      "competitors": ["LG", "하이얼", "보쉬", "리브헬"],
+      "keywords": ["냉장고", "비스포크 냉장고", "쇼케이스", "냉동고", "와인셀러", "refrigerator", "fridge"],
+      "competitors": ["LG", "Whirlpool", "Haier", "Bosch", "Liebherr"],
       "kpis": ["프리미엄 ASP", "북미 M/S", "에너지 효율 등급"]
     },
     "세탁기": {
-      "keywords": ["세탁기", "건조기", "워시타워", "콤보", "스타일러"],
-      "competitors": ["LG", "월풀", "하이얼", "일렉트로룩스"],
+      "keywords": ["세탁기", "건조기", "워시타워", "콤보", "스타일러", "washer", "dryer", "laundry"],
+      "competitors": ["LG", "Whirlpool", "Haier", "Electrolux"],
       "kpis": ["프리미엄 비중", "美 M/S", "AI 세탁 채택률"]
     },
     "에어컨": {
-      "keywords": ["에어컨", "공기청정기", "냉난방기", "시스템 에어컨"],
-      "competitors": ["LG", "다이킨", "캐리어", "그리"],
+      "keywords": ["에어컨", "공기청정기", "냉난방기", "시스템 에어컨", "air conditioner", "HVAC"],
+      "competitors": ["LG", "Daikin", "Carrier", "Gree", "Mitsubishi"],
       "kpis": ["인버터 비중", "신흥 시장 점유율"]
     },
     "주방가전": {
-      "keywords": ["오븐", "전자레인지", "쿡탑", "후드", "식기세척기", "인덕션"],
-      "competitors": ["LG", "보쉬", "밀레", "지멘스"],
+      "keywords": ["오븐", "전자레인지", "쿡탑", "후드", "식기세척기", "인덕션", "oven", "dishwasher", "cooktop"],
+      "competitors": ["LG", "Bosch", "Miele", "Siemens", "GE Appliances"],
       "kpis": ["빌트인 채택률", "프리미엄 라인 매출"]
     },
     "소형가전": {
-      "keywords": ["청소기", "로봇청소기", "공기청정기", "정수기"],
-      "competitors": ["LG", "다이슨", "샤오미", "로보락"],
+      "keywords": ["청소기", "로봇청소기", "공기청정기", "정수기", "vacuum", "robot cleaner"],
+      "competitors": ["LG", "Dyson", "Xiaomi", "Roborock", "iRobot"],
       "kpis": ["프리미엄 ASP", "구독 모델 비중"]
     }
   },
 
+  "filterRules": {
+    "_comment": "가전 산업 무관 뉴스 자동 제외 키워드. 헤드라인에 포함시 분류 단계 진입 前 차단.",
+    "blockKeywords": [
+      "정상회담",
+      "대선",
+      "총선",
+      "탄핵",
+      "사설",
+      "칼럼",
+      "논평",
+      "ETF",
+      "코스피",
+      "코스닥",
+      "환율",
+      "금리 인하",
+      "금리 인상",
+      "부동산",
+      "아파트",
+      "분양",
+      "연예",
+      "드라마",
+      "사고",
+      "참사",
+      "재판",
+      "검찰",
+      "기상",
+      "스포츠",
+      "축구",
+      "야구"
+    ]
+  },
+
   "retention": {
-    "_comment": "신호별 데이터 보존 기간 (일). 기간 경과 시 자동 제거됩니다.",
+    "_comment": "신호별 데이터 보존 기간 (일). 기간 경과 시 자동 제거.",
     "New": 30,
     "Deep": 60,
     "Insight": 90
   },
 
   "limits": {
-    "_comment": "1회 실행 시 처리 제한 (API 비용 보호용)",
-    "maxArticlesPerRun": 30,
-    "maxArticlesPerSource": 10,
+    "_comment": "1회 실행 처리 제한 (API 비용 보호용).",
+    "maxArticlesPerRun": 40,
+    "maxArticlesPerSource": 8,
     "minHeadlineLength": 10
   }
 }
