@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DA Market Insight - 실시간 시장 동향 모니터링 보드" />
+  <title>DA Market Insight</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link
+    rel="stylesheet"
+    as="style"
+    crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css"
+  />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="page-header">
+      <div class="page-header__title">
+        <h1>DA Market Insight</h1>
+        <p>실시간 시장 동향 모니터링 보드</p>
+      </div>
+      <div class="page-header__meta" id="lastUpdated">
+        <i class="ti ti-refresh" aria-hidden="true"></i>
+        <span>—</span>
+      </div>
+    </header>
+
+    <section class="stats-grid" aria-label="신호 통계">
+      <div class="stat-card stat-card--neutral">
+        <p class="stat-card__label">금일 수집</p>
+        <p class="stat-card__value" id="statTotal">0건</p>
+      </div>
+      <div class="stat-card stat-card--new">
+        <p class="stat-card__label">New 신호</p>
+        <p class="stat-card__value" id="statNew">0건</p>
+      </div>
+      <div class="stat-card stat-card--deep">
+        <p class="stat-card__label">Deep 신호</p>
+        <p class="stat-card__value" id="statDeep">0건</p>
+      </div>
+      <div class="stat-card stat-card--insight">
+        <p class="stat-card__label">Insight 신호</p>
+        <p class="stat-card__value" id="statInsight">0건</p>
+      </div>
+    </section>
+
+    <nav class="category-tabs" id="categoryTabs" aria-label="카테고리 필터">
+      <!-- buttons rendered by JS -->
+    </nav>
+
+    <section class="filter-bar" aria-label="검색 및 필터">
+      <div class="filter-bar__search">
+        <i class="ti ti-search" aria-hidden="true"></i>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="키워드 검색"
+          autocomplete="off"
+        />
+      </div>
+      <select id="filterBu" aria-label="사업부 필터">
+        <option value="all">전체 사업부</option>
+        <option value="ref">냉장고 사업부</option>
+        <option value="wm">세탁기 사업부</option>
+        <option value="ac">에어컨 사업부</option>
+        <option value="kitchen">주방가전 사업부</option>
+      </select>
+      <select id="filterPeriod" aria-label="기간 필터">
+        <option value="7">최근 7일</option>
+        <option value="30">최근 30일</option>
+        <option value="90">최근 90일</option>
+      </select>
+    </section>
+
+    <section class="news-grid" id="newsGrid" aria-label="뉴스 목록">
+      <!-- cards rendered by JS -->
+    </section>
+
+    <div class="empty-state" id="emptyState" hidden>
+      <i class="ti ti-mood-empty" aria-hidden="true"></i>
+      <p>조건에 맞는 뉴스가 없습니다.</p>
+    </div>
+
+    <footer class="page-footer">
+      <i class="ti ti-info-circle" aria-hidden="true"></i>
+      <span>
+        각 카드의 [리포트 ↗] 클릭 → 사업부 선택 → 기회·위협 2축 1페이지 docx 자동 생성
+      </span>
+    </footer>
+  </main>
+
+  <!-- Report generation modal -->
+  <div class="modal" id="reportModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="modal__header">
+        <h2 id="modalTitle">사업부 영향 리포트 생성</h2>
+        <button class="modal__close" data-close aria-label="닫기">
+          <i class="ti ti-x" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="modal__body">
+        <div class="modal__news-preview" id="modalNewsPreview">
+          <!-- selected news preview -->
+        </div>
+
+        <div class="modal__field">
+          <label class="modal__field-label">대상 사업부 (중복 선택 가능)</label>
+          <div class="checkbox-group" id="buCheckboxGroup">
+            <label class="checkbox-item">
+              <input type="checkbox" value="냉장고" checked />
+              <span>냉장고</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" value="세탁기" />
+              <span>세탁기</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" value="에어컨" />
+              <span>에어컨</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" value="주방가전" />
+              <span>주방가전</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" value="소형가전" />
+              <span>소형가전</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="modal__field">
+          <label class="modal__field-label">분석 관점</label>
+          <div class="radio-group">
+            <label class="radio-item radio-item--selected">
+              <input type="radio" name="analysisType" value="opp_threat" checked />
+              <span>기회·위협 2축 분석</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal__footer">
+        <button class="btn btn--ghost" data-close>취소</button>
+        <button class="btn btn--primary" id="generateBtn">
+          <i class="ti ti-file-text" aria-hidden="true"></i>
+          <span>리포트 생성</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" hidden>
+    <i class="ti ti-circle-check" aria-hidden="true"></i>
+    <span id="toastMessage"></span>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

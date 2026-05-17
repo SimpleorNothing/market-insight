@@ -1,0 +1,50 @@
+name: Update news
+
+on:
+  schedule:
+    - cron: '0 * * * *'    # 매시간 정각 (UTC). 한국 시간 자동 환산됨.
+  workflow_dispatch:        # 수동 실행 버튼 활성화
+
+permissions:
+  contents: write           # news.json 자동 커밋 권한
+
+concurrency:
+  group: update-news
+  cancel-in-progress: false  # 중복 실행 시 대기 (덮어쓰기 방지)
+
+jobs:
+  fetch-and-classify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: npm install --no-audit --no-fund
+
+      - name: Fetch and classify news
+        working-directory: scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node fetch-news.js
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음, 커밋 생략"
+          else
+            COUNT=$(node -e "const d=require('./data/news.json'); console.log(d.items.length)")
+            git commit -m "Auto: news 갱신 ($COUNT건 보유, $(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
