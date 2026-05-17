@@ -9,6 +9,7 @@
  *   - generateReport() → 실제 리포트 생성 API 호출로 교체
  */
 
+
 // ===== News data (loaded from data/news.json) =====
 let NEWS_DATA = [];
 let NEWS_UPDATED_AT = null;
