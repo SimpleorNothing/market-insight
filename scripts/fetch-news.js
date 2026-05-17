@@ -2,15 +2,15 @@
 /**
  * DA Market Insight 뉴스 수집·분류 스크립트 (v2)
  *
- * v2 개선 사항:
- *   - 가전 산업 무관 뉴스 자동 제외 (blockKeywords + skip 카테고리)
- *   - 영문 뉴스도 한국어 헤드라인·요약 자동 변환
- *   - JSON 검증 강화 + 1회 재시도
- *   - 거절 응답 차단 강제
+ * v2 변경 사항:
+ *   - 신호 라벨 폐지 → 영향도 점수(1~5) + 액션 등급(긴급/주요/주시/참고)
+ *   - 사업부 분류 폐지 → 제품 7개 + 경쟁사 12개 다중 태그
+ *   - 영향도 4 인자 산출 (매출비중/시간긴급성/시장규모/출처신뢰도)
+ *   - 등급 자동 매핑 (점수 임계값 기반)
  *
  * 환경변수:
  *   ANTHROPIC_API_KEY (필수)
- *   DRY_RUN=1 (선택, API 호출 없이 RSS 수집만 테스트)
+ *   DRY_RUN=1 (선택)
  */
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -44,8 +44,16 @@ function urlHash(url) {
   return createHash("sha256").update(url).digest("hex").slice(0, 12);
 }
 
-function isWithinRetention(publishedAt, signal) {
-  const days = CONFIG.retention[signal] ?? 30;
+function gradeFromImpact(impact) {
+  const t = CONFIG.gradeThresholds;
+  if (impact >= t["긴급"]) return "긴급";
+  if (impact >= t["주요"]) return "주요";
+  if (impact >= t["주시"]) return "주시";
+  return "참고";
+}
+
+function isWithinRetention(publishedAt, grade) {
+  const days = CONFIG.retention[grade] ?? 14;
   const ageMs = Date.now() - new Date(publishedAt).getTime();
   return ageMs / (1000 * 60 * 60 * 24) <= days;
 }
@@ -54,7 +62,6 @@ function log(msg) {
   console.log(`[${new Date().toISOString()}] ${msg}`);
 }
 
-// ===== Pre-filter (block keywords before API call) =====
 function isBlockedByKeyword(headline) {
   const lower = headline.toLowerCase();
   for (const kw of CONFIG.filterRules.blockKeywords) {
@@ -65,18 +72,28 @@ function isBlockedByKeyword(headline) {
   return null;
 }
 
-// ===== 1. Load existing news =====
+function computeImpact(factors) {
+  const w = CONFIG.impactWeights;
+  const score =
+    factors.salesRelevance * w.salesRelevance +
+    factors.timeUrgency * w.timeUrgency +
+    factors.marketSize * w.marketSize +
+    factors.sourceReliability * w.sourceReliability;
+  return Math.round(score * 10) / 10;
+}
+
+// ===== Load existing =====
 async function loadExisting() {
   try {
     const raw = await readFile(NEWS_PATH, "utf-8");
     return JSON.parse(raw);
   } catch {
     log("news.json 부재, 신규 생성합니다");
-    return { updatedAt: null, items: [] };
+    return { updatedAt: null, schemaVersion: "v2", items: [] };
   }
 }
 
-// ===== 2. Fetch RSS =====
+// ===== Fetch RSS =====
 async function fetchAllRss() {
   const all = [];
   for (const source of CONFIG.rssSources) {
@@ -110,11 +127,8 @@ async function fetchAllRss() {
   return all;
 }
 
-// ===== 3. Dedupe + pre-filter =====
 function dedupeAndFilter(fresh, existing) {
-  const existingHashes = new Set(
-    existing.items.map((i) => urlHash(i.url))
-  );
+  const existingHashes = new Set(existing.items.map((i) => urlHash(i.url)));
   const seen = new Set();
   const blocked = [];
   const kept = [];
@@ -134,87 +148,92 @@ function dedupeAndFilter(fresh, existing) {
   }
 
   if (blocked.length > 0) {
-    log(`키워드 사전 필터로 ${blocked.length}건 제외:`);
-    blocked.slice(0, 5).forEach((b) => {
-      log(`  - "${b.headline.slice(0, 40)}..." (키워드: ${b.reason})`);
-    });
-    if (blocked.length > 5) log(`  ... 外 ${blocked.length - 5}건`);
+    log(`키워드 사전 필터로 ${blocked.length}건 제외`);
   }
   return kept;
 }
 
-// ===== 4. Classify via Claude API =====
+// ===== Classify via Claude API =====
 const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 동향 뉴스 분류 전문가입니다.
 
 【출력 형식 — 절대 규칙】
 - 응답은 반드시 순수 JSON 객체 1개만 출력
-- 코드펜스(\`\`\`), 주석, 추가 설명, 거절 문구, "I cannot/should not" 같은 영문 회피 표현 일체 금지
-- 입력이 한국어든 영어든 다른 언어든, 출력의 headline·summary는 반드시 한국어
+- 코드펜스, 주석, 추가 설명, 거절 응답, 영문 회피 표현 일체 금지
+- 입력이 한국어든 영어든, 출력의 headline·summary는 반드시 한국어
 - 정치적·민감 주제라도 분류 작업 자체는 절대 거절 금지
-  (가전 산업 무관 시 category를 "skip" 으로 처리하면 됨)
+- 가전 산업 무관 時 lens를 "skip" 으로 처리
 
-【가전 산업 무관 → category: "skip" 으로 반환】
-다음 경우는 분류하지 말고 "skip" 처리:
+【가전 산업 무관 → "skip" 처리】
+다음 경우는 lens="skip" 으로 반환 (다른 필드는 빈 값/0으로):
 - 정치, 외교, 사설, 칼럼, 논평
-- 일반 금융 뉴스 (주가, 환율, 채권, ETF, 펀드) — 단, 가전사 자체 주가·실적은 OK
-- 연예, 스포츠, 사고, 부동산 매매
-- 가전과 직접 관련 없는 일반 IT (반도체, 통신, 인터넷 서비스 等)
+- 가전사 무관 일반 금융 (주가, ETF, 환율, 부동산)
+- 연예, 스포츠, 사고, 일반 IT(반도체·통신 등)
 
-skip 처리 時 다른 필드는 다음과 같이:
-{
-  "category": "skip",
-  "signal": "New",
-  "relatedBu": [],
-  "headline": "skip",
-  "summary": "skip: 가전 산업 무관"
-}
+【정상 분류】
+1. lens: 시각 카테고리, 다음 中 1개
+   - "소비자": 가전 수요/트렌드/소비 패턴/가격/채택률
+   - "기술": 신기술/R&D/부품/소재/AI·IoT 기능 (회사 비특정)
+   - "경쟁사": 12개 경쟁사의 동향 (회사명 직접 등장)
+   - "정책": 에너지·환경 규제/관세/보조금/표준
+   - "거시": 환율/원자재/주택시장 등 가전 산업 영향
 
-【정상 분류 (가전 산업 관련 뉴스인 경우)】
+2. products: 관련 제품 (배열, 0개 이상)
+   "냉장고", "세탁기", "건조기", "조리기기", "HVAC", "청소기", "식기세척기" 中 해당하는 모두
 
-1. category: "소비자" / "기술" / "경쟁사" / "정책" / "거시" 中 1개
-   - 소비자: 가전 수요, 트렌드, 소비 패턴, 가격, 채택률
-   - 기술: 신기술, R&D, 부품, 소재, AI·IoT 가전 기능
-   - 경쟁사: LG·Whirlpool·Bosch·Haier·Miele·Electrolux·Daikin·Dyson 等의 동향
-   - 정책: 에너지 규제, 환경 규제, 통상 정책, 보조금, 표준
-   - 거시: 환율(가전 단가 영향), 원자재, 통상, 주택 시장 (가전 수요 영향 명백한 경우만)
+3. competitors: 관련 경쟁사 (배열, 0개 이상)
+   "LG전자", "월풀", "Electrolux", "삼성전자", "BSH", "Midea", "Gree",
+   "Carrier", "Trane", "JCI", "Daikin", "Lennox" 中 본문 내 명시적 등장하는 모두
 
-2. signal: "New" / "Deep" / "Insight" 中 1개
-   - New: 발표·출시·발효 등 신호의 시작점
-   - Deep: 구조적 동인·인과 분석, 장기 영향 설명
-   - Insight: 함의·승부처, 의사결정에 결정적인 통찰
+4. factors: 영향도 4 인자 (각 1~5 정수)
+   - salesRelevance: 당사 매출 비중 영향도 (해당 제품·지역의 매출 비중)
+   - timeUrgency: 시간 긴급성 (24h內=5, 분기內=3, 1년內=2, 그 외=1)
+   - marketSize: 시장 규모·CAGR (글로벌 영향=5, 지역 한정=3, 국지=2)
+   - sourceReliability: 출처 신뢰도 (1차보도·공시=5, 분석=4, 종합=3, 게시판=1)
 
-3. relatedBu: ["냉장고", "세탁기", "에어컨", "주방가전", "소형가전"] 中 관련된 모든 사업부 (배열, 1개 이상)
+5. headline: Herald 압축형 한국어 (30자 이내)
+   - 첫머리 연결어 (우선/그 결과/한편/이에 따라/종합하면)
+   - 결론 + 수치 권장
 
-4. headline: Herald 압축형 한국어 (30자 이내)
-   - 첫머리에 연결어 1개 부여 (우선/그 결과/한편/이에 따라/종합하면/가장 먼저/구체적으로)
-   - 결론 + 수치 포함 권장
-   - 영문 고유명사는 그대로 (LG, Bosch 等)
-   - 모호 표현 금지 (필요·검토·강화)
-
-5. summary: 3줄 이내 한국어
-   - 첫 줄도 연결어로 시작
-   - 정량 수치 1개 이상 포함 (없으면 정성 정보로 대체)
+6. summary: 3줄 이내 한국어
+   - 정량 수치 1개 이상
    - 모호 표현 금지
 
-【출력 스키마 (절대 변경 금지)】
+7. tags: 자유 태그 (배열, 2~5개 권장, 해시 기호 없이)
+   - 핵심 키워드, 제품·경쟁사 외 부가 정보
+
+【출력 스키마】
 {
-  "category": "...",
-  "signal": "...",
-  "relatedBu": ["..."],
+  "lens": "...",
+  "products": ["..."],
+  "competitors": ["..."],
+  "factors": {
+    "salesRelevance": 1-5,
+    "timeUrgency": 1-5,
+    "marketSize": 1-5,
+    "sourceReliability": 1-5
+  },
   "headline": "...",
-  "summary": "..."
+  "summary": "...",
+  "tags": ["..."]
 }
 
-JSON 외 어떤 텍스트도 출력 금지. 코드펜스 금지. 거절 응답 금지. 영문 회피 표현 금지.`;
+JSON 외 어떤 텍스트도 출력 금지.`;
 
 async function classifyOne(item, retry = false) {
   if (DRY_RUN) {
     return {
-      category: "기술",
-      signal: "New",
-      relatedBu: ["냉장고"],
+      lens: "기술",
+      products: ["냉장고"],
+      competitors: [],
+      factors: {
+        salesRelevance: 3,
+        timeUrgency: 3,
+        marketSize: 3,
+        sourceReliability: 3,
+      },
       headline: item.headline.slice(0, 30),
-      summary: "DRY_RUN 모드 더미 요약입니다. 실제 분류 결과 아닙니다.",
+      summary: "DRY_RUN 더미 요약.",
+      tags: ["test"],
     };
   }
 
@@ -232,7 +251,7 @@ ${item.region}`;
 
   const res = await client.messages.create({
     model: "claude-haiku-4-5-20251001",
-    max_tokens: 600,
+    max_tokens: 800,
     system: CLASSIFY_SYSTEM,
     messages: [{ role: "user", content: userPrompt }],
   });
@@ -259,24 +278,38 @@ ${item.region}`;
       await new Promise((r) => setTimeout(r, 800));
       return classifyOne(item, true);
     }
-    throw new Error(`JSON 파싱 최종 실패: ${e.message}`);
+    throw new Error(`JSON 파싱 실패: ${e.message}`);
   }
 
-  if (parsed.category === "skip") {
-    return parsed;
+  if (parsed.lens === "skip") return parsed;
+
+  if (!CONFIG.lenses.includes(parsed.lens)) {
+    throw new Error(`lens 검증 실패: ${parsed.lens}`);
+  }
+  if (!parsed.factors) {
+    throw new Error("factors 누락");
   }
 
-  if (
-    !CONFIG.categories.includes(parsed.category) ||
-    !CONFIG.signals.includes(parsed.signal)
-  ) {
-    throw new Error(
-      `분류 결과 검증 실패: category=${parsed.category}, signal=${parsed.signal}`
+  // Sanitize arrays
+  parsed.products = (parsed.products || []).filter((p) =>
+    CONFIG.products.includes(p)
+  );
+  parsed.competitors = (parsed.competitors || []).filter((c) =>
+    CONFIG.competitors.includes(c)
+  );
+  parsed.tags = (parsed.tags || []).slice(0, 5);
+
+  // Clamp factors
+  for (const k of [
+    "salesRelevance",
+    "timeUrgency",
+    "marketSize",
+    "sourceReliability",
+  ]) {
+    parsed.factors[k] = Math.max(
+      1,
+      Math.min(5, Math.round(parsed.factors[k] || 3))
     );
-  }
-
-  if (!Array.isArray(parsed.relatedBu) || parsed.relatedBu.length === 0) {
-    parsed.relatedBu = ["냉장고"];
   }
 
   return parsed;
@@ -291,30 +324,39 @@ async function classifyAll(items, startId) {
 
   for (const item of toProcess) {
     try {
-      log(`분류 중: ${item.headline.slice(0, 40)}...`);
+      log(`분류 中: ${item.headline.slice(0, 40)}...`);
       const cls = await classifyOne(item);
 
-      if (cls.category === "skip") {
+      if (cls.lens === "skip") {
         skipCount++;
-        log(`  → skip (가전 무관)`);
+        log(`  → skip`);
       } else {
+        const impact = computeImpact(cls.factors);
+        const grade = gradeFromImpact(impact);
         classified.push({
           id: nextId++,
-          category: cls.category,
-          signal: cls.signal,
+          lens: cls.lens,
+          grade: grade,
+          impact: impact,
+          factors: cls.factors,
+          products: cls.products,
+          competitors: cls.competitors,
+          tags: cls.tags,
           headline: cls.headline,
           summary: cls.summary,
-          source: item.source,
+          source: {
+            name: item.source,
+            url: item.link,
+          },
           publishedAt: item.publishedAt,
           url: item.link,
-          relatedBu: cls.relatedBu,
         });
-        log(`  → ${cls.category}/${cls.signal} (${cls.relatedBu.join(",")})`);
+        log(`  → ${cls.lens} / ${grade} (impact ${impact})`);
       }
       await new Promise((r) => setTimeout(r, 400));
     } catch (err) {
       failCount++;
-      log(`  ! 분류 실패, 건너뜀: ${err.message}`);
+      log(`  ! 분류 실패: ${err.message}`);
     }
   }
   log(
@@ -323,22 +365,26 @@ async function classifyAll(items, startId) {
   return classified;
 }
 
-// ===== 5. Prune old =====
 function prune(items) {
   const before = items.length;
-  const kept = items.filter((i) =>
-    isWithinRetention(i.publishedAt, i.signal)
-  );
+  const kept = items.filter((i) => isWithinRetention(i.publishedAt, i.grade));
   log(`보존 기간 적용: ${before}건 → ${kept.length}건`);
   return kept;
 }
 
 // ===== Main =====
 async function main() {
-  log("=== DA Market Insight 뉴스 갱신 시작 (v2) ===");
+  log("=== DA Market Insight v2 뉴스 갱신 시작 ===");
 
   const existing = await loadExisting();
   log(`기존 뉴스 ${existing.items.length}건 로드`);
+
+  // schema migration check - v1 data가 있으면 무시하고 새로 시작
+  const isV1 = existing.items.some((i) => i.signal || i.category);
+  if (isV1) {
+    log(`v1 스키마 감지 → 빈 상태로 재시작 (다음 분류부터 v2 적용)`);
+    existing.items = [];
+  }
 
   const fresh = await fetchAllRss();
   log(`RSS 폴링 총 ${fresh.length}건 수집`);
@@ -349,25 +395,29 @@ async function main() {
   if (newOnes.length === 0) {
     log("신규 분류 대상 없음, 보존 기간 정리만 수행");
     const pruned = prune(existing.items);
-    if (pruned.length !== existing.items.length) {
+    if (pruned.length !== existing.items.length || isV1) {
       await writeFile(
         NEWS_PATH,
         JSON.stringify(
-          { updatedAt: new Date().toISOString(), items: pruned },
+          {
+            updatedAt: new Date().toISOString(),
+            schemaVersion: "v2",
+            items: pruned,
+          },
           null,
           2
         )
       );
-      log("news.json 갱신 (보존 기간 정리)");
+      log("news.json 갱신");
     } else {
-      log("변경 사항 없음");
+      log("변경 없음");
     }
     return;
   }
 
   const startId = Math.max(0, ...existing.items.map((i) => i.id || 0)) + 1;
   const classified = await classifyAll(newOnes, startId);
-  log(`AI 분류 完了: ${classified.length}건 저장 대상`);
+  log(`AI 분류 완료: ${classified.length}건 저장 대상`);
 
   const merged = prune([...classified, ...existing.items]).sort(
     (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
@@ -376,13 +426,17 @@ async function main() {
   await writeFile(
     NEWS_PATH,
     JSON.stringify(
-      { updatedAt: new Date().toISOString(), items: merged },
+      {
+        updatedAt: new Date().toISOString(),
+        schemaVersion: "v2",
+        items: merged,
+      },
       null,
       2
     )
   );
-  log(`news.json 갱신 完了, 총 ${merged.length}건 보유`);
-  log("=== 完了 ===");
+  log(`news.json 갱신 완료, 총 ${merged.length}건 보유`);
+  log("=== 완료 ===");
 }
 
 main().catch((err) => {

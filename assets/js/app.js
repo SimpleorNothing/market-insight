@@ -1,28 +1,55 @@
 /**
- * DA Market Insight
- * 뉴스 수집·정리 및 사업부 영향 리포트 생성 보드
+ * DA Market Insight v2
  *
- * 데이터 소스:
- *   - data/news.json (GitHub Actions가 1시간 주기로 자동 갱신)
- *
- * 백엔드 연결 시 수정 필요 지점:
- *   - generateReport() → 실제 리포트 생성 API 호출로 교체
+ * - 신호 렌즈 + 액션 등급 + 영향도 점수
+ * - 시각(단일) + 제품(다중) + 경쟁사(다중) 3행 필터
+ * - 정렬·그룹·뷰 토글
+ * - Claude API 직접 호출 → docx 자동 다운로드
  */
 
-// ===== News data (loaded from data/news.json) =====
+// ===== State =====
+const LENSES = ["전체", "소비자", "기술", "경쟁사", "정책", "거시"];
+const PRODUCTS = [];
+const COMPETITORS = [];
+
+// 렌즈別 활성/비활성 규칙
+const LENS_ACTIVATION = {
+  전체:    { product: true,  competitor: true },
+  소비자:  { product: true,  competitor: false },
+  기술:    { product: true,  competitor: false },
+  경쟁사:  { product: true,  competitor: true },
+  정책:    { product: false, competitor: false },
+  거시:    { product: false, competitor: false },
+};
+
+const GRADE_ORDER = ["긴급", "주요", "주시", "참고"];
+const LENS_ORDER = ["소비자", "기술", "경쟁사", "정책", "거시"];
+
+const GRADE_MEANING = {
+  긴급: "즉시 임원 보고",
+  주요: "주간 정기 보고",
+  주시: "모니터링 지속",
+  참고: "백그라운드 적재",
+};
+
+const GRADE_CLASS = {
+  긴급: "urgent",
+  주요: "major",
+  주시: "watch",
+  참고: "ref",
+};
+
 let NEWS_DATA = [];
 let NEWS_UPDATED_AT = null;
+let CONFIG = null;
 
-// ===== Category & signal definitions =====
-const CATEGORIES = ["소비자", "기술", "경쟁사", "정책", "거시"];
-const SIGNAL_ORDER = { New: 1, Deep: 2, Insight: 3 };
-
-// ===== State =====
 const state = {
-  category: "전체",
-  search: "",
-  bu: "all",
-  period: 7,
+  lens: "전체",
+  products: new Set(),
+  competitors: new Set(),
+  sort: "latest",
+  group: "grade",
+  view: "card",
   selectedNews: null,
 };
 
@@ -30,151 +57,27 @@ const state = {
 function timeAgo(isoString) {
   const now = new Date();
   const then = new Date(isoString);
-  const diffMs = now - then;
-  const diffMin = Math.floor(diffMs / 60000);
+  const diffMin = Math.floor((now - then) / 60000);
+  if (diffMin < 60) return `${diffMin}분 前`;
   const diffHr = Math.floor(diffMin / 60);
+  if (diffHr < 24) return `${diffHr}시간 前`;
   const diffDay = Math.floor(diffHr / 24);
-
-  if (diffMin < 60) return `${diffMin}분 전`;
-  if (diffHr < 24) return `${diffHr}시간 전`;
-  if (diffDay < 7) return `${diffDay}일 전`;
+  if (diffDay < 7) return `${diffDay}일 前`;
   return then.toLocaleDateString("ko-KR", { month: "numeric", day: "numeric" });
 }
 
-function formatLastUpdated() {
-  const now = new Date();
-  const yy = String(now.getFullYear()).slice(2);
-  const m = now.getMonth() + 1;
-  const d = now.getDate();
-  const hh = String(now.getHours()).padStart(2, "0");
-  const mm = String(now.getMinutes()).padStart(2, "0");
-  return `'${yy}.${m}.${d} ${hh}:${mm} 갱신`;
-}
-
-function isWithinPeriod(isoString, days) {
-  const then = new Date(isoString);
-  const now = new Date();
-  const diffDay = (now - then) / (1000 * 60 * 60 * 24);
-  return diffDay <= days;
-}
-
-function buMatches(news, buFilter) {
-  if (buFilter === "all") return true;
-  const buMap = {
-    ref: "냉장고",
-    wm: "세탁기",
-    ac: "에어컨",
-    kitchen: "주방가전",
-  };
-  return news.relatedBu.includes(buMap[buFilter]);
-}
-
-// ===== Filtering =====
-function getFilteredNews() {
-  return NEWS_DATA.filter((n) => {
-    if (state.category !== "전체" && n.category !== state.category) return false;
-    if (!isWithinPeriod(n.publishedAt, state.period)) return false;
-    if (!buMatches(n, state.bu)) return false;
-    if (state.search) {
-      const q = state.search.toLowerCase();
-      const hay = (n.headline + " " + n.summary).toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
-    return true;
-  }).sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
-}
-
-// ===== Rendering =====
-function renderStats() {
-  const all = NEWS_DATA.filter((n) => isWithinPeriod(n.publishedAt, state.period));
-  document.getElementById("statTotal").textContent = `${all.length}건`;
-  document.getElementById("statNew").textContent =
-    all.filter((n) => n.signal === "New").length + "건";
-  document.getElementById("statDeep").textContent =
-    all.filter((n) => n.signal === "Deep").length + "건";
-  document.getElementById("statInsight").textContent =
-    all.filter((n) => n.signal === "Insight").length + "건";
-}
-
-function renderCategoryTabs() {
-  const tabs = document.getElementById("categoryTabs");
-  const all = NEWS_DATA.filter((n) => isWithinPeriod(n.publishedAt, state.period));
-
-  const totalCount = all.length;
-  const counts = CATEGORIES.reduce((acc, c) => {
-    acc[c] = all.filter((n) => n.category === c).length;
-    return acc;
-  }, {});
-
-  tabs.innerHTML = "";
-  const allBtn = createTabButton("전체", totalCount);
-  tabs.appendChild(allBtn);
-  CATEGORIES.forEach((c) => {
-    tabs.appendChild(createTabButton(c, counts[c]));
-  });
-}
-
-function createTabButton(label, count) {
-  const btn = document.createElement("button");
-  btn.className = "tab-btn";
-  if (state.category === label) btn.classList.add("tab-btn--active");
-  btn.innerHTML = `<span>${label}</span><span class="tab-btn__count">${count}</span>`;
-  btn.addEventListener("click", () => {
-    state.category = label;
-    renderCategoryTabs();
-    renderNewsGrid();
-  });
-  return btn;
-}
-
-function renderNewsGrid() {
-  const grid = document.getElementById("newsGrid");
-  const empty = document.getElementById("emptyState");
-  const items = getFilteredNews();
-
-  if (items.length === 0) {
-    grid.innerHTML = "";
-    grid.hidden = true;
-    empty.hidden = false;
-    return;
-  }
-  grid.hidden = false;
-  empty.hidden = true;
-
-  grid.innerHTML = items.map((n) => renderCard(n)).join("");
-
-  grid.querySelectorAll("[data-report-id]").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      const id = Number(e.currentTarget.dataset.reportId);
-      openReportModal(id);
-    });
-  });
-}
-
-function renderCard(n) {
-  return `
-    <article class="news-card">
-      <div class="news-card__badges">
-        <span class="badge badge--cat-${n.category}">${n.category}</span>
-        <span class="badge badge--sig-${n.signal}">${n.signal}</span>
-      </div>
-      <h3 class="news-card__headline">${escapeHtml(n.headline)}</h3>
-      <p class="news-card__summary">${escapeHtml(n.summary)}</p>
-      <div class="news-card__footer">
-        <span class="news-card__meta">
-          <i class="ti ti-clock" aria-hidden="true"></i>
-          <span>${timeAgo(n.publishedAt)}</span>
-          <span aria-hidden="true">·</span>
-          <a href="${n.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.source)}</a>
-        </span>
-        <button class="news-card__action" data-report-id="${n.id}">리포트 ↗</button>
-      </div>
-    </article>
-  `;
+function formatUpdatedAt(isoString) {
+  const d = isoString ? new Date(isoString) : new Date();
+  const yy = String(d.getFullYear()).slice(2);
+  const m = d.getMonth() + 1;
+  const day = d.getDate();
+  const hh = String(d.getHours()).padStart(2, "0");
+  const mm = String(d.getMinutes()).padStart(2, "0");
+  return `'${yy}.${m}.${day} ${hh}:${mm} 갱신`;
 }
 
 function escapeHtml(s) {
-  return String(s)
+  return String(s ?? "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -182,30 +85,335 @@ function escapeHtml(s) {
     .replace(/'/g, "&#39;");
 }
 
-// ===== Modal =====
-function openReportModal(id) {
-  const news = NEWS_DATA.find((n) => n.id === id);
-  if (!news) return;
-  state.selectedNews = news;
-
-  document.getElementById("modalNewsPreview").innerHTML = `
-    <p class="modal__news-preview-label">선택된 뉴스</p>
-    <p class="modal__news-preview-headline">${escapeHtml(news.headline)}</p>
-  `;
-
-  const checkboxes = document.querySelectorAll('#buCheckboxGroup input[type="checkbox"]');
-  checkboxes.forEach((cb) => {
-    cb.checked = news.relatedBu.includes(cb.value);
-  });
-
-  document.getElementById("reportModal").hidden = false;
-  document.body.style.overflow = "hidden";
+function escapeXml(s) {
+  return escapeHtml(s);
 }
 
-function closeReportModal() {
-  document.getElementById("reportModal").hidden = true;
-  document.body.style.overflow = "";
-  state.selectedNews = null;
+// ===== Data loaders =====
+async function loadConfig() {
+  try {
+    const res = await fetch("scripts/config.json", { cache: "no-cache" });
+    CONFIG = await res.json();
+    PRODUCTS.splice(0, PRODUCTS.length, ...(CONFIG.products || []));
+    COMPETITORS.splice(0, COMPETITORS.length, ...(CONFIG.competitors || []));
+  } catch (err) {
+    console.error("config.json 로드 실패:", err);
+    CONFIG = { products: [], competitors: [], productContext: {}, gradeMeaning: GRADE_MEANING };
+  }
+}
+
+async function loadNewsData() {
+  try {
+    const res = await fetch("data/news.json", { cache: "no-cache" });
+    const json = await res.json();
+    NEWS_DATA = (json.items || []).filter((n) => n.lens && n.grade);
+    NEWS_UPDATED_AT = json.updatedAt;
+  } catch (err) {
+    console.error("news.json 로드 실패:", err);
+    NEWS_DATA = [];
+  }
+}
+
+// ===== Filter logic =====
+function getFilteredNews() {
+  return NEWS_DATA.filter((n) => {
+    // 렌즈 필터
+    if (state.lens !== "전체" && n.lens !== state.lens) return false;
+
+    // 제품 필터 (다중, OR)
+    if (state.products.size > 0) {
+      const match = (n.products || []).some((p) => state.products.has(p));
+      if (!match) return false;
+    }
+
+    // 경쟁사 필터 (다중, OR)
+    if (state.competitors.size > 0) {
+      const match = (n.competitors || []).some((c) => state.competitors.has(c));
+      if (!match) return false;
+    }
+
+    return true;
+  });
+}
+
+function getSortedNews(items) {
+  const sorted = [...items];
+  if (state.sort === "latest") {
+    sorted.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  } else if (state.sort === "impact") {
+    sorted.sort((a, b) => (b.impact || 0) - (a.impact || 0));
+  } else {
+    // relevance: 활성 필터 매칭 정도
+    sorted.sort((a, b) => {
+      const scoreA = relevanceScore(a);
+      const scoreB = relevanceScore(b);
+      if (scoreB !== scoreA) return scoreB - scoreA;
+      return new Date(b.publishedAt) - new Date(a.publishedAt);
+    });
+  }
+  return sorted;
+}
+
+function relevanceScore(n) {
+  let s = 0;
+  if (state.lens !== "전체" && n.lens === state.lens) s += 2;
+  state.products.forEach((p) => {
+    if ((n.products || []).includes(p)) s += 1;
+  });
+  state.competitors.forEach((c) => {
+    if ((n.competitors || []).includes(c)) s += 1;
+  });
+  return s;
+}
+
+// ===== Rendering =====
+function renderHeader() {
+  document.getElementById("updatedAtText").textContent = formatUpdatedAt(NEWS_UPDATED_AT);
+}
+
+function renderStats() {
+  const all = NEWS_DATA;
+  document.getElementById("statTotal").textContent = all.length;
+  document.getElementById("statUrgent").textContent =
+    all.filter((n) => n.grade === "긴급").length;
+  document.getElementById("statMajor").textContent =
+    all.filter((n) => n.grade === "주요").length;
+  document.getElementById("statWatch").textContent =
+    all.filter((n) => n.grade === "주시").length;
+}
+
+function renderLensChips() {
+  const container = document.getElementById("lensChips");
+  container.innerHTML = "";
+  LENSES.forEach((lens) => {
+    const btn = document.createElement("button");
+    btn.className = "chip";
+    if (state.lens === lens) btn.classList.add("chip--active");
+    btn.textContent = lens;
+    btn.setAttribute("role", "radio");
+    btn.setAttribute("aria-checked", state.lens === lens ? "true" : "false");
+    btn.addEventListener("click", () => {
+      state.lens = lens;
+      // 비활성 행의 선택 초기화하지 않고 유지 (사용자 의도 보존)
+      renderLensChips();
+      renderFilterRowsState();
+      renderResult();
+    });
+    container.appendChild(btn);
+  });
+}
+
+function renderProductChips() {
+  const container = document.getElementById("productChips");
+  container.innerHTML = "";
+  PRODUCTS.forEach((p) => {
+    const btn = document.createElement("button");
+    btn.className = "chip";
+    if (state.products.has(p)) btn.classList.add("chip--active");
+    btn.textContent = p;
+    btn.addEventListener("click", () => {
+      if (state.products.has(p)) state.products.delete(p);
+      else state.products.add(p);
+      renderProductChips();
+      updateProductCount();
+      renderResult();
+    });
+    container.appendChild(btn);
+  });
+  updateProductCount();
+}
+
+function renderCompetitorChips() {
+  const container = document.getElementById("competitorChips");
+  container.innerHTML = "";
+  COMPETITORS.forEach((c) => {
+    const btn = document.createElement("button");
+    btn.className = "chip";
+    if (state.competitors.has(c)) btn.classList.add("chip--active");
+    btn.textContent = c;
+    btn.addEventListener("click", () => {
+      if (state.competitors.has(c)) state.competitors.delete(c);
+      else state.competitors.add(c);
+      renderCompetitorChips();
+      updateCompetitorCount();
+      renderResult();
+    });
+    container.appendChild(btn);
+  });
+  updateCompetitorCount();
+}
+
+function updateProductCount() {
+  document.getElementById("productCount").textContent = state.products.size;
+}
+
+function updateCompetitorCount() {
+  document.getElementById("competitorCount").textContent = state.competitors.size;
+}
+
+function renderFilterRowsState() {
+  const rule = LENS_ACTIVATION[state.lens] || { product: true, competitor: true };
+  const productRow = document.getElementById("productRow");
+  const competitorRow = document.getElementById("competitorRow");
+
+  productRow.classList.toggle("is-disabled", !rule.product);
+  competitorRow.classList.toggle("is-disabled", !rule.competitor);
+
+  // 컨텍스트 안내 배너
+  const banner = document.getElementById("filterHintBanner");
+  if (state.lens === "소비자" || state.lens === "기술") {
+    banner.innerHTML = `<i class="ti ti-info-circle" aria-hidden="true"></i>${state.lens} 시각에서는 경쟁사 필터가 적용되지 않습니다. 산업 전반 시그널만 노출됩니다.`;
+    banner.hidden = false;
+  } else if (state.lens === "정책" || state.lens === "거시") {
+    banner.innerHTML = `<i class="ti ti-info-circle" aria-hidden="true"></i>${state.lens} 시각에서는 제품·경쟁사 필터가 적용되지 않습니다. 거시·규제 시그널만 노출됩니다.`;
+    banner.hidden = false;
+  } else {
+    banner.hidden = true;
+  }
+}
+
+function renderResult() {
+  const filtered = getFilteredNews();
+  document.getElementById("resultCount").textContent = filtered.length;
+
+  const empty = document.getElementById("emptyState");
+  const area = document.getElementById("resultArea");
+
+  if (filtered.length === 0) {
+    area.innerHTML = "";
+    area.hidden = true;
+    empty.hidden = false;
+    document.getElementById("emptyMessage").textContent =
+      NEWS_DATA.length === 0
+        ? "데이터 갱신 中입니다. 첫 데이터는 1시간 內 채워집니다."
+        : "조건에 맞는 뉴스가 없습니다.";
+    return;
+  }
+
+  area.hidden = false;
+  empty.hidden = true;
+
+  const sorted = getSortedNews(filtered);
+  const groups = makeGroups(sorted);
+
+  area.className = state.view === "list" ? "result-area is-list" : "result-area";
+  area.innerHTML = groups.map(renderGroup).join("");
+
+  area.querySelectorAll("[data-report-id]").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const id = Number(e.currentTarget.dataset.reportId);
+      openReportModal(id);
+    });
+  });
+}
+
+function makeGroups(items) {
+  if (state.group === "none") {
+    return [{ key: "", items }];
+  }
+  const map = new Map();
+
+  if (state.group === "grade") {
+    GRADE_ORDER.forEach((g) => map.set(g, []));
+    items.forEach((n) => map.get(n.grade)?.push(n));
+  } else if (state.group === "lens") {
+    LENS_ORDER.forEach((l) => map.set(l, []));
+    items.forEach((n) => map.get(n.lens)?.push(n));
+  } else if (state.group === "product") {
+    PRODUCTS.forEach((p) => map.set(p, []));
+    map.set("제품 미분류", []);
+    items.forEach((n) => {
+      if (!n.products || n.products.length === 0) {
+        map.get("제품 미분류").push(n);
+      } else {
+        n.products.forEach((p) => map.get(p)?.push(n));
+      }
+    });
+  } else if (state.group === "competitor") {
+    COMPETITORS.forEach((c) => map.set(c, []));
+    map.set("경쟁사 미분류", []);
+    items.forEach((n) => {
+      if (!n.competitors || n.competitors.length === 0) {
+        map.get("경쟁사 미분류").push(n);
+      } else {
+        n.competitors.forEach((c) => map.get(c)?.push(n));
+      }
+    });
+  }
+
+  return Array.from(map.entries())
+    .filter(([_, arr]) => arr.length > 0)
+    .map(([key, arr]) => ({ key, items: arr }));
+}
+
+function renderGroup(group) {
+  if (!group.key) {
+    return `<div class="group-section">${group.items.map(renderCard).join("")}</div>`;
+  }
+
+  let badgeClass = "";
+  let meaning = "";
+
+  if (GRADE_ORDER.includes(group.key)) {
+    badgeClass = `group-header__badge--${GRADE_CLASS[group.key]}`;
+    meaning = GRADE_MEANING[group.key];
+  } else if (LENS_ORDER.includes(group.key)) {
+    badgeClass = `group-header__badge--lens-${group.key}`;
+  }
+
+  return `
+    <div class="group-section">
+      <div class="group-header">
+        <span class="group-header__badge ${badgeClass}">${escapeHtml(group.key)}</span>
+        <span class="group-header__count">${group.items.length}건</span>
+        ${meaning ? `<span class="group-header__meaning">· ${escapeHtml(meaning)}</span>` : ""}
+      </div>
+      ${group.items.map(renderCard).join("")}
+    </div>
+  `;
+}
+
+function renderCard(n) {
+  const gradeCls = GRADE_CLASS[n.grade] || "ref";
+  const sourceName = n.source?.name || "Unknown";
+  const sourceUrl = n.source?.url || n.url || "#";
+  const tags = (n.tags || []).slice(0, 4);
+  const products = n.products || [];
+  const competitors = n.competitors || [];
+
+  // 태그 = 경쟁사·제품·자유태그 합쳐 최대 4개
+  const allTags = [...competitors, ...products, ...tags].slice(0, 4);
+
+  return `
+    <article class="news-card news-card--${gradeCls}">
+      <div class="news-card__top">
+        <div class="news-card__top-left">
+          <span class="lens-badge lens-badge--${n.lens}">${escapeHtml(n.lens)}</span>
+          <span class="news-card__meta">
+            ${timeAgo(n.publishedAt)} · <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceName)}</a>
+          </span>
+        </div>
+        <span class="news-card__grade news-card__grade--${gradeCls}">
+          ${escapeHtml(n.grade)} · ${(n.impact ?? 0).toFixed(1)}
+        </span>
+      </div>
+      <h3 class="news-card__headline">${escapeHtml(n.headline)}</h3>
+      <p class="news-card__summary">${escapeHtml(n.summary)}</p>
+      <div class="news-card__bottom">
+        <div class="news-card__tags">
+          ${allTags.map((t) => `<span class="tag">#${escapeHtml(t)}</span>`).join("")}
+        </div>
+        <div class="news-card__actions">
+          <button class="news-card__action" data-report-id="${n.id}" title="리포트 생성">
+            <i class="ti ti-file-text" aria-hidden="true"></i>
+          </button>
+          <a class="news-card__action" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer" title="원문 보기">
+            <i class="ti ti-external-link" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </article>
+  `;
 }
 
 // ===== Report generation =====
@@ -219,19 +427,19 @@ const REPORT_SYSTEM_PROMPT = `당신은 'Herald'입니다. 가전 산업 시장 
 【리포트 구조】
 1페이지 분량. 다음 3개 본문 섹션 + 마무리:
 1. 핵심 신호 (signal): 뉴스 사실 요약
-2. 당사 기회 (opportunity): 선택 사업부에 미치는 기회
-3. 당사 위협 (threat): 선택 사업부에 미치는 위협
+2. 당사 기회 (opportunity): 선택 제품에 미치는 기회
+3. 당사 위협 (threat): 선택 제품에 미치는 위협
 4. implication: 마무리 시사점
 
 【작성 규칙】
 - 헤드라인 30자 이내, 결론 + 수치
 - 첫머리 연결어 (우선/그 결과/한편/이에 따라/종합하면/가장 먼저)
-- L2 본문은 28~36자 내외, 정량 수치 1개 이상 권장
+- L2 본문은 28~36자 內外, 정량 수치 1개 以上 권장
 - '당사' 호칭 통일 (자사 금지)
 - 한자 약어 가능 (時·可·後·內·等)
-- 모호 표현 금지 (필요·검토·강화·추적)
-- 기회·위협 섹션은 선택 사업부의 KPI·경쟁사를 반드시 1개 이상 참조
-- 마무리 시사점: '당사' 주어 시작, 액션 동사 종결 (대응·확장·재편·선점·차단 等)
+- 모호 표현 금지 (필요·검토·강화)
+- 기회·위협 섹션은 선택 제품의 KPI·경쟁사를 반드시 1개 以上 참조
+- 마무리 시사점: '당사' 주어 시작, 액션 동사 종결
 
 【출력 스키마】
 {
@@ -240,10 +448,7 @@ const REPORT_SYSTEM_PROMPT = `당신은 'Herald'입니다. 가전 산업 시장 
     {
       "type": "signal",
       "headline": "□ 헤드라인",
-      "items": [
-        {"level": 2, "text": "L2 본문"},
-        {"level": 2, "text": "L2 본문"}
-      ]
+      "items": [{"level": 2, "text": "L2 본문"}]
     },
     {
       "type": "opportunity",
@@ -256,24 +461,10 @@ const REPORT_SYSTEM_PROMPT = `당신은 'Herald'입니다. 가전 산업 시장 
       "items": [{"level": 2, "text": "..."}]
     }
   ],
-  "implication": "마무리 시사점 (당사 주어, 액션 종결)"
+  "implication": "마무리 시사점"
 }
 
 JSON 외 어떤 텍스트도 출력 금지.`;
-
-let BU_CONTEXTS = {};
-
-async function loadConfig() {
-  try {
-    const res = await fetch("scripts/config.json", { cache: "no-cache" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const cfg = await res.json();
-    BU_CONTEXTS = cfg.businessUnits || {};
-  } catch (err) {
-    console.warn("config.json 로드 실패, 기본 컨텍스트 사용:", err);
-    BU_CONTEXTS = {};
-  }
-}
 
 function getApiKey() {
   return localStorage.getItem("anthropic_api_key");
@@ -304,13 +495,14 @@ function promptForApiKey() {
   return trimmed;
 }
 
-async function callClaudeForReport(apiKey, news, businessUnits) {
-  const buContextLines = businessUnits.map((bu) => {
-    const c = BU_CONTEXTS[bu] || {};
+async function callClaudeForReport(apiKey, news, products) {
+  const ctx = CONFIG?.productContext || {};
+  const buContextLines = products.map((p) => {
+    const c = ctx[p] || {};
     return (
-      `${bu}:\n` +
+      `${p}:\n` +
       `  주요 제품: ${(c.keywords || []).slice(0, 6).join(", ") || "(미등록)"}\n` +
-      `  주요 경쟁사: ${(c.competitors || []).join(", ") || "(미등록)"}\n` +
+      `  주요 경쟁사: ${(c.majorCompetitors || []).join(", ") || "(미등록)"}\n` +
       `  핵심 KPI: ${(c.kpis || []).join(", ") || "(미등록)"}`
     );
   });
@@ -318,18 +510,20 @@ async function callClaudeForReport(apiKey, news, businessUnits) {
   const userPrompt = `[기반 뉴스]
 헤드라인: ${news.headline}
 요약: ${news.summary}
-카테고리: ${news.category} / 신호: ${news.signal}
-출처: ${news.source}
+시각: ${news.lens} / 등급: ${news.grade} (영향도 ${news.impact})
+관련 제품: ${(news.products || []).join(", ") || "(없음)"}
+관련 경쟁사: ${(news.competitors || []).join(", ") || "(없음)"}
+출처: ${news.source?.name || ""}
 원문 URL: ${news.url}
 
-[대상 사업부]
-${businessUnits.join(", ")}
+[대상 제품 (분석 범위)]
+${products.join(", ")}
 
-[사업부 컨텍스트]
+[제품 컨텍스트]
 ${buContextLines.join("\n\n")}
 
 [작성 지시]
-위 뉴스가 대상 사업부에 미치는 기회·위협을 1페이지 리포트로 작성하세요. 사업부 컨텍스트의 KPI·경쟁사를 본문에 반드시 활용하세요.`;
+위 뉴스가 대상 제품에 미치는 기회·위협을 1페이지 리포트로 작성하세요. 제품 컨텍스트의 KPI·경쟁사를 본문에 반드시 활용하세요.`;
 
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -369,16 +563,7 @@ ${buContextLines.join("\n\n")}
   return JSON.parse(cleaned);
 }
 
-function escapeXml(s) {
-  return String(s || "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
-
-function buildReportHtml(report, news, businessUnits) {
+function buildReportHtml(report, news, products) {
   const sectionLabels = {
     signal: { name: "핵심 신호", color: "#1a1a1a" },
     opportunity: { name: "당사 기회 (Opportunity)", color: "#0c447c" },
@@ -394,24 +579,15 @@ function buildReportHtml(report, news, businessUnits) {
     .map((s) => {
       const label = sectionLabels[s.type] || { name: s.type, color: "#1a1a1a" };
       const itemsHtml = (s.items || [])
-        .map((it) =>
-          it.level === 3
-            ? `<p style="margin: 4pt 0 4pt 40pt; font-size: 10.5pt; color: #5f5e5a;">· ${escapeXml(
-                it.text
-              )}</p>`
-            : `<p style="margin: 6pt 0 6pt 20pt; font-size: 11.5pt;">- ${escapeXml(
-                it.text
-              )}</p>`
+        .map(
+          (it) =>
+            `<p style="margin: 6pt 0 6pt 20pt; font-size: 11.5pt;">- ${escapeXml(it.text)}</p>`
         )
         .join("");
       return `
         <div style="margin-top: 16pt;">
-          <p style="font-size: 11pt; color: ${
-            label.color
-          }; margin: 0 0 4pt 0; font-weight: bold;">[${label.name}]</p>
-          <p style="font-size: 13pt; margin: 0; font-weight: bold; color: #1a1a1a;">□ ${escapeXml(
-            s.headline
-          )}</p>
+          <p style="font-size: 11pt; color: ${label.color}; margin: 0 0 4pt 0; font-weight: bold;">[${label.name}]</p>
+          <p style="font-size: 13pt; margin: 0; font-weight: bold; color: #1a1a1a;">□ ${escapeXml(s.headline)}</p>
           ${itemsHtml}
         </div>
       `;
@@ -419,19 +595,10 @@ function buildReportHtml(report, news, businessUnits) {
     .join("");
 
   return `<!DOCTYPE html>
-<html xmlns:o='urn:schemas-microsoft-com:office:office'
-      xmlns:w='urn:schemas-microsoft-com:office:word'
-      xmlns='http://www.w3.org/TR/REC-html40'>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
 <head>
 <meta charset='utf-8'>
 <title>DA Market Insight Report</title>
-<!--[if gte mso 9]><xml>
-<w:WordDocument>
-<w:View>Print</w:View>
-<w:Zoom>100</w:Zoom>
-<w:DoNotOptimizeForBrowser/>
-</w:WordDocument>
-</xml><![endif]-->
 <style>
 @page { size: A4; margin: 2cm 1.8cm; }
 body { font-family: '맑은 고딕', 'Malgun Gothic', sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; }
@@ -443,33 +610,23 @@ h1 { font-size: 20pt; margin: 0 0 4pt 0; }
 </style>
 </head>
 <body>
-
 <h1>DA Market Insight - 사업부 영향 리포트</h1>
 <p class="subtitle">${escapeXml(report.subtitle || news.headline)}</p>
-<p class="meta">${dateStr} 발행 · 대상 사업부: ${escapeXml(
-    businessUnits.join(" / ")
-  )} · 기반 뉴스 신호: ${escapeXml(news.signal)}</p>
-
+<p class="meta">${dateStr} 발행 · 대상 제품: ${escapeXml(products.join(" / "))} · 등급: ${escapeXml(news.grade)} · 영향도 ${(news.impact || 0).toFixed(1)}</p>
 ${sectionsHtml}
-
 <div class="implication">
 <p style="margin: 0 0 4pt 0; font-size: 10pt; color: #5f5e5a;"><strong>마무리 시사점</strong></p>
 <p style="margin: 0; font-size: 11.5pt;">${escapeXml(report.implication)}</p>
 </div>
-
 <div class="references">
 <p style="margin: 0 0 4pt 0;"><strong>※ 참고자료</strong></p>
-<p style="margin: 0;">1. ${escapeXml(news.headline)} - ${escapeXml(
-    news.url
-  )}</p>
+<p style="margin: 0;">1. ${escapeXml(news.headline)} - ${escapeXml(news.url)}</p>
 </div>
-
 </body>
 </html>`;
 }
 
 function downloadDocx(html, filename) {
-  // html-docx-js 라이브러리가 로드되어 있으면 진짜 OOXML .docx 생성
   if (typeof window.htmlDocx !== "undefined" && window.htmlDocx.asBlob) {
     try {
       const blob = window.htmlDocx.asBlob(html, {
@@ -486,11 +643,9 @@ function downloadDocx(html, filename) {
       setTimeout(() => URL.revokeObjectURL(url), 1000);
       return;
     } catch (err) {
-      console.warn("docx 변환 실패, .doc fallback 사용:", err);
+      console.warn("docx 변환 실패, .doc fallback:", err);
     }
   }
-
-  // Fallback: HTML 기반 .doc (데스크탑 Word 전용)
   const blob = new Blob(["\ufeff", html], { type: "application/msword" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
@@ -502,14 +657,48 @@ function downloadDocx(html, filename) {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
+// ===== Modal =====
+function renderProductCheckboxes(preselect = []) {
+  const container = document.getElementById("productCheckboxGroup");
+  container.innerHTML = "";
+  PRODUCTS.forEach((p) => {
+    const label = document.createElement("label");
+    label.className = "checkbox-item";
+    label.innerHTML = `<input type="checkbox" value="${escapeHtml(p)}" ${preselect.includes(p) ? "checked" : ""} /><span>${escapeHtml(p)}</span>`;
+    container.appendChild(label);
+  });
+}
+
+function openReportModal(id) {
+  const news = NEWS_DATA.find((n) => n.id === id);
+  if (!news) return;
+  state.selectedNews = news;
+
+  document.getElementById("modalNewsPreview").innerHTML = `
+    <p class="modal__news-preview-label">선택된 뉴스</p>
+    <p class="modal__news-preview-headline">${escapeHtml(news.headline)}</p>
+  `;
+
+  renderProductCheckboxes(news.products || []);
+
+  document.getElementById("reportModal").hidden = false;
+  document.body.style.overflow = "hidden";
+}
+
+function closeReportModal() {
+  document.getElementById("reportModal").hidden = true;
+  document.body.style.overflow = "";
+  state.selectedNews = null;
+}
+
 async function generateReport() {
   const btn = document.getElementById("generateBtn");
-  const checkedBus = Array.from(
-    document.querySelectorAll("#buCheckboxGroup input:checked")
+  const checked = Array.from(
+    document.querySelectorAll("#productCheckboxGroup input:checked")
   ).map((cb) => cb.value);
 
-  if (checkedBus.length === 0) {
-    showToast("사업부를 1개 이상 선택해 주세요", false);
+  if (checked.length === 0) {
+    showToast("제품을 1개 以上 선택해 주세요", false);
     return;
   }
 
@@ -522,42 +711,33 @@ async function generateReport() {
   btn.disabled = true;
   btn.classList.add("btn--loading");
   btn.querySelector("i").className = "ti ti-loader-2";
-  btn.querySelector("span").textContent = "생성 중... (15초)";
+  btn.querySelector("span").textContent = "생성 中... (15초)";
 
   try {
     const news = state.selectedNews;
-    const report = await callClaudeForReport(apiKey, news, checkedBus);
+    const report = await callClaudeForReport(apiKey, news, checked);
 
-    if (
-      !report.sections ||
-      !Array.isArray(report.sections) ||
-      report.sections.length === 0
-    ) {
+    if (!report.sections || !Array.isArray(report.sections)) {
       throw new Error("리포트 구조 검증 실패");
     }
 
-    const html = buildReportHtml(report, news, checkedBus);
-    const safeBus = checkedBus.join("_").replace(/[^가-힣A-Za-z0-9_]/g, "");
+    const html = buildReportHtml(report, news, checked);
+    const safe = checked.join("_").replace(/[^가-힣A-Za-z0-9_]/g, "");
     const ts = new Date().toISOString().slice(0, 10);
-    const filename = `DA_Insight_${ts}_${safeBus}.docx`;
-    downloadDocx(html, filename);
+    downloadDocx(html, `DA_Insight_${ts}_${safe}.docx`);
 
     closeReportModal();
-    showToast(`${checkedBus.length}개 사업부 리포트 다운로드 完了`, true);
+    showToast(`${checked.length}개 제품 리포트 다운로드 完了`, true);
   } catch (err) {
-    console.error("리포트 생성 실패:", err);
+    console.error(err);
     const msg = err.message || String(err);
-    if (
-      msg.includes("401") ||
-      msg.includes("authentication_error") ||
-      msg.includes("invalid x-api-key")
-    ) {
+    if (msg.includes("401") || msg.includes("authentication") || msg.includes("invalid x-api-key")) {
       clearApiKey();
       showToast("API 키 인증 실패. 다시 입력해 주세요.", false);
     } else if (msg.includes("429") || msg.includes("rate_limit")) {
-      showToast("API 호출 한도 초과. 잠시 後 다시 시도해 주세요.", false);
+      showToast("API 호출 한도 초과. 잠시 後 재시도.", false);
     } else if (msg.includes("credit") || msg.includes("billing")) {
-      showToast("API 잔액 부족. 콘솔에서 충전해 주세요.", false);
+      showToast("API 잔액 부족. 콘솔에서 충전.", false);
     } else {
       showToast(`리포트 생성 실패: ${msg.slice(0, 60)}`, false);
     }
@@ -572,49 +752,35 @@ async function generateReport() {
 function showToast(message, success = true) {
   const toast = document.getElementById("toast");
   document.getElementById("toastMessage").textContent = message;
-  toast.querySelector("i").className = success
-    ? "ti ti-circle-check"
-    : "ti ti-alert-circle";
+  toast.querySelector("i").className = success ? "ti ti-circle-check" : "ti ti-alert-circle";
   toast.hidden = false;
-  setTimeout(() => {
-    toast.hidden = true;
-  }, 2800);
+  setTimeout(() => { toast.hidden = true; }, 2800);
 }
 
-// ===== Event bindings =====
+// ===== Events =====
 function bindEvents() {
-  document.getElementById("searchInput").addEventListener("input", (e) => {
-    state.search = e.target.value.trim();
-    renderNewsGrid();
+  document.getElementById("sortSelect").addEventListener("change", (e) => {
+    state.sort = e.target.value;
+    renderResult();
   });
-
-  document.getElementById("filterBu").addEventListener("change", (e) => {
-    state.bu = e.target.value;
-    renderNewsGrid();
+  document.getElementById("groupSelect").addEventListener("change", (e) => {
+    state.group = e.target.value;
+    renderResult();
   });
-
-  document.getElementById("filterPeriod").addEventListener("change", (e) => {
-    state.period = Number(e.target.value);
-    renderStats();
-    renderCategoryTabs();
-    renderNewsGrid();
+  document.querySelectorAll(".view-toggle__btn").forEach((b) => {
+    b.addEventListener("click", () => {
+      document.querySelectorAll(".view-toggle__btn").forEach((x) =>
+        x.classList.remove("view-toggle__btn--active")
+      );
+      b.classList.add("view-toggle__btn--active");
+      state.view = b.dataset.view;
+      renderResult();
+    });
   });
-
-  // Modal close handlers
   document.querySelectorAll("[data-close]").forEach((el) => {
     el.addEventListener("click", closeReportModal);
   });
-
   document.getElementById("generateBtn").addEventListener("click", generateReport);
-
-  // Checkbox visual update (for :has fallback)
-  document.querySelectorAll("#buCheckboxGroup input").forEach((cb) => {
-    cb.addEventListener("change", () => {
-      // CSS :has handles styling; no JS needed in modern browsers
-    });
-  });
-
-  // ESC closes modal
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !document.getElementById("reportModal").hidden) {
       closeReportModal();
@@ -622,41 +788,16 @@ function bindEvents() {
   });
 }
 
-// ===== Data loader =====
-async function loadNewsData() {
-  try {
-    const res = await fetch("data/news.json", { cache: "no-cache" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
-    NEWS_DATA = json.items || [];
-    NEWS_UPDATED_AT = json.updatedAt;
-  } catch (err) {
-    console.error("news.json 로드 실패:", err);
-    NEWS_DATA = [];
-    showToast("뉴스 데이터 로드 실패", false);
-  }
-}
-
-function formatUpdatedAt(isoString) {
-  if (!isoString) return formatLastUpdated();
-  const d = new Date(isoString);
-  const yy = String(d.getFullYear()).slice(2);
-  const m = d.getMonth() + 1;
-  const day = d.getDate();
-  const hh = String(d.getHours()).padStart(2, "0");
-  const mm = String(d.getMinutes()).padStart(2, "0");
-  return `'${yy}.${m}.${day} ${hh}:${mm} 갱신`;
-}
-
 // ===== Init =====
 async function init() {
-  await Promise.all([loadNewsData(), loadConfig()]);
-  document.querySelector("#lastUpdated span").textContent = formatUpdatedAt(
-    NEWS_UPDATED_AT
-  );
+  await Promise.all([loadConfig(), loadNewsData()]);
+  renderHeader();
   renderStats();
-  renderCategoryTabs();
-  renderNewsGrid();
+  renderLensChips();
+  renderProductChips();
+  renderCompetitorChips();
+  renderFilterRowsState();
+  renderResult();
   bindEvents();
 }
 

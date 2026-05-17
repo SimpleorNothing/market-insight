@@ -24,75 +24,116 @@
   <main class="container">
     <header class="page-header">
       <div class="page-header__title">
-        <h1>DA Market Insight</h1>
+        <h1>DA Market <em>Insight</em></h1>
         <p>실시간 시장 동향 모니터링 보드</p>
       </div>
       <div class="page-header__meta" id="lastUpdated">
-        <i class="ti ti-refresh" aria-hidden="true"></i>
-        <span>—</span>
+        <span class="meta-dot" aria-hidden="true"></span>
+        <span id="updatedAtText">—</span>
       </div>
     </header>
 
-    <section class="stats-grid" aria-label="신호 통계">
+    <section class="stats-grid" aria-label="액션 등급별 KPI">
       <div class="stat-card stat-card--neutral">
         <p class="stat-card__label">금일 수집</p>
-        <p class="stat-card__value" id="statTotal">0건</p>
+        <p class="stat-card__value">
+          <span id="statTotal">0</span><span class="stat-card__unit">건</span>
+        </p>
       </div>
-      <div class="stat-card stat-card--new">
-        <p class="stat-card__label">New 신호</p>
-        <p class="stat-card__value" id="statNew">0건</p>
+      <div class="stat-card stat-card--urgent">
+        <p class="stat-card__label">
+          <i class="ti ti-diamond-filled" aria-hidden="true"></i>긴급
+        </p>
+        <p class="stat-card__value">
+          <span id="statUrgent">0</span><span class="stat-card__unit">건</span>
+        </p>
       </div>
-      <div class="stat-card stat-card--deep">
-        <p class="stat-card__label">Deep 신호</p>
-        <p class="stat-card__value" id="statDeep">0건</p>
+      <div class="stat-card stat-card--major">
+        <p class="stat-card__label">
+          <span class="dot-amber" aria-hidden="true"></span>주요
+        </p>
+        <p class="stat-card__value">
+          <span id="statMajor">0</span><span class="stat-card__unit">건</span>
+        </p>
       </div>
-      <div class="stat-card stat-card--insight">
-        <p class="stat-card__label">Insight 신호</p>
-        <p class="stat-card__value" id="statInsight">0건</p>
+      <div class="stat-card stat-card--watch">
+        <p class="stat-card__label">
+          <span class="dot-blue" aria-hidden="true"></span>주시
+        </p>
+        <p class="stat-card__value">
+          <span id="statWatch">0</span><span class="stat-card__unit">건</span>
+        </p>
       </div>
     </section>
 
-    <nav class="category-tabs" id="categoryTabs" aria-label="카테고리 필터">
-      <!-- buttons rendered by JS -->
-    </nav>
-
-    <section class="filter-bar" aria-label="검색 및 필터">
-      <div class="filter-bar__search">
-        <i class="ti ti-search" aria-hidden="true"></i>
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="키워드 검색"
-          autocomplete="off"
-        />
+    <section class="filter-panel" aria-label="필터">
+      <div class="filter-row">
+        <span class="filter-row__label">시각</span>
+        <div class="filter-row__chips" id="lensChips" role="radiogroup"></div>
+        <span class="filter-row__hint">단일선택</span>
       </div>
-      <select id="filterBu" aria-label="사업부 필터">
-        <option value="all">전체 사업부</option>
-        <option value="ref">냉장고 사업부</option>
-        <option value="wm">세탁기 사업부</option>
-        <option value="ac">에어컨 사업부</option>
-        <option value="kitchen">주방가전 사업부</option>
-      </select>
-      <select id="filterPeriod" aria-label="기간 필터">
-        <option value="7">최근 7일</option>
-        <option value="30">최근 30일</option>
-        <option value="90">최근 90일</option>
-      </select>
+      <div class="filter-row" id="productRow">
+        <span class="filter-row__label">제품</span>
+        <div class="filter-row__chips" id="productChips"></div>
+        <span class="filter-row__hint">
+          다중선택 · <span id="productCount">0</span>개
+        </span>
+      </div>
+      <div class="filter-row" id="competitorRow">
+        <span class="filter-row__label">경쟁사</span>
+        <div class="filter-row__chips" id="competitorChips"></div>
+        <span class="filter-row__hint">
+          다중선택 · <span id="competitorCount">0</span>개
+        </span>
+      </div>
+      <div class="filter-hint-banner" id="filterHintBanner" hidden></div>
     </section>
 
-    <section class="news-grid" id="newsGrid" aria-label="뉴스 목록">
-      <!-- cards rendered by JS -->
+    <section class="result-bar">
+      <div class="result-bar__left">
+        결과 <strong id="resultCount">0</strong>건
+      </div>
+      <div class="result-bar__right">
+        <div class="control-group">
+          <span class="control-group__label">정렬</span>
+          <select id="sortSelect">
+            <option value="latest">최신순</option>
+            <option value="impact">영향도순</option>
+            <option value="relevance">관련도순</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <span class="control-group__label">그룹</span>
+          <select id="groupSelect">
+            <option value="grade">액션 등급별</option>
+            <option value="lens">시각별</option>
+            <option value="product">제품별</option>
+            <option value="competitor">경쟁사별</option>
+            <option value="none">그룹 없음</option>
+          </select>
+        </div>
+        <div class="view-toggle" role="tablist" aria-label="뷰 전환">
+          <button class="view-toggle__btn view-toggle__btn--active" data-view="card">
+            <i class="ti ti-layout-cards" aria-hidden="true"></i>카드
+          </button>
+          <button class="view-toggle__btn" data-view="list">
+            <i class="ti ti-list" aria-hidden="true"></i>리스트
+          </button>
+        </div>
+      </div>
     </section>
+
+    <section class="result-area" id="resultArea" aria-label="뉴스 결과"></section>
 
     <div class="empty-state" id="emptyState" hidden>
       <i class="ti ti-mood-empty" aria-hidden="true"></i>
-      <p>조건에 맞는 뉴스가 없습니다.</p>
+      <p id="emptyMessage">조건에 맞는 뉴스가 없습니다.</p>
     </div>
 
     <footer class="page-footer">
       <i class="ti ti-info-circle" aria-hidden="true"></i>
       <span>
-        각 카드의 [리포트 ↗] 클릭 → 사업부 선택 → 기회·위협 2축 1페이지 docx 자동 생성
+        각 카드의 [리포트 ↗] 클릭 → 제품 선택 → 기회·위협 1페이지 docx 자동 생성
       </span>
     </footer>
   </main>
@@ -109,34 +150,11 @@
       </div>
 
       <div class="modal__body">
-        <div class="modal__news-preview" id="modalNewsPreview">
-          <!-- selected news preview -->
-        </div>
+        <div class="modal__news-preview" id="modalNewsPreview"></div>
 
         <div class="modal__field">
-          <label class="modal__field-label">대상 사업부 (중복 선택 가능)</label>
-          <div class="checkbox-group" id="buCheckboxGroup">
-            <label class="checkbox-item">
-              <input type="checkbox" value="냉장고" checked />
-              <span>냉장고</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="checkbox" value="세탁기" />
-              <span>세탁기</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="checkbox" value="에어컨" />
-              <span>에어컨</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="checkbox" value="주방가전" />
-              <span>주방가전</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="checkbox" value="소형가전" />
-              <span>소형가전</span>
-            </label>
-          </div>
+          <label class="modal__field-label">대상 제품 (중복 선택 가능)</label>
+          <div class="checkbox-group" id="productCheckboxGroup"></div>
         </div>
 
         <div class="modal__field">
@@ -160,7 +178,6 @@
     </div>
   </div>
 
-  <!-- Toast notification -->
   <div class="toast" id="toast" hidden>
     <i class="ti ti-circle-check" aria-hidden="true"></i>
     <span id="toastMessage"></span>
