@@ -9,7 +9,6 @@
  *   - generateReport() → 실제 리포트 생성 API 호출로 교체
  */
 
-
 // ===== News data (loaded from data/news.json) =====
 let NEWS_DATA = [];
 let NEWS_UPDATED_AT = null;
@@ -469,12 +468,34 @@ ${sectionsHtml}
 </html>`;
 }
 
-function downloadDoc(html, filename) {
+function downloadDocx(html, filename) {
+  // html-docx-js 라이브러리가 로드되어 있으면 진짜 OOXML .docx 생성
+  if (typeof window.htmlDocx !== "undefined" && window.htmlDocx.asBlob) {
+    try {
+      const blob = window.htmlDocx.asBlob(html, {
+        orientation: "portrait",
+        margins: { top: 1134, right: 1020, bottom: 1134, left: 1020 },
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      return;
+    } catch (err) {
+      console.warn("docx 변환 실패, .doc fallback 사용:", err);
+    }
+  }
+
+  // Fallback: HTML 기반 .doc (데스크탑 Word 전용)
   const blob = new Blob(["\ufeff", html], { type: "application/msword" });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = filename;
+  a.download = filename.replace(/\.docx$/, ".doc");
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -518,8 +539,8 @@ async function generateReport() {
     const html = buildReportHtml(report, news, checkedBus);
     const safeBus = checkedBus.join("_").replace(/[^가-힣A-Za-z0-9_]/g, "");
     const ts = new Date().toISOString().slice(0, 10);
-    const filename = `DA_Insight_${ts}_${safeBus}.doc`;
-    downloadDoc(html, filename);
+    const filename = `DA_Insight_${ts}_${safeBus}.docx`;
+    downloadDocx(html, filename);
 
     closeReportModal();
     showToast(`${checkedBus.length}개 사업부 리포트 다운로드 完了`, true);
