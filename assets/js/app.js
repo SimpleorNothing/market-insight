@@ -208,10 +208,304 @@ function closeReportModal() {
   state.selectedNews = null;
 }
 
-function generateReport() {
+// ===== Report generation =====
+const REPORT_SYSTEM_PROMPT = `당신은 'Herald'입니다. 가전 산업 시장 동향 뉴스 기반 사업부 영향 1페이지 리포트 작성 전문가입니다.
+
+【출력 형식 — 절대 규칙】
+- 응답은 반드시 순수 JSON 객체 1개만 출력
+- 코드펜스, 주석, 추가 설명 일체 금지
+- 거절 응답·영문 회피 응답 일체 금지
+
+【리포트 구조】
+1페이지 분량. 다음 3개 본문 섹션 + 마무리:
+1. 핵심 신호 (signal): 뉴스 사실 요약
+2. 당사 기회 (opportunity): 선택 사업부에 미치는 기회
+3. 당사 위협 (threat): 선택 사업부에 미치는 위협
+4. implication: 마무리 시사점
+
+【작성 규칙】
+- 헤드라인 30자 이내, 결론 + 수치
+- 첫머리 연결어 (우선/그 결과/한편/이에 따라/종합하면/가장 먼저)
+- L2 본문은 28~36자 내외, 정량 수치 1개 이상 권장
+- '당사' 호칭 통일 (자사 금지)
+- 한자 약어 가능 (時·可·後·內·等)
+- 모호 표현 금지 (필요·검토·강화·추적)
+- 기회·위협 섹션은 선택 사업부의 KPI·경쟁사를 반드시 1개 이상 참조
+- 마무리 시사점: '당사' 주어 시작, 액션 동사 종결 (대응·확장·재편·선점·차단 等)
+
+【출력 스키마】
+{
+  "subtitle": "뉴스 핵심 한 줄 (15자 이내)",
+  "sections": [
+    {
+      "type": "signal",
+      "headline": "□ 헤드라인",
+      "items": [
+        {"level": 2, "text": "L2 본문"},
+        {"level": 2, "text": "L2 본문"}
+      ]
+    },
+    {
+      "type": "opportunity",
+      "headline": "□ 헤드라인",
+      "items": [{"level": 2, "text": "..."}]
+    },
+    {
+      "type": "threat",
+      "headline": "□ 헤드라인",
+      "items": [{"level": 2, "text": "..."}]
+    }
+  ],
+  "implication": "마무리 시사점 (당사 주어, 액션 종결)"
+}
+
+JSON 외 어떤 텍스트도 출력 금지.`;
+
+let BU_CONTEXTS = {};
+
+async function loadConfig() {
+  try {
+    const res = await fetch("scripts/config.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const cfg = await res.json();
+    BU_CONTEXTS = cfg.businessUnits || {};
+  } catch (err) {
+    console.warn("config.json 로드 실패, 기본 컨텍스트 사용:", err);
+    BU_CONTEXTS = {};
+  }
+}
+
+function getApiKey() {
+  return localStorage.getItem("anthropic_api_key");
+}
+
+function setApiKey(key) {
+  localStorage.setItem("anthropic_api_key", key.trim());
+}
+
+function clearApiKey() {
+  localStorage.removeItem("anthropic_api_key");
+}
+
+function promptForApiKey() {
+  const key = prompt(
+    "Anthropic API 키를 입력해 주세요.\n\n" +
+      "형식: sk-ant-api03-...\n" +
+      "발급: https://console.anthropic.com/settings/keys\n\n" +
+      "입력한 키는 본인 브라우저에만 저장되며 외부로 전송되지 않습니다."
+  );
+  if (!key) return null;
+  const trimmed = key.trim();
+  if (!trimmed.startsWith("sk-ant-")) {
+    showToast("올바른 형식의 API 키가 아닙니다", false);
+    return null;
+  }
+  setApiKey(trimmed);
+  return trimmed;
+}
+
+async function callClaudeForReport(apiKey, news, businessUnits) {
+  const buContextLines = businessUnits.map((bu) => {
+    const c = BU_CONTEXTS[bu] || {};
+    return (
+      `${bu}:\n` +
+      `  주요 제품: ${(c.keywords || []).slice(0, 6).join(", ") || "(미등록)"}\n` +
+      `  주요 경쟁사: ${(c.competitors || []).join(", ") || "(미등록)"}\n` +
+      `  핵심 KPI: ${(c.kpis || []).join(", ") || "(미등록)"}`
+    );
+  });
+
+  const userPrompt = `[기반 뉴스]
+헤드라인: ${news.headline}
+요약: ${news.summary}
+카테고리: ${news.category} / 신호: ${news.signal}
+출처: ${news.source}
+원문 URL: ${news.url}
+
+[대상 사업부]
+${businessUnits.join(", ")}
+
+[사업부 컨텍스트]
+${buContextLines.join("\n\n")}
+
+[작성 지시]
+위 뉴스가 대상 사업부에 미치는 기회·위협을 1페이지 리포트로 작성하세요. 사업부 컨텍스트의 KPI·경쟁사를 본문에 반드시 활용하세요.`;
+
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      "anthropic-dangerous-direct-browser-access": "true",
+    },
+    body: JSON.stringify({
+      model: "claude-haiku-4-5-20251001",
+      max_tokens: 2000,
+      system: REPORT_SYSTEM_PROMPT,
+      messages: [{ role: "user", content: userPrompt }],
+    }),
+  });
+
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(`API ${res.status}: ${errText.slice(0, 200)}`);
+  }
+
+  const data = await res.json();
+  const text = data.content
+    .filter((b) => b.type === "text")
+    .map((b) => b.text)
+    .join("")
+    .trim();
+
+  let cleaned = text.replace(/^```json\s*|\s*```$/g, "").trim();
+  const firstBrace = cleaned.indexOf("{");
+  const lastBrace = cleaned.lastIndexOf("}");
+  if (firstBrace >= 0 && lastBrace > firstBrace) {
+    cleaned = cleaned.slice(firstBrace, lastBrace + 1);
+  }
+
+  return JSON.parse(cleaned);
+}
+
+function escapeXml(s) {
+  return String(s || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function buildReportHtml(report, news, businessUnits) {
+  const sectionLabels = {
+    signal: { name: "핵심 신호", color: "#1a1a1a" },
+    opportunity: { name: "당사 기회 (Opportunity)", color: "#0c447c" },
+    threat: { name: "당사 위협 (Threat)", color: "#a32d2d" },
+  };
+
+  const now = new Date();
+  const dateStr = `'${String(now.getFullYear()).slice(2)}.${
+    now.getMonth() + 1
+  }.${now.getDate()}`;
+
+  const sectionsHtml = report.sections
+    .map((s) => {
+      const label = sectionLabels[s.type] || { name: s.type, color: "#1a1a1a" };
+      const itemsHtml = (s.items || [])
+        .map((it) =>
+          it.level === 3
+            ? `<p style="margin: 4pt 0 4pt 40pt; font-size: 10.5pt; color: #5f5e5a;">· ${escapeXml(
+                it.text
+              )}</p>`
+            : `<p style="margin: 6pt 0 6pt 20pt; font-size: 11.5pt;">- ${escapeXml(
+                it.text
+              )}</p>`
+        )
+        .join("");
+      return `
+        <div style="margin-top: 16pt;">
+          <p style="font-size: 11pt; color: ${
+            label.color
+          }; margin: 0 0 4pt 0; font-weight: bold;">[${label.name}]</p>
+          <p style="font-size: 13pt; margin: 0; font-weight: bold; color: #1a1a1a;">□ ${escapeXml(
+            s.headline
+          )}</p>
+          ${itemsHtml}
+        </div>
+      `;
+    })
+    .join("");
+
+  return `<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office'
+      xmlns:w='urn:schemas-microsoft-com:office:word'
+      xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset='utf-8'>
+<title>DA Market Insight Report</title>
+<!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml><![endif]-->
+<style>
+@page { size: A4; margin: 2cm 1.8cm; }
+body { font-family: '맑은 고딕', 'Malgun Gothic', sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; }
+h1 { font-size: 20pt; margin: 0 0 4pt 0; }
+.subtitle { font-size: 12pt; color: #5f5e5a; margin: 0 0 4pt 0; }
+.meta { font-size: 9.5pt; color: #888780; margin: 0 0 14pt 0; padding-bottom: 8pt; border-bottom: 0.5pt solid #d3d1c7; }
+.implication { margin-top: 22pt; padding: 10pt 14pt; background: #f1efe8; border-left: 3pt solid #1a1a1a; font-size: 11.5pt; }
+.references { margin-top: 24pt; padding-top: 8pt; border-top: 0.5pt solid #d3d1c7; font-size: 9.5pt; color: #5f5e5a; }
+</style>
+</head>
+<body>
+
+<h1>DA Market Insight - 사업부 영향 리포트</h1>
+<p class="subtitle">${escapeXml(report.subtitle || news.headline)}</p>
+<p class="meta">${dateStr} 발행 · 대상 사업부: ${escapeXml(
+    businessUnits.join(" / ")
+  )} · 기반 뉴스 신호: ${escapeXml(news.signal)}</p>
+
+${sectionsHtml}
+
+<div class="implication">
+<p style="margin: 0 0 4pt 0; font-size: 10pt; color: #5f5e5a;"><strong>마무리 시사점</strong></p>
+<p style="margin: 0; font-size: 11.5pt;">${escapeXml(report.implication)}</p>
+</div>
+
+<div class="references">
+<p style="margin: 0 0 4pt 0;"><strong>※ 참고자료</strong></p>
+<p style="margin: 0;">1. ${escapeXml(news.headline)} - ${escapeXml(
+    news.url
+  )}</p>
+</div>
+
+</body>
+</html>`;
+}
+
+function downloadDocx(html, filename) {
+  // html-docx-js 라이브러리가 로드되어 있으면 진짜 OOXML .docx 생성
+  if (typeof window.htmlDocx !== "undefined" && window.htmlDocx.asBlob) {
+    try {
+      const blob = window.htmlDocx.asBlob(html, {
+        orientation: "portrait",
+        margins: { top: 1134, right: 1020, bottom: 1134, left: 1020 },
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      return;
+    } catch (err) {
+      console.warn("docx 변환 실패, .doc fallback 사용:", err);
+    }
+  }
+
+  // Fallback: HTML 기반 .doc (데스크탑 Word 전용)
+  const blob = new Blob(["\ufeff", html], { type: "application/msword" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename.replace(/\.docx$/, ".doc");
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+async function generateReport() {
   const btn = document.getElementById("generateBtn");
   const checkedBus = Array.from(
-    document.querySelectorAll('#buCheckboxGroup input:checked')
+    document.querySelectorAll("#buCheckboxGroup input:checked")
   ).map((cb) => cb.value);
 
   if (checkedBus.length === 0) {
@@ -219,27 +513,60 @@ function generateReport() {
     return;
   }
 
-  // TODO: 실제 운영 시 백엔드 API 호출
-  // 예) POST /api/reports { newsId, businessUnits, analysisType }
-  //     → docx 파일 받아서 다운로드 트리거
+  let apiKey = getApiKey();
+  if (!apiKey) {
+    apiKey = promptForApiKey();
+    if (!apiKey) return;
+  }
 
   btn.disabled = true;
   btn.classList.add("btn--loading");
   btn.querySelector("i").className = "ti ti-loader-2";
-  btn.querySelector("span").textContent = "생성 중...";
+  btn.querySelector("span").textContent = "생성 중... (15초)";
 
-  setTimeout(() => {
+  try {
+    const news = state.selectedNews;
+    const report = await callClaudeForReport(apiKey, news, checkedBus);
+
+    if (
+      !report.sections ||
+      !Array.isArray(report.sections) ||
+      report.sections.length === 0
+    ) {
+      throw new Error("리포트 구조 검증 실패");
+    }
+
+    const html = buildReportHtml(report, news, checkedBus);
+    const safeBus = checkedBus.join("_").replace(/[^가-힣A-Za-z0-9_]/g, "");
+    const ts = new Date().toISOString().slice(0, 10);
+    const filename = `DA_Insight_${ts}_${safeBus}.docx`;
+    downloadDocx(html, filename);
+
+    closeReportModal();
+    showToast(`${checkedBus.length}개 사업부 리포트 다운로드 完了`, true);
+  } catch (err) {
+    console.error("리포트 생성 실패:", err);
+    const msg = err.message || String(err);
+    if (
+      msg.includes("401") ||
+      msg.includes("authentication_error") ||
+      msg.includes("invalid x-api-key")
+    ) {
+      clearApiKey();
+      showToast("API 키 인증 실패. 다시 입력해 주세요.", false);
+    } else if (msg.includes("429") || msg.includes("rate_limit")) {
+      showToast("API 호출 한도 초과. 잠시 後 다시 시도해 주세요.", false);
+    } else if (msg.includes("credit") || msg.includes("billing")) {
+      showToast("API 잔액 부족. 콘솔에서 충전해 주세요.", false);
+    } else {
+      showToast(`리포트 생성 실패: ${msg.slice(0, 60)}`, false);
+    }
+  } finally {
     btn.disabled = false;
     btn.classList.remove("btn--loading");
     btn.querySelector("i").className = "ti ti-file-text";
     btn.querySelector("span").textContent = "리포트 생성";
-
-    closeReportModal();
-    showToast(
-      `${checkedBus.length}개 사업부 기회·위협 리포트가 생성되었습니다`,
-      true
-    );
-  }, 1400);
+  }
 }
 
 function showToast(message, success = true) {
@@ -323,7 +650,7 @@ function formatUpdatedAt(isoString) {
 
 // ===== Init =====
 async function init() {
-  await loadNewsData();
+  await Promise.all([loadNewsData(), loadConfig()]);
   document.querySelector("#lastUpdated span").textContent = formatUpdatedAt(
     NEWS_UPDATED_AT
   );
