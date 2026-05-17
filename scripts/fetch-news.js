@@ -29,6 +29,7 @@ const CONFIG = JSON.parse(
 
 const NEWS_PATH = join(ROOT, "data", "news.json");
 const DRY_RUN = process.env.DRY_RUN === "1";
+const RUN_DATE = new Date().toISOString().slice(0, 10);
 
 const client = DRY_RUN
   ? null
@@ -80,6 +81,31 @@ function computeImpact(factors) {
     factors.marketSize * w.marketSize +
     factors.sourceReliability * w.sourceReliability;
   return Math.round(score * 10) / 10;
+}
+
+// ===== 제목·내용 유사도 (중복 기사 묶음용) =====
+function normForSim(s) {
+  return String(s || "").toLowerCase().replace(/[^가-힣a-z0-9]/g, "");
+}
+
+function bigramSet(s) {
+  const set = new Set();
+  for (let i = 0; i < s.length - 1; i++) set.add(s.slice(i, i + 2));
+  return set;
+}
+
+function jaccard(a, b) {
+  if (!a.size || !b.size) return 0;
+  let inter = 0;
+  for (const x of a) if (b.has(x)) inter++;
+  return inter / (a.size + b.size - inter);
+}
+
+function sharesEntity(a, b) {
+  const setA = new Set([...(a.competitors || []), ...(a.products || [])]);
+  return [...(b.competitors || []), ...(b.products || [])].some((x) =>
+    setA.has(x)
+  );
 }
 
 // ===== Load existing =====
@@ -169,6 +195,12 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
 - 가전사 무관 일반 금융 (주가, ETF, 환율, 부동산)
 - 연예, 스포츠, 사고, 일반 IT(반도체·통신 등)
 
+【시의성 검증 → "skip" 처리】
+입력의 [오늘 날짜]·[기사 발행일]을 기준으로, 이미 지난 일을 다루는 낡은 기사는 lens="skip":
+- 이미 종료된 '예정·예고' 이벤트 보도 (예: 오늘이 5월인데 "Q4 실적 발표 예정" → 해당 발표는 이미 1~2월에 종료됨)
+- 지난 분기·지난 시즌 내용을 현재 일처럼 보도하는 기사
+- 판단이 모호하면 skip 하지 말고 정상 분류하되 factors.timeUrgency 를 1로 부여
+
 【정상 분류】
 1. lens: 시각 카테고리, 다음 中 1개
    - "소비자": 가전 수요/트렌드/소비 패턴/가격/채택률
@@ -232,12 +264,18 @@ async function classifyOne(item, retry = false) {
         sourceReliability: 3,
       },
       headline: item.headline.slice(0, 30),
-      summary: "DRY_RUN 더미 요약.",
+      summary: `DRY_RUN 더미 요약: ${item.headline}`,
       tags: ["test"],
     };
   }
 
-  const userPrompt = `[원문 헤드라인]
+  const userPrompt = `[오늘 날짜]
+${RUN_DATE}
+
+[기사 발행일]
+${item.publishedAt}
+
+[원문 헤드라인]
 ${item.headline}
 
 [원문 발췌]
@@ -372,6 +410,59 @@ function prune(items) {
   return kept;
 }
 
+// 제목·내용이 유사한 같은 사건 기사를 1건으로 묶음 (영향도 높은 기사 유지)
+function dedupeMerged(items) {
+  const TH = CONFIG.dedupe?.similarityThreshold ?? 0.22;
+  const sig = items.map((it) => ({
+    hb: bigramSet(normForSim(it.headline)),
+    sb: bigramSet(normForSim(it.summary)),
+  }));
+  const textSim = (i, j) =>
+    0.65 * jaccard(sig[i].hb, sig[j].hb) + 0.35 * jaccard(sig[i].sb, sig[j].sb);
+
+  // union-find: 같은 경쟁사·제품을 공유하고 텍스트가 유사하면 동일 사건으로 묶음
+  const parent = items.map((_, i) => i);
+  const find = (x) => {
+    while (parent[x] !== x) {
+      parent[x] = parent[parent[x]];
+      x = parent[x];
+    }
+    return x;
+  };
+  for (let i = 0; i < items.length; i++) {
+    for (let j = i + 1; j < items.length; j++) {
+      if (sharesEntity(items[i], items[j]) && textSim(i, j) >= TH) {
+        parent[find(i)] = find(j);
+      }
+    }
+  }
+
+  const clusters = new Map();
+  items.forEach((it, i) => {
+    const root = find(i);
+    if (!clusters.has(root)) clusters.set(root, []);
+    clusters.get(root).push(it);
+  });
+
+  const kept = [];
+  let removed = 0;
+  for (const group of clusters.values()) {
+    if (group.length > 1) {
+      group.sort(
+        (a, b) =>
+          (b.impact || 0) - (a.impact || 0) ||
+          new Date(b.publishedAt) - new Date(a.publishedAt)
+      );
+      removed += group.length - 1;
+    }
+    kept.push(group[0]);
+  }
+  if (removed > 0) {
+    log(`중복 기사 묶음: ${removed}건 제거 (${items.length}건 → ${kept.length}건)`);
+  }
+  return kept;
+}
+
 // ===== Main =====
 async function main() {
   log("=== DA Market Insight v2 뉴스 갱신 시작 ===");
@@ -392,36 +483,25 @@ async function main() {
   const newOnes = dedupeAndFilter(fresh, existing);
   log(`중복·필터 後 분류 대상 ${newOnes.length}건`);
 
-  if (newOnes.length === 0) {
-    log("신규 분류 대상 없음, 보존 기간 정리만 수행");
-    const pruned = prune(existing.items);
-    if (pruned.length !== existing.items.length || isV1) {
-      await writeFile(
-        NEWS_PATH,
-        JSON.stringify(
-          {
-            updatedAt: new Date().toISOString(),
-            schemaVersion: "v2",
-            items: pruned,
-          },
-          null,
-          2
-        )
-      );
-      log("news.json 갱신");
-    } else {
-      log("변경 없음");
-    }
-    return;
-  }
-
   const startId = Math.max(0, ...existing.items.map((i) => i.id || 0)) + 1;
-  const classified = await classifyAll(newOnes, startId);
-  log(`AI 분류 완료: ${classified.length}건 저장 대상`);
+  const classified = newOnes.length
+    ? await classifyAll(newOnes, startId)
+    : [];
+  if (newOnes.length === 0) log("신규 분류 대상 없음");
+  else log(`AI 분류 완료: ${classified.length}건 저장 대상`);
 
-  const merged = prune([...classified, ...existing.items]).sort(
+  // 보존 기간 정리 → 같은 사건 기사 묶음 → 최신순 정렬
+  const pruned = prune([...classified, ...existing.items]);
+  const merged = dedupeMerged(pruned).sort(
     (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
   );
+
+  const changed =
+    isV1 || classified.length > 0 || merged.length !== existing.items.length;
+  if (!changed) {
+    log("변경 없음");
+    return;
+  }
 
   await writeFile(
     NEWS_PATH,

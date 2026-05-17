@@ -168,6 +168,11 @@
     "참고": 14
   },
 
+  "dedupe": {
+    "_comment": "제목·내용이 유사한 같은 사건 기사를 1건으로 묶음. similarityThreshold(0~1) 높을수록 보수적.",
+    "similarityThreshold": 0.22
+  },
+
   "limits": {
     "_comment": "1회 실행 처리 제한 (API 비용 보호용).",
     "maxArticlesPerRun": 40,
