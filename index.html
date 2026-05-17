@@ -34,13 +34,13 @@
     </header>
 
     <section class="stats-grid" aria-label="액션 등급별 KPI">
-      <div class="stat-card stat-card--neutral">
+      <div class="stat-card stat-card--neutral" data-grade="" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">금일 수집</p>
         <p class="stat-card__value">
           <span id="statTotal">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--urgent">
+      <div class="stat-card stat-card--urgent" data-grade="긴급" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">
           <i class="ti ti-diamond-filled" aria-hidden="true"></i>긴급
         </p>
@@ -48,7 +48,7 @@
           <span id="statUrgent">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--major">
+      <div class="stat-card stat-card--major" data-grade="주요" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">
           <span class="dot-amber" aria-hidden="true"></span>주요
         </p>
@@ -56,7 +56,7 @@
           <span id="statMajor">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--watch">
+      <div class="stat-card stat-card--watch" data-grade="주시" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">
           <span class="dot-blue" aria-hidden="true"></span>주시
         </p>
@@ -92,6 +92,10 @@
     <section class="result-bar">
       <div class="result-bar__left">
         결과 <strong id="resultCount">0</strong>건
+        <button class="tag-filter-clear" id="tagFilterClear" hidden>
+          <span id="tagFilterLabel"></span>
+          <i class="ti ti-x" aria-hidden="true"></i>
+        </button>
       </div>
       <div class="result-bar__right">
         <div class="control-group">
@@ -133,7 +137,7 @@
     <footer class="page-footer">
       <i class="ti ti-info-circle" aria-hidden="true"></i>
       <span>
-        각 카드의 [리포트 ↗] 클릭 → 제품 선택 → 기회·위협 1페이지 docx 자동 생성
+        각 카드의 [리포트 생성] 클릭 → 제품 선택 → 기회·위협 1페이지 docx 자동 생성
       </span>
     </footer>
   </main>

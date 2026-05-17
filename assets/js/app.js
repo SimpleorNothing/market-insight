@@ -26,7 +26,7 @@ const GRADE_ORDER = ["긴급", "주요", "주시", "참고"];
 const LENS_ORDER = ["소비자", "기술", "경쟁사", "정책", "거시"];
 
 const GRADE_MEANING = {
-  긴급: "즉시 임원 보고",
+  긴급: "즉시 경영진 보고",
   주요: "주간 정기 보고",
   주시: "모니터링 지속",
   참고: "백그라운드 적재",
@@ -47,6 +47,8 @@ const state = {
   lens: "전체",
   products: new Set(),
   competitors: new Set(),
+  grade: null,
+  tag: null,
   sort: "latest",
   group: "grade",
   view: "card",
@@ -117,6 +119,19 @@ async function loadNewsData() {
 // ===== Filter logic =====
 function getFilteredNews() {
   return NEWS_DATA.filter((n) => {
+    // 액션 등급 필터 (상단 KPI 카드 클릭)
+    if (state.grade && n.grade !== state.grade) return false;
+
+    // 키워드 태그 필터 (카드 하단 # 클릭)
+    if (state.tag) {
+      const haystack = [
+        ...(n.competitors || []),
+        ...(n.products || []),
+        ...(n.tags || []),
+      ];
+      if (!haystack.includes(state.tag)) return false;
+    }
+
     // 렌즈 필터
     if (state.lens !== "전체" && n.lens !== state.lens) return false;
 
@@ -180,6 +195,16 @@ function renderStats() {
     all.filter((n) => n.grade === "주요").length;
   document.getElementById("statWatch").textContent =
     all.filter((n) => n.grade === "주시").length;
+  updateStatSelection();
+}
+
+function updateStatSelection() {
+  document.querySelectorAll(".stat-card[data-grade]").forEach((card) => {
+    const grade = card.dataset.grade || null;
+    const active = grade === state.grade;
+    card.classList.toggle("is-selected", active);
+    card.setAttribute("aria-pressed", active ? "true" : "false");
+  });
 }
 
 function renderLensChips() {
@@ -275,6 +300,7 @@ function renderFilterRowsState() {
 function renderResult() {
   const filtered = getFilteredNews();
   document.getElementById("resultCount").textContent = filtered.length;
+  updateTagFilterChip();
 
   const empty = document.getElementById("emptyState");
   const area = document.getElementById("resultArea");
@@ -305,6 +331,40 @@ function renderResult() {
       openReportModal(id);
     });
   });
+
+  area.querySelectorAll(".tag[data-tag]").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      setTagFilter(e.currentTarget.dataset.tag);
+    });
+  });
+}
+
+// ===== Grade / Tag filters =====
+function setGradeFilter(grade) {
+  // grade: "" (전체) | "긴급" | "주요" | "주시"
+  state.grade = !grade ? null : state.grade === grade ? null : grade;
+  updateStatSelection();
+  renderResult();
+}
+
+function setTagFilter(tag) {
+  state.tag = state.tag === tag ? null : tag;
+  renderResult();
+}
+
+function clearTagFilter() {
+  state.tag = null;
+  renderResult();
+}
+
+function updateTagFilterChip() {
+  const chip = document.getElementById("tagFilterClear");
+  if (state.tag) {
+    document.getElementById("tagFilterLabel").textContent = `#${state.tag}`;
+    chip.hidden = false;
+  } else {
+    chip.hidden = true;
+  }
 }
 
 function makeGroups(items) {
@@ -397,19 +457,24 @@ function renderCard(n) {
           ${escapeHtml(n.grade)} · ${(n.impact ?? 0).toFixed(1)}
         </span>
       </div>
-      <h3 class="news-card__headline">${escapeHtml(n.headline)}</h3>
+      <h3 class="news-card__headline">
+        <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.headline)}</a>
+      </h3>
       <p class="news-card__summary">${escapeHtml(n.summary)}</p>
       <div class="news-card__bottom">
         <div class="news-card__tags">
-          ${allTags.map((t) => `<span class="tag">#${escapeHtml(t)}</span>`).join("")}
+          ${allTags
+            .map(
+              (t) =>
+                `<button type="button" class="tag${state.tag === t ? " is-active" : ""}" data-tag="${escapeHtml(t)}">#${escapeHtml(t)}</button>`
+            )
+            .join("")}
         </div>
         <div class="news-card__actions">
-          <button class="news-card__action" data-report-id="${n.id}" title="리포트 생성">
+          <button class="news-card__action news-card__action--report" data-report-id="${n.id}">
             <i class="ti ti-file-text" aria-hidden="true"></i>
+            <span>리포트 생성</span>
           </button>
-          <a class="news-card__action" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer" title="원문 보기">
-            <i class="ti ti-external-link" aria-hidden="true"></i>
-          </a>
         </div>
       </div>
     </article>
@@ -425,21 +490,22 @@ const REPORT_SYSTEM_PROMPT = `당신은 'Herald'입니다. 가전 산업 시장 
 - 거절 응답·영문 회피 응답 일체 금지
 
 【리포트 구조】
-1페이지 분량. 다음 3개 본문 섹션 + 마무리:
+A4 1페이지 분량 엄수 (초과 절대 금지). 다음 3개 본문 섹션 + 마무리:
 1. 핵심 신호 (signal): 뉴스 사실 요약
 2. 당사 기회 (opportunity): 선택 제품에 미치는 기회
 3. 당사 위협 (threat): 선택 제품에 미치는 위협
 4. implication: 마무리 시사점
 
 【작성 규칙】
-- 헤드라인 30자 이내, 결론 + 수치
+- 헤드라인 30자 이내, 결론 + 수치, 기호·번호 없이 본문만
+- 각 섹션 items는 1~2개로 제한 (A4 1페이지 분량 엄수)
 - 첫머리 연결어 (우선/그 결과/한편/이에 따라/종합하면/가장 먼저)
 - L2 본문은 28~36자 內外, 정량 수치 1개 以上 권장
 - '당사' 호칭 통일 (자사 금지)
 - 한자 약어 가능 (時·可·後·內·等)
 - 모호 표현 금지 (필요·검토·강화)
 - 기회·위협 섹션은 선택 제품의 KPI·경쟁사를 반드시 1개 以上 참조
-- 마무리 시사점: '당사' 주어 시작, 액션 동사 종결
+- 마무리 시사점: '당사' 주어 시작, 액션 동사 종결, 2문장 이내
 
 【출력 스키마】
 {
@@ -447,17 +513,17 @@ const REPORT_SYSTEM_PROMPT = `당신은 'Herald'입니다. 가전 산업 시장 
   "sections": [
     {
       "type": "signal",
-      "headline": "□ 헤드라인",
+      "headline": "헤드라인 (기호 없이 본문만)",
       "items": [{"level": 2, "text": "L2 본문"}]
     },
     {
       "type": "opportunity",
-      "headline": "□ 헤드라인",
+      "headline": "헤드라인 (기호 없이 본문만)",
       "items": [{"level": 2, "text": "..."}]
     },
     {
       "type": "threat",
-      "headline": "□ 헤드라인",
+      "headline": "헤드라인 (기호 없이 본문만)",
       "items": [{"level": 2, "text": "..."}]
     }
   ],
@@ -566,8 +632,8 @@ ${buContextLines.join("\n\n")}
 function buildReportHtml(report, news, products) {
   const sectionLabels = {
     signal: { name: "핵심 신호", color: "#1a1a1a" },
-    opportunity: { name: "당사 기회 (Opportunity)", color: "#0c447c" },
-    threat: { name: "당사 위협 (Threat)", color: "#a32d2d" },
+    opportunity: { name: "당사 기회", color: "#0c447c" },
+    threat: { name: "당사 위협", color: "#a32d2d" },
   };
 
   const now = new Date();
@@ -578,16 +644,19 @@ function buildReportHtml(report, news, products) {
   const sectionsHtml = report.sections
     .map((s) => {
       const label = sectionLabels[s.type] || { name: s.type, color: "#1a1a1a" };
+      // 머리 기호(□·-·번호)·공백 제거 → 라벨과 헤드라인을 1줄로 결합
+      const headline = String(s.headline || "")
+        .replace(/^[\s□■▪◆·.\-]+/, "")
+        .trim();
       const itemsHtml = (s.items || [])
         .map(
           (it) =>
-            `<p style="margin: 6pt 0 6pt 20pt; font-size: 11.5pt;">- ${escapeXml(it.text)}</p>`
+            `<p style="margin: 3pt 0 3pt 16pt; font-size: 10pt;">- ${escapeXml(it.text)}</p>`
         )
         .join("");
       return `
-        <div style="margin-top: 16pt;">
-          <p style="font-size: 11pt; color: ${label.color}; margin: 0 0 4pt 0; font-weight: bold;">[${label.name}]</p>
-          <p style="font-size: 13pt; margin: 0; font-weight: bold; color: #1a1a1a;">□ ${escapeXml(s.headline)}</p>
+        <div style="margin-top: 9pt;">
+          <p style="margin: 0; font-size: 11pt; font-weight: bold;"><span style="color: ${label.color};">[${label.name}]</span>&nbsp;&nbsp;<span style="color: #1a1a1a;">${escapeXml(headline)}</span></p>
           ${itemsHtml}
         </div>
       `;
@@ -600,26 +669,26 @@ function buildReportHtml(report, news, products) {
 <meta charset='utf-8'>
 <title>DA Market Insight Report</title>
 <style>
-@page { size: A4; margin: 2cm 1.8cm; }
-body { font-family: '맑은 고딕', 'Malgun Gothic', sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; }
-h1 { font-size: 20pt; margin: 0 0 4pt 0; }
-.subtitle { font-size: 12pt; color: #5f5e5a; margin: 0 0 4pt 0; }
-.meta { font-size: 9.5pt; color: #888780; margin: 0 0 14pt 0; padding-bottom: 8pt; border-bottom: 0.5pt solid #d3d1c7; }
-.implication { margin-top: 22pt; padding: 10pt 14pt; background: #f1efe8; border-left: 3pt solid #1a1a1a; font-size: 11.5pt; }
-.references { margin-top: 24pt; padding-top: 8pt; border-top: 0.5pt solid #d3d1c7; font-size: 9.5pt; color: #5f5e5a; }
+@page { size: A4; margin: 1.4cm 1.5cm; }
+body { font-family: '맑은 고딕', 'Malgun Gothic', sans-serif; font-size: 10.5pt; line-height: 1.45; color: #1a1a1a; }
+h1 { font-size: 15pt; margin: 0 0 2pt 0; }
+.subtitle { font-size: 11pt; color: #5f5e5a; margin: 0 0 3pt 0; }
+.meta { font-size: 8.5pt; color: #888780; margin: 0 0 6pt 0; padding-bottom: 5pt; border-bottom: 0.5pt solid #d3d1c7; }
+.implication { margin-top: 11pt; padding: 7pt 11pt; background: #f1efe8; border-left: 3pt solid #1a1a1a; }
+.references { margin-top: 10pt; padding-top: 5pt; border-top: 0.5pt solid #d3d1c7; font-size: 8.5pt; color: #5f5e5a; }
 </style>
 </head>
 <body>
-<h1>DA Market Insight - 사업부 영향 리포트</h1>
+<h1>DA Market Insight · 사업부 영향 리포트</h1>
 <p class="subtitle">${escapeXml(report.subtitle || news.headline)}</p>
 <p class="meta">${dateStr} 발행 · 대상 제품: ${escapeXml(products.join(" / "))} · 등급: ${escapeXml(news.grade)} · 영향도 ${(news.impact || 0).toFixed(1)}</p>
 ${sectionsHtml}
 <div class="implication">
-<p style="margin: 0 0 4pt 0; font-size: 10pt; color: #5f5e5a;"><strong>마무리 시사점</strong></p>
-<p style="margin: 0; font-size: 11.5pt;">${escapeXml(report.implication)}</p>
+<p style="margin: 0 0 2pt 0; font-size: 9pt; color: #5f5e5a; font-weight: bold;">마무리 시사점</p>
+<p style="margin: 0; font-size: 10.5pt;">${escapeXml(report.implication)}</p>
 </div>
 <div class="references">
-<p style="margin: 0 0 4pt 0;"><strong>※ 참고자료</strong></p>
+<p style="margin: 0 0 2pt 0;"><strong>※ 참고자료</strong></p>
 <p style="margin: 0;">1. ${escapeXml(news.headline)} - ${escapeXml(news.url)}</p>
 </div>
 </body>
@@ -631,7 +700,7 @@ function downloadDocx(html, filename) {
     try {
       const blob = window.htmlDocx.asBlob(html, {
         orientation: "portrait",
-        margins: { top: 1134, right: 1020, bottom: 1134, left: 1020 },
+        margins: { top: 794, right: 850, bottom: 794, left: 850 },
       });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -777,6 +846,17 @@ function bindEvents() {
       renderResult();
     });
   });
+  document.querySelectorAll(".stat-card[data-grade]").forEach((card) => {
+    const handler = () => setGradeFilter(card.dataset.grade);
+    card.addEventListener("click", handler);
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handler();
+      }
+    });
+  });
+  document.getElementById("tagFilterClear").addEventListener("click", clearTagFilter);
   document.querySelectorAll("[data-close]").forEach((el) => {
     el.addEventListener("click", closeReportModal);
   });
