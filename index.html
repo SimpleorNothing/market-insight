@@ -72,18 +72,18 @@
         <div class="filter-row__chips" id="lensChips" role="radiogroup"></div>
         <span class="filter-row__hint">단일선택</span>
       </div>
-      <div class="filter-row" id="productRow">
-        <span class="filter-row__label">제품</span>
-        <div class="filter-row__chips" id="productChips"></div>
-        <span class="filter-row__hint">
-          다중선택 · <span id="productCount">0</span>개
-        </span>
-      </div>
       <div class="filter-row" id="competitorRow">
         <span class="filter-row__label">경쟁사</span>
         <div class="filter-row__chips" id="competitorChips"></div>
         <span class="filter-row__hint">
           다중선택 · <span id="competitorCount">0</span>개
+        </span>
+      </div>
+      <div class="filter-row" id="productRow">
+        <span class="filter-row__label">제품</span>
+        <div class="filter-row__chips" id="productChips"></div>
+        <span class="filter-row__hint">
+          다중선택 · <span id="productCount">0</span>개
         </span>
       </div>
       <div class="filter-hint-banner" id="filterHintBanner" hidden></div>
@@ -111,8 +111,8 @@
           <select id="groupSelect">
             <option value="grade">액션 등급별</option>
             <option value="lens">시각별</option>
-            <option value="product">제품별</option>
             <option value="competitor">경쟁사별</option>
+            <option value="product">제품별</option>
             <option value="none">그룹 없음</option>
           </select>
         </div>

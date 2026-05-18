@@ -89,8 +89,26 @@
     "Trane",
     "JCI",
     "Daikin",
-    "Lennox"
+    "Lennox",
+    "Haier"
   ],
+
+  "competitorBrands": {
+    "_comment": "경쟁사별 자회사·하위 브랜드. 본문에 하위 브랜드가 등장하면 모기업 경쟁사로 분류.",
+    "LG전자": ["LG SIGNATURE"],
+    "월풀": ["Maytag", "KitchenAid", "JennAir", "Amana"],
+    "Electrolux": ["Frigidaire", "AEG", "Zanussi"],
+    "삼성전자": ["Dacor"],
+    "BSH": ["Bosch", "Siemens", "Gaggenau", "Neff", "Thermador"],
+    "Midea": ["Comfee", "COLMO", "Little Swan"],
+    "Gree": ["TOSOT", "Kinghome"],
+    "Carrier": ["Bryant", "Viessmann"],
+    "Trane": ["American Standard(공조)", "Thermo King"],
+    "JCI": ["York", "Coleman"],
+    "Daikin": ["Goodman"],
+    "Lennox": ["Armstrong Air", "Ducane"],
+    "Haier": ["GE Appliances", "Candy", "Fisher & Paykel", "Casarte"]
+  },
 
   "gradeThresholds": {
     "긴급": 4.5,
@@ -115,22 +133,22 @@
   "productContext": {
     "냉장고": {
       "keywords": ["냉장고", "비스포크 냉장고", "쇼케이스", "냉동고", "와인셀러", "refrigerator", "fridge"],
-      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH", "Midea"],
+      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH", "Midea", "Haier"],
       "kpis": ["프리미엄 ASP", "북미 M/S", "에너지 효율 등급"]
     },
     "세탁기": {
       "keywords": ["세탁기", "워시타워", "콤보", "washer", "laundry"],
-      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH"],
+      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH", "Haier"],
       "kpis": ["프리미엄 비중", "美 M/S", "AI 세탁 채택률"]
     },
     "건조기": {
       "keywords": ["건조기", "dryer", "heat pump dryer", "히트펌프 건조"],
-      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH"],
+      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH", "Haier"],
       "kpis": ["히트펌프 비중", "에너지 효율 등급"]
     },
     "조리기기": {
       "keywords": ["오븐", "전자레인지", "쿡탑", "후드", "인덕션", "oven", "cooktop", "microwave"],
-      "majorCompetitors": ["LG전자", "BSH", "월풀", "Midea"],
+      "majorCompetitors": ["LG전자", "BSH", "월풀", "Midea", "Haier"],
       "kpis": ["빌트인 채택률", "프리미엄 라인 매출"]
     },
     "HVAC": {
@@ -166,6 +184,11 @@
     "주요": 45,
     "주시": 30,
     "참고": 14
+  },
+
+  "dedupe": {
+    "_comment": "제목·내용이 유사한 같은 사건 기사를 1건으로 묶음. similarityThreshold(0~1) 높을수록 보수적.",
+    "similarityThreshold": 0.22
   },
 
   "limits": {
