@@ -12,6 +12,14 @@ const LENSES = ["전체", "소비자", "기술", "경쟁사", "정책", "거시"
 const PRODUCTS = [];
 const COMPETITORS = [];
 
+// 조회기간 프리셋 (days: null = 전체)
+const PERIODS = [
+  { label: "전체", days: null },
+  { label: "1일", days: 1 },
+  { label: "1주", days: 7 },
+  { label: "1개월", days: 30 },
+];
+
 // 렌즈別 활성/비활성 규칙
 const LENS_ACTIVATION = {
   전체:    { product: true,  competitor: true },
@@ -45,6 +53,7 @@ let CONFIG = null;
 
 const state = {
   lens: "전체",
+  period: null,
   products: new Set(),
   competitors: new Set(),
   grade: null,
@@ -121,6 +130,12 @@ function getFilteredNews() {
   return NEWS_DATA.filter((n) => {
     // 액션 등급 필터 (상단 KPI 카드 클릭)
     if (state.grade && n.grade !== state.grade) return false;
+
+    // 조회기간 필터 (발행일 기준)
+    if (state.period) {
+      const cutoff = Date.now() - state.period * 24 * 60 * 60 * 1000;
+      if (new Date(n.publishedAt).getTime() < cutoff) return false;
+    }
 
     // 키워드 태그 필터 (카드 하단 # 클릭)
     if (state.tag) {
@@ -204,6 +219,25 @@ function updateStatSelection() {
     const active = grade === state.grade;
     card.classList.toggle("is-selected", active);
     card.setAttribute("aria-pressed", active ? "true" : "false");
+  });
+}
+
+function renderPeriodChips() {
+  const container = document.getElementById("periodChips");
+  container.innerHTML = "";
+  PERIODS.forEach((p) => {
+    const btn = document.createElement("button");
+    btn.className = "chip";
+    if (state.period === p.days) btn.classList.add("chip--active");
+    btn.textContent = p.label;
+    btn.setAttribute("role", "radio");
+    btn.setAttribute("aria-checked", state.period === p.days ? "true" : "false");
+    btn.addEventListener("click", () => {
+      state.period = p.days;
+      renderPeriodChips();
+      renderResult();
+    });
+    container.appendChild(btn);
   });
 }
 
@@ -873,6 +907,7 @@ async function init() {
   await Promise.all([loadConfig(), loadNewsData()]);
   renderHeader();
   renderStats();
+  renderPeriodChips();
   renderLensChips();
   renderProductChips();
   renderCompetitorChips();
