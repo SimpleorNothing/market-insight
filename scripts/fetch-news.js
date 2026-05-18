@@ -180,6 +180,15 @@ function dedupeAndFilter(fresh, existing) {
 }
 
 // ===== Classify via Claude API =====
+const COMPETITOR_LIST = CONFIG.competitors
+  .map((name) => {
+    const brands = CONFIG.competitorBrands?.[name] || [];
+    return brands.length
+      ? `   - ${name} (하위 브랜드: ${brands.join(", ")})`
+      : `   - ${name}`;
+  })
+  .join("\n");
+
 const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 동향 뉴스 분류 전문가입니다.
 
 【출력 형식 — 절대 규칙】
@@ -205,7 +214,7 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
 1. lens: 시각 카테고리, 다음 中 1개
    - "소비자": 가전 수요/트렌드/소비 패턴/가격/채택률
    - "기술": 신기술/R&D/부품/소재/AI·IoT 기능 (회사 비특정)
-   - "경쟁사": 12개 경쟁사의 동향 (회사명 직접 등장)
+   - "경쟁사": ${CONFIG.competitors.length}개 경쟁사의 동향 (회사명 직접 등장)
    - "정책": 에너지·환경 규제/관세/보조금/표준
    - "거시": 환율/원자재/주택시장 등 가전 산업 영향
 
@@ -213,8 +222,10 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
    "냉장고", "세탁기", "건조기", "조리기기", "HVAC", "청소기", "식기세척기" 中 해당하는 모두
 
 3. competitors: 관련 경쟁사 (배열, 0개 이상)
-   "LG전자", "월풀", "Electrolux", "삼성전자", "BSH", "Midea", "Gree",
-   "Carrier", "Trane", "JCI", "Daikin", "Lennox" 中 본문 내 명시적 등장하는 모두
+   아래 목록 中 본문에 명시적으로 등장하는 모기업명을 모두 선택.
+   ★ 자회사·하위 브랜드가 등장하면 반드시 모기업 경쟁사명으로 분류
+     (예: "GE Appliances"→"Haier", "KitchenAid"→"월풀", "Bosch"·"Siemens"→"BSH")
+${COMPETITOR_LIST}
 
 4. factors: 영향도 4 인자 (각 1~5 정수)
    - salesRelevance: 당사 매출 비중 영향도 (해당 제품·지역의 매출 비중)
