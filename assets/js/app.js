@@ -223,7 +223,8 @@ function renderHeader() {
 }
 
 function renderStats() {
-  const all = NEWS_DATA;
+  const cutoff = Date.now() - 24 * 60 * 60 * 1000;
+  const all = NEWS_DATA.filter((n) => new Date(n.publishedAt).getTime() >= cutoff);
   document.getElementById("statTotal").textContent = all.length;
   document.getElementById("statUrgent").textContent =
     all.filter((n) => n.grade === "긴급").length;
