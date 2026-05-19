@@ -129,10 +129,10 @@ async function loadNewsData() {
 }
 
 // ===== Filter logic =====
-function getFilteredNews() {
+function getFilteredNews(opts = {}) {
   return NEWS_DATA.filter((n) => {
-    // 액션 등급 필터 (상단 KPI 카드 클릭)
-    if (state.grade && n.grade !== state.grade) return false;
+    // 액션 등급 필터 (상단 KPI 카드 클릭) — KPI 집계 時 무시
+    if (!opts.ignoreGrade && state.grade && n.grade !== state.grade) return false;
 
     // 조회기간 필터 — 직접 지정 범위 우선, 없으면 프리셋
     if (state.dateFrom || state.dateTo) {
@@ -223,8 +223,7 @@ function renderHeader() {
 }
 
 function renderStats() {
-  const cutoff = Date.now() - 24 * 60 * 60 * 1000;
-  const all = NEWS_DATA.filter((n) => new Date(n.publishedAt).getTime() >= cutoff);
+  const all = getFilteredNews({ ignoreGrade: true });
   document.getElementById("statTotal").textContent = all.length;
   document.getElementById("statUrgent").textContent =
     all.filter((n) => n.grade === "긴급").length;
@@ -360,6 +359,7 @@ function renderFilterRowsState() {
 }
 
 function renderResult() {
+  renderStats();
   const filtered = getFilteredNews();
   document.getElementById("resultCount").textContent = filtered.length;
   updateTagFilterChip();
