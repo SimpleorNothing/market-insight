@@ -316,6 +316,52 @@ body {
   font-weight: 500;
 }
 
+.keyword-search {
+  flex: 1;
+  height: 32px;
+  font-size: 13px;
+  font-family: inherit;
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  padding: 0 12px;
+  appearance: none;
+}
+
+.keyword-search:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.date-range__input {
+  height: 30px;
+  font-size: 12.5px;
+  font-family: inherit;
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.date-range__input:hover {
+  border-color: var(--border-strong);
+}
+
+.date-range__sep {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
 .filter-hint-banner {
   margin-top: 12px;
   padding: 10px 14px;
