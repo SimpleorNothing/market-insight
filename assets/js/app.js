@@ -54,6 +54,9 @@ let CONFIG = null;
 const state = {
   lens: "전체",
   period: null,
+  dateFrom: null,
+  dateTo: null,
+  keyword: "",
   products: new Set(),
   competitors: new Set(),
   grade: null,
@@ -131,10 +134,28 @@ function getFilteredNews() {
     // 액션 등급 필터 (상단 KPI 카드 클릭)
     if (state.grade && n.grade !== state.grade) return false;
 
-    // 조회기간 필터 (발행일 기준)
-    if (state.period) {
+    // 조회기간 필터 — 직접 지정 범위 우선, 없으면 프리셋
+    if (state.dateFrom || state.dateTo) {
+      const t = new Date(n.publishedAt).getTime();
+      if (state.dateFrom && t < new Date(state.dateFrom + "T00:00:00").getTime()) return false;
+      if (state.dateTo && t > new Date(state.dateTo + "T23:59:59.999").getTime()) return false;
+    } else if (state.period) {
       const cutoff = Date.now() - state.period * 24 * 60 * 60 * 1000;
       if (new Date(n.publishedAt).getTime() < cutoff) return false;
+    }
+
+    // 키워드 검색 (제목·요약·태그·경쟁사·제품)
+    if (state.keyword) {
+      const hay = [
+        n.headline,
+        n.summary,
+        ...(n.tags || []),
+        ...(n.competitors || []),
+        ...(n.products || []),
+      ]
+        .join(" ")
+        .toLowerCase();
+      if (!hay.includes(state.keyword)) return false;
     }
 
     // 키워드 태그 필터 (카드 하단 # 클릭)
@@ -225,15 +246,21 @@ function updateStatSelection() {
 function renderPeriodChips() {
   const container = document.getElementById("periodChips");
   container.innerHTML = "";
+  const customActive = !!(state.dateFrom || state.dateTo);
   PERIODS.forEach((p) => {
     const btn = document.createElement("button");
     btn.className = "chip";
-    if (state.period === p.days) btn.classList.add("chip--active");
+    const active = !customActive && state.period === p.days;
+    if (active) btn.classList.add("chip--active");
     btn.textContent = p.label;
     btn.setAttribute("role", "radio");
-    btn.setAttribute("aria-checked", state.period === p.days ? "true" : "false");
+    btn.setAttribute("aria-checked", active ? "true" : "false");
     btn.addEventListener("click", () => {
       state.period = p.days;
+      state.dateFrom = null;
+      state.dateTo = null;
+      document.getElementById("dateFrom").value = "";
+      document.getElementById("dateTo").value = "";
       renderPeriodChips();
       renderResult();
     });
@@ -870,6 +897,27 @@ function bindEvents() {
     state.group = e.target.value;
     renderResult();
   });
+
+  document.getElementById("keywordSearch").addEventListener("input", (e) => {
+    state.keyword = e.target.value.trim().toLowerCase();
+    renderResult();
+  });
+
+  const dateFrom = document.getElementById("dateFrom");
+  const dateTo = document.getElementById("dateTo");
+  const now = new Date();
+  const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  dateFrom.max = todayStr;
+  dateTo.max = todayStr;
+  function onDateRangeChange() {
+    state.dateFrom = dateFrom.value || null;
+    state.dateTo = dateTo.value || null;
+    if (state.dateFrom || state.dateTo) state.period = null;
+    renderPeriodChips();
+    renderResult();
+  }
+  dateFrom.addEventListener("change", onDateRangeChange);
+  dateTo.addEventListener("change", onDateRangeChange);
   document.querySelectorAll(".view-toggle__btn").forEach((b) => {
     b.addEventListener("click", () => {
       document.querySelectorAll(".view-toggle__btn").forEach((x) =>
