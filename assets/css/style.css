@@ -772,21 +772,11 @@ body {
 }
 
 .result-area.is-list .news-card {
-  padding: 10px 14px 10px 18px;
-}
-
-.result-area.is-list .news-card__summary,
-.result-area.is-list .news-card__tags {
-  display: none;
+  padding: 14px 18px 12px 22px;
 }
 
 .result-area.is-list .news-card__headline {
-  font-size: 13.5px;
-  margin: 0;
-}
-
-.result-area.is-list .news-card__bottom {
-  margin-top: 4px;
+  font-size: 14px;
 }
 
 /* ===== Empty ===== */
