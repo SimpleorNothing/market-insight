@@ -53,7 +53,7 @@ let CONFIG = null;
 
 const state = {
   lens: "전체",
-  period: null,
+  period: 1,
   dateFrom: null,
   dateTo: null,
   keyword: "",
