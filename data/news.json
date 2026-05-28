@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T10:45:28.101Z",
+  "updatedAt": "2026-05-28T14:29:44.819Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -512,6 +512,41 @@
       "url": "https://www.marketscreener.com/news/ubs-short-position-in-h-shares-of-midea-group-increases-to-4-23-on-may-20-hkex-filing-shows-ce7f5ad2d08df121"
     },
     {
+      "id": 275,
+      "lens": "기술",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기",
+        "HVAC",
+        "청소기"
+      ],
+      "competitors": [],
+      "tags": [
+        "AI음성인식",
+        "스마트홈",
+        "자동제어",
+        "사용자경험",
+        "기술혁신"
+      ],
+      "headline": "LG, 일상 음성 인식 AI홈 기술 개발…자동 제어 기능 확보",
+      "summary": "LG전자가 일상적 음성을 인식하고 가전기기를 자동으로 제어하는 AI홈 기술을 개발했다. 음성 인식 정확도 향상으로 사용자 경험을 개선하고 스마트홈 시장 주도권 강화를 목표로 한다. 글로벌 경쟁사 대비 기술 차별성을 통한 시장 점유율 확대 전략으로 평가된다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://en.sedaily.com/markets/2026/05/27/lg-electronics-targets-5-million-ai-home-units-with-smart"
+      },
+      "publishedAt": "2026-05-27T09:32:14.000Z",
+      "url": "https://en.sedaily.com/markets/2026/05/27/lg-electronics-targets-5-million-ai-home-units-with-smart"
+    },
+    {
       "id": 229,
       "lens": "경쟁사",
       "grade": "주요",
@@ -777,8 +812,8 @@
       "url": "https://www.mk.co.kr/en/business/12058620"
     },
     {
-      "id": 228,
-      "lens": "기술",
+      "id": 276,
+      "lens": "경쟁사",
       "grade": "긴급",
       "impact": 4.5,
       "factors": {
@@ -790,27 +825,26 @@
       "products": [
         "냉장고",
         "세탁기",
-        "건조기",
         "조리기기",
-        "HVAC",
         "청소기"
       ],
-      "competitors": [],
+      "competitors": [
+        "LG전자"
+      ],
       "tags": [
         "AI가전",
         "스마트홈",
-        "생태계전략",
-        "LG전자",
-        "글로벌확장"
+        "생태계",
+        "LG전자전략"
       ],
-      "headline": "LG전자, AI 홈 500만 대 보급 목표…스마트 가전 생태계 확대",
-      "summary": "LG전자가 AI 기반 홈 생태계 구축을 통해 500만 대의 AI 가전 보급을 목표로 설정했다. 스마트 가전 제품군을 통합한 생태계 전략으로 글로벌 시장 점유율 확대를 추진 중이다.",
+      "headline": "LG전자, AI 스마트 가전 에코시스템으로 500만 가구 목표",
+      "summary": "LG전자가 AI 기술을 탑재한 스마트 가전 에코시스템으로 향후 500만 가구 보급을 목표로 선언했다. 냉장고, 세탁기, 조리기기 등 주요 가전제품에 AI 통합을 추진하며 글로벌 가전 시장에서 스마트홈 경쟁력 강화에 나섰다.",
       "source": {
         "name": "Google News - LG Global",
-        "url": "https://en.sedaily.com/finance/2026/05/27/lg-electronics-targets-5-million-ai-home-units-with-smart"
+        "url": "https://en.sedaily.com/news/2026/05/27/lg-electronics-targets-5-million-ai-home-units-with-smart"
       },
       "publishedAt": "2026-05-27T02:00:05.000Z",
-      "url": "https://en.sedaily.com/finance/2026/05/27/lg-electronics-targets-5-million-ai-home-units-with-smart"
+      "url": "https://en.sedaily.com/news/2026/05/27/lg-electronics-targets-5-million-ai-home-units-with-smart"
     },
     {
       "id": 271,
