@@ -133,21 +133,23 @@ async function decodeGoogleNewsUrl(url) {
   try {
     const idMatch = url.match(/\/articles\/([^?\/]+)/);
     if (!idMatch) return url;
-    const articleIdFromUrl = idMatch[1];
+    const base64ArticleId = idMatch[1];
 
+    // 서명·타임스탬프는 /rss/articles 페이지의 c-wiz 속성에서 얻는다.
     const pageRes = await fetchWithTimeout(
-      `https://news.google.com/articles/${articleIdFromUrl}`,
+      `https://news.google.com/rss/articles/${base64ArticleId}`,
       { headers: { "User-Agent": BROWSER_UA }, redirect: "follow" }
     );
     if (!pageRes.ok) return url;
     const html = await pageRes.text();
 
     const sigMatch = html.match(/data-n-a-sg="([^"]+)"/);
-    const idAttrMatch = html.match(/data-n-a-id="([^"]+)"/);
-    if (!sigMatch || !idAttrMatch) return url;
+    const tsMatch = html.match(/data-n-a-ts="([^"]+)"/);
+    if (!sigMatch || !tsMatch) return url;
     const signature = sigMatch[1];
-    const realId = idAttrMatch[1];
+    const timestamp = Number(tsMatch[1]);
 
+    // garturlreq에는 URL의 base64 article id를 그대로 넣는다(data-n-a-id 아님).
     const innerJson = JSON.stringify([
       "garturlreq",
       [
@@ -182,8 +184,8 @@ async function decodeGoogleNewsUrl(url) {
         null,
         0,
       ],
-      realId,
-      Math.floor(Date.now() / 1000),
+      base64ArticleId,
+      timestamp,
       signature,
     ]);
     const envelope = JSON.stringify([[["Fbv4je", innerJson, null, "generic"]]]);
