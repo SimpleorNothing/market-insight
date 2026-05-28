@@ -1,7 +1,81 @@
 {
-  "updatedAt": "2026-05-28T20:08:16.926Z",
+  "updatedAt": "2026-05-28T22:26:58.395Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 283,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "조직개편",
+        "성과급",
+        "내부혁신",
+        "인센티브"
+      ],
+      "headline": "삼성전자 DX 성과급 박탈감 해소, 체질 개선 속도",
+      "summary": "삼성전자 DX(Digital Appliances) 부문에서 직원 성과급 박탈감 문제를 해결하기 위한 체질 개선 작업을 가속화하고 있다. 조직 효율화와 성과 보상 체계 개선을 통해 경쟁력 강화에 나서는 상황.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.news1.kr/industry/general-industry/6180587"
+      },
+      "publishedAt": "2026-05-28T22:00:00.000Z",
+      "url": "https://www.news1.kr/industry/general-industry/6180587"
+    },
+    {
+      "id": 284,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "AI기술",
+        "스마트가전",
+        "GE Appliances",
+        "기술혁신",
+        "미국시장"
+      ],
+      "headline": "GE Appliances, AI 에이전트 대규모 도입 추진",
+      "summary": "Haier 산하 GE Appliances가 AI 에이전트 기술을 가전제품에 적용하는 롤아웃을 진행 중. 미국 가전시장에서 경쟁사와의 AI 기술 경쟁이 심화되는 상황. 스마트 기능 강화를 통한 차별화 전략으로 판단됨.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.engineering.com/inside-ge-appliances-ai-agent-rollout/"
+      },
+      "publishedAt": "2026-05-28T18:33:50.000Z",
+      "url": "https://www.engineering.com/inside-ge-appliances-ai-agent-rollout/"
+    },
     {
       "id": 282,
       "lens": "경쟁사",
@@ -876,8 +950,8 @@
       "url": "https://www.mk.co.kr/en/business/12058620"
     },
     {
-      "id": 276,
-      "lens": "경쟁사",
+      "id": 285,
+      "lens": "기술",
       "grade": "긴급",
       "impact": 4.5,
       "factors": {
@@ -890,25 +964,24 @@
         "냉장고",
         "세탁기",
         "조리기기",
+        "HVAC",
         "청소기"
       ],
-      "competitors": [
-        "LG전자"
-      ],
+      "competitors": [],
       "tags": [
-        "AI가전",
-        "스마트홈",
-        "생태계",
-        "LG전자전략"
+        "AI스마트가전",
+        "스마트홈에코시스템",
+        "IoT연동",
+        "차세대가전전략"
       ],
-      "headline": "LG전자, AI 스마트 가전 에코시스템으로 500만 가구 목표",
-      "summary": "LG전자가 AI 기술을 탑재한 스마트 가전 에코시스템으로 향후 500만 가구 보급을 목표로 선언했다. 냉장고, 세탁기, 조리기기 등 주요 가전제품에 AI 통합을 추진하며 글로벌 가전 시장에서 스마트홈 경쟁력 강화에 나섰다.",
+      "headline": "LG전자, AI 스마트가전 에코시스템으로 500만 가구 목표",
+      "summary": "LG전자가 AI 기반 스마트홈 에코시스템 구축으로 500만 가구 보급을 목표로 설정했다. 스마트가전 간 연동과 지능형 기능 강화를 통해 시장 선도를 추진 중이며, 글로벌 스마트가전 시장 확대에 대응하는 전략으로 평가된다.",
       "source": {
         "name": "Google News - LG Global",
-        "url": "https://en.sedaily.com/news/2026/05/27/lg-electronics-targets-5-million-ai-home-units-with-smart"
+        "url": "https://en.sedaily.com/article?id=version_2KCKJ1KPQO_20260527_112255"
       },
       "publishedAt": "2026-05-27T02:00:05.000Z",
-      "url": "https://en.sedaily.com/news/2026/05/27/lg-electronics-targets-5-million-ai-home-units-with-smart"
+      "url": "https://en.sedaily.com/article?id=version_2KCKJ1KPQO_20260527_112255"
     },
     {
       "id": 271,
@@ -2648,41 +2721,6 @@
       },
       "publishedAt": "2026-05-21T01:49:36.000Z",
       "url": "https://www.mediaweek.com.au/lg-returns-to-masterchef-australia-as-viewers-eye-appliance-upgrades/"
-    },
-    {
-      "id": 156,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "조리기기"
-      ],
-      "competitors": [
-        "Haier"
-      ],
-      "tags": [
-        "제조 현지화",
-        "북미 전략",
-        "Haier",
-        "공급망",
-        "미국 생산"
-      ],
-      "headline": "GE Appliances, 미국 내 제조 시설 확대 추진",
-      "summary": "GE Appliances(Haier 자회사)가 미국으로의 제조 공장 복귀 전략을 선언했다. 이는 북미 시장에서의 현지 생산 비중을 높이고 공급망 리스크를 감소시키는 전략으로 평가된다. 경쟁사들의 현지화 투자 움직임이 강화되는 추세 속 시장 점유율 경쟁 심화가 예상된다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.msn.com/en-us/money/other/ge-appliances-brings-manufacturing-back-to-the-us/vi-AA1KAum4?ocid=stripeSEO"
-      },
-      "publishedAt": "2026-05-21T01:42:03.000Z",
-      "url": "https://www.msn.com/en-us/money/other/ge-appliances-brings-manufacturing-back-to-the-us/vi-AA1KAum4?ocid=stripeSEO"
     },
     {
       "id": 171,
