@@ -40,6 +40,9 @@ const rssParser = new Parser({
   headers: { "User-Agent": "DA-Market-Insight/2.0" },
 });
 
+const BROWSER_UA =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
+
 // ===== Utilities =====
 function urlHash(url) {
   return createHash("sha256").update(url).digest("hex").slice(0, 12);
@@ -106,6 +109,148 @@ function sharesEntity(a, b) {
   return [...(b.competitors || []), ...(b.products || [])].some((x) =>
     setA.has(x)
   );
+}
+
+// ===== Google News URL 디코딩 =====
+// Google News의 /articles/{id} 리다이렉트는 일부 사내망에서 차단·리다이렉션 오류를 일으킴.
+// batchexecute 내부 API로 실제 발행처 URL을 미리 해석해 둠.
+function isGoogleNewsUrl(url) {
+  return /^https?:\/\/news\.google\.com\/(?:rss\/)?articles\//.test(url || "");
+}
+
+async function fetchWithTimeout(url, options = {}, timeoutMs = 12000) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...options, signal: ctrl.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function decodeGoogleNewsUrl(url) {
+  if (!isGoogleNewsUrl(url)) return url;
+  try {
+    const idMatch = url.match(/\/articles\/([^?\/]+)/);
+    if (!idMatch) return url;
+    const articleIdFromUrl = idMatch[1];
+
+    const pageRes = await fetchWithTimeout(
+      `https://news.google.com/articles/${articleIdFromUrl}`,
+      { headers: { "User-Agent": BROWSER_UA }, redirect: "follow" }
+    );
+    if (!pageRes.ok) return url;
+    const html = await pageRes.text();
+
+    const sigMatch = html.match(/data-n-a-sg="([^"]+)"/);
+    const idAttrMatch = html.match(/data-n-a-id="([^"]+)"/);
+    if (!sigMatch || !idAttrMatch) return url;
+    const signature = sigMatch[1];
+    const realId = idAttrMatch[1];
+
+    const innerJson = JSON.stringify([
+      "garturlreq",
+      [
+        [
+          "X",
+          "X",
+          ["X", "X"],
+          null,
+          null,
+          1,
+          1,
+          "US:en",
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          1,
+        ],
+        "X",
+        "X",
+        1,
+        [1, 1, 1],
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        0,
+      ],
+      realId,
+      Math.floor(Date.now() / 1000),
+      signature,
+    ]);
+    const envelope = JSON.stringify([[["Fbv4je", innerJson, null, "generic"]]]);
+    const body = new URLSearchParams({ "f.req": envelope }).toString();
+
+    const beRes = await fetchWithTimeout(
+      "https://news.google.com/_/DotsSplashUi/data/batchexecute?rpcids=Fbv4je",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          "User-Agent": BROWSER_UA,
+        },
+        body,
+      }
+    );
+    if (!beRes.ok) return url;
+    const text = await beRes.text();
+
+    // 응답: ")]}'" 프리픽스 + (길이, JSON 라인) 반복. Fbv4je 항목을 찾아 inner JSON을 다시 파싱.
+    for (const line of text.split("\n")) {
+      if (!line.includes("Fbv4je")) continue;
+      try {
+        const arr = JSON.parse(line);
+        for (const entry of arr) {
+          if (
+            Array.isArray(entry) &&
+            entry[0] === "wrb.fr" &&
+            entry[1] === "Fbv4je" &&
+            typeof entry[2] === "string"
+          ) {
+            const inner = JSON.parse(entry[2]);
+            if (
+              Array.isArray(inner) &&
+              inner[0] === "garturlres" &&
+              typeof inner[1] === "string" &&
+              /^https?:\/\//.test(inner[1])
+            ) {
+              return inner[1];
+            }
+          }
+        }
+      } catch {
+        // 다음 라인 시도
+      }
+    }
+    return url;
+  } catch {
+    return url;
+  }
+}
+
+async function mapWithConcurrency(items, concurrency, fn) {
+  const results = new Array(items.length);
+  let cursor = 0;
+  const workers = Array.from(
+    { length: Math.max(1, Math.min(concurrency, items.length)) },
+    async () => {
+      while (true) {
+        const i = cursor++;
+        if (i >= items.length) return;
+        results[i] = await fn(items[i], i);
+      }
+    }
+  );
+  await Promise.all(workers);
+  return results;
 }
 
 // ===== Load existing =====
@@ -487,6 +632,37 @@ function dedupeMerged(items) {
   return kept;
 }
 
+// 기존 news.json 항목의 Google News URL을 실제 URL로 일괄 변환 (한 회 실행당 상한 적용)
+const URL_BACKFILL_LIMIT_PER_RUN = 80;
+
+async function backfillExistingUrls(items) {
+  const targets = items.filter((it) => isGoogleNewsUrl(it.url));
+  if (targets.length === 0) return 0;
+  const slice = targets.slice(0, URL_BACKFILL_LIMIT_PER_RUN);
+  log(`기존 URL 백필 대상 ${targets.length}건 (이번 회 ${slice.length}건 처리)`);
+
+  let converted = 0;
+  await mapWithConcurrency(slice, 3, async (it) => {
+    const resolved = await decodeGoogleNewsUrl(it.url);
+    if (resolved && resolved !== it.url) {
+      it.url = resolved;
+      if (it.source) it.source.url = resolved;
+      converted++;
+    }
+  });
+  return converted;
+}
+
+async function resolveFreshLinks(items) {
+  const targets = items.filter((it) => isGoogleNewsUrl(it.link));
+  if (targets.length === 0) return;
+  log(`신규 RSS 링크 ${targets.length}건 실제 URL 해석 시도`);
+  await mapWithConcurrency(targets, 3, async (it) => {
+    const resolved = await decodeGoogleNewsUrl(it.link);
+    if (resolved && resolved !== it.link) it.link = resolved;
+  });
+}
+
 // ===== Main =====
 async function main() {
   log("=== DA Market Insight v2 뉴스 갱신 시작 ===");
@@ -501,8 +677,15 @@ async function main() {
     existing.items = [];
   }
 
+  const backfilled = await backfillExistingUrls(existing.items);
+  if (backfilled > 0) {
+    log(`기존 Google News URL ${backfilled}건 → 실제 발행처 URL로 변환`);
+  }
+
   const fresh = await fetchAllRss();
   log(`RSS 폴링 총 ${fresh.length}건 수집`);
+
+  await resolveFreshLinks(fresh);
 
   const newOnes = dedupeAndFilter(fresh, existing);
   log(`중복·필터 後 분류 대상 ${newOnes.length}건`);
@@ -521,7 +704,10 @@ async function main() {
   );
 
   const changed =
-    isV1 || classified.length > 0 || merged.length !== existing.items.length;
+    isV1 ||
+    classified.length > 0 ||
+    merged.length !== existing.items.length ||
+    backfilled > 0;
   if (!changed) {
     log("변경 없음");
     return;
