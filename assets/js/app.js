@@ -594,6 +594,12 @@ A4 1페이지 분량 엄수 (초과 절대 금지). 다음 3개 본문 섹션 + 
 
 JSON 외 어떤 텍스트도 출력 금지.`;
 
+// 공용 충전 키 프록시(Cloudflare Worker) 주소. 설정돼 있으면 사용자별 키 입력 없이 이 프록시로 호출.
+function getReportProxyUrl() {
+  const url = CONFIG?.reportProxyUrl;
+  return typeof url === "string" && url.trim() ? url.trim() : null;
+}
+
 function getApiKey() {
   return localStorage.getItem("anthropic_api_key");
 }
@@ -653,21 +659,35 @@ ${buContextLines.join("\n\n")}
 [작성 지시]
 위 뉴스가 대상 제품에 미치는 기회·위협을 1페이지 리포트로 작성하세요. 제품 컨텍스트의 KPI·경쟁사를 본문에 반드시 활용하세요.`;
 
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-      "anthropic-dangerous-direct-browser-access": "true",
-    },
-    body: JSON.stringify({
-      model: "claude-haiku-4-5-20251001",
-      max_tokens: 2000,
-      system: REPORT_SYSTEM_PROMPT,
-      messages: [{ role: "user", content: userPrompt }],
-    }),
+  const body = JSON.stringify({
+    model: "claude-haiku-4-5-20251001",
+    max_tokens: 2000,
+    system: REPORT_SYSTEM_PROMPT,
+    messages: [{ role: "user", content: userPrompt }],
   });
+
+  const proxyUrl = getReportProxyUrl();
+  let res;
+  if (proxyUrl) {
+    // 공용 충전 키 사용: 키는 프록시(Worker)가 보관하므로 브라우저에서 전송하지 않음
+    res = await fetch(proxyUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body,
+    });
+  } else {
+    // 폴백: 사용자별 키로 Anthropic API 직접 호출
+    res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": apiKey,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true",
+      },
+      body,
+    });
+  }
 
   if (!res.ok) {
     const errText = await res.text();
@@ -833,10 +853,14 @@ async function generateReport() {
     return;
   }
 
-  let apiKey = getApiKey();
-  if (!apiKey) {
-    apiKey = promptForApiKey();
-    if (!apiKey) return;
+  // 공용 충전 키 프록시가 설정돼 있으면 사용자별 키 입력을 건너뜀
+  let apiKey = null;
+  if (!getReportProxyUrl()) {
+    apiKey = getApiKey();
+    if (!apiKey) {
+      apiKey = promptForApiKey();
+      if (!apiKey) return;
+    }
   }
 
   btn.disabled = true;
@@ -863,8 +887,13 @@ async function generateReport() {
     console.error(err);
     const msg = err.message || String(err);
     if (msg.includes("401") || msg.includes("authentication") || msg.includes("invalid x-api-key")) {
-      clearApiKey();
-      showToast("API 키 인증 실패. 다시 입력해 주세요.", false);
+      if (getReportProxyUrl()) {
+        // 공용 키 인증 실패 — 사용자가 아니라 관리자가 키를 점검해야 함
+        showToast("공용 키 인증 실패. 관리자에게 문의해 주세요.", false);
+      } else {
+        clearApiKey();
+        showToast("API 키 인증 실패. 다시 입력해 주세요.", false);
+      }
     } else if (msg.includes("429") || msg.includes("rate_limit")) {
       showToast("API 호출 한도 초과. 잠시 後 재시도.", false);
     } else if (msg.includes("credit") || msg.includes("billing")) {
