@@ -1,7 +1,37 @@
 {
-  "updatedAt": "2026-05-29T19:27:31.099Z",
+  "updatedAt": "2026-05-29T21:44:41.619Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 296,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "초여름 날씨",
+        "에어컨 수요",
+        "계절전환",
+        "한반도"
+      ],
+      "headline": "한여름 날씨 예고로 에어컨 수요 급증 임박",
+      "summary": "5월 말 최고 34도의 이른 더위가 전국을 덮으면서 에어컨 가동 수요가 급증할 것으로 전망된다. 소비자들이 주말 내 에어컨 가동을 서두를 것으로 예상되며, 기후 변화에 따른 냉방기 시장 활성화가 가속화되고 있다.",
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/society/12061779"
+      },
+      "publishedAt": "2026-05-29T21:02:13.000Z",
+      "url": "https://www.mk.co.kr/news/society/12061779"
+    },
     {
       "id": 290,
       "lens": "소비자",
@@ -32,6 +62,37 @@
       },
       "publishedAt": "2026-05-29T08:56:35.000Z",
       "url": "https://www.mk.co.kr/en/business/12061491"
+    },
+    {
+      "id": 297,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesReliability": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "주가약세",
+        "미국시장",
+        "투자평가"
+      ],
+      "headline": "월풀, 금일 약세 평가 - 야후파이낸스",
+      "summary": "Yahoo Finance가 Whirlpool(WHR)을 '오늘의 약세주'로 선정했습니다. 미국 가정용 가전 시장에서의 주가 및 투자자 심리를 반영한 평가입니다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/bear-day-whirlpool-whr-080000511.html"
+      },
+      "publishedAt": "2026-05-29T08:00:00.000Z",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bear-day-whirlpool-whr-080000511.html"
     },
     {
       "id": 289,
