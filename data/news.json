@@ -1,7 +1,69 @@
 {
-  "updatedAt": "2026-05-29T05:05:54.659Z",
+  "updatedAt": "2026-05-29T09:34:53.699Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 290,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesReliability": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "공기청정",
+        "욕실용가전",
+        "신제품출시",
+        "LG전자"
+      ],
+      "headline": "LG전자, 욕실용 공기청정 신제품 'Bas Air Gust' 출시",
+      "summary": "LG전자가 욕실 전용 공기청정 제품 'Bas Air Gust'를 글로벌 시장에 선보였다. '욕실의 공기도 쾌적하다'는 컨셉으로 프리미엄 홈 에어 솔루션 포트폴리오를 강화하고 있다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.mk.co.kr/en/business/12061491"
+      },
+      "publishedAt": "2026-05-29T08:56:35.000Z",
+      "url": "https://www.mk.co.kr/en/business/12061491"
+    },
+    {
+      "id": 289,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelivance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "주가약세",
+        "미국시장",
+        "경쟁사동향"
+      ],
+      "headline": "월풀, 주식시장에서 약세 평가 받음",
+      "summary": "야후 파이낸스 호주가 월풀(WHR)을 오늘의 약세종목으로 선정했다. 미국 가정용 가전 시장의 주요 경쟁사인 월풀의 주가 약세가 확인되고 있다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://au.finance.yahoo.com/news/bear-day-whirlpool-whr-080000511.html"
+      },
+      "publishedAt": "2026-05-29T08:00:00.000Z",
+      "url": "https://au.finance.yahoo.com/news/bear-day-whirlpool-whr-080000511.html"
+    },
     {
       "id": 288,
       "lens": "경쟁사",
@@ -1213,36 +1275,6 @@
       },
       "publishedAt": "2026-05-26T21:33:13.000Z",
       "url": "https://www.kitchenbathdesign.com/electrolux-group-midea-group-announce-partnership/"
-    },
-    {
-      "id": 269,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "주가약세",
-        "월풀",
-        "북미시장",
-        "경쟁사동향"
-      ],
-      "headline": "월풀, 미국 주식시장서 약세 지속",
-      "summary": "미국 주요 금융 매체 MSN이 월풀(WHR)을 '약세주(Bear of the day)'로 선정했다. 북미 가전 시장 선두 기업의 주가 부진이 지속되고 있으며, 업계 경기 침체와 경쟁 심화가 배경으로 작용하는 것으로 보인다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.msn.com/en-us/money/topstocks/bear-of-the-day-whirlpool-whr/ar-AA2357D8?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
-      },
-      "publishedAt": "2026-05-26T17:17:10.000Z",
-      "url": "https://www.msn.com/en-us/money/topstocks/bear-of-the-day-whirlpool-whr/ar-AA2357D8?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
       "id": 225,
@@ -3672,37 +3704,6 @@
       },
       "publishedAt": "2026-05-19T12:11:53.000Z",
       "url": "https://www.openpr.com/news/4518724/worldwide-trends-review-the-accelerating-development-of"
-    },
-    {
-      "id": 94,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "월풀",
-        "주가",
-        "미국시장",
-        "약세",
-        "실시간"
-      ],
-      "headline": "미국 시장에서 월풀 주가 약세",
-      "summary": "월풀(WHR)이 미국 증시 '약세 종목'으로 선정됨. 미국 홈어플라이언스 시장 정보 취합 기사로, 당일 주가 부진의 실시간 뉴스.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.msn.com/en-us/money/topstocks/bear-of-the-day-whirlpool-whr/ar-AA2357D8?ocid=finance-verthp-feeds&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
-      },
-      "publishedAt": "2026-05-19T12:08:43.000Z",
-      "url": "https://www.msn.com/en-us/money/topstocks/bear-of-the-day-whirlpool-whr/ar-AA2357D8?ocid=finance-verthp-feeds&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
       "id": 90,
