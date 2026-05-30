@@ -1,7 +1,72 @@
 {
-  "updatedAt": "2026-05-30T05:50:06.949Z",
+  "updatedAt": "2026-05-30T08:16:37.248Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 301,
+      "lens": "기술",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC",
+        "냉장고",
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [],
+      "tags": [
+        "AI홈허브",
+        "ThinQ",
+        "스마트홈",
+        "IoT통합",
+        "LG전자"
+      ],
+      "headline": "LG전자, AI 홈 허브 'ThinQ On' 공개",
+      "summary": "LG전자가 AI 기반 홈 허브 'ThinQ On'을 발표했다. 신제품은 스마트홈 기기 연결·제어를 통합 플랫폼으로 관리할 수 있도록 설계됐으며, 글로벌 시장의 IoT 가전 수요 증대에 대응하는 전략으로 평가된다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.msn.com/en-xl/lifestyle/shopping/lg-electronics-unveils-thinq-on-ai-home-hub/ar-AA249lfN?ocid=finance-verthp-feeds"
+      },
+      "publishedAt": "2026-05-30T06:35:08.000Z",
+      "url": "https://www.msn.com/en-xl/lifestyle/shopping/lg-electronics-unveils-thinq-on-ai-home-hub/ar-AA249lfN?ocid=finance-verthp-feeds"
+    },
+    {
+      "id": 299,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesReliability": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "자본조달",
+        "재무전략",
+        "투자자심리",
+        "북미시장"
+      ],
+      "headline": "월풀, 9.63억 달러 자본조달…전략적 움직임 vs 경영 압박 평가 엇갈려",
+      "summary": "월풀이 9.63억 달러 규모의 자본조달을 단행했다. 전략적 투자로 평가하는 의견과 재무 체질 악화 신호로 보는 시각이 맞서고 있으며, 투자자들의 기업 건전성 평가에 영향을 미칠 것으로 예상된다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.kavout.com/market-lens/is-whirlpool-s-963-million-capital-raise-a-strategic-masterstroke-or-a-sign-of-strain"
+      },
+      "publishedAt": "2026-05-30T05:34:06.000Z",
+      "url": "https://www.kavout.com/market-lens/is-whirlpool-s-963-million-capital-raise-a-strategic-masterstroke-or-a-sign-of-strain"
+    },
     {
       "id": 296,
       "lens": "소비자",
@@ -395,6 +460,38 @@
       },
       "publishedAt": "2026-05-28T07:00:00.000Z",
       "url": "https://www.etnews.com/20260528000206"
+    },
+    {
+      "id": 303,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "냉장고평가",
+        "소비자가이드",
+        "제품비교",
+        "미국시장"
+      ],
+      "headline": "포브스, 전문가 평가·장기 테스트 기반 최고 냉장고 선정",
+      "summary": "포브스가 전문가 자문과 수개월 테스트를 거쳐 최고의 냉장고 모델들을 평가·추천했다. 월풀 등 주요 제조사 제품들이 검토 대상에 포함되었으며, 소비자 구매 의사결정에 영향을 미치는 제3자 검증 콘텐츠다.",
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-refrigerators/"
+      },
+      "publishedAt": "2026-05-28T05:53:39.000Z",
+      "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-refrigerators/"
     },
     {
       "id": 270,
