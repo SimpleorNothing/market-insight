@@ -1,7 +1,37 @@
 {
-  "updatedAt": "2026-05-31T15:11:41.690Z",
+  "updatedAt": "2026-05-31T16:56:20.333Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 338,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "TV 시장점유율",
+        "글로벌 경쟁",
+        "삼성 vs TCL",
+        "시장 변동"
+      ],
+      "headline": "삼성, TV 시장 1위 지위 위협…TCL 격차 2.7%P까지 축소",
+      "summary": "삼성전자의 글로벌 TV 시장 점유율 1위 지위가 중국 TCL의 추격으로 위협받고 있다. 삼성-TCL 간 점유율 격차가 4.1%P에서 2.7%P로 1.4%P 줄어들면서 양사 경쟁이 심화되는 중이다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.donga.com/news/Economy/article/all/20260531/134024849/2"
+      },
+      "publishedAt": "2026-05-31T15:30:00.000Z",
+      "url": "https://www.donga.com/news/Economy/article/all/20260531/134024849/2"
+    },
     {
       "id": 333,
       "lens": "소비자",
@@ -919,6 +949,37 @@
       },
       "publishedAt": "2026-05-29T21:02:13.000Z",
       "url": "https://www.mk.co.kr/news/society/12061779"
+    },
+    {
+      "id": 339,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "건조기"
+      ],
+      "competitors": [],
+      "tags": [
+        "초음파기술",
+        "에너지효율",
+        "신기술개발",
+        "미국에너지부",
+        "건조기혁신"
+      ],
+      "headline": "미국 에너지부, 초음파 의류건조기 기술 공개",
+      "summary": "미국 에너지부가 차세대 초음파 의류건조기 기술을 발표했습니다. 기존 열식 건조기 대비 에너지 효율을 대폭 개선하는 신기술로, 가전산업의 에너지 효율화 추진 방향과 맞물려 있습니다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.energy.gov/cmei/buildings/articles/ultrasonic-clothes-dryer"
+      },
+      "publishedAt": "2026-05-29T17:06:38.000Z",
+      "url": "https://www.energy.gov/cmei/buildings/articles/ultrasonic-clothes-dryer"
     },
     {
       "id": 318,
