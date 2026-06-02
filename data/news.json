@@ -1,7 +1,69 @@
 {
-  "updatedAt": "2026-06-01T22:30:30.966Z",
+  "updatedAt": "2026-06-02T00:06:57.112Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 363,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "로봇청소기",
+        "AI청소기",
+        "신혼가전",
+        "판매량",
+        "삼성비스포크"
+      ],
+      "headline": "삼성 비스포크 AI 스팀 로봇청소기, 월 판매 2만 대 돌파",
+      "summary": "삼성전자 '비스포크 AI 스팀' 로봇청소기가 5월 월 판매량 2만 대를 처음 기록했으며, 전년 동기 대비 약 60% 증가했다. 신혼가전 패키지 구매 고객 중 3쌍 중 1쌍이 해당 제품을 선택하며 신혼 시장에서 높은 수요를 보이고 있다.",
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260602000028"
+      },
+      "publishedAt": "2026-06-01T23:25:23.000Z",
+      "url": "https://www.etnews.com/20260602000028"
+    },
+    {
+      "id": 364,
+      "lens": "거시",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "미국 제조업",
+        "PMI",
+        "경기 확장",
+        "신규 주문",
+        "글로벌 경기"
+      ],
+      "headline": "미국 제조업 PMI 54.0, 4년 만에 최고 수준 기록",
+      "summary": "미국 5월 제조업 구매관리자지수(PMI)가 54.0으로 상승하며 4년 만에 최고 수준을 기록했다. 신규 주문과 생산 증가가 주도했으며, 5개월 연속 경기 확장 신호를 이어가고 있다. 미국 경기 둔화 우려가 사그라들면서 글로벌 가전 수요 회복 신호로 해석된다.",
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260602000023"
+      },
+      "publishedAt": "2026-06-01T23:11:22.000Z",
+      "url": "https://www.etnews.com/20260602000023"
+    },
     {
       "id": 362,
       "lens": "경쟁사",
@@ -37,6 +99,43 @@
       "url": "https://www.viva100.com/article/20260601500557"
     },
     {
+      "id": 369,
+      "lens": "소비자",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "가전수요침체",
+        "월풀실적부진",
+        "북미시장",
+        "소비심리악화",
+        "주가급락"
+      ],
+      "headline": "월풀 주가 13% 급락, 가전 수요 금융위기 이후 최저",
+      "summary": "월풀의 CFO가 현 가전 수요가 2008년 금융위기 이후 최저 수준이라고 언급하며 시장의 심각한 부진을 드러냈다. 이에 따라 월풀 주가는 13% 급락했다. 북미 가전 시장의 극심한 침체가 구체화된 신호다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.aol.com/articles/whirlpool-cfo-says-appliance-demand-221144000.html"
+      },
+      "publishedAt": "2026-06-01T21:19:39.000Z",
+      "url": "https://www.aol.com/articles/whirlpool-cfo-says-appliance-demand-221144000.html"
+    },
+    {
       "id": 361,
       "lens": "경쟁사",
       "grade": "긴급",
@@ -69,6 +168,37 @@
       },
       "publishedAt": "2026-06-01T21:10:00.000Z",
       "url": "https://biz.chosun.com/industry/business-venture/2026/06/02/MRBD3UK54JDDZIM73PBNYQ6B7Q/"
+    },
+    {
+      "id": 367,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "탄소중립",
+        "에너지효율",
+        "친환경기술",
+        "난방"
+      ],
+      "headline": "LG전자, 고효율 히트펌프 신기술로 탄소감축 추진",
+      "summary": "LG전자가 고효율 히트펌프 기술 개발을 통해 탄소감축 전략을 강화하고 있다. 히트펌프는 기존 보일러 대비 에너지 효율이 높아 난방 부문 탄소배출 감소에 핵심 역할을 할 것으로 예상된다. 국내 HVAC 시장에서 친환경 제품 수요 증가에 대응하는 움직임이다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hankyung.com/amp/202605133687G"
+      },
+      "publishedAt": "2026-06-01T21:00:12.000Z",
+      "url": "https://www.hankyung.com/amp/202605133687G"
     },
     {
       "id": 360,
@@ -207,7 +337,7 @@
       "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4417740"
     },
     {
-      "id": 354,
+      "id": 370,
       "lens": "소비자",
       "grade": "주요",
       "impact": 3.5,
@@ -224,20 +354,19 @@
         "LG전자"
       ],
       "tags": [
-        "주방부러움",
+        "주방 트렌드",
         "소비자심리",
-        "주방가전",
-        "구매트렌드",
-        "LG연구"
+        "프리미엄 가전",
+        "글로벌 리서치"
       ],
-      "headline": "LG 연구, 주방 부러움 현상 확인…소비자 트렌드 분석",
-      "summary": "LG전자의 최신 연구에서 '주방 부러움(Kitchen Envy)' 현상이 소비자 구매 동향에 영향을 미치는 것으로 나타났다. 소비자들의 주방 가전에 대한 선호도와 트렌드를 분석한 결과로, 글로벌 시장의 소비자 심리 변화를 반영한다.",
+      "headline": "LG 연구, 주방 질투 현상 확인…소비자 트렌드 시사",
+      "summary": "LG전자가 '키친 엔비(주방 질투)' 현상에 관한 글로벌 연구 결과를 발표했다. 현대 소비자들의 주방 및 조리기기에 대한 선호도와 심리 구매 패턴을 분석한 것으로, 프리미엄 조리 솔루션에 대한 수요 증가를 반영한다.",
       "source": {
         "name": "Google News - LG Global",
-        "url": "https://eftm.com/2026/06/kitchen-envy-research-by-lg-finds-its-a-thing-276451/amp"
+        "url": "https://eftm.com/2026/06/kitchen-envy-research-by-lg-finds-its-a-thing-276451"
       },
-      "publishedAt": "2026-06-01T01:44:30.000Z",
-      "url": "https://eftm.com/2026/06/kitchen-envy-research-by-lg-finds-its-a-thing-276451/amp"
+      "publishedAt": "2026-06-01T01:46:28.000Z",
+      "url": "https://eftm.com/2026/06/kitchen-envy-research-by-lg-finds-its-a-thing-276451"
     },
     {
       "id": 351,
