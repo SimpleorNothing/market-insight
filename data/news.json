@@ -1,7 +1,38 @@
 {
-  "updatedAt": "2026-06-02T05:23:01.680Z",
+  "updatedAt": "2026-06-02T10:03:01.093Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 378,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "탄소배출권",
+        "히트펌프",
+        "에너지효율",
+        "정부정책",
+        "농업"
+      ],
+      "headline": "농가 히트펌프 설치, 탄소배출권 외부사업 신규 인증",
+      "summary": "정부가 탄소배출권 거래제 외부사업으로 농가 히트펌프 설치 사업을 신규 인증했다. 이는 저탄소 농업 정책 추진의 일환으로, 가전사의 에너지 효율 제품 보급 기회를 확대한다. 히트펌프 등 친환경 냉난방 기기 수요 증대가 예상된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260602119600530"
+      },
+      "publishedAt": "2026-06-02T07:00:00.000Z",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260602119600530"
+    },
     {
       "id": 371,
       "lens": "정책",
@@ -122,6 +153,37 @@
       },
       "publishedAt": "2026-06-01T23:11:22.000Z",
       "url": "https://www.etnews.com/20260602000023"
+    },
+    {
+      "id": 382,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "Midea"
+      ],
+      "tags": [
+        "디스플레이 기술",
+        "로봇 산업",
+        "전시 공간",
+        "B2B 협력"
+      ],
+      "headline": "삼성 디스플레이, Midea 산하 KUKA 로봇 쇼룸 구축",
+      "summary": "삼성전자가 Midea 그룹 산하 KUKA 로봇 회사의 몰입형 쇼룸 구축에 디스플레이 솔루션을 공급했다. 로봇 정밀도 시연과 비즈니스 간 협력을 통해 가전·로봇 산업의 기술 융합 사례를 제시하고 있다.",
+      "source": {
+        "name": "Google News - Midea Global",
+        "url": "https://news.samsung.com/global/video-where-robotics-meets-precision-samsung-displays-shape-kukas-immersive-showroom"
+      },
+      "publishedAt": "2026-06-01T23:00:00.000Z",
+      "url": "https://news.samsung.com/global/video-where-robotics-meets-precision-samsung-displays-shape-kukas-immersive-showroom"
     },
     {
       "id": 362,
