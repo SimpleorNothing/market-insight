@@ -1,9 +1,76 @@
 {
-  "updatedAt": "2026-06-04T00:29:55.762Z",
+  "updatedAt": "2026-06-04T05:51:13.817Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 419,
+      "id": 425,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "정부보조금",
+        "판매증가",
+        "소비자수요",
+        "미국시장"
+      ],
+      "headline": "미국 가전 보조금 정책으로 11월 이후 판매 7% 증가",
+      "summary": "미국 정부의 가전 보조금 정책이 효과를 발휘하며 2025년 11월 이후 미국 가전 시장 판매가 전년 대비 7% 증가했다. 소비자 구매력 확대와 정책 인센티브가 시장 활성화를 주도하고 있는 상황이다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://en.ilsole24ore.com/art/bonus-household-appliances-7-per-cent-sales-november-2025-AIuzNQPD"
+      },
+      "publishedAt": "2026-06-04T04:58:31.000Z",
+      "url": "https://en.ilsole24ore.com/art/bonus-household-appliances-7-per-cent-sales-november-2025-AIuzNQPD"
+    },
+    {
+      "id": 422,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에너지절약",
+        "소비자캠페인",
+        "에어컨",
+        "여름시즌",
+        "LG씽큐"
+      ],
+      "headline": "LG전자, 여름 에너지절약 '씽큐 26도 챌린지' 캠페인 전개",
+      "summary": "LG전자가 여름철 에너지 절약을 위해 '씽큐 26도 챌린지' 캠페인을 시작했다. 에어컨 설정 온도를 26도로 유지하는 캠페인으로, 소비자 수요 변화와 에너지 효율성 강화 전략을 반영한다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.smedaily.co.kr/news/articleView.html?idxno=358136"
+      },
+      "publishedAt": "2026-06-04T04:48:14.000Z",
+      "url": "https://www.smedaily.co.kr/news/articleView.html?idxno=358136"
+    },
+    {
+      "id": 423,
       "lens": "경쟁사",
       "grade": "긴급",
       "impact": 4.6,
@@ -18,18 +85,52 @@
         "삼성전자"
       ],
       "tags": [
-        "TV 시장점유율",
-        "글로벌 리더십",
+        "TV 점유율",
+        "글로벌 시장",
+        "삼성전자",
         "1분기 실적"
       ],
-      "headline": "삼성전자 1Q 글로벌 TV 점유율 31.3%…21년 연속 1위 확정",
-      "summary": "삼성전자가 2026년 1분기 글로벌 TV 시장에서 31.3%의 점유율로 21년 연속 1위를 달성했다. 업계 조사기관 발표를 통해 시장 리더십 지속을 입증했으며, TV 부문 경쟁력 강화를 반영한다.",
+      "headline": "삼성전자, 1분기 글로벌 TV 점유율 31.3%로 1위 달성",
+      "summary": "삼성전자가 2026년 1분기 글로벌 TV 시장에서 31.3%의 매출 점유율을 기록하며 세계 1위를 차지했다. 이는 당사의 주력 제품인 TV 부문의 강한 경쟁력을 입증하는 결과다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.news1.kr/industry/general-industry/6187149"
+        "url": "https://www.thelec.kr/news/articleView.html?idxno=57560"
       },
-      "publishedAt": "2026-06-03T23:45:50.000Z",
-      "url": "https://www.news1.kr/industry/general-industry/6187149"
+      "publishedAt": "2026-06-04T02:50:05.000Z",
+      "url": "https://www.thelec.kr/news/articleView.html?idxno=57560"
+    },
+    {
+      "id": 424,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "순환경제",
+        "포장재재활용",
+        "환경규제",
+        "폐기물감량",
+        "지속가능경영"
+      ],
+      "headline": "삼성전자, 폐포장재 순환 재활용으로 환경규제 대응",
+      "summary": "삼성전자가 제품 포장용 스티로폼을 에어컨·공기청정기 내장재로 재활용하는 순환경제 체계를 구축했다. 포장폐기물 감량 및 환경규제 강화에 선제적으로 대응하는 전략으로 평가된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.newstree.kr/newsView/ntr202606040012"
+      },
+      "publishedAt": "2026-06-04T01:33:28.000Z",
+      "url": "https://www.newstree.kr/newsView/ntr202606040012"
     },
     {
       "id": 420,
@@ -582,6 +683,44 @@
       },
       "publishedAt": "2026-06-02T22:14:00.000Z",
       "url": "https://www.gurufocus.com/news/8897095/whirlpool-whr-expands-secured-notes-offering-to-2-billion"
+    },
+    {
+      "id": 426,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기",
+        "HVAC",
+        "청소기"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "메모리칩가격",
+        "원가압박",
+        "반도체",
+        "가전원가",
+        "글로벌공급망"
+      ],
+      "headline": "메모리 칩 가격 상승이 삼성·LG 가전 원가 압박",
+      "summary": "메모리 칩 가격 상승이 삼성전자와 LG전자의 가전 제조 원가를 압박하고 있다. 메모리 수급 개선이 기업에는 양날의 검으로 작용하며, 제품 원가 상승이 가전 경쟁력에 영향을 미칠 것으로 예상된다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202606020009"
+      },
+      "publishedAt": "2026-06-02T12:20:00.000Z",
+      "url": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202606020009"
     },
     {
       "id": 383,
