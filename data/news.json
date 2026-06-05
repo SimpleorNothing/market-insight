@@ -1,7 +1,37 @@
 {
-  "updatedAt": "2026-06-05T18:54:26.114Z",
+  "updatedAt": "2026-06-05T20:45:59.113Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 456,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "구조조정",
+        "고용",
+        "북미시장",
+        "비용최적화"
+      ],
+      "headline": "월풀, Amana 공장서 수백 명 추가 감원",
+      "summary": "월풀이 Amana 공장에서 수백 명의 직원을 추가로 감원하고 있다. 이는 북미 가전 산업의 구조 조정 심화를 시사한다. 장기적 생산 체제 재편 및 비용 최적화 전략의 일환으로 보인다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://whoradio.iheart.com/content/2026-06-05-whirlpool-laying-off-hundreds-more-employees-at-amana-facility/"
+      },
+      "publishedAt": "2026-06-05T19:57:00.000Z",
+      "url": "https://whoradio.iheart.com/content/2026-06-05-whirlpool-laying-off-hundreds-more-employees-at-amana-facility/"
+    },
     {
       "id": 451,
       "lens": "경쟁사",
@@ -109,39 +139,6 @@
       "url": "https://www.jobsohio.com/newsroom/ohio-success/whirlpool-expands-its-ohio-manufacturing-legacy-with-425-million-in-investments"
     },
     {
-      "id": 448,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.4,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 4
-      },
-      "products": [
-        "조리기기"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "감원",
-        "구조조정",
-        "제조업",
-        "아마나",
-        "미국공장"
-      ],
-      "headline": "월풀, 아마나 공장 7월 288명 감원",
-      "summary": "월풀이 자회사 아마나 공장에서 7월 288명 규모의 감원을 단행한다. 미국 가전 제조업체의 구조 조정이 가속화되는 가운데 경쟁사의 생산 효율화 전략으로 평가된다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.kwwl.com/news/whirlpool-cuts-288-jobs-at-amana-plant-in-july/article_82be3874-e9dc-4cfa-a311-9b3122be7905.html"
-      },
-      "publishedAt": "2026-06-05T15:46:00.000Z",
-      "url": "https://www.kwwl.com/news/whirlpool-cuts-288-jobs-at-amana-plant-in-july/article_82be3874-e9dc-4cfa-a311-9b3122be7905.html"
-    },
-    {
       "id": 454,
       "lens": "경쟁사",
       "grade": "주요",
@@ -204,41 +201,6 @@
       "url": "https://finance.yahoo.com/economy/articles/running-money-kraft-mcdonald-whirlpool-113500450.html"
     },
     {
-      "id": 449,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesReliability": 3,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 3,
-        "salesRelevance": 3
-      },
-      "products": [
-        "세탁기",
-        "건조기"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "구조조정",
-        "생산거점",
-        "고용",
-        "미국 제조",
-        "Amana"
-      ],
-      "headline": "월풀 Amana, 7월 5일 2교대 생산 중단 수백 명 감원",
-      "summary": "월풀 산하 Amana 브랜드가 7월 5일부터 2교대 생산을 종료하고 수백 명의 인원감축을 단행할 예정이다. 이는 가전업체의 생산 효율화 및 구조조정 움직임으로 북미 제조 기지의 운영 전략 변화를 시사한다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://cbs2iowa.com/news/local/whirlpool-amana-to-layoff-hundreds-as-they-end-second-shift-production-july-5"
-      },
-      "publishedAt": "2026-06-05T11:28:50.000Z",
-      "url": "https://cbs2iowa.com/news/local/whirlpool-amana-to-layoff-hundreds-as-they-end-second-shift-production-july-5"
-    },
-    {
       "id": 445,
       "lens": "경쟁사",
       "grade": "주요",
@@ -269,6 +231,38 @@
       },
       "publishedAt": "2026-06-05T09:03:00.000Z",
       "url": "https://www.kcrg.com/2026/06/05/breaking-whirlpool-ending-second-shift-production-amana/"
+    },
+    {
+      "id": 458,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "소재정책",
+        "제품품질",
+        "부품전략",
+        "경쟁차별화"
+      ],
+      "headline": "미디어, 에어컨 전 제품에서 '동→알루미늄 대체' 미적용 선언",
+      "summary": "미디어그룹의 팡홍보 회장이 국내 에어컨 제품 전수에 동→알루미늄 소재 대체를 적용하지 않는다고 공식 발표했다. 이는 소재 품질 저하 우려에 대한 명확한 입장 표시로, 에어컨 부품 소재 경쟁에서 차별화 전략으로 해석된다.",
+      "source": {
+        "name": "Google News - Midea Global",
+        "url": "https://www.aastocks.com/en/mobile/news.aspx?newsid=NOW.1527813&newssource=AAFN"
+      },
+      "publishedAt": "2026-06-05T08:47:00.000Z",
+      "url": "https://www.aastocks.com/en/mobile/news.aspx?newsid=NOW.1527813&newssource=AAFN"
     },
     {
       "id": 453,
