@@ -1,7 +1,39 @@
 {
-  "updatedAt": "2026-06-05T10:44:30.260Z",
+  "updatedAt": "2026-06-05T13:48:21.892Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 447,
+      "lens": "소비자",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "소비자심리",
+        "구매력악화",
+        "미국경제",
+        "수요전망"
+      ],
+      "headline": "월풀 CEO, 미국 소비자 구매력 악화 경고",
+      "summary": "월풀을 포함한 주요 소비재 기업 CEO들이 미국 소비자들의 구매력 약화를 동시에 경고했다. 경제 전망 악화로 가전 수요 부진이 예상되는 상황.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://finance.yahoo.com/economy/articles/running-money-kraft-mcdonald-whirlpool-113500450.html"
+      },
+      "publishedAt": "2026-06-05T11:35:00.000Z",
+      "url": "https://finance.yahoo.com/economy/articles/running-money-kraft-mcdonald-whirlpool-113500450.html"
+    },
     {
       "id": 445,
       "lens": "경쟁사",
@@ -35,35 +67,35 @@
       "url": "https://www.kcrg.com/2026/06/05/breaking-whirlpool-ending-second-shift-production-amana/"
     },
     {
-      "id": 444,
+      "id": 446,
       "lens": "정책",
       "grade": "주요",
-      "impact": 3.6,
+      "impact": 4.1,
       "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
+        "salesRelevance": 4,
+        "timeUrgency": 5,
         "marketSize": 4,
-        "sourceReliability": 4
+        "sourceReliability": 3
       },
       "products": [
+        "HVAC",
         "세탁기"
       ],
       "competitors": [],
       "tags": [
-        "재생에너지",
-        "수요조절",
-        "에너지정책",
-        "그리드안정화",
-        "스마트가전"
+        "수요반응",
+        "에너지 정책",
+        "그린에너지",
+        "가전 규제"
       ],
-      "headline": "재생에너지 수급 안정화에 에어컨·세탁기 수요조절 활용",
-      "summary": "재생에너지의 불안정성을 보완하기 위해 에어컨과 세탁기 등 대형 가전의 수요를 유연하게 조절하는 정책이 주목받고 있다. 가전 기기의 운영 시간을 재생에너지 공급량에 맞춰 조정함으로써 에너지 그리드 안정화를 도모하는 전략이다.",
+      "headline": "재생에너지 수급 안정화, 에어컨·세탁기 수요 제어로 추진",
+      "summary": "정부가 재생에너지의 불안정성 완화를 위해 에어컨과 세탁기 같은 대표 소비전력 기기의 운전 시간을 조절하는 '수요반응' 방식 보상전략을 추진 중. 가전 제품의 사용 패턴이 국가 에너지 정책의 핵심 변수로 작용하게 될 전망.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.dongascience.com/en/news/78264"
+        "url": "https://v.daum.net/v/20260605155515741"
       },
-      "publishedAt": "2026-06-05T06:52:00.000Z",
-      "url": "https://www.dongascience.com/en/news/78264"
+      "publishedAt": "2026-06-05T06:55:15.000Z",
+      "url": "https://v.daum.net/v/20260605155515741"
     },
     {
       "id": 443,
