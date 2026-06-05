@@ -1,9 +1,41 @@
 {
-  "updatedAt": "2026-06-05T06:58:44.690Z",
+  "updatedAt": "2026-06-05T10:44:30.260Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 442,
+      "id": 445,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "생산 중단",
+        "미국 제조",
+        "구조조정",
+        "Amana 브랜드"
+      ],
+      "headline": "월풀, 아메나 공장 2교대 생산 중단",
+      "summary": "월풀이 미국 아이오와주 아메나 공장의 2교대 생산을 종료한다. 조리기기 부문의 생산 구조 조정으로 추정되며, 현지 고용과 생산 효율성에 영향을 미칠 것으로 예상된다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.kcrg.com/2026/06/05/breaking-whirlpool-ending-second-shift-production-amana/"
+      },
+      "publishedAt": "2026-06-05T09:03:00.000Z",
+      "url": "https://www.kcrg.com/2026/06/05/breaking-whirlpool-ending-second-shift-production-amana/"
+    },
+    {
+      "id": 444,
       "lens": "정책",
       "grade": "주요",
       "impact": 3.6,
@@ -14,25 +46,24 @@
         "sourceReliability": 4
       },
       "products": [
-        "HVAC",
         "세탁기"
       ],
       "competitors": [],
       "tags": [
         "재생에너지",
-        "수요관리",
+        "수요조절",
         "에너지정책",
-        "스마트가전",
-        "그리드안정화"
+        "그리드안정화",
+        "스마트가전"
       ],
-      "headline": "재생에너지 불안정성 완화에 에어컨·세탁기 수요관리 활용",
-      "summary": "재생에너지의 간헐적 공급 문제를 해결하기 위해 에어컨과 세탁기 같은 가전기기의 수요를 조절하는 보상전략이 제시되고 있다. 이는 에너지 그리드 안정화를 위한 정책 차원의 새로운 접근방식으로, 가전 업계의 스마트 제어 기능 고도화를 촉발할 전망이다.",
+      "headline": "재생에너지 수급 안정화에 에어컨·세탁기 수요조절 활용",
+      "summary": "재생에너지의 불안정성을 보완하기 위해 에어컨과 세탁기 등 대형 가전의 수요를 유연하게 조절하는 정책이 주목받고 있다. 가전 기기의 운영 시간을 재생에너지 공급량에 맞춰 조정함으로써 에너지 그리드 안정화를 도모하는 전략이다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.dongascience.com/ko/news/78264"
+        "url": "https://www.dongascience.com/en/news/78264"
       },
       "publishedAt": "2026-06-05T06:52:00.000Z",
-      "url": "https://www.dongascience.com/ko/news/78264"
+      "url": "https://www.dongascience.com/en/news/78264"
     },
     {
       "id": 443,
