@@ -1,7 +1,41 @@
 {
-  "updatedAt": "2026-06-06T06:22:14.824Z",
+  "updatedAt": "2026-06-06T09:18:28.877Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 476,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "청소기"
+      ],
+      "competitors": [],
+      "tags": [
+        "여행 안전",
+        "가전 관리",
+        "화재 예방",
+        "플러그 제거"
+      ],
+      "headline": "여행 전 플러그 제거 필수 가전, 안전 관리법 공개",
+      "summary": "여행 외출 시 반드시 플러그를 뽑아야 하는 가전제품들이 따로 있다는 안내. 화재·누전 위험을 줄이기 위한 소비자 안전 수칙 제시. 계절 이동 시기에 맞춘 생활 정보 제공.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.khan.co.kr/article/202606061500011"
+      },
+      "publishedAt": "2026-06-06T06:00:00.000Z",
+      "url": "https://www.khan.co.kr/article/202606061500011"
+    },
     {
       "id": 472,
       "lens": "정책",
@@ -400,7 +434,37 @@
       "url": "https://www.jobsohio.com/newsroom/ohio-success/whirlpool-expands-its-ohio-manufacturing-legacy-with-425-million-in-investments"
     },
     {
-      "id": 470,
+      "id": 478,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "브랜드전략",
+        "기업이미지",
+        "LG글로벌",
+        "마케팅"
+      ],
+      "headline": "LG전자, 브랜드 아이덴티티 전면 개편 발표",
+      "summary": "LG전자가 새로운 브랜드 아이덴티티를 공식 발표했다. 글로벌 시장에서 기업 이미지 재정의를 통해 경쟁력 강화를 추진 중이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.brandsynario.com/featured/lg-reinvents-itself-announces-its-new-brand-identity/"
+      },
+      "publishedAt": "2026-06-05T15:47:49.000Z",
+      "url": "https://www.brandsynario.com/featured/lg-reinvents-itself-announces-its-new-brand-identity/"
+    },
+    {
+      "id": 479,
       "lens": "경쟁사",
       "grade": "주시",
       "impact": 3.4,
@@ -412,25 +476,26 @@
       },
       "products": [
         "세탁기",
-        "건조기"
+        "조리기기"
       ],
       "competitors": [
         "월풀"
       ],
       "tags": [
-        "감원",
+        "구조조정",
         "Amana",
-        "미국제조",
-        "구조조정"
+        "미국 공장",
+        "생산 효율화",
+        "인원 감축"
       ],
-      "headline": "월풀, 아메나 공장서 7월 288명 감원 단행",
-      "summary": "월풀이 자회사 아메나 공장에서 7월 288명의 감원을 실시한다. 미국 내 가전 제조 고용 축소로 경쟁 구도 변화가 예상된다.",
+      "headline": "월풀, 아마나 공장 7월 인원 감축 288명",
+      "summary": "월풀이 자회사 아마나의 미국 공장에서 7월 중 288명 규모의 구조조정을 단행할 예정이다. 북미 세탁기·조리기기 생산 능력 재편의 일환으로 보인다.",
       "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.kwwl.com/news/whirlpool-cuts-288-jobs-at-amana-plant-in-july/article_82be3874-e9dc-4cfa-a311-9b3122be7905.html"
+        "name": "Google News - Whirlpool",
+        "url": "https://www.kimt.com/news/whirlpool-cuts-288-jobs-at-amana-plant-in-july/article_950218a5-b943-5ea3-8885-daadbc2c035e.html"
       },
       "publishedAt": "2026-06-05T15:46:00.000Z",
-      "url": "https://www.kwwl.com/news/whirlpool-cuts-288-jobs-at-amana-plant-in-july/article_82be3874-e9dc-4cfa-a311-9b3122be7905.html"
+      "url": "https://www.kimt.com/news/whirlpool-cuts-288-jobs-at-amana-plant-in-july/article_950218a5-b943-5ea3-8885-daadbc2c035e.html"
     },
     {
       "id": 454,
@@ -529,7 +594,7 @@
       "url": "https://finance.yahoo.com/economy/articles/running-money-kraft-mcdonald-whirlpool-113500450.html"
     },
     {
-      "id": 458,
+      "id": 480,
       "lens": "경쟁사",
       "grade": "주요",
       "impact": 3.6,
@@ -546,19 +611,20 @@
         "Midea"
       ],
       "tags": [
-        "소재정책",
-        "제품품질",
-        "부품전략",
-        "경쟁차별화"
+        "부품소재정책",
+        "품질관리",
+        "HVAC시장",
+        "중국가전",
+        "소재대체"
       ],
-      "headline": "미디어, 에어컨 전 제품에서 '동→알루미늄 대체' 미적용 선언",
-      "summary": "미디어그룹의 팡홍보 회장이 국내 에어컨 제품 전수에 동→알루미늄 소재 대체를 적용하지 않는다고 공식 발표했다. 이는 소재 품질 저하 우려에 대한 명확한 입장 표시로, 에어컨 부품 소재 경쟁에서 차별화 전략으로 해석된다.",
+      "headline": "미디어 그룹, 국내 에어컨 전 제품 '동 알루미늄 치환' 미적용 선언",
+      "summary": "Midea Group의 Fang Hongbo가 국내 에어컨 전 제품이 '동을 알루미늄으로 대체하는' 기술을 채택하지 않는다고 공식 입장을 표시. 품질 관리와 제품 신뢰도 강화 의지를 나타낸 것으로 해석되며, 에어컨 부품 소재 정책의 투명성을 강조.",
       "source": {
         "name": "Google News - Midea Global",
-        "url": "https://www.aastocks.com/en/mobile/news.aspx?newsid=NOW.1527813&newssource=AAFN"
+        "url": "https://www.aastocks.com/en/mobile/news.aspx?newsid=NOW.1527813&newstype=61&newssource=AAFN"
       },
       "publishedAt": "2026-06-05T08:47:00.000Z",
-      "url": "https://www.aastocks.com/en/mobile/news.aspx?newsid=NOW.1527813&newssource=AAFN"
+      "url": "https://www.aastocks.com/en/mobile/news.aspx?newsid=NOW.1527813&newstype=61&newssource=AAFN"
     },
     {
       "id": 453,
@@ -8755,40 +8821,6 @@
       },
       "publishedAt": "2026-05-14T13:16:01.000Z",
       "url": "http://www.msn.com/en-us/money/companies/feds-find-no-evidence-of-tariff-cheating-among-appliance-makers/ar-AA1Oy6JW?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
-    },
-    {
-      "id": 56,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.4,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 4
-      },
-      "products": [
-        "세탁기",
-        "건조기"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "월풀",
-        "생산중단",
-        "미국공장",
-        "세탁기",
-        "공급망"
-      ],
-      "headline": "월풀 Amana 공장, 5월 18-22일 생산 중단",
-      "summary": "월풀의 미국 Amana 공장이 5월 18-22일 생산을 일시 중단한다. 세탁기·건조기 등 주력 제품 공급에 영향을 미칠 수 있으며, 향후 완성차 납기 일정 변동 우려.",
-      "source": {
-        "name": "Google News - Whirlpool",
-        "url": "https://www.kcrg.com/2026/05/14/amana-whirlpool-plant-halt-production-may-18-22/"
-      },
-      "publishedAt": "2026-05-14T13:02:00.000Z",
-      "url": "https://www.kcrg.com/2026/05/14/amana-whirlpool-plant-halt-production-may-18-22/"
     },
     {
       "id": 38,
