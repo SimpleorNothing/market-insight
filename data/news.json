@@ -1,7 +1,105 @@
 {
-  "updatedAt": "2026-06-05T23:59:13.375Z",
+  "updatedAt": "2026-06-06T02:51:57.282Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 466,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "원재료 가격",
+        "구리",
+        "공급 지연",
+        "여름 성수기",
+        "수급 부족"
+      ],
+      "headline": "구리값 상승이 에어컨 공급 지연 야기, 여름 시즌 수급 우려",
+      "summary": "구리 가격 상승으로 에어컨 생산 차질이 발생, 여름 수요 시즌 공급 부족 가능성 대두. 원재료비 인상이 가전 산업 전반의 공급망에 영향을 미치는 연쇄 효과 발생. 일본 시장 사례를 통해 국내 에어컨 시장의 수급 긴장 상황 반영.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.munhwa.com/article/11593662"
+      },
+      "publishedAt": "2026-06-06T02:49:06.000Z",
+      "url": "https://www.munhwa.com/article/11593662"
+    },
+    {
+      "id": 467,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "수요반응",
+        "에너지정책",
+        "전력망안정",
+        "스마트가전",
+        "차등보상"
+      ],
+      "headline": "수요반응 보상 차등화 필요…가전별·시간대별 정책 개선 요청",
+      "summary": "고려대 연구팀이 가전 수요반응(DR) 정책의 개선을 제안했다. 기존 획일적 보상 체계에서 제품별·시간대별로 차등화된 보상 구조 도입이 필요하다고 주장하며, 에너지 효율성과 그리드 안정성을 동시에 확보할 수 있는 방안을 강조했다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://weekly.hankooki.com/news/articleViewAmp.html?idxno=7167842"
+      },
+      "publishedAt": "2026-06-06T01:41:16.000Z",
+      "url": "https://weekly.hankooki.com/news/articleViewAmp.html?idxno=7167842"
+    },
+    {
+      "id": 465,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "AI에이전트",
+        "의사결정자동화",
+        "디지털혁신",
+        "운영효율성"
+      ],
+      "headline": "삼성전자, AI 에이전트로 의사결정 속도 '몇 시간→몇 초'로 단축",
+      "summary": "삼성전자가 AI 에이전트 기술을 도입해 의사결정 속도를 획기적으로 개선했다. 기존 몇 시간 소요되던 프로세스를 몇 초 단위로 단축해 운영 효율성을 대폭 향상시키고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.themiilk.com/articles/ad6408405"
+      },
+      "publishedAt": "2026-06-06T01:37:00.000Z",
+      "url": "https://www.themiilk.com/articles/ad6408405"
+    },
     {
       "id": 462,
       "lens": "경쟁사",
@@ -236,6 +334,39 @@
       },
       "publishedAt": "2026-06-05T16:31:50.000Z",
       "url": "https://www.jobsohio.com/newsroom/ohio-success/whirlpool-expands-its-ohio-manufacturing-legacy-with-425-million-in-investments"
+    },
+    {
+      "id": 470,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "감원",
+        "Amana",
+        "미국제조",
+        "구조조정"
+      ],
+      "headline": "월풀, 아메나 공장서 7월 288명 감원 단행",
+      "summary": "월풀이 자회사 아메나 공장에서 7월 288명의 감원을 실시한다. 미국 내 가전 제조 고용 축소로 경쟁 구도 변화가 예상된다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.kwwl.com/news/whirlpool-cuts-288-jobs-at-amana-plant-in-july/article_82be3874-e9dc-4cfa-a311-9b3122be7905.html"
+      },
+      "publishedAt": "2026-06-05T15:46:00.000Z",
+      "url": "https://www.kwwl.com/news/whirlpool-cuts-288-jobs-at-amana-plant-in-july/article_82be3874-e9dc-4cfa-a311-9b3122be7905.html"
     },
     {
       "id": 454,
