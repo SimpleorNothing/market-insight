@@ -711,102 +711,220 @@ ${buContextLines.join("\n\n")}
   return JSON.parse(cleaned);
 }
 
-function buildReportHtml(report, news, products) {
+// ===== 네이티브 OOXML(.docx) 생성 =====
+// html-docx-js는 HTML을 w:altChunk(대체 콘텐츠)로 감싼 docx를 만든다.
+// 데스크톱 Word는 이를 풀어 열지만 모바일/웹 Word는 altChunk 미지원 →
+// "대체 형식이 포함된 파일을 열 수 없습니다" 오류 발생.
+// 따라서 구조화된 report 데이터로 진짜 WordprocessingML 문서를 직접 만든다.
+
+// OOXML 본문 텍스트 이스케이프 (& < > 만, 따옴표는 본문에서 불필요)
+function docxEsc(s) {
+  return String(s ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+// 한 개의 텍스트 런(run). pt 단위 글꼴 크기 → 하프포인트(×2).
+function docxRun(text, { bold = false, color = "1a1a1a", pt = 10.5 } = {}) {
+  const sz = Math.round(pt * 2);
+  const rPr =
+    `<w:rPr>` +
+    (bold ? `<w:b/><w:bCs/>` : ``) +
+    `<w:color w:val="${color}"/>` +
+    `<w:sz w:val="${sz}"/><w:szCs w:val="${sz}"/>` +
+    `<w:rFonts w:ascii="Malgun Gothic" w:hAnsi="Malgun Gothic" w:eastAsia="Malgun Gothic" w:cs="Malgun Gothic"/>` +
+    `</w:rPr>`;
+  return `<w:r>${rPr}<w:t xml:space="preserve">${docxEsc(text)}</w:t></w:r>`;
+}
+
+// 한 개의 문단(paragraph). spacing/indent는 twips(1pt=20), 들여쓰기는 인자 그대로.
+function docxPara(runsXml, { beforePt = 0, afterPt = 2, indentTwips = 0, shade = null, border = null } = {}) {
+  let pPr = `<w:pPr><w:spacing w:before="${Math.round(beforePt * 20)}" w:after="${Math.round(afterPt * 20)}" w:line="276" w:lineRule="auto"/>`;
+  if (indentTwips) pPr += `<w:ind w:left="${indentTwips}"/>`;
+  if (shade) pPr += `<w:shd w:val="clear" w:color="auto" w:fill="${shade}"/>`;
+  if (border) pPr += `<w:pBdr><w:left w:val="single" w:sz="18" w:space="6" w:color="1a1a1a"/></w:pBdr>`;
+  pPr += `</w:pPr>`;
+  return `<w:p>${pPr}${runsXml}</w:p>`;
+}
+
+function buildDocxBlob(report, news, products) {
   const sectionLabels = {
-    signal: { name: "핵심 신호", color: "#1a1a1a" },
-    opportunity: { name: "당사 기회", color: "#0c447c" },
-    threat: { name: "당사 위협", color: "#a32d2d" },
+    signal: { name: "핵심 신호", color: "1a1a1a" },
+    opportunity: { name: "당사 기회", color: "0c447c" },
+    threat: { name: "당사 위협", color: "a32d2d" },
   };
 
   const now = new Date();
-  const dateStr = `'${String(now.getFullYear()).slice(2)}.${
-    now.getMonth() + 1
-  }.${now.getDate()}`;
+  const dateStr = `'${String(now.getFullYear()).slice(2)}.${now.getMonth() + 1}.${now.getDate()}`;
 
-  const sectionsHtml = report.sections
-    .map((s) => {
-      const label = sectionLabels[s.type] || { name: s.type, color: "#1a1a1a" };
-      // 머리 기호(□·-·번호)·공백 제거 → 라벨과 헤드라인을 1줄로 결합
-      const headline = String(s.headline || "")
-        .replace(/^[\s□■▪◆·.\-]+/, "")
-        .trim();
-      const itemsHtml = (s.items || [])
-        .map(
-          (it) =>
-            `<p style="margin: 3pt 0 3pt 16pt; font-size: 10pt;">- ${escapeXml(it.text)}</p>`
-        )
-        .join("");
-      return `
-        <div style="margin-top: 9pt;">
-          <p style="margin: 0; font-size: 11pt; font-weight: bold;"><span style="color: ${label.color};">[${label.name}]</span>&nbsp;&nbsp;<span style="color: #1a1a1a;">${escapeXml(headline)}</span></p>
-          ${itemsHtml}
-        </div>
-      `;
+  const body = [];
+
+  // 제목 / 부제 / 메타
+  body.push(docxPara(docxRun("DA Market Insight · 사업부 영향 리포트", { bold: true, pt: 15 }), { afterPt: 1 }));
+  body.push(docxPara(docxRun(report.subtitle || news.headline, { color: "5f5e5a", pt: 11 }), { afterPt: 2 }));
+  body.push(
+    docxPara(
+      docxRun(
+        `${dateStr} 발행 · 대상 제품: ${products.join(" / ")} · 등급: ${news.grade} · 영향도 ${(news.impact || 0).toFixed(1)}`,
+        { color: "888780", pt: 8.5 }
+      ),
+      { afterPt: 6 }
+    )
+  );
+
+  // 섹션 (핵심 신호 / 당사 기회 / 당사 위협)
+  (report.sections || []).forEach((s) => {
+    const label = sectionLabels[s.type] || { name: s.type, color: "1a1a1a" };
+    const headline = String(s.headline || "")
+      .replace(/^[\s□■▪◆·.\-]+/, "")
+      .trim();
+    const headRuns =
+      docxRun(`[${label.name}]`, { bold: true, color: label.color, pt: 11 }) +
+      docxRun("  ", { bold: true, pt: 11 }) +
+      docxRun(headline, { bold: true, color: "1a1a1a", pt: 11 });
+    body.push(docxPara(headRuns, { beforePt: 9, afterPt: 2 }));
+    (s.items || []).forEach((it) => {
+      body.push(docxPara(docxRun(`- ${it.text}`, { pt: 10 }), { beforePt: 1, afterPt: 1, indentTwips: 320 }));
+    });
+  });
+
+  // 마무리 시사점 (음영 + 좌측 굵은 테두리)
+  body.push(
+    docxPara(docxRun("마무리 시사점", { bold: true, color: "5f5e5a", pt: 9 }), {
+      beforePt: 11,
+      afterPt: 1,
+      shade: "f1efe8",
+      border: true,
+      indentTwips: 120,
     })
-    .join("");
+  );
+  body.push(
+    docxPara(docxRun(report.implication, { pt: 10.5 }), {
+      afterPt: 2,
+      shade: "f1efe8",
+      border: true,
+      indentTwips: 120,
+    })
+  );
 
-  return `<!DOCTYPE html>
-<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
-<head>
-<meta charset='utf-8'>
-<title>DA Market Insight Report</title>
-<style>
-@page { size: A4; margin: 1.4cm 1.5cm; }
-body { font-family: '맑은 고딕', 'Malgun Gothic', sans-serif; font-size: 10.5pt; line-height: 1.45; color: #1a1a1a; }
-h1 { font-size: 15pt; margin: 0 0 2pt 0; }
-.subtitle { font-size: 11pt; color: #5f5e5a; margin: 0 0 3pt 0; }
-.meta { font-size: 8.5pt; color: #888780; margin: 0 0 6pt 0; padding-bottom: 5pt; border-bottom: 0.5pt solid #d3d1c7; }
-.implication { margin-top: 11pt; padding: 7pt 11pt; background: #f1efe8; border-left: 3pt solid #1a1a1a; }
-.references { margin-top: 10pt; padding-top: 5pt; border-top: 0.5pt solid #d3d1c7; font-size: 8.5pt; color: #5f5e5a; }
-</style>
-</head>
-<body>
-<h1>DA Market Insight · 사업부 영향 리포트</h1>
-<p class="subtitle">${escapeXml(report.subtitle || news.headline)}</p>
-<p class="meta">${dateStr} 발행 · 대상 제품: ${escapeXml(products.join(" / "))} · 등급: ${escapeXml(news.grade)} · 영향도 ${(news.impact || 0).toFixed(1)}</p>
-${sectionsHtml}
-<div class="implication">
-<p style="margin: 0 0 2pt 0; font-size: 9pt; color: #5f5e5a; font-weight: bold;">마무리 시사점</p>
-<p style="margin: 0; font-size: 10.5pt;">${escapeXml(report.implication)}</p>
-</div>
-<div class="references">
-<p style="margin: 0 0 2pt 0;"><strong>※ 참고자료</strong></p>
-<p style="margin: 0;">1. ${escapeXml(news.headline)} - ${escapeXml(news.url)}</p>
-</div>
-</body>
-</html>`;
+  // 참고자료
+  body.push(docxPara(docxRun("※ 참고자료", { bold: true, color: "5f5e5a", pt: 8.5 }), { beforePt: 10, afterPt: 1 }));
+  body.push(
+    docxPara(docxRun(`1. ${news.headline} - ${news.url}`, { color: "5f5e5a", pt: 8.5 }), { afterPt: 0 })
+  );
+
+  const documentXml =
+    `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` +
+    `<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">` +
+    `<w:body>${body.join("")}` +
+    `<w:sectPr><w:pgSz w:w="11906" w:h="16838"/>` +
+    `<w:pgMar w:top="794" w:right="850" w:bottom="794" w:left="850" w:header="708" w:footer="708" w:gutter="0"/>` +
+    `</w:sectPr></w:body></w:document>`;
+
+  const contentTypes =
+    `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` +
+    `<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">` +
+    `<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>` +
+    `<Default Extension="xml" ContentType="application/xml"/>` +
+    `<Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>` +
+    `</Types>`;
+
+  const rels =
+    `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>` +
+    `<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">` +
+    `<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>` +
+    `</Relationships>`;
+
+  return zipStore([
+    { name: "[Content_Types].xml", text: contentTypes },
+    { name: "_rels/.rels", text: rels },
+    { name: "word/document.xml", text: documentXml },
+  ]);
 }
 
-function downloadDocx(html, filename) {
-  if (typeof window.htmlDocx !== "undefined" && window.htmlDocx.asBlob) {
-    try {
-      const blob = window.htmlDocx.asBlob(html, {
-        orientation: "portrait",
-        margins: { top: 794, right: 850, bottom: 794, left: 850 },
-      });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = filename;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      setTimeout(() => URL.revokeObjectURL(url), 1000);
-      return;
-    } catch (err) {
-      console.warn("docx 변환 실패, .doc fallback:", err);
-    }
+// ===== 최소 ZIP(STORE, 무압축) 라이터 =====
+const CRC32_TABLE = (() => {
+  const t = new Uint32Array(256);
+  for (let n = 0; n < 256; n++) {
+    let c = n;
+    for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+    t[n] = c >>> 0;
   }
-  const blob = new Blob(["\ufeff", html], { type: "application/msword" });
+  return t;
+})();
+
+function crc32(bytes) {
+  let c = 0xffffffff;
+  for (let i = 0; i < bytes.length; i++) c = CRC32_TABLE[(c ^ bytes[i]) & 0xff] ^ (c >>> 8);
+  return (c ^ 0xffffffff) >>> 0;
+}
+
+function zipStore(files) {
+  const enc = new TextEncoder();
+  const entries = files.map((f) => ({ name: enc.encode(f.name), data: enc.encode(f.text) }));
+
+  const localParts = [];
+  const central = [];
+  let offset = 0;
+
+  const u16 = (v) => [v & 0xff, (v >>> 8) & 0xff];
+  const u32 = (v) => [v & 0xff, (v >>> 8) & 0xff, (v >>> 16) & 0xff, (v >>> 24) & 0xff];
+
+  entries.forEach((e) => {
+    const crc = crc32(e.data);
+    const size = e.data.length;
+    const nameLen = e.name.length;
+
+    const local = [
+      ...u32(0x04034b50), ...u16(20), ...u16(0), ...u16(0),
+      ...u16(0), ...u16(0), // mod time/date
+      ...u32(crc), ...u32(size), ...u32(size),
+      ...u16(nameLen), ...u16(0),
+    ];
+    localParts.push(new Uint8Array(local), e.name, e.data);
+
+    central.push([
+      ...u32(0x02014b50), ...u16(20), ...u16(20), ...u16(0), ...u16(0),
+      ...u16(0), ...u16(0),
+      ...u32(crc), ...u32(size), ...u32(size),
+      ...u16(nameLen), ...u16(0), ...u16(0), ...u16(0), ...u16(0),
+      ...u32(0), ...u32(offset),
+    ]);
+
+    offset += local.length + nameLen + size;
+  });
+
+  const centralChunks = [];
+  let centralSize = 0;
+  central.forEach((c, i) => {
+    const header = new Uint8Array(c);
+    centralChunks.push(header, entries[i].name);
+    centralSize += header.length + entries[i].name.length;
+  });
+
+  const eocd = new Uint8Array([
+    ...u32(0x06054b50), ...u16(0), ...u16(0),
+    ...u16(entries.length), ...u16(entries.length),
+    ...u32(centralSize), ...u32(offset), ...u16(0),
+  ]);
+
+  return new Blob([...localParts, ...centralChunks, eocd], {
+    type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  });
+}
+
+function downloadBlob(blob, filename) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = filename.replace(/\.docx$/, ".doc");
+  a.download = filename;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
+
 
 // ===== Modal =====
 function renderProductCheckboxes(preselect = []) {
@@ -876,10 +994,10 @@ async function generateReport() {
       throw new Error("리포트 구조 검증 실패");
     }
 
-    const html = buildReportHtml(report, news, checked);
+    const blob = buildDocxBlob(report, news, checked);
     const safe = checked.join("_").replace(/[^가-힣A-Za-z0-9_]/g, "");
     const ts = new Date().toISOString().slice(0, 10);
-    downloadDocx(html, `DA_Insight_${ts}_${safe}.docx`);
+    downloadBlob(blob, `DA_Insight_${ts}_${safe}.docx`);
 
     closeReportModal();
     showToast(`${checked.length}개 제품 리포트 다운로드 完了`, true);
