@@ -1,7 +1,42 @@
 {
-  "updatedAt": "2026-06-07T13:19:53.289Z",
+  "updatedAt": "2026-06-07T15:19:22.439Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 505,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "구조조정",
+        "미국 제조업",
+        "인원감원",
+        "생산성",
+        "Amana"
+      ],
+      "headline": "월풀, Amana 공장 대규모 감원 추진…'현대화' 명분",
+      "summary": "월풀이 자회사 Amana의 대규모 인원 감원을 단행하며 제조 공정 현대화를 추진 중이다. 미국 내 생산 기지 구조조정의 일환으로, 경영 효율화를 통한 비용 절감 전략으로 평가된다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://nonpareilonline.com/news/state-regional/business/article_f2c704a6-df19-48a1-83de-cc3a845851bd.html"
+      },
+      "publishedAt": "2026-06-07T12:00:00.000Z",
+      "url": "https://nonpareilonline.com/news/state-regional/business/article_f2c704a6-df19-48a1-83de-cc3a845851bd.html"
+    },
     {
       "id": 500,
       "lens": "정책",
@@ -1022,38 +1057,6 @@
       },
       "publishedAt": "2026-06-05T11:28:50.000Z",
       "url": "https://cbs2iowa.com/news/local/whirlpool-amana-to-layoff-hundreds-as-they-end-second-shift-production-july-5"
-    },
-    {
-      "id": 481,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 4
-      },
-      "products": [
-        "조리기기"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "구조조정",
-        "노사분쟁",
-        "제조업",
-        "미국공장"
-      ],
-      "headline": "월풀, Amana 공장 2교대 폐지…노조 반발",
-      "summary": "월풀이 Amana 공장의 2교대 생산을 중단하기로 결정했다. 노조는 이 결정에 강력히 반발하고 있으며, 미국 가전 산업의 구조 조정 움직임으로 평가된다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.kcrg.com/2026/06/05/breaking-whirlpool-ending-second-shift-production-amana/"
-      },
-      "publishedAt": "2026-06-05T09:03:00.000Z",
-      "url": "https://www.kcrg.com/2026/06/05/breaking-whirlpool-ending-second-shift-production-amana/"
     },
     {
       "id": 480,
