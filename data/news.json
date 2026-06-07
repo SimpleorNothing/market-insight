@@ -1,7 +1,98 @@
 {
-  "updatedAt": "2026-06-07T02:46:52.003Z",
+  "updatedAt": "2026-06-07T06:59:14.771Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 497,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "OLED TV",
+        "시장점유율",
+        "프리미엄 디스플레이",
+        "삼성 LG 경쟁"
+      ],
+      "headline": "삼성, OLED TV 시장서 LG와 격차 6%p까지 단축",
+      "summary": "삼성전자가 OLED TV 시장에서 LG전자와의 매출 점유율 격차를 6%p까지 좁혔다. 삼성의 OLED TV 경쟁력 강화와 시장 내 위치 변화를 보여주는 지표로, 향후 고급 TV 시장 재편이 예상된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202606071124190570312"
+      },
+      "publishedAt": "2026-06-07T04:07:23.000Z",
+      "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202606071124190570312"
+    },
+    {
+      "id": 499,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "플라스틱소재",
+        "열관리기술",
+        "미니어처화",
+        "에너지효율",
+        "신소재"
+      ],
+      "headline": "가전용 플라스틱 소재 시장, 2035년까지 소형화·열관리 중심 성장",
+      "summary": "2035년까지 가전 산업 플라스틱 소재 수요가 미니어처화와 열관리 기술 고도화에 의해 주도될 전망. 글로벌 가전 제조사들의 신기술 적용 확대로 고기능성 플라스틱 채택 증가가 예상되며, 제품 경량화와 에너지 효율성 강화가 시장 성장의 핵심 드라이버로 작용할 것으로 분석됨.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.indexbox.io/blog/electronics-consumer-goods-plastics-market-forecast-points-higher-toward-2035-driven-by-miniaturization-and-thermal-management-demands/"
+      },
+      "publishedAt": "2026-06-07T03:46:18.000Z",
+      "url": "https://www.indexbox.io/blog/electronics-consumer-goods-plastics-market-forecast-points-higher-toward-2035-driven-by-miniaturization-and-thermal-management-demands/"
+    },
+    {
+      "id": 496,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "에너지정책",
+        "탄소중립",
+        "친환경난방",
+        "정부정책"
+      ],
+      "headline": "정책: 정부, 히트펌프 보급 확대 지자체 설명회 개최",
+      "summary": "기후부가 공기열·수열 히트펌프 보급 확대를 위해 지자체 대상 설명회를 개최했다. 탄소중립 기조에 따른 친환경 난방 정책 강화로 국내 HVAC 시장 수요 증가가 예상된다. 히트펌프 보급 확대는 가전사의 관련 제품 개발 및 시장 점유율 경쟁 심화를 초래할 것으로 전망된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=368794"
+      },
+      "publishedAt": "2026-06-07T03:04:47.000Z",
+      "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=368794"
+    },
     {
       "id": 494,
       "lens": "정책",
@@ -90,37 +181,6 @@
       },
       "publishedAt": "2026-06-07T00:00:00.000Z",
       "url": "https://www.k-health.com/news/articleView.html?idxno=92863"
-    },
-    {
-      "id": 492,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자",
-        "LG전자"
-      ],
-      "tags": [
-        "OLED TV",
-        "시장점유율",
-        "삼성LG 경쟁",
-        "프리미엄 TV"
-      ],
-      "headline": "삼성전자, OLED TV 시장 LG전자와 격차 6%p 좁혀",
-      "summary": "삼성전자가 OLED TV 시장에서 LG전자와의 점유율 격차를 6%포인트까지 좁혔다. 두 경쟁사의 시장 경쟁이 심화되고 있으며, 삼성전자의 프리미엄 TV 부문 추격이 가속화되고 있음을 의미한다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.yna.co.kr/amp/view/AKR20260605065200003"
-      },
-      "publishedAt": "2026-06-06T22:15:01.000Z",
-      "url": "https://www.yna.co.kr/amp/view/AKR20260605065200003"
     },
     {
       "id": 490,
