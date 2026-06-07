@@ -1,41 +1,98 @@
 {
-  "updatedAt": "2026-06-07T15:19:22.439Z",
+  "updatedAt": "2026-06-07T17:05:34.764Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 505,
+      "id": 511,
       "lens": "경쟁사",
       "grade": "주요",
-      "impact": 3.9,
+      "impact": 4.1,
       "factors": {
         "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "엔비디아",
+        "AI",
+        "공급망",
+        "기술협력"
+      ],
+      "headline": "LG, 엔비디아 회담서 실질적 성과 확보",
+      "summary": "한국 경영진들이 엔비디아와의 미팅에서 구체적인 성과를 획득했다. LG전자 등 한국 대기업이 AI 칩 공급망 및 전략적 협력 논의를 통해 기술 경쟁력 강화 기회를 마련했다. 글로벌 반도체·AI 생태계 재편 속 당사의 전략적 위치 정립 움직임으로 평가된다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.chosun.com/english/industry-en/2026/06/08/YUN55GEYJFBN3OSKIOHUZEBBLQ/"
+      },
+      "publishedAt": "2026-06-07T16:35:25.000Z",
+      "url": "https://www.chosun.com/english/industry-en/2026/06/08/YUN55GEYJFBN3OSKIOHUZEBBLQ/"
+    },
+    {
+      "id": 510,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [],
+      "tags": [
+        "미니냉장고",
+        "소형주거",
+        "도시화",
+        "시장전망",
+        "생활트렌드"
+      ],
+      "headline": "도시화·소형 주거 확산, 미니 냉장고 시장 2035년까지 상승 예상",
+      "summary": "IndexBox 분석에 따르면 미니 냉장고 시장이 도시화와 컴팩트 라이프스타일 확산에 힘입어 2035년까지 지속적 성장세를 보일 전망이다. 1인 가구·오피스텔·기숙사 등 소형 주거공간의 증가가 주요 수요 동인으로 작용할 것으로 예상된다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.indexbox.io/blog/mini-fridge-market-forecast-points-higher-toward-2035-driven-by-urbanization-and-compact-living-trends/"
+      },
+      "publishedAt": "2026-06-07T15:26:17.000Z",
+      "url": "https://www.indexbox.io/blog/mini-fridge-market-forecast-points-higher-toward-2035-driven-by-urbanization-and-compact-living-trends/"
+    },
+    {
+      "id": 507,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
         "timeUrgency": 5,
         "marketSize": 4,
         "sourceReliability": 4
       },
       "products": [
-        "세탁기",
-        "건조기",
-        "조리기기"
+        "HVAC"
       ],
-      "competitors": [
-        "월풀"
-      ],
+      "competitors": [],
       "tags": [
-        "구조조정",
-        "미국 제조업",
-        "인원감원",
-        "생산성",
-        "Amana"
+        "에너지전환",
+        "히트펌프",
+        "환경규제",
+        "지역정책"
       ],
-      "headline": "월풀, Amana 공장 대규모 감원 추진…'현대화' 명분",
-      "summary": "월풀이 자회사 Amana의 대규모 인원 감원을 단행하며 제조 공정 현대화를 추진 중이다. 미국 내 생산 기지 구조조정의 일환으로, 경영 효율화를 통한 비용 절감 전략으로 평가된다.",
+      "headline": "정부, 지방정부와 냉난방 전기화 정책 본격 추진",
+      "summary": "기후부가 지방정부와 협력하여 냉난방 전기화 정책을 공식 시작. 가스보일러에서 히트펌프 등 전기식 난방기기로의 전환을 추진하는 정책으로, 국내 HVAC 시장에 규제 영향. 에너지 정책 기반의 구조적 수요 변화 신호.",
       "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://nonpareilonline.com/news/state-regional/business/article_f2c704a6-df19-48a1-83de-cc3a845851bd.html"
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.skenews.kr/news/articleView.html?idxno=52234"
       },
-      "publishedAt": "2026-06-07T12:00:00.000Z",
-      "url": "https://nonpareilonline.com/news/state-regional/business/article_f2c704a6-df19-48a1-83de-cc3a845851bd.html"
+      "publishedAt": "2026-06-07T15:12:43.000Z",
+      "url": "https://www.skenews.kr/news/articleView.html?idxno=52234"
     },
     {
       "id": 500,
@@ -65,6 +122,37 @@
       },
       "publishedAt": "2026-06-07T09:17:40.000Z",
       "url": "https://www.hankyung.com/amp/2026060717711"
+    },
+    {
+      "id": 506,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 5
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "여름성수기",
+        "냉방기기",
+        "유통전략",
+        "계절수요",
+        "판매촉진"
+      ],
+      "headline": "유통업계, 여름 성수기 대비 에어컨 판촉 확대",
+      "summary": "유통업계가 본격적인 여름 시즌을 앞두고 에어컨 등 냉방기기 관련 상품 전시와 판촉에 나섰다. 계절 수요 증가에 대비한 선제적 재고 준비 및 마케팅 활동으로 여름 성수기 매출 확대를 노린다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.yna.co.kr/amp/view/MYH20260607010900038"
+      },
+      "publishedAt": "2026-06-07T07:19:02.000Z",
+      "url": "https://www.yna.co.kr/amp/view/MYH20260607010900038"
     },
     {
       "id": 501,
