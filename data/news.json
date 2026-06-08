@@ -1,7 +1,102 @@
 {
-  "updatedAt": "2026-06-08T03:36:12.288Z",
+  "updatedAt": "2026-06-08T08:45:20.481Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 528,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기"
+      ],
+      "competitors": [
+        "Haier",
+        "삼성전자"
+      ],
+      "tags": [
+        "AI가전",
+        "유럽시장",
+        "글로벌경쟁",
+        "시장점유율",
+        "스마트홈"
+      ],
+      "headline": "中 하이얼의 AI 가전, 유럽 시장에서 삼성 추격 가속",
+      "summary": "중국의 하이얼이 AI 기술을 탑재한 가전제품으로 유럽 시장 점유율을 확대하며 삼성전자를 맹렬히 추격하고 있다. 하이얼은 스마트 냉장고, 세탁기, 조리기기 등 주요 가전 카테고리에서 경쟁력을 강화하며 글로벌 시장 재편을 주도하고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260608163521159"
+      },
+      "publishedAt": "2026-06-08T07:35:21.000Z",
+      "url": "https://v.daum.net/v/20260608163521159"
+    },
+    {
+      "id": 531,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "AI",
+        "전략적동맹",
+        "NVIDIA",
+        "기술협력"
+      ],
+      "headline": "LG·NVIDIA, 차세대 AI 동맹 강화...통합 역량 결집",
+      "summary": "LG전자와 NVIDIA가 '원 LG' 역량을 통합하는 차세대 AI 동맹을 강화하고 있다. 양사는 AI 기술 협력을 통해 가전·산업용 제품의 지능화를 가속화할 계획이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.asiae.co.kr/en/article/2026060814144842337"
+      },
+      "publishedAt": "2026-06-08T05:14:48.000Z",
+      "url": "https://www.asiae.co.kr/en/article/2026060814144842337"
+    },
+    {
+      "id": 529,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "태양광",
+        "신재생에너지",
+        "에너지효율",
+        "스마트홈"
+      ],
+      "headline": "태양광+히트펌프 결합으로 에너지제로 주택 구현",
+      "summary": "모닥불에너지가 태양광 발전과 히트펌프 기술을 통합한 에너지제로 주택 솔루션을 개발·실현 중. 신재생 에너지와 고효율 난방 기술의 결합으로 가정용 에너지 자립 모델 구축.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=81892"
+      },
+      "publishedAt": "2026-06-08T04:58:09.000Z",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=81892"
+    },
     {
       "id": 520,
       "lens": "기술",
@@ -90,37 +185,6 @@
       },
       "publishedAt": "2026-06-07T23:45:25.000Z",
       "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=200181"
-    },
-    {
-      "id": 517,
-      "lens": "정책",
-      "grade": "주시",
-      "impact": 3.1,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "에너지제로주택",
-        "태양광",
-        "히트펌프",
-        "신재생에너지",
-        "에너지정책"
-      ],
-      "headline": "보조금 제외 태양광·히트펌프 에너지제로 주택 실증 시작",
-      "summary": "모닥불에너지가 정부 보조금 없이 태양광과 히트펌프 기술을 결합한 에너지제로 주택 실증 프로젝트를 개시했다. 이는 에너지 정책과 신재생에너지 활용 확대 추세를 반영한 것으로, 국내 HVAC 및 태양광 시장의 정책 기반 성장 가능성을 시사한다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://platum.kr/archives/288331"
-      },
-      "publishedAt": "2026-06-07T22:59:00.000Z",
-      "url": "https://platum.kr/archives/288331"
     },
     {
       "id": 515,
