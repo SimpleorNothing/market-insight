@@ -1,7 +1,44 @@
 {
-  "updatedAt": "2026-06-08T19:16:04.405Z",
+  "updatedAt": "2026-06-08T21:44:07.592Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 545,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "D램 수급",
+        "원자재 가격",
+        "공급망",
+        "가격 인상",
+        "반도체"
+      ],
+      "headline": "D램 대란으로 가전·자동차 가격 상승 압력 가중",
+      "summary": "D램 가격 폭등이 가전 및 자동차 산업 전반에 원가 상승 압력을 야기하고 있습니다. 반도체 수급 불균형이 심화되면서 완성품 가격 인상이 불가피한 상황입니다. 글로벌 소비자 물가에 직접적 영향을 미칠 것으로 예상됩니다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.g-enews.com/article/Global-Biz/2026/06/2026060823365437832bd56fbc3c_1"
+      },
+      "publishedAt": "2026-06-08T20:42:24.000Z",
+      "url": "https://www.g-enews.com/article/Global-Biz/2026/06/2026060823365437832bd56fbc3c_1"
+    },
     {
       "id": 537,
       "lens": "정책",
@@ -1455,6 +1492,36 @@
       },
       "publishedAt": "2026-06-05T15:30:23.000Z",
       "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpool-whr-down-17-since-153023273.html"
+    },
+    {
+      "id": 549,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.7,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "혁신상",
+        "R&D",
+        "개방형혁신",
+        "월풀상"
+      ],
+      "headline": "월풀, 2026 IRI 혁신상 수상",
+      "summary": "월풀 코퍼레이션이 PPG, IPG 포토닉스와 함께 2026 IRI 우수상(Open Innovation)을 수상했다. 산업 R&D 역량 및 혁신 협력 성과를 인정받은 것으로, 회사의 개방형 혁신 전략을 대외 공인하는 성과다.",
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.coatingsworld.com/breaking-news/ppg-ipg-photonics-whirlpool-corporation-win-2026-iri-excellence-award-in-open-innovation/"
+      },
+      "publishedAt": "2026-06-05T14:33:20.000Z",
+      "url": "https://www.coatingsworld.com/breaking-news/ppg-ipg-photonics-whirlpool-corporation-win-2026-iri-excellence-award-in-open-innovation/"
     },
     {
       "id": 474,
