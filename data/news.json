@@ -1,7 +1,44 @@
 {
-  "updatedAt": "2026-06-13T11:47:28.599Z",
+  "updatedAt": "2026-06-13T13:24:03.797Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 685,
+      "lens": "기술",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "AI 기술",
+        "스마트홈",
+        "에코시스템",
+        "IoT 통합",
+        "차세대 가전"
+      ],
+      "headline": "LG전자, AI 기반 홈 에코시스템 공개",
+      "summary": "LG전자가 AI 기술을 활용한 통합 홈 에코시스템을 새로이 발표했다. 이번 공개는 가전 산업의 스마트화 및 AI 기술 적용 추세를 반영한 전략적 움직임으로 평가된다. 당사 가전 포트폴리오 전반에 걸친 AI 통합으로 소비자 경험 개선을 목표로 한다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://themachinemaker.com/news/lg-electronics-unveils-ai-powered-home-ecosystem/"
+      },
+      "publishedAt": "2026-06-13T12:12:16.000Z",
+      "url": "https://themachinemaker.com/news/lg-electronics-unveils-ai-powered-home-ecosystem/"
+    },
     {
       "id": 680,
       "lens": "소비자",
@@ -95,6 +132,36 @@
       },
       "publishedAt": "2026-06-13T05:20:32.000Z",
       "url": "https://newneek.co/@newneek/article/41373"
+    },
+    {
+      "id": 683,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에어컨 냉각성능",
+        "설치 환경",
+        "소비자민원",
+        "여름시즌"
+      ],
+      "headline": "에어컨 설치 후 실내 냉각 미흡 원인 분석",
+      "summary": "에어컨 설치 후에도 실내가 충분히 냉각되지 않는 소비자 민원 사례를 다룬 기사. 설치 환경, 에어컨 용량, 실내 단열 상태 등 냉각 성능에 영향을 미치는 요소들을 점검하는 내용을 포함. 여름 시즌 에어컨 이용 증가에 따른 소비자 만족도 및 정확한 설치 중요성 부각.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.jtbc.co.kr/article/NB12303042"
+      },
+      "publishedAt": "2026-06-13T05:00:00.000Z",
+      "url": "https://news.jtbc.co.kr/article/NB12303042"
     },
     {
       "id": 678,
@@ -341,39 +408,6 @@
       },
       "publishedAt": "2026-06-12T19:34:15.000Z",
       "url": "https://seekingalpha.com/article/4914653-whirlpool-upside-is-clouded-by-sector-instability-rating-downgrade"
-    },
-    {
-      "id": 665,
-      "lens": "기술",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "HVAC",
-        "청소기"
-      ],
-      "competitors": [],
-      "tags": [
-        "AI 홈 에코시스템",
-        "스마트 가전",
-        "LG 전략",
-        "글로벌 시연"
-      ],
-      "headline": "LG, AI 홈 에코시스템 진화 선보여",
-      "summary": "LG전자가 AI 기반 홈 에코시스템의 진화 방향을 공식 시연했다. 냉장고·세탁기·공조·청소기 등 주요 가전 제품들이 AI 통합으로 사용자 경험을 고도화하는 전략이다. 글로벌 시장에서 스마트 가전 경쟁이 심화되는 가운데 차별화 포지셔닝을 강화하는 움직임으로 평가된다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://technuter.com/consumer-electronics/lg-electronics-demonstrates-the-evolution-of-the-ai-home-ecosystem.html"
-      },
-      "publishedAt": "2026-06-12T12:08:57.000Z",
-      "url": "https://technuter.com/consumer-electronics/lg-electronics-demonstrates-the-evolution-of-the-ai-home-ecosystem.html"
     },
     {
       "id": 660,
@@ -8176,40 +8210,6 @@
       },
       "publishedAt": "2026-05-27T02:25:28.000Z",
       "url": "https://www.mk.co.kr/en/business/12058620"
-    },
-    {
-      "id": 285,
-      "lens": "기술",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "조리기기",
-        "HVAC",
-        "청소기"
-      ],
-      "competitors": [],
-      "tags": [
-        "AI스마트가전",
-        "스마트홈에코시스템",
-        "IoT연동",
-        "차세대가전전략"
-      ],
-      "headline": "LG전자, AI 스마트가전 에코시스템으로 500만 가구 목표",
-      "summary": "LG전자가 AI 기반 스마트홈 에코시스템 구축으로 500만 가구 보급을 목표로 설정했다. 스마트가전 간 연동과 지능형 기능 강화를 통해 시장 선도를 추진 중이며, 글로벌 스마트가전 시장 확대에 대응하는 전략으로 평가된다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://en.sedaily.com/article?id=version_2KCKJ1KPQO_20260527_112255"
-      },
-      "publishedAt": "2026-05-27T02:00:05.000Z",
-      "url": "https://en.sedaily.com/article?id=version_2KCKJ1KPQO_20260527_112255"
     },
     {
       "id": 271,
