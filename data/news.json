@@ -1,7 +1,68 @@
 {
-  "updatedAt": "2026-06-14T19:08:38.004Z",
+  "updatedAt": "2026-06-14T20:59:50.701Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 710,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에어컨설치",
+        "하자",
+        "소비자피해",
+        "여름철",
+        "온도관리"
+      ],
+      "headline": "에어컨 설치 후에도 실내 온도 못 낮추는 소비자 불만 증가",
+      "summary": "JTBC 보도에 따르면 에어컨 설치 후에도 방 안의 온도가 떨어지지 않는 소비자 피해 사례가 보도되고 있다. 에어컨 성능 저하의 원인으로 설치 불량, 방음·단열 결함, 또는 제품 결함이 지적되고 있으며, 여름철 실내 쾌적성 확보에 대한 소비자 관심이 높아지고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.jtbc.co.kr/video/NB12303042"
+      },
+      "publishedAt": "2026-06-14T20:13:27.000Z",
+      "url": "https://news.jtbc.co.kr/video/NB12303042"
+    },
+    {
+      "id": 712,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "AI로봇",
+        "데이터센터",
+        "전략협력",
+        "차세대기술"
+      ],
+      "headline": "LG, 엔비디아와 휴머노이드 로봇·데이터센터 협력",
+      "summary": "LG그룹이 엔비디아와 휴머노이드 로봇 및 차세대 데이터센터 개발에서 협력을 발표했다. 양사는 AI 기반 로봇 및 엣지 컴퓨팅 기술 분야에서 전략적 파트너십을 추진 중이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.technobezz.com/news/nvidia-partners-with-lg-group-on-humanoid-robots-and-next-generation-data-centers"
+      },
+      "publishedAt": "2026-06-14T20:00:33.000Z",
+      "url": "https://www.technobezz.com/news/nvidia-partners-with-lg-group-on-humanoid-robots-and-next-generation-data-centers"
+    },
     {
       "id": 709,
       "lens": "경쟁사",
