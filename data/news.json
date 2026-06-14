@@ -1,7 +1,38 @@
 {
-  "updatedAt": "2026-06-14T08:08:10.713Z",
+  "updatedAt": "2026-06-14T11:23:37.491Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 699,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelivance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5,
+        "salesRelevance": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "정부정책",
+        "에너지효율",
+        "난방시스템"
+      ],
+      "headline": "에너지공단, 가정용 공기열 히트펌프 시공기준 공식 공시",
+      "summary": "에너지공단이 가정용 공기열 히트펌프의 설치·시공 기준을 새로이 마련했다. 기준 제정으로 시장 표준화와 소비자 보호가 강화될 전망이다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hvacrj.co.kr/news/articleView.html?idxno=31025"
+      },
+      "publishedAt": "2026-06-14T08:17:37.000Z",
+      "url": "https://www.hvacrj.co.kr/news/articleView.html?idxno=31025"
+    },
     {
       "id": 695,
       "lens": "기술",
@@ -64,6 +95,39 @@
       "url": "https://v.daum.net/v/20260614133603787"
     },
     {
+      "id": 702,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신제품 출시",
+        "AI 냉방 기술",
+        "중동 시장",
+        "실내공기질",
+        "스마트홈"
+      ],
+      "headline": "LG전자, GCC 지역에 DUALCOOL™ AI 에어컨 출시",
+      "summary": "LG전자가 걸프협력회의(GCC) 지역에서 AI 기반 DUALCOOL™ 에어컨을 새로 출시했다. 스마트 기술과 공기청정 기능을 결합하여 실내 쾌적성을 강화했다. 중동 고급 냉방 시장 확대 전략의 일환이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.albawaba.com/business/pr/lg-electronics-launches-dualcool%E2%84%A2-ai-gcc-1630138"
+      },
+      "publishedAt": "2026-06-14T04:13:00.000Z",
+      "url": "https://www.albawaba.com/business/pr/lg-electronics-launches-dualcool%E2%84%A2-ai-gcc-1630138"
+    },
+    {
       "id": 698,
       "lens": "경쟁사",
       "grade": "주시",
@@ -94,35 +158,35 @@
       "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B8%80%EB%A1%9C%EB%B2%8C-%EB%9E%9C%EB%93%9C%EB%A7%88%ED%81%AC%EC%84%9C-%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C-rgb-tv-%EC%98%A5%EC%99%B8"
     },
     {
-      "id": 694,
+      "id": 700,
       "lens": "소비자",
       "grade": "주요",
-      "impact": 4.3,
+      "impact": 4.4,
       "factors": {
         "salesRelevance": 4,
         "timeUrgency": 5,
         "marketSize": 4,
-        "sourceReliability": 4
+        "sourceReliability": 5
       },
       "products": [
         "HVAC"
       ],
       "competitors": [],
       "tags": [
-        "폭염",
-        "에어컨유지보수",
-        "여름시즌",
-        "소비자대비",
-        "한국시장"
+        "에어컨",
+        "사전점검",
+        "폭염대비",
+        "계절수요",
+        "소비자교육"
       ],
-      "headline": "올해 폭염 예고, 에어컨 사전점검 필수",
-      "summary": "올해도 폭염이 예보됨에 따라 에어컨 사전점검의 중요성이 강조되고 있다. 여름철 본격 시작 전 제품 상태 확인을 통한 소비자 대비가 필수적인 상황이다.",
+      "headline": "폭염 시즌 앞두고 에어컨 사전점검 필수",
+      "summary": "올여름 폭염이 예고되면서 에어컨 사전점검의 중요성이 대두되고 있습니다. 가정용 에어컨 수요 증가가 예상되며, 소비자의 제품 유지보수 관심도가 높아지는 시기입니다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.yonhapnewstv.co.kr/news/MYH20260614092804hxV"
+        "url": "https://www.yna.co.kr/amp/view/MYH20260614003300038"
       },
-      "publishedAt": "2026-06-14T00:28:07.000Z",
-      "url": "https://www.yonhapnewstv.co.kr/news/MYH20260614092804hxV"
+      "publishedAt": "2026-06-14T00:28:18.000Z",
+      "url": "https://www.yna.co.kr/amp/view/MYH20260614003300038"
     },
     {
       "id": 691,
@@ -3880,36 +3944,6 @@
       },
       "publishedAt": "2026-06-06T18:39:02.000Z",
       "url": "https://www.trendhunter.com/amp/slideshow/june-2026-kitchen"
-    },
-    {
-      "id": 485,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 3.9,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "여름철수요",
-        "에어컨점검",
-        "소비자관리",
-        "계절성수요"
-      ],
-      "headline": "역대급 무더위 앞두고 에어컨 점검 시즌",
-      "summary": "여름 시즌을 앞두고 에어컨 사전 점검의 중요성을 강조하는 소비자 대상 기사. 국내 고온 현상이 예상되면서 에어컨 수요 증가와 관리 필요성이 부각. 냉방기기 판매 및 AS 수요 확대 시기.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.esocialtimes.com/news/articleView.html?idxno=43523"
-      },
-      "publishedAt": "2026-06-06T12:37:29.000Z",
-      "url": "https://www.esocialtimes.com/news/articleView.html?idxno=43523"
     },
     {
       "id": 486,
