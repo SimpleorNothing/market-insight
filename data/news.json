@@ -1,43 +1,129 @@
 {
-  "updatedAt": "2026-06-15T20:45:05.536Z",
+  "updatedAt": "2026-06-15T22:55:51.833Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 733,
+      "id": 739,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "생산감축",
+        "공급망",
+        "북미시장",
+        "구조조정"
+      ],
+      "headline": "월풀 생산 감축으로 미국 플라스틱 공장 폐쇄",
+      "summary": "미국 West Branch 플라스틱 부품 제조시설이 월풀의 생산 감축을 이유로 폐쇄된다. 월풀의 공급망 축소가 협력사의 가동 중단으로 이어지며, 북미 가전 산업 생산 둔화를 시사한다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.kcrg.com/2026/06/15/west-branch-plastics-facility-closing-blames-whirlpool-production-cuts/"
+      },
+      "publishedAt": "2026-06-15T22:25:00.000Z",
+      "url": "https://www.kcrg.com/2026/06/15/west-branch-plastics-facility-closing-blames-whirlpool-production-cuts/"
+    },
+    {
+      "id": 736,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "디지털 트윈",
+        "AI자동화",
+        "테스트 효율화",
+        "DX전략",
+        "고성능컴퓨팅"
+      ],
+      "headline": "삼성, 디지털 트윈으로 가전 테스트 기간 87% 단축",
+      "summary": "삼성전자 DX부문이 고성능컴퓨팅 서버 517대를 구축해 디지털 트윈 기술을 본격 운영 중. TV 낙하테스트 검증 시간을 기존 15일에서 2일로 단축했으며, 2030년 AI 자율공장 구축을 위한 기반을 마련했다.",
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/business/12075036"
+      },
+      "publishedAt": "2026-06-15T21:59:19.000Z",
+      "url": "https://www.mk.co.kr/news/business/12075036"
+    },
+    {
+      "id": 738,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "팬덤경제",
+        "소비자트렌드",
+        "TV구매",
+        "브랜드로열티",
+        "가전산업"
+      ],
+      "headline": "가전도 팬덤 시대 진입, 원격지서 TV 구경 방문객 증가",
+      "summary": "소비자들이 특정 가전 브랜드를 찾아 왕복 12시간의 기차를 타고 방문하는 현상이 나타나고 있다. 가전 제품 구매 결정에 있어 브랜드 팬덤의 영향력이 커지는 추세를 보여주며, TV를 포함한 가전 산업 판매 전략의 변화가 필요한 시점을 시사한다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260616060301917"
+      },
+      "publishedAt": "2026-06-15T21:03:01.000Z",
+      "url": "https://v.daum.net/v/20260616060301917"
+    },
+    {
+      "id": 737,
       "lens": "소비자",
       "grade": "주요",
       "impact": 4.1,
       "factors": {
         "salesRelevance": 4,
         "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 3
+        "marketSize": 3,
+        "sourceReliability": 4
       },
       "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
         "HVAC",
-        "청소기",
-        "식기세척기"
+        "세탁기"
       ],
       "competitors": [],
       "tags": [
         "소비자만족도",
-        "에너지효율",
-        "고효율설계",
+        "가전케어",
         "한국시장",
-        "생활가전"
+        "브랜드평가"
       ],
-      "headline": "고효율 에너지 설계 생활가전, 2026년 한국 소비자만족도 1위",
-      "summary": "2026년 대한민국 소비자만족도 조사에서 고효율 에너지 설계를 적용한 생활가전이 1위를 차지했다. 에너지 효율성과 소비자 만족도 간의 긍정적 상관관계를 보여주며, 가전업계의 에너지 절감 트렌드 강화를 시사한다.",
+      "headline": "2026년 한국 소비자만족도 1위, 에어컨·세탁기 가전케어",
+      "summary": "2026년 대한민국 소비자만족도 조사에서 에어컨과 세탁기 부문 가전케어 브랜드가 1위를 차지했다. 국내 가전 시장에서 사후관리 및 서비스 만족도가 구매 의사결정에 미치는 영향이 확대되고 있음을 시사한다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.joongang.co.kr/article/25437051"
+        "url": "https://www.joongang.co.kr/article/25437047"
       },
       "publishedAt": "2026-06-15T20:30:00.000Z",
-      "url": "https://www.joongang.co.kr/article/25437051"
+      "url": "https://www.joongang.co.kr/article/25437047"
     },
     {
       "id": 735,
