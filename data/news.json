@@ -1,7 +1,43 @@
 {
-  "updatedAt": "2026-06-17T21:58:31.622Z",
+  "updatedAt": "2026-06-17T23:20:20.707Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 798,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC",
+        "냉장고",
+        "세탁기",
+        "조리기기"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "AI홈",
+        "모듈러홈",
+        "스마트홈",
+        "삼성가전",
+        "협력전략"
+      ],
+      "headline": "삼성전자, AI 기반 모듈러 홈 솔루션 공식 출시",
+      "summary": "삼성전자가 공간제작소와 협력하여 AI 홈 기반의 '삼성 AI 모듈러 홈' 신제품을 출시했다. 이는 가전 제품 간 지능형 연동 및 맞춤형 공간 구성을 가능하게 하는 차별화 전략으로, 스마트홈 시장에서의 경쟁력 강화를 의도하고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B3%B5%EA%B0%84%EC%A0%9C%EC%9E%91%EC%86%8C%EC%99%80-%EC%86%90%EC%9E%A1%EA%B3%A0-ai-%ED%99%88-%EA%B8%B0%EB%B0%98-%EC%82%BC%EC%84%B1-ai-%EB%AA%A8%EB%93%88"
+      },
+      "publishedAt": "2026-06-17T23:00:00.000Z",
+      "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B3%B5%EA%B0%84%EC%A0%9C%EC%9E%91%EC%86%8C%EC%99%80-%EC%86%90%EC%9E%A1%EA%B3%A0-ai-%ED%99%88-%EA%B8%B0%EB%B0%98-%EC%82%BC%EC%84%B1-ai-%EB%AA%A8%EB%93%88"
+    },
     {
       "id": 796,
       "lens": "소비자",
@@ -93,6 +129,37 @@
       },
       "publishedAt": "2026-06-17T20:30:40.000Z",
       "url": "https://www.steeldaily.co.kr/news/articleViewAmp.html?idxno=200872"
+    },
+    {
+      "id": 800,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [],
+      "tags": [
+        "세탁기 기술",
+        "섬유유연제",
+        "설계 혁신",
+        "사용자 편의성",
+        "AI 가전"
+      ],
+      "headline": "AI 세탁기 시대, 섬유유연제 공급 방식은 여전히 구식",
+      "summary": "현대 AI 기반 세탁기 기술과 달리 섬유유연제 투입 메커니즘은 수십 년 전 사이폰 방식에 머물러 있는 상황. 세탁 기술 발전과 부품 혁신 간 불균형을 지적하는 기사로, 가전 산업의 선택적 기술 개발 전략을 조명.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://m.dnews.co.kr/m_home/view.jsp?idxno=202606161441254370568"
+      },
+      "publishedAt": "2026-06-17T20:20:20.000Z",
+      "url": "https://m.dnews.co.kr/m_home/view.jsp?idxno=202606161441254370568"
     },
     {
       "id": 795,
