@@ -1,7 +1,38 @@
 {
-  "updatedAt": "2026-06-17T17:45:18.534Z",
+  "updatedAt": "2026-06-17T19:58:53.905Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 793,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "자금조달",
+        "유동성",
+        "신용한도",
+        "ABL"
+      ],
+      "headline": "월풀, 20억 달러 규모 유동성 확보",
+      "summary": "월풀이 자산담보부차입(ABL) 신용한도 20억 달러를 체결했다. 법률사무소 메이어브라운이 거래를 대리했으며, 단기 자금 유동성 확보로 재정적 안정성을 강화한 것으로 평가된다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.mayerbrown.com/en/news/2026/06/mayer-brown-represents-whirlpool-in-2-billion-senior-secured-abl-credit-facility"
+      },
+      "publishedAt": "2026-06-17T19:07:30.000Z",
+      "url": "https://www.mayerbrown.com/en/news/2026/06/mayer-brown-represents-whirlpool-in-2-billion-senior-secured-abl-credit-facility"
+    },
     {
       "id": 785,
       "lens": "경쟁사",
@@ -135,6 +166,39 @@
       "url": "https://aimagazine.com/news/ai-agentic-factory-system-boosts-midea-global-supply"
     },
     {
+      "id": 791,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "유럽 시장 진출",
+        "친환경 기술",
+        "경쟁 심화",
+        "고부가가치화"
+      ],
+      "headline": "삼성·LG, 헬스케어·히트펌프로 유럽 시장 공략 강화",
+      "summary": "삼성전자와 LG전자가 각각 헬스케어와 히트펌프 제품을 앞세워 유럽 시장 확대에 나섰다. 두 업체 모두 친환경·고부가가치 전략으로 글로벌 경쟁력 강화를 추진 중이다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.joongang.co.kr/article/25437700"
+      },
+      "publishedAt": "2026-06-17T15:02:00.000Z",
+      "url": "https://www.joongang.co.kr/article/25437700"
+    },
+    {
       "id": 783,
       "lens": "소비자",
       "grade": "주시",
@@ -170,15 +234,15 @@
       "url": "https://myrepublica.nagariknetwork.com/news/lg-unveils-essential-series-home-appliances-for-nepali-consumers-29-88.html"
     },
     {
-      "id": 778,
+      "id": 792,
       "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.2,
+      "grade": "긴급",
+      "impact": 4.5,
       "factors": {
-        "salesRelevance": 4,
+        "salesRelevance": 5,
         "timeUrgency": 4,
         "marketSize": 5,
-        "sourceReliability": 4
+        "sourceReliability": 3
       },
       "products": [
         "냉장고",
@@ -193,20 +257,20 @@
         "삼성전자"
       ],
       "tags": [
-        "AI기술",
-        "DX부문",
-        "가전혁신",
-        "디지털전환",
-        "제품경쟁력"
+        "AI가전",
+        "삼성전자DX",
+        "구조개선",
+        "디지털가전",
+        "경쟁력강화"
       ],
-      "headline": "삼성전자 DX부문, AI 기술 전환·사업 체질 개선 본격화",
-      "summary": "삼성전자 DX(Device eXperience)부문이 AI 기술 기반 제품 경쟁력 강화와 사업 구조 개선을 추진 중이다. 가전 제품군에 AI 기능 통합을 확대하고 조직 효율화를 통해 시장 경쟁력을 제고하는 전략이다.",
+      "headline": "삼성전자 DX부문, AI 전환 및 구조 개선 본격 추진",
+      "summary": "삼성전자 DX(Digital Appliances)부문이 AI 기술 도입과 사업 체질 개선에 나선다. 가전 제품의 지능화와 경쟁력 강화를 통해 글로벌 시장에서의 입지 확대를 목표로 한다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://v.daum.net/v/20260617160948296"
+        "url": "https://v.daum.net/v/97FY0MMVZG"
       },
       "publishedAt": "2026-06-17T07:09:48.000Z",
-      "url": "https://v.daum.net/v/20260617160948296"
+      "url": "https://v.daum.net/v/97FY0MMVZG"
     },
     {
       "id": 774,
@@ -273,39 +337,6 @@
       },
       "publishedAt": "2026-06-17T03:30:35.000Z",
       "url": "https://platum.kr/archives/289121"
-    },
-    {
-      "id": 777,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "LG전자",
-        "삼성전자"
-      ],
-      "tags": [
-        "AI 히트펌프",
-        "유럽 시장 진출",
-        "에너지 효율",
-        "스마트 냉난방"
-      ],
-      "headline": "AI 탑재 히트펌프로 유럽 시장 선점 경쟁 심화",
-      "summary": "LG전자와 삼성전자가 AI 기술을 적용한 히트펌프 제품으로 유럽 시장 공략을 가속화하고 있다. 에너지 효율 강화와 스마트 기능이 핵심 경쟁 요소로 작용하는 가운데, 양사의 유럽 진출 전략이 본격화되고 있다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://it.chosun.com/news/articleViewAmp.html?idxno=2023092164018"
-      },
-      "publishedAt": "2026-06-17T01:54:52.000Z",
-      "url": "https://it.chosun.com/news/articleViewAmp.html?idxno=2023092164018"
     },
     {
       "id": 775,
