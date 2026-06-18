@@ -1,42 +1,109 @@
 {
-  "updatedAt": "2026-06-17T23:20:20.707Z",
+  "updatedAt": "2026-06-18T02:37:14.902Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 798,
+      "id": 806,
       "lens": "경쟁사",
       "grade": "주요",
-      "impact": 4.3,
+      "impact": 3.7,
       "factors": {
-        "salesRelevance": 4,
+        "salesReliability": 2,
         "timeUrgency": 5,
         "marketSize": 4,
-        "sourceReliability": 4
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "모듈러주택",
+        "신사업진출",
+        "건설기술",
+        "통합가전",
+        "시장확장"
+      ],
+      "headline": "삼성전자, 모듈러 주택 시장 진출… LG와 경쟁 확대",
+      "summary": "삼성전자가 모듈러 주택(조립식 건축) 시장에 진입하며 LG전자와의 사업 경쟁이 확대되는 양상입니다. 모듈러 주택은 제조 과정에서 가전제품 통합 수요가 높아 가전사의 새로운 성장 기회로 평가됩니다. 양사 모두 지속가능성과 효율성을 앞세운 차별화 전략을 추진 중입니다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.mk.co.kr/en/business/12077142"
+      },
+      "publishedAt": "2026-06-18T01:11:09.000Z",
+      "url": "https://www.mk.co.kr/en/business/12077142"
+    },
+    {
+      "id": 801,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 5,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
       },
       "products": [
-        "HVAC",
         "냉장고",
         "세탁기",
-        "조리기기"
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
       ],
       "competitors": [
         "삼성전자"
       ],
       "tags": [
-        "AI홈",
-        "모듈러홈",
+        "AI가전",
         "스마트홈",
-        "삼성가전",
-        "협력전략"
+        "스마트싱스",
+        "모듈러홈",
+        "IoT생태계"
       ],
-      "headline": "삼성전자, AI 기반 모듈러 홈 솔루션 공식 출시",
-      "summary": "삼성전자가 공간제작소와 협력하여 AI 홈 기반의 '삼성 AI 모듈러 홈' 신제품을 출시했다. 이는 가전 제품 간 지능형 연동 및 맞춤형 공간 구성을 가능하게 하는 차별화 전략으로, 스마트홈 시장에서의 경쟁력 강화를 의도하고 있다.",
+      "headline": "삼성전자, AI 모듈러 홈 플랫폼 출시로 스마트홈 시장 선도",
+      "summary": "삼성전자가 AI가전과 스마트싱스 기반의 '삼성 AI 모듈러 홈' 신제품을 출시했다. 동사의 AI 기술을 통합한 모듈식 스마트홈 솔루션으로, 다양한 가전기기의 연동성을 강화하고 사용자 맞춤형 경험을 제공한다. 이는 글로벌 스마트홈 시장에서 경쟁력 강화 및 가전 생태계 확대 전략이다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B3%B5%EA%B0%84%EC%A0%9C%EC%9E%91%EC%86%8C%EC%99%80-%EC%86%90%EC%9E%A1%EA%B3%A0-ai-%ED%99%88-%EA%B8%B0%EB%B0%98-%EC%82%BC%EC%84%B1-ai-%EB%AA%A8%EB%93%88"
+        "url": "https://www.yna.co.kr/amp/view/AKR20260618029900003"
       },
-      "publishedAt": "2026-06-17T23:00:00.000Z",
-      "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B3%B5%EA%B0%84%EC%A0%9C%EC%9E%91%EC%86%8C%EC%99%80-%EC%86%90%EC%9E%A1%EA%B3%A0-ai-%ED%99%88-%EA%B8%B0%EB%B0%98-%EC%82%BC%EC%84%B1-ai-%EB%AA%A8%EB%93%88"
+      "publishedAt": "2026-06-18T00:02:39.000Z",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260618029900003"
+    },
+    {
+      "id": 803,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "탈탄소화",
+        "에너지효율",
+        "AI데이터센터",
+        "산업공정냉각"
+      ],
+      "headline": "히트펌프, 탈탄소화·AI 데이터센터 냉각 핵심기술로 부상",
+      "summary": "히트펌프가 산업 공정 탈탄소화와 AI 데이터센터 냉각 수요 대응의 핵심 기술로 주목받고 있다. 에너지 효율성과 친환경성을 동시에 충족하는 솔루션으로 평가되며, 급증하는 데이터센터 냉각 수요 시장에서 기술 경쟁이 가속화될 전망이다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.snmnews.com/news/articleView.html?idxno=570920"
+      },
+      "publishedAt": "2026-06-17T23:42:36.000Z",
+      "url": "https://www.snmnews.com/news/articleView.html?idxno=570920"
     },
     {
       "id": 796,
@@ -534,38 +601,6 @@
       },
       "publishedAt": "2026-06-17T03:30:35.000Z",
       "url": "https://platum.kr/archives/289121"
-    },
-    {
-      "id": 775,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.3,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "히트펌프",
-        "유럽시장",
-        "에너지효율",
-        "HVAC확대"
-      ],
-      "headline": "LG전자, 유럽 히트펌프 시장 확대…스페인·세르비아 공급",
-      "summary": "LG전자가 유럽 히트펌프 시장 공략을 확대하며 스페인과 세르비아로 공급을 확대하고 있다. 유럽의 난방 에너지효율 규제 강화에 따른 히트펌프 수요 증가에 대응한 전략으로, 주요 시장 진출을 가속화 중이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=369175"
-      },
-      "publishedAt": "2026-06-17T01:08:58.000Z",
-      "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=369175"
     },
     {
       "id": 773,
@@ -1880,6 +1915,38 @@
       "url": "https://www.mk.co.kr/en/business/12074604"
     },
     {
+      "id": 807,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelivance": 2,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "Midea",
+        "KUKA",
+        "해외 공장 확장",
+        "글로벌 전략",
+        "중국 가전"
+      ],
+      "headline": "Midea, 해외 공장 확장 솔루션 출시…글로벌 전략 강화",
+      "summary": "Midea가 '에이전틱 팩토리 해외 확장 솔루션'을 출시하며 글로벌 진출 전략을 고도화했다. 중국 가전사의 해외 생산 기지 확대 움직임으로 평가되며, 국내 가전업계의 국제 경쟁 구도에 변수가 될 전망이다.",
+      "source": {
+        "name": "Google News - Midea/KUKA KR",
+        "url": "https://www.kipost.net/news/articleView.html?idxno=339139"
+      },
+      "publishedAt": "2026-06-15T08:07:00.000Z",
+      "url": "https://www.kipost.net/news/articleView.html?idxno=339139"
+    },
+    {
       "id": 731,
       "lens": "거시",
       "grade": "주요",
@@ -2032,37 +2099,6 @@
       },
       "publishedAt": "2026-06-15T05:25:50.000Z",
       "url": "https://www.brecorder.com/news/40425585/waves-home-appliances-restarts-ac-production-lines"
-    },
-    {
-      "id": 714,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "AI데이터센터",
-        "히트펌프",
-        "냉각기술",
-        "탄소중립",
-        "에너지효율"
-      ],
-      "headline": "AI 데이터센터 냉각 수요 급증 속 히트펌프 기술 핵심화",
-      "summary": "AI 데이터센터의 전력 소비 및 열 발생량 폭증에 따라 고효율 냉각 기술이 필수화되고 있습니다. 히트펌프 기술이 탄소중립과 에너지 효율성을 동시에 충족하는 혁신적 냉각 솔루션으로 주목받고 있으며, 이는 HVAC 시장의 구조적 성장을 견인할 것으로 예상됩니다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.the-tech.co.kr/news/article.html?no=41612"
-      },
-      "publishedAt": "2026-06-14T23:54:47.000Z",
-      "url": "https://www.the-tech.co.kr/news/article.html?no=41612"
     },
     {
       "id": 715,
