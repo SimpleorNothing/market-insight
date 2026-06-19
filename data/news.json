@@ -1,7 +1,45 @@
 {
-  "updatedAt": "2026-06-19T11:14:46.995Z",
+  "updatedAt": "2026-06-19T14:41:50.241Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 856,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "M&A",
+        "유럽 시장",
+        "가전업계 재편",
+        "Beko"
+      ],
+      "headline": "터키 가전사 Arçelik, Beko Europe 완전 인수 완료",
+      "summary": "터키 가전 제조업체 Arçelik이 Beko Europe에 대한 지분을 완전 인수했다. Beko는 Haier(GE Appliances의 모기업)의 유럽 자회사로, 이번 인수는 Arçelik의 유럽 시장 지배력 강화를 의미한다. 전 세계 가전 산업의 경쟁 구도 재편이 진행 중이다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.dailysabah.com/business/economy/turkish-home-appliance-maker-arcelik-takes-full-control-of-beko-europe/amp"
+      },
+      "publishedAt": "2026-06-19T11:56:22.000Z",
+      "url": "https://www.dailysabah.com/business/economy/turkish-home-appliance-maker-arcelik-takes-full-control-of-beko-europe/amp"
+    },
     {
       "id": 844,
       "lens": "경쟁사",
@@ -38,6 +76,38 @@
       },
       "publishedAt": "2026-06-19T10:14:09.000Z",
       "url": "https://www.reuters.com/legal/transactional/turkeys-arcelik-takes-full-control-beko-europe-simplifying-whirlpool-partnership-2026-06-19/"
+    },
+    {
+      "id": 855,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "무선청소기",
+        "시장진출",
+        "제품라인업",
+        "글로벌전략"
+      ],
+      "headline": "LG전자, 44억달러 무선청소기 시장 공략 풀라인업 전개",
+      "summary": "LG전자가 44억달러 규모의 글로벌 무선청소기 시장을 노리고 전 라인업을 구성해 공략에 나선다. 세계 시장의 성장세를 포착한 LG전자의 제품 다층화 전략으로, 가전사 간 프리미엄 청소기 시장 경쟁이 심화될 것으로 예상된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://ket.kr/news/article.html?no=38822"
+      },
+      "publishedAt": "2026-06-19T08:05:43.000Z",
+      "url": "https://ket.kr/news/article.html?no=38822"
     },
     {
       "id": 830,
@@ -135,37 +205,6 @@
       "url": "https://www.hvacrj.co.kr/news/articleView.html?idxno=31041"
     },
     {
-      "id": 850,
-      "lens": "정책",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고"
-      ],
-      "competitors": [],
-      "tags": [
-        "환경규제",
-        "순환경제",
-        "냉매재활용",
-        "지속가능성",
-        "리퍼비시"
-      ],
-      "headline": "LG전자, 냉매 재활용·리퍼브 시스템 구축 협약 체결",
-      "summary": "LG전자가 사용 냉매 재활용 및 리퍼브 제품 시스템 구축을 위한 협약을 체결했다. 냉장고 등 냉방·냉동 제품의 환경 규제 준수 및 순환 경제 전략을 강화하는 움직임으로, 글로벌 환경 정책 동향에 대응한 것으로 보인다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.digitaltoday.co.kr/en/view/68989/lg-electronics-signs-deal-to-build-used-refrigerant-recycling-and-refurbished-product-system"
-      },
-      "publishedAt": "2026-06-19T01:30:00.000Z",
-      "url": "https://www.digitaltoday.co.kr/en/view/68989/lg-electronics-signs-deal-to-build-used-refrigerant-recycling-and-refurbished-product-system"
-    },
-    {
       "id": 849,
       "lens": "정책",
       "grade": "주요",
@@ -196,43 +235,6 @@
       },
       "publishedAt": "2026-06-19T01:30:00.000Z",
       "url": "https://www.asiae.co.kr/en/article/2026061908010605527"
-    },
-    {
-      "id": 838,
-      "lens": "정책",
-      "grade": "주요",
-      "impact": 3.8,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "청소기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "자원순환",
-        "탄소감축",
-        "환경정책",
-        "지속가능성",
-        "가전산업"
-      ],
-      "headline": "LG전자, 자원순환 정책으로 연 3만대 자동차 상당의 탄소 감축",
-      "summary": "LG전자가 가전 제품의 자원순환을 통해 온실가스 감축에 실질적으로 나서고 있다. 연간 3만 대 규모의 승용차에 상당하는 탄소 배출량 감소 효과를 달성할 계획이며, 글로벌 환경 규제 강화 추세에 선제적으로 대응하고 있다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.mk.co.kr/en/business/12078229"
-      },
-      "publishedAt": "2026-06-19T01:30:00.000Z",
-      "url": "https://www.mk.co.kr/en/business/12078229"
     },
     {
       "id": 829,
@@ -8012,39 +8014,6 @@
       },
       "publishedAt": "2026-06-04T02:50:05.000Z",
       "url": "https://www.thelec.kr/news/articleView.html?idxno=57560"
-    },
-    {
-      "id": 424,
-      "lens": "정책",
-      "grade": "주시",
-      "impact": 3.3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "순환경제",
-        "포장재재활용",
-        "환경규제",
-        "폐기물감량",
-        "지속가능경영"
-      ],
-      "headline": "삼성전자, 폐포장재 순환 재활용으로 환경규제 대응",
-      "summary": "삼성전자가 제품 포장용 스티로폼을 에어컨·공기청정기 내장재로 재활용하는 순환경제 체계를 구축했다. 포장폐기물 감량 및 환경규제 강화에 선제적으로 대응하는 전략으로 평가된다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.newstree.kr/newsView/ntr202606040012"
-      },
-      "publishedAt": "2026-06-04T01:33:28.000Z",
-      "url": "https://www.newstree.kr/newsView/ntr202606040012"
     },
     {
       "id": 420,
