@@ -1,7 +1,102 @@
 {
-  "updatedAt": "2026-06-19T21:01:26.174Z",
+  "updatedAt": "2026-06-19T22:07:14.834Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 881,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "구독형 가전",
+        "비즈니스 모델",
+        "계정 기반 수익",
+        "정수기",
+        "공기청정기"
+      ],
+      "headline": "구독형 가전이 한국 시장 승부처…계정 수로 경쟁 심화",
+      "summary": "코웨이, 쿠쿠, SK 등이 주도하는 구독형 가전 사업이 한국 가전 산업의 새로운 경쟁축으로 부상했다. 고객 계정 수를 중심으로 한 비즈니스 모델이 기존 판매 중심의 시장 패러다임을 변화시키고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://biz.heraldcorp.com/article/10781938"
+      },
+      "publishedAt": "2026-06-19T21:30:04.000Z",
+      "url": "https://biz.heraldcorp.com/article/10781938"
+    },
+    {
+      "id": 880,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "창문형에어컨",
+        "소비자수요",
+        "여름가전",
+        "설치편의성",
+        "대체냉방"
+      ],
+      "headline": "실외기 없는 창문형 에어컨, 여름 수요 급증",
+      "summary": "무더위 시즌에 실외기 설치가 불필요한 창문형 에어컨 제품이 소비자 관심을 모으고 있습니다. 전통 에어컨 대비 설치 편의성과 공간 활용성을 장점으로 내세우며 경쟁이 확산 중입니다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.news1.kr/industry/general-industry/6202396"
+      },
+      "publishedAt": "2026-06-19T21:30:00.000Z",
+      "url": "https://www.news1.kr/industry/general-industry/6202396"
+    },
+    {
+      "id": 879,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "자원순환",
+        "폐냉매",
+        "재활용",
+        "환경규제",
+        "순환경제"
+      ],
+      "headline": "삼성·LG, 폐냉매·스티로폼 자원순환 확대",
+      "summary": "삼성전자와 LG전자가 폐기 가전제품에서 회수한 스티로폼과 폐냉매를 재활용하는 자원순환 사업을 확대하고 있다. 환경규제 강화와 순환경제 정책에 따른 업계 전환 움직임으로, 폐가전 재자원화가 신사업 영역으로 부상했다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://it.chosun.com/news/articleViewAmp.html?idxno=2023092164215"
+      },
+      "publishedAt": "2026-06-19T21:09:49.000Z",
+      "url": "https://it.chosun.com/news/articleViewAmp.html?idxno=2023092164215"
+    },
     {
       "id": 869,
       "lens": "경쟁사",
@@ -195,6 +290,39 @@
       },
       "publishedAt": "2026-06-19T06:06:07.000Z",
       "url": "https://www.mk.co.kr/news/world/12078494"
+    },
+    {
+      "id": 886,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesReliability": 3,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4,
+        "salesRelevance": 3
+      },
+      "products": [
+        "냉장고",
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "환경규제",
+        "순환경제",
+        "냉매회수",
+        "ESG",
+        "자원재활용"
+      ],
+      "headline": "LG전자, 가전 냉매 회수량 7배 확대하는 자원순환 체계 구축",
+      "summary": "LG전자가 가전제품 자원순환 프로그램을 출범하며 냉매 회수량을 7배 증대할 계획을 발표했다. 이는 환경 규제 강화에 대응하고 순환경제 전환을 가속화하는 전략으로, 냉장고·HVAC 등 냉매 함유 제품의 친환경 폐기 관리를 강화한다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://en.sedaily.com/finance/2026/06/19/lg-electronics-launches-appliance-resource-recycling-to"
+      },
+      "publishedAt": "2026-06-19T06:05:54.000Z",
+      "url": "https://en.sedaily.com/finance/2026/06/19/lg-electronics-launches-appliance-resource-recycling-to"
     },
     {
       "id": 831,
