@@ -1,7 +1,37 @@
 {
-  "updatedAt": "2026-06-20T18:05:23.216Z",
+  "updatedAt": "2026-06-20T20:11:26.117Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 898,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 2
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에어컨 관리",
+        "소비자 팁",
+        "냄새 제거",
+        "필터 유지보수"
+      ],
+      "headline": "에어컨 냄새 제거, 필터 세척 후 특정 버튼으로 해결",
+      "summary": "에어컨에서 필터를 세척해도 냄새가 날 때 사용할 수 있는 버튼 기능이 소개됐다. 소비자들이 그간 모르고 있던 에어컨 관리 팁으로, 에어컨 냄새 문제 해결의 실질적 방법을 제시한다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.wikitree.co.kr/articles/1142105"
+      },
+      "publishedAt": "2026-06-20T19:00:00.000Z",
+      "url": "https://www.wikitree.co.kr/articles/1142105"
+    },
     {
       "id": 896,
       "lens": "소비자",
@@ -38,6 +68,41 @@
       },
       "publishedAt": "2026-06-20T15:56:19.000Z",
       "url": "https://joinsmediacanada.com/bbs/board.php?bo_table=news&wr_id=52558"
+    },
+    {
+      "id": 900,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "미국 제조",
+        "제품 원산지",
+        "기업 소유구조"
+      ],
+      "headline": "월풀 소유 구조 및 미국 내 제조 현황 조사",
+      "summary": "월풀 기업 소유 구조와 미국 내 제조 비중을 다루는 기사. 미국 가전 소비자들의 제품 원산지 인식 및 구매 선호도 관련 정보 제공. 월풀이 주요 미국 가전사로서의 위상과 제조 기반을 설명.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.aol.com/lifestyle/owns-whirlpool-appliances-made-usa-104500246.html"
+      },
+      "publishedAt": "2026-06-20T07:52:17.000Z",
+      "url": "https://www.aol.com/lifestyle/owns-whirlpool-appliances-made-usa-104500246.html"
     },
     {
       "id": 894,
@@ -762,43 +827,6 @@
       },
       "publishedAt": "2026-06-18T20:03:48.000Z",
       "url": "https://www.joongang.co.kr/article/25437891"
-    },
-    {
-      "id": 826,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "식기세척기"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "월풀",
-        "미국생산",
-        "소유구조",
-        "제조기지",
-        "북미시장"
-      ],
-      "headline": "월풀 소유권 및 미국 내 생산 현황 분석",
-      "summary": "월풀의 소유구조와 미국 국내 생산 체제에 대한 종합 정보 제공. 북미 시장에서 주요 가전 브랜드의 제조 기지 및 글로벌 공급망 투명성 관심 증대.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.aol.com/articles/owns-whirlpool-appliances-made-usa-104500000.html"
-      },
-      "publishedAt": "2026-06-18T12:13:00.000Z",
-      "url": "https://www.aol.com/articles/owns-whirlpool-appliances-made-usa-104500000.html"
     },
     {
       "id": 892,
