@@ -1,7 +1,109 @@
 {
-  "updatedAt": "2026-06-21T07:25:21.475Z",
+  "updatedAt": "2026-06-21T11:00:02.621Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 922,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "AI 기능",
+        "프리미엄 세그먼트",
+        "신제품 출시",
+        "스마트 가전"
+      ],
+      "headline": "LG전자, '트롬 AI' 신제품 출시",
+      "summary": "LG전자가 AI 기술을 적용한 '트롬 AI' 신제품을 출시했다. 해당 제품은 세탁기·건조기 라인업으로 구성되어 있으며, 한국 가전 시장의 프리미엄 세그먼트 경쟁력 강화를 목표로 하고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hankyung.com/article/2026062189991"
+      },
+      "publishedAt": "2026-06-21T09:26:49.000Z",
+      "url": "https://www.hankyung.com/article/2026062189991"
+    },
+    {
+      "id": 920,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "냉각기술",
+        "혁신",
+        "에너지효율",
+        "신제품출시",
+        "하이브리드"
+      ],
+      "headline": "삼성, 200년 냉각기술 혁신한 하이브리드 냉장고 출시",
+      "summary": "삼성전자가 기존 냉각 방식을 근본적으로 개선한 하이브리드 냉장고를 선보였다. 차세대 냉각기술 적용으로 에너지 효율성과 식품 보관 성능을 대폭 향상시킨 신제품으로, 가전 산업의 기술 혁신을 주도하는 움직임을 보이고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260621182634720"
+      },
+      "publishedAt": "2026-06-21T09:26:34.000Z",
+      "url": "https://v.daum.net/v/20260621182634720"
+    },
+    {
+      "id": 923,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기",
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "모듈형주택",
+        "신사업진출",
+        "AI가전",
+        "통합솔루션",
+        "글로벌전략"
+      ],
+      "headline": "LG, 모듈형 주택 사업으로 가전·AI·공조 성장 추진",
+      "summary": "LG전자가 모듈형 주택(Modular Homes) 사업을 신규 성장 축으로 선정하고 가전제품, AI, HVAC 통합 솔루션을 공급할 계획. 이는 기존 가전 제품 판매 채널을 다각화하면서 글로벌 주택 산업의 구조적 변화에 대응하는 전략으로 평가됨.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://en.sedaily.com/finance/2026/06/21/lg-bets-on-modular-homes-to-drive-appliance-ai-and-hvac"
+      },
+      "publishedAt": "2026-06-21T08:57:13.000Z",
+      "url": "https://en.sedaily.com/finance/2026/06/21/lg-bets-on-modular-homes-to-drive-appliance-ai-and-hvac"
+    },
     {
       "id": 908,
       "lens": "기술",
@@ -516,6 +618,36 @@
       },
       "publishedAt": "2026-06-19T14:48:11.000Z",
       "url": "https://www.mk.co.kr/news/business/12076154"
+    },
+    {
+      "id": 925,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 2
+      },
+      "products": [
+        "조리기기"
+      ],
+      "competitors": [],
+      "tags": [
+        "스마트 주방",
+        "미국 시장",
+        "가전 수요",
+        "시장 성장"
+      ],
+      "headline": "미국 스마트 주방가전 시장 급성장세",
+      "summary": "미국의 스마트 주방가전 시장이 강한 성장세를 보이고 있다. 소비자들의 스마트 기기 채택 확대와 주방 자동화에 대한 수요 증가가 주요 성장 동력으로 작용하고 있다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.openpr.com/news/4555241/united-states-smart-kitchen-appliances-market-surges-as"
+      },
+      "publishedAt": "2026-06-19T13:22:23.000Z",
+      "url": "https://www.openpr.com/news/4555241/united-states-smart-kitchen-appliances-market-surges-as"
     },
     {
       "id": 856,
@@ -3282,35 +3414,6 @@
       },
       "publishedAt": "2026-06-15T07:32:16.000Z",
       "url": "https://www.openpr.com/news/4549496/global-mobile-air-conditioner-market-size-growth-trends"
-    },
-    {
-      "id": 728,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 3.2,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [
-        "조리기기"
-      ],
-      "competitors": [],
-      "tags": [
-        "스마트 주방",
-        "시장 분석",
-        "IoT 기능"
-      ],
-      "headline": "스마트 주방가전 시장 성장 추세 분석",
-      "summary": "글로벌 스마트 주방가전 시장의 규모·성장률·트렌드를 다루는 시장 분석 기사. 구체적 수치나 경쟁사 동향이 명확하지 않으나 가전 산업 전체 기술 트렌드와 소비자 수요 패턴을 파악하는 데 관련성 있음.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.openpr.com/news/4549489/global-smart-kitchen-appliances-market-size-growth-trends"
-      },
-      "publishedAt": "2026-06-15T07:29:19.000Z",
-      "url": "https://www.openpr.com/news/4549489/global-smart-kitchen-appliances-market-size-growth-trends"
     },
     {
       "id": 718,
