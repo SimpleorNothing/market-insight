@@ -1,7 +1,37 @@
 {
-  "updatedAt": "2026-06-23T22:59:33.724Z",
+  "updatedAt": "2026-06-23T23:56:03.830Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 987,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 2,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "AS품질",
+        "고객만족",
+        "브랜드이미지",
+        "서비스경쟁력"
+      ],
+      "headline": "삼성전자서비스, 가전AS 부문 국가서비스대상 2년 연속 수상",
+      "summary": "삼성전자서비스가 국가서비스대상 가전AS 부문에서 2년 연속으로 대상을 수상했다. 이는 고객만족도 및 서비스 품질 우수성을 인정받은 결과다. 국내 가전산업 서비스 경쟁력을 강화하는 신호로 평가된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.news1.kr/industry/general-industry/6206377"
+      },
+      "publishedAt": "2026-06-23T23:32:05.000Z",
+      "url": "https://www.news1.kr/industry/general-industry/6206377"
+    },
     {
       "id": 986,
       "lens": "소비자",
@@ -297,6 +327,39 @@
       },
       "publishedAt": "2026-06-22T23:50:44.000Z",
       "url": "https://www.ekn.kr/web/view.php?key=20260623023055365"
+    },
+    {
+      "id": 988,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "실적호조",
+        "AI냉각",
+        "데이터센터",
+        "목표가상향"
+      ],
+      "headline": "LG전자 Q2 실적 호조에 증권사 목표가 상향, AI 냉각 성장 주목",
+      "summary": "교보증권이 LG전자의 2분기 실적 호조를 바탕으로 투자등급을 상향 조정했다. AI 데이터센터 냉각 솔루션 수요 증가가 향후 성장 동력으로 평가되며, HVAC 부문의 성장성이 주목받고 있다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://biz.chosun.com/en/en-finance/2026/06/23/27KRR3T2VBDQNEH3WM2XFIUP7M/"
+      },
+      "publishedAt": "2026-06-22T23:34:00.000Z",
+      "url": "https://biz.chosun.com/en/en-finance/2026/06/23/27KRR3T2VBDQNEH3WM2XFIUP7M/"
     },
     {
       "id": 969,
