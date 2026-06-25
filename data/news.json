@@ -1,7 +1,111 @@
 {
-  "updatedAt": "2026-06-25T06:40:43.889Z",
+  "updatedAt": "2026-06-25T10:11:27.297Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1033,
+      "lens": "거시",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC",
+        "냉장고",
+        "세탁기",
+        "조리기기"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "AI",
+        "스마트홈",
+        "모듈식주택",
+        "글로벌확장",
+        "가전통합"
+      ],
+      "headline": "삼성·LG, AI 모듈식 주택 시장 진출 본격화…$176B 스마트 홈 세계 진출 포석",
+      "summary": "삼성전자와 LG전자가 AI 기반 모듈식 홈 비즈니스로 1760억 달러 규모의 글로벌 스마트 주택 시장 공략을 본격화했다. 기존 가전 제품을 넘어 통합형 스마트 홈 솔루션으로 사업 범위를 확대하는 전략이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.kedglobal.com/electronics/newsView/ked202606250010"
+      },
+      "publishedAt": "2026-06-25T09:05:00.000Z",
+      "url": "https://www.kedglobal.com/electronics/newsView/ked202606250010"
+    },
+    {
+      "id": 1028,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에너지규제",
+        "환경정책",
+        "극한기후",
+        "유럽시장"
+      ],
+      "headline": "프랑스 폭염, 에어컨 규제 정책 논쟁 촉발",
+      "summary": "프랑스가 40도 폭염으로 고통받으면서 냉방기 도입 확대 필요성이 대두되고 있다. 환경단체는 에어컨 사용이 에너지 소비 증가와 기후변화를 야기한다며 비판하는 가운데, 냉방 설비 확대가 정치권의 핵심 쟁점으로 떠오르고 있다. 유럽의 극단적 기후변화와 에너지·환경 규제 간 충돌이 가전 산업의 정책 리스크로 작용할 전망이다.",
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260625000419"
+      },
+      "publishedAt": "2026-06-25T08:39:14.000Z",
+      "url": "https://www.etnews.com/20260625000419"
+    },
+    {
+      "id": 1030,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC",
+        "냉장고",
+        "세탁기",
+        "청소기"
+      ],
+      "competitors": [
+        "LG전자",
+        "삼성전자"
+      ],
+      "tags": [
+        "모듈러홈",
+        "스마트홈",
+        "IoT통합",
+        "가전플랫폼",
+        "스마트홈서비스"
+      ],
+      "headline": "가전업계, 모듈러 홈 플랫폼 경쟁 본격화",
+      "summary": "국내 가전사들이 스마트 홈 서비스 통합 솔루션인 '모듈러 홈' 개발을 본격화하고 있다. 모듈식 구조로 다양한 가전기기를 연동·제어할 수 있는 플랫폼이 차세대 경쟁 포인트로 부상하고 있으며, 소비자의 스마트홈 수요 증가에 따른 시장 확대가 예상된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.newstomato.com/ReadNews.aspx?no=1305189"
+      },
+      "publishedAt": "2026-06-25T06:31:10.000Z",
+      "url": "https://www.newstomato.com/ReadNews.aspx?no=1305189"
+    },
     {
       "id": 1026,
       "lens": "경쟁사",
@@ -41,6 +145,37 @@
       },
       "publishedAt": "2026-06-25T06:17:00.000Z",
       "url": "https://www.asiatime.co.kr/article/20260625500269"
+    },
+    {
+      "id": 1031,
+      "lens": "거시",
+      "grade": "주시",
+      "impact": 2.9,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "에어컨수요",
+        "유럽시장",
+        "기후변화",
+        "냉방기기"
+      ],
+      "headline": "프랑스 폭염에 에어컨 수요 급증, 시장 기회 포착",
+      "summary": "유럽 최고 기온 40도에 달하는 프랑스의 폭염으로 에어컨 보급이 저조한 지역의 수요가 급증하고 있습니다. 전통적으로 에어컨 미보급 지역이던 프랑스가 기후변화로 인한 냉방 수요 구조 전환을 맞고 있으며, 이는 글로벌 HVAC 시장 확대 기회를 시사합니다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260625150201194"
+      },
+      "publishedAt": "2026-06-25T06:02:01.000Z",
+      "url": "https://v.daum.net/v/20260625150201194"
     },
     {
       "id": 1027,
@@ -303,6 +438,37 @@
       },
       "publishedAt": "2026-06-24T20:01:00.000Z",
       "url": "https://www.joongang.co.kr/article/25439691"
+    },
+    {
+      "id": 1032,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelivance": 2,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "데이터센터",
+        "물리형AI",
+        "사업다각화",
+        "아시아태평양"
+      ],
+      "headline": "LG, 데이터센터 물리형 AI 사업 확대",
+      "summary": "LG전자가 가전 기술을 활용하여 아시아태평양 지역 데이터센터 시장으로 사업 범위를 확장하고 있다. 주거용에서 기업용 인프라로의 사업 다각화를 추진 중이며, 물리형 AI 기술을 통해 신규 성장 동력을 모색하고 있다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.straitstimes.com/business/lg-this-home-appliances-brand-is-bringing-physical-ai-to-data-centres"
+      },
+      "publishedAt": "2026-06-24T20:00:00.000Z",
+      "url": "https://www.straitstimes.com/business/lg-this-home-appliances-brand-is-bringing-physical-ai-to-data-centres"
     },
     {
       "id": 1017,
@@ -588,37 +754,6 @@
       },
       "publishedAt": "2026-06-24T08:57:51.000Z",
       "url": "https://v.daum.net/v/X7HuUu4quV"
-    },
-    {
-      "id": 1024,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.3,
-      "factors": {
-        "salesReliability": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3,
-        "salesRelevance": 3
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "AI스마트홈",
-        "모듈식주택",
-        "시장확대",
-        "한국시장"
-      ],
-      "headline": "삼성, 모듈식 주택으로 한국 AI 스마트홈 시장 확대",
-      "summary": "삼성전자가 모듈식 주택 사업을 통해 남한 AI 스마트홈 시장 진입을 확대하고 있다. 이는 가전 제품과 건축/부동산 사업의 융합 전략으로, AI 기반 홈 자동화 솔루션의 새로운 판매 채널 확보를 목표로 한다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://biz.chosun.com/en/en-it/2026/06/24/4NY3GTJHMNGOVJVBIECLXITP5U/?outputType=amp"
-      },
-      "publishedAt": "2026-06-24T08:56:00.000Z",
-      "url": "https://biz.chosun.com/en/en-it/2026/06/24/4NY3GTJHMNGOVJVBIECLXITP5U/?outputType=amp"
     },
     {
       "id": 1005,
@@ -13878,37 +14013,6 @@
       },
       "publishedAt": "2026-05-27T05:34:31.000Z",
       "url": "https://www.chosun.com/english/industry-en/2026/05/27/5WP5GWFSIREFRMKPNGSSSFODKA/"
-    },
-    {
-      "id": 266,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 3.9,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "AI홈",
-        "스마트홈",
-        "IoT",
-        "자동화",
-        "환경제어"
-      ],
-      "headline": "LG전자, AI 기반 스마트홈 기술 공개…자율 호흡식 지능형 주거공간",
-      "summary": "LG전자가 생명체처럼 호흡하는 AI 홈 기술을 선보였다. 자동으로 공기질을 감지하고 최적화하는 HVAC 기술과 AI가 통합되어 거주자 맞춤형 주거환경을 제공한다. 글로벌 스마트홈 시장에서의 기술 리더십 강화를 의도한 것으로 보인다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.asiae.co.kr/en/article/2026052709492202760"
-      },
-      "publishedAt": "2026-05-27T02:29:49.000Z",
-      "url": "https://www.asiae.co.kr/en/article/2026052709492202760"
     },
     {
       "id": 226,
