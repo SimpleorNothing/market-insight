@@ -937,6 +937,18 @@ body {
 
 .checkbox-item input, .radio-item input { display: none; }
 
+.checkbox-item--all {
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 600;
+}
+.checkbox-item--all.is-active {
+  background: var(--text-primary);
+  color: #fff;
+  border-color: var(--text-primary);
+}
+
 .modal__footer {
   padding: 16px 24px;
   border-top: 1px solid var(--border-subtle);

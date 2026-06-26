@@ -948,12 +948,34 @@ function downloadBlob(blob, filename) {
 function renderProductCheckboxes(preselect = []) {
   const container = document.getElementById("productCheckboxGroup");
   container.innerHTML = "";
+
+  // 맨 앞 '전제품' 토글: 전체 선택/해제. 실제 제품 값에 섞이지 않도록 button 으로 둠.
+  const allBtn = document.createElement("button");
+  allBtn.type = "button";
+  allBtn.className = "checkbox-item checkbox-item--all";
+  allBtn.textContent = "전제품";
+  container.appendChild(allBtn);
+
   PRODUCTS.forEach((p) => {
     const label = document.createElement("label");
     label.className = "checkbox-item";
     label.innerHTML = `<input type="checkbox" value="${escapeHtml(p)}" ${preselect.includes(p) ? "checked" : ""} /><span>${escapeHtml(p)}</span>`;
     container.appendChild(label);
   });
+
+  const boxes = () => Array.from(container.querySelectorAll('input[type="checkbox"]'));
+  const syncAllState = () => {
+    const all = boxes();
+    allBtn.classList.toggle("is-active", all.length > 0 && all.every((cb) => cb.checked));
+  };
+  allBtn.addEventListener("click", () => {
+    const all = boxes();
+    const next = !(all.length > 0 && all.every((cb) => cb.checked));
+    all.forEach((cb) => { cb.checked = next; });
+    syncAllState();
+  });
+  container.addEventListener("change", syncAllState);
+  syncAllState();
 }
 
 function openReportModal(id) {
