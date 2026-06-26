@@ -228,18 +228,23 @@ function renderStats() {
     const totalEl = document.getElementById("statTotal");
     if (totalEl) totalEl.textContent = all.length;
 
-    // Count news per competitor
+    // Count news per competitor (삼성전자는 기타 포함)
+    const OUR_COMPANY = "삼성전자";
     const counts = {};
     all.forEach((n) => {
       (n.competitors || []).forEach((c) => {
         counts[c] = (counts[c] || 0) + 1;
       });
     });
-    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    const sorted = Object.entries(counts)
+      .filter(([c]) => c !== OUR_COMPANY)
+      .sort((a, b) => b[1] - a[1]);
+    const othersCount =
+      sorted.slice(2).reduce((s, [, v]) => s + v, 0) +
+      (counts[OUR_COMPANY] || 0);
 
     const top1 = sorted[0];
     const top2 = sorted[1];
-    const othersCount = sorted.slice(2).reduce((s, [, v]) => s + v, 0);
 
     const c1El = document.getElementById("statCompetitor1");
     const c1Label = document.getElementById("statCompetitor1Label");
@@ -500,9 +505,16 @@ function makeGroups(items) {
     });
   }
 
-  return Array.from(map.entries())
+  const result = Array.from(map.entries())
     .filter(([_, arr]) => arr.length > 0)
     .map(([key, arr]) => ({ key, items: arr }));
+
+  // 경쟁사별 그룹은 기사수 내림차순 정렬 (당사 포함)
+  if (state.group === "competitor") {
+    result.sort((a, b) => b.items.length - a.items.length);
+  }
+
+  return result;
 }
 
 function renderGroup(group) {
