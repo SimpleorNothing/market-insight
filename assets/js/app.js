@@ -570,21 +570,28 @@ const REPORT_SYSTEM_PROMPT = `당신은 'Herald'입니다. 가전 산업 시장 
 - 거절 응답·영문 회피 응답 일체 금지
 
 【리포트 구조】
-A4 1페이지 분량 엄수 (초과 절대 금지). 다음 3개 본문 섹션 + 마무리:
-1. 핵심 신호 (signal): 뉴스 사실 요약
-2. 당사 기회 (opportunity): 선택 제품에 미치는 기회
-3. 당사 위협 (threat): 선택 제품에 미치는 위협
-4. implication: 마무리 시사점
+- '핵심 신호(signal)' 섹션을 항상 첫 섹션으로 포함.
+- 그 외 섹션은 [요청 분석 관점]에 명시된 섹션 type만, 명시된 순서대로 출력.
+- 요청되지 않은 섹션 type은 절대 출력 금지.
+- 각 섹션 items는 1~2개. 요청 섹션이 많을수록 더 간결히 (전체 A4 1~2페이지 內).
+
+【섹션 type 정의】
+- signal: 뉴스 사실 요약 (항상 포함)
+- opportunity: 선택 제품에 미치는 기회
+- threat: 선택 제품에 미치는 위협
+- timeaxis: 영향 시점·강도. 각 item 머리에 '0~6個月 / 6~18個月 / 18個月~' 구간 명시
+- valuechain: R&D·공급망·생산·채널·서비스 中 타격 지점을 머리에 명시
+- positioning: 당사 vs 경쟁사의 점유율·프리미엄·기술 軸 이동 방향
 
 【작성 규칙】
 - 헤드라인 30자 이내, 결론 + 수치, 기호·번호 없이 본문만
-- 각 섹션 items는 1~2개로 제한 (A4 1페이지 분량 엄수)
+- 각 섹션 items는 1~2개로 제한 (요청 섹션 수에 맞춰 간결히)
 - 첫머리 연결어 (우선/그 결과/한편/이에 따라/종합하면/가장 먼저)
 - L2 본문은 28~36자 內外, 정량 수치 1개 以上 권장
 - '당사' 호칭 통일 (자사 금지)
 - 한자 약어 가능 (時·可·後·內·等)
 - 모호 표현 금지 (필요·검토·강화)
-- 기회·위협 섹션은 선택 제품의 KPI·경쟁사를 반드시 1개 以上 참조
+- 각 섹션은 가능하면 선택 제품의 KPI·경쟁사를 1개 以上 참조
 - 마무리 시사점: '당사' 주어 시작, 액션 동사 종결, 2문장 이내
 
 【출력 스키마】
@@ -592,25 +599,40 @@ A4 1페이지 분량 엄수 (초과 절대 금지). 다음 3개 본문 섹션 + 
   "subtitle": "뉴스 핵심 한 줄 (15자 이내)",
   "sections": [
     {
-      "type": "signal",
+      "type": "signal | opportunity | threat | timeaxis | valuechain | positioning",
       "headline": "헤드라인 (기호 없이 본문만)",
       "items": [{"level": 2, "text": "L2 본문"}]
-    },
-    {
-      "type": "opportunity",
-      "headline": "헤드라인 (기호 없이 본문만)",
-      "items": [{"level": 2, "text": "..."}]
-    },
-    {
-      "type": "threat",
-      "headline": "헤드라인 (기호 없이 본문만)",
-      "items": [{"level": 2, "text": "..."}]
     }
   ],
   "implication": "마무리 시사점"
 }
 
-JSON 외 어떤 텍스트도 출력 금지.`;
+sections 배열은 [요청 분석 관점] 순서를 그대로 따른다. JSON 외 어떤 텍스트도 출력 금지.`;
+
+// 분석 관점 메타데이터: id → 라벨 / 산출 섹션 type / 프롬프트 지시
+const ANALYSIS_PERSPECTIVES = {
+  opp_threat: {
+    label: "기회·위협 2축 분석",
+    sections: ["opportunity", "threat"],
+    instruct: "선택 제품에 미치는 기회(opportunity)와 위협(threat)을 2축으로 분해.",
+  },
+  timeaxis: {
+    label: "시간축 임팩트",
+    sections: ["timeaxis"],
+    instruct: "영향을 0~6個月 / 6~18個月 / 18個月~ 구간으로 나눠 시점·강도를 제시.",
+  },
+  valuechain: {
+    label: "밸류체인 타격점",
+    sections: ["valuechain"],
+    instruct: "R&D·공급망·생산·채널·서비스 中 어디에 영향이 집중되는지 타격 지점을 명시.",
+  },
+  positioning: {
+    label: "경쟁 포지셔닝 변화",
+    sections: ["positioning"],
+    instruct: "당사 vs 관련 경쟁사의 점유율·프리미엄·기술 軸 상대 위치 이동 방향을 진단.",
+  },
+};
+const ANALYSIS_ORDER = ["opp_threat", "timeaxis", "valuechain", "positioning"];
 
 // 공용 충전 키 프록시(Cloudflare Worker) 주소. 설정돼 있으면 사용자별 키 입력 없이 이 프록시로 호출.
 function getReportProxyUrl() {
@@ -647,7 +669,7 @@ function promptForApiKey() {
   return trimmed;
 }
 
-async function callClaudeForReport(apiKey, news, products) {
+async function callClaudeForReport(apiKey, news, products, perspectives) {
   const ctx = CONFIG?.productContext || {};
   const buContextLines = products.map((p) => {
     const c = ctx[p] || {};
@@ -658,6 +680,16 @@ async function callClaudeForReport(apiKey, news, products) {
       `  핵심 KPI: ${(c.kpis || []).join(", ") || "(미등록)"}`
     );
   });
+
+  const selected = (perspectives && perspectives.length ? perspectives : ["opp_threat"])
+    .filter((p) => ANALYSIS_PERSPECTIVES[p]);
+  const ordered = ANALYSIS_ORDER.filter((p) => selected.includes(p));
+  const requestedSections = ["signal"].concat(
+    ordered.flatMap((p) => ANALYSIS_PERSPECTIVES[p].sections)
+  );
+  const perspectiveLines = ordered
+    .map((p) => `· ${ANALYSIS_PERSPECTIVES[p].label}: ${ANALYSIS_PERSPECTIVES[p].instruct}`)
+    .join("\n");
 
   const userPrompt = `[기반 뉴스]
 헤드라인: ${news.headline}
@@ -674,8 +706,14 @@ ${products.join(", ")}
 [제품 컨텍스트]
 ${buContextLines.join("\n\n")}
 
+[요청 분석 관점 — sections를 이 순서로 출력]
+${requestedSections.join(" → ")}
+
+[관점별 작성 지시]
+${perspectiveLines}
+
 [작성 지시]
-위 뉴스가 대상 제품에 미치는 기회·위협을 1페이지 리포트로 작성하세요. 제품 컨텍스트의 KPI·경쟁사를 본문에 반드시 활용하세요.`;
+위 뉴스가 대상 제품에 미치는 영향을 요청 분석 관점에 따라 작성하세요. 제품 컨텍스트의 KPI·경쟁사를 본문에 반드시 활용하세요.`;
 
   const body = JSON.stringify({
     model: "claude-haiku-4-5-20251001",
@@ -771,6 +809,9 @@ function buildDocxBlob(report, news, products) {
     signal: { name: "핵심 신호", color: "1a1a1a" },
     opportunity: { name: "당사 기회", color: "0c447c" },
     threat: { name: "당사 위협", color: "a32d2d" },
+    timeaxis: { name: "시간축 임팩트", color: "2a6f4e" },
+    valuechain: { name: "밸류체인 타격점", color: "7a4f1d" },
+    positioning: { name: "경쟁 포지셔닝 변화", color: "5a3a8a" },
   };
 
   const now = new Date();
@@ -945,6 +986,57 @@ function downloadBlob(blob, filename) {
 
 
 // ===== Modal =====
+
+// 예상 생성 시간 가중치(초): 기본 + 분석관점/대상제품 가산
+const EST_BASE = 8, EST_PERSP = 14, EST_ALL = 16, EST_ITEM = 5;
+const EST_MAX = EST_BASE + 4 * EST_PERSP + EST_ALL; // 풀스케일 80초
+
+function estimateSeconds(products, perspectives) {
+  const totalProducts = (typeof PRODUCTS !== "undefined" ? PRODUCTS.length : 0);
+  const allOn = totalProducts > 0 && products.length === totalProducts;
+  const prodT = allOn ? EST_ALL : products.length * EST_ITEM;
+  return EST_BASE + perspectives.length * EST_PERSP + prodT;
+}
+function fmtEstimate(s) {
+  if (s < 60) return `약 ${s}초`;
+  const m = Math.floor(s / 60), sec = s % 60;
+  return `약 ${m}분${sec ? ` ${sec}초` : ""}`;
+}
+function estimateLabel(products, perspectives) {
+  return fmtEstimate(estimateSeconds(products, perspectives));
+}
+function updateReportEstimate() {
+  const valueEl = document.getElementById("estimateValue");
+  if (!valueEl) return;
+  const products = Array.from(
+    document.querySelectorAll("#productCheckboxGroup input:checked")
+  ).map((cb) => cb.value);
+  const perspectives = Array.from(
+    document.querySelectorAll("#analysisCheckboxGroup input:checked")
+  ).map((cb) => cb.value);
+
+  const totalProducts = (typeof PRODUCTS !== "undefined" ? PRODUCTS.length : 0);
+  const allOn = totalProducts > 0 && products.length === totalProducts;
+  const t = estimateSeconds(products, perspectives);
+
+  const prev = Number(valueEl.dataset.sec || -1);
+  valueEl.textContent = fmtEstimate(t);
+  valueEl.dataset.sec = String(t);
+
+  const bar = document.getElementById("estimateBar");
+  if (bar) bar.style.width = Math.min(100, Math.round((t / EST_MAX) * 100)) + "%";
+  const note = document.getElementById("estimateNote");
+  if (note) {
+    note.textContent =
+      `분석 관점 ${perspectives.length}개 · 대상 제품 ${allOn ? "전제품" : products.length + "개"}`;
+  }
+
+  if (t > prev && prev >= 0) {
+    valueEl.classList.add("is-up");
+    setTimeout(() => valueEl.classList.remove("is-up"), 450);
+  }
+}
+
 function renderProductCheckboxes(preselect = []) {
   const container = document.getElementById("productCheckboxGroup");
   container.innerHTML = "";
@@ -973,8 +1065,9 @@ function renderProductCheckboxes(preselect = []) {
     const next = !(all.length > 0 && all.every((cb) => cb.checked));
     all.forEach((cb) => { cb.checked = next; });
     syncAllState();
+    updateReportEstimate();
   });
-  container.addEventListener("change", syncAllState);
+  container.addEventListener("change", () => { syncAllState(); updateReportEstimate(); });
   syncAllState();
 }
 
@@ -989,6 +1082,7 @@ function openReportModal(id) {
   `;
 
   renderProductCheckboxes(news.products || []);
+  updateReportEstimate();
 
   document.getElementById("reportModal").hidden = false;
   document.body.style.overflow = "hidden";
@@ -1011,6 +1105,15 @@ async function generateReport() {
     return;
   }
 
+  const perspectives = Array.from(
+    document.querySelectorAll("#analysisCheckboxGroup input:checked")
+  ).map((cb) => cb.value);
+
+  if (perspectives.length === 0) {
+    showToast("분석 관점을 1個 以上 선택해 주세요", false);
+    return;
+  }
+
   // 공용 충전 키 프록시가 설정돼 있으면 사용자별 키 입력을 건너뜀
   let apiKey = null;
   if (!getReportProxyUrl()) {
@@ -1024,11 +1127,11 @@ async function generateReport() {
   btn.disabled = true;
   btn.classList.add("btn--loading");
   btn.querySelector("i").className = "ti ti-loader-2";
-  btn.querySelector("span").textContent = "생성 中... (15초)";
+  btn.querySelector("span").textContent = `생성 中... (${estimateLabel(checked, perspectives)})`;
 
   try {
     const news = state.selectedNews;
-    const report = await callClaudeForReport(apiKey, news, checked);
+    const report = await callClaudeForReport(apiKey, news, checked, perspectives);
 
     if (!report.sections || !Array.isArray(report.sections)) {
       throw new Error("리포트 구조 검증 실패");
@@ -1140,6 +1243,10 @@ function bindEvents() {
     el.addEventListener("click", closeReportModal);
   });
   document.getElementById("generateBtn").addEventListener("click", generateReport);
+  const analysisGroup = document.getElementById("analysisCheckboxGroup");
+  if (analysisGroup) {
+    analysisGroup.addEventListener("change", updateReportEstimate);
+  }
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !document.getElementById("reportModal").hidden) {
       closeReportModal();

@@ -143,7 +143,7 @@
     <footer class="page-footer">
       <i class="ti ti-info-circle" aria-hidden="true"></i>
       <span>
-        각 카드의 [리포트 생성] 클릭 → 제품 선택 → 기회·위협 1페이지 docx 자동 생성
+        각 카드의 [리포트 생성] 클릭 → 제품·분석 관점 선택 → 사업부 영향 docx 자동 생성
       </span>
     </footer>
   </main>
@@ -168,13 +168,36 @@
         </div>
 
         <div class="modal__field">
-          <label class="modal__field-label">분석 관점</label>
-          <div class="radio-group">
-            <label class="radio-item radio-item--selected">
-              <input type="radio" name="analysisType" value="opp_threat" checked />
+          <label class="modal__field-label">분석 관점 (복수 선택 가능)</label>
+          <div class="checkbox-group" id="analysisCheckboxGroup">
+            <label class="checkbox-item">
+              <input type="checkbox" name="analysisType" value="opp_threat" checked />
               <span>기회·위협 2축 분석</span>
             </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="analysisType" value="timeaxis" />
+              <span>시간축 임팩트</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="analysisType" value="valuechain" />
+              <span>밸류체인 타격점</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="analysisType" value="positioning" />
+              <span>경쟁 포지셔닝 변화</span>
+            </label>
           </div>
+        </div>
+
+        <div class="modal__field modal__estimate" id="reportEstimate">
+          <div class="modal__estimate-top">
+            <span class="modal__estimate-label">
+              <i class="ti ti-clock-hour-4" aria-hidden="true"></i> 예상 생성 시간
+            </span>
+            <span class="modal__estimate-value" id="estimateValue">약 38초</span>
+          </div>
+          <div class="modal__estimate-meter"><i id="estimateBar"></i></div>
+          <p class="modal__estimate-note" id="estimateNote">분석 관점 1개 · 대상 제품 1개</p>
         </div>
       </div>
 
