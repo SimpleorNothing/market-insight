@@ -750,10 +750,11 @@ body {
 .news-card__action--report {
   gap: 5px;
   padding: 5px 11px;
-  border: 1px solid var(--border-default);
+  border: 1px solid var(--accent);
+  background: var(--accent);
   font-family: inherit;
   font-size: 12px;
-  color: var(--text-secondary);
+  color: #fff;
   white-space: nowrap;
 }
 
@@ -762,8 +763,9 @@ body {
 }
 
 .news-card__action--report:hover {
-  border-color: var(--border-strong);
-  color: var(--text-primary);
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #fff;
 }
 
 /* ===== List view ===== */
