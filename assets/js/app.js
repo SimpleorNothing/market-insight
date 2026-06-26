@@ -64,7 +64,7 @@ const state = {
   grade: null,
   tag: null,
   sort: "latest",
-  group: "lens",
+  group: "competitor",
   view: "card",
   selectedNews: null,
 };
