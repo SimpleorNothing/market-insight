@@ -223,49 +223,46 @@ function renderHeader() {
 }
 
 function renderStats() {
-  const all = getFilteredNews({ ignoreGrade: true });
-  document.getElementById("statTotal").textContent = all.length;
+  try {
+    const all = getFilteredNews({ ignoreGrade: true });
+    const totalEl = document.getElementById("statTotal");
+    if (totalEl) totalEl.textContent = all.length;
 
-  // Count news per competitor
-  const counts = {};
-  all.forEach((n) => {
-    (n.competitors || []).forEach((c) => {
-      counts[c] = (counts[c] || 0) + 1;
+    // Count news per competitor
+    const counts = {};
+    all.forEach((n) => {
+      (n.competitors || []).forEach((c) => {
+        counts[c] = (counts[c] || 0) + 1;
+      });
     });
-  });
-  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
 
-  const top1 = sorted[0];
-  const top2 = sorted[1];
-  const othersCount = sorted.slice(2).reduce((s, [, v]) => s + v, 0);
+    const top1 = sorted[0];
+    const top2 = sorted[1];
+    const othersCount = sorted.slice(2).reduce((s, [, v]) => s + v, 0);
 
-  const c1El = document.getElementById("statCompetitor1");
-  const c1Label = document.getElementById("statCompetitor1Label");
-  const c2El = document.getElementById("statCompetitor2");
-  const c2Label = document.getElementById("statCompetitor2Label");
-  const c3El = document.getElementById("statCompetitor3");
+    const c1El = document.getElementById("statCompetitor1");
+    const c1Label = document.getElementById("statCompetitor1Label");
+    const c2El = document.getElementById("statCompetitor2");
+    const c2Label = document.getElementById("statCompetitor2Label");
+    const c3El = document.getElementById("statCompetitor3");
+    const card2 = document.getElementById("statCard2");
+    const card3 = document.getElementById("statCard3");
 
-  if (top1) {
-    c1Label.textContent = top1[0];
-    c1El.textContent = top1[1];
-    document.getElementById("statCard2").dataset.competitor = top1[0];
-  } else {
-    c1Label.textContent = "—";
-    c1El.textContent = "0";
-    document.getElementById("statCard2").dataset.competitor = "";
+    if (c1Label) c1Label.textContent = top1 ? top1[0] : "—";
+    if (c1El) c1El.textContent = top1 ? top1[1] : "0";
+    if (card2) card2.dataset.competitor = top1 ? top1[0] : "";
+
+    if (c2Label) c2Label.textContent = top2 ? top2[0] : "—";
+    if (c2El) c2El.textContent = top2 ? top2[1] : "0";
+    if (card3) card3.dataset.competitor = top2 ? top2[0] : "";
+
+    if (c3El) c3El.textContent = othersCount;
+
+    updateStatSelection();
+  } catch (e) {
+    console.error("renderStats 오류:", e);
   }
-  if (top2) {
-    c2Label.textContent = top2[0];
-    c2El.textContent = top2[1];
-    document.getElementById("statCard3").dataset.competitor = top2[0];
-  } else {
-    c2Label.textContent = "—";
-    c2El.textContent = "0";
-    document.getElementById("statCard3").dataset.competitor = "";
-  }
-  c3El.textContent = othersCount;
-
-  updateStatSelection();
 }
 
 function updateStatSelection() {
@@ -1162,15 +1159,20 @@ function bindEvents() {
 // ===== Init =====
 async function init() {
   await Promise.all([loadConfig(), loadNewsData()]);
-  renderHeader();
-  renderStats();
-  renderPeriodChips();
-  renderLensChips();
-  renderProductChips();
-  renderCompetitorChips();
-  renderFilterRowsState();
-  renderResult();
-  bindEvents();
+  const steps = [
+    renderHeader,
+    renderStats,
+    renderPeriodChips,
+    renderLensChips,
+    renderProductChips,
+    renderCompetitorChips,
+    renderFilterRowsState,
+    renderResult,
+    bindEvents,
+  ];
+  for (const fn of steps) {
+    try { fn(); } catch (e) { console.error(`init 단계 오류 [${fn.name}]:`, e); }
+  }
 }
 
 document.addEventListener("DOMContentLoaded", init);
