@@ -32,29 +32,29 @@
       </div>
     </header>
 
-    <section class="stats-grid" aria-label="경쟁사 언급 KPI">
-      <div class="stat-card stat-card--neutral" data-grade="" role="button" tabindex="0" aria-pressed="false">
+    <section class="stats-grid" aria-label="시각별 KPI">
+      <div class="stat-card stat-card--neutral" data-lensgroup="" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">전체</p>
         <p class="stat-card__value">
           <span id="statTotal">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div id="statCard2" class="stat-card stat-card--neutral" data-competitor="" role="button" tabindex="0" aria-pressed="false">
-        <p class="stat-card__label"><span id="statCompetitor1Label">—</span></p>
+      <div class="stat-card stat-card--neutral" data-lensgroup="소비자" role="button" tabindex="0" aria-pressed="false">
+        <p class="stat-card__label">소비자</p>
         <p class="stat-card__value">
-          <span id="statCompetitor1">0</span><span class="stat-card__unit">건</span>
+          <span id="statConsumer">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div id="statCard3" class="stat-card stat-card--neutral" data-competitor="" role="button" tabindex="0" aria-pressed="false">
-        <p class="stat-card__label"><span id="statCompetitor2Label">—</span></p>
+      <div class="stat-card stat-card--neutral" data-lensgroup="경쟁사" role="button" tabindex="0" aria-pressed="false">
+        <p class="stat-card__label">경쟁사</p>
         <p class="stat-card__value">
-          <span id="statCompetitor2">0</span><span class="stat-card__unit">건</span>
+          <span id="statCompetitorLens">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div id="statCardOthers" class="stat-card stat-card--neutral" role="button" tabindex="0" aria-pressed="false">
+      <div class="stat-card stat-card--neutral" data-lensgroup="기타" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">기타</p>
         <p class="stat-card__value">
-          <span id="statCompetitor3">0</span><span class="stat-card__unit">건</span>
+          <span id="statOther">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
     </section>
