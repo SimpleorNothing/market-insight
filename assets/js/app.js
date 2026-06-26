@@ -2,7 +2,7 @@
  * DA Market Insight v2
  *
  * - 신호 렌즈 + 액션 등급 + 영향도 점수
- * - 시각(단일) + 경쟁사(다중) + 제품(다중) 3행 필터
+ * - 렌즈(단일) + 경쟁사(다중) + 제품(다중) 3행 필터
  * - 정렬·그룹·뷰 토글
  * - Claude API 직접 호출 → docx 자동 다운로드
  */
@@ -141,7 +141,7 @@ function getFilteredNews(opts = {}) {
       if (new Date(n.publishedAt).getTime() < cutoff) return false;
     }
 
-    // ignoreFilters: 시각·경쟁사·제품 필터 무시 (KPI 집계용)
+    // ignoreFilters: 렌즈·경쟁사·제품 필터 무시 (KPI 집계용)
     if (opts.ignoreFilters) return true;
 
     // 키워드 검색 (제목·요약·태그·경쟁사·제품)
@@ -171,7 +171,7 @@ function getFilteredNews(opts = {}) {
     // 렌즈 필터
     if (state.lens !== "전체" && n.lens !== state.lens) return false;
 
-    // 상단 KPI 카드(시각 그룹) 필터 — 기타 = 소비자·경쟁사 外 시각
+    // 상단 KPI 카드(렌즈 그룹) 필터 — 기타 = 소비자·경쟁사 外 렌즈
     if (state.lensGroup === "소비자" && n.lens !== "소비자") return false;
     if (state.lensGroup === "경쟁사" && n.lens !== "경쟁사") return false;
     if (state.lensGroup === "기타" && (n.lens === "소비자" || n.lens === "경쟁사")) return false;
@@ -229,7 +229,7 @@ function renderHeader() {
 
 function renderStats() {
   try {
-    // KPI는 시각·경쟁사·제품 필터 무시, 기간만 반영
+    // KPI는 렌즈·경쟁사·제품 필터 무시, 기간만 반영
     const all = getFilteredNews({ ignoreFilters: true });
     const setText = (id, v) => {
       const el = document.getElementById(id);
@@ -297,7 +297,7 @@ function renderLensChips() {
     btn.setAttribute("aria-checked", state.lens === lens ? "true" : "false");
     btn.addEventListener("click", () => {
       state.lens = lens;
-      // 시각 칩과 상단 KPI 카드는 충돌하므로 카드 선택 해제
+      // 렌즈 칩과 상단 KPI 카드는 충돌하므로 카드 선택 해제
       state.lensGroup = null;
       // 비활성 행의 선택 초기화하지 않고 유지 (사용자 의도 보존)
       renderLensChips();
@@ -367,10 +367,10 @@ function renderFilterRowsState() {
   // 컨텍스트 안내 배너
   const banner = document.getElementById("filterHintBanner");
   if (state.lens === "소비자" || state.lens === "기술") {
-    banner.innerHTML = `<i class="ti ti-info-circle" aria-hidden="true"></i>${state.lens} 시각에서는 경쟁사 필터가 적용되지 않습니다. 산업 전반 시그널만 노출됩니다.`;
+    banner.innerHTML = `<i class="ti ti-info-circle" aria-hidden="true"></i>${state.lens} 렌즈에서는 경쟁사 필터가 적용되지 않습니다. 산업 전반 시그널만 노출됩니다.`;
     banner.hidden = false;
   } else if (state.lens === "정책" || state.lens === "거시") {
-    banner.innerHTML = `<i class="ti ti-info-circle" aria-hidden="true"></i>${state.lens} 시각에서는 제품·경쟁사 필터가 적용되지 않습니다. 거시·규제 시그널만 노출됩니다.`;
+    banner.innerHTML = `<i class="ti ti-info-circle" aria-hidden="true"></i>${state.lens} 렌즈에서는 제품·경쟁사 필터가 적용되지 않습니다. 거시·규제 시그널만 노출됩니다.`;
     banner.hidden = false;
   } else {
     banner.hidden = true;
@@ -662,7 +662,7 @@ async function callClaudeForReport(apiKey, news, products) {
   const userPrompt = `[기반 뉴스]
 헤드라인: ${news.headline}
 요약: ${news.summary}
-시각: ${news.lens} / 등급: ${news.grade} (영향도 ${news.impact})
+렌즈: ${news.lens} / 등급: ${news.grade} (영향도 ${news.impact})
 관련 제품: ${(news.products || []).join(", ") || "(없음)"}
 관련 경쟁사: ${(news.competitors || []).join(", ") || "(없음)"}
 출처: ${news.source?.name || ""}
@@ -1099,7 +1099,7 @@ function bindEvents() {
       const group = card.dataset.lensgroup || null; // 전체 카드 = "" → null
       // 같은 카드 재클릭 → 전체로 해제 (토글)
       state.lensGroup = state.lensGroup === group ? null : group;
-      // 시각 칩 필터와 충돌 방지 — 카드 선택 時 시각 필터 초기화
+      // 렌즈 칩 필터와 충돌 방지 — 카드 선택 時 렌즈 필터 초기화
       state.lens = "전체";
       renderLensChips();
       renderFilterRowsState();
