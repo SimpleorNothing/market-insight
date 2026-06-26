@@ -20,8 +20,9 @@
 ## 디렉토리 구조
 
 ```
-mi/
+market-insight/                         (= 레포 루트, mi.samsungda.net 으로 단독 배포)
 ├── index.html                          뉴스 보드 메인 페이지
+├── CNAME                               커스텀 도메인 (mi.samsungda.net)
 ├── assets/
 │   ├── css/style.css
 │   └── js/app.js                       데이터는 data/news.json 에서 fetch
@@ -41,16 +42,28 @@ mi/
 
 ## 초기 셋업 (1회만)
 
-### 1단계: 레포 생성·푸시
+### 1단계: 레포 푸시 + GitHub Pages 단독 배포
+
+이 레포는 `samsungda.net/mi` 하위경로가 아니라 **단독 서브도메인 `mi.samsungda.net`** 으로 배포됩니다.
 
 ```bash
-git clone https://github.com/<org>/<samsungda-repo>.git
-cd <samsungda-repo>
-cp -r /path/to/mi ./mi
-git add mi
-git commit -m "Add DA Market Insight"
+git clone https://github.com/SimpleorNothing/market-insight.git
+cd market-insight
+# 변경 후
+git add .
+git commit -m "..."
 git push
 ```
+
+레포 `Settings → Pages`:
+
+- **Source**: `GitHub Actions` (`.github/workflows/deploy-pages.yml` 가 배포)
+- **Custom domain**: `mi.samsungda.net` 입력 → Save (레포의 `CNAME` 파일과 동일)
+  - "DNS check successful" 확인 후 **Enforce HTTPS** 체크
+- DNS(도메인 등록기관): `mi` 를 `simpleornothing.github.io` 로 향하는 `CNAME` 레코드
+
+> 옛 `samsungda.net/mi` 경로는 사용하지 않습니다. 포털(`samsungda-portal`)에 남아 있다면
+> 해당 폴더를 제거하고 `https://mi.samsungda.net` 로 리다이렉트하세요.
 
 ### 2단계: GitHub Secrets 등록
 
