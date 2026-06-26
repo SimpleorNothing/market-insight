@@ -32,35 +32,29 @@
       </div>
     </header>
 
-    <section class="stats-grid" aria-label="액션 등급별 KPI">
+    <section class="stats-grid" aria-label="경쟁사 언급 KPI">
       <div class="stat-card stat-card--neutral" data-grade="" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">전체</p>
         <p class="stat-card__value">
           <span id="statTotal">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--urgent" data-grade="긴급" role="button" tabindex="0" aria-pressed="false">
-        <p class="stat-card__label">
-          <i class="ti ti-diamond-filled" aria-hidden="true"></i>긴급
-        </p>
+      <div id="statCard2" class="stat-card stat-card--neutral" data-competitor="" role="button" tabindex="0" aria-pressed="false">
+        <p class="stat-card__label"><span id="statCompetitor1Label">—</span></p>
         <p class="stat-card__value">
-          <span id="statUrgent">0</span><span class="stat-card__unit">건</span>
+          <span id="statCompetitor1">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--major" data-grade="주요" role="button" tabindex="0" aria-pressed="false">
-        <p class="stat-card__label">
-          <span class="dot-amber" aria-hidden="true"></span>주요
-        </p>
+      <div id="statCard3" class="stat-card stat-card--neutral" data-competitor="" role="button" tabindex="0" aria-pressed="false">
+        <p class="stat-card__label"><span id="statCompetitor2Label">—</span></p>
         <p class="stat-card__value">
-          <span id="statMajor">0</span><span class="stat-card__unit">건</span>
+          <span id="statCompetitor2">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--watch" data-grade="주시" role="button" tabindex="0" aria-pressed="false">
-        <p class="stat-card__label">
-          <span class="dot-blue" aria-hidden="true"></span>주시
-        </p>
+      <div class="stat-card stat-card--neutral" role="button" tabindex="0">
+        <p class="stat-card__label">기타</p>
         <p class="stat-card__value">
-          <span id="statWatch">0</span><span class="stat-card__unit">건</span>
+          <span id="statCompetitor3">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
     </section>
@@ -122,7 +116,7 @@
           <span class="control-group__label">그룹</span>
           <select id="groupSelect">
             <option value="grade">액션 등급별</option>
-            <option value="lens">시각별</option>
+            <option value="lens" selected>시각별</option>
             <option value="competitor">경쟁사별</option>
             <option value="product">제품별</option>
             <option value="none">그룹 없음</option>
