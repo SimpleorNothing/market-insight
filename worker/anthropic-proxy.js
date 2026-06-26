@@ -21,9 +21,7 @@ const MAX_TOKENS_CAP = 2000;
 
 export default {
   async fetch(request, env) {
-    const origin = request.headers.get("Origin") || "";
-    const allowOrigin = resolveAllowedOrigin(origin, env);
-    const corsHeaders = buildCorsHeaders(allowOrigin);
+    const corsHeaders = buildCorsHeaders();
 
     // CORS preflight
     if (request.method === "OPTIONS") {
@@ -32,11 +30,6 @@ export default {
 
     if (request.method !== "POST") {
       return json({ error: "POST만 허용됩니다." }, 405, corsHeaders);
-    }
-
-    // Origin 검증 (ALLOWED_ORIGINS가 설정된 경우)
-    if (env.ALLOWED_ORIGINS && !allowOrigin) {
-      return json({ error: "허용되지 않은 Origin." }, 403, corsHeaders);
     }
 
     if (!env.ANTHROPIC_API_KEY) {
@@ -93,19 +86,12 @@ export default {
   },
 };
 
-function resolveAllowedOrigin(origin, env) {
-  if (!env.ALLOWED_ORIGINS) return origin || "*";
-  const list = env.ALLOWED_ORIGINS.split(",").map((s) => s.trim()).filter(Boolean);
-  return list.includes(origin) ? origin : "";
-}
-
-function buildCorsHeaders(allowOrigin) {
+function buildCorsHeaders() {
   return {
-    "Access-Control-Allow-Origin": allowOrigin || "",
+    "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
     "Access-Control-Max-Age": "86400",
-    "Vary": "Origin",
   };
 }
 
