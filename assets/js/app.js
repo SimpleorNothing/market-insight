@@ -529,10 +529,8 @@ function makeGroups(items) {
     .filter(([_, arr]) => arr.length > 0)
     .map(([key, arr]) => ({ key, items: arr }));
 
-  // 경쟁사별 그룹은 기사수 내림차순 정렬 (당사 포함)
-  if (state.group === "competitor") {
-    result.sort((a, b) => b.items.length - a.items.length);
-  }
+  // 모든 그룹을 기사수 내림차순 정렬
+  result.sort((a, b) => b.items.length - a.items.length);
 
   return result;
 }
@@ -584,9 +582,6 @@ function renderCard(n) {
             ${timeAgo(n.publishedAt)} · <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceName)}</a>
           </span>
         </div>
-        <span class="news-card__grade news-card__grade--${gradeCls}">
-          ${escapeHtml(n.grade)} · ${(n.impact ?? 0).toFixed(1)}
-        </span>
       </div>
       <h3 class="news-card__headline">
         <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.headline)}</a>
