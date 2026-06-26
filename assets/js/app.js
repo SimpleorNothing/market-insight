@@ -529,8 +529,12 @@ function makeGroups(items) {
     .filter(([_, arr]) => arr.length > 0)
     .map(([key, arr]) => ({ key, items: arr }));
 
-  // 모든 그룹을 기사수 내림차순 정렬
-  result.sort((a, b) => b.items.length - a.items.length);
+  // 모든 그룹을 기사수 내림차순 정렬, '경쟁사 미분류'는 항상 마지막
+  result.sort((a, b) => {
+    if (a.key === "경쟁사 미분류") return 1;
+    if (b.key === "경쟁사 미분류") return -1;
+    return b.items.length - a.items.length;
+  });
 
   return result;
 }
