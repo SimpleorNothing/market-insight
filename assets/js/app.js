@@ -50,18 +50,16 @@ const GRADE_CLASS = {
 let NEWS_DATA = [];
 let NEWS_UPDATED_AT = null;
 let CONFIG = null;
-let TOP_COMPETITORS = []; // 기타 필터용 (1위·2위 경쟁사명 저장)
 
 const state = {
   lens: "전체",
+  lensGroup: null, // 상단 KPI 카드 (null=전체 / "소비자" / "경쟁사" / "기타")
   period: 1,
   dateFrom: null,
   dateTo: null,
   keyword: "",
   products: new Set(),
   competitors: new Set(),
-  competitorOthers: false, // 기타 카드 필터
-  grade: null,
   tag: null,
   sort: "latest",
   group: "competitor",
@@ -133,9 +131,6 @@ async function loadNewsData() {
 // ===== Filter logic =====
 function getFilteredNews(opts = {}) {
   return NEWS_DATA.filter((n) => {
-    // 액션 등급 필터 (상단 KPI 카드 클릭) — KPI 집계 時 무시
-    if (!opts.ignoreGrade && state.grade && n.grade !== state.grade) return false;
-
     // 조회기간 필터 — 직접 지정 범위 우선, 없으면 프리셋
     if (state.dateFrom || state.dateTo) {
       const t = new Date(n.publishedAt).getTime();
@@ -176,6 +171,11 @@ function getFilteredNews(opts = {}) {
     // 렌즈 필터
     if (state.lens !== "전체" && n.lens !== state.lens) return false;
 
+    // 상단 KPI 카드(시각 그룹) 필터 — 기타 = 소비자·경쟁사 外 시각
+    if (state.lensGroup === "소비자" && n.lens !== "소비자") return false;
+    if (state.lensGroup === "경쟁사" && n.lens !== "경쟁사") return false;
+    if (state.lensGroup === "기타" && (n.lens === "소비자" || n.lens === "경쟁사")) return false;
+
     // 제품 필터 (다중, OR)
     if (state.products.size > 0) {
       const match = (n.products || []).some((p) => state.products.has(p));
@@ -186,12 +186,6 @@ function getFilteredNews(opts = {}) {
     if (state.competitors.size > 0) {
       const match = (n.competitors || []).some((c) => state.competitors.has(c));
       if (!match) return false;
-    }
-
-    // 기타 카드 필터: TOP_COMPETITORS(1위·2위) 포함 기사 제외
-    if (state.competitorOthers && TOP_COMPETITORS.length > 0) {
-      const hasTop = (n.competitors || []).some((c) => TOP_COMPETITORS.includes(c));
-      if (hasTop) return false;
     }
 
     return true;
@@ -236,48 +230,20 @@ function renderHeader() {
 function renderStats() {
   try {
     // KPI는 시각·경쟁사·제품 필터 무시, 기간만 반영
-    const all = getFilteredNews({ ignoreGrade: true, ignoreFilters: true });
-    const totalEl = document.getElementById("statTotal");
-    if (totalEl) totalEl.textContent = all.length;
+    const all = getFilteredNews({ ignoreFilters: true });
+    const setText = (id, v) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = v;
+    };
 
-    // Count news per competitor (삼성전자는 기타 포함)
-    const OUR_COMPANY = "삼성전자";
-    const counts = {};
-    all.forEach((n) => {
-      (n.competitors || []).forEach((c) => {
-        counts[c] = (counts[c] || 0) + 1;
-      });
-    });
-    const sorted = Object.entries(counts)
-      .filter(([c]) => c !== OUR_COMPANY)
-      .sort((a, b) => b[1] - a[1]);
-    const othersCount =
-      sorted.slice(2).reduce((s, [, v]) => s + v, 0) +
-      (counts[OUR_COMPANY] || 0);
+    const consumer = all.filter((n) => n.lens === "소비자").length;
+    const competitor = all.filter((n) => n.lens === "경쟁사").length;
+    const other = all.length - consumer - competitor; // 기술·정책·거시 等
 
-    const top1 = sorted[0];
-    const top2 = sorted[1];
-
-    // 기타 필터용 top 경쟁사 저장
-    TOP_COMPETITORS = [top1, top2].filter(Boolean).map(([c]) => c);
-
-    const c1El = document.getElementById("statCompetitor1");
-    const c1Label = document.getElementById("statCompetitor1Label");
-    const c2El = document.getElementById("statCompetitor2");
-    const c2Label = document.getElementById("statCompetitor2Label");
-    const c3El = document.getElementById("statCompetitor3");
-    const card2 = document.getElementById("statCard2");
-    const card3 = document.getElementById("statCard3");
-
-    if (c1Label) c1Label.textContent = top1 ? top1[0] : "—";
-    if (c1El) c1El.textContent = top1 ? top1[1] : "0";
-    if (card2) card2.dataset.competitor = top1 ? top1[0] : "";
-
-    if (c2Label) c2Label.textContent = top2 ? top2[0] : "—";
-    if (c2El) c2El.textContent = top2 ? top2[1] : "0";
-    if (card3) card3.dataset.competitor = top2 ? top2[0] : "";
-
-    if (c3El) c3El.textContent = othersCount;
+    setText("statTotal", all.length);
+    setText("statConsumer", consumer);
+    setText("statCompetitorLens", competitor);
+    setText("statOther", other);
 
     updateStatSelection();
   } catch (e) {
@@ -286,23 +252,12 @@ function renderStats() {
 }
 
 function updateStatSelection() {
-  document.querySelectorAll(".stat-card[data-grade]").forEach((card) => {
-    const grade = card.dataset.grade || null;
-    const active = grade === state.grade && !state.competitorOthers && state.competitors.size === 0;
+  document.querySelectorAll(".stat-card[data-lensgroup]").forEach((card) => {
+    const group = card.dataset.lensgroup || null; // 전체 카드 = "" → null
+    const active = group === state.lensGroup;
     card.classList.toggle("is-selected", active);
     card.setAttribute("aria-pressed", active ? "true" : "false");
   });
-  document.querySelectorAll(".stat-card[data-competitor]").forEach((card) => {
-    const comp = card.dataset.competitor;
-    const active = comp && state.competitors.size === 1 && state.competitors.has(comp);
-    card.classList.toggle("is-selected", active);
-    card.setAttribute("aria-pressed", active ? "true" : "false");
-  });
-  const othersCard = document.getElementById("statCardOthers");
-  if (othersCard) {
-    othersCard.classList.toggle("is-selected", state.competitorOthers);
-    othersCard.setAttribute("aria-pressed", state.competitorOthers ? "true" : "false");
-  }
 }
 
 function renderPeriodChips() {
@@ -342,6 +297,8 @@ function renderLensChips() {
     btn.setAttribute("aria-checked", state.lens === lens ? "true" : "false");
     btn.addEventListener("click", () => {
       state.lens = lens;
+      // 시각 칩과 상단 KPI 카드는 충돌하므로 카드 선택 해제
+      state.lensGroup = null;
       // 비활성 행의 선택 초기화하지 않고 유지 (사용자 의도 보존)
       renderLensChips();
       renderFilterRowsState();
@@ -463,14 +420,7 @@ function renderResult() {
   });
 }
 
-// ===== Grade / Tag filters =====
-function setGradeFilter(grade) {
-  // grade: "" (전체) | "긴급" | "주요" | "주시"
-  state.grade = !grade ? null : state.grade === grade ? null : grade;
-  updateStatSelection();
-  renderResult();
-}
-
+// ===== Tag filters =====
 function setTagFilter(tag) {
   state.tag = state.tag === tag ? null : tag;
   renderResult();
@@ -1144,33 +1094,15 @@ function bindEvents() {
       renderResult();
     });
   });
-  document.querySelectorAll(".stat-card[data-grade]").forEach((card) => {
+  document.querySelectorAll(".stat-card[data-lensgroup]").forEach((card) => {
     const handler = () => {
-      // 전체 카드 클릭 시 경쟁사 필터도 초기화
-      state.competitors.clear();
-      state.competitorOthers = false;
-      renderCompetitorChips();
-      setGradeFilter(card.dataset.grade);
-    };
-    card.addEventListener("click", handler);
-    card.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        handler();
-      }
-    });
-  });
-  document.querySelectorAll(".stat-card[data-competitor]").forEach((card) => {
-    const handler = () => {
-      const comp = card.dataset.competitor;
-      if (!comp) return;
-      state.competitorOthers = false;
-      if (state.competitors.size === 1 && state.competitors.has(comp)) {
-        state.competitors.clear();
-      } else {
-        state.competitors = new Set([comp]);
-      }
-      renderCompetitorChips();
+      const group = card.dataset.lensgroup || null; // 전체 카드 = "" → null
+      // 같은 카드 재클릭 → 전체로 해제 (토글)
+      state.lensGroup = state.lensGroup === group ? null : group;
+      // 시각 칩 필터와 충돌 방지 — 카드 선택 時 시각 필터 초기화
+      state.lens = "전체";
+      renderLensChips();
+      renderFilterRowsState();
       renderResult();
     };
     card.addEventListener("click", handler);
@@ -1181,22 +1113,6 @@ function bindEvents() {
       }
     });
   });
-  const othersCard = document.getElementById("statCardOthers");
-  if (othersCard) {
-    const handler = () => {
-      state.competitorOthers = !state.competitorOthers;
-      state.competitors.clear();
-      renderCompetitorChips();
-      renderResult();
-    };
-    othersCard.addEventListener("click", handler);
-    othersCard.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        handler();
-      }
-    });
-  }
   document.getElementById("tagFilterClear").addEventListener("click", clearTagFilter);
   document.querySelectorAll("[data-close]").forEach((el) => {
     el.addEventListener("click", closeReportModal);
