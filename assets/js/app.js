@@ -795,9 +795,9 @@ function docxRun(text, { bold = false, color = "1a1a1a", pt = 10.5 } = {}) {
 }
 
 // 한 개의 문단(paragraph). spacing/indent는 twips(1pt=20), 들여쓰기는 인자 그대로.
-function docxPara(runsXml, { beforePt = 0, afterPt = 2, indentTwips = 0, shade = null, border = null } = {}) {
+function docxPara(runsXml, { beforePt = 0, afterPt = 2, indentTwips = 0, hangingTwips = 0, shade = null, border = null } = {}) {
   let pPr = `<w:pPr><w:spacing w:before="${Math.round(beforePt * 20)}" w:after="${Math.round(afterPt * 20)}" w:line="276" w:lineRule="auto"/>`;
-  if (indentTwips) pPr += `<w:ind w:left="${indentTwips}"/>`;
+  if (indentTwips || hangingTwips) pPr += `<w:ind w:left="${indentTwips}"${hangingTwips ? ` w:hanging="${hangingTwips}"` : ""}/>`;
   if (shade) pPr += `<w:shd w:val="clear" w:color="auto" w:fill="${shade}"/>`;
   if (border) pPr += `<w:pBdr><w:left w:val="single" w:sz="18" w:space="6" w:color="1a1a1a"/></w:pBdr>`;
   pPr += `</w:pPr>`;
@@ -844,7 +844,12 @@ function buildDocxBlob(report, news, products) {
       docxRun(headline, { bold: true, color: "1a1a1a", pt: 11 });
     body.push(docxPara(headRuns, { beforePt: 9, afterPt: 2 }));
     (s.items || []).forEach((it) => {
-      body.push(docxPara(docxRun(`- ${it.text}`, { pt: 10 }), { beforePt: 1, afterPt: 1, indentTwips: 320 }));
+      // 행잉 인덴트 불릿: 첫 줄 '•' 後 탭, 둘째 줄부터 본문에 맞춰 정렬
+      const bulletRuns =
+        docxRun("•", { pt: 10, color: "5f5e5a" }) +
+        `<w:r><w:tab/></w:r>` +
+        docxRun(it.text, { pt: 10 });
+      body.push(docxPara(bulletRuns, { beforePt: 1, afterPt: 1, indentTwips: 600, hangingTwips: 280 }));
     });
   });
 
