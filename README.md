@@ -2,7 +2,7 @@
 
 실시간 시장 동향 모니터링 보드. RSS 자동 수집 + Claude AI 분류 + 사업부 영향 리포트 생성을 한 시스템으로 통합.
 
-**배포 URL:** `https://samsungda.net/mi`
+**배포 URL:** `https://mi.samsungda.net`
 **수집 주기:** 1시간 (GitHub Actions cron)
 **분류 모델:** Claude Haiku 4.5 (`claude-haiku-4-5-20251001`)
 
@@ -11,7 +11,7 @@
 | 도구 | 진입 | 레포 |
 |------|------|------|
 | 클로드로 워드보고서 작성하기 | `samsungda.net/agent-guide` | `report-site` |
-| 보고서 자판기 | `samsungda.net/report` | `report-site` |
+| 보고서 자판기 | `report.samsungda.net` | `report-site` |
 | Market Insight | `mi.samsungda.net` | `market-insight` ◀ **현재 레포** |
 | 2030 미래 트렌드 | `samsungda.net/2030` | `(외부 연동)` |
 | Quick Share | `quickshare.samsungda.net` | `QuickShare` |
