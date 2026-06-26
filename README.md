@@ -6,6 +6,17 @@
 **수집 주기:** 1시간 (GitHub Actions cron)
 **분류 모델:** Claude Haiku 4.5 (`claude-haiku-4-5-20251001`)
 
+> 🧭 **기획 도구 모음**(`samsungda.net`) 생태계의 일부입니다 — 허브 레포: [`samsungda-portal`](https://github.com/SimpleorNothing/samsungda-portal)
+
+| 도구 | 진입 | 레포 |
+|------|------|------|
+| 클로드로 워드보고서 작성하기 | `samsungda.net/agent-guide` | `report-site` |
+| 보고서 자판기 | `samsungda.net/report` | `report-site` |
+| Market Insight | `mi.samsungda.net` | `market-insight` ◀ **현재 레포** |
+| 2030 미래 트렌드 | `samsungda.net/2030` | `(외부 연동)` |
+| Quick Share | `quickshare.samsungda.net` | `QuickShare` |
+| My Space | `space.samsungda.net` | `samsungda-space` |
+
 ## 디렉토리 구조
 
 ```
