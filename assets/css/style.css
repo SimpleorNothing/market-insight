@@ -704,7 +704,7 @@ body {
   background: var(--bg-soft);
   padding: 2px 8px;
   border-radius: var(--radius-sm);
-  font-family: ui-monospace, "SF Mono", monospace;
+  font-family: inherit;
   border: none;
   cursor: pointer;
   transition: background 0.12s ease, color 0.12s ease;
