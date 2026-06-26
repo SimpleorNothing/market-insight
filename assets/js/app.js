@@ -62,7 +62,7 @@ const state = {
   grade: null,
   tag: null,
   sort: "latest",
-  group: "grade",
+  group: "lens",
   view: "card",
   selectedNews: null,
 };
@@ -225,12 +225,46 @@ function renderHeader() {
 function renderStats() {
   const all = getFilteredNews({ ignoreGrade: true });
   document.getElementById("statTotal").textContent = all.length;
-  document.getElementById("statUrgent").textContent =
-    all.filter((n) => n.grade === "긴급").length;
-  document.getElementById("statMajor").textContent =
-    all.filter((n) => n.grade === "주요").length;
-  document.getElementById("statWatch").textContent =
-    all.filter((n) => n.grade === "주시").length;
+
+  // Count news per competitor
+  const counts = {};
+  all.forEach((n) => {
+    (n.competitors || []).forEach((c) => {
+      counts[c] = (counts[c] || 0) + 1;
+    });
+  });
+  const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  const top1 = sorted[0];
+  const top2 = sorted[1];
+  const othersCount = sorted.slice(2).reduce((s, [, v]) => s + v, 0);
+
+  const c1El = document.getElementById("statCompetitor1");
+  const c1Label = document.getElementById("statCompetitor1Label");
+  const c2El = document.getElementById("statCompetitor2");
+  const c2Label = document.getElementById("statCompetitor2Label");
+  const c3El = document.getElementById("statCompetitor3");
+
+  if (top1) {
+    c1Label.textContent = top1[0];
+    c1El.textContent = top1[1];
+    document.getElementById("statCard2").dataset.competitor = top1[0];
+  } else {
+    c1Label.textContent = "—";
+    c1El.textContent = "0";
+    document.getElementById("statCard2").dataset.competitor = "";
+  }
+  if (top2) {
+    c2Label.textContent = top2[0];
+    c2El.textContent = top2[1];
+    document.getElementById("statCard3").dataset.competitor = top2[0];
+  } else {
+    c2Label.textContent = "—";
+    c2El.textContent = "0";
+    document.getElementById("statCard3").dataset.competitor = "";
+  }
+  c3El.textContent = othersCount;
+
   updateStatSelection();
 }
 
@@ -238,6 +272,12 @@ function updateStatSelection() {
   document.querySelectorAll(".stat-card[data-grade]").forEach((card) => {
     const grade = card.dataset.grade || null;
     const active = grade === state.grade;
+    card.classList.toggle("is-selected", active);
+    card.setAttribute("aria-pressed", active ? "true" : "false");
+  });
+  document.querySelectorAll(".stat-card[data-competitor]").forEach((card) => {
+    const comp = card.dataset.competitor;
+    const active = comp && state.competitors.size === 1 && state.competitors.has(comp);
     card.classList.toggle("is-selected", active);
     card.setAttribute("aria-pressed", active ? "true" : "false");
   });
@@ -1078,6 +1118,27 @@ function bindEvents() {
   });
   document.querySelectorAll(".stat-card[data-grade]").forEach((card) => {
     const handler = () => setGradeFilter(card.dataset.grade);
+    card.addEventListener("click", handler);
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handler();
+      }
+    });
+  });
+  document.querySelectorAll(".stat-card[data-competitor]").forEach((card) => {
+    const handler = () => {
+      const comp = card.dataset.competitor;
+      if (!comp) return;
+      if (state.competitors.size === 1 && state.competitors.has(comp)) {
+        state.competitors.clear();
+      } else {
+        state.competitors = new Set([comp]);
+      }
+      renderCompetitorChips();
+      renderResult();
+      renderStats();
+    };
     card.addEventListener("click", handler);
     card.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
