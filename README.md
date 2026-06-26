@@ -13,7 +13,7 @@
 | 클로드로 워드보고서 작성하기 | `samsungda.net/agent-guide` | `report-site` |
 | 보고서 자판기 | `report.samsungda.net` | `report-site` |
 | Market Insight | `mi.samsungda.net` | `market-insight` ◀ **현재 레포** |
-| 2030 미래 트렌드 | `samsungda.net/2030` | `(외부 연동)` |
+| 2030 미래 트렌드 | `2030.samsungda.net` | `(외부 연동)` |
 | Quick Share | `quickshare.samsungda.net` | `QuickShare` |
 | My Space | `space.samsungda.net` | `samsungda-space` |
 
