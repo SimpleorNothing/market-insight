@@ -50,6 +50,7 @@ const GRADE_CLASS = {
 let NEWS_DATA = [];
 let NEWS_UPDATED_AT = null;
 let CONFIG = null;
+let TOP_COMPETITORS = []; // 기타 필터용 (1위·2위 경쟁사명 저장)
 
 const state = {
   lens: "전체",
@@ -59,6 +60,7 @@ const state = {
   keyword: "",
   products: new Set(),
   competitors: new Set(),
+  competitorOthers: false, // 기타 카드 필터
   grade: null,
   tag: null,
   sort: "latest",
@@ -144,6 +146,9 @@ function getFilteredNews(opts = {}) {
       if (new Date(n.publishedAt).getTime() < cutoff) return false;
     }
 
+    // ignoreFilters: 시각·경쟁사·제품 필터 무시 (KPI 집계용)
+    if (opts.ignoreFilters) return true;
+
     // 키워드 검색 (제목·요약·태그·경쟁사·제품)
     if (state.keyword) {
       const hay = [
@@ -181,6 +186,12 @@ function getFilteredNews(opts = {}) {
     if (state.competitors.size > 0) {
       const match = (n.competitors || []).some((c) => state.competitors.has(c));
       if (!match) return false;
+    }
+
+    // 기타 카드 필터: TOP_COMPETITORS(1위·2위) 포함 기사 제외
+    if (state.competitorOthers && TOP_COMPETITORS.length > 0) {
+      const hasTop = (n.competitors || []).some((c) => TOP_COMPETITORS.includes(c));
+      if (hasTop) return false;
     }
 
     return true;
@@ -224,7 +235,8 @@ function renderHeader() {
 
 function renderStats() {
   try {
-    const all = getFilteredNews({ ignoreGrade: true });
+    // KPI는 시각·경쟁사·제품 필터 무시, 기간만 반영
+    const all = getFilteredNews({ ignoreGrade: true, ignoreFilters: true });
     const totalEl = document.getElementById("statTotal");
     if (totalEl) totalEl.textContent = all.length;
 
@@ -245,6 +257,9 @@ function renderStats() {
 
     const top1 = sorted[0];
     const top2 = sorted[1];
+
+    // 기타 필터용 top 경쟁사 저장
+    TOP_COMPETITORS = [top1, top2].filter(Boolean).map(([c]) => c);
 
     const c1El = document.getElementById("statCompetitor1");
     const c1Label = document.getElementById("statCompetitor1Label");
@@ -273,7 +288,7 @@ function renderStats() {
 function updateStatSelection() {
   document.querySelectorAll(".stat-card[data-grade]").forEach((card) => {
     const grade = card.dataset.grade || null;
-    const active = grade === state.grade;
+    const active = grade === state.grade && !state.competitorOthers && state.competitors.size === 0;
     card.classList.toggle("is-selected", active);
     card.setAttribute("aria-pressed", active ? "true" : "false");
   });
@@ -283,6 +298,11 @@ function updateStatSelection() {
     card.classList.toggle("is-selected", active);
     card.setAttribute("aria-pressed", active ? "true" : "false");
   });
+  const othersCard = document.getElementById("statCardOthers");
+  if (othersCard) {
+    othersCard.classList.toggle("is-selected", state.competitorOthers);
+    othersCard.setAttribute("aria-pressed", state.competitorOthers ? "true" : "false");
+  }
 }
 
 function renderPeriodChips() {
@@ -1126,7 +1146,13 @@ function bindEvents() {
     });
   });
   document.querySelectorAll(".stat-card[data-grade]").forEach((card) => {
-    const handler = () => setGradeFilter(card.dataset.grade);
+    const handler = () => {
+      // 전체 카드 클릭 시 경쟁사 필터도 초기화
+      state.competitors.clear();
+      state.competitorOthers = false;
+      renderCompetitorChips();
+      setGradeFilter(card.dataset.grade);
+    };
     card.addEventListener("click", handler);
     card.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
@@ -1139,6 +1165,7 @@ function bindEvents() {
     const handler = () => {
       const comp = card.dataset.competitor;
       if (!comp) return;
+      state.competitorOthers = false;
       if (state.competitors.size === 1 && state.competitors.has(comp)) {
         state.competitors.clear();
       } else {
@@ -1146,7 +1173,6 @@ function bindEvents() {
       }
       renderCompetitorChips();
       renderResult();
-      renderStats();
     };
     card.addEventListener("click", handler);
     card.addEventListener("keydown", (e) => {
@@ -1156,6 +1182,22 @@ function bindEvents() {
       }
     });
   });
+  const othersCard = document.getElementById("statCardOthers");
+  if (othersCard) {
+    const handler = () => {
+      state.competitorOthers = !state.competitorOthers;
+      state.competitors.clear();
+      renderCompetitorChips();
+      renderResult();
+    };
+    othersCard.addEventListener("click", handler);
+    othersCard.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handler();
+      }
+    });
+  }
   document.getElementById("tagFilterClear").addEventListener("click", clearTagFilter);
   document.querySelectorAll("[data-close]").forEach((el) => {
     el.addEventListener("click", closeReportModal);
