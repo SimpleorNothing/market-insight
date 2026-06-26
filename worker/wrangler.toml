@@ -4,7 +4,7 @@ compatibility_date = "2024-11-01"
 
 # 허용할 사이트 Origin (콤마 구분). 운영 도메인에 맞게 수정하세요.
 [vars]
-ALLOWED_ORIGINS = "https://simpleornothing.github.io,https://samsungda.net,https://mi.samsungda.net"
+ALLOWED_ORIGINS = ""
 
 # ANTHROPIC_API_KEY 는 코드/설정에 넣지 말고 secret 으로 등록하세요:
 #   wrangler secret put ANTHROPIC_API_KEY
