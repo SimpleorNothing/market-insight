@@ -1,7 +1,104 @@
 {
-  "updatedAt": "2026-06-25T23:07:27.056Z",
+  "updatedAt": "2026-06-26T02:11:42.309Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1050,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자",
+        "Midea"
+      ],
+      "tags": [
+        "유럽폭염",
+        "에어컨수요",
+        "계절성",
+        "글로벌판매"
+      ],
+      "headline": "유럽 폭염으로 삼성·마이디어 에어컨 수요 급증",
+      "summary": "유럽의 극심한 폭염으로 인해 삼성전자와 Midea의 에어컨 제품이 품절 상태에 가까울 정도로 판매량이 급증하고 있다. 글로벌 에어컨 시장에서 두 기업의 경쟁력이 날씨 기반 수요 변화에 크게 영향받고 있음을 보여준다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.g-enews.com/article/Global-Biz/2026/06/2026062610510784749a1f309431_1"
+      },
+      "publishedAt": "2026-06-26T01:57:10.000Z",
+      "url": "https://www.g-enews.com/article/Global-Biz/2026/06/2026062610510784749a1f309431_1"
+    },
+    {
+      "id": 1052,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "스마트홈",
+        "IoT",
+        "모듈형주택",
+        "삼성LG경쟁",
+        "글로벌시장"
+      ],
+      "headline": "삼성·LG, 스마트 모듈형 홈 시장 경쟁 심화",
+      "summary": "삼성전자와 LG전자가 스마트 모듈형 홈 시장에서 본격 경쟁을 벌이고 있다. 양사는 IoT 기반의 통합 홈솔루션으로 글로벌 주택 시장의 새로운 수요를 선점하려는 전략을 추진 중이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://evrimagaci.org/gpt/samsung-and-lg-battle-for-smart-modular-home-market-541717"
+      },
+      "publishedAt": "2026-06-26T00:16:19.000Z",
+      "url": "https://evrimagaci.org/gpt/samsung-and-lg-battle-for-smart-modular-home-market-541717"
+    },
+    {
+      "id": 1051,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "구독형 비즈니스",
+        "소매 확장",
+        "말레이시아",
+        "동남아시장"
+      ],
+      "headline": "LG전자, 말레이시아 구독형 매장 130개 돌파",
+      "summary": "LG전자가 말레이시아에서 구독형 브랜드 샵을 130개 이상 확보했다. K-구독 서비스의 동남아 거점 확대 전략의 일환으로, 신흥시장에서의 소비자 접근성 강화를 모색 중이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://mbiz.heraldcorp.com/article/10788932"
+      },
+      "publishedAt": "2026-06-26T00:15:03.000Z",
+      "url": "https://mbiz.heraldcorp.com/article/10788932"
+    },
     {
       "id": 1046,
       "lens": "정책",
@@ -466,37 +563,6 @@
       },
       "publishedAt": "2026-06-25T02:00:00.000Z",
       "url": "https://www.etnews.com/20260625000124"
-    },
-    {
-      "id": 1021,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "폭염",
-        "에어컨수요",
-        "유럽시장",
-        "냉방기기",
-        "품귀현상"
-      ],
-      "headline": "유럽 폭염으로 에어컨 품귀…냉방기기 수요 급증",
-      "summary": "유럽의 40도 폭염으로 에어컨이 품귀 현상을 보이며 냉방기기가 생존 필수품으로 급부상했다. 극한 날씨 조건이 냉방기기 수요를 급증시키고 있으며, 이는 글로벌 냉방가전 시장의 성장 기회로 작용할 전망이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://v.daum.net/v/20260625103614101"
-      },
-      "publishedAt": "2026-06-25T01:36:00.000Z",
-      "url": "https://v.daum.net/v/20260625103614101"
     },
     {
       "id": 1018,
