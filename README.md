@@ -10,7 +10,7 @@
 
 | 도구 | 진입 | 레포 |
 |------|------|------|
-| 클로드로 워드보고서 작성하기 | `samsungda.net/agent-guide` | `report-site` |
+| 클로드로 워드보고서 작성하기 | `agentguide.samsungda.net` | `agent-guide` |
 | 보고서 자판기 | `report.samsungda.net` | `report-site` |
 | Market Insight | `mi.samsungda.net` | `market-insight` ◀ **현재 레포** |
 | 2030 미래 트렌드 | `2030.samsungda.net` | `2030-insight` |
