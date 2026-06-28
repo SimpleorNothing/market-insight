@@ -82,12 +82,12 @@ function timeAgo(isoString) {
 
 function formatUpdatedAt(isoString) {
   const d = isoString ? new Date(isoString) : new Date();
-  const yy = String(d.getFullYear()).slice(2);
-  const m = d.getMonth() + 1;
-  const day = d.getDate();
+  const yyyy = String(d.getFullYear());
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
   const hh = String(d.getHours()).padStart(2, "0");
   const mm = String(d.getMinutes()).padStart(2, "0");
-  return `'${yy}.${m}.${day} ${hh}:${mm} 갱신`;
+  return `${yyyy}.${m}.${day} ${hh}:${mm} 갱신`;
 }
 
 function escapeHtml(s) {
