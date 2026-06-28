@@ -1,6 +1,6 @@
-# DA Market Insight
+# Market Insight
 
-실시간 시장 동향 모니터링 보드. RSS 자동 수집 + Claude AI 분류 + 사업부 영향 리포트 생성을 한 시스템으로 통합.
+시장 동향을 Daily로 센싱합니다. RSS 자동 수집 + Claude AI 분류 + 사업부 영향 리포트 생성을 한 시스템으로 통합.
 
 **배포 URL:** `https://mi.samsungda.net`
 **수집 주기:** 1시간 (GitHub Actions cron)

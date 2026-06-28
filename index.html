@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DA Market Insight - 실시간 시장 동향 모니터링 보드" />
-  <title>DA Market Insight</title>
+  <meta name="description" content="Market Insight - 시장 동향을 Daily로 센싱합니다." />
+  <title>Market Insight</title>
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link
@@ -23,17 +23,16 @@
   <main class="container">
     <header class="page-header">
       <div class="page-header__title">
-        <h1>DA Market <em>Insight</em></h1>
-        <p>실시간 시장 동향 모니터링 보드</p>
+        <h1>Market <em>Insight</em></h1>
+        <p>시장 동향을 Daily로 센싱합니다.</p>
       </div>
       <div class="page-header__meta">
+        <a class="da-launcher" href="https://samsungda.net" title="도구모음 열기">
+          <span class="da-gi"><i></i><i></i><i></i><i></i></span>도구모음
+        </a>
         <div class="meta-line" id="lastUpdated" title="뉴스 데이터 갱신 시점">
           <span class="meta-dot" aria-hidden="true"></span>
           <span id="updatedAtText">—</span>
-        </div>
-        <div class="meta-line meta-line--site" id="siteUpdated" title="사이트 설정·UI 업데이트 시점">
-          <i class="ti ti-history" aria-hidden="true"></i>
-          <span id="siteUpdatedText">—</span>
         </div>
       </div>
     </header>
@@ -223,17 +222,13 @@
   </div>
 
   <script src="assets/js/app.js"></script>
-<!-- 도구모음 런처 (samsungda.net) -->
+<!-- 도구모음 런처 (samsungda.net) — 헤더 상단 고정 -->
 <style>
-.da-launcher{position:fixed;top:14px;right:16px;z-index:2147483000;display:inline-flex;align-items:center;gap:6px;height:29px;padding:0 9px;border:1.5px solid #e6e9ee;border-radius:7px;background:rgba(255,255,255,.92);-webkit-backdrop-filter:saturate(180%) blur(6px);backdrop-filter:saturate(180%) blur(6px);text-decoration:none;color:#1a1d21;font-family:'Pretendard',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:12px;font-weight:600;line-height:1;transition:.15s}
+.da-launcher{display:inline-flex;align-items:center;gap:6px;height:29px;padding:0 9px;border:1.5px solid #e6e9ee;border-radius:7px;background:rgba(255,255,255,.92);text-decoration:none;color:#1a1d21;font-family:'Pretendard',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:12px;font-weight:600;line-height:1;transition:.15s}
 .da-launcher:hover{border-color:#1257d6;box-shadow:0 4px 18px rgba(18,87,214,.12)}
 .da-launcher .da-gi{display:grid;grid-template-columns:1fr 1fr;gap:2px;width:18px;height:18px}
 .da-launcher .da-gi i{background:#5b6470;border-radius:1px;transition:.15s}
 .da-launcher:hover .da-gi i{background:#1257d6}
 </style>
-<a class="da-launcher" href="https://samsungda.net" title="도구모음 열기">
-  <span class="da-gi"><i></i><i></i><i></i><i></i></span>도구모음
-</a>
-<script defer src="update-badge.js" data-src="version.json"></script>
 </body>
 </html>
