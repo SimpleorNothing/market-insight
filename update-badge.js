@@ -1,5 +1,5 @@
 /*! update-badge.js — 도구모음 공용 업데이트 배지
- * 왼쪽 하단에 "update : YYYY.M.D HH:MM (내용)" 표시. 클릭 시 최근 변경 내역 패널.
+ * 왼쪽 하단에 "update : YYYY.M.D" 표시. 클릭 시 최근 변경 내역 패널.
  * 데이터 우선순위: window.__UPDATE_BADGE_DATA(인라인) → <meta app-updated> → 같은 출처의 version.json.
  * 의존성 없음 · 토큰 스타일 인라인 주입 · 어느 스택에 붙여도 동작.
  *
@@ -10,7 +10,7 @@
   window.__updateBadgeMounted = true;
   var SRC = (document.currentScript && document.currentScript.getAttribute('data-src')) || window.__UPDATE_BADGE_SRC || 'version.json';
   var T = { bg:'#ffffff', surface:'#f6f7f9', text:'#1a1d21', muted:'#5b6470', border:'#e6e9ee', brand:'#1257d6' };
-  function fmt(iso){ try{ var d=new Date(iso); if(isNaN(d))return iso; var p=new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',year:'numeric',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(d).reduce(function(o,x){o[x.type]=x.value;return o;},{}); return p.year+'.'+p.month+'.'+p.day+' '+p.hour+':'+p.minute; }catch(e){return iso;} }
+  function fmt(iso){ try{ var d=new Date(iso); if(isNaN(d))return iso; var p=new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',year:'numeric',month:'numeric',day:'numeric'}).formatToParts(d).reduce(function(o,x){o[x.type]=x.value;return o;},{}); return p.year+'.'+p.month+'.'+p.day; }catch(e){return iso;} }
   function el(tag,css,txt){ var n=document.createElement(tag); if(css)n.style.cssText=css; if(txt!=null)n.textContent=txt; return n; }
   function mount(data){
     if(!data||!data.updated_at)return;
@@ -24,7 +24,6 @@
     var txt=el('span');txt.id='ub-txt';
     txt.appendChild(document.createTextNode('update : '));
     var b=el('b',null,fmt(data.updated_at));txt.appendChild(b);
-    if(data.summary)txt.appendChild(document.createTextNode(' ('+data.summary+')'));
     btn.appendChild(dot);btn.appendChild(txt);
     var panel=el('div');panel.id='ub-panel';panel.hidden=true;panel.setAttribute('role','dialog');panel.setAttribute('aria-label','업데이트 내역');
     var head=el('div');head.className='ub-h';head.appendChild(el('span',null,'업데이트 내역'));
