@@ -90,25 +90,6 @@ function formatUpdatedAt(isoString) {
   return `'${yy}.${m}.${day} ${hh}:${mm} 갱신`;
 }
 
-// 사이트(설정·UI) 변경 이력 — 맨 위 항목이 헤더에 표시됨.
-// 사이트를 손볼 때마다 최신 항목을 맨 위에 추가하세요.
-// label 은 어떤 변경인지 1~2단어로 (괄호 안에 표시됨).
-const SITE_CHANGELOG = [
-  { at: "2026-06-27T15:10:00+09:00", label: "갱신표시 개선" },
-];
-
-function formatSiteUpdate(entry) {
-  if (!entry || !entry.at) return "—";
-  const d = new Date(entry.at);
-  const yy = String(d.getFullYear()).slice(2);
-  const m = d.getMonth() + 1;
-  const day = d.getDate();
-  const hh = String(d.getHours()).padStart(2, "0");
-  const mm = String(d.getMinutes()).padStart(2, "0");
-  const base = `'${yy}.${m}.${day} ${hh}:${mm} 사이트`;
-  return entry.label ? `${base} (${entry.label})` : base;
-}
-
 function escapeHtml(s) {
   return String(s ?? "")
     .replace(/&/g, "&amp;")
@@ -244,8 +225,6 @@ function relevanceScore(n) {
 // ===== Rendering =====
 function renderHeader() {
   document.getElementById("updatedAtText").textContent = formatUpdatedAt(NEWS_UPDATED_AT);
-  const siteEl = document.getElementById("siteUpdatedText");
-  if (siteEl) siteEl.textContent = formatSiteUpdate(SITE_CHANGELOG[0]);
 }
 
 function renderStats() {
