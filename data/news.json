@@ -1,7 +1,137 @@
 {
-  "updatedAt": "2026-06-29T09:02:11.386Z",
+  "updatedAt": "2026-06-29T13:59:03.641Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1124,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "관세정책",
+        "미국제조업",
+        "고용",
+        "냉장고산업"
+      ],
+      "headline": "월풀 아이오와 냉장고 공장, 트럼프 관세에도 고용 감소",
+      "summary": "트럼프 행정부의 관세 정책이 월풀의 아이오와 냉장고 생산 시설 일자리 보존에 실질적 효과를 내지 못하고 있는 것으로 나타났다. 현지 제조업 고용 상황이 악화되면서 보호주의 무역 정책의 한계가 드러나고 있다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://m.economictimes.com/news/international/business/trumps-tariffs-arent-saving-jobs-at-whirlpools-iowa-refrigerator-plant/articleshow/132069249.cms"
+      },
+      "publishedAt": "2026-06-29T10:20:47.000Z",
+      "url": "https://m.economictimes.com/news/international/business/trumps-tariffs-arent-saving-jobs-at-whirlpools-iowa-refrigerator-plant/articleshow/132069249.cms"
+    },
+    {
+      "id": 1126,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "관세정책",
+        "구조조정",
+        "북미전략",
+        "고용"
+      ],
+      "headline": "월풀, 관세 정책으로 미국 내 구조조정 단행",
+      "summary": "월풀이 미국 관세 정책 변화에 대응하기 위해 일자리 감축을 포함한 전략적 조정을 추진 중. 관세 이득과 손실의 상충 속에서 북미 사업 재편 진행 중으로, 경쟁사 대비 정책 대응 차별화 전략 시사.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.devdiscourse.com/article/politics/3942190-whirlpools-tariff-gambit-gains-losses-and-the-politics-of-job-cuts?amp"
+      },
+      "publishedAt": "2026-06-29T10:01:10.000Z",
+      "url": "https://www.devdiscourse.com/article/politics/3942190-whirlpools-tariff-gambit-gains-losses-and-the-politics-of-job-cuts?amp"
+    },
+    {
+      "id": 1123,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "관세",
+        "고용",
+        "미국 정책",
+        "제조업"
+      ],
+      "headline": "월풀 미국 냉장고 공장, 관세 정책 효과 제한적",
+      "summary": "트럼프 관세 정책에도 불구하고 월풀의 아이오와 냉장고 공장 고용 유지 효과가 제한적인 것으로 드러났다. 미국 가전 산업의 관세 정책 실효성 검증에 주목할 필요가 있다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L1N42Q0MC:0-trump-s-tariffs-aren-t-saving-jobs-at-whirlpool-s-iowa-refrigerator-plant/"
+      },
+      "publishedAt": "2026-06-29T10:00:00.000Z",
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L1N42Q0MC:0-trump-s-tariffs-aren-t-saving-jobs-at-whirlpool-s-iowa-refrigerator-plant/"
+    },
+    {
+      "id": 1121,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "에어컨수요",
+        "여름철날씨",
+        "실시간수요"
+      ],
+      "headline": "폭염 예보로 에어컨 수요 급증, 화요일 최고 33℃",
+      "summary": "내일(30일) 최고기온 33℃의 폭염이 예상되면서 에어컨 수요가 급증할 것으로 보인다. 여름철 극한 날씨가 HVAC 제품의 긴급 구매 수요를 촉발하는 양상이다. 동시에 내륙 곳곳 소나기 예보로 기상 변수성이 확대되고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.nongmin.com/article/20260629500043"
+      },
+      "publishedAt": "2026-06-29T09:00:00.000Z",
+      "url": "https://www.nongmin.com/article/20260629500043"
+    },
     {
       "id": 1116,
       "lens": "경쟁사",
@@ -4989,38 +5119,6 @@
       },
       "publishedAt": "2026-06-18T08:12:00.000Z",
       "url": "https://biz.chosun.com/en/en-it/2026/06/18/CGXYBHJBWBGXPKBRMHYYEOZG6E/"
-    },
-    {
-      "id": 812,
-      "lens": "소비자",
-      "grade": "주시",
-      "impact": 3.3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 2,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "조리기기"
-      ],
-      "competitors": [],
-      "tags": [
-        "신흥시장진출",
-        "보급형전략",
-        "아시아태평양",
-        "LG전자"
-      ],
-      "headline": "LG, 네팔 시장 겨냥 '에센셜 시리즈' 출시",
-      "summary": "LG전자가 네팔 가정용 맞춤형 '에센셜 시리즈'를 공개했다. 저소득층 수요 중심의 신흥 시장 공략으로 지역 점유율 확대를 노린다. 냉장고, 세탁기 등 기본 가전 제품군으로 구성된 보급형 라인업이다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://thehimalayantimes.com/ampArticle/1038862"
-      },
-      "publishedAt": "2026-06-18T07:41:30.000Z",
-      "url": "https://thehimalayantimes.com/ampArticle/1038862"
     },
     {
       "id": 821,
