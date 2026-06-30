@@ -1,7 +1,102 @@
 {
-  "updatedAt": "2026-06-30T06:46:12.995Z",
+  "updatedAt": "2026-06-30T10:24:55.742Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1164,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "중국 제조",
+        "유럽 폭염",
+        "냉방수요",
+        "수출호조",
+        "기후영향"
+      ],
+      "headline": "유럽 폭염으로 광둥성 냉방기기 수요 급증",
+      "summary": "유럽의 이상 고온 현상이 광둥성(중국) 가전 제품의 수요를 견인하고 있다. 특히 냉방 및 HVAC 제품이 수출 호조를 보이며 지역 산업의 성장을 주도하는 중이다. 기후 변화에 따른 계절 수요 변동이 글로벌 가전 공급망에 미치는 영향이 확대되고 있다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://huacheng.gz-cmc.com/pages/2026/06/30/4cd8e0924db244a4979ab4bd620f22a6.html"
+      },
+      "publishedAt": "2026-06-30T08:48:19.000Z",
+      "url": "https://huacheng.gz-cmc.com/pages/2026/06/30/4cd8e0924db244a4979ab4bd620f22a6.html"
+    },
+    {
+      "id": 1161,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Midea",
+        "Gree"
+      ],
+      "tags": [
+        "중국 경쟁",
+        "유럽 시장",
+        "폭염 수요",
+        "HVAC 시장"
+      ],
+      "headline": "유럽 폭염으로 중국산 에어컨 판매 급증",
+      "summary": "유럽의 극심한 폭염으로 중국산 에어컨의 판매가 급증하고 있습니다. Midea, Gree 등 중국 가전사들이 유럽 시장에서 가격 경쟁력을 앞세워 점유율을 확대하는 추세를 보이고 있습니다. 이는 한국·일본 가전사들의 유럽 HVAC 시장 수익성에 영향을 미칠 수 있습니다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.kbs.co.kr/news/view.do?ncd=8598466"
+      },
+      "publishedAt": "2026-06-30T08:48:00.000Z",
+      "url": "https://news.kbs.co.kr/news/view.do?ncd=8598466"
+    },
+    {
+      "id": 1165,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "홈로봇",
+        "Cloid",
+        "로봇사업센터",
+        "자동화",
+        "신제품"
+      ],
+      "headline": "LG전자, 로봇사업센터 신설…홈로봇 '클로이' 상용화 가속",
+      "summary": "LG전자가 로봇사업센터를 신설하며 자체 개발 홈로봇 'Cloid'의 상용화를 본격화한다. 이는 가전 업계의 로봇 자동화 시장 진출이 가속화되는 신호로, 향후 가사 로봇 제품군의 다각화가 기대된다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.mk.co.kr/en/business/12086784"
+      },
+      "publishedAt": "2026-06-30T07:44:27.000Z",
+      "url": "https://www.mk.co.kr/en/business/12086784"
+    },
     {
       "id": 1154,
       "lens": "정책",
@@ -120,39 +215,6 @@
       },
       "publishedAt": "2026-06-30T05:27:57.000Z",
       "url": "https://www.yna.co.kr/amp/view/AKR20260630119000003"
-    },
-    {
-      "id": 1144,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "Midea"
-      ],
-      "tags": [
-        "폭염",
-        "냉방가전",
-        "중국산",
-        "판매급증",
-        "유럽시장"
-      ],
-      "headline": "유럽 폭염으로 중국산 냉방가전 판매 급증, 선풍기·에어컨 수요 폭등",
-      "summary": "유럽의 기록적 폭염으로 알리익스프레스 내 냉방가전 판매량이 급증했다. 스웨덴에서 선풍기가 6월 378% 상승, 벨기에는 114% 증가했으며 독일 현지 창고의 중국산 에어컨 물량이 소진되는 상황이다.",
-      "source": {
-        "name": "매일경제 산업",
-        "url": "https://www.mk.co.kr/news/world/12086429"
-      },
-      "publishedAt": "2026-06-30T02:08:06.000Z",
-      "url": "https://www.mk.co.kr/news/world/12086429"
     },
     {
       "id": 1140,
@@ -544,37 +606,6 @@
       "url": "https://thehimalayantimes.com/ampArticle/1039056"
     },
     {
-      "id": 1114,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 4.3,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "폭염",
-        "냉방수요",
-        "유럽시장",
-        "수출특수",
-        "기후변화"
-      ],
-      "headline": "유럽 폭염으로 한중 에어컨 수요 급증, HVAC 시장 성장",
-      "summary": "극한 기후 현상으로 유럽에서 에어컨과 HVAC 제품 수요가 급증하면서 한국·중국 가전사들의 특수 기회 창출. 글로벌 냉방 시장의 장기 성장 동력으로 작용할 전망.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.etnews.com/20260629000298"
-      },
-      "publishedAt": "2026-06-29T07:00:00.000Z",
-      "url": "https://www.etnews.com/20260629000298"
-    },
-    {
       "id": 1118,
       "lens": "소비자",
       "grade": "주요",
@@ -767,38 +798,6 @@
       },
       "publishedAt": "2026-06-29T04:35:42.000Z",
       "url": "https://www.chosun.com/international/europe/2026/06/29/7Z4G3JMUOFGB3B2BYYKHUXMU4A/"
-    },
-    {
-      "id": 1112,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelivance": 2,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 3,
-        "salesRelevance": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "폭염대응",
-        "에어컨보급",
-        "유럽시장",
-        "냉방기기수요",
-        "소비자트렌드"
-      ],
-      "headline": "유럽 폭염 속 에어컨 보급률 저조…냉방기기 수요 급증",
-      "summary": "극단적 폭염이 유럽을 덮치면서 에어컨 보급의 낮은 현황이 부각되고 있다. 선진국임에도 역사·문화·비용 이유로 냉방 인프라가 미흡해 시장 기회 창출 중. 글로벌 HVAC 수요 증가 추세를 반영한 지역별 채택 격차 심화.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://v.daum.net/v/20260629111400909"
-      },
-      "publishedAt": "2026-06-29T02:14:00.000Z",
-      "url": "https://v.daum.net/v/20260629111400909"
     },
     {
       "id": 1109,
