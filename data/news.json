@@ -1,16 +1,51 @@
 {
-  "updatedAt": "2026-07-01T19:39:59.623Z",
+  "updatedAt": "2026-07-01T21:17:30.290Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1217,
+      "id": 1224,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기",
+        "냉장고",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "구조조정",
+        "멕시코공장",
+        "북미제조",
+        "비용절감"
+      ],
+      "headline": "월풀, 멕시코 공장 폐쇄 발표…1억 6500만 달러 구조조정비",
+      "summary": "월풀이 멕시코 생산시설 폐쇄 계획을 발표하고 약 1억 6500만 달러(약 2150억 원)의 구조조정 비용을 예상하고 있다. 이는 북미 가전 제조 경쟁력 재편의 신호로 평가된다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.streetinsider.com/Corporate+News/Whirlpool+to+close+Mexico+plant%2C+expects+%24165M+restructuring+cost/26721958.html"
+      },
+      "publishedAt": "2026-07-01T21:07:36.000Z",
+      "url": "https://www.streetinsider.com/Corporate+News/Whirlpool+to+close+Mexico+plant%2C+expects+%24165M+restructuring+cost/26721958.html"
+    },
+    {
+      "id": 1223,
       "lens": "소비자",
       "grade": "주시",
-      "impact": 3.1,
+      "impact": 3.3,
       "factors": {
         "salesRelevance": 3,
         "timeUrgency": 4,
-        "marketSize": 2,
+        "marketSize": 3,
         "sourceReliability": 3
       },
       "products": [
@@ -18,19 +53,20 @@
       ],
       "competitors": [],
       "tags": [
-        "세탁기 위생",
-        "내부 오염",
-        "소비자 불만",
-        "가전 관리"
+        "세탁기 관리",
+        "곰팡이",
+        "위생",
+        "가정용 가전",
+        "소비자 리뷰"
       ],
-      "headline": "세탁기 내부 오염 문제, 소비자 관리 실태 주목",
-      "summary": "가정용 세탁기 내부에 축적되는 검은 먼지·곰팡이 문제가 소비자 불만으로 대두되고 있다. 정기적 세정에도 불구하고 발생하는 오염으로 인해 세탁 위생성에 대한 우려가 증가 중이다.",
+      "headline": "세탁기 관리 미흡 시 내부 오염 심각",
+      "summary": "소비자들이 세탁기 내부 청결 관리 부실로 검은 곰팡이 먼지 발생 사례가 증가하고 있다. 정기적인 세탁기 세제통·드럼 청소 및 통풍 관리 미흡이 주요 원인으로 지적되고 있으며, 세탁기 제조사들의 자동 세정 기능 개선 요구가 높아지고 있다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.donga.com/news/amp/all/20260701/134218986/2"
+        "url": "https://v.daum.net/v/20260702003231687?f=p"
       },
-      "publishedAt": "2026-07-01T15:30:00.000Z",
-      "url": "https://www.donga.com/news/amp/all/20260701/134218986/2"
+      "publishedAt": "2026-07-01T15:32:31.000Z",
+      "url": "https://v.daum.net/v/20260702003231687?f=p"
     },
     {
       "id": 1216,
@@ -274,6 +310,38 @@
       },
       "publishedAt": "2026-07-01T06:51:01.000Z",
       "url": "https://www.mk.co.kr/news/business/12087769"
+    },
+    {
+      "id": 1226,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "AI로봇",
+        "홈오토메이션",
+        "스마트가전",
+        "가사자동화"
+      ],
+      "headline": "LG, AI 홈로봇으로 일상가사 자동화 추진",
+      "summary": "LG전자가 AI 기반 홈로봇을 통해 일상 가사 업무를 자동으로 처리하는 솔루션 개발을 진행 중이다. 글로벌 가전 시장의 로봇화·자동화 트렌드 속에서 가사노동 경감 기술을 핵심 전략으로 삼고 있다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.msn.com/en-in/lifestyle/shopping/lg-s-home-robot-plan-wants-ai-to-handle-daily-chores-for-users/ar-AA25KV2S"
+      },
+      "publishedAt": "2026-07-01T01:50:29.000Z",
+      "url": "https://www.msn.com/en-in/lifestyle/shopping/lg-s-home-robot-plan-wants-ai-to-handle-daily-chores-for-users/ar-AA25KV2S"
     },
     {
       "id": 1196,
