@@ -1,7 +1,36 @@
 {
-  "updatedAt": "2026-07-01T07:04:51.122Z",
+  "updatedAt": "2026-07-01T11:17:15.989Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1212,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 1,
+        "timeUrgency": 5,
+        "marketSize": 2,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "판매실적",
+        "상반기",
+        "시장점유율",
+        "국내시장",
+        "해외판매"
+      ],
+      "headline": "현대차 상반기 판매 2.3% 감소, 기아는 역대 최대",
+      "summary": "현대차는 상반기 판매량이 196만6천대로 전년 동기 대비 2.3% 감소했으며, 6월 국내 판매는 6.2% 줄어든 5만8천대에 그쳤다. 반면 기아는 상반기 판매가 2.7% 증가해 역대 최다 판매를 기록했다. 현대차는 해외 판매도 9개월 연속 감소세를 보이고 있다.",
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260701000606"
+      },
+      "publishedAt": "2026-07-01T10:15:12.000Z",
+      "url": "https://www.etnews.com/20260701000606"
+    },
     {
       "id": 1203,
       "lens": "정책",
@@ -125,36 +154,6 @@
       },
       "publishedAt": "2026-07-01T06:51:01.000Z",
       "url": "https://www.mk.co.kr/news/business/12087769"
-    },
-    {
-      "id": 1211,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4.2,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "AI로봇",
-        "가사자동화",
-        "스마트홈",
-        "LG전략"
-      ],
-      "headline": "LG, 일상 가사 자동화 가정용 로봇 AI 전략 공개",
-      "summary": "LG전자가 AI 기반 가정용 로봇으로 사용자의 일상 가사를 자동화하는 계획을 발표했다. 이는 향후 가전 생활공간의 자동화·지능화 시장을 선점하려는 전략으로 평가된다. 글로벌 가정 로봇 시장의 확대 속도에 맞춰 실제 제품화 및 상용화 일정이 주목된다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "http://www.msn.com/en-in/lifestyle/shopping/lg-s-home-robot-plan-wants-ai-to-handle-daily-chores-for-users/ar-AA25KV2S?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
-      },
-      "publishedAt": "2026-07-01T01:58:03.000Z",
-      "url": "http://www.msn.com/en-in/lifestyle/shopping/lg-s-home-robot-plan-wants-ai-to-handle-daily-chores-for-users/ar-AA25KV2S?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
       "id": 1196,
@@ -15781,37 +15780,6 @@
       "url": "https://www.hindustantimes.com/technology/ive-covered-home-appliances-for-years-and-here-s-why-convertible-refrigerators-are-trending-101779785257791-amp.html"
     },
     {
-      "id": 287,
-      "lens": "기술",
-      "grade": "참고",
-      "impact": 2.2,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 2,
-        "marketSize": 2,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자",
-        "AI홈솔루션",
-        "차량캠핑",
-        "스마트생활공간",
-        "신제품공개"
-      ],
-      "headline": "LG전자, 'Spielraum' 공개…차량용 AI 홈 솔루션 시연",
-      "summary": "LG전자가 제주 해비치에서 '스필라움(Spielraum)'이라는 차량 캠핑용 AI 홈 솔루션을 공개했다. 차량 기반의 스마트 생활 공간 제안으로 신규 소비층 확보를 노린 전략적 움직임이다. 구체적인 제품 사양과 시장 규모 정보는 미확인 상태다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.asiae.co.kr/en/article/2026052707475818602"
-      },
-      "publishedAt": "2026-05-27T01:00:00.000Z",
-      "url": "https://www.asiae.co.kr/en/article/2026052707475818602"
-    },
-    {
       "id": 227,
       "lens": "기술",
       "grade": "주시",
@@ -15849,6 +15817,37 @@
       },
       "publishedAt": "2026-05-27T01:00:00.000Z",
       "url": "https://www.digitaltoday.co.kr/en/view/58525/lg-electronics-showcases-ai-appliance-mobility-space-solution-in-jeju"
+    },
+    {
+      "id": 287,
+      "lens": "기술",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "AI홈솔루션",
+        "차량캠핑",
+        "스마트생활공간",
+        "신제품공개"
+      ],
+      "headline": "LG전자, 'Spielraum' 공개…차량용 AI 홈 솔루션 시연",
+      "summary": "LG전자가 제주 해비치에서 '스필라움(Spielraum)'이라는 차량 캠핑용 AI 홈 솔루션을 공개했다. 차량 기반의 스마트 생활 공간 제안으로 신규 소비층 확보를 노린 전략적 움직임이다. 구체적인 제품 사양과 시장 규모 정보는 미확인 상태다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.asiae.co.kr/en/article/2026052707475818602"
+      },
+      "publishedAt": "2026-05-27T01:00:00.000Z",
+      "url": "https://www.asiae.co.kr/en/article/2026052707475818602"
     },
     {
       "id": 223,
