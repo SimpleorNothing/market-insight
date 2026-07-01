@@ -17,7 +17,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import Parser from "rss-parser";
 import { readFile, writeFile } from "fs/promises";
 import { createHash } from "crypto";
-import { fileURLToPath } from "url";
+import { fileURLToPath, pathToFileURL } from "url";
 import { dirname, join } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -748,7 +748,13 @@ async function main() {
   log("=== 완료 ===");
 }
 
-main().catch((err) => {
-  log(`FATAL: ${err.stack || err.message}`);
-  process.exit(1);
-});
+// 재사용을 위한 export (reclassify.mjs 등에서 분류 로직 재활용)
+export { CONFIG, CLASSIFY_SYSTEM, classifyOne, computeImpact, gradeFromImpact };
+
+// 직접 실행(node fetch-news.js)일 때만 전체 파이프라인 구동. import 時엔 실행 안 함.
+if (import.meta.url === pathToFileURL(process.argv[1] || "").href) {
+  main().catch((err) => {
+    log(`FATAL: ${err.stack || err.message}`);
+    process.exit(1);
+  });
+}
