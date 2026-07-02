@@ -1,9 +1,198 @@
 {
-  "updatedAt": "2026-07-02T06:30:46.252Z",
+  "updatedAt": "2026-07-02T09:52:47.939Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1242,
+      "id": 1250,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "에어컨",
+        "유럽시장",
+        "폭염",
+        "신시장",
+        "냉방기기"
+      ],
+      "headline": "삼성·LG, 유럽 에어컨 시장 67조원 기회 선점",
+      "summary": "유럽의 폭염으로 에어컨 수요가 급증하는 가운데, 삼성전자와 LG전자가 67조원 규모의 신시장 공략에 나섰다. 기후변화로 인한 냉방기기 수요 확대로 유럽이 새로운 성장 기회가 되고 있다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260702183219989"
+      },
+      "publishedAt": "2026-07-02T09:32:19.000Z",
+      "url": "https://v.daum.net/v/20260702183219989"
+    },
+    {
+      "id": 1254,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "생산기지 폐쇄",
+        "공급망 재구조화",
+        "북미 제조",
+        "냉장고"
+      ],
+      "headline": "월풀, 멕시코 냉장고 생산 공장 폐쇄",
+      "summary": "월풀(Whirlpool Corp.)이 멕시코의 냉장고 생산 시설 폐쇄를 발표했다. 북미 지역 가전 생산 구조 재편의 일환으로 보이며, 냉장고 공급망 및 경쟁사 전략 동향에 영향을 미칠 전망이다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.wsjm.com/2026/07/02/whirlpool-corp-announces-closure-of-mexico-refrigeration-production-plant/"
+      },
+      "publishedAt": "2026-07-02T08:54:32.000Z",
+      "url": "https://www.wsjm.com/2026/07/02/whirlpool-corp-announces-closure-of-mexico-refrigeration-production-plant/"
+    },
+    {
+      "id": 1255,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "실적전망",
+        "주가반응",
+        "EPS조정",
+        "월풀"
+      ],
+      "headline": "월풀, EPS 전망 90% 삭감에도 주가 6.1% 상승",
+      "summary": "월풀(WHR)이 애널리스트들의 단기 EPS 전망 90% 삭감 발표 후 오히려 주가 6.1% 상승했다. 시장이 사업 구조 조정이나 실적 개선 가능성을 긍정 평가한 것으로 보인다. 미국 가전 시장의 주요 경쟁사 동향을 반영하는 지표다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-is-up-61-after-analysts-slash-near-term-eps-ou"
+      },
+      "publishedAt": "2026-07-02T08:53:04.000Z",
+      "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-is-up-61-after-analysts-slash-near-term-eps-ou"
+    },
+    {
+      "id": 1249,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "글래스코어기판",
+        "반도체소재",
+        "합작투자",
+        "평택사업장",
+        "유리기판"
+      ],
+      "headline": "삼성전기, 글래스 코어 기판 합작법인 설립…4800억원 출자",
+      "summary": "삼성전기가 일본 동우화인켐과 반도체 유리기판 소재 '글래스 코어' 생산 합작법인 GlaSSEM을 설립하기로 본계약을 체결했다. 총 출자 규모는 4800억원이며 삼성전기가 66% 지분을 보유한다. 평택 사업장 내에 생산 거점을 마련할 예정이다.",
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260702000429"
+      },
+      "publishedAt": "2026-07-02T07:57:43.000Z",
+      "url": "https://www.etnews.com/20260702000429"
+    },
+    {
+      "id": 1253,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "난방",
+        "에너지절감",
+        "가정용HVAC",
+        "비용효율"
+      ],
+      "headline": "히트펌프 난방 전환 시 에너지 비용 절감 효과 분석",
+      "summary": "가정 난방을 히트펌프로 전환할 경우의 경제성을 분석한 기사다. 소비자들이 난방 에너지 비용 절감 규모와 투자 회수 기간 등을 고려하는 의사결정 단계에서 유용한 정보를 제공한다. 친환경 난방 기술로의 전환 추세를 반영한 소비 트렌드다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=201065"
+      },
+      "publishedAt": "2026-07-02T07:51:34.000Z",
+      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=201065"
+    },
+    {
+      "id": 1251,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "에너지효율",
+        "소비자정보",
+        "온라인계산기",
+        "절약"
+      ],
+      "headline": "히트펌프 교체 시 에너지 절약액 계산기 공개",
+      "summary": "온라인 계산기 공개로 가정용 히트펌프 교체 시 절약 효과를 직접 확인할 수 있게 되었다. 소비자들이 에너지 효율 개선에 따른 경제성을 쉽게 판단할 수 있는 도구가 제공된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=369869"
+      },
+      "publishedAt": "2026-07-02T06:42:40.000Z",
+      "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=369869"
+    },
+    {
+      "id": 1252,
       "lens": "기술",
       "grade": "주요",
       "impact": 4.3,
@@ -16,22 +205,59 @@
       "products": [
         "HVAC"
       ],
-      "competitors": [],
+      "competitors": [
+        "Carrier"
+      ],
       "tags": [
         "히트펌프",
-        "보일러",
-        "신제품양산",
+        "친환경난방",
+        "에너지효율",
         "난방기술",
-        "광주공장"
+        "탄소감축"
       ],
-      "headline": "오텍캐리어, 광주공장서 히트펌프 보일러 양산 개시",
-      "summary": "오텍캐리어가 광주공장에서 가정용 히트펌프 보일러 양산을 시작했다. 에너지 효율 개선과 저탄소 난방 솔루션으로 국내 HVAC 시장 확대를 주도할 전망이다.",
+      "headline": "오텍캐리어, 공기열 히트펌프 보일러 양산 개시",
+      "summary": "오텍캐리어가 가스 대신 공기열을 이용한 히트펌프 보일러의 양산을 시작했다. 이는 난방용 친환경 기술로 탄소 감축과 에너지 효율성을 동시에 추구하는 제품으로, 국내 난방 시장의 기술 전환을 주도하는 움직임이다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.etnews.com/20260702000251"
+        "url": "https://www.chosun.com/economy/tech_it/2026/07/02/IEAMRX3I7VGSJF4ZP23GPJOHPY/"
       },
-      "publishedAt": "2026-07-02T04:30:33.000Z",
-      "url": "https://www.etnews.com/20260702000251"
+      "publishedAt": "2026-07-02T06:39:00.000Z",
+      "url": "https://www.chosun.com/economy/tech_it/2026/07/02/IEAMRX3I7VGSJF4ZP23GPJOHPY/"
+    },
+    {
+      "id": 1259,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 2,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신흥시장",
+        "지역맞춤형전략",
+        "네팔",
+        "에센셜시리즈",
+        "아시아확장"
+      ],
+      "headline": "LG전자, 네팔 시장 맞춤형 '에센셜 시리즈' 출시",
+      "summary": "LG전자가 네팔 현지 가구 특성에 맞춘 에센셜 시리즈를 새로 출시했다. 신흥시장 수요에 대응한 맞춤형 제품 전략으로, 아시아 지역 매출 확대를 노린 경쟁사 신제품 공격이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://thehimalayantimes.com/ampArticle/1039117"
+      },
+      "publishedAt": "2026-07-02T05:06:05.000Z",
+      "url": "https://thehimalayantimes.com/ampArticle/1039117"
     },
     {
       "id": 1232,
@@ -90,6 +316,37 @@
       },
       "publishedAt": "2026-07-02T01:51:23.000Z",
       "url": "https://www.etnews.com/20260702000166"
+    },
+    {
+      "id": 1257,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "애프터서비스",
+        "AI기반서비스",
+        "고객만족도",
+        "시장점유율"
+      ],
+      "headline": "삼성·LG, AI 서비스로 AS 시장 1위 경쟁 가열",
+      "summary": "삼성전자의 25년 AS 시장 패권에 LG전자의 3년 연속 성장이 맞서고 있다. 양사가 AI 기반 서비스를 강화하며 고객 만족도 경쟁을 확대하고 있으며, 글로벌 애프터서비스 시장에서 주도권 전환이 임박한 상황이다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://finance.biggo.com/news/ebbeada3-79bc-436f-a4e9-1fa795d7e2e2"
+      },
+      "publishedAt": "2026-07-02T01:35:00.000Z",
+      "url": "https://finance.biggo.com/news/ebbeada3-79bc-436f-a4e9-1fa795d7e2e2"
     },
     {
       "id": 1234,
@@ -186,71 +443,6 @@
       },
       "publishedAt": "2026-07-02T01:03:17.000Z",
       "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423021"
-    },
-    {
-      "id": 1231,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "구조조정",
-        "운영효율화",
-        "경쟁전략",
-        "북미시장"
-      ],
-      "headline": "월풀, 운영 효율화 구조조정 추진",
-      "summary": "월풀이 운영 효율성 개선을 목표로 구조조정 전략을 시행 중이다. 이는 북미 가전 시장에서의 경쟁력 강화를 위한 조치로 평가된다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.gurufocus.com/news/8941809/whirlpool-whr-implements-restructuring-strategy-for-operational-efficiency"
-      },
-      "publishedAt": "2026-07-01T21:37:01.000Z",
-      "url": "https://www.gurufocus.com/news/8941809/whirlpool-whr-implements-restructuring-strategy-for-operational-efficiency"
-    },
-    {
-      "id": 1224,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.3,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "세탁기",
-        "건조기",
-        "냉장고",
-        "조리기기"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "구조조정",
-        "멕시코공장",
-        "북미제조",
-        "비용절감"
-      ],
-      "headline": "월풀, 멕시코 공장 폐쇄 발표…1억 6500만 달러 구조조정비",
-      "summary": "월풀이 멕시코 생산시설 폐쇄 계획을 발표하고 약 1억 6500만 달러(약 2150억 원)의 구조조정 비용을 예상하고 있다. 이는 북미 가전 제조 경쟁력 재편의 신호로 평가된다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.streetinsider.com/Corporate+News/Whirlpool+to+close+Mexico+plant%2C+expects+%24165M+restructuring+cost/26721958.html"
-      },
-      "publishedAt": "2026-07-01T21:07:36.000Z",
-      "url": "https://www.streetinsider.com/Corporate+News/Whirlpool+to+close+Mexico+plant%2C+expects+%24165M+restructuring+cost/26721958.html"
     },
     {
       "id": 1248,
@@ -1376,38 +1568,6 @@
       "url": "https://biz.chosun.com/it-science/ict/2026/06/30/Y2JO3HUUQ5BZ7EWNUDUQN4QM6M/"
     },
     {
-      "id": 1214,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.2,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 5
-      },
-      "products": [
-        "냉장고"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "관세정책",
-        "고용",
-        "제조업",
-        "미국"
-      ],
-      "headline": "월풀 아이오와 냉장고 공장, 트럼프 관세에도 고용 증가 못해",
-      "summary": "트럼프 정부의 관세 정책이 월풀의 아이오와주 냉장고 제조 공장 고용 창출로 이어지지 못했다는 보도. 관세 보호 정책 효과에 대한 실제 고용 데이터 분석 기사로, 미국 가전 산업의 정책 영향도를 실증적으로 검토한다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.reuters.com/business/world-at-work/trumps-tariffs-arent-saving-jobs-whirlpools-iowa-refrigerator-plant-2026-06-29/"
-      },
-      "publishedAt": "2026-06-29T19:43:18.000Z",
-      "url": "https://www.reuters.com/business/world-at-work/trumps-tariffs-arent-saving-jobs-whirlpools-iowa-refrigerator-plant-2026-06-29/"
-    },
-    {
       "id": 1143,
       "lens": "거시",
       "grade": "주요",
@@ -1535,41 +1695,6 @@
       },
       "publishedAt": "2026-06-29T09:00:00.000Z",
       "url": "https://www.nongmin.com/article/20260629500043"
-    },
-    {
-      "id": 1135,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.2,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 2,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "조리기기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "신흥시장",
-        "신제품론칭",
-        "지역확대",
-        "마케팅캠페인",
-        "Essential Series"
-      ],
-      "headline": "LG, 네팔서 '에센셜 시리즈' 출시 및 전국 캠페인 전개",
-      "summary": "LG전자가 네팔 시장을 겨냥해 Essential Series 가전 신제품군을 론칭하고 전국 규모의 마케팅 캠페인을 시작했다. 신흥시장 진출을 통한 포트폴리오 다양화 전략으로, 아시아-태평양 지역 성장 견인을 목표로 한다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://thehimalayantimes.com/ampArticle/1039056"
-      },
-      "publishedAt": "2026-06-29T08:02:01.000Z",
-      "url": "https://thehimalayantimes.com/ampArticle/1039056"
     },
     {
       "id": 1118,
@@ -15556,38 +15681,6 @@
       },
       "publishedAt": "2026-05-28T05:53:39.000Z",
       "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-refrigerators/"
-    },
-    {
-      "id": 270,
-      "lens": "경쟁사",
-      "grade": "참고",
-      "impact": 2.2,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 2,
-        "marketSize": 2,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "초절전기술",
-        "신흥시장진출",
-        "남아시아",
-        "에어컨신제품"
-      ],
-      "headline": "LG전자, 네팔 시장 초절전 '듀얼쿨' 에어컨 출시",
-      "summary": "LG전자가 네팔 시장을 겨냥해 초절전 기술이 적용된 '듀얼쿨' 에어컨을 새로 출시했다. 해당 제품은 전력 소비를 획기적으로 낮춘 혁신 모델로, 남아시아 신흥시장 공략 전략의 일환이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "http://www.press9.kr/news/articleView.html?idxno=77164"
-      },
-      "publishedAt": "2026-05-28T05:49:30.000Z",
-      "url": "http://www.press9.kr/news/articleView.html?idxno=77164"
     },
     {
       "id": 258,
