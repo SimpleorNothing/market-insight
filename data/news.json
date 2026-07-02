@@ -1,9 +1,130 @@
 {
-  "updatedAt": "2026-07-01T23:02:08.506Z",
+  "updatedAt": "2026-07-02T02:08:49.716Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1228,
+      "id": 1232,
+      "lens": "거시",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "환율",
+        "원화약세",
+        "수출경쟁력",
+        "달러강세",
+        "경기변동성"
+      ],
+      "headline": "원화 17년 저점 하락, 수출 경쟁력 변동",
+      "summary": "원화가 달러당 1,560원대로 17년 만에 최저가를 기록했다. 기록적 수출에도 환율 약세가 동시에 진행 중이다. 가전·반도체 등 수출 기업들의 수익성에 영향을 미칠 전망이다.",
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/english/12088615"
+      },
+      "publishedAt": "2026-07-02T02:06:42.000Z",
+      "url": "https://www.mk.co.kr/news/english/12088615"
+    },
+    {
+      "id": 1233,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 5,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "메모리반도체",
+        "HBM",
+        "낸드플래시",
+        "설비투자",
+        "AI칩"
+      ],
+      "headline": "SK하이닉스, 청주에 100조 투자…HBM·낸드 생산 거점 확대",
+      "summary": "SK하이닉스 곽노정 사장이 2일 청주에 총 100조원을 투자해 낸드플래시메모리 팹과 HBM용 첨단 패키징 생산기지를 구축하겠다고 발표했다. AI 서비스 확산에 따른 HBM, 서버 D램, 엔터프라이즈 SSD, 낸드 수요 증가에 대응하는 전략이다.",
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260702000166"
+      },
+      "publishedAt": "2026-07-02T01:51:23.000Z",
+      "url": "https://www.etnews.com/20260702000166"
+    },
+    {
+      "id": 1234,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUurgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5,
+        "timeUrgency": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "반도체 투자",
+        "충청권 산업",
+        "HBM 팹",
+        "디스플레이",
+        "배터리"
+      ],
+      "headline": "삼성, 140조 투자로 충청을 소재·부품 중심지 조성",
+      "summary": "삼성이 충청권에 140조원을 투자하여 초격차 소재·부품 중심지 구축을 추진한다. 삼성디스플레이(67조원), 삼성전자 HBM 팹(56조원), 삼성SDI(9조원), 삼성전기(8조원) 등 계열사별 투자 계획을 공식화했다. 반도체·디스플레이·배터리 등 핵심 부품 국내 공급 기반 강화가 핵심 목표다.",
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260702000155"
+      },
+      "publishedAt": "2026-07-02T01:34:41.000Z",
+      "url": "https://www.etnews.com/20260702000155"
+    },
+    {
+      "id": 1240,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "고객만족도",
+        "A/S품질",
+        "가전서비스",
+        "국내경쟁"
+      ],
+      "headline": "삼성전자서비스·LG전자, AS 품질지수 공동 1위",
+      "summary": "삼성전자서비스와 LG전자가 한국서비스품질지수 가전제품 AS 부문에서 공동 1위를 차지했다. 소비자 만족도 측면에서 국내 주요 가전사의 서비스 경쟁력을 입증하는 결과다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=204317"
+      },
+      "publishedAt": "2026-07-02T01:19:14.000Z",
+      "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=204317"
+    },
+    {
+      "id": 1236,
       "lens": "경쟁사",
       "grade": "주요",
       "impact": 4.3,
@@ -20,20 +141,20 @@
         "LG전자"
       ],
       "tags": [
-        "B2B전략",
-        "아시아시장",
-        "공조시장",
-        "채널강화",
-        "전문인력양성"
+        "LG전자 해외전략",
+        "HVAC 시장 확대",
+        "아시아 태평양",
+        "기술 거점",
+        "사람인 양성"
       ],
-      "headline": "LG전자, 아시아 B2B 거점 신설·HVAC 아카데미 개설",
-      "summary": "LG전자가 아시아지역 B2B 사업 강화를 위해 신규 거점을 설립하고 HVAC(냉난방) 전문 아카데미를 오픈했다. 공조 시장 경쟁 강화 및 아시아 시장 진출 확대 전략의 일환이다.",
+      "headline": "LG전자, 대만·싱가포르 거점 신설…HVAC 아카데미 오픈",
+      "summary": "LG전자가 대만과 싱가포르에 새로운 사업 거점을 설립하고 HVAC(냉난방) 아카데미를 개설한다. 아시아 태평양 지역 HVAC 시장 확대를 위한 전략적 투자로, 인력 양성 및 기술 인프라 강화를 통해 시장 점유율 확대를 추진하는 것으로 보인다.",
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.hankyung.com/article/202607020727P"
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423021"
       },
-      "publishedAt": "2026-07-01T22:02:41.000Z",
-      "url": "https://www.hankyung.com/article/202607020727P"
+      "publishedAt": "2026-07-02T01:03:17.000Z",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4423021"
     },
     {
       "id": 1231,
