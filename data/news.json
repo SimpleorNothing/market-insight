@@ -1,7 +1,38 @@
 {
-  "updatedAt": "2026-07-02T15:05:54.244Z",
+  "updatedAt": "2026-07-02T17:26:29.060Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1277,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.9,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "에어컨수요",
+        "소비자행동",
+        "유럽시장",
+        "기후변화"
+      ],
+      "headline": "유럽 폭염, 에어컨 없이 견디는 소비자들",
+      "summary": "유럽의 이상 고온으로 에어컨 없이 생활하는 소비자들의 적응 사례를 보도. 폭염 속 냉방기기 수요 증가와 에어컨 미보유 가정의 생존 전략 조명. 기후변화에 따른 가전 수요 트렌드 변화 시사.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hani.co.kr/arti/opinion/column/1266407.html"
+      },
+      "publishedAt": "2026-07-02T13:34:00.000Z",
+      "url": "https://www.hani.co.kr/arti/opinion/column/1266407.html"
+    },
     {
       "id": 1260,
       "lens": "정책",
@@ -546,6 +577,40 @@
       "url": "https://www.moodyonthemarket.com/whirlpool-announces-closure-of-mexico-manufacturing-plant/"
     },
     {
+      "id": 1278,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "구조조정",
+        "생산기지",
+        "원가절감",
+        "멕시코"
+      ],
+      "headline": "월풀, 멕시코 공장 폐쇄·1억6500만달러 구조조정",
+      "summary": "월풀이 멕시코 생산 시설 폐쇄를 계획하고 1억6500만달러(약 2,100억 원) 규모의 구조조정을 추진한다. 북미 생산 거점 최적화를 통한 원가 절감 전략으로 평가된다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.stocktitan.net/sec-filings/WHR/8-k-whirlpool-corp-de-reports-material-event-4279b9642789.html"
+      },
+      "publishedAt": "2026-07-01T21:05:53.000Z",
+      "url": "https://www.stocktitan.net/sec-filings/WHR/8-k-whirlpool-corp-de-reports-material-event-4279b9642789.html"
+    },
+    {
       "id": 1248,
       "lens": "거시",
       "grade": "주시",
@@ -816,6 +881,40 @@
       },
       "publishedAt": "2026-07-01T06:51:01.000Z",
       "url": "https://www.mk.co.kr/news/business/12087769"
+    },
+    {
+      "id": 1279,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "아프리카 진출",
+        "AI홈어플라이언스",
+        "신흥시장 확대",
+        "스마트가전"
+      ],
+      "headline": "LG전자, AI 홈솔루션으로 아프리카 성장 노린다",
+      "summary": "LG전자가 AI 기반 홈솔루션을 앞세워 아프리카 시장 확대에 나선다. 냉장고·세탁기·공조 등 주력 제품군에 AI 기능을 통합해 신흥시장 수요 대응을 강화한다.",
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://punchng.com/lg-eyes-africa-growth-with-ai-powered-home-solutions/?amp"
+      },
+      "publishedAt": "2026-07-01T04:38:44.000Z",
+      "url": "https://punchng.com/lg-eyes-africa-growth-with-ai-powered-home-solutions/?amp"
     },
     {
       "id": 1226,
@@ -1138,38 +1237,6 @@
       },
       "publishedAt": "2026-06-30T19:19:00.000Z",
       "url": "https://www.mt.co.kr/amp/industry/2026/07/01/2026063020181422688"
-    },
-    {
-      "id": 1276,
-      "lens": "거시",
-      "grade": "주요",
-      "impact": 3.9,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "관세정책",
-        "제조업",
-        "미국경제",
-        "냉장고산업"
-      ],
-      "headline": "월풀 아이오와 냉장고 공장, 트럼프 관세에도 고용 감소",
-      "summary": "트럼프 행정부의 관세 정책이 월풀의 아이오와 냉장고 생산 공장의 일자리 창출에 실질적 효과를 내지 못하고 있다. 기대와 달리 공장 고용이 감소 추세를 보이며 정책의 실효성에 의문이 제기되고 있다.",
-      "source": {
-        "name": "Google News - Whirlpool",
-        "url": "https://kearneyhub.com/news/nation-world/business/article_97dd84d1-3f7f-5913-9ae3-cb678b42e769.html"
-      },
-      "publishedAt": "2026-06-30T17:31:26.000Z",
-      "url": "https://kearneyhub.com/news/nation-world/business/article_97dd84d1-3f7f-5913-9ae3-cb678b42e769.html"
     },
     {
       "id": 1182,
@@ -2419,43 +2486,6 @@
       },
       "publishedAt": "2026-06-27T22:25:00.000Z",
       "url": "https://www.ytn.co.kr/_ln/0102_202606280725090654"
-    },
-    {
-      "id": 1087,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC",
-        "냉장고",
-        "세탁기",
-        "조리기기",
-        "청소기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "AI스마트홈",
-        "IoT통합",
-        "스마트가전",
-        "ATE2026",
-        "LG혁신"
-      ],
-      "headline": "LG, ATE 2026서 AI 기반 스마트홈 솔루션 공개",
-      "summary": "LG전자가 ATE 2026에서 AI 기반 스마트 가전 혁신 기술을 선보였다. 다양한 가전 제품군에 AI 기술을 통합한 스마트 리빙 솔루션을 집중 전시했으며, 글로벌 시장에서의 기술 리더십 강화 의지를 드러냈다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://techeconomy.ng/lg-showcases-ai-powered-smart-living-innovations-at-ate-2026/"
-      },
-      "publishedAt": "2026-06-27T21:09:50.000Z",
-      "url": "https://techeconomy.ng/lg-showcases-ai-powered-smart-living-innovations-at-ate-2026/"
     },
     {
       "id": 1080,
