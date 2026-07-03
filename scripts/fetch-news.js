@@ -377,6 +377,12 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
 - 광고성 기사(애드버토리얼)·협찬·홍보성 보도자료
 - 단, 경쟁사 신제품 출시·전략, 시장 수요·점유율 분석, 제품 리뷰·평가는 정상 분류 (판촉 행사 자체가 기사 주제가 아니면 유지)
 
+【경쟁사 신사업·신규 비즈니스 모델 — 중점 센싱】
+경쟁사의 수익모델·사업영역 확장 보도는 당사 전략 수립의 핵심 입력이므로 절대 skip 하지 말 것:
+- 대상: 구독·렌탈(HaaS), 케어·수리·유지보수 서비스, 스마트홈 플랫폼·생태계, B2B·빌트인 진출, 로보틱스 等 신규 카테고리 진입, M&A·JV·지분투자, D2C·유통모델 전환
+- 해당 時 tags 에 "신사업" 을 반드시 포함하고, 모델 유형 태그를 함께 부여 (예: 구독, M&A, 플랫폼, 로보틱스, B2B)
+- 사업구조 변화는 일회성 신제품보다 파급이 크므로 salesRelevance·marketSize 를 한 단계 상향 검토
+
 【정상 분류】
 ★★ lens 와 competitors 는 서로 독립된 필드다 ★★
 - lens 는 기사의 ‘주된 앵글(관점)’ 1개를 고르는 필드다.
@@ -428,6 +434,12 @@ ${COMPETITOR_LIST}
 7. tags: 자유 태그 (배열, 2~5개 권장, 해시 기호 없이)
    - 핵심 키워드, 제품·경쟁사 외 부가 정보
 
+8. insight: 당사(삼성전자 DA) 관점 시사점 1문장 한국어 (60자 이내)
+   - 보도 사실에서 논리적으로 도출 가능한 것만 — 기사에 없는 사실·수치 창작 금지
+   - 소비자·기술 렌즈: 당사가 참고할 기회·위협·검토 포인트를 구체적으로 (예: "히트펌프 건조 수요 확대 — 프리미엄 라인 대응 검토 여지")
+   - 경쟁사 렌즈: 당사 대응 관점의 방향 (모니터링 지속/추격 검토/차별화 기회 等), 신사업이면 당사 적용 가능성 언급
+   - 정책·거시 렌즈: 당사 생산·수출 구조 기준 영향 방향
+
 【출력 스키마】
 {
   "lens": "...",
@@ -441,7 +453,8 @@ ${COMPETITOR_LIST}
   },
   "headline": "...",
   "summary": "...",
-  "tags": ["..."]
+  "tags": ["..."],
+  "insight": "..."
 }
 
 JSON 외 어떤 텍스트도 출력 금지.`;
@@ -461,6 +474,7 @@ async function classifyOne(item, retry = false) {
       headline: item.headline.slice(0, 30),
       summary: `DRY_RUN 더미 요약: ${item.headline}`,
       tags: ["test"],
+      insight: "DRY_RUN 더미 시사점",
     };
   }
 
@@ -537,6 +551,10 @@ ${item.region}`;
     CONFIG.competitors.includes(c)
   );
   parsed.tags = (parsed.tags || []).slice(0, 5);
+  parsed.insight = String(parsed.insight || "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 140);
 
   // Clamp factors
   for (const k of [
@@ -583,6 +601,7 @@ async function classifyAll(items, startId) {
           tags: cls.tags,
           headline: cls.headline,
           summary: cls.summary,
+          insight: cls.insight || "",
           source: {
             name: item.source,
             url: item.link,
