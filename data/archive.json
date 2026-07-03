@@ -1,0 +1,868 @@
+{
+  "updatedAt": "2026-07-03T12:00:00.000Z",
+  "schemaVersion": "v2-archive",
+  "note": "2024년 이후 ~ 실시간 수집 개시(2026-05-11) 이전 주요 시그널 큐레이션 아카이브. 자동 수집 파이프라인(fetch-news.js)이 건드리지 않는 정적 파일로, 웹 조사 기반으로 선별·요약해 수기 적재했다. 갱신 시 id는 900001+ 대역 유지.",
+  "items": [
+    {
+      "id": 900023,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "HVAC",
+        "청소기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "실적",
+        "LG전자",
+        "HVAC",
+        "가격경쟁"
+      ],
+      "headline": "LG전자 1분기 매출 23.7조(+4.3%)·영업익 1.67조(+32.9%) — HS가 매출 29.3%",
+      "summary": "LG전자 2026년 1분기 잠정실적: 매출 23조7272억원, 영업이익 1조6737억원. 가전(HS) 사업본부가 전체 매출의 29.3%, HVAC 중심 ES 본부 10.5%로 생활가전 관련이 약 40%. 에어컨 평균판매가는 2024년 +7.5%에서 2025년 -13.2%로 반전, 가격 경쟁 심화 신호. HVAC·로봇·AI가전이 향후 모멘텀으로 지목.",
+      "source": {
+        "name": "데일리인베스트",
+        "url": "http://www.dailyinvest.kr/news/articleView.html?idxno=70641"
+      },
+      "publishedAt": "2026-05-04T02:00:00.000Z",
+      "url": "http://www.dailyinvest.kr/news/articleView.html?idxno=70641",
+      "archived": true
+    },
+    {
+      "id": 900022,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "비스포크AI콤보",
+        "일체형세탁건조기",
+        "LLM",
+        "신혼가전"
+      ],
+      "headline": "삼성, 2026년형 비스포크 AI 콤보 출시 — 세탁 25kg·건조 20kg, LLM 빅스비",
+      "summary": "국내 최대 용량(세탁 25kg/건조 20kg)에 프리히트 기술로 세탁+건조 69분(2024년 초기 모델比 30분 단축). LLM 기반 빅스비로 자연어 제어. 2025년 판매량 전년比 40% 성장, 신혼부부 구매 비중 35%(2024)→46%(2025)→60% 전망(2026). 신혼 가전의 중심이 냉장고에서 세탁건조기로 이동.",
+      "source": {
+        "name": "삼성전자 뉴스룸",
+        "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84%ED%98%95-%EC%9D%BC%EC%B2%B4%ED%98%95-%EC%84%B8%ED%83%81%EA%B1%B4%EC%A1%B0%EA%B8%B0-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-ai-%EC%BD%A4%EB%B3%B4"
+      },
+      "publishedAt": "2026-03-26T02:00:00.000Z",
+      "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84%ED%98%95-%EC%9D%BC%EC%B2%B4%ED%98%95-%EC%84%B8%ED%83%81%EA%B1%B4%EC%A1%B0%EA%B8%B0-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-ai-%EC%BD%A4%EB%B3%B4",
+      "archived": true
+    },
+    {
+      "id": 900021,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "로보락"
+      ],
+      "tags": [
+        "CES2026",
+        "로봇청소기",
+        "신제품",
+        "스팀살균"
+      ],
+      "headline": "CES 2026 — 삼성 '비스포크 AI 제트 봇 콤보' 공개, 100도 스팀·세제 불필요",
+      "summary": "삼성이 CES 2026에서 100도 고온 스팀으로 물걸레를 99.999% 살균해 세제가 필요 없는 로봇청소기 신제품 공개. 문턱·매트 최대 6cm 통과. 2024년 비스포크 AI 스팀으로 뒤늦게 진입하고도 2~4분기 매출 점유율 약 30%(자체 추산)를 확보한 여세를 몰아 로보락 아성에 도전하는 반격 카드.",
+      "source": {
+        "name": "한국경제",
+        "url": "https://www.hankyung.com/article/202601052971g"
+      },
+      "publishedAt": "2026-01-05T02:00:00.000Z",
+      "url": "https://www.hankyung.com/article/202601052971g",
+      "archived": true
+    },
+    {
+      "id": 900020,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "케어서비스",
+        "가전구독",
+        "블루패스"
+      ],
+      "headline": "삼성, 프리미엄 케어 '블루패스' 도입 — 구독 경쟁 케어 서비스로 확전",
+      "summary": "삼성전자가 2025년 9월 프리미엄 케어 서비스 '블루패스'를 도입하며 구독 경쟁의 축이 제품에서 케어·서비스로 이동. LG '베스트 케어'(정기 점검·위생 관리·소모품 교체)에 대응하는 구도. 구독 비즈니스가 프리미엄 제품+케어 결합 모델로 진화.",
+      "source": {
+        "name": "나스미디어",
+        "url": "https://blog.nasmedia.co.kr/entry/2026-homeappliances-trend-report-1"
+      },
+      "publishedAt": "2025-09-15T02:00:00.000Z",
+      "url": "https://blog.nasmedia.co.kr/entry/2026-homeappliances-trend-report-1",
+      "archived": true
+    },
+    {
+      "id": 900019,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 2
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "로보락",
+        "에코백스",
+        "드리미",
+        "샤오미",
+        "하이얼",
+        "TCL",
+        "하이센스"
+      ],
+      "tags": [
+        "로봇청소기",
+        "중국공세",
+        "북미시장"
+      ],
+      "headline": "中 4사, 글로벌 로봇청소기 점유율 54.1% — 로보락 북미 출하 +65%",
+      "summary": "IDC 기준 2025년 1분기 글로벌 로봇청소기 시장에서 로보락·에코백스·드리미·샤오미 4사 합산 점유율 54.1%. 로보락은 미국 25% 관세에도 북미 출하량이 전년比 65.3% 급증. TCL·하이센스·하이얼 빅3도 기술 격차를 좁히며 TV에 이어 생활가전 잠식 가속.",
+      "source": {
+        "name": "밸리 마켓 브리핑",
+        "url": "https://www.valley.town/space/@aurumresearch/articles/68bd95cf56f1621d86f4d4a4"
+      },
+      "publishedAt": "2025-09-07T02:00:00.000Z",
+      "url": "https://www.valley.town/space/@aurumresearch/articles/68bd95cf56f1621d86f4d4a4",
+      "archived": true
+    },
+    {
+      "id": 900018,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [],
+      "tags": [
+        "OneUI",
+        "소프트웨어",
+        "플랫폼화",
+        "녹스"
+      ],
+      "headline": "삼성, AI 가전에 'One UI' 통합 — 모바일·TV·가전 단일 SW 생태계",
+      "summary": "2024년 이후 출시된 AI 가전에 One UI 업데이트 적용 개시. 나우 브리프, 보이스 ID, AI 비전 인사이드 2.0(신선식품 37종 인식), 녹스 매트릭스 확대 등. 와이파이 탑재 가전에 최대 7년 무상 업그레이드 지원. 가전의 소프트웨어 플랫폼화가 본격화된 신호.",
+      "source": {
+        "name": "인공지능신문",
+        "url": "https://www.aitimes.kr/news/articleView.html?idxno=36167"
+      },
+      "publishedAt": "2025-08-25T02:00:00.000Z",
+      "url": "https://www.aitimes.kr/news/articleView.html?idxno=36167",
+      "archived": true
+    },
+    {
+      "id": 900017,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.7,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "관세",
+        "232조",
+        "공급망재편",
+        "상호관세"
+      ],
+      "headline": "美 철강 관세 파생상품 407종 추가 — 가전·부품 대거 포함",
+      "summary": "미 상무부가 무역확장법 232조 철강·알루미늄 50% 관세 적용 대상을 407종 파생상품으로 확대, 냉장고·에어컨 등 가전과 관련 부품 다수 포함. 한국 상호관세는 15%로 타결됐으나 품목 관세 리스크 상존. 베트남 20%·인도 50% 등 생산거점별 관세 차등이 글로벌 생산지 전략을 재편 중. USMCA 무관세인 멕시코 생산분의 상대 우위 분석도 제기.",
+      "source": {
+        "name": "CEO스코어데일리",
+        "url": "https://www.ceoscoredaily.com/page/view/2025081913404932373"
+      },
+      "publishedAt": "2025-08-19T02:00:00.000Z",
+      "url": "https://www.ceoscoredaily.com/page/view/2025081913404932373",
+      "archived": true
+    },
+    {
+      "id": 900016,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "폭염",
+        "에어컨",
+        "생산가동률"
+      ],
+      "headline": "역대급 폭염 — 삼성·LG 에어컨 생산 풀가동, LG 창원 가동률 138.4%",
+      "summary": "예년보다 이른 36도+ 폭염으로 삼성 스탠드·벽걸이 에어컨 상반기 누적 판매 전년比 20%+, 최근 한 달 30%+ 증가. 삼성은 전년比 열흘 빨리 풀가동, 설치 전담팀 4700명 조기 운영. LG는 3월부터 풀가동, 1분기 가동률 138.4%. HVAC가 DA 실적의 핵심 변수로 부상.",
+      "source": {
+        "name": "아주경제",
+        "url": "https://www.ajunews.com/view/20250713101352718"
+      },
+      "publishedAt": "2025-07-13T02:00:00.000Z",
+      "url": "https://www.ajunews.com/view/20250713101352718",
+      "archived": true
+    },
+    {
+      "id": 900015,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기",
+        "냉장고"
+      ],
+      "competitors": [
+        "LG전자",
+        "월풀"
+      ],
+      "tags": [
+        "현지생산",
+        "스윙생산",
+        "관세대응",
+        "테네시"
+      ],
+      "headline": "LG, 세탁기·건조기 테네시 이전 확대 — '스윙 생산' 관세 대응",
+      "summary": "철강 파생 관세에 맞서 LG전자는 세탁기·건조기 물량을 테네시 공장으로 점진 이전, 미국향 가전 매출의 10% 후반까지 현지 대응 계획. 글로벌 생산 네트워크 기반 '스윙 생산 체제'로 지역별 관세에 유연 대응. 삼성도 컨콜에서 프리미엄 확대·생산지 이전 검토를 공식화. 2025년 1분기 미국 생활가전 매출 점유율은 LG 21.2%·삼성 20.8%로 합산 42%.",
+      "source": {
+        "name": "연합뉴스",
+        "url": "https://m.radiokorea.com/news/article.php?uid=476341"
+      },
+      "publishedAt": "2025-06-13T05:00:00.000Z",
+      "url": "https://m.radiokorea.com/news/article.php?uid=476341",
+      "archived": true
+    },
+    {
+      "id": 900014,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.9,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "식기세척기",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "관세",
+        "철강파생",
+        "트럼프",
+        "무역정책"
+      ],
+      "headline": "美, 냉장고·세탁기 등 가전을 철강 파생제품 지정 — 50% 관세 (6/23 시행)",
+      "summary": "미 상무부가 냉장고·세탁기·건조기·식기세척기·냉동고·레인지·오븐 등을 철강 파생제품으로 지정, 철강 함량 기준 50% 관세를 6월 23일부터 부과. 해당 품목 대미 수출액은 2024년 기준 약 36억 달러(전체 대미 수출 2.8%). 냉장고 비중 최대. 삼성·LG는 미국산 철강 사용, 현지 생산 확대, 프리미엄 전환 등 복수 시나리오 검토 착수.",
+      "source": {
+        "name": "아시아경제",
+        "url": "https://www.asiae.co.kr/article/2025061309212633151"
+      },
+      "publishedAt": "2025-06-13T02:00:00.000Z",
+      "url": "https://www.asiae.co.kr/article/2025061309212633151",
+      "archived": true
+    },
+    {
+      "id": 900013,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "LG전자",
+        "로보락"
+      ],
+      "tags": [
+        "실적",
+        "가전구독",
+        "시장재편",
+        "미국시장"
+      ],
+      "headline": "국내 가전시장 재편 — LG H&A 역대 최대 매출·삼성 美 1위 속 中 공세",
+      "summary": "LG H&A는 2024년 매출 33조2033억원(역대 최대)·영업익 2조446억원(이익률 6.2%, 3년 만에 2조 회복). 삼성 VD·DA는 매출 56조5000억원으로 전년 수준 유지, 미국 가전 점유율 1위. LG 2024년 구독 매출 2조원 육박, 조주완 CEO는 2030년 구독 매출 6조원 목표 제시. 국내는 로보락 3년 연속 1위 등 해외 브랜드 공세로 양강 체제 균열.",
+      "source": {
+        "name": "뉴스락",
+        "url": "http://www.newslock.co.kr/news/articleView.html?idxno=109645"
+      },
+      "publishedAt": "2025-05-31T02:00:00.000Z",
+      "url": "http://www.newslock.co.kr/news/articleView.html?idxno=109645",
+      "archived": true
+    },
+    {
+      "id": 900012,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "에어컨",
+        "폭염",
+        "판매기록"
+      ],
+      "headline": "삼성 에어컨 일평균 1만대 판매 돌파 — 전년보다 한 달 빨라",
+      "summary": "5월 19~23일 삼성 가정용 에어컨 일평균 판매 1만대 돌파(1분에 7대꼴). 지난해 이 시점은 6월 중순이었다. 주간 판매량 전년比 30% 이상 증가. 삼성·LG 모두 생산라인 풀가동 및 설치 인력 조기 확대로 대응.",
+      "source": {
+        "name": "파이낸셜뉴스",
+        "url": "https://www.fnnews.com/news/202505251807080787"
+      },
+      "publishedAt": "2025-05-25T02:00:00.000Z",
+      "url": "https://www.fnnews.com/news/202505251807080787",
+      "archived": true
+    },
+    {
+      "id": 900011,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.8,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "TCL",
+        "하이센스",
+        "샤오미",
+        "Midea",
+        "하이얼",
+        "LG전자"
+      ],
+      "tags": [
+        "중국공세",
+        "점유율역전",
+        "이구환신",
+        "프리미엄"
+      ],
+      "headline": "中 가전, 가성비 넘어 기술력으로 韓 추월 — TV 점유율 첫 역전",
+      "summary": "2024년 글로벌 TV 시장에서 TCL·하이센스·샤오미 합산 점유율(수량 31.2%)이 삼성·LG 합산(28.4%)을 처음 추월. 2024년 중국 가전 수출 1124억 달러(+14%)로 역대 최대. 이구환신 보조금이 프리미엄 제품 수혜로 연결. 조주완 LG CEO는 '위협 인식을 넘어 실제 대응 실행 단계'라 언급, LG는 중국 분석 TF 수십 개 가동.",
+      "source": {
+        "name": "한국일보",
+        "url": "https://www.hankookilbo.com/News/Read/A2025052000390003242"
+      },
+      "publishedAt": "2025-05-21T02:00:00.000Z",
+      "url": "https://www.hankookilbo.com/News/Read/A2025052000390003242",
+      "archived": true
+    },
+    {
+      "id": 900010,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "로보락",
+        "에코백스"
+      ],
+      "tags": [
+        "로봇청소기",
+        "글로벌1위",
+        "스마트홈",
+        "매터"
+      ],
+      "headline": "로보락, 글로벌 로봇청소기 판매량·매출 모두 1위 등극 (IDC)",
+      "summary": "IDC 2024년 4분기 집계에서 로보락이 판매량 점유율 16%, 매출 점유율 22.3%로 아이로봇을 제치고 글로벌 1위. 국내에서도 2025년 4월 기준 46.5% 점유율 유지. 로보락·에코백스가 매터(Matter) 프로토콜 지원으로 스마트홈 생태계 확장까지 추진, 韓 기업은 '보안'을 대응 축으로 설정.",
+      "source": {
+        "name": "이코노믹리뷰",
+        "url": "https://kr.investing.com/news/economy-news/article-1450218"
+      },
+      "publishedAt": "2025-04-23T02:00:00.000Z",
+      "url": "https://kr.investing.com/news/economy-news/article-1450218",
+      "archived": true
+    },
+    {
+      "id": 900009,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "에어컨",
+        "폭염",
+        "수요급증",
+        "기후변화"
+      ],
+      "headline": "폭염 전망에 1분기 에어컨 판매 급증 — 삼성 +51%·LG +60%",
+      "summary": "기상청 '평년보다 더운 여름 확률 60%' 전망에 1분기부터 에어컨 수요가 몰림. 삼성 가정용 에어컨 판매 전년比 51% 증가(스탠드형 +80%), LG 휘센 스탠드 1~4월 누적 +45%. 냉난방 겸용·AI 절약모드가 연초 선구매를 견인. 기후 요인이 계절가전 수요 패턴을 앞당기는 구조적 변화.",
+      "source": {
+        "name": "한국경제",
+        "url": "https://www.hankyung.com/article/202504102774g"
+      },
+      "publishedAt": "2025-04-10T02:00:00.000Z",
+      "url": "https://www.hankyung.com/article/202504102774g",
+      "archived": true
+    },
+    {
+      "id": 900008,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "청소기",
+        "세탁기",
+        "냉장고"
+      ],
+      "competitors": [],
+      "tags": [
+        "비스포크AI",
+        "보안",
+        "녹스",
+        "신제품"
+      ],
+      "headline": "삼성, 2025년형 비스포크 AI 공개 — 400W 스틱청소기·녹스 볼트 보안",
+      "summary": "'웰컴 투 비스포크 AI 2025'에서 Easy to Use·Care·Saving 중심의 AI 가전 솔루션 발표. 비스포크 AI 제트 400W 흡입력, 인피니트 AI 콤보 히든 도어, 녹스 볼트 하드웨어 보안 칩 최초 적용과 양자내성암호 도입 계획 등 보안을 차별화 축으로 제시.",
+      "source": {
+        "name": "유스연합",
+        "url": "https://www.youthassembly.kr/news/831365"
+      },
+      "publishedAt": "2025-04-04T02:00:00.000Z",
+      "url": "https://www.youthassembly.kr/news/831365",
+      "archived": true
+    },
+    {
+      "id": 900007,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "수요침체",
+        "수출전망",
+        "거시환경",
+        "2025전망"
+      ],
+      "headline": "2025 가전 전망 — 수출경기지수 52.7 급락, 내수 침체·관세 불확실성",
+      "summary": "가전 품목 수출산업경기전망지수(EBSI)가 2024년 4분기 97.5에서 2025년 1분기 52.7로 급락. 북미·EU 수요 위축, 고물가·고금리 장기화, 부동산·결혼 수요 부진에 트럼프 2기 관세 리스크까지 겹치며 업계는 구독 등 사업모델 전환으로 대응.",
+      "source": {
+        "name": "아이뉴스24",
+        "url": "https://news.nate.com/view/20250112n02312"
+      },
+      "publishedAt": "2025-01-12T02:00:00.000Z",
+      "url": "https://news.nate.com/view/20250112n02312",
+      "archived": true
+    },
+    {
+      "id": 900006,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "가전구독",
+        "구매행태",
+        "프리미엄"
+      ],
+      "headline": "삼성 가전 구매 고객 10명 중 3명이 'AI 구독클럽' 선택",
+      "summary": "출시 3주 만에 삼성스토어 가전 판매의 30%가 구독으로 발생. 초기 구매 비용 절감이 구매 장벽을 낮췄고, 60개월 요금제·케어 서비스 결합이 주효. 구독이 프리미엄 가전의 핵심 판매 채널로 빠르게 안착하는 소비 행태 변화.",
+      "source": {
+        "name": "디일렉",
+        "url": "https://www.thelec.kr/news/articleView.html?idxno=31979"
+      },
+      "publishedAt": "2024-12-26T02:00:00.000Z",
+      "url": "https://www.thelec.kr/news/articleView.html?idxno=31979",
+      "archived": true
+    },
+    {
+      "id": 900005,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "가전구독",
+        "AI구독클럽",
+        "비즈니스모델",
+        "구독경제"
+      ],
+      "headline": "삼성 'AI 구독클럽' 출시 — 가전 구독 전쟁 본격화",
+      "summary": "삼성전자가 전국 삼성스토어·삼성닷컴에서 AI 구독클럽을 개시, LG가 선점한 구독 시장에 진입. 구독 대상의 90% 이상을 AI 제품으로 구성해 'AI=삼성' 전략과 결합. LG는 2024년 3분기 누적 구독 매출 1조2386억원으로 전년 연매출을 이미 초과한 상태였다. 국내 렌탈·구독 시장은 2025년 100조원 규모 전망.",
+      "source": {
+        "name": "이투데이",
+        "url": "https://www.etoday.co.kr/news/view/2424548"
+      },
+      "publishedAt": "2024-12-01T02:00:00.000Z",
+      "url": "https://www.etoday.co.kr/news/view/2424548",
+      "archived": true
+    },
+    {
+      "id": 900004,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "IFA2024",
+        "소프트웨어업데이트",
+        "유럽시장",
+        "AI전략"
+      ],
+      "headline": "IFA 2024 — 삼성 '모두를 위한 AI', 최대 7년 SW 업데이트 '스마트 포워드' 발표",
+      "summary": "IFA 100주년 무대에서 삼성이 '모두를 위한 AI' 비전 발표. 2024년형 AI 가전에 최대 7년 SW 정기 업데이트(스마트 포워드)를 약속하며 가전을 '업데이트되는 기기'로 재정의. 오토 오픈 도어·음성 제어 등 접근성과 고효율(펠티어·히트펌프)을 유럽 시장 공략 포인트로 제시.",
+      "source": {
+        "name": "삼성전자 뉴스룸",
+        "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%AA%A8%EB%91%90%EB%A5%BC-%EC%9C%84%ED%95%9C-ai-%EB%82%B4%EC%84%B8%EC%9A%B0%EB%A9%B0-ifa-2024-%ED%94%84%EB%A0%88%EC%8A%A4-%EC%BB%A8%ED%8D%BC%EB%9F%B0"
+      },
+      "publishedAt": "2024-09-05T02:00:00.000Z",
+      "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%AA%A8%EB%91%90%EB%A5%BC-%EC%9C%84%ED%95%9C-ai-%EB%82%B4%EC%84%B8%EC%9A%B0%EB%A9%B0-ifa-2024-%ED%94%84%EB%A0%88%EC%8A%A4-%EC%BB%A8%ED%8D%BC%EB%9F%B0",
+      "archived": true
+    },
+    {
+      "id": 900003,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기",
+        "청소기",
+        "냉장고"
+      ],
+      "competitors": [],
+      "tags": [
+        "AI가전",
+        "판매실적",
+        "비스포크AI콤보",
+        "소비트렌드"
+      ],
+      "headline": "삼성 'AI 가전' 판매 150만대 돌파 — 매장 판매 3대 중 2대가 AI 가전",
+      "summary": "삼성스토어 최근 3개월(5~7월) 판매 가전의 2/3가 AI 가전으로 집계. 드럼 세탁기·로봇청소기는 판매량의 90% 이상이 AI 제품. 비스포크 AI 콤보(출시 2개월 만 1만대)·비스포크 AI 스팀(25일 만 1만대)이 견인. AI 기능이 실구매 결정 요인으로 자리잡은 신호.",
+      "source": {
+        "name": "삼성전자 뉴스룸",
+        "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-ai-%EA%B0%80%EC%A0%84-150%EB%A7%8C-%EB%8C%80-%ED%8C%90%EB%A7%A4-%EB%8F%8C%ED%8C%8C"
+      },
+      "publishedAt": "2024-08-25T02:00:00.000Z",
+      "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-ai-%EA%B0%80%EC%A0%84-150%EB%A7%8C-%EB%8C%80-%ED%8C%90%EB%A7%A4-%EB%8F%8C%ED%8C%8C",
+      "archived": true
+    },
+    {
+      "id": 900002,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.7,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "로보락"
+      ],
+      "tags": [
+        "로봇청소기",
+        "중국공세",
+        "프리미엄",
+        "점유율"
+      ],
+      "headline": "로보락, 국내 로봇청소기 점유율 46.5% — 3년 연속 1위",
+      "summary": "중국 로보락이 2024년 상반기 국내 로봇청소기 시장 점유율 46.5%로 2022년부터 3년째 1위. 150만원 이상 프리미엄 구간에서는 65.7%까지 상승. 상반기 매출 1420억원으로 전년 연매출(2000억)의 절반을 이미 초과. 프리미엄 시장을 중국 브랜드가 장악한 상징적 사건.",
+      "source": {
+        "name": "한경비즈니스",
+        "url": "https://magazine.hankyung.com/business/article/202408040438b"
+      },
+      "publishedAt": "2024-08-04T02:00:00.000Z",
+      "url": "https://magazine.hankyung.com/business/article/202408040438b",
+      "archived": true
+    },
+    {
+      "id": 900001,
+      "lens": "소비자",
+      "grade": "참고",
+      "impact": 2.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 1,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "비스포크",
+        "브랜드전략",
+        "AI절약모드"
+      ],
+      "headline": "비스포크 5주년 — '맞춤형 가전'에서 'AI 가전'으로 브랜드 진화",
+      "summary": "2019년 냉장고로 시작한 비스포크가 5주년을 맞아 누적 성과를 공개. 맞춤 디자인 → 비스포크 홈 → 비스포크 라이프(지속가능·초연결)를 거쳐 2024년 AI 중심으로 브랜드 전략이 이동했다. AI 절약모드는 65개국으로 확대.",
+      "source": {
+        "name": "ZDNet Korea",
+        "url": "https://zdnet.co.kr/view/?no=20240604091845"
+      },
+      "publishedAt": "2024-06-04T02:00:00.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20240604091845",
+      "archived": true
+    },
+    {
+      "id": 900000,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "청소기"
+      ],
+      "competitors": [],
+      "tags": [
+        "AI가전",
+        "비스포크AI",
+        "스마트싱스",
+        "AI홈"
+      ],
+      "headline": "삼성, 2024년형 '비스포크 AI' 라인업 공개 — AI 홈·빅스비로 초연결 강화",
+      "summary": "삼성전자가 '웰컴 투 비스포크 AI' 미디어데이에서 고성능 AI 칩·카메라·센서를 탑재한 15종의 AI 제품을 공개했다. AI 하이브리드 냉장고(컴프레서+펠티어), 7형 터치스크린 'AI 홈' 탑재 비스포크 AI 콤보 등 스마트싱스 초연결 생태계 기반의 AI 가전 대전환을 알린 기점.",
+      "source": {
+        "name": "삼성전자 뉴스룸",
+        "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-ai%EB%A1%9C-%EC%B4%88%EC%97%B0%EA%B2%B0-%EC%83%9D%ED%83%9C%EA%B3%84-%EA%B0%95%ED%99%94%EB%90%9C-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-ai-%EB%9D%BC%EC%9D%B8"
+      },
+      "publishedAt": "2024-04-03T02:00:00.000Z",
+      "url": "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-ai%EB%A1%9C-%EC%B4%88%EC%97%B0%EA%B2%B0-%EC%83%9D%ED%83%9C%EA%B3%84-%EA%B0%95%ED%99%94%EB%90%9C-%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC-ai-%EB%9D%BC%EC%9D%B8",
+      "archived": true
+    }
+  ]
+}
