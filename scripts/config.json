@@ -1,10 +1,8 @@
 {
   "_version": "v2",
   "_comment": "DA Market Insight v2 - 신호 렌즈 + 액션 등급 + 영향도 4 인자.",
-
   "_reportProxyUrl_comment": "리포트 생성용 공용 키 프록시(Cloudflare Worker) 주소. 비워두면 사용자가 각자 API 키를 입력. 설정 방법은 worker/README.md 참고.",
   "reportProxyUrl": "https://da-insight-anthropic-proxy.cw120-park.workers.dev",
-
   "rssSources": [
     {
       "name": "매일경제 산업",
@@ -72,9 +70,13 @@
       "region": "EU"
     }
   ],
-
-  "lenses": ["소비자", "기술", "경쟁사", "정책", "거시"],
-
+  "lenses": [
+    "소비자",
+    "기술",
+    "경쟁사",
+    "정책",
+    "거시"
+  ],
   "products": [
     "냉장고",
     "세탁기",
@@ -84,7 +86,6 @@
     "청소기",
     "식기세척기"
   ],
-
   "competitors": [
     "LG전자",
     "월풀",
@@ -100,93 +101,293 @@
     "Lennox",
     "Haier"
   ],
-
   "competitorBrands": {
     "_comment": "경쟁사별 자회사·하위 브랜드. 본문에 하위 브랜드가 등장하면 모기업 경쟁사로 분류.",
-    "LG전자": ["LG SIGNATURE"],
-    "월풀": ["Maytag", "KitchenAid", "JennAir", "Amana"],
-    "Electrolux": ["Frigidaire", "AEG", "Zanussi"],
-    "삼성전자": ["Dacor"],
-    "BSH": ["Bosch", "Siemens", "Gaggenau", "Neff", "Thermador"],
-    "Midea": ["Comfee", "COLMO", "Little Swan", "KUKA"],
-    "Gree": ["TOSOT", "Kinghome"],
-    "Carrier": ["Bryant", "Viessmann"],
-    "Trane": ["American Standard(공조)", "Thermo King"],
-    "JCI": ["York", "Coleman"],
-    "Daikin": ["Goodman"],
-    "Lennox": ["Armstrong Air", "Ducane"],
-    "Haier": ["GE Appliances", "Candy", "Fisher & Paykel", "Casarte"]
+    "LG전자": [
+      "LG SIGNATURE"
+    ],
+    "월풀": [
+      "Maytag",
+      "KitchenAid",
+      "JennAir",
+      "Amana"
+    ],
+    "Electrolux": [
+      "Frigidaire",
+      "AEG",
+      "Zanussi"
+    ],
+    "삼성전자": [
+      "Dacor"
+    ],
+    "BSH": [
+      "Bosch",
+      "Siemens",
+      "Gaggenau",
+      "Neff",
+      "Thermador"
+    ],
+    "Midea": [
+      "Comfee",
+      "COLMO",
+      "Little Swan",
+      "KUKA"
+    ],
+    "Gree": [
+      "TOSOT",
+      "Kinghome"
+    ],
+    "Carrier": [
+      "Bryant",
+      "Viessmann"
+    ],
+    "Trane": [
+      "American Standard(공조)",
+      "Thermo King"
+    ],
+    "JCI": [
+      "York",
+      "Coleman"
+    ],
+    "Daikin": [
+      "Goodman"
+    ],
+    "Lennox": [
+      "Armstrong Air",
+      "Ducane"
+    ],
+    "Haier": [
+      "GE Appliances",
+      "Candy",
+      "Fisher & Paykel",
+      "Casarte"
+    ]
   },
-
   "gradeThresholds": {
     "긴급": 4.5,
     "주요": 3.5,
     "주시": 2.5
   },
-
   "gradeMeaning": {
     "긴급": "즉시 경영진 보고",
     "주요": "주간 정기 보고",
     "주시": "모니터링 지속",
     "참고": "백그라운드 적재"
   },
-
   "impactWeights": {
-    "salesRelevance": 0.40,
+    "salesRelevance": 0.4,
     "timeUrgency": 0.25,
-    "marketSize": 0.20,
+    "marketSize": 0.2,
     "sourceReliability": 0.15
   },
-
   "productContext": {
     "냉장고": {
-      "keywords": ["냉장고", "비스포크 냉장고", "쇼케이스", "냉동고", "와인셀러", "refrigerator", "fridge"],
-      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH", "Midea", "Haier"],
-      "kpis": ["프리미엄 ASP", "북미 M/S", "에너지 효율 등급"]
+      "keywords": [
+        "냉장고",
+        "비스포크 냉장고",
+        "쇼케이스",
+        "냉동고",
+        "와인셀러",
+        "refrigerator",
+        "fridge"
+      ],
+      "majorCompetitors": [
+        "LG전자",
+        "월풀",
+        "Electrolux",
+        "BSH",
+        "Midea",
+        "Haier"
+      ],
+      "kpis": [
+        "프리미엄 ASP",
+        "북미 M/S",
+        "에너지 효율 등급"
+      ]
     },
     "세탁기": {
-      "keywords": ["세탁기", "워시타워", "콤보", "washer", "laundry"],
-      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH", "Haier"],
-      "kpis": ["프리미엄 비중", "美 M/S", "AI 세탁 채택률"]
+      "keywords": [
+        "세탁기",
+        "워시타워",
+        "콤보",
+        "washer",
+        "laundry"
+      ],
+      "majorCompetitors": [
+        "LG전자",
+        "월풀",
+        "Electrolux",
+        "BSH",
+        "Haier"
+      ],
+      "kpis": [
+        "프리미엄 비중",
+        "美 M/S",
+        "AI 세탁 채택률"
+      ]
     },
     "건조기": {
-      "keywords": ["건조기", "dryer", "heat pump dryer", "히트펌프 건조"],
-      "majorCompetitors": ["LG전자", "월풀", "Electrolux", "BSH", "Haier"],
-      "kpis": ["히트펌프 비중", "에너지 효율 등급"]
+      "keywords": [
+        "건조기",
+        "dryer",
+        "heat pump dryer",
+        "히트펌프 건조"
+      ],
+      "majorCompetitors": [
+        "LG전자",
+        "월풀",
+        "Electrolux",
+        "BSH",
+        "Haier"
+      ],
+      "kpis": [
+        "히트펌프 비중",
+        "에너지 효율 등급"
+      ]
     },
     "조리기기": {
-      "keywords": ["오븐", "전자레인지", "쿡탑", "후드", "인덕션", "oven", "cooktop", "microwave"],
-      "majorCompetitors": ["LG전자", "BSH", "월풀", "Midea", "Haier"],
-      "kpis": ["빌트인 채택률", "프리미엄 라인 매출"]
+      "keywords": [
+        "오븐",
+        "전자레인지",
+        "쿡탑",
+        "후드",
+        "인덕션",
+        "oven",
+        "cooktop",
+        "microwave"
+      ],
+      "majorCompetitors": [
+        "LG전자",
+        "BSH",
+        "월풀",
+        "Midea",
+        "Haier"
+      ],
+      "kpis": [
+        "빌트인 채택률",
+        "프리미엄 라인 매출"
+      ]
     },
     "HVAC": {
-      "keywords": ["에어컨", "냉난방기", "시스템 에어컨", "히트펌프", "공조", "VRF", "air conditioner", "HVAC", "heat pump"],
-      "majorCompetitors": ["Daikin", "Carrier", "Trane", "JCI", "Lennox", "Gree", "Midea"],
-      "kpis": ["인버터 비중", "신흥 시장 점유율", "북미 M/S"]
+      "keywords": [
+        "에어컨",
+        "냉난방기",
+        "시스템 에어컨",
+        "히트펌프",
+        "공조",
+        "VRF",
+        "air conditioner",
+        "HVAC",
+        "heat pump"
+      ],
+      "majorCompetitors": [
+        "Daikin",
+        "Carrier",
+        "Trane",
+        "JCI",
+        "Lennox",
+        "Gree",
+        "Midea"
+      ],
+      "kpis": [
+        "인버터 비중",
+        "신흥 시장 점유율",
+        "북미 M/S"
+      ]
     },
     "청소기": {
-      "keywords": ["청소기", "로봇청소기", "무선청소기", "vacuum", "robot cleaner"],
-      "majorCompetitors": ["LG전자", "Midea"],
-      "kpis": ["프리미엄 ASP", "구독 모델 비중"]
+      "keywords": [
+        "청소기",
+        "로봇청소기",
+        "무선청소기",
+        "vacuum",
+        "robot cleaner"
+      ],
+      "majorCompetitors": [
+        "LG전자",
+        "Midea"
+      ],
+      "kpis": [
+        "프리미엄 ASP",
+        "구독 모델 비중"
+      ]
     },
     "식기세척기": {
-      "keywords": ["식기세척기", "dishwasher", "디시워셔"],
-      "majorCompetitors": ["BSH", "월풀", "Electrolux"],
-      "kpis": ["빌트인 채택률", "美 M/S"]
+      "keywords": [
+        "식기세척기",
+        "dishwasher",
+        "디시워셔"
+      ],
+      "majorCompetitors": [
+        "BSH",
+        "월풀",
+        "Electrolux"
+      ],
+      "kpis": [
+        "빌트인 채택률",
+        "美 M/S"
+      ]
     }
   },
-
   "filterRules": {
-    "_comment": "가전 산업 무관 뉴스 자동 제외 키워드. 헤드라인에 포함 時 분류 단계 진입 前 차단.",
+    "_comment": "가전 산업 무관 뉴스 자동 제외 키워드. 헤드라인에 포함 時 분류 단계 진입 前 차단 + 기존 적재분도 매 실행 시 소급 제거.",
     "blockKeywords": [
-      "정상회담", "대선", "총선", "탄핵", "사설", "칼럼", "논평",
-      "ETF", "코스피", "코스닥", "환율", "금리 인하", "금리 인상",
-      "부동산", "아파트", "분양", "연예", "드라마", "사고", "참사",
-      "재판", "검찰", "기상", "스포츠", "축구", "야구",
-      "TV", "OLED TV", "QLED", "스마트TV", "텔레비전"
+      "정상회담",
+      "대선",
+      "총선",
+      "탄핵",
+      "사설",
+      "칼럼",
+      "논평",
+      "ETF",
+      "코스피",
+      "코스닥",
+      "환율",
+      "금리 인하",
+      "금리 인상",
+      "부동산",
+      "아파트",
+      "분양",
+      "연예",
+      "드라마",
+      "사고",
+      "참사",
+      "재판",
+      "검찰",
+      "기상",
+      "스포츠",
+      "축구",
+      "야구",
+      "TV",
+      "OLED TV",
+      "QLED",
+      "스마트TV",
+      "텔레비전",
+      "반도체",
+      "파운드리",
+      "웨이퍼",
+      "HBM",
+      "AI칩",
+      "AI 칩",
+      "글래스코어",
+      "글래스 코어",
+      "유리기판",
+      "유리 기판",
+      "기판",
+      "삼성전기",
+      "삼성디스플레이",
+      "삼성SDI",
+      "삼성바이오",
+      "SK하이닉스",
+      "TSMC",
+      "엔비디아",
+      "앤트로픽",
+      "semiconductor",
+      "foundry",
+      "Nvidia",
+      "Anthropic"
     ]
   },
-
   "retention": {
     "_comment": "등급별 데이터 보존 기간 (일). 기간 경과 時 자동 제거.",
     "긴급": 365,
@@ -194,12 +395,10 @@
     "주시": 365,
     "참고": 365
   },
-
   "dedupe": {
     "_comment": "제목·내용이 유사한 같은 사건 기사를 1건으로 묶음. similarityThreshold(0~1) 높을수록 보수적.",
     "similarityThreshold": 0.22
   },
-
   "limits": {
     "_comment": "1회 실행 처리 제한 (API 비용 보호용).",
     "maxArticlesPerRun": 40,
