@@ -1,7 +1,75 @@
 {
-  "updatedAt": "2026-07-03T21:56:31.137Z",
+  "updatedAt": "2026-07-03T22:55:14.148Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1340,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "에너지효율규제",
+        "북미정책",
+        "제조원가",
+        "규제완화"
+      ],
+      "headline": "미국 에너지효율규제 폐지로 삼성·LG 가전주 수혜",
+      "summary": "트럼프 행정부가 추진하는 가전 에너지효율규제 폐지 정책이 삼성전자·LG전자에 긍정적 영향을 미치고 있다. 규제 완화로 북미향 가전제품의 제조 원가 절감 및 가격 경쟁력 강화 기대. 두 회사의 미국 시장 점유율 확대에 유리한 정책 환경 조성.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.g-enews.com/article/Global-Biz/2026/07/2026070406560364552bd56fbc3c_1"
+      },
+      "publishedAt": "2026-07-03T21:59:45.000Z",
+      "url": "https://www.g-enews.com/article/Global-Biz/2026/07/2026070406560364552bd56fbc3c_1"
+    },
+    {
+      "id": 1341,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "계절수요",
+        "가격경쟁",
+        "소비심리",
+        "재고"
+      ],
+      "headline": "폭염 시즌 에어컨 수요 급증, 소비자 쏠림 현상 심화",
+      "summary": "극한의 폭염으로 에어컨 수요가 급등하면서 저가 제품을 놓고 소비자 간 구매 경쟁이 심화되고 있다. 가전 시장의 계절성 수요 집중 현상이 뚜렷하게 나타나면서 재고 관리와 가격 경쟁이 동시에 심화될 것으로 예상된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008641214&plink=RSSLINK&cooper=RSSREADER"
+      },
+      "publishedAt": "2026-07-03T21:31:00.000Z",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008641214&plink=RSSLINK&cooper=RSSREADER"
+    },
     {
       "id": 1338,
       "lens": "기술",
@@ -59,37 +127,6 @@
       },
       "publishedAt": "2026-07-03T12:00:07.000Z",
       "url": "https://www.scmp.com/news/china/science/article/3359292/many-chinese-scientists-use-research-funding-buy-home-appliances-and-skincare-study"
-    },
-    {
-      "id": 1335,
-      "lens": "소비자",
-      "grade": "주시",
-      "impact": 2.9,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "폭염",
-        "수요급증",
-        "품귀",
-        "유럽시장",
-        "계절수요"
-      ],
-      "headline": "폭염으로 프랑스 에어컨 수요 급증, 공급 부족 심화",
-      "summary": "프랑스의 극심한 폭염으로 에어컨 수요가 급증하면서 시장 품귀 현상이 발생 중이다. 소매점 재고 부족과 납기 연장으로 소비자 간 구매 경쟁이 심화되고 있으며, 극한 날씨로 인한 스포츠 이벤트 일정 단축 검토 등 사회 전반에 영향을 미치고 있다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.hani.co.kr/arti/international/international_general/1266628.html"
-      },
-      "publishedAt": "2026-07-03T09:44:00.000Z",
-      "url": "https://www.hani.co.kr/arti/international/international_general/1266628.html"
     },
     {
       "id": 1323,
