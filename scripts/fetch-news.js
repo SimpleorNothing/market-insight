@@ -434,14 +434,6 @@ ${COMPETITOR_LIST}
 7. tags: 자유 태그 (배열, 2~5개 권장, 해시 기호 없이)
    - 핵심 키워드, 제품·경쟁사 외 부가 정보
 
-8. insight: 당사(삼성전자 DA) 관점 시사점 1문장 한국어 (60자 이내)
-   - 기사가 갖는 의미와 당사에 미치는 영향(방향·크기·노출 지점)만 서술
-   - ★ 실행 제안·액션 권고 절대 금지: "검토 필요", "대응해야", "추진 여지", "~할 필요" 等 당사가 무엇을 하라는 표현 금지 (실행 판단은 사람의 몫)
-   - 보도 사실에서 논리적으로 도출 가능한 것만 — 기사에 없는 사실·수치 창작 금지
-   - 소비자·기술 렌즈: 해당 트렌드가 당사 제품·수요에 갖는 의미 (예: "히트펌프 건조 수요 확대 — 유럽 프리미엄 건조기 시장의 기회 요인")
-   - 경쟁사 렌즈: 경쟁 구도·당사 포지션에 미치는 영향, 신사업이면 그 사업모델 변화가 갖는 의미
-   - 정책·거시 렌즈: 당사 생산·수출 구조 기준 영향 방향 (예: "멕시코 생산 대미 무관세 전제가 협상 변수로 전환")
-
 【출력 스키마】
 {
   "lens": "...",
@@ -455,8 +447,7 @@ ${COMPETITOR_LIST}
   },
   "headline": "...",
   "summary": "...",
-  "tags": ["..."],
-  "insight": "..."
+  "tags": ["..."]
 }
 
 JSON 외 어떤 텍스트도 출력 금지.`;
@@ -476,7 +467,6 @@ async function classifyOne(item, retry = false) {
       headline: item.headline.slice(0, 30),
       summary: `DRY_RUN 더미 요약: ${item.headline}`,
       tags: ["test"],
-      insight: "DRY_RUN 더미 시사점",
     };
   }
 
@@ -553,10 +543,6 @@ ${item.region}`;
     CONFIG.competitors.includes(c)
   );
   parsed.tags = (parsed.tags || []).slice(0, 5);
-  parsed.insight = String(parsed.insight || "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 140);
 
   // Clamp factors
   for (const k of [
@@ -603,7 +589,6 @@ async function classifyAll(items, startId) {
           tags: cls.tags,
           headline: cls.headline,
           summary: cls.summary,
-          insight: cls.insight || "",
           source: {
             name: item.source,
             url: item.link,
