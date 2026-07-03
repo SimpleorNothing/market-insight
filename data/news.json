@@ -1,37 +1,44 @@
 {
-  "updatedAt": "2026-07-03T08:48:02.769Z",
+  "updatedAt": "2026-07-03T11:26:06.761Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1316,
-      "lens": "정책",
-      "grade": "주요",
-      "impact": 3.6,
+      "id": 1323,
+      "lens": "기술",
+      "grade": "긴급",
+      "impact": 4.6,
       "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
       },
-      "products": [],
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
       "competitors": [
         "LG전자"
       ],
       "tags": [
-        "LG전자",
-        "투자계획",
-        "AI",
-        "제조역량",
-        "지역경제"
+        "AI투자",
+        "제조혁신",
+        "글로벌전략",
+        "스마트가전"
       ],
-      "headline": "LG전자, 2030년까지 영남지역에 9.4조원 투자",
-      "summary": "LG전자가 2030년까지 영남지역에 9.4조원을 투자하기로 결정했다. AI와 고급 제조 역량 강화에 중점을 두고 있으며, 국내 거점 강화를 통한 성장 전략을 추진 중이다.",
+      "headline": "LG전자, AI·제조 분야에 9.4조 원 투자 계획",
+      "summary": "LG전자가 AI 및 제조 역량 강화를 위해 9.4조 원의 대규모 투자를 발표했다. 글로벌 가전 제조사로서 AI 통합 및 스마트 제조 혁신을 통해 경쟁력 강화를 추진 중이다.",
       "source": {
         "name": "Google News - LG Global",
-        "url": "https://www.asiae.co.kr/en/article/enterprise-CEO/2026070317125172997"
+        "url": "https://www.chosun.com/english/industry-en/2026/07/03/7DLTYKY4OZGYZM2532IPPHXHFQ/"
       },
-      "publishedAt": "2026-07-03T08:12:51.000Z",
-      "url": "https://www.asiae.co.kr/en/article/enterprise-CEO/2026070317125172997"
+      "publishedAt": "2026-07-03T08:04:12.000Z",
+      "url": "https://www.chosun.com/english/industry-en/2026/07/03/7DLTYKY4OZGYZM2532IPPHXHFQ/"
     },
     {
       "id": 1312,
@@ -932,41 +939,6 @@
       "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=204317"
     },
     {
-      "id": 1271,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.3,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "북미전략",
-        "생산시설",
-        "멕시코",
-        "리구성"
-      ],
-      "headline": "월풀, 멕시코 제조시설 폐쇄 발표",
-      "summary": "월풀이 멕시코 제조 공장 폐쇄를 공시했다. 이는 북미 생산 거점 재편 전략의 일환으로 평가된다. 구체적인 일정과 영향 규모는 추가 공시 예상된다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.moodyonthemarket.com/whirlpool-announces-closure-of-mexico-manufacturing-plant/"
-      },
-      "publishedAt": "2026-07-01T22:13:59.000Z",
-      "url": "https://www.moodyonthemarket.com/whirlpool-announces-closure-of-mexico-manufacturing-plant/"
-    },
-    {
       "id": 1248,
       "lens": "거시",
       "grade": "주시",
@@ -1591,39 +1563,6 @@
       },
       "publishedAt": "2026-06-30T19:19:00.000Z",
       "url": "https://www.mt.co.kr/amp/industry/2026/07/01/2026063020181422688"
-    },
-    {
-      "id": 1320,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "월풀",
-        "냉장고",
-        "미국 제조업",
-        "관세 정책",
-        "고용"
-      ],
-      "headline": "월풀 아이오와 냉장고 공장, 트럼프 관세에도 고용 감소",
-      "summary": "트럼프 행정부의 관세 정책이 월풀의 아이오와 냉장고 생산 시설 고용 유지에 효과를 거두지 못하고 있다. 관세 보호 조치에도 불구하고 해당 공장의 일자리가 감소하는 추세가 지속되고 있다.",
-      "source": {
-        "name": "Google News - Whirlpool",
-        "url": "https://kearneyhub.com/news/nation-world/business/article_97dd84d1-3f7f-5913-9ae3-cb678b42e769.html"
-      },
-      "publishedAt": "2026-06-30T17:31:26.000Z",
-      "url": "https://kearneyhub.com/news/nation-world/business/article_97dd84d1-3f7f-5913-9ae3-cb678b42e769.html"
     },
     {
       "id": 1182,
