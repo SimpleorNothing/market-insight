@@ -1,46 +1,46 @@
 :root {
-  --bg-page: #fafaf7;
+  --bg-page: #EDEFEC;
   --bg-surface: #ffffff;
-  --bg-soft: #f4f3ee;
-  --text-primary: #1a1a1a;
-  --text-secondary: #5f5e5a;
-  --text-tertiary: #999791;
-  --border-subtle: rgba(0, 0, 0, 0.07);
-  --border-default: rgba(0, 0, 0, 0.14);
-  --border-strong: rgba(0, 0, 0, 0.25);
+  --bg-soft: #E3E6E1;
+  --text-primary: #17222D;
+  --text-secondary: #5C6B79;
+  --text-tertiary: #9AA6A0;
+  --border-subtle: #E1E4DF;
+  --border-default: #D3D9D6;
+  --border-strong: #9AA6A0;
 
-  --accent: #1d4ed8;
-  --accent-hover: #1e40af;
+  --accent: #46647E;
+  --accent-hover: #37506A;
 
-  /* Action grade colors */
-  --grade-urgent-bg: #faece7;
-  --grade-urgent-text: #4a1b0c;
-  --grade-urgent-bar: #d85a30;
-  --grade-major-bg: #faeeda;
-  --grade-major-text: #412402;
-  --grade-major-bar: #ba7517;
-  --grade-watch-bg: #e6f1fb;
-  --grade-watch-text: #042c53;
-  --grade-watch-bar: #378add;
-  --grade-ref-bg: #f1efe8;
-  --grade-ref-text: #2c2c2a;
-  --grade-ref-bar: #888780;
+  /* Action grade colors — CI 팔레트 매핑 */
+  --grade-urgent-bg: #F5E4E2;
+  --grade-urgent-text: #7A1E17;
+  --grade-urgent-bar: #B02E24;
+  --grade-major-bg: #F4EDDC;
+  --grade-major-text: #6B4D0A;
+  --grade-major-bar: #A9790F;
+  --grade-watch-bg: #E4EAF0;
+  --grade-watch-text: #2C3E4E;
+  --grade-watch-bar: #46647E;
+  --grade-ref-bg: #E7EAE6;
+  --grade-ref-text: #3A423F;
+  --grade-ref-bar: #9AA6A0;
 
-  /* Lens badge colors */
-  --lens-consumer-bg: #fbeaf0;
-  --lens-consumer-text: #72243e;
-  --lens-tech-bg: #e1f5ee;
-  --lens-tech-text: #085041;
-  --lens-comp-bg: #eeedfe;
-  --lens-comp-text: #3c3489;
-  --lens-policy-bg: #faeeda;
-  --lens-policy-text: #854f0b;
-  --lens-macro-bg: #f1efe8;
-  --lens-macro-text: #5f5e5a;
+  /* Lens badge colors — CI 팔레트 매핑 */
+  --lens-consumer-bg: #F5E4E2;
+  --lens-consumer-text: #7A1E17;
+  --lens-tech-bg: #E0EBE4;
+  --lens-tech-text: #244A3B;
+  --lens-comp-bg: #EAE7F1;
+  --lens-comp-text: #3B3168;
+  --lens-policy-bg: #F4EDDC;
+  --lens-policy-text: #6B4D0A;
+  --lens-macro-bg: #E7EAE6;
+  --lens-macro-text: #4A524E;
 
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
 
   --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont,
     "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
@@ -462,7 +462,7 @@ body {
   padding: 0 28px 0 10px;
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23999791' stroke-width='2.5' stroke-linecap='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%239AA6A0' stroke-width='2.5' stroke-linecap='round'><polyline points='6 9 12 15 18 9'/></svg>");
   background-repeat: no-repeat;
   background-position: right 10px center;
 }
@@ -993,7 +993,7 @@ body {
   height: 100%;
   width: 0;
   border-radius: 99px;
-  background: linear-gradient(90deg, var(--accent), #4f7fe6);
+  background: linear-gradient(90deg, var(--accent), #6E88A0);
   transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__estimate-note {
@@ -1042,7 +1042,7 @@ body {
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  background: #1a1a1a;
+  background: #17222D;
   color: #fff;
   padding: 12px 20px;
   border-radius: var(--radius-md);
