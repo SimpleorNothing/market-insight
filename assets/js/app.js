@@ -30,7 +30,6 @@ const LENS_ACTIVATION = {
   거시:    { product: false, competitor: false },
 };
 
-const GRADE_ORDER = ["긴급", "주요", "주시", "참고"];
 const LENS_ORDER = ["소비자", "기술", "경쟁사", "정책", "거시"];
 
 const GRADE_MEANING = {
@@ -61,7 +60,6 @@ const state = {
   products: new Set(),
   competitors: new Set(),
   tag: null,
-  sort: "latest",
   group: "competitor",
   view: "card",
   selectedNews: null,
@@ -207,33 +205,8 @@ function getFilteredNews(opts = {}) {
 }
 
 function getSortedNews(items) {
-  const sorted = [...items];
-  if (state.sort === "latest") {
-    sorted.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
-  } else if (state.sort === "impact") {
-    sorted.sort((a, b) => (b.impact || 0) - (a.impact || 0));
-  } else {
-    // relevance: 활성 필터 매칭 정도
-    sorted.sort((a, b) => {
-      const scoreA = relevanceScore(a);
-      const scoreB = relevanceScore(b);
-      if (scoreB !== scoreA) return scoreB - scoreA;
-      return new Date(b.publishedAt) - new Date(a.publishedAt);
-    });
-  }
-  return sorted;
-}
-
-function relevanceScore(n) {
-  let s = 0;
-  if (state.lens !== "전체" && n.lens === state.lens) s += 2;
-  state.products.forEach((p) => {
-    if ((n.products || []).includes(p)) s += 1;
-  });
-  state.competitors.forEach((c) => {
-    if ((n.competitors || []).includes(c)) s += 1;
-  });
-  return s;
+  // 그룹(렌즈/경쟁사/제품) 무엇이든 그룹 내부는 항상 최신순
+  return [...items].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 }
 
 // ===== Rendering =====
@@ -456,15 +429,9 @@ function updateTagFilterChip() {
 }
 
 function makeGroups(items) {
-  if (state.group === "none") {
-    return [{ key: "", items }];
-  }
   const map = new Map();
 
-  if (state.group === "grade") {
-    GRADE_ORDER.forEach((g) => map.set(g, []));
-    items.forEach((n) => map.get(n.grade)?.push(n));
-  } else if (state.group === "lens") {
+  if (state.group === "lens") {
     LENS_ORDER.forEach((l) => map.set(l, []));
     items.forEach((n) => map.get(n.lens)?.push(n));
   } else if (state.group === "product") {
@@ -511,10 +478,7 @@ function renderGroup(group) {
   let badgeClass = "";
   let meaning = "";
 
-  if (GRADE_ORDER.includes(group.key)) {
-    badgeClass = `group-header__badge--${GRADE_CLASS[group.key]}`;
-    meaning = GRADE_MEANING[group.key];
-  } else if (LENS_ORDER.includes(group.key)) {
+  if (LENS_ORDER.includes(group.key)) {
     badgeClass = `group-header__badge--lens-${group.key}`;
   }
 
@@ -1199,10 +1163,6 @@ function showToast(message, success = true) {
 
 // ===== Events =====
 function bindEvents() {
-  document.getElementById("sortSelect").addEventListener("change", (e) => {
-    state.sort = e.target.value;
-    renderResult();
-  });
   document.getElementById("groupSelect").addEventListener("change", (e) => {
     state.group = e.target.value;
     renderResult();
