@@ -68,6 +68,13 @@ function log(msg) {
 
 function isBlockedByKeyword(headline) {
   const lower = headline.toLowerCase();
+  // 통상·관세 정책 키워드가 있으면 차단하지 않고 분류 단계로 넘김
+  // (역외 생산 비중이 높은 당사 특성상 보호무역 정책은 밀착 모니터링 대상)
+  for (const kw of CONFIG.filterRules.allowOverrideKeywords || []) {
+    if (headline.includes(kw) || lower.includes(kw.toLowerCase())) {
+      return null;
+    }
+  }
   for (const kw of CONFIG.filterRules.blockKeywords) {
     if (headline.includes(kw) || lower.includes(kw.toLowerCase())) {
       return kw;
@@ -348,6 +355,7 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
 【가전 산업 무관 → "skip" 처리】
 다음 경우는 lens="skip" 으로 반환 (다른 필드는 빈 값/0으로):
 - 정치, 외교, 사설, 칼럼, 논평
+  ★ 단, 통상·관세 정책 보도(관세율, 무역협정 개정·재협상, USMCA, 원산지 규정, 수출입 규제, Section 232/301, USTR 조치, 보호무역 기조)는 정치·외교 기사로 간주하지 말고 반드시 lens="정책" 으로 정상 분류할 것. 정상회담·행정부 발표가 형식이어도 내용이 통상 정책이면 skip 금지.
 - 가전사 무관 일반 금융 (주가, ETF, 환율, 부동산)
 - 연예, 스포츠, 사고, 일반 IT(반도체·통신 등)
 - TV·디스플레이 중심 기사 (OLED TV, QLED, 스마트TV, 텔레비전 등 TV 제품이 주제인 보도)
@@ -382,7 +390,7 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
    - "소비자": 가전 수요/트렌드/소비 패턴/가격/채택률
    - "기술": 신기술/R&D/부품/소재/AI·IoT 기능
    - "경쟁사": 특정 경쟁사의 전략·신제품·실적 등 ‘경쟁 동향 자체’가 기사의 핵심 주제인 경우
-   - "정책": 에너지·환경 규제/관세/보조금/표준
+   - "정책": 에너지·환경 규제/관세·통상(무역협정, USMCA, 원산지 규정, 수출입 규제, 보호무역)/보조금/표준
    - "거시": 환율/원자재/주택시장 등 가전 산업 영향
    ※ 경쟁사가 거명됐다고 해서 lens 를 무조건 "경쟁사"로 하지 말 것. 기사 핵심이 규제면 "정책", 신기술이면 "기술"이다. (회사명 추출은 competitors 가 담당)
 
@@ -404,6 +412,7 @@ ${COMPETITOR_LIST}
 
 4. factors: 영향도 4 인자 (각 1~5 정수)
    - salesRelevance: 당사 매출 비중 영향도 (해당 제품·지역의 매출 비중)
+     ★ 통상·관세 정책 특칙: 당사는 멕시코 등 역외 생산 → 미국 수출 비중이 높아, 북미향 관세·무역협정(USMCA 등)·원산지 규정 변화는 삼성/LG가 거명되지 않아도 salesRelevance 4~5 부여. 협정 폐기·재협상·관세 부과 확정 등 구조 변화는 timeUrgency도 상향.
    - timeUrgency: 시간 긴급성 (24h內=5, 분기內=3, 1년內=2, 그 외=1)
    - marketSize: 시장 규모·CAGR (글로벌 영향=5, 지역 한정=3, 국지=2)
    - sourceReliability: 출처 신뢰도 (1차보도·공시=5, 분석=4, 종합=3, 게시판=1)

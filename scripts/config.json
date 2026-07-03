@@ -68,6 +68,16 @@
       "name": "Google News - EU Energy Regulation",
       "url": "https://news.google.com/rss/search?q=EU+energy+label+OR+ecodesign+appliances+OR+%22EU+regulation%22+appliance+when%3A14d&hl=en&gl=US&ceid=US%3Aen",
       "region": "EU"
+    },
+    {
+      "name": "Google News - 통상·관세 정책 KR",
+      "url": "https://news.google.com/rss/search?q=%28%EA%B4%80%EC%84%B8%20OR%20%ED%86%B5%EC%83%81%20OR%20USMCA%20OR%20%EB%B3%B4%ED%98%B8%EB%AC%B4%EC%97%AD%20OR%20%EC%9B%90%EC%82%B0%EC%A7%80%20OR%20%EB%AC%B4%EC%97%AD%ED%98%91%EC%A0%95%29%20%28%EA%B0%80%EC%A0%84%20OR%20%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20OR%20LG%EC%A0%84%EC%9E%90%20OR%20%EB%A9%95%EC%8B%9C%EC%BD%94%29%20when%3A2d&hl=ko&gl=KR&ceid=KR%3Ako",
+      "region": "KR"
+    },
+    {
+      "name": "Google News - US Trade Policy",
+      "url": "https://news.google.com/rss/search?q=%28tariff%20OR%20USMCA%20OR%20USTR%20OR%20%22Section%20232%22%20OR%20%22rules%20of%20origin%22%20OR%20%22trade%20agreement%22%29%20%28appliance%20OR%20appliances%20OR%20Samsung%20OR%20%22LG%20Electronics%22%20OR%20Whirlpool%20OR%20Mexico%29%20when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "US"
     }
   ],
   "lenses": [
@@ -331,6 +341,24 @@
   },
   "filterRules": {
     "_comment": "가전 산업 무관 뉴스 자동 제외 키워드. 헤드라인에 포함 時 분류 단계 진입 前 차단 + 기존 적재분도 매 실행 시 소급 제거.",
+    "_allowOverride_comment": "통상·관세 정책 키워드가 헤드라인에 있으면 blockKeywords보다 우선 → 차단하지 않고 분류 단계로 넘김 (예: '정상회담서 관세 논의'). 당사는 멕시코 등 역외 생산 비중이 높아 보호무역 정책 밀착 모니터링 필수.",
+    "allowOverrideKeywords": [
+      "관세",
+      "통상",
+      "USMCA",
+      "보호무역",
+      "원산지",
+      "무역협정",
+      "무역적자",
+      "tariff",
+      "USTR",
+      "Section 232",
+      "Section 301",
+      "rules of origin",
+      "trade agreement",
+      "trade deal",
+      "nearshoring"
+    ],
     "blockKeywords": [
       "정상회담",
       "대선",
