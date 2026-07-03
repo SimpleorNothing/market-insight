@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T12:00:00.000Z",
+  "updatedAt": "2026-07-03T13:00:00.000Z",
   "schemaVersion": "v2-archive",
   "note": "2024년 이후 ~ 실시간 수집 개시(2026-05-11) 이전 주요 시그널 큐레이션 아카이브. 자동 수집 파이프라인(fetch-news.js)이 건드리지 않는 정적 파일로, 웹 조사 기반으로 선별·요약해 수기 적재했다. 갱신 시 id는 900001+ 대역 유지.",
   "items": [
@@ -74,6 +74,42 @@
       "archived": true
     },
     {
+      "id": 900039,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "TV",
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "실적",
+        "분기적자",
+        "구조조정"
+      ],
+      "headline": "LG전자 '25년 매출 89.2조 역대최대·영업익 -27.5% — 10년 만의 분기 적자",
+      "summary": "LG전자 2025년 잠정실적: 매출 89조2025억(+1.7%, 2년 연속 역대최대), 영업익 2조4780억(-27.5%). 4분기는 영업손실 1094억으로 2016년 이후 10년 만의 분기 적자 — 中 저가 공세에 따른 마케팅비 증가, TV·IT 연간 적자 전환, 희망퇴직 일회성 비용, 관세 여파가 복합 작용. HS는 연간 역대최대 매출 유지. 전장은 역대최대, '26년은 빌트인·부품 등 B2B 집중 투자 선언.",
+      "source": {
+        "name": "디지털데일리",
+        "url": "https://m.ddaily.co.kr/page/view/2026010911092651801"
+      },
+      "publishedAt": "2026-01-09T02:00:00.000Z",
+      "url": "https://m.ddaily.co.kr/page/view/2026010911092651801",
+      "archived": true
+    },
+    {
       "id": 900021,
       "lens": "기술",
       "grade": "주요",
@@ -104,6 +140,145 @@
       },
       "publishedAt": "2026-01-05T02:00:00.000Z",
       "url": "https://www.hankyung.com/article/202601052971g",
+      "archived": true
+    },
+    {
+      "id": 900038,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "로보락",
+        "드리미",
+        "에코백스",
+        "모바",
+        "쿠쿠"
+      ],
+      "tags": [
+        "점유율",
+        "中브랜드",
+        "IFA",
+        "보안차별화"
+      ],
+      "headline": "韓 로청 시장 中 점유율 70% 고착 — 삼성·LG는 보안·AS로 반격 모색",
+      "summary": "국내 로봇청소기 시장에서 로보락 45~50%, 드리미·에코백스·모바 각 10% 안팎 등 中 브랜드 합산 70% 구도가 고착. 삼성·LG 합산은 30% 내외. 양사는 IFA 2025에서 나란히 신제품 공개(삼성 차세대 비스포크 AI 스팀 — 4.5cm 문턱 돌파·투명액체 감지, LG 히든/오브제 스테이션)하며 보안·AS·직배수 설치성으로 차별화 시도. 시장 선점 효과 극복이 관건.",
+      "source": {
+        "name": "디지털타임스",
+        "url": "https://www.dt.co.kr/article/12036153"
+      },
+      "publishedAt": "2025-12-18T02:00:00.000Z",
+      "url": "https://www.dt.co.kr/article/12036153",
+      "archived": true
+    },
+    {
+      "id": 900037,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "로보락",
+        "드리미",
+        "에코백스"
+      ],
+      "tags": [
+        "점유율",
+        "中내전",
+        "프리미엄"
+      ],
+      "headline": "로보락 왕좌 균열 — 고가형 점유 60%대→50%대 중반, 드리미가 잠식",
+      "summary": "'25년 상반기 국내 로청 시장에서 로보락 고가형(130만원↑) 점유율이 전년 60%대에서 50%대 중반으로 약 10%p 하락. 드리미는 고가형 5%→12%로 2배 이상 급증하며 잠식 주도. 에코백스는 중저가 확대. 시장 주도권 경쟁이 '한국 vs 중국'이 아닌 '중국 vs 중국' 구도로 재편 — 삼성·LG 합산은 20% 중반에 머물며 신제품 부재 지적.",
+      "source": {
+        "name": "아시아경제",
+        "url": "https://www.asiae.co.kr/article/2025101523251094606"
+      },
+      "publishedAt": "2025-10-16T02:00:00.000Z",
+      "url": "https://www.asiae.co.kr/article/2025101523251094606",
+      "archived": true
+    },
+    {
+      "id": 900036,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.0,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "TV",
+        "로봇청소기"
+      ],
+      "competitors": [
+        "샤오미"
+      ],
+      "tags": [
+        "샤오미",
+        "AS",
+        "프리미엄전환"
+      ],
+      "headline": "샤오미, 용산에 국내 첫 전용 서비스센터 — '가성비→프리미엄' 도약 선언",
+      "summary": "샤오미코리아가 진출 첫해 기자간담회에서 서울 용산 한강대로에 230㎡ 규모 국내 첫 '익스클루시브 서비스 센터' 설립 발표. 스마트폰뿐 아니라 로봇청소기 등 가전까지 방문·택배 수리 지원. 판매를 넘어 사후지원 체계를 구축해 '합리적 혁신' 이미지에서 프리미엄 브랜드로 전환 시도. 中 브랜드의 AS 약점 보강 흐름이 샤오미까지 확산.",
+      "source": {
+        "name": "EBN",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1680036"
+      },
+      "publishedAt": "2025-09-25T02:00:00.000Z",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1680036",
+      "archived": true
+    },
+    {
+      "id": 900035,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "나르왈",
+        "에코백스",
+        "드리미"
+      ],
+      "tags": [
+        "보안",
+        "소비자원",
+        "中브랜드",
+        "약점"
+      ],
+      "headline": "KISA·소비자원 로청 보안 조사 — 나르왈·에코백스·드리미 사생활 유출 우려",
+      "summary": "한국인터넷진흥원·한국소비자원 공동 조사에서 나르왈·드리미·에코백스 등 中 로봇청소기의 사용자 인증 미비, 집 내부 사진 외부 노출, 카메라 강제 활성화 가능성 등이 확인됨. 삼성(녹스)·LG(SDL)는 IFA 2025 신제품에서 보안을 핵심 차별화 포인트로 부각. 다만 보안 이슈에도 中 브랜드 점유율 하락으로는 이어지지 않아 가격·기술 우위가 우세한 상황.",
+      "source": {
+        "name": "디지털타임스",
+        "url": "https://www.dt.co.kr/article/12036153"
+      },
+      "publishedAt": "2025-09-20T02:00:00.000Z",
+      "url": "https://www.dt.co.kr/article/12036153",
       "archived": true
     },
     {
@@ -216,6 +391,40 @@
       "archived": true
     },
     {
+      "id": 900034,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "드리미",
+        "모바"
+      ],
+      "tags": [
+        "드리미",
+        "모바",
+        "게임체인저",
+        "점유율"
+      ],
+      "headline": "드리미 '게임체인저' 선언 — 점유율 4.1%→12.8%, 모바도 韓 진출",
+      "summary": "드리미가 韓 론칭쇼에서 3종 걸레 자동교체 '매트릭스10 울트라' 등을 공개하며 '게임 체인저' 선언. 韓 점유율 '24년 4.1%에서 '25년 상반기 12.8%로 3배 급증, 내년 30% 목표. 코오롱글로벌 파트너십·한남동 플래그십·하이마트 314개 판매망 구축. 드리미에서 독립한 신생 '모바'도 같은 주 Z60 울트라 롤러로 진출 — 中 브랜드 합산 점유율 70% 수준.",
+      "source": {
+        "name": "디지틀조선일보",
+        "url": "https://digitalchosun.dizzo.com/site/data/html_dir/2025/08/21/2025082180202.html"
+      },
+      "publishedAt": "2025-08-21T07:00:00.000Z",
+      "url": "https://digitalchosun.dizzo.com/site/data/html_dir/2025/08/21/2025082180202.html",
+      "archived": true
+    },
+    {
       "id": 900017,
       "lens": "정책",
       "grade": "긴급",
@@ -284,6 +493,41 @@
       },
       "publishedAt": "2025-07-13T02:00:00.000Z",
       "url": "https://www.ajunews.com/view/20250713101352718",
+      "archived": true
+    },
+    {
+      "id": 900033,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "냉장고",
+        "건조기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "관세",
+        "미국",
+        "가격경쟁력"
+      ],
+      "headline": "월풀, 철강 파생 50% 관세 최대 수혜 부각 — '삼성·LG 가격인상 불가피' 공세",
+      "summary": "美 철강 파생제품 50% 관세(6/23 시행)에 냉장고·세탁기 등이 포함되며 철강 96%를 미국산으로 조달하는 월풀이 최대 수혜자로 부각. 마크 비처 CEO는 경쟁사(삼성·LG) 가격 인상을 공개 전망. 월풀은 미국 판매량의 약 80%를 10개 현지공장에서 생산. '18년 세이프가드에 이어 관세를 지렛대로 한 월풀의 통상 공세 재연 — 다만 이후 수요 부진·원가 상승으로 실제 수혜는 제한적.",
+      "source": {
+        "name": "한국경제",
+        "url": "https://www.hankyung.com/article/202506233389g"
+      },
+      "publishedAt": "2025-06-23T02:00:00.000Z",
+      "url": "https://www.hankyung.com/article/202506233389g",
       "archived": true
     },
     {
@@ -476,6 +720,42 @@
       "archived": true
     },
     {
+      "id": 900032,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "TV",
+        "에어컨",
+        "냉장고"
+      ],
+      "competitors": [
+        "TCL",
+        "하이센스"
+      ],
+      "tags": [
+        "TCL",
+        "아이팔콘",
+        "프리미엄",
+        "반값"
+      ],
+      "headline": "TCL, 韓에 신제품 대거 투하 — 자회사 아이팔콘 '반값 TV'로 젊은층 공략",
+      "summary": "TCL이 2025년형 TV 신제품을 한국에 대거 출시하며 프로모션 강화. 자회사 아이팔콘은 '나의 첫 스마트 TV'를 내걸고 43인치 25만원·85인치 129만원 등 삼성·LG 대비 절반 가격으로 첫 구매 젊은층 공략. TCL은 TV를 넘어 에어컨·제습기·냉장고로 제품군 확장 추진. '24년 글로벌 TV 매출 점유율 TCL 12.4%·하이센스 10.5%로 LG(16.1%) 추격.",
+      "source": {
+        "name": "헤럴드경제",
+        "url": "https://heraldk.com/2025/05/10/%E2%80%9C%EC%83%9D%EC%95%A0-%EC%B2%AB-tv%EB%A1%9C-%EC%A4%91%EA%B5%AD%EC%82%B0%E2%80%9D-%EB%8D%94-%EB%8F%85%ED%95%B4%EC%A7%84-tcl-%ED%95%9C%EA%B5%AD%EC%97%90-%EC%8B%A0%EC%A0%9C%ED%92%88-%EB%AC%B4/"
+      },
+      "publishedAt": "2025-05-10T02:00:00.000Z",
+      "url": "https://heraldk.com/2025/05/10/%E2%80%9C%EC%83%9D%EC%95%A0-%EC%B2%AB-tv%EB%A1%9C-%EC%A4%91%EA%B5%AD%EC%82%B0%E2%80%9D-%EB%8D%94-%EB%8F%85%ED%95%B4%EC%A7%84-tcl-%ED%95%9C%EA%B5%AD%EC%97%90-%EC%8B%A0%EC%A0%9C%ED%92%88-%EB%AC%B4/",
+      "archived": true
+    },
+    {
       "id": 900010,
       "lens": "경쟁사",
       "grade": "주요",
@@ -573,6 +853,143 @@
       },
       "publishedAt": "2025-04-04T02:00:00.000Z",
       "url": "https://www.youthassembly.kr/news/831365",
+      "archived": true
+    },
+    {
+      "id": 900031,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "로보락"
+      ],
+      "tags": [
+        "로보락",
+        "시장규모",
+        "한국시장"
+      ],
+      "headline": "로보락 2025 론칭쇼 — S8 울트라 누적 1900억, 韓 로청 시장 연 1조 전망",
+      "summary": "로보락 2025 론칭쇼에서 S8 MaxV Ultra가 '24년 4월 출시 후 약 1900억원 매출을 기록했다고 공개. 한국 로봇청소기 시장은 '24년 하반기 8500억원 규모로 추정되며 '25년 1조원 돌파 전망(연평균 +20%). 로보락 전체 매출에서 한국 비중 18%로 중국·독일과 함께 톱3 시장. 한국이 中 로청 브랜드의 핵심 전략시장으로 굳어짐.",
+      "source": {
+        "name": "천지일보",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3236607"
+      },
+      "publishedAt": "2025-02-20T07:00:00.000Z",
+      "url": "https://www.newscj.com/news/articleView.html?idxno=3236607",
+      "archived": true
+    },
+    {
+      "id": 900030,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "드리미",
+        "에코백스",
+        "로보락"
+      ],
+      "tags": [
+        "드리미",
+        "신기술",
+        "로봇발",
+        "완판"
+      ],
+      "headline": "연초 로청 신기술 전쟁 — 드리미 '로봇발' X50 15분 완판, 로보락 S9 예고",
+      "summary": "드리미가 세계 최초 '로봇 발'(접이식 다리)로 최대 6cm 문턱을 넘는 X50 울트라를 국내 출시, 첫 라이브 방송 15분 완판·사전예약 3만명. 에코백스는 롤러 물걸레 '디봇 X8 프로 옴니' 출시. 로보락도 S9 맥스V 울트라·슬림 출시를 예고(사전알림 4.4만명). 하드웨어 혁신(문턱 등반·롤러·직배수) 경쟁이 中 3사 주도로 재점화.",
+      "source": {
+        "name": "한국경제",
+        "url": "https://www.hankyung.com/article/202502170157g"
+      },
+      "publishedAt": "2025-02-17T02:00:00.000Z",
+      "url": "https://www.hankyung.com/article/202502170157g",
+      "archived": true
+    },
+    {
+      "id": 900029,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "TV",
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "실적",
+        "H&A",
+        "구독"
+      ],
+      "headline": "LG전자 '24년 확정실적 — 매출 87.7조 역대최대, H&A 33.2조·영업익 2조 회복",
+      "summary": "LG전자 2024년 확정실적: 매출 87조7282억(+6.6%, 역대최대), 영업익 3조4197억(-6.4%). H&A는 매출 33조2033억으로 9년 연속 성장, 영업익 2조446억으로 3년 만에 2조 회복. 韓 구독 가속화·북미 신모델 호조가 견인. '25년 방향: 구독을 태국·인도로 확대, 생산지 최적화로 물류비 개선, HVAC B2B 드라이브.",
+      "source": {
+        "name": "LG 미디어",
+        "url": "https://www.lg.co.kr/media/release/28606"
+      },
+      "publishedAt": "2025-01-23T07:00:00.000Z",
+      "url": "https://www.lg.co.kr/media/release/28606",
+      "archived": true
+    },
+    {
+      "id": 900028,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "TV",
+        "로봇청소기"
+      ],
+      "competitors": [
+        "샤오미"
+      ],
+      "tags": [
+        "샤오미",
+        "한국진출",
+        "가성비",
+        "법인설립"
+      ],
+      "headline": "샤오미코리아 공식 출범 — 폰·TV·로청 등 5개 카테고리 韓 직접 공략",
+      "summary": "샤오미가 한국법인 '샤오미코리아'를 설립하고 1월 15일 기자간담회로 공식 진출 선언. 스마트폰·TV(A 프로, 18만원대부터)·로봇청소기 X20 Max(74.9만원)·웨어러블·보조배터리 등 5개 카테고리 12개 제품을 순차 출시. 총판 체제 9년 만에 직접 진출로 전환, '인간x자동차x집' 생태계 전략. TCL·하이얼·하이센스에 이어 中 메이저 전부 국내 직진출 완료.",
+      "source": {
+        "name": "테크M",
+        "url": "https://www.techm.kr/news/articleView.html?idxno=134536"
+      },
+      "publishedAt": "2025-01-15T02:00:00.000Z",
+      "url": "https://www.techm.kr/news/articleView.html?idxno=134536",
       "archived": true
     },
     {
@@ -690,6 +1107,72 @@
       "archived": true
     },
     {
+      "id": 900027,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "로보락"
+      ],
+      "tags": [
+        "로보락",
+        "세탁건조기",
+        "카테고리확장",
+        "가성비"
+      ],
+      "headline": "로보락, 세탁건조기 H1·M1 출시 — '종합 생활가전 브랜드' 선언",
+      "summary": "로보락이 올인원 세탁건조기 H1(169.9만원)·M1(74.9만원)을 출시하며 로봇청소기를 넘어 생활가전으로 카테고리 확장. 400만원대 삼성·LG 콤보 대비 가성비와 1인 가구용 소형 세그먼트(삼성·LG 미출시 용량대)를 공략. '종합 생활가전 브랜드로 발전' 목표 공식화. 이후 '25년 3월 H1 라이트(139.9만원)로 라인업 추가. 로청 성공모델의 타 카테고리 복제 시도.",
+      "source": {
+        "name": "서울경제",
+        "url": "https://www.sedaily.com/NewsView/2DH17LYEAZ"
+      },
+      "publishedAt": "2024-11-29T02:00:00.000Z",
+      "url": "https://www.sedaily.com/NewsView/2DH17LYEAZ",
+      "archived": true
+    },
+    {
+      "id": 900026,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "로보락"
+      ],
+      "tags": [
+        "로보락",
+        "AS",
+        "라인업확대"
+      ],
+      "headline": "로보락, AS 352개 지점 확충·보급형 Qrevo 라인업 확대 — 약점 보강",
+      "summary": "로보락이 기존 18개 AS센터에 하이마트 접수 지점 334개를 더해 AS 네트워크를 총 352개로 확충. 플래그십 S8 MaxV Ultra 외에 보급형 Qrevo Pro·Qrevo S(129만원)·Qrevo Curv를 연이어 출시하며 가격대별 라인업 완성. 스타필드 하남 플래그십 스토어 등 오프라인 접점도 확대. 中 브랜드의 고질적 약점(AS·접점)이 빠르게 해소되는 국면.",
+      "source": {
+        "name": "뉴데일리",
+        "url": "https://biz.newdaily.co.kr/site/data/html/2024/09/13/2024091300058.html"
+      },
+      "publishedAt": "2024-09-13T02:00:00.000Z",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2024/09/13/2024091300058.html",
+      "archived": true
+    },
+    {
       "id": 900004,
       "lens": "기술",
       "grade": "주요",
@@ -761,6 +1244,40 @@
       "archived": true
     },
     {
+      "id": 900025,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "LG전자",
+        "로보락"
+      ],
+      "tags": [
+        "LG전자",
+        "로보킹",
+        "JDM",
+        "구독"
+      ],
+      "headline": "LG '로보킹 AI 올인원' 출시 — 中 실버스타 JDM으로 로보락 추격",
+      "summary": "LG전자가 8월 15일 올인원 로봇청소기 '로보킹 AI 올인원'(219만원, 자동 급배수 키트 포함) 출시. 중국 실버스타그룹과 JDM(합작개발생산) 방식 제조에 LG 보안 프로세스·씽큐 연동·오브제 디자인을 결합. 자동 급배수 빌트인 설치와 케어 매니저 정기방문이 포함된 구독 상품을 함께 내놓아 中 브랜드와 차별화. 국내 브랜드의 올인원 로청 본격 반격 신호.",
+      "source": {
+        "name": "LG전자 뉴스룸",
+        "url": "https://live.lge.co.kr/2408-lg-ai/"
+      },
+      "publishedAt": "2024-08-15T02:00:00.000Z",
+      "url": "https://live.lge.co.kr/2408-lg-ai/",
+      "archived": true
+    },
+    {
       "id": 900002,
       "lens": "경쟁사",
       "grade": "긴급",
@@ -827,6 +1344,39 @@
       },
       "publishedAt": "2024-06-04T02:00:00.000Z",
       "url": "https://zdnet.co.kr/view/?no=20240604091845",
+      "archived": true
+    },
+    {
+      "id": 900024,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.0,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "로봇청소기"
+      ],
+      "competitors": [
+        "로보락"
+      ],
+      "tags": [
+        "로보락",
+        "한국시장",
+        "론칭쇼",
+        "하이엔드"
+      ],
+      "headline": "로보락, 한국 첫 론칭쇼 — '24년 韓 매출 2000억(+200%), 하이엔드 점유 80.5%",
+      "summary": "로보락이 2024년 플래그십 'S8 MaxV Ultra'(180만원) 출시를 기념해 한국에서 처음으로 론칭쇼 개최. 2023년 한국 연매출이 전년 대비 200% 성장한 2000억원을 기록, 전체 점유율 35.5%·하이엔드급 80.5%. AS 거점을 하이마트 접수 포함 352개로 확충하고 무상 AS 2년 연장. '삼성·LG를 경쟁사로 인식하지 않는다'며 자신감 표출.",
+      "source": {
+        "name": "서울경제",
+        "url": "https://www.sedaily.com/article/13875850"
+      },
+      "publishedAt": "2024-04-16T02:00:00.000Z",
+      "url": "https://www.sedaily.com/article/13875850",
       "archived": true
     },
     {
