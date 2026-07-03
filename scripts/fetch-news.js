@@ -351,6 +351,10 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
 - 가전사 무관 일반 금융 (주가, ETF, 환율, 부동산)
 - 연예, 스포츠, 사고, 일반 IT(반도체·통신 등)
 - TV·디스플레이 중심 기사 (OLED TV, QLED, 스마트TV, 텔레비전 등 TV 제품이 주제인 보도)
+- 반도체·전자부품 산업 기사: 파운드리, 칩, HBM, 기판, 웨이퍼, 디스플레이 패널 등이 주제인 보도.
+  삼성전자·LG전자가 거명돼도 생활가전(DA) 사업과 직접 관련이 없으면 skip.
+  (예: "삼성전자, AI칩 파운드리 협력" → skip / "삼성전기, 글래스 코어 기판 합작" → skip)
+- 부품·소재 계열사 주체 기사: 삼성전기, 삼성디스플레이, 삼성SDI, 삼성바이오, SK하이닉스, LG디스플레이, LG이노텍, LG화학 등이 주체인 보도 (가전 완제품 관련이 명확한 경우만 예외)
 
 【시의성 검증 → "skip" 처리】
 입력의 [오늘 날짜]·[기사 발행일]을 기준으로, 이미 지난 일을 다루는 낡은 기사는 lens="skip":
@@ -696,6 +700,16 @@ async function main() {
     existing.items = [];
   }
 
+  // blockKeywords 소급 적용: 이미 적재된 기사도 매 실행 시 제거 (키워드 추가分 반영)
+  const beforePurge = existing.items.length;
+  existing.items = existing.items.filter(
+    (i) => !isBlockedByKeyword(i.headline || "")
+  );
+  const purged = beforePurge - existing.items.length;
+  if (purged > 0) {
+    log(`차단 키워드 소급 적용: 기존 ${purged}건 제거`);
+  }
+
   const backfilled = await backfillExistingUrls(existing.items);
   if (backfilled > 0) {
     log(`기존 Google News URL ${backfilled}건 → 실제 발행처 URL로 변환`);
@@ -724,6 +738,7 @@ async function main() {
 
   const changed =
     isV1 ||
+    purged > 0 ||
     classified.length > 0 ||
     merged.length !== existing.items.length ||
     backfilled > 0;
