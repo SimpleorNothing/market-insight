@@ -120,7 +120,21 @@ async function loadNewsData() {
   try {
     const res = await fetch("data/news.json", { cache: "no-cache" });
     const json = await res.json();
-    NEWS_DATA = (json.items || []).filter((n) => n.lens && n.grade);
+    // 과거(2024~) 큐레이션 아카이브 — 자동 수집 파이프라인과 별개의 정적 파일.
+    // 없거나 로드에 실패해도 실시간 데이터에는 영향 없음.
+    let archiveItems = [];
+    try {
+      const ares = await fetch("data/archive.json", { cache: "no-cache" });
+      if (ares.ok) {
+        const ajson = await ares.json();
+        archiveItems = ajson.items || [];
+      }
+    } catch (e) {
+      /* 아카이브 없음 — 무시 */
+    }
+    NEWS_DATA = [...(json.items || []), ...archiveItems].filter(
+      (n) => n.lens && n.grade
+    );
     NEWS_UPDATED_AT = json.updatedAt;
   } catch (err) {
     console.error("news.json 로드 실패:", err);
