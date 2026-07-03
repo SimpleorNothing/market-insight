@@ -1,37 +1,101 @@
 {
-  "updatedAt": "2026-07-03T01:52:43.256Z",
+  "updatedAt": "2026-07-03T05:43:47.927Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1293,
-      "lens": "기술",
+      "id": 1299,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "에어컨 수요",
+        "저가 판매",
+        "품귀 현상",
+        "유럽시장"
+      ],
+      "headline": "폭염 속 저가 에어컨 판매에 수천 명 인파…프랑스 매장 소동",
+      "summary": "기록적 폭염이 이어진 프랑스에서 리들 마트가 에어컨 약 20만 대를 179유로(약 31만원)에 할인 판매하자 수천 명의 인파가 몰려 폭동 상황까지 발생했다. 냉방기기 품귀 현상이 심화되면서 향후 주말 폭염 재예보에 수요가 더욱 증가할 것으로 예상된다.",
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260703000218"
+      },
+      "publishedAt": "2026-07-03T05:28:47.000Z",
+      "url": "https://www.etnews.com/20260703000218"
+    },
+    {
+      "id": 1298,
+      "lens": "소비자",
       "grade": "주요",
-      "impact": 4.1,
+      "impact": 3.7,
       "factors": {
         "salesRelevance": 3,
         "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
+        "marketSize": 4,
+        "sourceReliability": 3
       },
-      "products": [],
-      "competitors": [
-        "삼성전자"
+      "products": [
+        "HVAC"
       ],
+      "competitors": [],
       "tags": [
-        "AI칩",
-        "파운드리",
-        "반도체 전략",
-        "앤트로픽",
-        "삼성전자"
+        "냉방비",
+        "전기료",
+        "소비행동",
+        "여름시즌",
+        "가계부담"
       ],
-      "headline": "삼성전자, 앤트로픽 AI칩 파운드리 협력 논의",
-      "summary": "삼성전자가 AI 칩 개발사 앤트로픽과 파운드리 파트너십 협의를 진행 중이다. 이는 고성능 AI 반도체 수급에 따른 글로벌 경쟁에서 삼성의 파운드리 사업 입지 강화를 시사한다.",
+      "headline": "전기료 절감 시도가 역효과…소비자 91.8% 냉방비 줄임",
+      "summary": "설문조사에 따르면 응답자의 91.8%가 전기료 부담으로 에어컨 사용을 줄이거나 참았으며, 이 중 39.4%는 냉방비 절감액보다 외출 시 지출 비용이 더 많았던 것으로 나타났다. 고온 시즌에 소비자들의 에어컨 회피 행동이 오히려 경제적 손실을 초래하는 패러독스를 보여준다.",
       "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "http://www.ekn.kr/web/view.php?key=20260703028318928"
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/business/12089810"
       },
-      "publishedAt": "2026-07-03T01:47:18.000Z",
-      "url": "http://www.ekn.kr/web/view.php?key=20260703028318928"
+      "publishedAt": "2026-07-03T05:20:24.000Z",
+      "url": "https://www.mk.co.kr/news/business/12089810"
+    },
+    {
+      "id": 1300,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기",
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에너지효율",
+        "소비자교육",
+        "비용절감",
+        "가정용가전"
+      ],
+      "headline": "Duke Energy, 가전 에너지 효율 관리 팁 제시",
+      "summary": "Duke Energy가 고객들을 위해 주요 가전제품의 에너지 사용량 관리 팁을 제공했습니다. 냉장고, 세탁기, 조리기기 등 주거용 주요 가전의 효율적 사용법을 중심으로 에너지 비용 절감 방안을 안내하는 콘텐츠입니다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://nkytribune.com/2026/07/duke-energy-offers-tips-to-help-customers-manage-energy-usage-with-key-home-appliances/"
+      },
+      "publishedAt": "2026-07-03T04:40:57.000Z",
+      "url": "https://nkytribune.com/2026/07/duke-energy-offers-tips-to-help-customers-manage-energy-usage-with-key-home-appliances/"
     },
     {
       "id": 1290,
@@ -159,6 +223,42 @@
       },
       "publishedAt": "2026-07-02T21:42:01.000Z",
       "url": "https://www.washingtonpost.com/business/2026/07/02/energy-department-wants-weaken-efficiency-standards-home-appliances/"
+    },
+    {
+      "id": 1302,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "세탁기",
+        "건조기",
+        "냉장고",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "구조조정",
+        "멕시코공장",
+        "북미제조",
+        "공급망",
+        "원가"
+      ],
+      "headline": "월풀, 멕시코 공장 구조조정 단행",
+      "summary": "월풀이 멕시코 생산 기지에 대한 주요 구조조정 계획을 발표했다. 북미 제조 전략의 전환을 의미하며, 원가 경쟁력과 공급망 효율화에 영향을 미칠 전망이다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/3107352/whirlpool-announces-major-mexican-manufacturing-restructuring-plan/"
+      },
+      "publishedAt": "2026-07-02T21:38:37.000Z",
+      "url": "https://www.theglobeandmail.com/investing/markets/markets-news/Tipranks/3107352/whirlpool-announces-major-mexican-manufacturing-restructuring-plan/"
     },
     {
       "id": 1280,
@@ -291,38 +391,6 @@
       "url": "https://v.daum.net/v/20260702183219989"
     },
     {
-      "id": 1254,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.3,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "생산기지 폐쇄",
-        "공급망 재구조화",
-        "북미 제조",
-        "냉장고"
-      ],
-      "headline": "월풀, 멕시코 냉장고 생산 공장 폐쇄",
-      "summary": "월풀(Whirlpool Corp.)이 멕시코의 냉장고 생산 시설 폐쇄를 발표했다. 북미 지역 가전 생산 구조 재편의 일환으로 보이며, 냉장고 공급망 및 경쟁사 전략 동향에 영향을 미칠 전망이다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.wsjm.com/2026/07/02/whirlpool-corp-announces-closure-of-mexico-refrigeration-production-plant/"
-      },
-      "publishedAt": "2026-07-02T08:54:32.000Z",
-      "url": "https://www.wsjm.com/2026/07/02/whirlpool-corp-announces-closure-of-mexico-refrigeration-production-plant/"
-    },
-    {
       "id": 1263,
       "lens": "경쟁사",
       "grade": "주요",
@@ -352,37 +420,6 @@
       },
       "publishedAt": "2026-07-02T08:53:05.000Z",
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-is-up-61-after-analysts-slash-near-term-eps-ou/amp"
-    },
-    {
-      "id": 1249,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4.4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "글래스코어기판",
-        "반도체소재",
-        "합작투자",
-        "평택사업장",
-        "유리기판"
-      ],
-      "headline": "삼성전기, 글래스 코어 기판 합작법인 설립…4800억원 출자",
-      "summary": "삼성전기가 일본 동우화인켐과 반도체 유리기판 소재 '글래스 코어' 생산 합작법인 GlaSSEM을 설립하기로 본계약을 체결했다. 총 출자 규모는 4800억원이며 삼성전기가 66% 지분을 보유한다. 평택 사업장 내에 생산 거점을 마련할 예정이다.",
-      "source": {
-        "name": "전자신문",
-        "url": "https://www.etnews.com/20260702000429"
-      },
-      "publishedAt": "2026-07-02T07:57:43.000Z",
-      "url": "https://www.etnews.com/20260702000429"
     },
     {
       "id": 1253,
@@ -515,6 +552,39 @@
       "url": "https://www.chosun.com/economy/tech_it/2026/07/02/IEAMRX3I7VGSJF4ZP23GPJOHPY/"
     },
     {
+      "id": 1307,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "열파",
+        "냉방기기수요",
+        "중국가전",
+        "유럽시장",
+        "주가연동"
+      ],
+      "headline": "유럽 열파로 미디어 등 중국 가전사 냉방 수요 급증",
+      "summary": "유럽의 극단적 폭염 현상이 냉방기기(HVAC) 수요를 촉발하면서 미디어 등 중국 가전 제조사 주가가 상승세를 보이고 있다. 열파로 인한 에어컨·냉난방기 구매 수요 증가가 중국 가전업계의 성장 기회로 작용할 것으로 예상된다.",
+      "source": {
+        "name": "Google News - Midea Global",
+        "url": "https://simplywall.st/stocks/cn/consumer-durables/szse-000333/midea-group-shares/news/midea-stock-and-chinese-appliance-shares-tied-to-europes-hea/amp"
+      },
+      "publishedAt": "2026-07-02T05:58:08.000Z",
+      "url": "https://simplywall.st/stocks/cn/consumer-durables/szse-000333/midea-group-shares/news/midea-stock-and-chinese-appliance-shares-tied-to-europes-hea/amp"
+    },
+    {
       "id": 1259,
       "lens": "경쟁사",
       "grade": "주요",
@@ -577,35 +647,6 @@
       },
       "publishedAt": "2026-07-02T02:06:42.000Z",
       "url": "https://www.mk.co.kr/news/english/12088615"
-    },
-    {
-      "id": 1233,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 5,
-      "factors": {
-        "salesRelevance": 5,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "메모리반도체",
-        "HBM",
-        "낸드플래시",
-        "설비투자",
-        "AI칩"
-      ],
-      "headline": "SK하이닉스, 청주에 100조 투자…HBM·낸드 생산 거점 확대",
-      "summary": "SK하이닉스 곽노정 사장이 2일 청주에 총 100조원을 투자해 낸드플래시메모리 팹과 HBM용 첨단 패키징 생산기지를 구축하겠다고 발표했다. AI 서비스 확산에 따른 HBM, 서버 D램, 엔터프라이즈 SSD, 낸드 수요 증가에 대응하는 전략이다.",
-      "source": {
-        "name": "전자신문",
-        "url": "https://www.etnews.com/20260702000166"
-      },
-      "publishedAt": "2026-07-02T01:51:23.000Z",
-      "url": "https://www.etnews.com/20260702000166"
     },
     {
       "id": 1257,
@@ -1656,43 +1697,6 @@
       },
       "publishedAt": "2026-06-30T09:13:35.000Z",
       "url": "https://www.bloomberg.com/news/articles/2026-06-30/midea-is-said-to-consider-china-ipo-for-german-robot-maker-kuka"
-    },
-    {
-      "id": 1167,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "조리기기",
-        "HVAC",
-        "청소기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "TSMC",
-        "반도체설계",
-        "IoT칩",
-        "수직통합",
-        "R&D전략"
-      ],
-      "headline": "LG전자, TSMC 공정 기반 디자인 서비스 본격화",
-      "summary": "LG전자가 TSMC 공정을 활용한 반도체 디자인 서비스를 공식 시작했다. 이는 가전 제어용 칩 및 IoT 솔루션 자체 개발 역량을 강화하려는 전략적 움직임으로, 장기적으로 가전사의 부품 독립도 제고를 목표로 한다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://zdnet.co.kr/view/?no=20260630151008"
-      },
-      "publishedAt": "2026-06-30T08:30:09.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20260630151008"
     },
     {
       "id": 1169,
@@ -3007,42 +3011,6 @@
       "url": "https://www.marketsmojo.com/news/stock-recommendation/whirlpool-of-india-ltd-upgraded-to-sell-amid-mixed-financial-and-technical-signals-4068474"
     },
     {
-      "id": 1063,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4.2,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "조리기기",
-        "청소기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "Physical AI",
-        "AI 파트너십",
-        "로봇화",
-        "스마트 가전",
-        "차세대 기술"
-      ],
-      "headline": "LG전자-엔비디아, Physical AI 협력 강화",
-      "summary": "LG전자와 엔비디아가 Physical AI 분야 파트너십을 심화시킨다. 두 회사는 로봇·자동화·스마트 가전 등 실제 물리 환경에서 작동하는 AI 기술 개발에 공동 투자한다. 이는 차세대 가전 산업 경쟁력 확보를 위한 전략적 움직임.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://en.sedaily.com/finance/2026/06/26/lg-electronics-nvidia-deepen-physical-ai-partnership"
-      },
-      "publishedAt": "2026-06-26T09:06:04.000Z",
-      "url": "https://en.sedaily.com/finance/2026/06/26/lg-electronics-nvidia-deepen-physical-ai-partnership"
-    },
-    {
       "id": 1056,
       "lens": "정책",
       "grade": "주시",
@@ -4158,37 +4126,6 @@
       "url": "https://www.etnews.com/20260624000359"
     },
     {
-      "id": 989,
-      "lens": "기술",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "올레드TV",
-        "초박형",
-        "디스플레이기술",
-        "프리미엄시장",
-        "신제품출시"
-      ],
-      "headline": "LG전자, 0.9cm 초박형 올레드 TV 'LG 시그니처' 출시",
-      "summary": "LG전자가 연필 두께 수준(0.9cm)의 초박형 올레드 TV 'LG 시그니처 올레드 TV'를 출시했다. 프리미엄 디스플레이 기술 혁신으로 고급형 TV 시장 주도권 강화를 목표로 한다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.chosun.com/economy/tech_it/2026/06/24/FE3PZWOPVFCWRBTY4FVONJZQIM/"
-      },
-      "publishedAt": "2026-06-24T01:14:00.000Z",
-      "url": "https://www.chosun.com/economy/tech_it/2026/06/24/FE3PZWOPVFCWRBTY4FVONJZQIM/"
-    },
-    {
       "id": 986,
       "lens": "소비자",
       "grade": "주요",
@@ -4326,40 +4263,6 @@
       },
       "publishedAt": "2026-06-23T11:03:27.000Z",
       "url": "https://kidd.co.kr/news/246453"
-    },
-    {
-      "id": 977,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "Midea",
-        "LG전자"
-      ],
-      "tags": [
-        "CDU",
-        "엔비디아 인증",
-        "데이터센터 냉각",
-        "HVAC 기술",
-        "AI 인프라"
-      ],
-      "headline": "LG전자, 엔비디아 CDU 인증 과제로 사양 상향 추진",
-      "summary": "LG전자가 엔비디아 CDU(Cooling Distribution Unit) 인증 획득을 위해 냉각 사양을 2배 수준으로 상향하는 기술 개발에 착수했다. AI 데이터센터 냉각 솔루션 시장에서의 경쟁력 확보가 목표다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://v.daum.net/v/20260623160802110"
-      },
-      "publishedAt": "2026-06-23T07:08:02.000Z",
-      "url": "https://v.daum.net/v/20260623160802110"
     },
     {
       "id": 976,
@@ -4591,40 +4494,6 @@
       },
       "publishedAt": "2026-06-22T21:20:00.000Z",
       "url": "https://www.news1.kr/industry/sb-founded/6204341"
-    },
-    {
-      "id": 967,
-      "lens": "거시",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "HVAC",
-        "조리기기",
-        "청소기"
-      ],
-      "competitors": [],
-      "tags": [
-        "중국 생산량",
-        "제품별 변동성",
-        "거시경제 동향",
-        "냉방기기 부진"
-      ],
-      "headline": "중국 5월 가전 생산량 엇갈려…냉장고·세탁기 증가, 에어컨·TV 감소",
-      "summary": "중국의 5월 가전 생산량이 제품군별로 차별화된 흐름을 보였다. 냉장고와 세탁기 생산량은 증가한 반면, 에어컨과 TV는 감소세를 기록했다. 시장의 수요 편차가 가전 산업 전반에 영향을 미치는 상황이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.steeldaily.co.kr/news/articleViewAmp.html?idxno=200963"
-      },
-      "publishedAt": "2026-06-22T20:18:09.000Z",
-      "url": "https://www.steeldaily.co.kr/news/articleViewAmp.html?idxno=200963"
     },
     {
       "id": 974,
@@ -6489,43 +6358,6 @@
       "url": "https://news.samsung.com/kr/%EC%9D%B8%ED%84%B0%EB%B7%B0-%EB%AC%B4%ED%92%8D-%EC%97%90%EC%96%B4%EC%BB%A8-10%EB%85%84-%EA%B3%B5%EA%B0%84%EC%9D%98-%EC%9D%BC%EB%B6%80%EA%B0%80-%EB%90%9C-%EB%94%94%EC%9E%90%EC%9D%B8%EC%9C%BC"
     },
     {
-      "id": 827,
-      "lens": "거시",
-      "grade": "주요",
-      "impact": 3.8,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "조리기기",
-        "HVAC"
-      ],
-      "competitors": [
-        "삼성전자",
-        "LG전자"
-      ],
-      "tags": [
-        "반도체 가격",
-        "원가 상승",
-        "수익성 악화",
-        "2분기 실적",
-        "원자재"
-      ],
-      "headline": "반도체 가격 급등으로 가전사 2분기 수익성 악화",
-      "summary": "반도체 가격이 2배 상승하면서 삼성·LG 등 국내 주요 가전사의 2분기 수익성이 비상사태에 직면했다. 원자재 비용 상승이 가전 제조원가를 크게 압박하고 있다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://it.chosun.com/news/articleView.html?idxno=2023092164140"
-      },
-      "publishedAt": "2026-06-18T21:45:00.000Z",
-      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092164140"
-    },
-    {
       "id": 824,
       "lens": "기술",
       "grade": "주요",
@@ -7653,36 +7485,6 @@
       "url": "https://www.bloomberg.com/opinion/articles/2026-06-16/whirlpool-shows-how-tariffs-backfire-on-their-biggest-supporters"
     },
     {
-      "id": 753,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.6,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "미니LED TV",
-        "북미시장",
-        "시장점유율",
-        "프리미엄TV"
-      ],
-      "headline": "삼성전자, 1분기 북미 미니LED TV 시장 1위 탈환",
-      "summary": "삼성전자가 2026년 1분기 북미 미니LED TV 시장에서 1위 지위를 되찾았다. 경쟁사와의 시장점유율 경쟁에서 앞서 나가며 프리미엄 TV 세그먼트에서의 입지를 강화했다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.thelec.kr/news/articleView.html?idxno=58182"
-      },
-      "publishedAt": "2026-06-16T09:29:43.000Z",
-      "url": "https://www.thelec.kr/news/articleView.html?idxno=58182"
-    },
-    {
       "id": 761,
       "lens": "기술",
       "grade": "주요",
@@ -7781,38 +7583,6 @@
       },
       "publishedAt": "2026-06-16T08:32:17.000Z",
       "url": "https://m.ekn.kr/view.php?key=20260616024463761"
-    },
-    {
-      "id": 759,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자 전략",
-        "사업 다각화",
-        "가전산업 트렌드",
-        "미래 성장동력"
-      ],
-      "headline": "LG, TV·냉장고 넘어 새로운 사업 영역 추진",
-      "summary": "LG전자가 전통적 가전사업(TV, 냉장고) 중심에서 벗어나 향후 사업 전략을 다각화하려는 움직임을 보이고 있다. 글로벌 시장에서의 경쟁력 강화를 위해 신규 분야 진출을 검토 중인 것으로 보인다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://m.economictimes.com/industry/cons-products/electronics/lg-electronics-recurring-revenue-strategy-lg-robotics-business-ai-infrastructure-subscription-model-b2b-growth-humanoid-robots-nvidia-partnership/amp_articleshow/131736548.cms"
-      },
-      "publishedAt": "2026-06-16T08:27:00.000Z",
-      "url": "https://m.economictimes.com/industry/cons-products/electronics/lg-electronics-recurring-revenue-strategy-lg-robotics-business-ai-infrastructure-subscription-model-b2b-growth-humanoid-robots-nvidia-partnership/amp_articleshow/131736548.cms"
     },
     {
       "id": 754,
@@ -8133,35 +7903,6 @@
       },
       "publishedAt": "2026-06-15T22:25:00.000Z",
       "url": "https://www.kcrg.com/2026/06/15/west-branch-plastics-facility-closing-blames-whirlpool-production-cuts/"
-    },
-    {
-      "id": 738,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "팬덤경제",
-        "소비자트렌드",
-        "TV구매",
-        "브랜드로열티",
-        "가전산업"
-      ],
-      "headline": "가전도 팬덤 시대 진입, 원격지서 TV 구경 방문객 증가",
-      "summary": "소비자들이 특정 가전 브랜드를 찾아 왕복 12시간의 기차를 타고 방문하는 현상이 나타나고 있다. 가전 제품 구매 결정에 있어 브랜드 팬덤의 영향력이 커지는 추세를 보여주며, TV를 포함한 가전 산업 판매 전략의 변화가 필요한 시점을 시사한다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://v.daum.net/v/20260616060301917"
-      },
-      "publishedAt": "2026-06-15T21:03:01.000Z",
-      "url": "https://v.daum.net/v/20260616060301917"
     },
     {
       "id": 737,
@@ -8497,44 +8238,6 @@
       },
       "publishedAt": "2026-06-15T11:37:25.000Z",
       "url": "http://prweek.com/article/1961294/hotpoint-whirlpool-owner-beko-appoints-pr-agency"
-    },
-    {
-      "id": 734,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.8,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "HVAC",
-        "청소기",
-        "식기세척기"
-      ],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "전략회의",
-        "경영정책",
-        "하반기 계획",
-        "다각화 전략"
-      ],
-      "headline": "삼성전자, 하반기 사업 전략 회의 개최…가전·반도체·모바일 부문 방향성 모색",
-      "summary": "삼성전자가 글로벌 전략회의를 개최하여 반도체, 가전, 모바일 등 주요 사업부문의 하반기 경영 과제 및 해법을 논의 중이다. 회의는 상반기 실적 평가와 하반기 시장 전망에 기반한 사업 재편성에 초점을 맞추고 있다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.g-enews.com/article/Industry/2026/06/2026061513534278066ed0c62d49_1"
-      },
-      "publishedAt": "2026-06-15T11:05:14.000Z",
-      "url": "https://www.g-enews.com/article/Industry/2026/06/2026061513534278066ed0c62d49_1"
     },
     {
       "id": 723,
@@ -8893,37 +8596,6 @@
       "url": "https://www.moodyonthemarket.com/whirlpool-extends-debt-timeline-as-turnaround-effort-continues/"
     },
     {
-      "id": 704,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.3,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "마이크로RGB",
-        "디스플레이",
-        "마케팅",
-        "프리미엄전략",
-        "글로벌출시"
-      ],
-      "headline": "삼성전자, 글로벌 랜드마크서 마이크로 RGB TV 마케팅 추진",
-      "summary": "삼성전자가 세계 주요 도시의 랜드마크에서 마이크로 RGB TV 신기술 홍보를 시작했다. 글로벌 프리미엄 디스플레이 시장 공략의 일환으로, 브랜드 인지도 강화 전략을 펼치고 있다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=203401"
-      },
-      "publishedAt": "2026-06-14T11:27:28.000Z",
-      "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=203401"
-    },
-    {
       "id": 699,
       "lens": "정책",
       "grade": "주요",
@@ -9207,37 +8879,6 @@
       },
       "publishedAt": "2026-06-13T19:15:00.000Z",
       "url": "https://www.slashgear.com/2192087/common-problems-with-whirlpool-dishwashers/"
-    },
-    {
-      "id": 686,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "플랫폼 경쟁",
-        "TV OS",
-        "스트리밍",
-        "미국시장",
-        "운영체제"
-      ],
-      "headline": "LG전자, TV 플랫폼 사업 강화…OS 기반 경쟁 심화",
-      "summary": "글로벌 TV 시장이 하드웨어 중심에서 운영체제 기반 플랫폼 비즈니스로 재편 중. LG전자가 하드웨어 변동성을 극복하기 위해 TV 플랫폼에 사활을 걸고 있으며, 미국 시장에서 댕댕이 월드컵 등 콘텐츠 플랫폼 차별화 추진.",
-      "source": {
-        "name": "매일경제 산업",
-        "url": "https://www.mk.co.kr/news/business/12073477"
-      },
-      "publishedAt": "2026-06-13T14:02:12.000Z",
-      "url": "https://www.mk.co.kr/news/business/12073477"
     },
     {
       "id": 685,
@@ -10643,39 +10284,6 @@
       "url": "https://www.aastocks.com/en/mobile/news.aspx?newsid=NOW.1528559&newssource=AAFN"
     },
     {
-      "id": 609,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.6,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "M&A전략",
-        "비반도체사업",
-        "다각화",
-        "노사갈등",
-        "삼성전자전략"
-      ],
-      "headline": "삼성전자, 비반도체 부문 M&A 전략 강화 추진",
-      "summary": "삼성전자가 노사갈등 영향으로 국내 반도체 중심 경영에서 벗어나 로봇, 공조, 전장 등 비반도체 사업의 인수·합병을 과제로 부상시키고 있다. 가전 다각화 전략의 일환으로 신사업 영역 확대를 추진 중이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.investchosun.com/site/data/html_dir/2026/06/10/2026061080049.html"
-      },
-      "publishedAt": "2026-06-10T22:03:18.000Z",
-      "url": "https://www.investchosun.com/site/data/html_dir/2026/06/10/2026061080049.html"
-    },
-    {
       "id": 610,
       "lens": "경쟁사",
       "grade": "주시",
@@ -10873,37 +10481,6 @@
       },
       "publishedAt": "2026-06-10T07:09:16.000Z",
       "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=368931"
-    },
-    {
-      "id": 622,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "AI팩토리",
-        "로봇",
-        "제조혁신",
-        "디지털화",
-        "협력"
-      ],
-      "headline": "LG, NVIDIA와 로봇 AI 팩토리 구축 협력",
-      "summary": "LG전자가 NVIDIA와 협력하여 로봇 제조용 AI 팩토리 구축에 나섰다. 이는 제조업의 디지털화 및 AI 자동화 전략의 일환으로, LG의 스마트팩토리 경쟁력 강화를 의미한다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://manufacturingdigital.com/articles/nvidia-partners-with-lg-to-build-ai-factory-for-robotics"
-      },
-      "publishedAt": "2026-06-10T07:01:59.000Z",
-      "url": "https://manufacturingdigital.com/articles/nvidia-partners-with-lg-to-build-ai-factory-for-robotics"
     },
     {
       "id": 603,
@@ -11271,39 +10848,6 @@
       },
       "publishedAt": "2026-06-09T09:07:39.000Z",
       "url": "https://www.seoul.co.kr/news/economy/2026/06/10/20260610029002"
-    },
-    {
-      "id": 568,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.2,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 2,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "세탁기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자",
-        "대만시장",
-        "시장점유율",
-        "세탁기TV",
-        "브랜드전략"
-      ],
-      "headline": "LG, 25년 노력으로 대만 세탁기·TV 시장 1위 확보",
-      "summary": "LG전자가 대만 세탁기·TV 시장에서 1위를 차지했으며, 이는 25년에 걸친 현지 시장 공략 전략의 결과다. 대만은 동남아 주요 거점으로서 가전 제품 판매 및 브랜드 입지 강화의 중요 지역이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://dealsite.co.kr/articles/163286"
-      },
-      "publishedAt": "2026-06-09T08:47:40.000Z",
-      "url": "https://dealsite.co.kr/articles/163286"
     },
     {
       "id": 572,
@@ -11726,41 +11270,6 @@
       "url": "https://www.consumerreports.org/appliances/washing-machines/best-washing-machine-brands-of-the-year-a7992516939/"
     },
     {
-      "id": 531,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "HVAC",
-        "조리기기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "AI",
-        "전략적동맹",
-        "NVIDIA",
-        "기술협력"
-      ],
-      "headline": "LG·NVIDIA, 차세대 AI 동맹 강화...통합 역량 결집",
-      "summary": "LG전자와 NVIDIA가 '원 LG' 역량을 통합하는 차세대 AI 동맹을 강화하고 있다. 양사는 AI 기술 협력을 통해 가전·산업용 제품의 지능화를 가속화할 계획이다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.asiae.co.kr/en/article/2026060814144842337"
-      },
-      "publishedAt": "2026-06-08T05:14:48.000Z",
-      "url": "https://www.asiae.co.kr/en/article/2026060814144842337"
-    },
-    {
       "id": 529,
       "lens": "기술",
       "grade": "주시",
@@ -11790,37 +11299,6 @@
       },
       "publishedAt": "2026-06-08T04:58:09.000Z",
       "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=81892"
-    },
-    {
-      "id": 520,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "AI협력",
-        "모빌리티",
-        "피지컬AI",
-        "전략적파트너십",
-        "기술혁신"
-      ],
-      "headline": "LG-엔비디아, AI·모빌리티 협력 확대…차세대 산업 주도권 강화",
-      "summary": "LG와 엔비디아가 피지컬 AI, AI 인프라, 모빌리티 분야에서 중장기 전략적 협력을 확대하기로 합의했다. 구광모 LG 회장과 젠슨 황 엔비디아 CEO가 직접 참석한 최고경영진 회의를 통해 차세대 AI 산업의 파트너십을 강화하기 위한 합의가 도출됐으며, 이는 가전 제조사의 AI 기술 고도화 및 산업 생태계 구축 방향을 시사한다.",
-      "source": {
-        "name": "전자신문",
-        "url": "https://www.etnews.com/20260608000196"
-      },
-      "publishedAt": "2026-06-08T02:54:55.000Z",
-      "url": "https://www.etnews.com/20260608000196"
     },
     {
       "id": 606,
@@ -11943,37 +11421,6 @@
       },
       "publishedAt": "2026-06-07T19:48:31.000Z",
       "url": "https://www.aol.com/articles/whirlpool-announces-more-iowa-layoffs-210530357.html"
-    },
-    {
-      "id": 511,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자",
-        "엔비디아",
-        "AI",
-        "공급망",
-        "기술협력"
-      ],
-      "headline": "LG, 엔비디아 회담서 실질적 성과 확보",
-      "summary": "한국 경영진들이 엔비디아와의 미팅에서 구체적인 성과를 획득했다. LG전자 등 한국 대기업이 AI 칩 공급망 및 전략적 협력 논의를 통해 기술 경쟁력 강화 기회를 마련했다. 글로벌 반도체·AI 생태계 재편 속 당사의 전략적 위치 정립 움직임으로 평가된다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.chosun.com/english/industry-en/2026/06/08/YUN55GEYJFBN3OSKIOHUZEBBLQ/"
-      },
-      "publishedAt": "2026-06-07T16:35:25.000Z",
-      "url": "https://www.chosun.com/english/industry-en/2026/06/08/YUN55GEYJFBN3OSKIOHUZEBBLQ/"
     },
     {
       "id": 510,
@@ -12231,37 +11678,6 @@
       "url": "https://www.gurufocus.com/stock/WHRpA.PFD/analysis"
     },
     {
-      "id": 497,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.6,
-      "factors": {
-        "salesRelevance": 5,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자",
-        "LG전자"
-      ],
-      "tags": [
-        "OLED TV",
-        "시장점유율",
-        "프리미엄 디스플레이",
-        "삼성 LG 경쟁"
-      ],
-      "headline": "삼성, OLED TV 시장서 LG와 격차 6%p까지 단축",
-      "summary": "삼성전자가 OLED TV 시장에서 LG전자와의 매출 점유율 격차를 6%p까지 좁혔다. 삼성의 OLED TV 경쟁력 강화와 시장 내 위치 변화를 보여주는 지표로, 향후 고급 TV 시장 재편이 예상된다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202606071124190570312"
-      },
-      "publishedAt": "2026-06-07T04:07:23.000Z",
-      "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202606071124190570312"
-    },
-    {
       "id": 499,
       "lens": "기술",
       "grade": "주시",
@@ -12328,36 +11744,6 @@
       },
       "publishedAt": "2026-06-07T00:00:00.000Z",
       "url": "https://www.k-health.com/news/articleView.html?idxno=92863"
-    },
-    {
-      "id": 490,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "AI TV",
-        "프리미엄 전략",
-        "시장 점유율",
-        "삼성전자 경쟁력"
-      ],
-      "headline": "삼성전자, AI TV로 글로벌 TV시장 21년 연속 1위 도전",
-      "summary": "삼성전자가 AI 기능을 탑재한 신규 TV 제품군을 앞세워 글로벌 TV 시장에서 21년 연속 1위 달성을 목표로 하고 있다. AI TV 전략으로 프리미엄 시장 강화 및 소비자 차별화를 추진 중이며, 이는 2026년 상반기 TV 사업 경쟁력의 핵심 전략으로 평가된다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://elec4.co.kr/contents/article_detail?article_idx=37068"
-      },
-      "publishedAt": "2026-06-06T21:48:29.000Z",
-      "url": "https://elec4.co.kr/contents/article_detail?article_idx=37068"
     },
     {
       "id": 488,
@@ -12975,45 +12361,6 @@
       "url": "https://v.daum.net/v/20260605155515741"
     },
     {
-      "id": 484,
-      "lens": "정책",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "HVAC",
-        "청소기",
-        "식기세척기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "온디바이스AI",
-        "반도체투자",
-        "가전AI",
-        "한국기술정책",
-        "LG"
-      ],
-      "headline": "한국, 온디바이스 AI칩 개발에 5.2억달러 투자 확정",
-      "summary": "한국이 온디바이스 AI 칩 개발을 위해 5억 2천만 달러 규모의 예산을 최종 확정했다. 업계 회의론에도 불구하고 이는 가전 기기의 AI 기능 경쟁력 강화를 목표로 한다. 향후 가전 업체들의 AI 칩 자급화 및 제품 혁신이 기대된다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.digitimes.com/news/a20260604VL215/budget-on-device-ai-chips-development-government.html"
-      },
-      "publishedAt": "2026-06-05T03:34:59.000Z",
-      "url": "https://www.digitimes.com/news/a20260604VL215/budget-on-device-ai-chips-development-government.html"
-    },
-    {
       "id": 443,
       "lens": "거시",
       "grade": "참고",
@@ -13426,36 +12773,6 @@
       "url": "https://www.geneonline.com/lennox-cold-climate-heat-pump-receives-2025-good-design-award-for-sub-zero-performance/"
     },
     {
-      "id": 423,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.6,
-      "factors": {
-        "salesRelevance": 5,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "TV 점유율",
-        "글로벌 시장",
-        "삼성전자",
-        "1분기 실적"
-      ],
-      "headline": "삼성전자, 1분기 글로벌 TV 점유율 31.3%로 1위 달성",
-      "summary": "삼성전자가 2026년 1분기 글로벌 TV 시장에서 31.3%의 매출 점유율을 기록하며 세계 1위를 차지했다. 이는 당사의 주력 제품인 TV 부문의 강한 경쟁력을 입증하는 결과다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.thelec.kr/news/articleView.html?idxno=57560"
-      },
-      "publishedAt": "2026-06-04T02:50:05.000Z",
-      "url": "https://www.thelec.kr/news/articleView.html?idxno=57560"
-    },
-    {
       "id": 420,
       "lens": "경쟁사",
       "grade": "주요",
@@ -13763,36 +13080,6 @@
       },
       "publishedAt": "2026-06-03T05:51:00.000Z",
       "url": "https://www.donga.com/news/Economy/article/all/20260603/134041702/1"
-    },
-    {
-      "id": 402,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesReliability": 4,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 4,
-        "salesRelevance": 3
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "TV수요",
-        "소비심리",
-        "월드컵특수",
-        "가전소매",
-        "판매부진"
-      ],
-      "headline": "월드컵 특수 부재로 TV 판매 부진 심화",
-      "summary": "2026년 월드컵을 앞두고도 예상과 달리 가전양판점에서 TV 판매가 부진을 거듭하고 있다. 역대 월드컵 개최 시기마다 관찰되던 TV 수요 증가 현상이 올해는 나타나지 않으면서 가전 소매업계가 어려움을 겪고 있는 상황이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.etnews.com/20260602000327"
-      },
-      "publishedAt": "2026-06-03T04:24:00.000Z",
-      "url": "https://www.etnews.com/20260602000327"
     },
     {
       "id": 405,
@@ -14538,36 +13825,6 @@
       "url": "http://www.enewstoday.co.kr/news/articleViewAmp.html?idxno=2434666"
     },
     {
-      "id": 347,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.6,
-      "factors": {
-        "salesRelevance": 5,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "올레드TV",
-        "시장점유율",
-        "프리미엄디스플레이",
-        "경쟁력"
-      ],
-      "headline": "LG전자, 올레드TV 글로벌 점유율 51%로 14년 연속 1위",
-      "summary": "LG전자가 2026년 1분기 올레드TV 글로벌 시장에서 51%의 점유율을 기록, 14년 연속 1위를 차지했다. 이는 프리미엄 디스플레이 시장에서 LG의 기술 우위와 브랜드 영향력을 입증하는 성과이며, 향후 OLED 시장 확대에 따른 실적 견인이 예상된다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.sentv.co.kr/article/view/sentv202606010006"
-      },
-      "publishedAt": "2026-05-31T23:42:27.000Z",
-      "url": "https://www.sentv.co.kr/article/view/sentv202606010006"
-    },
-    {
       "id": 344,
       "lens": "거시",
       "grade": "주요",
@@ -14637,36 +13894,6 @@
       },
       "publishedAt": "2026-05-31T21:00:17.000Z",
       "url": "https://dealsite.co.kr/articles/162697"
-    },
-    {
-      "id": 338,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "TV 시장점유율",
-        "글로벌 경쟁",
-        "삼성 vs TCL",
-        "시장 변동"
-      ],
-      "headline": "삼성, TV 시장 1위 지위 위협…TCL 격차 2.7%P까지 축소",
-      "summary": "삼성전자의 글로벌 TV 시장 점유율 1위 지위가 중국 TCL의 추격으로 위협받고 있다. 삼성-TCL 간 점유율 격차가 4.1%P에서 2.7%P로 1.4%P 줄어들면서 양사 경쟁이 심화되는 중이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.donga.com/news/Economy/article/all/20260531/134024849/2"
-      },
-      "publishedAt": "2026-05-31T15:30:00.000Z",
-      "url": "https://www.donga.com/news/Economy/article/all/20260531/134024849/2"
     },
     {
       "id": 333,
@@ -16805,35 +16032,6 @@
       },
       "publishedAt": "2026-05-26T03:28:42.000Z",
       "url": "https://ca.investing.com/news/company-news/whirlpool-of-india-ltd-bom500238-q4-2026-earnings-call-highlights-strong-revenue-growth--4658292"
-    },
-    {
-      "id": 202,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 5,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "HBM",
-        "고부가가치반도체",
-        "발열관리",
-        "AI칩수요",
-        "SK하이닉스"
-      ],
-      "headline": "SK하이닉스, HBM 열저항 30% 감소 'iHBM' 기술 공개",
-      "summary": "SK하이닉스가 26일 HBM 패키지 내 일체형 냉각 소자(ICE)를 적용한 'iHBM' 기술을 공개했다. D22D PHY 영역에 열전도 실리콘 소재를 내재시켜 열저항을 30% 감소시키고 패키지 내부 열 배출 경로를 별도 구성했다. AI 칩 수요 증가에 따른 HBM 고성능화 경쟁에서 발열 관리 기술의 중요성이 부각되는 가운데 나온 혁신 기술이다.",
-      "source": {
-        "name": "전자신문",
-        "url": "https://www.etnews.com/20260526000139"
-      },
-      "publishedAt": "2026-05-26T01:40:21.000Z",
-      "url": "https://www.etnews.com/20260526000139"
     },
     {
       "id": 205,
@@ -18991,37 +18189,6 @@
       "url": "https://dealsite.co.kr/articles/162125"
     },
     {
-      "id": 108,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.8,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자",
-        "Q1실적",
-        "영상디스플레이",
-        "수요부진",
-        "실적공시"
-      ],
-      "headline": "LG전자, Q1 실적 호조에도 TV 수요 부진 신호",
-      "summary": "LG전자가 Q1 실적에서 이익 폭이 개선된 가운데 TV 부문 수요 둔화 조짐이 포착됐다. 공시 기반 실적 분석을 통해 가전사 내 화면사업부의 시장 변화를 추적할 수 있다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/lg-electronics-inc-stock-kr7066570003-q1-earnings-highlight-profit/69370278"
-      },
-      "publishedAt": "2026-05-19T04:03:51.000Z",
-      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/lg-electronics-inc-stock-kr7066570003-q1-earnings-highlight-profit/69370278"
-    },
-    {
       "id": 85,
       "lens": "기술",
       "grade": "주시",
@@ -19084,38 +18251,6 @@
       },
       "publishedAt": "2026-05-18T23:17:28.000Z",
       "url": "https://www.ddaily.co.kr/page/view/2026051908145551417"
-    },
-    {
-      "id": 81,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.9,
-      "factors": {
-        "salesReliability": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 3,
-        "salesRelevance": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "스마트TV",
-        "데이터수집",
-        "개인정보",
-        "소비자신뢰",
-        "규제리스크"
-      ],
-      "headline": "LG 스마트TV 데이터 수집 논란, 미국 합의 후에도 계속",
-      "summary": "LG전자가 미국과의 법적 합의에도 불구하고 스마트TV를 통한 개인정보 수집을 지속하고 있다는 보도. 소비자 신뢰도와 규제 리스크 증가로 글로벌 평판 악화 우려.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.channelnews.com.au/lgs-dodgy-smart-tv-confidential-data-harvesting-still-happening-despite-us-legal-settlement/"
-      },
-      "publishedAt": "2026-05-18T22:01:07.000Z",
-      "url": "https://www.channelnews.com.au/lgs-dodgy-smart-tv-confidential-data-harvesting-still-happening-despite-us-legal-settlement/"
     },
     {
       "id": 82,
