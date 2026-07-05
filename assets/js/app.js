@@ -505,6 +505,15 @@ function renderCard(n) {
   // 태그 = 경쟁사·제품·자유태그 합쳐 최대 4개
   const allTags = [...competitors, ...products, ...tags].slice(0, 4);
 
+  // 원문 대표 이미지(og:image). 없거나 로딩 실패 時 lens 색 플레이스홀더(렌즈 이니셜)로 폴백.
+  // 플레이스홀더는 뒤(z-index 0), img는 위(z-index 1) — onerror 時 img만 제거해 자연 폴백.
+  const phInitial = (n.lens || "\u00B7").trim().charAt(0) || "\u00B7";
+  const thumbHtml = `
+        <div class="news-card__thumb" data-lens="${escapeHtml(n.lens)}">
+          <div class="news-card__thumb-ph">${escapeHtml(phInitial)}</div>
+          ${n.image ? `<img src="${escapeHtml(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+        </div>`;
+
   return `
     <article class="news-card news-card--${gradeCls}">
       <div class="news-card__top">
@@ -515,10 +524,15 @@ function renderCard(n) {
           </span>
         </div>
       </div>
-      <h3 class="news-card__headline">
-        <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.headline)}</a>
-      </h3>
-      <p class="news-card__summary">${escapeHtml(n.summary)}</p>
+      <div class="news-card__body">
+        <div class="news-card__text">
+          <h3 class="news-card__headline">
+            <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.headline)}</a>
+          </h3>
+          <p class="news-card__summary">${escapeHtml(n.summary)}</p>
+        </div>
+        ${thumbHtml}
+      </div>
       <div class="news-card__bottom">
         <div class="news-card__tags">
           ${allTags
