@@ -776,24 +776,25 @@ body {
 
 .tag {
   font-size: 15px;
-  color: var(--text-secondary);
-  background: var(--bg-soft);
-  padding: 2px 8px;
+  color: var(--accent);
+  background: transparent;
+  padding: 2px 0;
   border-radius: var(--radius-sm);
   font-family: inherit;
   border: none;
   cursor: pointer;
-  transition: background 0.12s ease, color 0.12s ease;
+  transition: color 0.12s ease;
 }
 
 .tag:hover {
-  background: var(--border-default);
-  color: var(--text-primary);
+  background: transparent;
+  color: var(--accent-hover);
 }
 
 .tag.is-active {
-  background: var(--text-primary);
-  color: #fff;
+  background: transparent;
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 .news-card__actions {
