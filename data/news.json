@@ -1,37 +1,100 @@
 {
-  "updatedAt": "2026-07-05T11:23:32.735Z",
+  "updatedAt": "2026-07-05T13:06:27.140Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1387,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 2.6,
+      "id": 1388,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.6,
       "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 3,
-        "marketSize": 3,
-        "sourceReliability": 3
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
       },
       "products": [],
+      "competitors": [],
+      "tags": [
+        "환율",
+        "달러약세",
+        "수출",
+        "기업금융"
+      ],
+      "headline": "원화 약세에 수출기업 달러 보유 18% 급증",
+      "summary": "원화 약세 우려로 수출기업들이 달러 환전을 지연하며 달러예금이 4개월새 18% 급증했다. 수출 매출이 증가하고 있음에도 외환시장으로 회귀하지 않는 자금이 적체되고 있으며, 정부가 신속한 환전을 요청하는 상황이다.",
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/economy/12090800"
+      },
+      "publishedAt": "2026-07-05T12:40:38.000Z",
+      "url": "https://www.mk.co.kr/news/economy/12090800",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/05/news-p.v1.20260705.2e8398300ac149398dc065638501f4a2_R.jpg"
+    },
+    {
+      "id": 1389,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "냉방수요",
+        "폭염",
+        "유럽시장",
+        "친환경",
+        "이동형냉방"
+      ],
+      "headline": "유럽 폭염으로 냉방시장 확대, K가전 이동형·친환경 HVAC 공략",
+      "summary": "유럽의 폭염 심화로 냉방 수요가 급증하면서 냉방시장이 확대되고 있다. 한국 가전업체들이 이동형 냉방기와 친환경 HVAC 솔루션으로 유럽 시장 진출을 강화하고 있으며, 기후변화로 인한 냉방 장비 수요 증가 추세가 지속될 것으로 예상된다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.g-enews.com/article/Industry/2026/07/202607050936506803ea14faf6f5_1"
+      },
+      "publishedAt": "2026-07-05T12:07:14.000Z",
+      "url": "https://www.g-enews.com/article/Industry/2026/07/202607050936506803ea14faf6f5_1",
+      "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=2026070509500002473ea14faf6f51831011667.jpg"
+    },
+    {
+      "id": 1390,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
       "competitors": [
-        "LG전자"
+        "삼성전자"
       ],
       "tags": [
-        "시설개설",
-        "북미전략",
-        "브랜드강화",
-        "경험센터"
+        "무풍에어컨",
+        "프리미엄제품",
+        "글로벌판매",
+        "누적2000만대"
       ],
-      "headline": "LG전자, 보스턴에 '테크니큐리언 센터' 개설",
-      "summary": "LG전자가 미국 매사추세츠주 보스턴에 SKS 테크니큐리언 센터를 오픈했다. 해당 시설은 기술과 요리 경험을 결합한 혁신 공간으로 추정되며, 북미 시장 내 브랜드 프레젠스 강화 전략의 일환이다.",
+      "headline": "삼성전자 무풍 에어컨, 10년 만에 2000만대 판매 달성",
+      "summary": "삼성전자 무풍 에어컨이 출시 10년 만에 전 세계 누적 판매량 2000만대를 기록했다. 해당 제품군은 차별화된 기술력으로 프리미엄 에어컨 시장에서 강점을 유지하고 있으며, 이는 한국 가전사의 글로벌 경쟁력을 보여주는 사례다.",
       "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.mk.co.kr/en/business/12090489"
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hankyung.com/amp/2026070564291"
       },
-      "publishedAt": "2026-07-05T04:09:42.000Z",
-      "url": "https://www.mk.co.kr/en/business/12090489",
-      "image": "https://wimg.mk.co.kr/news/cms/202607/05/news-p.v1.20260705.4e0c62f7f0c34cb2a3aa52ee171db38e_P1.jpg"
+      "publishedAt": "2026-07-05T09:48:48.000Z",
+      "url": "https://www.hankyung.com/amp/2026070564291",
+      "image": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130"
     },
     {
       "id": 1382,
@@ -162,6 +225,34 @@
       "publishedAt": "2026-07-04T18:15:06.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/lg-electronics-adjusts-strategy-as-global-demand-shifts/69691008",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2404978_1200_800.webp"
+    },
+    {
+      "id": 1391,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 1,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "중국시장",
+        "수요둔화",
+        "시장분석"
+      ],
+      "headline": "중국 가전 수요 4~5월 약세…글로벌 시장 영향 전망",
+      "summary": "제프리스 애널리스트가 중국 가전 수요가 4월과 5월 초에 약화됐다고 지적했다. 중국은 글로벌 가전 시장의 주요 수요처로서 수요 변화가 업계 전반에 파급될 수 있다.",
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.investing.com/news/stock-market-news/jefferies-china-home-appliances-demand-weakens-in-april-and-early-may-93CH-4667467"
+      },
+      "publishedAt": "2026-07-04T14:24:21.000Z",
+      "url": "https://www.investing.com/news/stock-market-news/jefferies-china-home-appliances-demand-weakens-in-april-and-early-may-93CH-4667467",
+      "image": null
     },
     {
       "id": 1366,
