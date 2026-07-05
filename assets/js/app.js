@@ -54,7 +54,7 @@ const COMPANY_LOGOS = {
   "LG전자": {
     label: "LG전자",
     aliases: ["LG전자", "LG Electronics", "LG"],
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" role="img" aria-label="LG전자"><rect width="160" height="80" fill="white"/><circle cx="42" cy="40" r="25" fill="#A50034"/><circle cx="34" cy="32" r="3.8" fill="white"/><path d="M42 24v20h14" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M53 49a18 18 0 1 1 0-18" fill="none" stroke="white" stroke-width="5" stroke-linecap="round"/><text x="76" y="51" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#6B6F72">LG</text></svg>`,
+    src: "https://image.ajunews.com/content/image/2026/07/03/20260703175606555149.jpg",
   },
   "삼성전자": {
     label: "삼성전자",
@@ -610,11 +610,11 @@ function renderCard(n) {
   // 플레이스홀더는 뒤(z-index 0), img/logo는 위(z-index 1) — onerror 時 해당 이미지만 제거해 자연 폴백.
   const phInitial = (n.lens || "\u00B7").trim().charAt(0) || "\u00B7";
   const logo = !n.image ? findHeadlineCompanyLogo(n.headline) : null;
-  const logoSrc = logo ? logoDataUri(logo.svg) : "";
+  const logoSrc = logo ? (logo.src || logoDataUri(logo.svg)) : "";
   const thumbImageHtml = n.image
     ? `<img src="${escapeHtml(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
     : logo
-      ? `<img class="news-card__thumb-logo" src="${escapeHtml(logoSrc)}" alt="${escapeHtml(logo.label)} 로고" loading="lazy" onerror="this.remove()">`
+      ? `<img class="news-card__thumb-logo" src="${escapeHtml(logoSrc)}" alt="${escapeHtml(logo.label)} 로고" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
       : "";
   const thumbHtml = `
         <div class="news-card__thumb${logo ? " news-card__thumb--logo" : ""}" data-lens="${escapeHtml(n.lens)}">
