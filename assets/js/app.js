@@ -54,7 +54,7 @@ const COMPANY_LOGOS = {
   "LG전자": {
     label: "LG전자",
     aliases: ["LG전자", "LG Electronics", "LG"],
-    src: "https://image.ajunews.com/content/image/2026/07/03/20260703175606555149.jpg",
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 90" role="img" aria-label="LG전자"><rect width="220" height="90" fill="#ffffff"/><g transform="translate(46,45)"><circle r="36" fill="#A50034"/><circle r="24" fill="none" stroke="#ffffff" stroke-width="2.6"/><circle cx="-9" cy="-10" r="3.6" fill="#ffffff"/><path d="M0,-10 V9 H16" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g><text x="96" y="60" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" fill="#6b6b6b" letter-spacing="1">LG</text></svg>`,
   },
   "삼성전자": {
     label: "삼성전자",
