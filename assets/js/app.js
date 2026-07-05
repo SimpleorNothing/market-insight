@@ -54,10 +54,11 @@ const COMPANY_LOGOS = {
   "LG전자": {
     label: "LG전자",
     aliases: ["LG전자", "LG Electronics", "LG"],
-    // 이미지 없는 기사에 번갈아 노출: (1) 심볼 단독, (2) 심볼+워드마크
+    // 이미지 없는 기사에 사용자가 업로드한 이미지를 번갈아 노출
     variants: [
-      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="LG"><rect width="120" height="120" fill="#ffffff"/><circle cx="60" cy="60" r="54" fill="#A50034"/><circle cx="60" cy="60" r="37" fill="none" stroke="#ffffff" stroke-width="4"/><circle cx="45" cy="45" r="6" fill="#ffffff"/><path d="M60 44 V80 H90" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
-      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 90" role="img" aria-label="LG전자"><rect width="220" height="90" fill="#ffffff"/><g transform="translate(46,45)"><circle r="36" fill="#A50034"/><circle r="24" fill="none" stroke="#ffffff" stroke-width="2.6"/><circle cx="-9" cy="-10" r="3.6" fill="#ffffff"/><path d="M0,-10 V9 H16" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g><text x="96" y="60" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" fill="#6b6b6b" letter-spacing="1">LG</text></svg>`,
+      "assets/img/lg-symbol.png",
+      "assets/img/lg-sign-1.png",
+      "assets/img/lg-sign-2.png",
     ],
   },
   "삼성전자": {
@@ -68,10 +69,10 @@ const COMPANY_LOGOS = {
   "월풀": {
     label: "월풀",
     aliases: ["월풀", "Whirlpool"],
-    // 이미지 없는 기사에 번갈아 노출: (1) 워드마크, (2) 메탈릭 타원 뱃지
+    // 이미지 없는 기사에 사용자가 업로드한 이미지를 번갈아 노출
     variants: [
-      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-label="Whirlpool"><rect width="220" height="80" fill="#ffffff"/><text x="108" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#1d1d1b">Whirlpool</text><ellipse cx="150" cy="45" rx="12" ry="30" fill="none" stroke="#F6A800" stroke-width="4" transform="rotate(58 150 45)"/></svg>`,
-      `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="Whirlpool"><rect width="200" height="120" fill="#ffffff"/><defs><linearGradient id="wpm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfbfb"/><stop offset="0.45" stop-color="#d3d6da"/><stop offset="0.55" stop-color="#b9bcc1"/><stop offset="1" stop-color="#7f8288"/></linearGradient></defs><ellipse cx="100" cy="60" rx="92" ry="46" fill="url(#wpm)" stroke="#6d7075" stroke-width="2"/><ellipse cx="100" cy="60" rx="82" ry="37" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/><text x="100" y="69" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#222222">Whirlpool</text><ellipse cx="132" cy="58" rx="26" ry="11" fill="none" stroke="#F2B300" stroke-width="3.2" transform="rotate(-12 132 58)"/></svg>`,
+      "assets/img/whirlpool-logo.png",
+      "assets/img/whirlpool-badge.png",
     ],
   },
   "Electrolux": {
@@ -637,13 +638,16 @@ function renderCard(n) {
   const phInitial = (n.lens || "\u00B7").trim().charAt(0) || "\u00B7";
   const logo = !n.image ? findHeadlineCompanyLogo(n.headline) : null;
   const logoSrc = logo ? resolveLogoSrc(logo, n.id) : "";
+  // 벡터 로고(SVG data URI)는 여백 있는 contain 스타일, 실제 이미지(사진·로고 파일)는
+  // 썸네일을 꽉 채우는 cover 스타일로 노출한다.
+  const logoIsVector = logoSrc.startsWith("data:image/svg");
   const thumbImageHtml = n.image
     ? `<img src="${escapeHtml(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
     : logo
-      ? `<img class="news-card__thumb-logo" src="${escapeHtml(logoSrc)}" alt="${escapeHtml(logo.label)} 로고" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
+      ? `<img${logoIsVector ? ` class="news-card__thumb-logo"` : ""} src="${escapeHtml(logoSrc)}" alt="${escapeHtml(logo.label)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
       : "";
   const thumbHtml = `
-        <div class="news-card__thumb${logo ? " news-card__thumb--logo" : ""}" data-lens="${escapeHtml(n.lens)}">
+        <div class="news-card__thumb${logo && logoIsVector ? " news-card__thumb--logo" : ""}" data-lens="${escapeHtml(n.lens)}">
           <div class="news-card__thumb-ph">${escapeHtml(phInitial)}</div>
           ${thumbImageHtml}
         </div>`;
