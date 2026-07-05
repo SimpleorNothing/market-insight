@@ -262,6 +262,55 @@ async function mapWithConcurrency(items, concurrency, fn) {
   return results;
 }
 
+// ===== og:image 수집 =====
+// 실기사 URL에서 대표 이미지(og:image/twitter:image)를 추출. 신규 분류분에만 사용.
+// LLM 호출 아님 — HTML fetch + 정규식. 실패/부재 時 null(클라이언트가 색 플레이스홀더로 폴백).
+async function fetchOgImage(url) {
+  if (!url || !/^https?:\/\//i.test(url)) return null;
+  try {
+    const res = await fetchWithTimeout(
+      url,
+      { headers: { "User-Agent": BROWSER_UA }, redirect: "follow" },
+      8000
+    );
+    if (!res.ok) return null;
+    if (!(res.headers.get("content-type") || "").includes("text/html")) return null;
+    const html = (await res.text()).slice(0, 120000);
+    const pick = (re) => {
+      const m = html.match(re);
+      return m ? m[1].trim() : "";
+    };
+    let img =
+      pick(/<meta[^>]+property=["']og:image(?::secure_url|:url)?["'][^>]+content=["']([^"']+)["']/i) ||
+      pick(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image(?::secure_url|:url)?["']/i) ||
+      pick(/<meta[^>]+name=["']twitter:image(?::src)?["'][^>]+content=["']([^"']+)["']/i) ||
+      pick(/<meta[^>]+content=["']([^"']+)["'][^>]+name=["']twitter:image(?::src)?["']/i);
+    if (!img) return null;
+    try {
+      img = new URL(img.replace(/&amp;/g, "&"), url).href;
+    } catch {
+      return null;
+    }
+    return /^https:\/\//i.test(img) ? img : null; // 브라우저 mixed-content 방지 — https만
+  } catch {
+    return null;
+  }
+}
+// 분류된 신규 항목들에 image 필드를 채운다(동시성 제한). 항상 image 키를 남겨 스키마 일관.
+async function enrichImages(items) {
+  if (!items.length) return items;
+  const imgs = await mapWithConcurrency(items, 6, async (it) => {
+    const src = it.url || it.source?.url || "";
+    return await fetchOgImage(src);
+  });
+  items.forEach((it, i) => {
+    it.image = imgs[i] || null;
+  });
+  const hit = imgs.filter(Boolean).length;
+  log(`og:image 수집: ${hit}/${items.length}건 확보`);
+  return items;
+}
+
 // ===== Load existing =====
 async function loadExisting() {
   try {
@@ -744,6 +793,8 @@ async function main() {
     : [];
   if (newOnes.length === 0) log("신규 분류 대상 없음");
   else log(`AI 분류 완료: ${classified.length}건 저장 대상`);
+
+  await enrichImages(classified); // 신규 분류분에 og:image 부착(토큰 비용 0)
 
   // 보존 기간 정리 → 같은 사건 기사 묶음 → 최신순 정렬
   const pruned = prune([...classified, ...existing.items]);
