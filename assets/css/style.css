@@ -689,6 +689,67 @@ body {
   flex: 1;
 }
 
+/* ===== 원문 이미지 썸네일 (og:image, 없으면 lens 색 플레이스홀더) ===== */
+.news-card__body {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.news-card__text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card__thumb {
+  position: relative;
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  margin-top: 2px;
+  overflow: hidden;
+  border: 1px solid var(--border-default);
+  background: var(--bg-soft);
+  border-radius: var(--radius-sm);
+}
+
+.news-card__thumb img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.news-card__thumb-ph {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text-tertiary);
+}
+
+.news-card__thumb[data-lens="소비자"] { background: var(--lens-consumer-bg); }
+.news-card__thumb[data-lens="소비자"] .news-card__thumb-ph { color: var(--lens-consumer-text); }
+.news-card__thumb[data-lens="기술"] { background: var(--lens-tech-bg); }
+.news-card__thumb[data-lens="기술"] .news-card__thumb-ph { color: var(--lens-tech-text); }
+.news-card__thumb[data-lens="경쟁사"] { background: var(--lens-comp-bg); }
+.news-card__thumb[data-lens="경쟁사"] .news-card__thumb-ph { color: var(--lens-comp-text); }
+.news-card__thumb[data-lens="정책"] { background: var(--lens-policy-bg); }
+.news-card__thumb[data-lens="정책"] .news-card__thumb-ph { color: var(--lens-policy-text); }
+.news-card__thumb[data-lens="거시"] { background: var(--lens-macro-bg); }
+.news-card__thumb[data-lens="거시"] .news-card__thumb-ph { color: var(--lens-macro-text); }
+
 .news-card__bottom {
   display: flex;
   justify-content: space-between;
