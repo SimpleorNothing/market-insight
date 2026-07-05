@@ -50,6 +50,107 @@ let NEWS_DATA = [];
 let NEWS_UPDATED_AT = null;
 let CONFIG = null;
 
+const COMPANY_LOGOS = {
+  "LG전자": {
+    label: "LG전자",
+    aliases: ["LG전자", "LG Electronics", "LG"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" role="img" aria-label="LG전자"><rect width="160" height="80" fill="white"/><circle cx="42" cy="40" r="25" fill="#A50034"/><circle cx="34" cy="32" r="3.8" fill="white"/><path d="M42 24v20h14" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M53 49a18 18 0 1 1 0-18" fill="none" stroke="white" stroke-width="5" stroke-linecap="round"/><text x="76" y="51" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#6B6F72">LG</text></svg>`,
+  },
+  "삼성전자": {
+    label: "삼성전자",
+    aliases: ["삼성전자", "Samsung Electronics", "Samsung", "삼성"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 80" role="img" aria-label="삼성전자"><rect width="180" height="80" fill="white"/><text x="90" y="49" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" fill="#1428A0" letter-spacing="1">SAMSUNG</text></svg>`,
+  },
+  "월풀": {
+    label: "월풀",
+    aliases: ["월풀", "Whirlpool"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 80" role="img" aria-label="월풀"><rect width="190" height="80" fill="white"/><text x="95" y="47" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#4A4A4A">Whirlpool</text><ellipse cx="95" cy="35" rx="72" ry="18" fill="none" stroke="#F2B300" stroke-width="4" transform="rotate(-8 95 35)"/></svg>`,
+  },
+  "Electrolux": {
+    label: "Electrolux",
+    aliases: ["Electrolux", "일렉트로룩스"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 80" role="img" aria-label="Electrolux"><rect width="190" height="80" fill="white"/><circle cx="45" cy="40" r="18" fill="none" stroke="#011E41" stroke-width="5"/><path d="M45 22l12 36H33z" fill="#011E41"/><text x="75" y="48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#011E41">Electrolux</text></svg>`,
+  },
+  "BSH": {
+    label: "BSH",
+    aliases: ["BSH", "Bosch", "Siemens", "Gaggenau", "Neff", "Thermador"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" role="img" aria-label="BSH"><rect width="160" height="80" fill="white"/><text x="80" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#CF000F">BSH</text></svg>`,
+  },
+  "Midea": {
+    label: "Midea",
+    aliases: ["Midea", "미디어", "KUKA", "Comfee", "COLMO"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 80" role="img" aria-label="Midea"><rect width="170" height="80" fill="white"/><circle cx="38" cy="40" r="18" fill="#009FE3"/><text x="68" y="49" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#009FE3">Midea</text></svg>`,
+  },
+  "Gree": {
+    label: "Gree",
+    aliases: ["Gree", "TOSOT", "Kinghome"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" role="img" aria-label="Gree"><rect width="160" height="80" fill="white"/><text x="80" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#0072BC">GREE</text></svg>`,
+  },
+  "Carrier": {
+    label: "Carrier",
+    aliases: ["Carrier"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 80" role="img" aria-label="Carrier"><rect width="180" height="80" fill="white"/><ellipse cx="90" cy="40" rx="66" ry="24" fill="#003B73"/><text x="90" y="48" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="white">Carrier</text></svg>`,
+  },
+  "Trane": {
+    label: "Trane",
+    aliases: ["Trane"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" role="img" aria-label="Trane"><rect width="160" height="80" fill="white"/><text x="80" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#D71920">TRANE</text></svg>`,
+  },
+  "JCI": {
+    label: "JCI",
+    aliases: ["JCI", "Johnson Controls"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 80" role="img" aria-label="JCI"><rect width="170" height="80" fill="white"/><text x="85" y="49" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#00539B">Johnson Controls</text></svg>`,
+  },
+  "Daikin": {
+    label: "Daikin",
+    aliases: ["Daikin", "다이킨"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 80" role="img" aria-label="Daikin"><rect width="170" height="80" fill="white"/><path d="M20 18h130L20 62z" fill="#00A0E9" opacity=".18"/><text x="85" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" fill="#0072CE">DAIKIN</text></svg>`,
+  },
+  "Lennox": {
+    label: "Lennox",
+    aliases: ["Lennox", "Ducane"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 80" role="img" aria-label="Lennox"><rect width="170" height="80" fill="white"/><text x="85" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" fill="#D71920">LENNOX</text></svg>`,
+  },
+  "Haier": {
+    label: "Haier",
+    aliases: ["Haier", "GE Appliances", "Fisher & Paykel", "Candy", "Casarte"],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 80" role="img" aria-label="Haier"><rect width="160" height="80" fill="white"/><text x="80" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#005BAC">Haier</text></svg>`,
+  },
+};
+
+const COMPANY_LOGO_ENTRIES = Object.entries(COMPANY_LOGOS);
+
+function logoDataUri(svg) {
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+}
+
+function escapeRegExp(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function matchesCompanyAlias(text, alias) {
+  const value = String(alias || "").trim();
+  if (!value) return false;
+  const lower = text.toLowerCase();
+  const needle = value.toLowerCase();
+  if (/^[a-z0-9 .&-]+$/i.test(value)) {
+    return new RegExp(`(^|[^a-z0-9])${escapeRegExp(needle)}([^a-z0-9]|$)`, "i").test(text);
+  }
+  return lower.includes(needle);
+}
+
+function findHeadlineCompanyLogo(headline) {
+  const text = String(headline || "");
+  if (!text) return null;
+  for (const [company, info] of COMPANY_LOGO_ENTRIES) {
+    const aliases = [company, ...(info.aliases || [])];
+    if (aliases.some((alias) => matchesCompanyAlias(text, alias))) {
+      return { company, ...info };
+    }
+  }
+  return null;
+}
+
 const state = {
   lens: "전체",
   lensGroup: null, // 상단 KPI 카드 (null=전체 / "소비자" / "경쟁사" / "기타")
@@ -505,13 +606,20 @@ function renderCard(n) {
   // 태그 = 경쟁사·제품·자유태그 합쳐 최대 4개
   const allTags = [...competitors, ...products, ...tags].slice(0, 4);
 
-  // 원문 대표 이미지(og:image). 없거나 로딩 실패 時 lens 색 플레이스홀더(렌즈 이니셜)로 폴백.
-  // 플레이스홀더는 뒤(z-index 0), img는 위(z-index 1) — onerror 時 img만 제거해 자연 폴백.
+  // 원문 대표 이미지가 최우선. 없으면 제목에 언급된 기업 로고, 그것도 없으면 lens 색 플레이스홀더.
+  // 플레이스홀더는 뒤(z-index 0), img/logo는 위(z-index 1) — onerror 時 해당 이미지만 제거해 자연 폴백.
   const phInitial = (n.lens || "\u00B7").trim().charAt(0) || "\u00B7";
+  const logo = !n.image ? findHeadlineCompanyLogo(n.headline) : null;
+  const logoSrc = logo ? logoDataUri(logo.svg) : "";
+  const thumbImageHtml = n.image
+    ? `<img src="${escapeHtml(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
+    : logo
+      ? `<img class="news-card__thumb-logo" src="${escapeHtml(logoSrc)}" alt="${escapeHtml(logo.label)} 로고" loading="lazy" onerror="this.remove()">`
+      : "";
   const thumbHtml = `
-        <div class="news-card__thumb" data-lens="${escapeHtml(n.lens)}">
+        <div class="news-card__thumb${logo ? " news-card__thumb--logo" : ""}" data-lens="${escapeHtml(n.lens)}">
           <div class="news-card__thumb-ph">${escapeHtml(phInitial)}</div>
-          ${n.image ? `<img src="${escapeHtml(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+          ${thumbImageHtml}
         </div>`;
 
   return `
@@ -1267,3 +1375,4 @@ async function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+

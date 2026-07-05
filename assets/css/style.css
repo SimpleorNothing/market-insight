@@ -724,6 +724,15 @@ body {
   object-fit: cover;
   display: block;
 }
+.news-card__thumb--logo {
+  background: var(--bg-surface);
+}
+
+.news-card__thumb img.news-card__thumb-logo {
+  object-fit: contain;
+  padding: 8px;
+  background: var(--bg-surface);
+}
 
 .news-card__thumb-ph {
   position: absolute;
