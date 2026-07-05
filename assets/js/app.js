@@ -97,6 +97,57 @@ function escapeHtml(s) {
     .replace(/'/g, "&#39;");
 }
 
+// 원문 이미지가 없을 때 제목에서 기업을 탐지해 브랜드 로고형 썸네일로 폴백.
+// - 한글/긴 영문 명칭은 부분 일치, LG·BSH·JCI 같은 짧은 영문 약어는 단어 경계로만 일치(오탐 방지).
+const COMPANY_LOGOS = [
+  { label: "LG", color: "#A50034", aliases: ["LG전자", "엘지전자", "LG"] },
+  { label: "SAMSUNG", color: "#1428A0", aliases: ["삼성전자", "삼성", "Samsung"] },
+  { label: "Whirlpool", color: "#003468", aliases: ["월풀", "Whirlpool"] },
+  { label: "Electrolux", color: "#011E41", aliases: ["일렉트로룩스", "Electrolux"] },
+  { label: "BSH", color: "#EA0016", aliases: ["보쉬", "지멘스", "Bosch", "BSH"] },
+  { label: "Midea", color: "#1E6FC4", aliases: ["메이디", "미데아", "Midea"] },
+  { label: "GREE", color: "#E60012", aliases: ["그리", "Gree"] },
+  { label: "Carrier", color: "#00539B", aliases: ["캐리어", "Carrier"] },
+  { label: "TRANE", color: "#E31837", aliases: ["트레인", "Trane"] },
+  { label: "JCI", color: "#002B49", aliases: ["존슨콘트롤즈", "존슨컨트롤스", "Johnson Controls", "JCI"] },
+  { label: "DAIKIN", color: "#0097E0", aliases: ["다이킨", "Daikin"] },
+  { label: "LENNOX", color: "#C8102E", aliases: ["레녹스", "Lennox"] },
+  { label: "Haier", color: "#0071CE", aliases: ["하이얼", "Haier"] },
+];
+
+function escapeRegExp(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// 짧은 영문 약어(≤4자, 전부 ASCII 문자)는 단어 경계 매칭, 그 외는 부분 문자열 매칭.
+function aliasMatches(alias, title) {
+  if (/^[A-Za-z]{1,4}$/.test(alias)) {
+    return new RegExp(`(^|[^A-Za-z])${escapeRegExp(alias)}([^A-Za-z]|$)`, "i").test(title);
+  }
+  return title.toLowerCase().includes(alias.toLowerCase());
+}
+
+function detectCompanyLogo(title) {
+  const t = String(title || "");
+  for (const co of COMPANY_LOGOS) {
+    if (co.aliases.some((a) => aliasMatches(a, t))) return co;
+  }
+  return null;
+}
+
+function companyLogoSvg(company) {
+  // 정사각 썸네일(72px)에 맞춘 브랜드 컬러 배경 + 흰색 워드마크. textLength로 길이 자동 맞춤.
+  const label = escapeXml(company.label);
+  return (
+    `<svg class="news-card__thumb-logo" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${label}">` +
+    `<rect width="100" height="100" fill="${company.color}"/>` +
+    `<text x="50" y="52" text-anchor="middle" dominant-baseline="central" ` +
+    `fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="26" ` +
+    `textLength="80" lengthAdjust="spacingAndGlyphs">${label}</text>` +
+    `</svg>`
+  );
+}
+
 function escapeXml(s) {
   return escapeHtml(s);
 }
@@ -508,9 +559,11 @@ function renderCard(n) {
   // 원문 대표 이미지(og:image). 없거나 로딩 실패 時 lens 색 플레이스홀더(렌즈 이니셜)로 폴백.
   // 플레이스홀더는 뒤(z-index 0), img는 위(z-index 1) — onerror 時 img만 제거해 자연 폴백.
   const phInitial = (n.lens || "\u00B7").trim().charAt(0) || "\u00B7";
+  const logo = n.image ? null : detectCompanyLogo(n.headline);
   const thumbHtml = `
         <div class="news-card__thumb" data-lens="${escapeHtml(n.lens)}">
           <div class="news-card__thumb-ph">${escapeHtml(phInitial)}</div>
+          ${logo ? companyLogoSvg(logo) : ""}
           ${n.image ? `<img src="${escapeHtml(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
         </div>`;
 
