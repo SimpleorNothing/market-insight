@@ -597,6 +597,14 @@ ${COMPETITOR_LIST}
 7. tags: 자유 태그 (배열, 2~5개 권장, 해시 기호 없이)
    - 핵심 키워드, 제품·경쟁사 외 부가 정보
 
+8. summaryPoints: summary 를 1~3개의 짧은 포인트로 분해한 배열
+   각 원소는 {"type": "content"|"opportunity"|"threat", "text": "..."}
+   - "content": 사실 요약 포인트 (기본값, 대부분 이 타입)
+   - "opportunity": 당사(삼성 DA)에 기회로 해석되는 포인트일 때만
+   - "threat": 당사(삼성 DA)에 위협으로 해석되는 포인트일 때만
+   - 기회·위협이 뚜렷하지 않으면 억지로 부여하지 말고 전부 "content"로 둘 것
+   - text 는 summary 와 같은 사실 기반, 20자 内外 간결체, 기호·번호 없이 본문만
+
 【출력 스키마】
 {
   "lens": "...",
@@ -610,7 +618,8 @@ ${COMPETITOR_LIST}
   },
   "headline": "...",
   "summary": "...",
-  "tags": ["..."]
+  "tags": ["..."],
+  "summaryPoints": [{"type": "content|opportunity|threat", "text": "..."}]
 }
 
 JSON 외 어떤 텍스트도 출력 금지.`;
@@ -630,6 +639,7 @@ async function classifyOne(item, retry = false) {
       headline: item.headline.slice(0, 30),
       summary: `DRY_RUN 더미 요약: ${item.headline}`,
       tags: ["test"],
+      summaryPoints: [{ type: "content", text: `DRY_RUN 포인트: ${item.headline.slice(0, 20)}` }],
     };
   }
 
@@ -707,6 +717,17 @@ ${item.region}`;
   );
   parsed.tags = (parsed.tags || []).slice(0, 5);
 
+  const POINT_TYPES = ["content", "opportunity", "threat"];
+  parsed.summaryPoints = Array.isArray(parsed.summaryPoints)
+    ? parsed.summaryPoints
+        .filter((p) => p && typeof p.text === "string" && p.text.trim())
+        .slice(0, 4)
+        .map((p) => ({
+          type: POINT_TYPES.includes(p.type) ? p.type : "content",
+          text: p.text.trim().slice(0, 120),
+        }))
+    : [];
+
   // Clamp factors
   for (const k of [
     "salesRelevance",
@@ -752,6 +773,7 @@ async function classifyAll(items, startId) {
           tags: cls.tags,
           headline: cls.headline,
           summary: cls.summary,
+          summaryPoints: cls.summaryPoints,
           source: {
             name: item.source,
             url: item.link,
@@ -953,5 +975,3 @@ if (import.meta.url === pathToFileURL(process.argv[1] || "").href) {
     process.exit(1);
   });
 }
-
-

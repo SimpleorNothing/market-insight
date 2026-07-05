@@ -622,6 +622,20 @@ function renderGroup(group) {
   `;
 }
 
+// 시장 동향 카드 본문 — 점(내용)·화살표(기회=파랑/위협=빨강)로만 구분, 텍스트 라벨 없음.
+// 데이터 파이프라인에 summaryPoints 가 없는 과거 기사는 기존 문단 요약으로 폴백.
+function renderSummaryPoints(n) {
+  if (Array.isArray(n.summaryPoints) && n.summaryPoints.length) {
+    return `<ul class="news-card__points">${n.summaryPoints
+      .map(
+        (p) =>
+          `<li class="news-card__point news-card__point--${escapeHtml(p.type)}">${escapeHtml(p.text)}</li>`
+      )
+      .join("")}</ul>`;
+  }
+  return `<p class="news-card__summary">${escapeHtml(n.summary)}</p>`;
+}
+
 function renderCard(n) {
   const gradeCls = GRADE_CLASS[n.grade] || "ref";
   const sourceName = n.source?.name || "Unknown";
@@ -635,7 +649,7 @@ function renderCard(n) {
 
   // 원문 대표 이미지가 최우선. 없으면 제목에 언급된 기업 로고, 그것도 없으면 lens 색 플레이스홀더.
   // 플레이스홀더는 뒤(z-index 0), img/logo는 위(z-index 1) — onerror 時 해당 이미지만 제거해 자연 폴백.
-  const phInitial = (n.lens || "\u00B7").trim().charAt(0) || "\u00B7";
+  const phInitial = (n.lens || "·").trim().charAt(0) || "·";
   const logo = !n.image ? findHeadlineCompanyLogo(n.headline) : null;
   const logoSrc = logo ? resolveLogoSrc(logo, n.id) : "";
   // 벡터 로고(SVG data URI)는 여백 있는 contain 스타일, 실제 이미지(사진·로고 파일)는
@@ -667,7 +681,7 @@ function renderCard(n) {
           <h3 class="news-card__headline">
             <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.headline)}</a>
           </h3>
-          <p class="news-card__summary">${escapeHtml(n.summary)}</p>
+          ${renderSummaryPoints(n)}
         </div>
         ${thumbHtml}
       </div>
@@ -1405,4 +1419,3 @@ async function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
-
