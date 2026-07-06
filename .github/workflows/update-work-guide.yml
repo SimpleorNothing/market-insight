@@ -1,6 +1,3 @@
-# ⚠ 이 파일을 `.github/workflows/update-work-guide.yml` 로 이동해야 활성화됩니다.
-# (MCP 토큰에 workflows scope가 없어 자동 배치 불가 — GitHub 웹에서 파일 이동 또는 Claude Code로 이동)
-#
 # 동작: main으로 PR이 머지될 때마다 scripts/update-work-guide.mjs 가
 # docs/WORK_GUIDE.md §7 이력 표에 해당 PR 한 줄을 자동 추가하고 커밋합니다.
 
