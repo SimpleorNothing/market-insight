@@ -1,7 +1,56 @@
 {
-  "updatedAt": "2026-07-06T17:36:19.469Z",
+  "updatedAt": "2026-07-06T19:41:15.047Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1450,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "생산이전",
+        "멕시코",
+        "공급망재편",
+        "북미수출",
+        "제조거점"
+      ],
+      "headline": "월풀, 멕시코 아포다카 공장 폐쇄·생산 이전",
+      "summary": "월풀이 멕시코 아포다카 생산 거점을 폐쇄하고 다른 지역으로 생산을 이전한다. 멕시코 가전 생산의 구조 변화가 USMCA 원산지 규정과 북미 생산 재편 압력의 맥락에서 진행되고 있다. 한국 가전사의 멕시코·북미향 산업 경쟁지도 변동을 시사한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 멕시코 주요 생산기지 폐쇄 및 생산이전 단행"
+        },
+        {
+          "type": "threat",
+          "text": "북미 가전산업 생산 구조 변화로 당사 경쟁 동향 변수 증가"
+        },
+        {
+          "type": "opportunity",
+          "text": "멕시코 생산 공동화 시 당사 경쟁력 상대적 강화 가능"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://mexicobusiness.news/tech/news/whirlpool-close-apodaca-plant-mexico-production-shifts"
+      },
+      "publishedAt": "2026-07-06T18:30:00.000Z",
+      "url": "https://mexicobusiness.news/tech/news/whirlpool-close-apodaca-plant-mexico-production-shifts",
+      "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-07/EQT2JZOC3BB27LJ3J26C5CRZVI.jpg?h=4938c091&itok=NLF6lfvh"
+    },
     {
       "id": 1448,
       "lens": "소비자",
@@ -2717,42 +2766,6 @@
       "image": "https://www.cmgassets.com/s3fs-public/styles/opengraph/public/2026-07/shutterstock_2589530101.jpg?h=f077f1b0&itok=Qd9zga-N"
     },
     {
-      "id": 1324,
-      "lens": "정책",
-      "grade": "주요",
-      "impact": 3.9,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "세탁기",
-        "건조기",
-        "조리기기"
-      ],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "제조시설 폐쇄",
-        "멕시코 생산",
-        "북미 공급망",
-        "관세영향",
-        "경쟁사 동향"
-      ],
-      "headline": "월풀, 멕시코 생산시설 폐쇄 발표",
-      "summary": "월풀이 멕시코 제조 공장 폐쇄를 공식 발표했다. 북미 가전 제조 구조 재편의 신호로, USMCA 및 관세 정책 변화에 따른 산업 재구성이 가속화되고 있다. 당사의 역외 생산 및 북미 수출 전략에 직접적 영향을 미칠 전망이다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.moodyonthemarket.com/whirlpool-announces-closure-of-mexico-manufacturing-plant/"
-      },
-      "publishedAt": "2026-07-01T22:13:59.000Z",
-      "url": "https://www.moodyonthemarket.com/whirlpool-announces-closure-of-mexico-manufacturing-plant/",
-      "image": null
-    },
-    {
       "id": 1248,
       "lens": "거시",
       "grade": "주시",
@@ -3543,6 +3556,51 @@
       "image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202607/01/12db8566-091a-4c63-a00c-7b7c50ab80c0.jpg"
     },
     {
+      "id": 1455,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "HVAC제어",
+        "스마트빌딩",
+        "운영효율",
+        "신제품"
+      ],
+      "headline": "Johnson Controls, 고성능 환경 위한 Metasys 16.0 출시",
+      "summary": "Johnson Controls가 고가용성과 복원력이 중요한 환경 대응 Metasys 16.0을 출시했다. 신버전은 HVAC 시스템의 안정성과 가동률 향상에 초점을 맞췄다. 글로벌 상업용 HVAC 시장에서 제어 솔루션의 경쟁이 심화되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Johnson Controls, Metasys 16.0 고가용성 제어솔루션 출시"
+        },
+        {
+          "type": "content",
+          "text": "상업용 HVAC 시스템의 복원력과 운영 안정성 강화"
+        },
+        {
+          "type": "threat",
+          "text": "경쟁사의 스마트 제어 기술 고도화로 시장 경쟁 심화"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://www.johnsoncontrols.com/media-center/news/press-releases/2026/06/29/johnson-controls-launches-metasys-16"
+      },
+      "publishedAt": "2026-06-30T13:02:01.000Z",
+      "url": "https://www.johnsoncontrols.com/media-center/news/press-releases/2026/06/29/johnson-controls-launches-metasys-16",
+      "image": null
+    },
+    {
       "id": 1171,
       "lens": "경쟁사",
       "grade": "주요",
@@ -3980,6 +4038,49 @@
       "publishedAt": "2026-06-29T21:00:00.000Z",
       "url": "https://biz.chosun.com/it-science/ict/2026/06/30/Y2JO3HUUQ5BZ7EWNUDUQN4QM6M/",
       "image": "https://biz.chosun.com/resizer/v2/PLCJLAPPZVEY3KSHDX473VRP5Y.webp?auth=201a8bf776ca2c995cc1d3c0b4d9a657b033509b7ffd24a1c8c7bc0325872242&width=1200&height=630&smart=true"
+    },
+    {
+      "id": 1454,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "관세정책",
+        "고용",
+        "북미제조",
+        "냉장고"
+      ],
+      "headline": "트럼프 관세, 월풀 아이오와 냉장고 공장 고용 감소 방어 실패",
+      "summary": "트럼프 행정부의 관세 정책이 월풀의 미국 아이오와 냉장고 생산 공장의 고용 감소를 막지 못하고 있다. 관세를 통한 국내 제조업 보호 정책의 실효성 한계를 드러냈다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "트럼프 관세가 월풀 아이오와 공장 고용 감소 저지 실패"
+        },
+        {
+          "type": "threat",
+          "text": "북미역외 생산 당사에게 관세 정책 효과 불확실성 증가"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.reuters.com/business/world-at-work/trumps-tariffs-arent-saving-jobs-whirlpools-iowa-refrigerator-plant-2026-06-29/"
+      },
+      "publishedAt": "2026-06-29T19:43:18.000Z",
+      "url": "https://www.reuters.com/business/world-at-work/trumps-tariffs-arent-saving-jobs-whirlpools-iowa-refrigerator-plant-2026-06-29/",
+      "image": "https://www.reuters.com/resizer/v2/TQDAIXHGQVMCTIRJTKY7CA54UU.jpg?auth=b22130b5b899c749a98e6e30b22880c83e3fb8168872c39fe7c4806db4a3346e&height=1005&width=1920&quality=80&smart=true"
     },
     {
       "id": 1143,
