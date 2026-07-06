@@ -868,11 +868,11 @@ body {
 .news-card__action--report {
   gap: 5px;
   padding: 5px 11px;
-  border: 1px solid var(--accent);
-  background: var(--accent);
+  border: 1px solid var(--text-primary);
+  background: none;
   font-family: inherit;
   font-size: 15px;
-  color: #fff;
+  color: var(--text-primary);
   white-space: nowrap;
 }
 
@@ -881,9 +881,9 @@ body {
 }
 
 .news-card__action--report:hover {
-  background: var(--accent-hover);
-  border-color: var(--accent-hover);
-  color: #fff;
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+  color: var(--bg-page);
 }
 
 /* ===== List view ===== */
