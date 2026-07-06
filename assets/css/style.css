@@ -124,6 +124,47 @@ body {
   background: #1d9e75;
 }
 
+/* 도구모음 런처 (samsungda.net) — 페이지 헤더에 고정 배치 */
+.da-launcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 29px;
+  padding: 0 9px;
+  border: 1.5px solid #D3D9D6;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, .92);
+  text-decoration: none;
+  color: #17222D;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  transition: .15s;
+}
+
+.da-launcher:hover {
+  border-color: #46647E;
+  box-shadow: 0 4px 18px rgba(23, 34, 45, .12);
+}
+
+.da-launcher .da-gi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  width: 18px;
+  height: 18px;
+}
+
+.da-launcher .da-gi i {
+  background: #5C6B79;
+  border-radius: 1px;
+  transition: .15s;
+}
+
+.da-launcher:hover .da-gi i {
+  background: #46647E;
+}
+
 /* ===== Stats KPI ===== */
 .stats-grid {
   display: grid;
