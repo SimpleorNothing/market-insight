@@ -44,7 +44,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "변경 사항 없음, 커밋 생략"
           else
-            COUNT=$(node -e "const d=require('./data/news.json'); console.log(d.items.length)")
+            COUNT=$(node -e "const n=require('./data/news.json').items.length; let a=0; try{a=require('./data/archive.json').items.length}catch(e){} console.log(n+a)")
             git commit -m "Auto: news 갱신 ($COUNT건 보유, $(date -u +%Y-%m-%dT%H:%MZ))"
             git push
           fi
