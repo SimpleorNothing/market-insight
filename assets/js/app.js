@@ -700,7 +700,7 @@ function renderCard(n) {
         <div class="news-card__actions">
           <button class="news-card__action news-card__action--report" data-report-id="${n.id}">
             <i class="ti ti-file-text" aria-hidden="true"></i>
-            <span>리포트 생성</span>
+            <span>AI 요약</span>
           </button>
         </div>
       </div>
