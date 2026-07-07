@@ -690,17 +690,17 @@ function renderCard(n) {
             )
             .join("")}
         </div>
+      </div>
+      <div class="news-card__footer">
+        <span class="news-card__meta">
+          ${timeAgo(n.publishedAt)} · <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceName)}</a>
+        </span>
         <div class="news-card__actions">
           <button class="news-card__action news-card__action--report" data-report-id="${n.id}">
             <i class="ti ti-file-text" aria-hidden="true"></i>
             <span>리포트 생성</span>
           </button>
         </div>
-      </div>
-      <div class="news-card__footer">
-        <span class="news-card__meta">
-          ${timeAgo(n.publishedAt)} · <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceName)}</a>
-        </span>
       </div>
     </article>
   `;
