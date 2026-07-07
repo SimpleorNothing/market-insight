@@ -672,11 +672,11 @@ function renderCard(n) {
 
   return `
     <article class="news-card news-card--${gradeCls}">
+      <h3 class="news-card__headline">
+        <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.headline)}</a>
+      </h3>
       <div class="news-card__body">
         <div class="news-card__text">
-          <h3 class="news-card__headline">
-            <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.headline)}</a>
-          </h3>
           ${renderSummaryPoints(n)}
         </div>
         ${thumbHtml}
