@@ -625,14 +625,16 @@ function renderGroup(group) {
   `;
 }
 
-// 시장 동향 카드 본문 — 점(내용)·화살표(기회=파랑/위협=빨강)로만 구분, 텍스트 라벨 없음.
+// 시장 동향 카드 본문 — 역할분담: MI는 기사 원문 사실 정리만(점 2~3개), 기회/위협 해석은 뉴스레터 담당.
+// 과거 데이터의 opportunity/threat 타입도 content 점으로 강제 렌더 (크론 소급 정규화 전 방어).
 // 데이터 파이프라인에 summaryPoints 가 없는 과거 기사는 기존 문단 요약으로 폴백.
 function renderSummaryPoints(n) {
   if (Array.isArray(n.summaryPoints) && n.summaryPoints.length) {
     return `<ul class="news-card__points">${n.summaryPoints
+      .slice(0, 3)
       .map(
         (p) =>
-          `<li class="news-card__point news-card__point--${escapeHtml(p.type)}">${escapeHtml(p.text)}</li>`
+          `<li class="news-card__point news-card__point--content">${escapeHtml(p.text)}</li>`
       )
       .join("")}</ul>`;
   }
