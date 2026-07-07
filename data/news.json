@@ -1,7 +1,183 @@
 {
-  "updatedAt": "2026-07-07T21:14:50.652Z",
+  "updatedAt": "2026-07-07T22:51:22.450Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1514,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 2.9,
+      "factors": {
+        "salesRelivance": 1,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "물가지수",
+        "AI구독료",
+        "통계",
+        "정책변화"
+      ],
+      "headline": "소비자물가 개편, AI·클라우드 구독료 신규 반영",
+      "summary": "통계청이 5년 만에 소비자물가지수를 개편하면서 챗GPT 등 AI·클라우드 이용료를 신규 항목으로 포함했다. 물가 항목의 58%가 서비스이며, 1인가구 증가에 따라 밀키트도 신규 추가되고 고사리·땅콩 등 일부 식자재는 제외됐다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "5년 만에 소비자물가지수 개편, AI·클라우드 이용료 신규 반영"
+        },
+        {
+          "type": "content",
+          "text": "물가항목 중 58%가 서비스 비중, 1인가구 증가로 밀키트 추가"
+        },
+        {
+          "type": "content",
+          "text": "고사리·땅콩 등 일부 식자재는 제외하며 품목 구성 현대화"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/economy/12092957"
+      },
+      "publishedAt": "2026-07-07T22:25:30.000Z",
+      "url": "https://www.mk.co.kr/news/economy/12092957",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/08/news-p.v1.20260707.4cde222597e9499eb6f120173ad08619_R.jpg"
+    },
+    {
+      "id": 1516,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 5,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "2분기 실적",
+        "영업익",
+        "LG전자",
+        "실적 개선",
+        "수익성"
+      ],
+      "headline": "LG전자 2분기 영업익 1조5788억, 전년 비 146.9% 급증",
+      "summary": "LG전자가 2분기 영업익 1조5788억원을 기록, 전년 동기 대비 146.9% 증가했다. 가전사업의 수익성 개선과 구독·서비스 사업 확대가 실적 상승을 견인한 것으로 분석된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "2분기 영업익 1조5788억원, 전년 동기 대비 146.9% 증가"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.koit.co.kr/news/articleView.html?idxno=207885"
+      },
+      "publishedAt": "2026-07-07T21:09:53.000Z",
+      "url": "https://www.koit.co.kr/news/articleView.html?idxno=207885",
+      "image": "https://cdn.koit.co.kr/news/photo/202607/207885_97645_2956.jpg"
+    },
+    {
+      "id": 1515,
+      "lens": "거시",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "기후변화",
+        "수출",
+        "내수부진",
+        "시장양극화"
+      ],
+      "headline": "중국 폭염으로 유럽향 에어컨 수출 급증, 내수와 양극화",
+      "summary": "중국이 폭염 이슈를 배경으로 유럽향 에어컨 판매를 크게 확대하고 있다. 반면 국내 내수 시장은 상대적으로 약세를 보이며 지역별·채널별 양극화 현상이 심화되는 추세다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "중국의 유럽향 에어컨 판매가 폭염 이슈를 계기로 급증 추세"
+        },
+        {
+          "type": "content",
+          "text": "국내 내수 시장은 약세를 보이며 지역·채널별 양극화 현상 심화"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.steeldaily.co.kr/news/articleViewAmp.html?idxno=201265"
+      },
+      "publishedAt": "2026-07-07T20:29:03.000Z",
+      "url": "https://www.steeldaily.co.kr/news/articleViewAmp.html?idxno=201265",
+      "image": "https://www.steeldaily.co.kr/news/photo/202607/201265_195281_3119.png"
+    },
+    {
+      "id": 1518,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "실적",
+        "어닝",
+        "분기결과"
+      ],
+      "headline": "LG전자, 2분기 역대 최고 매출·수익 달성",
+      "summary": "LG전자가 2분기 사상 최대 매출과 수익을 기록했다. 구체적인 수치는 원문 본문에 미수록되어 있으나, 헤드라인에서 분기 신기록을 공식 공시한 상태다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 2분기에 역대 최고의 매출과 영업이익을 기록했다는 공식 발표"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.chosun.com/english/industry-en/2026/07/08/DSV3GXQ6TNDSXOQ755TZC34K6A/"
+      },
+      "publishedAt": "2026-07-07T15:35:19.000Z",
+      "url": "https://www.chosun.com/english/industry-en/2026/07/08/DSV3GXQ6TNDSXOQ755TZC34K6A/",
+      "image": "https://www.chosun.com/resizer/v2/MZSDCNDFHAYWIMZTMZQTGMZQGQ.jpg?auth=cc78e6cfef1f91d691bfe90c4335ac6ac5e3dfcff2e10a7da9adc7c2e1290450&width=1200&height=630&smart=true"
+    },
     {
       "id": 1504,
       "lens": "소비자",
@@ -820,55 +996,6 @@
       "publishedAt": "2026-07-07T02:44:15.000Z",
       "url": "https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4423721",
       "image": "https://news.einfomax.co.kr/news/photo/202607/4423721_327598_373.jpg"
-    },
-    {
-      "id": 1505,
-      "lens": "소비자",
-      "grade": "긴급",
-      "impact": 5,
-      "factors": {
-        "salesRelevance": 5,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 5
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "HVAC",
-        "청소기",
-        "식기세척기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "실적",
-        "2분기",
-        "영업이익",
-        "시장 기대 초과"
-      ],
-      "headline": "LG전자 2분기 영업익 1조원 돌파, 컨센서스 상회",
-      "summary": "LG전자가 2분기 영업이익 1조 원대를 달성해 시장 전망을 상회했다. 분기 영업익이 1조 원을 넘긴 것은 반복되는 성과로, 가전 부문의 안정적 수익성이 확인됐다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "2분기 영업이익 1조 원 돌파로 시장 예상을 뛰어넘음"
-        },
-        {
-          "type": "content",
-          "text": "1조 원대 분기 영업익 달성이 지속적으로 반복되는 추세"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://biz.chosun.com/en/en-it/2026/07/07/V2U5UK6KV5EAXIKFAHFTNAYMDA/"
-      },
-      "publishedAt": "2026-07-07T01:53:00.000Z",
-      "url": "https://biz.chosun.com/en/en-it/2026/07/07/V2U5UK6KV5EAXIKFAHFTNAYMDA/",
-      "image": "https://biz.chosun.com/resizer/v2/HE3TSMZWGRTDIMZRGRQTIMLCG4.jpg?auth=131b4daffa8a9c1f331b06cab5de6f061e0c1b0775b6db308674a3fb644a8816&width=1200&height=630&smart=true"
     },
     {
       "id": 1467,
@@ -4336,6 +4463,48 @@
       "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=20260701104146077572bd56fbc3c22210812861.jpg"
     },
     {
+      "id": 1519,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "신사업",
+        "로보틱스",
+        "M&A",
+        "IPO",
+        "산업용로봇"
+      ],
+      "headline": "Midea, 로봇 자회사 KUKA 심천 상장 추진",
+      "summary": "Midea가 산하 로봇 제조사 KUKA의 심천 IPO 상장을 검토 중이다. 이는 KUKA를 별도 상장사로 분리해 독립적인 성장 기반을 마련하려는 전략으로, 로보틱스 신사업 확장의 핵심 신호다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Midea가 자회사 KUKA의 심천 거래소 상장을 탐색 중"
+        },
+        {
+          "type": "content",
+          "text": "로보틱스 사업의 독립적 성장 및 자본 조달 수단으로 추진"
+        }
+      ],
+      "source": {
+        "name": "Google News - Midea Global",
+        "url": "https://news.futunn.com/en/post/75352339/market-chatter-midea-explores-shenzhen-ipo-for-robot-unit-kuka"
+      },
+      "publishedAt": "2026-07-01T01:40:15.000Z",
+      "url": "https://news.futunn.com/en/post/75352339/market-chatter-midea-explores-shenzhen-ipo-for-robot-unit-kuka",
+      "image": null
+    },
+    {
       "id": 1206,
       "lens": "정책",
       "grade": "주시",
@@ -4365,70 +4534,6 @@
       "publishedAt": "2026-07-01T01:14:36.000Z",
       "url": "https://www.donga.com/news/Inter/article/all/20260701/134211487/2",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/07/01/134211425.2.jpg"
-    },
-    {
-      "id": 1201,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "Midea"
-      ],
-      "tags": [
-        "IPO",
-        "자회사",
-        "산업용로봇",
-        "자산재구성",
-        "Kuka"
-      ],
-      "headline": "미디어, 로봇 자회사 쿠카 선전 상장 추진",
-      "summary": "중국 가전 대형 제조사 Midea가 자회사 KUKA(산업용 로봇)의 선전 IPO 상장을 검토 중이다. 글로벌 로봇 산업 경쟁 심화 속 Midea의 자산 재구성 전략으로 평가된다.",
-      "source": {
-        "name": "Google News - Midea Global",
-        "url": "https://www.marketscreener.com/news/midea-explores-shenzhen-ipo-for-robot-unit-kuka-ce7f5fdddd8bf227"
-      },
-      "publishedAt": "2026-07-01T00:58:21.000Z",
-      "url": "https://www.marketscreener.com/news/midea-explores-shenzhen-ipo-for-robot-unit-kuka-ce7f5fdddd8bf227",
-      "image": "https://www.marketscreener.com/images/twitter_MS_fdblanc.png"
-    },
-    {
-      "id": 1334,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "Midea"
-      ],
-      "tags": [
-        "신사업",
-        "로보틱스",
-        "상장",
-        "자본조달",
-        "KUKA"
-      ],
-      "headline": "Midea, 로봇 자회사 KUKA 심천 상장 검토",
-      "summary": "Midea가 자회사 KUKA의 심천 거래소 상장을 탐색 중이다. KUKA는 산업용·협업 로봇 전문업체로, 당사의 신규 사업 영역 확장 전략의 핵심이다. 상장을 통해 자본 조달 및 독립적 사업 운영을 모색하는 것으로 보인다.",
-      "source": {
-        "name": "Google News - Midea Global",
-        "url": "https://www.moomoo.com/news/post/72292863/market-chatter-midea-explores-shenzhen-ipo-for-robot-unit-kuka"
-      },
-      "publishedAt": "2026-07-01T00:56:59.000Z",
-      "url": "https://www.moomoo.com/news/post/72292863/market-chatter-midea-explores-shenzhen-ipo-for-robot-unit-kuka",
-      "image": null
     },
     {
       "id": 1195,
