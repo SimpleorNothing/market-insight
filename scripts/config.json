@@ -188,6 +188,63 @@
       "Casarte"
     ]
   },
+  "competitorAliases": {
+    "_comment": "LLM 분류가 경쟁사 거명을 누락해도 fetch-news.js가 결정적으로 보정하는 별칭 → 모기업 매핑. 매칭 전 competitorAliasExcludes 문자열을 먼저 제거해 계열사 오탐 방지. 영문 패턴은 단어 경계 + 대소문자 구분 매칭 (일반명사 오탐 방지)",
+    "삼성": "삼성전자",
+    "Samsung": "삼성전자",
+    "LG": "LG전자",
+    "Whirlpool": "월풀",
+    "일렉트로룩스": "Electrolux",
+    "하이얼": "Haier",
+    "다이킨": "Daikin",
+    "보쉬": "BSH",
+    "지멘스": "BSH",
+    "미디어그룹": "Midea"
+  },
+  "competitorAliasExcludes": [
+    "New York",
+    "삼성전기",
+    "삼성디스플레이",
+    "삼성SDI",
+    "삼성바이오",
+    "삼성물산",
+    "삼성증권",
+    "삼성생명",
+    "삼성화재",
+    "삼성카드",
+    "삼성중공업",
+    "삼성엔지니어링",
+    "삼성E&A",
+    "삼성라이온즈",
+    "LG디스플레이",
+    "LG이노텍",
+    "LG화학",
+    "LG에너지솔루션",
+    "LG엔솔",
+    "LG유플러스",
+    "LGU+",
+    "LG CNS",
+    "LG트윈스",
+    "Samsung Display",
+    "Samsung SDI",
+    "Samsung Electro-Mechanics",
+    "Samsung Biologics",
+    "Samsung Securities",
+    "Samsung Heavy",
+    "LG Display",
+    "LG Innotek",
+    "LG Chem",
+    "LG Energy Solution",
+    "LG Uplus"
+  ],
+  "competitorBackstopSkip": {
+    "_comment": "일반명사·지명과 겹쳐 문자열 매칭이 위험한 브랜드. 코드 백스톱에서는 매칭하지 않고 LLM 문맥 분류에만 맡김.",
+    "names": [
+      "York",
+      "Coleman",
+      "Candy"
+    ]
+  },
   "gradeThresholds": {
     "긴급": 4.5,
     "주요": 3.5,

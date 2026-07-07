@@ -506,6 +506,52 @@ const COMPETITOR_LIST = CONFIG.competitors
   })
   .join("\n");
 
+// ===== 경쟁사 결정적 백스톱 (LLM 거명 누락 보정) =====
+// 프롬프트 규칙(PR #58: lens·competitors 독립 판단)만으로는 Haiku가 확률적으로
+// 거명된 회사를 competitors 에서 누락하는 사례가 재발 → 코드가 원문 문자열 매칭으로 강제 병합.
+// - competitorAliasExcludes(삼성전기·LG디스플레이 등 계열사)를 먼저 제거해 오탐 방지
+// - 영문 패턴은 대소문자 구분 + 단어 경계 매칭 (Carrier/Candy 등 일반명사 오탐 방지)
+const ALIAS_EXCLUDES = CONFIG.competitorAliasExcludes || [];
+const BACKSTOP_SKIP = new Set(CONFIG.competitorBackstopSkip?.names || []);
+const COMPETITOR_PATTERNS = (() => {
+  const table = [];
+  const seen = new Set();
+  const add = (canonical, name) => {
+    if (!name || BACKSTOP_SKIP.has(name) || seen.has(`${canonical}\u0000${name}`)) return;
+    seen.add(`${canonical}\u0000${name}`);
+    table.push({ canonical, name, latin: /^[\x00-\x7F]+$/.test(name) });
+  };
+  for (const canonical of CONFIG.competitors) {
+    add(canonical, canonical);
+    for (const b of CONFIG.competitorBrands?.[canonical] || []) add(canonical, b);
+  }
+  for (const [alias, canonical] of Object.entries(CONFIG.competitorAliases || {})) {
+    if (alias.startsWith("_")) continue;
+    if (CONFIG.competitors.includes(canonical)) add(canonical, alias);
+  }
+  return table;
+})();
+
+function detectCompetitors(text) {
+  if (!text) return [];
+  let t = String(text);
+  for (const ex of ALIAS_EXCLUDES) {
+    t = t.split(ex).join(" ");
+  }
+  const found = new Set();
+  for (const { canonical, name, latin } of COMPETITOR_PATTERNS) {
+    if (found.has(canonical)) continue;
+    if (latin) {
+      const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const re = new RegExp(`(?<![A-Za-z0-9])${escaped}(?![A-Za-z0-9])`);
+      if (re.test(t)) found.add(canonical);
+    } else if (t.includes(name)) {
+      found.add(canonical);
+    }
+  }
+  return [...found];
+}
+
 const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 동향 뉴스 분류 전문가입니다.
 
 【출력 형식 — 절대 규칙】
@@ -715,6 +761,13 @@ ${item.region}`;
   parsed.competitors = (parsed.competitors || []).filter((c) =>
     CONFIG.competitors.includes(c)
   );
+  // 결정적 백스톱: 원문(헤드라인·발췌)에 실제 거명된 경쟁사를 LLM이 누락했으면 병합
+  const detected = detectCompetitors(
+    `${item.headline || ""}\n${item.rawContent || ""}`
+  );
+  if (detected.length) {
+    parsed.competitors = [...new Set([...parsed.competitors, ...detected])];
+  }
   parsed.tags = (parsed.tags || []).slice(0, 5);
 
   const POINT_TYPES = ["content", "opportunity", "threat"];
@@ -910,6 +963,21 @@ async function main() {
     log(`차단 키워드 소급 적용: 기존 ${purged}건 제거`);
   }
 
+  // 경쟁사 백스톱 소급 적용: 기존 적재분도 headline·summary 거명 기준으로 매 실행 시 보정
+  let compFixed = 0;
+  for (const i of existing.items) {
+    const detected = detectCompetitors(`${i.headline || ""}\n${i.summary || ""}`);
+    if (!detected.length) continue;
+    const mergedComps = [...new Set([...(i.competitors || []), ...detected])];
+    if (mergedComps.length !== (i.competitors || []).length) {
+      i.competitors = mergedComps;
+      compFixed++;
+    }
+  }
+  if (compFixed > 0) {
+    log(`경쟁사 백스톱 소급 적용: ${compFixed}건 보정`);
+  }
+
   const backfilled = await backfillExistingUrls(existing.items);
   if (backfilled > 0) {
     log(`기존 Google News URL ${backfilled}건 → 실제 발행처 URL로 변환`);
@@ -941,6 +1009,7 @@ async function main() {
   const changed =
     isV1 ||
     purged > 0 ||
+    compFixed > 0 ||
     classified.length > 0 ||
     merged.length !== existing.items.length ||
     backfilled > 0;
