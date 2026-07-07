@@ -1,0 +1,37 @@
+/* ============================================================
+   렌즈 아이콘 폴백 — 뉴스 카드 썸네일
+   ------------------------------------------------------------
+   원문 이미지·기업 로고가 모두 없을 때, 렌즈 첫 글자("소" 등) 대신
+   주제를 직관적으로 보여주는 픽토그램을 노출한다.
+
+   index.html에서 고정 로드하는 Tabler icons webfont @3.19.0의
+   글리프 코드포인트를 직접 사용한다 (CSS-only, JS 무변경).
+   ⚠ webfont 버전을 올리면 아래 코드포인트를 재확인할 것.
+
+   매핑: 소비자=ti-shopping-cart · 기술=ti-cpu ·
+         경쟁사=ti-building-skyscraper · 정책=ti-building-bank ·
+         거시=ti-world
+   ============================================================ */
+
+/* 등록된 렌즈만 글자 폴백을 숨김 (미등록 렌즈는 기존 첫 글자 유지) */
+.news-card__thumb[data-lens="소비자"] .news-card__thumb-ph,
+.news-card__thumb[data-lens="기술"] .news-card__thumb-ph,
+.news-card__thumb[data-lens="경쟁사"] .news-card__thumb-ph,
+.news-card__thumb[data-lens="정책"] .news-card__thumb-ph,
+.news-card__thumb[data-lens="거시"] .news-card__thumb-ph {
+  font-size: 0;
+}
+
+.news-card__thumb .news-card__thumb-ph::before {
+  font-family: "tabler-icons";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.news-card__thumb[data-lens="소비자"] .news-card__thumb-ph::before { content: "\eb25"; } /* ti-shopping-cart */
+.news-card__thumb[data-lens="기술"] .news-card__thumb-ph::before { content: "\ef8e"; }   /* ti-cpu */
+.news-card__thumb[data-lens="경쟁사"] .news-card__thumb-ph::before { content: "\ec39"; } /* ti-building-skyscraper */
+.news-card__thumb[data-lens="정책"] .news-card__thumb-ph::before { content: "\ebe2"; }   /* ti-building-bank */
+.news-card__thumb[data-lens="거시"] .news-card__thumb-ph::before { content: "\eb54"; }   /* ti-world */
