@@ -1,7 +1,94 @@
 {
-  "updatedAt": "2026-07-07T08:15:25.492Z",
+  "updatedAt": "2026-07-07T11:38:00.902Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1495,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "청소기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "분기실적",
+        "가전부문",
+        "성장동향",
+        "북미시장"
+      ],
+      "headline": "LG전자, 가전 부문 강세로 2분기 실적 견인",
+      "summary": "LG전자가 2분기 실적 발표에서 가전(Home Appliances)과 자동차 부품 부문이 성장을 주도했다. 가전 부문의 매출 기여가 당분기 강세를 견인하는 핵심 요소로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 2분기 가전사업 실적 호조"
+        },
+        {
+          "type": "threat",
+          "text": "경쟁사 가전 부문 성장세 강화"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.mk.co.kr/en/business/12092622"
+      },
+      "publishedAt": "2026-07-07T08:47:57.000Z",
+      "url": "https://www.mk.co.kr/en/business/12092622",
+      "image": "https://wimg.mk.co.kr/news/cms/202607/08/20260708_01110115000002_L00.jpg"
+    },
+    {
+      "id": 1493,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.5,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "경영",
+        "AI",
+        "글로벌 네트워킹"
+      ],
+      "headline": "이재용 회장, 선밸리 콘퍼런스 참석…빅테크 CEO 회동",
+      "summary": "삼성전자 이재용 회장이 7일 미국 선밸리 콘퍼런스 참석을 위해 출국했다. 2년 연속 참석으로, 글로벌 빅테크 CEO들과 AI 협력 기반을 구축할 것으로 관측된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "이재용 회장 선밸리 콘퍼런스 2년 연속 참석"
+        },
+        {
+          "type": "content",
+          "text": "빅테크 CEO들과 AI 협력 기반 강화"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260707000399"
+      },
+      "publishedAt": "2026-07-07T08:23:19.000Z",
+      "url": "https://www.etnews.com/20260707000399",
+      "image": "https://img.etnews.com/news/article/2026/07/07/rcv.YNA.20260707.PYH2026070717630001300_P1.jpg"
+    },
     {
       "id": 1489,
       "lens": "정책",
@@ -53,43 +140,6 @@
       "publishedAt": "2026-07-07T08:05:05.000Z",
       "url": "https://www.koreajoongangdaily.com/business/lg-electronics-posts-record-q2-earnings-on-premium-appliances-us-tariff-refund/12759352",
       "image": "https://image.koreajoongangdaily.com/12603092.jpg?imageId=12603092&x=0&y=0&cropw=100&croph=71.27&panox=0&panoy=0&panow=100&panoh=71.27&width=1200&height=683"
-    },
-    {
-      "id": 1492,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.6,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자",
-        "실적",
-        "Q2",
-        "기업성과"
-      ],
-      "headline": "LG전자 Q2 사상 최대 실적 달성",
-      "summary": "LG전자가 2026년 2분기에 역대 최고 실적을 기록했다. 구체적 실적 수치는 공시를 통해 확인 필요하며, 글로벌 경쟁사의 분기별 성과 동향을 나타낸다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자가 Q2 분기에 사상 최대 실적 달성"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.theinvestor.co.kr/article/10801239"
-      },
-      "publishedAt": "2026-07-07T08:04:23.000Z",
-      "url": "https://www.theinvestor.co.kr/article/10801239",
-      "image": "https://wimg.heraldcorp.com/news/cms/2026/07/07/news-p.v1.20260707.363a8138e16345868b6ca07b04228dfb_T1.jpg"
     },
     {
       "id": 1484,
@@ -277,6 +327,55 @@
       "image": "https://pimg.mk.co.kr/news/cms/202607/07/news-p.v1.20260511.855489e050fa483ba4c56ccfc043ad9a_R.jpg"
     },
     {
+      "id": 1496,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "실적",
+        "분기별성과",
+        "글로벌시장",
+        "수익성"
+      ],
+      "headline": "LG전자, Q2 사상 최대 수익·이익 달성",
+      "summary": "LG전자가 2분기 역대 최고 매출과 순이익을 기록했다. 가전 부문 경쟁사의 강한 실적은 시장 수요 회복과 가격 경쟁력 개선을 시사한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 Q2 사상 최대 매출·이익 기록"
+        },
+        {
+          "type": "threat",
+          "text": "경쟁사 실적 강세로 경쟁 심화 신호"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.chosun.com/english/industry-en/2026/07/07/Z777JZZE2BFDTBDUEY2BFJIIGY/"
+      },
+      "publishedAt": "2026-07-07T04:21:47.000Z",
+      "url": "https://www.chosun.com/english/industry-en/2026/07/07/Z777JZZE2BFDTBDUEY2BFJIIGY/",
+      "image": "https://www.chosun.com/resizer/v2/MZSDCNDFHAYWIMZTMZQTGMZQGQ.jpg?auth=cc78e6cfef1f91d691bfe90c4335ac6ac5e3dfcff2e10a7da9adc7c2e1290450&width=1200&height=630&smart=true"
+    },
+    {
       "id": 1479,
       "lens": "경쟁사",
       "grade": "주요",
@@ -364,47 +463,6 @@
       "publishedAt": "2026-07-07T02:44:15.000Z",
       "url": "https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4423721",
       "image": "https://news.einfomax.co.kr/news/photo/202607/4423721_327598_373.jpg"
-    },
-    {
-      "id": 1491,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "실적",
-        "영업이익",
-        "경쟁사동향",
-        "글로벌시장"
-      ],
-      "headline": "LG전자, 2분기 영업이익 1조원 돌파",
-      "summary": "LG전자가 2분기 영업이익 1조원을 재차 달성하며 시장 전망치를 상회했다. 글로벌 가전 시장에서 경쟁사의 실적 호조는 산업 전반의 회복 신호를 의미한다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자 2분기 영업이익 1조원 초과 달성"
-        },
-        {
-          "type": "content",
-          "text": "시장 예측치를 상회한 성과"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://biz.chosun.com/en/en-it/2026/07/07/V2U5UK6KV5EAXIKFAHFTNAYMDA/"
-      },
-      "publishedAt": "2026-07-07T01:53:00.000Z",
-      "url": "https://biz.chosun.com/en/en-it/2026/07/07/V2U5UK6KV5EAXIKFAHFTNAYMDA/",
-      "image": "https://biz.chosun.com/resizer/v2/HE3TSMZWGRTDIMZRGRQTIMLCG4.jpg?auth=131b4daffa8a9c1f331b06cab5de6f061e0c1b0775b6db308674a3fb644a8816&width=1200&height=630&smart=true"
     },
     {
       "id": 1467,
