@@ -298,7 +298,7 @@ function getFilteredNews(opts = {}) {
       if (!hay.includes(state.keyword)) return false;
     }
 
-    // 키워드 태그 필터 (카드 하단 # 클릭) — 렌즈 태그(#소비자 등)도 포함
+    // 키워드 태그 필터 (카드 하단 # 클릭) — 렌즈 태그(#소비자 等)도 포함
     if (state.tag) {
       const haystack = [
         n.lens,
@@ -672,14 +672,6 @@ function renderCard(n) {
 
   return `
     <article class="news-card news-card--${gradeCls}">
-      <div class="news-card__top">
-        <div class="news-card__top-left">
-          <span class="lens-badge lens-badge--${n.lens}">${escapeHtml(n.lens)}</span>
-          <span class="news-card__meta">
-            ${timeAgo(n.publishedAt)} · <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceName)}</a>
-          </span>
-        </div>
-      </div>
       <div class="news-card__body">
         <div class="news-card__text">
           <h3 class="news-card__headline">
@@ -704,6 +696,11 @@ function renderCard(n) {
             <span>리포트 생성</span>
           </button>
         </div>
+      </div>
+      <div class="news-card__footer">
+        <span class="news-card__meta">
+          ${timeAgo(n.publishedAt)} · <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceName)}</a>
+        </span>
       </div>
     </article>
   `;
@@ -755,7 +752,7 @@ const REPORT_SYSTEM_PROMPT = `당신은 'Herald'입니다. 가전 산업 시장 
   "implication": "마무리 시사점"
 }
 
-sections 배열은 [요청 분석 관점] 순서를 그대로 따른다. JSON 외 어떤 텍스트도 출력 금지.`;
+sections 배열은 [요청 분석 관점] 순서를 그대로 따른다. JSON 外 어떤 텍스트도 출력 금지.`;
 
 // 분석 관점 메타데이터: id → 라벨 / 산출 섹션 type / 프롬프트 지시
 const ANALYSIS_PERSPECTIVES = {
