@@ -853,10 +853,10 @@ body {
   margin-top: 10px;
   padding-top: 8px;
   border-top: 1px solid var(--border-default);
-}
-
-.news-card__footer .news-card__meta {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .news-card__actions {
