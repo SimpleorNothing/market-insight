@@ -88,6 +88,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #80 | 07-07 | feat: 뉴스 카드 썸네일 렌즈 아이콘 폴백 (글자 → 픽토그램) |
 | #79 | 07-06 | ci: WORK_GUIDE 자동 갱신 워크플로우 활성화 |
 | #76 | 07-06 | 도구모음 런처 플로팅 → 헤더 내 고정 배치 |
 | #75 | 07-06 | **Appliance Plant Watch 피드 추가** — 회사명 없는 지역발 공장 폐쇄·감원·리툴링 보도 커버 (Electrolux Anderson 사례 보강) |
