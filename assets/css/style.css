@@ -641,36 +641,6 @@ body {
   transform: translateY(-1px);
 }
 
-.news-card__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-  gap: 10px;
-}
-
-.news-card__top-left {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
-  min-width: 0;
-}
-
-.lens-badge {
-  font-size: 15px;
-  font-weight: 500;
-  padding: 3px 9px;
-  border-radius: var(--radius-md);
-  white-space: nowrap;
-}
-
-.lens-badge--소비자 { background: var(--lens-consumer-bg); color: var(--lens-consumer-text); }
-.lens-badge--기술 { background: var(--lens-tech-bg); color: var(--lens-tech-text); }
-.lens-badge--경쟁사 { background: var(--lens-comp-bg); color: var(--lens-comp-text); }
-.lens-badge--정책 { background: var(--lens-policy-bg); color: var(--lens-policy-text); }
-.lens-badge--거시 { background: var(--lens-macro-bg); color: var(--lens-macro-text); }
-
 .news-card__meta {
   font-size: 15px;
   color: var(--text-tertiary);
@@ -877,6 +847,16 @@ body {
   background: transparent;
   color: var(--text-primary);
   font-weight: 600;
+}
+
+.news-card__footer {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-default);
+}
+
+.news-card__footer .news-card__meta {
+  display: block;
 }
 
 .news-card__actions {
