@@ -649,12 +649,11 @@ ${COMPETITOR_LIST}
 7. tags: 자유 태그 (배열, 2~5개 권장, 해시 기호 없이)
    - 핵심 키워드, 제품·경쟁사 외 부가 정보
 
-8. summaryPoints: summary 를 1~3개의 짧은 포인트로 분해한 배열
-   각 원소는 {"type": "content"|"opportunity"|"threat", "text": "..."}
-   - "content": 사실 요약 포인트 (기본값, 대부분 이 타입)
-   - "opportunity": 당사(삼성 DA)에 기회로 해석되는 포인트일 때만
-   - "threat": 당사(삼성 DA)에 위협으로 해석되는 포인트일 때만
-   - 기회·위협이 뚜렷하지 않으면 억지로 부여하지 말고 전부 "content"로 둘 것
+8. summaryPoints: 기사 원문 내용을 2~3개의 짧은 포인트로 정리한 배열
+   각 원소는 {"type": "content", "text": "..."}
+   - 원문에 보도된 사실만 정리할 것 — 의미 해석, 당사 기회·위협 분석 절대 금지
+     (기회·위협 해석은 MI가 아니라 뉴스레터의 역할)
+   - type 은 항상 "content" 고정
    - text 는 summary 와 같은 사실 기반, 20자 内外 간결체, 기호·번호 없이 본문만
 
 【출력 스키마】
@@ -671,7 +670,7 @@ ${COMPETITOR_LIST}
   "headline": "...",
   "summary": "...",
   "tags": ["..."],
-  "summaryPoints": [{"type": "content|opportunity|threat", "text": "..."}]
+  "summaryPoints": [{"type": "content", "text": "..."}]
 }
 
 JSON 외 어떤 텍스트도 출력 금지.`;
@@ -776,13 +775,13 @@ ${item.region}`;
   }
   parsed.tags = (parsed.tags || []).slice(0, 5);
 
-  const POINT_TYPES = ["content", "opportunity", "threat"];
+  // 역할분담: MI는 기사 원문 사실 정리만(점 2~3개) — 기회/위협 해석은 뉴스레터 담당
   parsed.summaryPoints = Array.isArray(parsed.summaryPoints)
     ? parsed.summaryPoints
         .filter((p) => p && typeof p.text === "string" && p.text.trim())
-        .slice(0, 4)
+        .slice(0, 3)
         .map((p) => ({
-          type: POINT_TYPES.includes(p.type) ? p.type : "content",
+          type: "content",
           text: p.text.trim().slice(0, 120),
         }))
     : [];
@@ -984,6 +983,22 @@ async function main() {
     log(`경쟁사 백스톱 소급 적용: ${compFixed}건 보정`);
   }
 
+  // 요약 포인트 역할분담 소급 적용: 기존 opportunity/threat 타입을 content 로 정규화
+  // (MI = 원문 사실 정리 전용, 기회/위협 해석은 뉴스레터 담당)
+  let ptFixed = 0;
+  for (const i of existing.items) {
+    if (!Array.isArray(i.summaryPoints)) continue;
+    for (const p of i.summaryPoints) {
+      if (p && p.type !== "content") {
+        p.type = "content";
+        ptFixed++;
+      }
+    }
+  }
+  if (ptFixed > 0) {
+    log(`요약 포인트 타입 소급 정규화: ${ptFixed}건 → content`);
+  }
+
   const backfilled = await backfillExistingUrls(existing.items);
   if (backfilled > 0) {
     log(`기존 Google News URL ${backfilled}건 → 실제 발행처 URL로 변환`);
@@ -1016,6 +1031,7 @@ async function main() {
     isV1 ||
     purged > 0 ||
     compFixed > 0 ||
+    ptFixed > 0 ||
     classified.length > 0 ||
     merged.length !== existing.items.length ||
     backfilled > 0;

@@ -700,7 +700,7 @@ body {
   flex: 1;
 }
 
-/* 기사내용 포인트 — 점(내용)·화살표(기회=파랑/위협=빨강)로만 구분, 텍스트 라벨 없음 */
+/* 기사내용 포인트 — 원문 사실 정리 점(•)만 사용. 기회/위협 해석 표시는 뉴스레터 담당 (역할분담) */
 .news-card__points {
   margin: 0 0 12px;
   padding: 0;
@@ -727,18 +727,6 @@ body {
 .news-card__point--content::before {
   content: "\2022";
   color: var(--text-tertiary);
-}
-
-.news-card__point--opportunity::before {
-  content: "\2192";
-  color: var(--accent);
-  font-weight: 700;
-}
-
-.news-card__point--threat::before {
-  content: "\2192";
-  color: var(--grade-urgent-bar);
-  font-weight: 700;
 }
 
 /* ===== 원문 이미지 썸네일 (og:image, 없으면 lens 색 플레이스홀더) ===== */
