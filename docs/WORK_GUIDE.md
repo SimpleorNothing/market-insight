@@ -88,6 +88,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #82 | 07-07 | fix: news.json 데이터 손상 복구 (669건) + id 1470 이미지 필드 수정 |
 | #81 | 07-07 | fix: 경쟁사 결정적 백스톱 — 거명 누락 competitors 강제 병합 + 소급 보정 |
 | #80 | 07-07 | feat: 뉴스 카드 썸네일 렌즈 아이콘 폴백 (글자 → 픽토그램) |
 | #79 | 07-06 | ci: WORK_GUIDE 자동 갱신 워크플로우 활성화 |
