@@ -298,9 +298,10 @@ function getFilteredNews(opts = {}) {
       if (!hay.includes(state.keyword)) return false;
     }
 
-    // 키워드 태그 필터 (카드 하단 # 클릭)
+    // 키워드 태그 필터 (카드 하단 # 클릭) — 렌즈 태그(#소비자 등)도 포함
     if (state.tag) {
       const haystack = [
+        n.lens,
         ...(n.competitors || []),
         ...(n.products || []),
         ...(n.tags || []),
@@ -401,7 +402,9 @@ function renderPeriodChips() {
 }
 
 function renderLensChips() {
+  // 렌즈는 필터 축에서 제거됨 — 필터 행이 없으면 no-op (KPI 카드·그룹은 별도 유지)
   const container = document.getElementById("lensChips");
+  if (!container) return;
   container.innerHTML = "";
   LENSES.forEach((lens) => {
     const btn = document.createElement("button");
@@ -644,8 +647,9 @@ function renderCard(n) {
   const products = n.products || [];
   const competitors = n.competitors || [];
 
-  // 태그 = 경쟁사·제품·자유태그 합쳐 최대 4개
-  const allTags = [...competitors, ...products, ...tags].slice(0, 4);
+  // 태그 = 렌즈(첫머리) + 경쟁사·제품·자유태그, 중복 제거 후 최대 5개
+  const lensTag = n.lens ? [n.lens] : [];
+  const allTags = [...new Set([...lensTag, ...competitors, ...products, ...tags])].slice(0, 5);
 
   // 원문 대표 이미지가 최우선. 없으면 제목에 언급된 기업 로고, 그것도 없으면 lens 색 플레이스홀더.
   // 플레이스홀더는 뒤(z-index 0), img/logo는 위(z-index 1) — onerror 時 해당 이미지만 제거해 자연 폴백.
