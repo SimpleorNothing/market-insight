@@ -262,6 +262,123 @@ async function mapWithConcurrency(items, concurrency, fn) {
   return results;
 }
 
+// ===== 링크 생존 확인 =====
+// 디코딩된 발행처 URL이 실제로 열리는지 확인해, "안 열리는" 기사는 파이프라인에서 제외.
+// 오탐(봇 차단 403·일시 오류 429/5xx·타임아웃)으로 멀쩡한 기사를 지우지 않도록,
+// 확실한 사망 신호(404/410/DNS 실패/기사 식별자 유실 리다이렉트)에만 "dead"를 반환한다.
+const DEAD_LINK_CHECK_CAP_PER_RUN = 60; // 기존 항목 재검증 1회 상한
+const LINK_RECHECK_INTERVAL_MS = 3 * 24 * 60 * 60 * 1000; // 재검증 주기 3일
+
+// 기사 URL의 고유 식별자(순번/idxno/ar-XXXX 등)를 뽑아 soft-404 판정에 사용
+function extractIdToken(url) {
+  try {
+    let m = url.match(/idxno=(\d{3,})/i);
+    if (m) return m[1];
+    m = url.match(/\/((?:ar|gm|bb)-[A-Za-z0-9]{6,})/i);
+    if (m) return m[1];
+    const segs = new URL(url).pathname.split("/").filter(Boolean);
+    for (let i = segs.length - 1; i >= 0; i--) {
+      if (/^\d{3,}$/.test(segs[i]) || /\d{5,}/.test(segs[i])) return segs[i];
+    }
+  } catch {
+    /* noop */
+  }
+  return null;
+}
+
+// 반환: "alive" | "dead" | "unknown"
+async function checkLinkAlive(url) {
+  if (!url || !/^https?:\/\//i.test(url)) return "unknown";
+  try {
+    const res = await fetchWithTimeout(
+      url,
+      { headers: { "User-Agent": BROWSER_UA }, redirect: "follow" },
+      10000
+    );
+    const finalUrl = res.url || url;
+    if (res.status === 404 || res.status === 410) return "dead";
+    if (res.status >= 200 && res.status < 300) {
+      // soft-404: 리다이렉트로 기사 식별자를 잃었으면 유실로 간주(비즈워치 include 등)
+      const token = extractIdToken(url);
+      if (token && !finalUrl.includes(token)) return "dead";
+      try {
+        const fu = new URL(finalUrl);
+        const orig = new URL(url);
+        if (
+          (fu.pathname === "/" || fu.pathname === "") &&
+          orig.pathname.length > 1
+        )
+          return "dead"; // 루트/홈으로 튕겨나감
+      } catch {
+        /* noop */
+      }
+      return "alive";
+    }
+    // 401/403/429/5xx/미해결 3xx → 봇 차단·일시 오류 가능 → 삭제하지 않음
+    return "unknown";
+  } catch (err) {
+    if (err.name === "AbortError") return "unknown"; // 타임아웃 = 일시적
+    const code = err.cause?.code || err.code || "";
+    if (/ENOTFOUND|ECONNREFUSED/.test(code)) return "dead"; // 도메인·서버 소멸
+    return "unknown";
+  }
+}
+
+// 신규 RSS 항목 중 "안 열리는" 기사를 분류 전에 제외(AI 토큰도 절약)
+async function dropDeadFreshLinks(items) {
+  if (items.length === 0) return items;
+  const now = new Date().toISOString();
+  const verdicts = await mapWithConcurrency(items, 4, async (it) => {
+    const v = await checkLinkAlive(it.link);
+    it.linkCheckedAt = now;
+    return v;
+  });
+  const kept = [];
+  let dropped = 0;
+  items.forEach((it, i) => {
+    if (verdicts[i] === "dead") {
+      dropped++;
+      log(`  ✗ 죽은 링크 제외(신규): ${it.headline.slice(0, 40)} | ${it.link}`);
+    } else {
+      kept.push(it);
+    }
+  });
+  if (dropped > 0) log(`신규 죽은 링크 ${dropped}건 제외`);
+  return kept;
+}
+
+// 기존 news.json 항목을 순환 재검증하여 "안 열리는" 기사를 제거(1회 상한 적용).
+// linkCheckedAt로 오래 안 본 것부터 돌아가며 검증 → 시간이 지나면 코퍼스 전체가 자동 재검증됨.
+async function pruneDeadExistingLinks(items) {
+  const now = Date.now();
+  const due = items.filter((it) => {
+    const t = it.linkCheckedAt ? new Date(it.linkCheckedAt).getTime() : 0;
+    return now - t >= LINK_RECHECK_INTERVAL_MS;
+  });
+  if (due.length === 0) return { removedIds: new Set(), checked: 0 };
+  due.sort((a, b) => {
+    const ta = a.linkCheckedAt ? new Date(a.linkCheckedAt).getTime() : 0;
+    const tb = b.linkCheckedAt ? new Date(b.linkCheckedAt).getTime() : 0;
+    return ta - tb;
+  });
+  const slice = due.slice(0, DEAD_LINK_CHECK_CAP_PER_RUN);
+  log(`기존 링크 재검증 대상 ${due.length}건 (이번 회 ${slice.length}건 처리)`);
+  const nowIso = new Date().toISOString();
+  const removedIds = new Set();
+  await mapWithConcurrency(slice, 3, async (it) => {
+    const v = await checkLinkAlive(it.url);
+    it.linkCheckedAt = nowIso;
+    if (v === "dead") {
+      removedIds.add(it.id);
+      log(
+        `  ✗ 죽은 링크 제외(기존): ${(it.headline || "").slice(0, 40)} | ${it.url}`
+      );
+    }
+  });
+  if (removedIds.size > 0) log(`기존 죽은 링크 ${removedIds.size}건 제외`);
+  return { removedIds, checked: slice.length };
+}
+
 // ===== 기사 대표 이미지 수집 =====
 // 실기사 URL에서 대표 이미지(og:image/twitter:image/JSON-LD/본문 이미지)를 추출.
 // LLM 호출 아님 — HTML fetch + 정규식. 실패/부재 時 null(클라이언트가 색 플레이스홀더로 폴백).
@@ -848,6 +965,7 @@ async function classifyAll(items, startId) {
           },
           publishedAt: item.publishedAt,
           url: item.link,
+          linkCheckedAt: item.linkCheckedAt,
         });
         log(`  → ${cls.lens} / ${grade} (impact ${impact})`);
       }
@@ -1019,8 +1137,9 @@ async function main() {
 
   await resolveFreshLinks(fresh);
 
-  const newOnes = dedupeAndFilter(fresh, existing);
-  log(`중복·필터 後 분류 대상 ${newOnes.length}건`);
+  const deduped = dedupeAndFilter(fresh, existing);
+  const newOnes = await dropDeadFreshLinks(deduped);
+  log(`중복·필터·링크확인 後 분류 대상 ${newOnes.length}건`);
 
   const startId = Math.max(0, ...existing.items.map((i) => i.id || 0)) + 1;
   const classified = newOnes.length
@@ -1031,8 +1150,14 @@ async function main() {
 
   await enrichImages(classified); // 신규 분류분에 og:image 부착(토큰 비용 0)
 
+  // 기존 항목 링크 순환 재검증 → "안 열리는" 기사 제거
+  const { removedIds: deadIds, checked: linkChecked } =
+    await pruneDeadExistingLinks(existing.items);
+
   // 보존 기간 정리 → 같은 사건 기사 묶음 → 최신순 정렬
-  const pruned = prune([...classified, ...existing.items]);
+  const pruned = prune(
+    [...classified, ...existing.items].filter((it) => !deadIds.has(it.id))
+  );
   const merged = dedupeMerged(pruned).sort(
     (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
   );
@@ -1044,7 +1169,8 @@ async function main() {
     ptFixed > 0 ||
     classified.length > 0 ||
     merged.length !== existing.items.length ||
-    backfilled > 0;
+    backfilled > 0 ||
+    linkChecked > 0;
   if (!changed) {
     log("변경 없음");
     return;
@@ -1067,7 +1193,15 @@ async function main() {
 }
 
 // 재사용을 위한 export (reclassify.mjs 등에서 분류 로직 재활용)
-export { CONFIG, CLASSIFY_SYSTEM, classifyOne, computeImpact, gradeFromImpact };
+export {
+  CONFIG,
+  CLASSIFY_SYSTEM,
+  classifyOne,
+  computeImpact,
+  gradeFromImpact,
+  extractIdToken,
+  checkLinkAlive,
+};
 
 // 직접 실행(node fetch-news.js)일 때만 전체 파이프라인 구동. import 時엔 실행 안 함.
 if (import.meta.url === pathToFileURL(process.argv[1] || "").href) {
