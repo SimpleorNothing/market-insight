@@ -1,7 +1,91 @@
 {
-  "updatedAt": "2026-07-08T04:59:23.841Z",
+  "updatedAt": "2026-07-08T07:27:28.214Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1540,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesReliability": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "NCSI",
+        "고객만족도",
+        "브랜드평판"
+      ],
+      "headline": "LG전자, 한국 NCSI 가전·IT 11년 연속 1위",
+      "summary": "LG전자가 한국의 NCSI(국가고객만족도) 조사에서 가전 및 IT 부문 11년 연속 1위를 기록했다. 고객 만족도 지표에서 업계 최고 수준의 신뢰도를 유지하고 있음을 의미한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 NCSI 가전 및 IT 부문에서 11년 연속 1위 달성"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://biz.chosun.com/en/en-it/2026/07/08/RLPURINWGZHJDKYL6E3IWN47RA/?outputType=amp"
+      },
+      "publishedAt": "2026-07-08T05:56:00.000Z",
+      "url": "https://biz.chosun.com/en/en-it/2026/07/08/RLPURINWGZHJDKYL6E3IWN47RA/?outputType=amp",
+      "image": "https://biz.chosun.com/resizer/v2/JWFD2ETCTRKFTI3TRD4UDRXBSA.jpg?auth=27201d61078b953735a5e4c77682c9622eb4cb1c2f86b26de498af239454a2c4&width=1200&height=630&smart=true"
+    },
+    {
+      "id": 1539,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "Haier",
+        "Carrier"
+      ],
+      "tags": [
+        "M&A",
+        "신사업",
+        "글로벌전략",
+        "브랜드인수"
+      ],
+      "headline": "Haier, GE Appliances 인수 전략 심층 분석",
+      "summary": "중국 Haier가 경영난에 처한 GE Appliances를 인수한 배경과 전략을 다룬 기사. 저부진 중국 공장에서 출발한 Haier가 미국의 상징적 가전 브랜드를 인수하며 글로벌 시장 지위 강화. 북미 가전시장의 주요 M&A 사례로 평가.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Haier가 경영 어려움을 겪던 GE Appliances를 인수한 배경과 전략 분석"
+        },
+        {
+          "type": "content",
+          "text": "중국 저부진 공장에서 출발한 Haier의 미국 가전 시장 진출 및 브랜드 포지셔닝"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://mshale.com/0e0dc0ee/94e13361NzYKJi8SWRoKVDw"
+      },
+      "publishedAt": "2026-07-08T03:44:42.000Z",
+      "url": "https://mshale.com/0e0dc0ee/94e13361NzYKJi8SWRoKVDw",
+      "image": null
+    },
     {
       "id": 1530,
       "lens": "소비자",
@@ -129,6 +213,56 @@
       "publishedAt": "2026-07-08T02:11:00.000Z",
       "url": "https://biz.chosun.com/en/en-society/2026/07/08/2E7KYQ27ZZCV3HO7PDCMDURXG4/?outputType=amp",
       "image": "https://biz.chosun.com/resizer/v2/4GAA3LED7VPU3MXRTED3ODYAZE.jpg?auth=04b8e43b602d9358ba7d814755a4143e9c91e2593fa2e22e38be5f4313f219ca&width=1200&height=630&smart=true"
+    },
+    {
+      "id": 1538,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "실적",
+        "가전",
+        "차량부품",
+        "Q2"
+      ],
+      "headline": "LG전자, Q2 기록적 실적 달성…가전·차량부품 주도",
+      "summary": "LG전자가 2분기 기록적 실적을 달성했으며, 이는 가전사업과 차량부품 사업이 주도했다. 미국 시장에서의 가전 수요 증가와 전동화 관련 차량부품 매출 확대가 주요 동력이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 2분기 기록적 실적을 게시, 가전사업과 차량부품 사업이 성장 주도"
+        },
+        {
+          "type": "content",
+          "text": "미국 가정용 전자제품 시장에서의 수요 증가가 실적 개선의 핵심 요인"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://pulse.mk.co.kr/news/english/12093126"
+      },
+      "publishedAt": "2026-07-08T01:53:15.000Z",
+      "url": "https://pulse.mk.co.kr/news/english/12093126",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/08/rcv.YNA.20260707.PYH2026070711150001300_R.jpg"
     },
     {
       "id": 1522,
@@ -17452,44 +17586,6 @@
       "publishedAt": "2026-06-01T21:10:00.000Z",
       "url": "https://biz.chosun.com/industry/business-venture/2026/06/02/MRBD3UK54JDDZIM73PBNYQ6B7Q/",
       "image": "https://biz.chosun.com/resizer/v2/G4YGKMJYGRRWEZRSGY4TGN3BGE.jpg?auth=d014ee221a0ab31acb2d4c7fffd6c7a3a612a6fe5a5a937f4f49d0a7f998b875&width=1200&height=630&smart=true"
-    },
-    {
-      "id": 360,
-      "lens": "거시",
-      "grade": "주시",
-      "impact": 3.2,
-      "factors": {
-        "salesReliability": 4,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3,
-        "salesRelevance": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기"
-      ],
-      "competitors": [
-        "Haier"
-      ],
-      "tags": [
-        "제조 재개",
-        "고용 창출",
-        "미국 현지화",
-        "공급망 전략",
-        "첨단제조"
-      ],
-      "headline": "GE Appliances, 미국 제조업 일자리 회복 추진",
-      "summary": "Haier 산하 GE Appliances가 미국 내 제조 일자리 복귀 계획을 발표했다. 북미 주요 가전사의 국내 생산 확대 전략으로 글로벌 공급망 재편과 현지화 경향을 반영한다.",
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.advancedmanufacturing.org/news-desk/ge-appliances-brings-back-manufacturing-jobs/article_ace02405-a780-4cc7-bb09-19f924591c44.html"
-      },
-      "publishedAt": "2026-06-01T19:00:00.000Z",
-      "url": "https://www.advancedmanufacturing.org/news-desk/ge-appliances-brings-back-manufacturing-jobs/article_ace02405-a780-4cc7-bb09-19f924591c44.html",
-      "image": "https://bloximages.chicago2.vip.townnews.com/advancedmanufacturing.org/content/tncms/assets/v3/editorial/c/e8/ce888419-4963-453f-a174-63735707f80f/6a1dc2e5214c8.image.jpg?crop=800%2C420%2C0%2C14"
     },
     {
       "id": 359,
