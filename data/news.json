@@ -1,48 +1,134 @@
 {
-  "updatedAt": "2026-07-08T01:30:19.051Z",
+  "updatedAt": "2026-07-08T04:59:23.841Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1525,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 3.9,
+      "id": 1530,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.6,
       "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 2,
         "sourceReliability": 3
       },
-      "products": [],
+      "products": [
+        "HVAC"
+      ],
       "competitors": [
         "LG전자"
       ],
       "tags": [
-        "신사업",
-        "B2B",
-        "히트펌프",
+        "이동식에어컨",
+        "냉방성능",
         "에너지효율",
-        "산업용"
+        "제품비교",
+        "소비자평가"
       ],
-      "headline": "LG전자, 산업용 고온·대용량 히트펌프 제조현장 확대",
-      "summary": "LG전자가 제조 산업 분야를 대상으로 고온·대용량 산업용 히트펌프 사업을 가속화하고 있다. 히트펌프 기술을 활용해 제조현장의 열 수요를 충족시키는 신사업 영역으로 확대하는 전략으로, B2B 시장 진출을 강화하고 있다.",
+      "headline": "이동식 에어컨 평가서 LG 냉방속도, 이파람 전력효율 우수",
+      "summary": "이동식 에어컨 제품 비교 평가에서 LG전자의 냉방속도와 이파람의 전기료 효율성이 우수한 것으로 나타났다. 소비자 선택 기준이 되는 냉방성능과 에너지 효율성을 중심으로 경쟁 제품 간 차이가 확인되었다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 고온·대용량 산업용 히트펌프로 제조현장 공략을 가속화 중"
+          "text": "LG전자 이동식 에어컨이 냉방속도 부문에서 우수한 평가를 획득"
         },
         {
           "type": "content",
-          "text": "산업 열 수요 충족을 위한 B2B 신사업 영역 확대 추진"
+          "text": "이파람 제품이 전기료 효율성 부문에서 경쟁력 있는 성능을 입증"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.mt.co.kr/industry/2026/07/08/2026070808564829194"
+        "url": "https://v.daum.net/v/20260708120306334"
       },
-      "publishedAt": "2026-07-08T01:01:04.000Z",
-      "url": "https://www.mt.co.kr/industry/2026/07/08/2026070808564829194",
-      "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/07/2026070808564829194_1.jpg"
+      "publishedAt": "2026-07-08T03:03:06.000Z",
+      "url": "https://v.daum.net/v/20260708120306334",
+      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/08/sbscnbc/20260708120309497klda.png"
+    },
+    {
+      "id": 1529,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "이동식에어컨",
+        "냉방성능",
+        "제품평가",
+        "소비자가이드"
+      ],
+      "headline": "이동식 에어컨 냉방성능 편차 큼, 최고 성능 제품 분석",
+      "summary": "이동식 에어컨 제품들의 냉방성능이 제조사별로 상이한 것으로 조사됐다. 소비자 선택 시 성능 격차를 고려한 검토가 필요한 상황이며, 구체적인 성능 평가 결과가 제시됐다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "이동식 에어컨 제품별 냉방성능 편차 확인"
+        },
+        {
+          "type": "content",
+          "text": "소비자 선택 기준 제공을 위한 성능 비교 조사"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.newstree.kr/newsView/ntr202607080005"
+      },
+      "publishedAt": "2026-07-08T03:00:02.000Z",
+      "url": "https://www.newstree.kr/newsView/ntr202607080005",
+      "image": "https://www.newstree.kr/data/ntr/image/2026/07/08/ntr202607080006.jpg"
+    },
+    {
+      "id": 1534,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "A/S",
+        "소비자분쟁",
+        "냉장고",
+        "부품수리"
+      ],
+      "headline": "LG전자, 독도가드 유닛 무상 수리 서비스 확대",
+      "summary": "LG전자가 독도가드(Dokdo Guard) 냉장고 부품의 A/S 분쟁 확산에 대응, 무상 수리 정책을 실시. 소비자 신뢰 회복과 서비스 품질 개선에 집중.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 독도가드 냉장고 유닛 수리를 무상 제공하기로 결정"
+        },
+        {
+          "type": "content",
+          "text": "A/S 분쟁 확산에 따른 소비자 신뢰 회복 차원의 조치"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://biz.chosun.com/en/en-society/2026/07/08/2E7KYQ27ZZCV3HO7PDCMDURXG4/?outputType=amp"
+      },
+      "publishedAt": "2026-07-08T02:11:00.000Z",
+      "url": "https://biz.chosun.com/en/en-society/2026/07/08/2E7KYQ27ZZCV3HO7PDCMDURXG4/?outputType=amp",
+      "image": "https://biz.chosun.com/resizer/v2/4GAA3LED7VPU3MXRTED3ODYAZE.jpg?auth=04b8e43b602d9358ba7d814755a4143e9c91e2593fa2e22e38be5f4313f219ca&width=1200&height=630&smart=true"
     },
     {
       "id": 1522,
@@ -710,53 +796,6 @@
       "publishedAt": "2026-07-07T08:05:05.000Z",
       "url": "https://www.koreajoongangdaily.com/business/lg-electronics-posts-record-q2-earnings-on-premium-appliances-us-tariff-refund/12759352",
       "image": "https://image.koreajoongangdaily.com/12603092.jpg?imageId=12603092&x=0&y=0&cropw=100&croph=71.27&panox=0&panoy=0&panow=100&panoh=71.27&width=1200&height=683"
-    },
-    {
-      "id": 1508,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "식기세척기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "실적",
-        "가전",
-        "글로벌",
-        "경쟁동향"
-      ],
-      "headline": "LG전자, 분기 최고 실적 기록…가전 판매 급증",
-      "summary": "LG전자가 분기 최고 실적을 기록했으며, 가전 사업 부문의 판매가 큰 폭으로 증가했다. 글로벌 시장에서의 강한 실적은 경쟁사의 전략 수립에 영향을 미칠 수 있는 중요한 신호다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자가 분기 최고 실적 기록"
-        },
-        {
-          "type": "content",
-          "text": "가전 사업 판매 급증"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "http://koreabizwire.com/lg-electronics-posts-record-quarterly-earnings-as-appliance-sales-surge/354753"
-      },
-      "publishedAt": "2026-07-07T07:49:55.000Z",
-      "url": "http://koreabizwire.com/lg-electronics-posts-record-quarterly-earnings-as-appliance-sales-surge/354753",
-      "image": null
     },
     {
       "id": 1513,
@@ -13666,46 +13705,6 @@
       "publishedAt": "2026-06-11T23:00:00.000Z",
       "url": "https://news.samsung.com/kr/%EC%8B%9D%EC%9E%AC%EB%A3%8C-%EB%B3%B4%EA%B3%A0-%EC%95%8C%EC%95%84%EC%84%9C-%EB%A0%88%EC%8B%9C%ED%94%BC-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EB%83%89%EC%9E%A5%EA%B3%A0%EC%82%BC%EC%84%B1",
       "image": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/06/11182913/932x524_DA_0612.jpg"
-    },
-    {
-      "id": 645,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.6,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "HVAC",
-        "청소기",
-        "식기세척기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자",
-        "사업 전략",
-        "가전사업 재편",
-        "실적",
-        "포트폴리오"
-      ],
-      "headline": "LG전자, 역대 최대 실적에도 가전사업 구조 전환 추진",
-      "summary": "LG전자가 사상 최대 실적을 기록했음에도 불구하고 가전사업 포트폴리오 재편을 선언했다. 경쟁사의 전략적 사업 재편과 포지셔닝 변화를 의미하는 신호로, 가전 산업 내 경쟁 구도 변화를 시사한다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://dealsite.co.kr/articles/163435"
-      },
-      "publishedAt": "2026-06-11T22:41:15.000Z",
-      "url": "https://dealsite.co.kr/articles/163435",
-      "image": "https://dtd31o1ybbmk8.cloudfront.net/photos/e46e960cfafa47d1835b029afbfd6ebb/thumb.png"
     },
     {
       "id": 643,
