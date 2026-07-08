@@ -17,6 +17,11 @@
   />
   <link rel="stylesheet" href="assets/css/style.css?v=20260707" />
   <link rel="stylesheet" href="assets/css/lens-icons.css?v=20260707" />
+  <style>
+    /* 썸네일 클릭 → 원문 이동(thumb-link.js) 시각 어포던스 */
+    .news-card__thumb { cursor: pointer; transition: opacity 0.15s ease; }
+    .news-card__thumb:hover { opacity: 0.85; }
+  </style>
 </head>
 <body>
   <main class="container">
@@ -206,5 +211,6 @@
   </div>
 
   <script src="assets/js/app.js?v=20260707e"></script>
+  <script src="assets/js/thumb-link.js?v=20260708"></script>
 </body>
 </html>
