@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T19:21:32.325Z",
+  "updatedAt": "2026-07-09T21:12:23.989Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -470,6 +470,49 @@
       "publishedAt": "2026-07-09T03:51:37.000Z",
       "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370127",
       "image": "https://www.electimes.com/news/photo/202607/370127_582684_3712.png"
+    },
+    {
+      "id": 1611,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신제품",
+        "상용화",
+        "신사업",
+        "B2B"
+      ],
+      "headline": "LG전자, 'LG Professional' 상용 대용량 세탁기 출시",
+      "summary": "LG전자가 'LG Professional' 브랜드로 상용 대용량 세탁기 신제품을 글로벌 시장에 선보였다. 상업용 세탁 시장으로의 사업 확장을 의도한 신규 제품 라인이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 'LG Professional' 브랜드 상용 대용량 세탁기를 글로벌 시장에 출시"
+        },
+        {
+          "type": "content",
+          "text": "상업용·호텔·세탁소 등 B2B 고객층을 겨냥한 신규 사업 진출"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.digitaltoday.co.kr/en/view/79729/lg-electronics-launches-lg-professional-large-capacity-commercial-laundry-appliances"
+      },
+      "publishedAt": "2026-07-09T01:00:00.000Z",
+      "url": "https://www.digitaltoday.co.kr/en/view/79729/lg-electronics-launches-lg-professional-large-capacity-commercial-laundry-appliances",
+      "image": "https://cdn.digitaltoday.co.kr/news/photo/202607/682632_630996_941.jpeg"
     },
     {
       "id": 1605,
@@ -1060,43 +1103,6 @@
       "publishedAt": "2026-07-08T06:41:00.000Z",
       "url": "https://www.khan.co.kr/article/202607081541011",
       "image": "https://img.khan.co.kr/news/2026/07/08/news-p.v1.20260708.541351503f1f4059acb1881d9d0907c6_P1.png"
-    },
-    {
-      "id": 1606,
-      "lens": "소비자",
-      "grade": "주시",
-      "impact": 2.8,
-      "factors": {
-        "salesReliability": 3,
-        "timeUrgency": 2,
-        "marketSize": 3,
-        "sourceReliability": 3,
-        "salesRelevance": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "고객만족도",
-        "브랜드평판",
-        "한국시장"
-      ],
-      "headline": "LG전자, 한국 NCSI 가전·IT 부문 11년 연속 1위",
-      "summary": "LG전자가 한국의 고객만족도지수(NCSI) 가전 및 IT 부문에서 11년 연속으로 1위를 차지했다. 이는 고객 신뢰도와 제품 만족도 측면에서 업계 선도 위치를 유지하고 있음을 시사한다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자가 한국 NCSI 가전 및 IT 부문에서 11년 연속 1위 달성"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://biz.chosun.com/en/en-it/2026/07/08/RLPURINWGZHJDKYL6E3IWN47RA/?outputType=amp"
-      },
-      "publishedAt": "2026-07-08T05:56:00.000Z",
-      "url": "https://biz.chosun.com/en/en-it/2026/07/08/RLPURINWGZHJDKYL6E3IWN47RA/?outputType=amp",
-      "image": "https://biz.chosun.com/resizer/v2/JWFD2ETCTRKFTI3TRD4UDRXBSA.jpg?auth=27201d61078b953735a5e4c77682c9622eb4cb1c2f86b26de498af239454a2c4&width=1200&height=630&smart=true"
     },
     {
       "id": 1551,
@@ -21678,38 +21684,6 @@
       "publishedAt": "2026-05-22T11:38:10.000Z",
       "url": "https://www.indianretailer.com/news/lg-electronics-india-q4-profit-falls-8-pc-despite-revenue-growth",
       "image": "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2026-05/jenfrfrnf.jpg"
-    },
-    {
-      "id": 167,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자",
-        "AI인프라",
-        "로봇사업",
-        "사업다각화",
-        "구조개선"
-      ],
-      "headline": "LG전자, AI 인프라·로봇 사업 구조 전환 가속",
-      "summary": "LG전자가 기존 가전사업 구조 개선을 위해 AI 인프라와 로봇 사업으로의 다각화를 추진 중. 신사업 분야로의 체질 개선을 통해 미래 성장 동력 확보에 집중하고 있는 상황.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.sentv.co.kr/article/view/sentv202605220042"
-      },
-      "publishedAt": "2026-05-22T09:14:44.000Z",
-      "url": "https://www.sentv.co.kr/article/view/sentv202605220042",
-      "image": "https://www.sentv.co.kr/data/sentv/image/2026/05/22/sentv20260522000148.jpg"
     },
     {
       "id": 173,
