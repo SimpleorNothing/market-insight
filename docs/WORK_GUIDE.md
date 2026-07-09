@@ -90,6 +90,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #92 | 07-09 | fix: Google News URL 해석 시 다른 기사로 잘못 연결되는 버그 수정 |
 | #90 | 07-08 | feat: 카드 썸네일 클릭 시 원문 새 탭 오픈 |
 | #89 | 07-08 | fix: 뉴스 카운트 커밋 메시지에 archive.json 합산 |
 | #88 | 07-07 | feat: 실적 기사 요약 기준을 우선순위 체크리스트로 전환 (원문 보도 항목만) |
