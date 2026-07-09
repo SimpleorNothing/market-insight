@@ -1,7 +1,132 @@
 {
-  "updatedAt": "2026-07-09T01:52:30.833Z",
+  "updatedAt": "2026-07-09T06:00:54.564Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1571,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "원자재가격",
+        "에너지위기",
+        "공급망",
+        "인플레이션",
+        "중국경제"
+      ],
+      "headline": "中 6월 PPI 4.1% 상승, 47개월 최고",
+      "summary": "중국의 6월 생산자물가지수(PPI)가 4.1% 상승으로 47개월 만에 최고치를 기록했다. 이란 전쟁으로 촉발된 에너지·원자재 가격 급등이 주요 원인이며, 소비자물가지수(CPI)는 1% 상승에 머물러 디플레이션 우려 속 공급망 비용 압박이 심화되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "중국 6월 PPI 4.1% 상승, 47개월 만에 최고 기록"
+        },
+        {
+          "type": "content",
+          "text": "이란 전쟁 발 에너지·원자재 가격 상승이 주요 원인"
+        },
+        {
+          "type": "content",
+          "text": "CPI는 1% 상승에 그쳐 생산 비용 부담과 소비 부진 양극화"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12094386"
+      },
+      "publishedAt": "2026-07-09T05:53:08.000Z",
+      "url": "https://www.mk.co.kr/news/world/12094386",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/09/news-p.v1.20260709.371f98ecbd12457daf0678d4c711d9a4_R.png"
+    },
+    {
+      "id": 1572,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "난방 전동화",
+        "히트펌프",
+        "공동주택",
+        "정책",
+        "HVAC"
+      ],
+      "headline": "공동주택 히트펌프 설치 방식 다양화…규제 개선 추진",
+      "summary": "공동주택 내 히트펌프 보급을 위해 개별식부터 중앙식까지 다양한 설치 방식이 검토 중이다. 정부의 난방 전동화 정책 추진에 따라 공동주택 난방 방식의 유연성 확대가 과제로 대두되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "공동주택 히트펌프 설치를 위해 개별식·중앙식 등 다양한 방식 검토 중"
+        },
+        {
+          "type": "content",
+          "text": "난방 전동화 정책 추진에 따른 규제 개선 및 설치 기준 정비 필요"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370127"
+      },
+      "publishedAt": "2026-07-09T03:51:37.000Z",
+      "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370127",
+      "image": "https://www.electimes.com/news/photo/202607/370127_582684_3712.png"
+    },
+    {
+      "id": 1573,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "AI",
+        "물·전기 절약",
+        "상업용",
+        "스마트 세탁"
+      ],
+      "headline": "LG전자, AI 무게분석 상업용 세탁기 출시…물·전기 절약",
+      "summary": "LG전자가 AI 기술을 활용해 세탁물 무게를 자동 분석하고 물과 전기 사용량을 최적화하는 상업용 세탁가전을 선보였다. 해당 제품은 상업 세탁 시장을 타겟으로 한 신기술 적용 제품이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 AI 기술로 세탁물 무게를 분석해 물과 전기 사용량을 자동으로 절약하는 상업용 세탁가전을 출시"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://it.chosun.com/news/articleViewAmp.html?idxno=2023092165454"
+      },
+      "publishedAt": "2026-07-09T02:35:31.000Z",
+      "url": "https://it.chosun.com/news/articleViewAmp.html?idxno=2023092165454",
+      "image": "https://cdn.it.chosun.com/news/photo/202607/2023092165454_447203_4827.jpg"
+    },
     {
       "id": 1566,
       "lens": "경쟁사",
@@ -89,7 +214,7 @@
       "image": "https://cdn.digitaltoday.co.kr/news/photo/202607/682632_630996_941.jpeg"
     },
     {
-      "id": 1568,
+      "id": 1575,
       "lens": "경쟁사",
       "grade": "주시",
       "impact": 2.6,
@@ -107,28 +232,28 @@
       ],
       "tags": [
         "소송",
-        "보증",
-        "소비자"
+        "보증분쟁",
+        "식기세척기"
       ],
-      "headline": "월풀 식기세척기 보증 소송, 9순회법원 부활",
-      "summary": "9순회법원이 월풀 식기세척기 보증 관련 집단소송을 부활시켰다. 법원은 소비자들의 보증 청구 주장이 합리적이라고 판단하며 소송을 진행하기로 결정했다.",
+      "headline": "월풀 식기세척기 보증 소송, 항소법원 재개 결정",
+      "summary": "미국 연방 항소법원(9회로)이 월풀의 식기세척기 보증 관련 집단소송을 되살렸다. 보증 조건 분쟁으로 발생한 소송이 법적 절차를 통해 재진행될 예정이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "9순회법원이 월풀 식기세척기 보증 관련 집단소송을 부활시킴"
+          "text": "9th Circuit이 월풀 식기세척기 보증 관련 집단소송을 재개 결정"
         },
         {
           "type": "content",
-          "text": "소비자들의 보증 청구 주장을 법원이 합리적으로 판단해 소송 진행 결정"
+          "text": "미국 법원이 보증 조건 분쟁을 재심리하기로 판단"
         }
       ],
       "source": {
         "name": "Google News - US Home Appliances",
-        "url": "https://www.law360.com/articles/2498726/9th-circ-revives-whirlpool-dishwasher-warranty-class-action"
+        "url": "https://www.law360.com/amp/articles/2498726"
       },
       "publishedAt": "2026-07-09T00:59:00.000Z",
-      "url": "https://www.law360.com/articles/2498726/9th-circ-revives-whirlpool-dishwasher-warranty-class-action",
-      "image": "https://www.law360.com/images/law360-stacked.png"
+      "url": "https://www.law360.com/amp/articles/2498726",
+      "image": "https://static.law360news.com/images/law360_square_logo_2021.png"
     },
     {
       "id": 1559,
