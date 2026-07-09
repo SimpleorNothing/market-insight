@@ -135,6 +135,27 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 12000) {
   }
 }
 
+// /rss/articles/{id} 페이지에는 대상 기사 外에도 "관련기사" 등 다른 기사 카드가
+// 함께 렌더링되며, 각 카드는 자신만의 data-n-a-id/-sg/-ts 트리플을 갖는다.
+// 과거에는 페이지 전체에서 첫 번째 sg/ts만 취했는데, 그 첫 매치가 대상 기사가 아닌
+// 다른(관련) 기사 카드일 경우 garturlreq가 엉뚱한 기사의 URL을 반환해 클릭 시
+// 완전히 다른 기사로 연결되는 버그가 있었다. 반드시 대상 base64ArticleId를 가진
+// 태그 자신의 sg/ts를 찾아야 한다.
+function extractSignatureForId(html, targetId) {
+  const tagRe = /<[a-zA-Z][^>]*\bdata-n-a-id="([^"]+)"[^>]*>/g;
+  let m;
+  while ((m = tagRe.exec(html))) {
+    if (m[1] !== targetId) continue;
+    const tag = m[0];
+    const sigM = tag.match(/data-n-a-sg="([^"]+)"/);
+    const tsM = tag.match(/data-n-a-ts="([^"]+)"/);
+    if (sigM && tsM) {
+      return { signature: sigM[1], timestamp: Number(tsM[1]) };
+    }
+  }
+  return null;
+}
+
 async function decodeGoogleNewsUrl(url) {
   if (!isGoogleNewsUrl(url)) return url;
   try {
@@ -150,11 +171,17 @@ async function decodeGoogleNewsUrl(url) {
     if (!pageRes.ok) return url;
     const html = await pageRes.text();
 
-    const sigMatch = html.match(/data-n-a-sg="([^"]+)"/);
-    const tsMatch = html.match(/data-n-a-ts="([^"]+)"/);
-    if (!sigMatch || !tsMatch) return url;
-    const signature = sigMatch[1];
-    const timestamp = Number(tsMatch[1]);
+    let signature, timestamp;
+    const scoped = extractSignatureForId(html, base64ArticleId);
+    if (scoped) {
+      ({ signature, timestamp } = scoped);
+    } else {
+      // 대상 id를 가진 태그를 페이지에서 찾지 못한 경우(레이아웃 변경 等) — 다른
+      // 기사로 잘못 연결될 위험을 감수하느니 변환을 포기하고 원본(Google News) 링크를
+      // 그대로 반환한다. 원본 링크는 리다이렉트되므로 최소한 오배송은 없다.
+      log(`  ! ${base64ArticleId} 대상 서명 태그 미발견 → 변환 스킵(원본 링크 유지)`);
+      return url;
+    }
 
     // garturlreq에는 URL의 base64 article id를 그대로 넣는다(data-n-a-id 아님).
     const innerJson = JSON.stringify([
@@ -1066,7 +1093,7 @@ async function main() {
   log("=== 완료 ===");
 }
 
-// 재사용을 위한 export (reclassify.mjs 등에서 분류 로직 재활용)
+// 재사용을 위한 export (reclassify.mjs 等에서 분류 로직 재활용)
 export { CONFIG, CLASSIFY_SYSTEM, classifyOne, computeImpact, gradeFromImpact };
 
 // 직접 실행(node fetch-news.js)일 때만 전체 파이프라인 구동. import 時엔 실행 안 함.
