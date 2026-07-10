@@ -1,7 +1,55 @@
 {
-  "updatedAt": "2026-07-10T01:51:19.260Z",
+  "updatedAt": "2026-07-10T05:54:40.683Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1619,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "청소기"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "구독",
+        "AI",
+        "케어서비스",
+        "신사업",
+        "D2C"
+      ],
+      "headline": "삼성, AI 기반 구독형 가전 케어 서비스 'AI 구독클럽' 출시",
+      "summary": "삼성전자가 가전제품의 상태를 AI로 모니터링하고 예방적 유지보수를 제공하는 구독형 서비스 'AI 구독클럽'을 선보였다. 이 서비스는 세탁기·냉장고 등 주요 가전제품을 대상으로 스마트한 원격 진단과 정기적 케어를 통해 소비자 편의성을 높이는 신규 비즈니스 모델이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자 AI 구독클럽은 가전제품의 상태를 AI로 실시간 모니터링하며 예방적 유지보수 제공"
+        },
+        {
+          "type": "content",
+          "text": "세탁기, 냉장고 등 주요 가전에 대한 원격 진단 및 스마트 케어 서비스 중심 운영"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.samsung.com/kr/%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4-%EC%9A%B0%EB%A6%AC%EC%A7%91-%EA%B0%80%EC%A0%84%EC%9D%84-%EB%8A%98-%EC%B5%9C%EC%83%81%EC%9C%BC%EB%A1%9C-ai-%EA%B5%AC%EB%8F%85%ED%81%B4%EB%9F%BD"
+      },
+      "publishedAt": "2026-07-10T05:00:00.000Z",
+      "url": "https://news.samsung.com/kr/%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4-%EC%9A%B0%EB%A6%AC%EC%A7%91-%EA%B0%80%EC%A0%84%EC%9D%84-%EB%8A%98-%EC%B5%9C%EC%83%81%EC%9C%BC%EB%A1%9C-ai-%EA%B5%AC%EB%8F%85%ED%81%B4%EB%9F%BD",
+      "image": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/07/10134718/KV_932x524_0710.jpg"
+    },
     {
       "id": 1615,
       "lens": "소비자",
@@ -45,6 +93,50 @@
       "publishedAt": "2026-07-10T00:50:00.000Z",
       "url": "http://www.press9.kr/news/articleView.html?idxno=79249",
       "image": null
+    },
+    {
+      "id": 1620,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "구독",
+        "세탁소",
+        "동남아",
+        "D2C"
+      ],
+      "headline": "LG전자, 동남아 스마트 세탁소 신사업 확대…베트남 진출",
+      "summary": "LG전자가 동남아시아 지역에서 '비 런드리'라는 스마트 세탁소 사업을 확대하고 있다. 베트남에 신규 점포를 오픈하며 세탁기 중심의 전통 사업에서 서비스·구독 모델로의 사업 다각화를 추진 중이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 베트남에 스마트 세탁소 '비 런드리'를 오픈하며 동남아 사업 확대"
+        },
+        {
+          "type": "content",
+          "text": "세탁기 판매 중심에서 구독형 세탁 서비스로 수익모델 전환 시도"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.theguru.co.kr/news/article.html?no=104227"
+      },
+      "publishedAt": "2026-07-09T23:12:20.000Z",
+      "url": "https://www.theguru.co.kr/news/article.html?no=104227",
+      "image": "https://www.theguru.co.kr/data/photos/20260728/art_17836374115613_00df1b.jpg"
     },
     {
       "id": 1612,
@@ -602,49 +694,6 @@
       "image": "https://www.electimes.com/news/photo/202607/370127_582684_3712.png"
     },
     {
-      "id": 1618,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "세탁기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "B2B",
-        "신사업",
-        "상업용가전",
-        "유럽시장"
-      ],
-      "headline": "LG전자, 상업용 대용량 세탁기 글로벌 출시로 B2B 확대",
-      "summary": "LG전자가 대용량 상업용 세탁기를 글로벌 시장에 출시하며 유럽과 주요 지역을 중심으로 B2B 전략을 강화하고 있다. 기존 B2C 중심 사업 구조에서 상업용 세탁 시장으로의 신규 사업 진출을 의미한다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자가 대용량 상업용 세탁기를 글로벌 시장에 출시"
-        },
-        {
-          "type": "content",
-          "text": "유럽 및 주요 지역을 중심으로 B2B 사업 전략 강화"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.asiae.co.kr/en/article/2026070908235134384"
-      },
-      "publishedAt": "2026-07-09T01:00:00.000Z",
-      "url": "https://www.asiae.co.kr/en/article/2026070908235134384",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026070908224239455_1783552961.jpg"
-    },
-    {
       "id": 1575,
       "lens": "경쟁사",
       "grade": "주시",
@@ -729,52 +778,6 @@
       "publishedAt": "2026-07-08T22:53:16.000Z",
       "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4424072",
       "image": "https://cdn.news.einfomax.co.kr/news/thumbnail/202607/4424072_328161_542_v150.jpg"
-    },
-    {
-      "id": 1562,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "극한기후",
-        "에어컨",
-        "유럽시장",
-        "설치비",
-        "소비자진입장벽"
-      ],
-      "headline": "유럽 폭염에도 에어컨 특수 제한…설치비 1000만원 이상",
-      "summary": "유럽의 40도 폭염 상황에도 불구하고 에어컨 수요 특수가 나타나지 않는 현상이 보도됨. 높은 설치비(1000만원 이상)와 유럽의 낮은 에어컨 보급률이 주요 원인으로 지적됨. 기후변화로 인한 극단적 기후 현상이 가전 시장에 미치는 영향을 보여주는 사례.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "유럽이 40도 폭염에 시달리고 있으나 에어컨 수요 특수가 제한적"
-        },
-        {
-          "type": "content",
-          "text": "에어컨 설치비 1000만원 이상으로 소비자 진입장벽이 높음"
-        },
-        {
-          "type": "content",
-          "text": "유럽의 낮은 에어컨 보급률로 인해 시장 확대 기회 제약"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.news1.kr/industry/general-industry/6222111"
-      },
-      "publishedAt": "2026-07-08T22:00:00.000Z",
-      "url": "https://www.news1.kr/industry/general-industry/6222111",
-      "image": null
     },
     {
       "id": 1558,
@@ -1190,6 +1193,43 @@
       "publishedAt": "2026-07-08T06:41:00.000Z",
       "url": "https://www.khan.co.kr/article/202607081541011",
       "image": "https://img.khan.co.kr/news/2026/07/08/news-p.v1.20260708.541351503f1f4059acb1881d9d0907c6_P1.png"
+    },
+    {
+      "id": 1623,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesReliability": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "고객만족도",
+        "NCSI",
+        "한국시장"
+      ],
+      "headline": "LG전자, 한국 NCSI 가전·IT 부문 11년 연속 1위",
+      "summary": "LG전자가 한국의 NCSI(고객만족도지수) 가전·IT 부문에서 11년 연속으로 1위를 차지했다. 고객 만족도 평가에서 장기간 선도적 위치를 유지하고 있음을 보여주는 결과다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 한국 NCSI 가전·IT 부문 11년 연속 1위 달성"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://biz.chosun.com/en/en-it/2026/07/08/RLPURINWGZHJDKYL6E3IWN47RA/"
+      },
+      "publishedAt": "2026-07-08T05:56:00.000Z",
+      "url": "https://biz.chosun.com/en/en-it/2026/07/08/RLPURINWGZHJDKYL6E3IWN47RA/",
+      "image": "https://biz.chosun.com/resizer/v2/JWFD2ETCTRKFTI3TRD4UDRXBSA.jpg?auth=27201d61078b953735a5e4c77682c9622eb4cb1c2f86b26de498af239454a2c4&width=1200&height=630&smart=true"
     },
     {
       "id": 1551,
