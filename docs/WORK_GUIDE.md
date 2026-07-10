@@ -90,6 +90,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #95 | 07-10 | chore(sensing): 캐리어 피드 수집 창 3d→7d (지난 1주일치 백필) |
 | #94 | 07-10 | feat(sensing): 캐리어(오텍캐리어·캐리어에어컨) 센싱 대상 추가 |
 | #93 | 07-09 | fix: Correct news ID 1522 article URL and image reference |
 | #92 | 07-09 | fix: Google News URL 해석 시 다른 기사로 잘못 연결되는 버그 수정 |
