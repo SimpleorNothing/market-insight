@@ -15,6 +15,11 @@
       "region": "KR"
     },
     {
+      "name": "Google News - 캐리어/오텍캐리어 KR",
+      "url": "https://news.google.com/rss/search?q=(%22%EC%98%A4%ED%85%8D%EC%BA%90%EB%A6%AC%EC%96%B4%22%20OR%20%22%EC%BA%90%EB%A6%AC%EC%96%B4%EC%97%90%EC%96%B4%EC%BB%A8%22%20OR%20%22%EC%BA%90%EB%A6%AC%EC%96%B4%20%EC%97%90%EC%96%B4%EC%BB%A8%22%20OR%20%22%EC%BA%90%EB%A6%AC%EC%96%B4%20%ED%9E%88%ED%8A%B8%ED%8E%8C%ED%94%84%22%20OR%20%22%EC%BA%90%EB%A6%AC%EC%96%B4%20%EA%B3%B5%EC%A1%B0%22)%20when%3A3d&hl=ko&gl=KR&ceid=KR%3Ako",
+      "region": "KR"
+    },
+    {
       "name": "Google News - 한국 가전 산업",
       "url": "https://news.google.com/rss/search?q=%EA%B0%80%EC%A0%84+OR+%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90+OR+LG%EC%A0%84%EC%9E%90+OR+%EB%83%89%EC%9E%A5%EA%B3%A0+OR+%EC%84%B8%ED%83%81%EA%B8%B0+OR+%EC%97%90%EC%96%B4%EC%BB%A8+OR+%ED%9E%88%ED%8A%B8%ED%8E%8C%ED%94%84+when%3A1d&hl=ko&gl=KR&ceid=KR%3Ako",
       "region": "KR"
@@ -199,7 +204,9 @@
     "다이킨": "Daikin",
     "보쉬": "BSH",
     "지멘스": "BSH",
-    "미디어그룹": "Midea"
+    "미디어그룹": "Midea",
+    "오텍캐리어": "Carrier",
+    "캐리어에어컨": "Carrier"
   },
   "competitorAliasExcludes": [
     "New York",
@@ -413,7 +420,7 @@
   },
   "filterRules": {
     "_comment": "가전 산업 무관 뉴스 자동 제외 키워드. 헤드라인에 포함 時 분류 단계 진입 前 차단 + 기존 적재분도 매 실행 시 소급 제거.",
-    "_allowOverride_comment": "통상·관세 정책 키워드가 헤드라인에 있으면 blockKeywords보다 우선 → 차단하지 않고 분류 단계로 넘김 (예: '정상회담서 관세 논의'). 당사는 멕시코 등 역외 생산 비중이 높아 보호무역 정책 밀착 모니터링 필수.",
+    "_allowOverride_comment": "통상·관세 정책 키워드가 헤드라인에 있으면 blockKeywords보다 우선 → 차단하지 않고 분류 단계로 넘김 (예: '정상회담서 관세 논의'). 당사는 멕시코 등 역외 생산 비중이 높아 보호무역 정책 밀착 모니터링 필수. 또한 핵심 센싱 대상인 캐리어 계열(오텍캐리어·캐리어에어컨) 브랜드 키워드도 여기 포함 → 반도체·금융 등 blockKeywords와 겹쳐도 사전 차단하지 않고 분류 단계로 넘겨 LLM이 가전/HVAC 사업 기사인지 판단하게 함.",
     "allowOverrideKeywords": [
       "관세",
       "통상",
@@ -429,7 +436,9 @@
       "rules of origin",
       "trade agreement",
       "trade deal",
-      "nearshoring"
+      "nearshoring",
+      "오텍캐리어",
+      "캐리어에어컨"
     ],
     "blockKeywords": [
       "정상회담",
