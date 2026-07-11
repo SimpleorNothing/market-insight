@@ -1,7 +1,90 @@
 {
-  "updatedAt": "2026-07-11T14:18:43.215Z",
+  "updatedAt": "2026-07-11T15:44:40.771Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1674,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "원가절감",
+        "부채구조조정",
+        "실적개선",
+        "경영효율화"
+      ],
+      "headline": "월풀, 원가절감·부채 구조조정 강화로 주가 상승",
+      "summary": "월풀(WHR)이 원가절감과 부채 구조조정을 가속화하면서 주가가 상승했다. 이는 회사의 재무 건전성 개선 노력과 경영 효율화 전략을 반영한 것으로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 원가절감 및 부채 구조조정을 가속화하고 있다"
+        },
+        {
+          "type": "content",
+          "text": "이같은 경영 정상화 노력이 주식시장에서 긍정 평가를 받아 주가 상승으로 나타났다"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.timothysykes.com/news/whirlpoolcorporation-whr-news-2026_07_11/"
+      },
+      "publishedAt": "2026-07-11T15:07:00.000Z",
+      "url": "https://www.timothysykes.com/news/whirlpoolcorporation-whr-news-2026_07_11/",
+      "image": "https://content.timothysykes.com/wp-content/uploads/2026/07/whirlpool-stock-rises-as-whr-accelerates-cost-cuts-and-debt-shuffle.jpg"
+    },
+    {
+      "id": 1672,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelivance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "HVAC수요",
+        "폭염",
+        "계절성",
+        "유럽시장"
+      ],
+      "headline": "유럽 폭염으로 냉방기 수요 급증, 업체 생산 가동률 상승",
+      "summary": "유럽이 기록적 폭염을 겪으면서 냉방기 수요가 급증하고 있다. 냉방기 업체들의 생산·판매 활동이 활발해지는 추세로, 계절성 수요 증가가 시장 성장을 견인하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "유럽의 살인적 폭염으로 냉방기 업체들의 수요가 급증하고 있는 상황"
+        },
+        {
+          "type": "content",
+          "text": "냉방기 업체들이 생산과 판매로 분주한 상태를 보이고 있음"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6836737_37005.html"
+      },
+      "publishedAt": "2026-07-11T11:14:55.000Z",
+      "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6836737_37005.html",
+      "image": "https://image.imnews.imbc.com/replay/2026/nwdesk/article/__icsFiles/afieldfile/2026/07/11/desk_20260711_201413_1_6_Large.jpg"
+    },
     {
       "id": 1663,
       "lens": "기술",
@@ -939,16 +1022,15 @@
       "image": null
     },
     {
-      "id": 1672,
+      "id": 1675,
       "lens": "거시",
       "grade": "주요",
-      "impact": 3.7,
+      "impact": 4.1,
       "factors": {
-        "salesRelivance": 4,
+        "salesRelevance": 4,
         "timeUrgency": 4,
         "marketSize": 5,
-        "sourceReliability": 3,
-        "salesRelevance": 3
+        "sourceReliability": 3
       },
       "products": [
         "냉장고",
@@ -957,20 +1039,21 @@
       "competitors": [],
       "tags": [
         "칩플레이션",
+        "원자재비",
+        "가격상승",
         "공급망",
-        "원재료비",
-        "가격상승"
+        "AI반도체"
       ],
-      "headline": "AI칩 수급난으로 냉장고·세탁기 가격 25% 상승",
-      "summary": "AI칩 부품 수급 긴장이 가전 제품 원가 상승으로 전이되면서 냉장고, 세탁기 등 주요 제품의 가격이 최대 25% 오른 상황이다. 글로벌 AI 칩 수요 급증이 기존 가전 공급망에 압력을 가하고 있다.",
+      "headline": "AI칩 수급 부족으로 냉장고·세탁기 가격 25% 상승",
+      "summary": "AI칩 수요 폭발에 따른 공급 차질이 냉장고·세탁기 등 가전 가격을 25% 올렸다. '칩플레이션'(chipflation) 현상으로 불리는 이 트렌드는 반도체 가격 상승이 생활가전 원가에 직결되는 거시 경제 충격을 시사한다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "AI칩 공급 부족 현상이 냉장고와 세탁기 가격을 25% 상승시키는 '칩플레이션' 발생"
+          "text": "AI칩 수요 급증으로 인한 반도체 부족이 냉장고와 세탁기 가격을 25% 상승시켰다"
         },
         {
           "type": "content",
-          "text": "글로벌 AI칩 수요 증가가 기존 가전산업 부품 공급망에 영향을 미치는 연쇄 효과"
+          "text": "칩플레이션 현상이 가전 제조사의 제조원가 부담을 가중시키고 있다"
         }
       ],
       "source": {
