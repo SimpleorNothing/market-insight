@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="폭염">
+  <rect width="100" height="100" fill="#FF8A3D"/>
+  <rect width="100" height="100" fill="url(#hg)"/>
+  <defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#FFB347"/><stop offset="1" stop-color="#F4611E"/>
+  </linearGradient></defs>
+  <circle cx="50" cy="46" r="19" fill="#FFF2C2"/>
+  <g stroke="#FFF2C2" stroke-width="4.5" stroke-linecap="round">
+    <line x1="50" y1="12" x2="50" y2="20"/><line x1="50" y1="72" x2="50" y2="80"/>
+    <line x1="16" y1="46" x2="24" y2="46"/><line x1="76" y1="46" x2="84" y2="46"/>
+    <line x1="26" y1="22" x2="31" y2="27"/><line x1="69" y1="65" x2="74" y2="70"/>
+    <line x1="74" y1="22" x2="69" y2="27"/><line x1="31" y1="65" x2="26" y2="70"/>
+  </g>
+</svg>

@@ -14,6 +14,7 @@
  */
 
 import Anthropic from "@anthropic-ai/sdk";
+import { isPortraitImage, pickTopicImage } from "./detect-portrait.mjs";
 import Parser from "rss-parser";
 import { readFile, writeFile } from "fs/promises";
 import { createHash } from "crypto";
@@ -450,6 +451,41 @@ async function enrichImages(items) {
   const hit = imgs.filter(Boolean).length;
   log(`대표 이미지 수집: ${hit}/${items.length}건 확보`);
   return items;
+}
+
+// 인물 증명사진(기자 얼굴) 썸네일 → 토픽 일러스트로 교체.
+// http(s) 이미지·미확인(imageChecked 미설정) 항목만 대상, 회당 limit 건까지 판별(비용 분산).
+// 원본은 imageOriginal 에 보존. 판별부는 detect-portrait.mjs (정밀도 우선, 애매하면 미교체).
+// 반환값: 이번 회차에 상태가 확정(imageChecked 설정)된 건수 → news.json 기록 트리거용.
+async function applyPortraitThumbnails(items, limit) {
+  const cfg = CONFIG.portraitDetection || {};
+  if (DRY_RUN || !client || cfg.enabled === false) return 0;
+  const cands = items.filter(
+    (it) =>
+      it &&
+      typeof it.image === "string" &&
+      /^https?:\/\//i.test(it.image) &&
+      !it.imageChecked
+  );
+  const batch = cands.slice(0, Math.max(0, limit || 0));
+  let replaced = 0;
+  let checked = 0;
+  for (const it of batch) {
+    const verdict = await isPortraitImage(it.image, client);
+    if (verdict === null) continue; // 미확정(차단/오류) → 다음 회차 재시도
+    it.imageChecked = true;
+    checked++;
+    if (verdict === true) {
+      it.imageOriginal = it.image;
+      it.image = pickTopicImage(it);
+      it.thumbFace = true;
+      replaced++;
+    }
+  }
+  if (checked > 0) {
+    log(`썸네일 인물사진 판별: ${checked}건 검사, ${replaced}건 → 토픽 일러스트 교체`);
+  }
+  return checked;
 }
 
 // ===== Load existing =====
@@ -1058,6 +1094,11 @@ async function main() {
 
   await enrichImages(classified); // 신규 분류분에 og:image 부착(토큰 비용 0)
 
+  // 인물 증명사진 썸네일 → 토픽 일러스트 교체 (신규분 전량 + 기존분 회전 배치)
+  const faceNew = await applyPortraitThumbnails(classified, classified.length);
+  const backlogN = CONFIG.portraitDetection?.backlogPerRun ?? 12;
+  const faceChecked = faceNew + (await applyPortraitThumbnails(existing.items, backlogN));
+
   // 보존 기간 정리 → 같은 사건 기사 묶음 → 최신순 정렬
   const pruned = prune([...classified, ...existing.items]);
   const merged = dedupeMerged(pruned).sort(
@@ -1069,6 +1110,7 @@ async function main() {
     purged > 0 ||
     compFixed > 0 ||
     ptFixed > 0 ||
+    faceChecked > 0 ||
     classified.length > 0 ||
     merged.length !== existing.items.length ||
     backfilled > 0;

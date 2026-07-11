@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="실적">
+  <rect width="100" height="100" fill="#12325B"/>
+  <rect width="100" height="100" fill="url(#fg)"/>
+  <defs><linearGradient id="fg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#25507F"/><stop offset="1" stop-color="#0E2547"/>
+  </linearGradient></defs>
+  <rect x="22" y="58" width="12" height="20" rx="2" fill="#9DB8DA"/>
+  <rect x="44" y="46" width="12" height="32" rx="2" fill="#C9DAF0"/>
+  <rect x="66" y="32" width="12" height="46" rx="2" fill="#4CE0A5"/>
+  <path d="M24 52l18-10 16 6 20-20" fill="none" stroke="#FFD65A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M70 22h10v10" fill="none" stroke="#FFD65A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
