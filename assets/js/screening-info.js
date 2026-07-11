@@ -84,11 +84,13 @@
     var st = document.createElement("style");
     st.id = "screeningInfoStyles";
     st.textContent = [
-      ".page-footer { flex-wrap: wrap; }",
-      ".footer-link { margin-left: auto; background: none; border: 0; padding: 4px 2px;",
+      ".page-footer { flex-wrap: wrap; align-items: flex-start; }",
+      // 설명 문구 아래 줄, 좌측 정렬 (푸터 아이콘 폭 15px + gap 8px 만큼 들여쓰기)
+      ".footer-link-row { flex-basis: 100%; margin-top: 8px; padding-left: 23px; }",
+      ".footer-link { background: none; border: 0; padding: 4px 2px; margin: 0;",
       "  font: inherit; font-size: 14px; color: var(--accent, #1428a0); cursor: pointer;",
-      "  display: inline-flex; align-items: center; gap: 5px; text-decoration: underline;",
-      "  text-underline-offset: 3px; }",
+      "  display: inline-flex; align-items: center; gap: 5px; }",
+      ".footer-link span { text-decoration: underline; text-underline-offset: 3px; }",
       ".footer-link:hover { opacity: .75; }",
       "#screeningModal .modal__panel { max-width: 560px; width: 100%;",
       "  max-height: 82vh; display: flex; flex-direction: column; }",
