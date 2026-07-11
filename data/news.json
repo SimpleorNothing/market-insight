@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T12:54:17.500Z",
+  "updatedAt": "2026-07-11T14:18:43.215Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -939,15 +939,16 @@
       "image": null
     },
     {
-      "id": 1678,
+      "id": 1672,
       "lens": "거시",
       "grade": "주요",
-      "impact": 4.1,
+      "impact": 3.7,
       "factors": {
-        "salesRelevance": 4,
+        "salesRelivance": 4,
         "timeUrgency": 4,
         "marketSize": 5,
-        "sourceReliability": 3
+        "sourceReliability": 3,
+        "salesRelevance": 3
       },
       "products": [
         "냉장고",
@@ -955,21 +956,21 @@
       ],
       "competitors": [],
       "tags": [
-        "원자재비",
-        "반도체 수급",
-        "가격 인상",
-        "칩플레이션"
+        "칩플레이션",
+        "공급망",
+        "원재료비",
+        "가격상승"
       ],
-      "headline": "AI칩 수급 긴장으로 가전 가격 25% 급등",
-      "summary": "AI칩 수요 급증에 따른 반도체 공급 부족이 냉장고, 세탁기 등 생활가전의 부품가 상승을 유발하면서 소비자 판가가 평균 25% 인상됐다. 글로벌 가전시장이 'AI칩플레이션' 압력에 직면한 상황.",
+      "headline": "AI칩 수급난으로 냉장고·세탁기 가격 25% 상승",
+      "summary": "AI칩 부품 수급 긴장이 가전 제품 원가 상승으로 전이되면서 냉장고, 세탁기 등 주요 제품의 가격이 최대 25% 오른 상황이다. 글로벌 AI 칩 수요 급증이 기존 가전 공급망에 압력을 가하고 있다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "AI칩 호황이 글로벌 반도체 부족을 야기, 냉장고·세탁기 가격 25% 상승"
+          "text": "AI칩 공급 부족 현상이 냉장고와 세탁기 가격을 25% 상승시키는 '칩플레이션' 발생"
         },
         {
           "type": "content",
-          "text": "생활가전 부품 가격 인상이 최종 소비자 판가에 직결되는 'AI칩플레이션' 현상 발생"
+          "text": "글로벌 AI칩 수요 증가가 기존 가전산업 부품 공급망에 영향을 미치는 연쇄 효과"
         }
       ],
       "source": {
@@ -1067,6 +1068,49 @@
       "publishedAt": "2026-07-09T23:12:20.000Z",
       "url": "https://www.theguru.co.kr/news/article.html?no=104227",
       "image": "https://www.theguru.co.kr/data/photos/20260728/art_17836374115613_00df1b.jpg"
+    },
+    {
+      "id": 1671,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "B2B",
+        "상용가전",
+        "세탁기"
+      ],
+      "headline": "LG전자, 상용 세탁기 전문 라인 출시",
+      "summary": "LG전자가 상용·세탁 전문 라인인 LG Professional Laundry를 론칭했다. 호텔·세탁소·병원 등 상업용 운영사를 타겟으로 한 신규 사업 영역 진입이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 상업용 세탁 운영 대상의 LG Professional Laundry 라인 출시"
+        },
+        {
+          "type": "content",
+          "text": "호텔, 세탁소, 병원 등 상용 세탁 운영사를 타겟한 신규 B2B 사업 진출"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://macaubusiness.com/lg-electronics-launches-lg-professional-laundry-lineup-for-commercial-operations/"
+      },
+      "publishedAt": "2026-07-09T23:11:40.000Z",
+      "url": "https://macaubusiness.com/lg-electronics-launches-lg-professional-laundry-lineup-for-commercial-operations/",
+      "image": null
     },
     {
       "id": 1612,
