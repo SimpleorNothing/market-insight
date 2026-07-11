@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T20:43:52.477Z",
+  "updatedAt": "2026-07-11T21:39:52.122Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -252,46 +252,6 @@
       "publishedAt": "2026-07-10T21:20:00.000Z",
       "url": "https://www.quiverquant.com/news/Whirlpool+shares+climb+as+investors+weigh+pricing+actions+and+refinancing+progress",
       "image": "https://www.quiverquant.com/images/whr_rect_new.png"
-    },
-    {
-      "id": 1655,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "구조조정",
-        "재무전략",
-        "부채감축"
-      ],
-      "headline": "월풀, 구조조정·부채 개선 추진으로 주가 주목",
-      "summary": "월풀이 구조조정과 부채 감축 조치를 진행 중. 경영 정상화 움직임이 투자자 관심을 집중시키고 있는 상황.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "월풀이 기업 재구조화와 부채 최적화 계획을 추진 중"
-        },
-        {
-          "type": "content",
-          "text": "해당 움직임이 주식시장에서 주목받고 있는 상황"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://stockstotrade.com/news/whirlpool-corporation-whr-news-2026_07_10/"
-      },
-      "publishedAt": "2026-07-10T16:33:00.000Z",
-      "url": "https://stockstotrade.com/news/whirlpool-corporation-whr-news-2026_07_10/",
-      "image": "https://content.stockstotrade.com/wp-content/uploads/2026/07/watermarked_WHR_2026-07-10T12-32-scaled.png"
     },
     {
       "id": 1654,
@@ -1021,7 +981,7 @@
       "image": null
     },
     {
-      "id": 1678,
+      "id": 1679,
       "lens": "거시",
       "grade": "주요",
       "impact": 4.1,
@@ -1038,20 +998,24 @@
       "competitors": [],
       "tags": [
         "칩플레이션",
-        "반도체_수급",
-        "원가_상승",
-        "글로벌_가격_인상"
+        "원가상승",
+        "AI칩수급",
+        "글로벌공급망"
       ],
-      "headline": "AI칩 수급난으로 냉장고·세탁기 가격 25% 급등",
-      "summary": "AI칩 수급 부족으로 인한 반도체 가격 상승(칩플레이션)이 냉장고, 세탁기 등 가전 제품 가격에 직결되며 25% 가격 인상이 보도됨. 글로벌 가전 시장 전반에 원재료비 상승 압박 가중.",
+      "headline": "AI칩 수급 긴장으로 가전 가격 25% 상승",
+      "summary": "AI칩 수요 급증에 따른 칩플레이션(Chipflation) 현상으로 냉장고·세탁기 등 가전 가격이 25% 상승했다. 반도체 공급 병목이 원자재 가격 상승으로 이어지면서 글로벌 가전업계 원가 압박이 심화되고 있다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "AI칩 공급 부족으로 인한 반도체 가격 상승이 냉장고와 세탁기 등 가전제품 가격을 25% 인상시킴"
+          "text": "AI칩 붐으로 인한 칩플레이션 현상 발생"
         },
         {
           "type": "content",
-          "text": "칩플레이션 현상이 글로벌 가전 제조사의 원재료비 부담을 가중시키고 있음"
+          "text": "냉장고·세탁기 가격 25% 상승"
+        },
+        {
+          "type": "content",
+          "text": "글로벌 가전 원자재 가격 상승 추세"
         }
       ],
       "source": {
@@ -1314,6 +1278,47 @@
       "publishedAt": "2026-07-09T16:18:31.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-steadies-on-its-appliances-base/69733571",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2405031_1200_800.webp"
+    },
+    {
+      "id": 1680,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "월풀",
+        "LG전자",
+        "삼성전자"
+      ],
+      "tags": [
+        "고객만족도",
+        "냉장고",
+        "북미시장",
+        "경쟁력"
+      ],
+      "headline": "월풀, 냉장고 고객만족도 1위…LG·삼성 추월",
+      "summary": "미국 시장 냉장고 부문에서 월풀이 고객만족도 순위 1위를 기록했으며, LG전자와 삼성전자를 제치고 상위에 올랐다. AOL.com 보도로 북미 소비자 만족도 조사 결과 월풀의 경쟁력을 입증한 사례다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 냉장고 고객만족도 부문 최고 순위 달성, LG·삼성 추월"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.aol.com/not-lg-not-samsung-refrigerator-211500677.html"
+      },
+      "publishedAt": "2026-07-09T14:38:32.000Z",
+      "url": "https://www.aol.com/not-lg-not-samsung-refrigerator-211500677.html",
+      "image": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png"
     },
     {
       "id": 1592,
