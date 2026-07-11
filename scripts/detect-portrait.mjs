@@ -2,19 +2,35 @@
  * detect-portrait.mjs
  *
  * 썸네일(og:image)이 "기자 증명사진/인물 얼굴 위주" 인지 Haiku 비전으로 판별하고,
- * 그런 경우 기사 태그·렌즈에 맞는 자체 제작 토픽 일러스트(SVG) 경로를 골라준다.
+ * 그런 경우 기사 태그·렌즈에 맞는 토픽 이미지(사진 .jpg / 플랫 일러스트 .svg) 경로를 골라준다.
  *
  * 설계 원칙
  *  - 정밀도 우선: 확실히 인물 얼굴 위주일 때만 true. 애매하면 false(원본 사진 보존).
  *  - 실패는 null: 네트워크 오류·미지원 포맷·차단 응답은 null → 호출부에서 "미확정"으로 두고
  *    교체하지 않는다(오탐 삭제 방지, dead-link unknown 처리와 동일 철학).
- *  - 프론트 무변경: 호출부가 item.image 를 SVG 경로로 덮어쓰면 기존 렌더가 그대로 표시.
+ *  - 프론트 무변경: 호출부가 item.image 를 토픽 이미지 경로로 덮어쓰면 기존 렌더가 그대로 표시.
  */
 
 const TOPIC_DIR = "assets/img/topics";
 
+// 버킷 → 실제 파일명. 사진(.jpg)과 플랫 일러스트(.svg) 혼용.
+const TOPIC_FILES = {
+  heat: "heat.jpg",
+  aircon: "aircon.jpg",
+  power: "power.jpg",
+  grid: "grid.jpg",
+  climate: "climate.svg",
+  finance: "finance.svg",
+  policy: "policy.svg",
+  tech: "tech.svg",
+  retail: "retail.svg",
+  news: "news.svg",
+};
+
 // 우선순위 순서대로 첫 매칭 버킷 채택. 태그/헤드라인 문자열에 키워드 포함 여부로 판단.
 const TOPIC_RULES = [
+  ["grid", ["전력망", "전력수급", "수급", "정전", "블랙아웃", "예비율", "스마트그리드", "수요반응", "계통", "grid", "blackout"]],
+  ["power", ["전력", "전기요금", "발전", "변전", "송전", "원전", "에너지가격", "전력소비", "electricity", "power plant"]],
   ["heat", ["폭염", "열사병", "온열질환", "무더위", "더위", "냉방안전", "열대야", "폭염경보", "heatwave"]],
   ["aircon", ["에어컨", "에어컨수요", "hvac", "냉방", "공조", "히트펌프", "냉난방", "실외기", "제습", "air condition"]],
   ["climate", ["엘니뇨", "라니냐", "기후변화", "기후", "지구온난화", "온실가스", "탄소", "친환경", "esg", "el nino", "climate"]],
@@ -33,17 +49,17 @@ const LENS_FALLBACK = {
   거시: "climate",
 };
 
-/** 기사 항목 → 토픽 SVG 경로(repo 상대 경로). 항상 유효한 경로를 반환. */
+/** 기사 항목 → 토픽 이미지 경로(repo 상대 경로). 항상 유효한 경로를 반환. */
 export function pickTopicImage(item) {
   const tags = Array.isArray(item?.tags) ? item.tags.join(" ") : "";
   const hay = `${tags} ${item?.headline || ""}`.toLowerCase();
   for (const [bucket, kws] of TOPIC_RULES) {
     if (kws.some((k) => hay.includes(k.toLowerCase()))) {
-      return `${TOPIC_DIR}/${bucket}.svg`;
+      return `${TOPIC_DIR}/${TOPIC_FILES[bucket]}`;
     }
   }
   const byLens = LENS_FALLBACK[item?.lens];
-  return `${TOPIC_DIR}/${byLens || "news"}.svg`;
+  return `${TOPIC_DIR}/${TOPIC_FILES[byLens] || TOPIC_FILES.news}`;
 }
 
 const SUPPORTED = {
