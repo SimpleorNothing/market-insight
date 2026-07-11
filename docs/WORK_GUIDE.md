@@ -90,6 +90,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #98 | 07-12 | filter: 이미지센서 계열 기사 제외 (나노프리즘·ISOCELL 등) |
 | #97 | 07-10 | data(news): 캐리어 4건 제목 정리·단일 브랜드 분류 |
 | #96 | 07-10 | data(news): 캐리어 신규 4건 병합 (v2 분류) |
 | #95 | 07-10 | chore(sensing): 캐리어 피드 수집 창 3d→7d (지난 1주일치 백필) |
