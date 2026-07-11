@@ -1,7 +1,43 @@
 {
-  "updatedAt": "2026-07-11T04:54:32.623Z",
+  "updatedAt": "2026-07-11T07:06:41.194Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1663,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "센서기술",
+        "나노프리즘",
+        "R&D"
+      ],
+      "headline": "삼성전자, 나노프리즘 센서를 UB로 업그레이드",
+      "summary": "삼성전자가 나노프리즘 센서 기술을 UB(업그레이드 버전)로 개선한다. 구체적 적용 제품 및 성능 개선 사항은 미상.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 나노프리즘 센서 기술을 UB 버전으로 업그레이드"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.kipost.net/news/articleView.html?idxno=339812"
+      },
+      "publishedAt": "2026-07-11T02:56:22.000Z",
+      "url": "https://www.kipost.net/news/articleView.html?idxno=339812",
+      "image": "https://cdn.kipost.net/news/thumbnail/202607/339812_108885_5420_v150.jpg"
+    },
     {
       "id": 1658,
       "lens": "거시",
@@ -903,6 +939,48 @@
       "image": null
     },
     {
+      "id": 1666,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기"
+      ],
+      "competitors": [],
+      "tags": [
+        "반도체가격",
+        "원가상승",
+        "글로벌공급망",
+        "가격전가"
+      ],
+      "headline": "AI칩 수급 긴장, 가전 가격 25% 급등",
+      "summary": "AI칩 수요 증가로 인한 반도체 부품가 상승이 냉장고·세탁기 등 가전 제품 가격에 전가되고 있다. 글로벌 가전 시장에서 부품 원가 상승으로 인한 가격 인상 압력('칩플레이션')이 확산 중이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "AI칩 붐에 따른 반도체 수급 긴장으로 냉장고·세탁기 등 가전 제품 가격이 25% 상승"
+        },
+        {
+          "type": "content",
+          "text": "고사양 AI칩 수요 증가가 일반 부품 공급망 경합을 유발, 가전사 제조원가 부담 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://finance.biggo.com/news/cdafd32f-c344-47ed-aa7e-9c4c2b546724"
+      },
+      "publishedAt": "2026-07-10T00:56:00.000Z",
+      "url": "https://finance.biggo.com/news/cdafd32f-c344-47ed-aa7e-9c4c2b546724",
+      "image": "https://img.biggo.com/7JjuQ8LgX8KlsfW--VvIeWdzEKNl5wS9Im-P4xZ0kqI/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3L2NkYWZkMzJmLWMzNDQtNDdlZC1hYTdlLTljNGMyYjU0NjcyNF8xNzgzNjQ1NzM1X2RlZmF1bHQuanBn.jpg"
+    },
+    {
       "id": 1615,
       "lens": "소비자",
       "grade": "주시",
@@ -1113,48 +1191,6 @@
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2405031_1200_800.webp"
     },
     {
-      "id": 1663,
-      "lens": "거시",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기"
-      ],
-      "competitors": [],
-      "tags": [
-        "칩플레이션",
-        "AI칩수급",
-        "원가상승",
-        "가격인상"
-      ],
-      "headline": "AI칩 수급 영향, 냉장고·세탁기 가격 25% 급등",
-      "summary": "AI 칩 수요 급증으로 인한 공급 부족이 전자부품 가격 상승을 야기하면서, 냉장고와 세탁기 등 가전 제품 가격이 25% 상승했다. 칩 가격 인상이 가전 제품 원가에 전가되는 '칩플레이션' 현상이 확산 중인 것으로 나타났다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "AI 칩 수요로 인한 공급 부족이 냉장고, 세탁기 가격 25% 상승 유발"
-        },
-        {
-          "type": "content",
-          "text": "칩 가격 인상이 가전 제품 원가에 직접 전가되는 칩플레이션 현상 심화"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://finance.biggo.com/news/f6ae5a8a-ba94-41e5-a108-53bc2f404b49"
-      },
-      "publishedAt": "2026-07-09T12:06:00.000Z",
-      "url": "https://finance.biggo.com/news/f6ae5a8a-ba94-41e5-a108-53bc2f404b49",
-      "image": "https://img.biggo.com/cae2u_hh22bJfG_zRIKW5BtSCZz-tVPMk-uH7FACksY/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3L2Y2YWU1YThhLWJhOTQtNDFlNS1hMTA4LTUzYmMyZjQwNGI0OV8xNzgzNTk5NDAzX2RlZmF1bHQuanBn.jpg"
-    },
-    {
       "id": 1592,
       "lens": "정책",
       "grade": "주시",
@@ -1277,49 +1313,6 @@
       "publishedAt": "2026-07-09T08:56:30.000Z",
       "url": "https://autonews.gasgoo.com/articles/news/midea-welling-robotics-lands-in-foshan-shunde-production-to-start-in-2027-2075141064233897985",
       "image": "https://gascloud.gasgoo.com/production/2026/07/cd4cb43f-0ed1-4290-ac19-012cecdb47c7-1783615932.png"
-    },
-    {
-      "id": 1629,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "세탁기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "신사업",
-        "B2B",
-        "AI기술",
-        "상업용"
-      ],
-      "headline": "LG전자, AI 대용량 세탁기로 글로벌 B2B 사업 확대",
-      "summary": "LG전자가 AI 기술 탑재 대용량 세탁기를 통해 글로벌 B2B 시장 진출을 확대하고 있다. 상업용 세탁기 시장으로의 신규 비즈니스 모델 전환으로, 기존 소비자 시장(B2C) 중심의 가전 수익 구조를 다각화하는 전략이다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자가 AI 기능 탑재 대용량 세탁기로 글로벌 B2B 사업 확대"
-        },
-        {
-          "type": "content",
-          "text": "상업용·업체향 세탁기 시장 진출로 기존 소비자 중심 사업 다각화"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://biz.chosun.com/en/en-it/2026/07/09/BAFBMISSD5H2LGZDQISXQY635A/"
-      },
-      "publishedAt": "2026-07-09T07:53:00.000Z",
-      "url": "https://biz.chosun.com/en/en-it/2026/07/09/BAFBMISSD5H2LGZDQISXQY635A/",
-      "image": "https://biz.chosun.com/resizer/v2/33N7C3RAQ5AYZF4OMQJNJNLFHY.jpg?auth=1ca9fc21d30f2ec29e25dfd42c3451b5de4dba2f93fca55e0596ffdf428ecea4&width=1200&height=630&smart=true"
     },
     {
       "id": 1581,
@@ -1715,6 +1708,44 @@
       "publishedAt": "2026-07-08T22:53:16.000Z",
       "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4424072",
       "image": "https://cdn.news.einfomax.co.kr/news/thumbnail/202607/4424072_328161_542_v150.jpg"
+    },
+    {
+      "id": 1668,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUurgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3,
+        "timeUrgency": 3
+      },
+      "products": [],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "M&A",
+        "투자",
+        "신사업",
+        "중국"
+      ],
+      "headline": "Midea, Clou Electronics에 25억 위안 투자 추진",
+      "summary": "Midea Group이 Shenzhen Clou Electronics에 CNY 25억(약 3,500억 원) 규모의 자금 투입을 계획 중이다. 투자 세부 조건과 실행 일정 등은 보도되지 않았다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Midea Group이 Shenzhen Clou Electronics에 CNY 25억 규모 자금 투자 계획 발표"
+        }
+      ],
+      "source": {
+        "name": "Google News - Midea Global",
+        "url": "https://www.marketscreener.com/news/shenzhen-clou-electronics-co-ltd-announced-that-it-expects-to-receive-cny-2-5-billion-in-funding-ce7f5eded088f72d"
+      },
+      "publishedAt": "2026-07-08T22:00:00.000Z",
+      "url": "https://www.marketscreener.com/news/shenzhen-clou-electronics-co-ltd-announced-that-it-expects-to-receive-cny-2-5-billion-in-funding-ce7f5eded088f72d",
+      "image": null
     },
     {
       "id": 1636,
