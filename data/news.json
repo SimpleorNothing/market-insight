@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T07:06:41.194Z",
+  "updatedAt": "2026-07-11T09:17:29.223Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -939,48 +939,6 @@
       "image": null
     },
     {
-      "id": 1666,
-      "lens": "거시",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기"
-      ],
-      "competitors": [],
-      "tags": [
-        "반도체가격",
-        "원가상승",
-        "글로벌공급망",
-        "가격전가"
-      ],
-      "headline": "AI칩 수급 긴장, 가전 가격 25% 급등",
-      "summary": "AI칩 수요 증가로 인한 반도체 부품가 상승이 냉장고·세탁기 등 가전 제품 가격에 전가되고 있다. 글로벌 가전 시장에서 부품 원가 상승으로 인한 가격 인상 압력('칩플레이션')이 확산 중이다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "AI칩 붐에 따른 반도체 수급 긴장으로 냉장고·세탁기 등 가전 제품 가격이 25% 상승"
-        },
-        {
-          "type": "content",
-          "text": "고사양 AI칩 수요 증가가 일반 부품 공급망 경합을 유발, 가전사 제조원가 부담 확대"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://finance.biggo.com/news/cdafd32f-c344-47ed-aa7e-9c4c2b546724"
-      },
-      "publishedAt": "2026-07-10T00:56:00.000Z",
-      "url": "https://finance.biggo.com/news/cdafd32f-c344-47ed-aa7e-9c4c2b546724",
-      "image": "https://img.biggo.com/7JjuQ8LgX8KlsfW--VvIeWdzEKNl5wS9Im-P4xZ0kqI/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3L2NkYWZkMzJmLWMzNDQtNDdlZC1hYTdlLTljNGMyYjU0NjcyNF8xNzgzNjQ1NzM1X2RlZmF1bHQuanBn.jpg"
-    },
-    {
       "id": 1615,
       "lens": "소비자",
       "grade": "주시",
@@ -1067,6 +1025,49 @@
       "publishedAt": "2026-07-09T23:12:20.000Z",
       "url": "https://www.theguru.co.kr/news/article.html?no=104227",
       "image": "https://www.theguru.co.kr/data/photos/20260728/art_17836374115613_00df1b.jpg"
+    },
+    {
+      "id": 1670,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "B2B",
+        "상용가전",
+        "세탁기"
+      ],
+      "headline": "LG전자, 상용 세탁기 전문 라인업 출시",
+      "summary": "LG전자가 상업용 운영을 대상으로 'LG Professional Laundry' 라인업을 새로 론칭했다. 호텔·세탁소 등 B2B 상용 시장 진출을 통해 생활가전 사업 외 신규 수익원을 확보하는 전략으로 보인다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 상용 세탁 시장을 위한 전문 라인업 'LG Professional Laundry' 출시"
+        },
+        {
+          "type": "content",
+          "text": "호텔, 세탁소, 건설현장 등 상업용 고객 대상 신사업 진출"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://macaubusiness.com/lg-electronics-launches-lg-professional-laundry-lineup-for-commercial-operations/"
+      },
+      "publishedAt": "2026-07-09T23:11:40.000Z",
+      "url": "https://macaubusiness.com/lg-electronics-launches-lg-professional-laundry-lineup-for-commercial-operations/",
+      "image": "https://macaubusiness.com/images/business-intelligence.svg"
     },
     {
       "id": 1612,
@@ -1189,6 +1190,48 @@
       "publishedAt": "2026-07-09T16:18:31.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-steadies-on-its-appliances-base/69733571",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2405031_1200_800.webp"
+    },
+    {
+      "id": 1671,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기"
+      ],
+      "competitors": [],
+      "tags": [
+        "AI칩",
+        "칩플레이션",
+        "원가압력",
+        "가격인상"
+      ],
+      "headline": "AI칩 수급 긴장으로 가전가 25% 급등",
+      "summary": "AI칩 탑재 냉장고·세탁기 가격이 글로벌 시장에서 25% 급등하고 있다. 칩플레이션(Chipflation)이라는 신조어까지 등장하며 가전 원가 상승의 주요 요인으로 작용 중이다. 향후 AI 칩 수급 안정화까지 가격 상승 압력이 지속될 전망이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "냉장고·세탁기 가격이 AI칩 탑재로 인해 25% 급등하는 현상 발생"
+        },
+        {
+          "type": "content",
+          "text": "칩플레이션(Chipflation)이라는 신조어로 불리며 가전산업의 원자재 가격 급등 트렌드 시작"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://finance.biggo.com/news/f6ae5a8a-ba94-41e5-a108-53bc2f404b49"
+      },
+      "publishedAt": "2026-07-09T12:06:00.000Z",
+      "url": "https://finance.biggo.com/news/f6ae5a8a-ba94-41e5-a108-53bc2f404b49",
+      "image": "https://img.biggo.com/cae2u_hh22bJfG_zRIKW5BtSCZz-tVPMk-uH7FACksY/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3L2Y2YWU1YThhLWJhOTQtNDFlNS1hMTA4LTUzYmMyZjQwNGI0OV8xNzgzNTk5NDAzX2RlZmF1bHQuanBn.jpg"
     },
     {
       "id": 1592,
