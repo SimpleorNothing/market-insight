@@ -1,7 +1,54 @@
 {
-  "updatedAt": "2026-07-12T17:51:42.995Z",
+  "updatedAt": "2026-07-12T18:49:55.304Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1700,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "긱이코노미",
+        "제조업혁신",
+        "노동정책",
+        "비용절감",
+        "신사업"
+      ],
+      "headline": "GE Appliances, 기술직 긱워크 확대…저임금·복리후생 문제",
+      "summary": "GE Appliances가 제조업 분야에서 앱 기반 긱워크(임시직) 모델을 도입·확대하고 있다. 근로자들은 유연성을 높이 평가하나 급여 저하와 복리후생 부재가 구조적 문제로 지적된다. 제조업 인력 관리 방식의 전환이 업계 트렌드로 부상하는 양상을 보인다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE Appliances가 제조업 분야에서 'Uber 같은' 앱 기반 긱워크 플랫폼을 운영 중"
+        },
+        {
+          "type": "content",
+          "text": "근로자들은 업무 유연성을 평가하나 급여 저하와 건강보험·퇴직금 등 복리후생 부재가 문제"
+        },
+        {
+          "type": "content",
+          "text": "제조업 노동력 관리의 비용 최적화 모델로, 업계 인력 관리 방식 전환의 신호"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.aol.com/finance/uber-manufacturing-workers-ge-appliances-143000705.html"
+      },
+      "publishedAt": "2026-07-12T13:53:55.000Z",
+      "url": "https://www.aol.com/finance/uber-manufacturing-workers-ge-appliances-143000705.html",
+      "image": "https://s.yimg.com/lo/mysterio/api/55D30884D32A56A76E8FCF3C07C3DF156F9AD9B1AA6E56D7C7785D4A0DE4585F/subgraphmysterio/resizefill_w728_h400;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Faol_moneywise_380%2F075c8a235b6f80b3a6cc2a461ae48661",
+      "imageChecked": true
+    },
     {
       "id": 1697,
       "lens": "소비자",
@@ -202,6 +249,50 @@
       "publishedAt": "2026-07-12T07:08:45.000Z",
       "url": "https://www.etnews.com/20260712000080",
       "image": "https://img.etnews.com/news/article/2026/07/10/news-p.v1.20260710.42cbddb78d404cd78d42d7faf5c438e6_P1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1699,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 2.5,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "정부정책",
+        "연구개발",
+        "인력양성",
+        "기업부설연구소"
+      ],
+      "headline": "정부, 기업연구자 육성 재단 설립 추진",
+      "summary": "과학기술정보통신부가 기업부설연구소 지원을 위한 법안 개정을 입법 예고했다. 민간 연구 인력의 체계적인 역량 강화와 전문성 향상을 목표로 기업연구자 육성 전문 기관 설립을 추진 중이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "과기정통부, 기업부설연구소 지원 근거를 담은 법률 개정안 입법 예고"
+        },
+        {
+          "type": "content",
+          "text": "기업연구자 역량 제고와 육성·지원 목적의 재단 설립 추진 중"
+        },
+        {
+          "type": "content",
+          "text": "민간 연구 인력 체계적 역량 강화로 국가 기술 경쟁력 제고 추구"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260710000241"
+      },
+      "publishedAt": "2026-07-12T07:00:00.000Z",
+      "url": "https://www.etnews.com/20260710000241",
+      "image": "https://img.etnews.com/news/article/2026/07/10/news-p.v1.20260710.a21cb10e39674643a47e59fa8c455a6b_P1.jpg",
       "imageChecked": true
     },
     {
@@ -4058,7 +4149,8 @@
       },
       "publishedAt": "2026-07-07T03:27:07.000Z",
       "url": "https://www.ekn.kr/web/view.php?key=20260707028149970",
-      "image": "https://www.ekn.kr/mnt/file/202607/news-p.v1.20260707.bb9395e30dab48feb601767691ad3eb2_R.png"
+      "image": "https://www.ekn.kr/mnt/file/202607/news-p.v1.20260707.bb9395e30dab48feb601767691ad3eb2_R.png",
+      "imageChecked": true
     },
     {
       "id": 1477,
@@ -4148,7 +4240,8 @@
       },
       "publishedAt": "2026-07-07T01:39:51.000Z",
       "url": "https://www.etnews.com/20260707000154",
-      "image": "https://img.etnews.com/news/article/2026/07/06/news-p.v1.20260706.c03da11d6e56445c93a49b9c9cfc6f54_P1.jpg"
+      "image": "https://img.etnews.com/news/article/2026/07/06/news-p.v1.20260706.c03da11d6e56445c93a49b9c9cfc6f54_P1.jpg",
+      "imageChecked": true
     },
     {
       "id": 1459,
