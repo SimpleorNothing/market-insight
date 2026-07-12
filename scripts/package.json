@@ -5,7 +5,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "fetch": "node fetch-news.js"
+    "fetch": "node fetch-news.js",
+    "build:standalone": "node build-standalone.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.30.1",

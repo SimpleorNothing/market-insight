@@ -165,6 +165,35 @@ python3 -m http.server 8080
 # http://localhost:8080 접속
 ```
 
+## 단독 실행 파일 (서버 없이 더블클릭)
+
+로컬 웹서버조차 띄우지 않고 **`mi-local.html` 파일 하나를 더블클릭**하면
+바로 뜨는 단독 버전을 만들 수 있습니다. 데이터(`news.json`·`archive.json`)·
+`config.json`·CSS·JS·로컬 이미지를 모두 한 파일에 인라인하고, `fetch()`를
+임베드 데이터로 가로채므로 `file://`에서도 동작합니다.
+
+```bash
+cd scripts
+npm install          # 최초 1회 (의존성 없음 — Node 내장 모듈만 사용)
+npm run build:standalone
+# → 레포 루트에 mi-local.html 생성
+```
+
+생성된 `mi-local.html`을 아무 PC에나 복사해 더블클릭하면 됩니다.
+
+- **서버 불필요**: GitHub Pages·python http.server 등 아무것도 필요 없음.
+- **데일리 갱신**: 최신 데이터로 새로 만들려면
+  `node fetch-news.js`(뉴스 갱신) → `npm run build:standalone`(재빌드) 순으로
+  실행하면 됩니다. PC 작업 스케줄러(Windows)·cron(Mac/Linux)에 이 두 줄을
+  하루 1회 걸어두면 자동화됩니다.
+- **주의점**
+  - 폰트·아이콘(CDN)과 기사 썸네일(외부 URL)은 그대로 두어 파일을 가볍게
+    유지합니다 → **인터넷 되는 PC 전제**. 완전 오프라인이면 이 CDN·이미지도
+    인라인해야 합니다(파일 대폭 증가).
+  - 파일은 **빌드 시점의 스냅샷**입니다. 새 뉴스는 재빌드해야 반영됩니다.
+  - 리포트 생성은 로컬(`file://`)에서 공용 프록시가 막히므로, 단독 빌드는
+    `reportProxyUrl`을 비워 **사용자 각자 API 키 직접 입력 모드**로 폴백합니다.
+
 ## 트러블슈팅
 
 ### Actions 실행 실패 시
