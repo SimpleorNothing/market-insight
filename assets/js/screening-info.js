@@ -86,7 +86,8 @@
     st.textContent = [
       ".page-footer { flex-wrap: wrap; align-items: flex-start; }",
       // 설명 문구 아래 줄, 좌측 정렬 (푸터 아이콘 폭 15px + gap 8px 만큼 들여쓰기)
-      ".footer-link-row { flex-basis: 100%; margin-top: 8px; padding-left: 23px; }",
+      ".footer-link-row { flex-basis: 100%; width: 100%; order: 9; margin-top: 10px;",
+      "  padding-left: 23px; }",
       ".footer-link { background: none; border: 0; padding: 4px 2px; margin: 0;",
       "  font: inherit; font-size: 14px; color: var(--accent, #1428a0); cursor: pointer;",
       "  display: inline-flex; align-items: center; gap: 5px; }",
@@ -301,4 +302,11 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") close();
   });
+
+  // 푸터 링크 레이아웃 CSS 는 팝업을 열기 전에도 필요하므로 로드 즉시 주입한다.
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", injectStyles);
+  } else {
+    injectStyles();
+  }
 })();
