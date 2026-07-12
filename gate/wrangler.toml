@@ -1,0 +1,12 @@
+name = "mi-gate"
+main = "index.js"
+compatibility_date = "2026-05-23"
+
+# mi.samsungda.net 전체를 이 Worker가 처리한다(SSO 게이트 → GitHub raw 원본 프록시).
+# 기존에 GitHub Pages를 가리키던 DNS 레코드는 Custom Domain 연결 시 교체된다.
+routes = [
+  { pattern = "mi.samsungda.net", custom_domain = true },
+]
+
+[observability]
+enabled = true
