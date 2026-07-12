@@ -1,7 +1,90 @@
 {
-  "updatedAt": "2026-07-12T12:55:13.982Z",
+  "updatedAt": "2026-07-12T14:24:05.587Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1697,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "스마트홈",
+        "앱오류",
+        "고객만족도",
+        "IoT"
+      ],
+      "headline": "LG전자 ThinQ 앱 에어컨 제어 오류 발생",
+      "summary": "LG전자의 스마트홈 통합 앱 '씽큐(ThinQ)'에서 에어컨 조절 기능 오류가 발생했다. 사용자들이 앱을 통한 에어컨 원격 제어를 할 수 없는 상황이 발생하면서 고객 불편이 야기되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 ThinQ 앱에서 에어컨 원격 제어 기능 오류 발생"
+        },
+        {
+          "type": "content",
+          "text": "사용자들이 스마트폰 앱을 통한 에어컨 조절 불가능한 상태 지속"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.gukjenews.com/news/articleView.html?idxno=3633625"
+      },
+      "publishedAt": "2026-07-12T13:04:09.000Z",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3633625",
+      "image": "https://cdn.gukjenews.com/news/thumbnail/202607/3633625_3797466_45_v150.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1696,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "성능인증",
+        "규제",
+        "HVAC",
+        "난방"
+      ],
+      "headline": "히트펌프 성능인증 기준 고도화 필요",
+      "summary": "한국 가전 산업 평가기관(KHARN)이 히트펌프 제품의 성능인증 체계 고도화를 주장. 국내 난방·냉방 규제 강화에 따른 인증 기준 정비 필요성을 제기.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "KHARN이 히트펌프 성능인증 기준의 고도화를 주장하며 산업 표준화 필요성 강조"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.kharn.kr/mobile/article.html?no=31250"
+      },
+      "publishedAt": "2026-07-12T10:06:16.000Z",
+      "url": "https://www.kharn.kr/mobile/article.html?no=31250",
+      "image": "https://www.kharn.kr/data/photos/20260728/art_17836675656619_39c752.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1689,
       "lens": "기술",
@@ -3449,7 +3532,8 @@
       },
       "publishedAt": "2026-07-07T12:33:00.000Z",
       "url": "https://www.khan.co.kr/article/202607072133005",
-      "image": "https://img.khan.co.kr/news/2026/07/07/l_2026070801000220300021101.jpg"
+      "image": "https://img.khan.co.kr/news/2026/07/07/l_2026070801000220300021101.jpg",
+      "imageChecked": true
     },
     {
       "id": 1502,
@@ -3544,7 +3628,8 @@
       },
       "publishedAt": "2026-07-07T08:47:57.000Z",
       "url": "https://www.mk.co.kr/en/business/12092622",
-      "image": "https://wimg.mk.co.kr/news/cms/202607/08/20260708_01110115000002_L00.jpg"
+      "image": "https://wimg.mk.co.kr/news/cms/202607/08/20260708_01110115000002_L00.jpg",
+      "imageChecked": true
     },
     {
       "id": 1493,
@@ -3584,7 +3669,10 @@
       },
       "publishedAt": "2026-07-07T08:23:19.000Z",
       "url": "https://www.etnews.com/20260707000399",
-      "image": "https://img.etnews.com/news/article/2026/07/07/rcv.YNA.20260707.PYH2026070717630001300_P1.jpg"
+      "image": "assets/img/topics/tech.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://img.etnews.com/news/article/2026/07/07/rcv.YNA.20260707.PYH2026070717630001300_P1.jpg",
+      "thumbFace": true
     },
     {
       "id": 1489,
