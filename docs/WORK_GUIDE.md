@@ -90,6 +90,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #106 | 07-13 | feat: mi.samsungda.net SSO 비밀번호 게이트(gate Worker) |
 | #105 | 07-12 | feat: 서버 없이 더블클릭으로 여는 단독 실행 HTML(mi-local.html) |
 | #104 | 07-12 | fix: 스크리닝 링크 좌측 시작점 정렬 |
 | #103 | 07-12 | fix: 푸터 링크 CSS 미적용 문제 — 로드 즉시 주입 |
