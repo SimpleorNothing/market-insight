@@ -85,10 +85,11 @@
     st.id = "screeningInfoStyles";
     st.textContent = [
       ".page-footer { flex-wrap: wrap; align-items: flex-start; }",
-      // 설명 문구 아래 줄, 좌측 정렬 (푸터 아이콘 폭 15px + gap 8px 만큼 들여쓰기)
+      // 설명 문구 아래 줄. 링크 아이콘을 푸터 ⓘ 아이콘과 같은 좌측 라인에 정렬
+      // (들여쓰기 0 + 버튼 좌측 패딩 0)
       ".footer-link-row { flex-basis: 100%; width: 100%; order: 9; margin-top: 10px;",
-      "  padding-left: 23px; }",
-      ".footer-link { background: none; border: 0; padding: 4px 2px; margin: 0;",
+      "  padding-left: 0; }",
+      ".footer-link { background: none; border: 0; padding: 4px 2px 4px 0; margin: 0;",
       "  font: inherit; font-size: 14px; color: var(--accent, #1428a0); cursor: pointer;",
       "  display: inline-flex; align-items: center; gap: 5px; }",
       ".footer-link span { text-decoration: underline; text-underline-offset: 3px; }",
