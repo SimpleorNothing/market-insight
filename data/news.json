@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T17:07:20.232Z",
+  "updatedAt": "2026-07-13T19:11:39.303Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -298,7 +298,7 @@
       "image": null
     },
     {
-      "id": 1738,
+      "id": 1739,
       "lens": "기술",
       "grade": "주요",
       "impact": 3.9,
@@ -318,19 +318,23 @@
         "AI",
         "스마트홈",
         "IoT",
-        "에너지효율",
-        "아파트"
+        "음성제어",
+        "빅테크 생태계"
       ],
-      "headline": "LG, 아파트용 AI 어시스턴트로 에어컨 자동제어 기술 선보여",
-      "summary": "LG전자가 거주자의 귀가 시간을 예측해 에어컨을 자동으로 제어하는 AI 어시스턴트 기술을 Xi 아파트에 도입했다. 스마트홈 IoT 플랫폼을 통해 냉방 에너지 효율과 거주 편의성을 동시에 높이는 신기술이다.",
+      "headline": "LG, 스마트홈 AI 어시스턴트로 아파트 에어컨 자동 제어 시작",
+      "summary": "LG전자가 Xi 아파트에 AI 어시스턴트를 도입해 사용자의 귀가 시간을 예측해 에어컨을 자동으로 켜는 스마트홈 기능을 구현했다. 음성 질의에 응답하는 형식으로 HVAC 시스템과 연계된 IoT 기반 생활편의 솔루션으로, LG의 스마트홈 플랫폼 확장 전략을 보여준다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG, 거주자 귀가 예측해 에어컨을 자동으로 켜는 AI 어시스턴트 기술 도입"
+          "text": "LG전자의 AI 어시스턴트가 Xi 아파트에 도입돼 사용자 귀가 시간을 예측해 에어컨 자동 제어"
         },
         {
           "type": "content",
-          "text": "Xi 아파트에 스마트홈 IoT 플랫폼 통해 냉방 에너지 효율 및 사용자 편의성 제고"
+          "text": "음성 명령 기반 스마트홈 솔루션으로 HVAC 시스템 연계 구현"
+        },
+        {
+          "type": "content",
+          "text": "LG의 주거 공간 IoT 플랫폼 확대 및 생태계 구축 전략의 일환"
         }
       ],
       "source": {
@@ -340,6 +344,51 @@
       "publishedAt": "2026-07-13T10:09:36.000Z",
       "url": "https://www.mk.co.kr/en/business/12097553",
       "image": "https://wimg.mk.co.kr/news/cms/202607/13/news-p.v1.20260713.73e90f260cb2484d8342060ba3fc009f_P1.png",
+      "imageChecked": true
+    },
+    {
+      "id": 1738,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "스마트홈",
+        "AI",
+        "IoT",
+        "협력",
+        "신사업"
+      ],
+      "headline": "LG전자, GS건설과 AI 스마트홈 협력",
+      "summary": "LG전자가 GS건설과 AI 기반 스마트홈 사업을 추진한다. 양사는 건설·가전·IoT 통합을 통해 차세대 주거 솔루션을 개발할 계획이며, 글로벌 스마트홈 시장 확대에 대응하는 전략이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자와 GS건설이 AI 기반 스마트홈 사업 협력을 발표"
+        },
+        {
+          "type": "content",
+          "text": "건설·가전·IoT 통합 플랫폼으로 차세대 주거 솔루션 개발 추진"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.koreaherald.com/article/10807360"
+      },
+      "publishedAt": "2026-07-13T08:00:26.000Z",
+      "url": "https://www.koreaherald.com/article/10807360",
+      "image": "https://wimg.heraldcorp.com/news/cms/2026/07/13/news-p.v1.20260713.27c33ba670e949e5ba1864aa4834ca90_T1.jpg",
       "imageChecked": true
     },
     {
@@ -434,51 +483,6 @@
       "image": "https://www.chosun.com/resizer/v2/VSBYDVUFHFPGXIHKIIE3M3ZFNM.jpg?auth=960f199bd09c42f81a8f03e721342537674befa3b0294767f1f55377955a2a7d&width=1200&height=630&smart=true"
     },
     {
-      "id": 1716,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "스마트홈",
-        "AI",
-        "로보틱스",
-        "신사업",
-        "협력"
-      ],
-      "headline": "LG전자, GS건설과 AI·로봇 스마트홈 공동개발",
-      "summary": "LG전자가 GS건설과 손잡고 인공지능과 로봇 기술을 통합한 미래 주거 솔루션을 공동 개발한다. 스마트홈 플랫폼 및 생활가전 제어 기술을 결합해 차별화된 거주 경험을 제공할 계획이다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "GS건설과 LG전자가 AI·로봇 기술 기반 미래 주거 솔루션 공동 개발 협력 체결"
-        },
-        {
-          "type": "content",
-          "text": "스마트홈 플랫폼과 생활가전 제어 기술을 통합하여 차별화된 거주 환경 구축 목표"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370269"
-      },
-      "publishedAt": "2026-07-13T06:45:56.000Z",
-      "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370269",
-      "image": "https://www.electimes.com/news/photo/202607/370269_582851_338.png",
-      "imageChecked": true
-    },
-    {
       "id": 1711,
       "lens": "거시",
       "grade": "주요",
@@ -567,6 +571,48 @@
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/is-softer-appliance-demand-forcing-whirlpool-whr-to-rethink/amp",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true
+    },
+    {
+      "id": 1741,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "스마트홈",
+        "로보틱스",
+        "AI",
+        "주거",
+        "협력"
+      ],
+      "headline": "LG전자·GS공사, 아파트 AI·로봇 기술 적용",
+      "summary": "LG전자와 GS공사가 협력해 Xi 아파트에 AI 및 로봇 기술을 도입하는 프로젝트를 추진 중입니다. 스마트홈 및 자동화 기술을 주거 공간에 통합하는 사례로, 가전과 건설 산업의 협력 모델을 제시합니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자와 GS공사, Xi 아파트 프로젝트에 AI와 로봇 기술 적용"
+        },
+        {
+          "type": "content",
+          "text": "스마트홈 및 주거 자동화 기술 통합으로 생활가전 신사업 모델 구축"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://en.sedaily.com/finance/2026/07/12/lg-electronics-gs-engineering-bring-ai-robots-to-xi"
+      },
+      "publishedAt": "2026-07-13T01:00:05.000Z",
+      "url": "https://en.sedaily.com/finance/2026/07/12/lg-electronics-gs-engineering-bring-ai-robots-to-xi",
+      "image": null
     },
     {
       "id": 1709,
