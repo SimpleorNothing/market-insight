@@ -1,7 +1,53 @@
 {
-  "updatedAt": "2026-07-13T22:45:25.725Z",
+  "updatedAt": "2026-07-13T23:43:32.407Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1754,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.7,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기",
+        "청소기"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "디자인상",
+        "브랜드가치",
+        "소비자평가"
+      ],
+      "headline": "삼성전자, 레드닷 최고상 2개 포함 8관왕",
+      "summary": "삼성전자가 국제 권위 디자인상인 레드닷 디자인 어워드에서 최고상(베스트 오브 더 베스트) 2개를 포함해 총 8개 상을 수상했다. 이는 제품의 디자인과 사용성에 대한 글로벌 인정을 의미한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 레드닷 디자인 어워드에서 최고상 2개와 기타상 6개 등 총 8개 상 수상"
+        },
+        {
+          "type": "content",
+          "text": "가전 제품의 디자인 우수성과 사용자 경험이 국제적으로 인정받음"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.yna.co.kr/view/AKR20260714028700003"
+      },
+      "publishedAt": "2026-07-13T23:31:34.000Z",
+      "url": "https://www.yna.co.kr/view/AKR20260714028700003",
+      "image": "https://img6.yna.co.kr/etc/inner/KR/2026/07/14/AKR20260714028700003_01_i_P4.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1746,
       "lens": "소비자",
@@ -468,7 +514,7 @@
       "image": null
     },
     {
-      "id": 1748,
+      "id": 1755,
       "lens": "기술",
       "grade": "주요",
       "impact": 3.9,
@@ -485,26 +531,21 @@
         "LG전자"
       ],
       "tags": [
-        "AI어시스턴트",
         "스마트홈",
+        "AI 어시스턴트",
         "IoT",
-        "신사업",
-        "플랫폼"
+        "신사업"
       ],
-      "headline": "LG, 아파트용 AI 어시스턴트로 스마트홈 생태계 확대",
-      "summary": "LG전자가 'Xi Apartments'에 AI 어시스턴트 기술을 공급하며 스마트홈 플랫폼 확대에 나선다. 거주자의 귀가 일정을 감지해 에어컨을 자동 제어하는 기술로 편의성을 강화하는 동시에 주거 공간의 IoT 생태계 진출을 가속화하는 전략이다.",
+      "headline": "LG, 아파트 맞춤형 AI 어시스턴트 서비스 출시",
+      "summary": "LG전자가 Xi 아파트 거주자를 위한 AI 어시스턴트 서비스를 선보인다. 거주자가 귀가 중일 때 에어컨 사전 가동 등 주거 환경을 자동 제어하는 스마트홈 기술을 구현하며, 글로벌 주거 공간의 지능형 통제 경험을 확대하려는 전략으로 평가된다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자, Xi Apartments에 AI 어시스턴트 기술 공급으로 스마트 주거 솔루션 제공"
+          "text": "LG전자가 Xi 아파트 거주자용 AI 어시스턴트 출시, 귀가 예정 시점에 자동으로 에어컨 제어"
         },
         {
           "type": "content",
-          "text": "거주자 귀가 일정 감지 시 에어컨 자동 제어 등 편의 기능 구현"
-        },
-        {
-          "type": "content",
-          "text": "주거용 빌트인·플랫폼 확산으로 신사업 수익모델 강화 의도"
+          "text": "음성 기반 스마트홈 통제 기술로 글로벌 주거 공간 IoT 솔루션 확대 추진"
         }
       ],
       "source": {
