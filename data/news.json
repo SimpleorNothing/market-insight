@@ -1,7 +1,89 @@
 {
-  "updatedAt": "2026-07-13T11:52:29.512Z",
+  "updatedAt": "2026-07-13T14:04:06.748Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1733,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "애널리스트",
+        "커버리지",
+        "시장평가"
+      ],
+      "headline": "BNP파리바 엑산, 월풀 신규 커버리지 개시",
+      "summary": "투자은행 BNP파리바 엑산이 월풀에 대한 신규 애널리스트 커버리지를 시작했다. 구체적 평가 내용은 보도되지 않았으며, 향후 시장 평가 영향을 살필 필요가 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "BNP파리바 엑산이 월풀에 대한 신규 애널리스트 커버리지 개시"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.marketbeat.com/instant-alerts/bnp-paribas-exane-begins-coverage-on-whirlpool-nysewhr-2026-07-13/"
+      },
+      "publishedAt": "2026-07-13T13:36:23.000Z",
+      "url": "https://www.marketbeat.com/instant-alerts/bnp-paribas-exane-begins-coverage-on-whirlpool-nysewhr-2026-07-13/",
+      "image": "https://www.marketbeat.com/logos/whirlpool-co-logo-1200x675.jpg?v=20240426082740",
+      "imageChecked": true
+    },
+    {
+      "id": 1730,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "휴머노이드",
+        "로보틱스",
+        "산업용",
+        "AI제어",
+        "원격조종"
+      ],
+      "headline": "휴머노이드 로봇, 산업용 정밀작업 능력 검증",
+      "summary": "미국 스타트업 페르소나 AI가 휴머노이드 로봇 Gen 1의 용접 시연 영상을 공개했습니다. VR 헤드셋 원격 조종으로 로봇이 독립적으로 몸을 낮춰 용접을 수행한 뒤 스스로 일어서며, 아크 유지와 용접 경로 구현 등 정밀 작업 능력을 입증했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "페르소나 AI 휴머노이드 로봇 Gen 1이 VR 헤드셋 원격조종으로 독립적 용접 수행"
+        },
+        {
+          "type": "content",
+          "text": "로봇이 외부 지지 없이 몸을 낮춘 뒤 스스로 일어서며 아크 유지 및 용접 경로 구현 검증"
+        },
+        {
+          "type": "content",
+          "text": "산업 현장 투입을 앞둔 휴머노이드의 정밀 작업 능력 단계별 검증 진행 중"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260713000323"
+      },
+      "publishedAt": "2026-07-13T13:30:00.000Z",
+      "url": "https://www.etnews.com/20260713000323",
+      "image": "https://img.etnews.com/news/article/2026/07/13/news-p.v1.20260713.e701cdbe19f342e3924f4c9fe2bf7d6e_P1.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1728,
       "lens": "소비자",
@@ -80,6 +162,55 @@
       "publishedAt": "2026-07-13T10:27:07.000Z",
       "url": "https://www.streetinsider.com/New+Coverage/BNP+Paribas+Exane+Starts+Whirlpool+Corporation+%28WHR%29+at+Neutral/26759285.html",
       "image": null
+    },
+    {
+      "id": 1735,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "AI어시스턴트",
+        "스마트홈",
+        "음성제어",
+        "사용자경험",
+        "IoT"
+      ],
+      "headline": "LG, 아파트용 AI 어시스턴트 통해 HVAC 스마트홈 체험 확대",
+      "summary": "LG전자가 Xi 아파트 입주자를 대상으로 AI 어시스턴트 기반 에어컨 음성 제어 서비스를 제공한다. 사용자는 귀가 예정 시간에 자동으로 실내 온도를 조절하고, 실시간 에너지 효율을 모니터링할 수 있다. 스마트홈 생태계 확장을 통한 소비자 경험 고도화 전략으로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자, Xi 아파트 주민 대상 AI 어시스턴트 기반 에어컨 음성 제어 서비스 시작"
+        },
+        {
+          "type": "content",
+          "text": "귀가 예정 시간 감지 시 자동 에어컨 가동, 실시간 에너지 효율 모니터링 가능"
+        },
+        {
+          "type": "content",
+          "text": "스마트홈 생태계 강화를 통한 차별화된 소비자 경험 제공 전략"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.mk.co.kr/en/business/12097553"
+      },
+      "publishedAt": "2026-07-13T10:09:36.000Z",
+      "url": "https://www.mk.co.kr/en/business/12097553",
+      "image": "https://wimg.mk.co.kr/news/cms/202607/13/news-p.v1.20260713.73e90f260cb2484d8342060ba3fc009f_P1.png",
+      "imageChecked": true
     },
     {
       "id": 1718,
