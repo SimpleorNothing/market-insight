@@ -1,7 +1,97 @@
 {
-  "updatedAt": "2026-07-13T01:46:13.096Z",
+  "updatedAt": "2026-07-13T05:26:29.080Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1711,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "기후변화",
+        "냉방수요",
+        "중국수출",
+        "원자재"
+      ],
+      "headline": "중국 에어컨·제빙기 수출 폭염으로 급증",
+      "summary": "전 지구적 폭염으로 중국의 에어컨·제빙기 수출이 급증하고 있다. 고온 현상이 냉방기기 수요를 촉발하며 중국 제조업체들의 수출 호조로 이어지고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "폭염이 중국의 에어컨 및 제빙기 수출을 급증시키고 있음"
+        },
+        {
+          "type": "content",
+          "text": "고온 현상으로 냉방기기에 대한 글로벌 수요가 증가 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260713131212574"
+      },
+      "publishedAt": "2026-07-13T04:12:12.000Z",
+      "url": "https://v.daum.net/v/20260713131212574",
+      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/13/sbscnbc/20260713131504378uluu.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1714,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "수요 부진",
+        "주택시장",
+        "수익 구조",
+        "전략 재검토"
+      ],
+      "headline": "월풀, 약해진 가전 수요에 주택연동 수익 전략 재검토",
+      "summary": "미국 가전 시장의 수요 둔화로 주택 시장과 연동된 수익 모델에 대한 재평가가 이루어지고 있다. 월풀은 전통적인 주택건설 사이클 기반 수익 구조의 유지 가능성을 검토하고 있으며, 시장 환경 변화에 따른 전략 조정을 모색 중이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 가전 수요가 약화되면서 월풀의 주택시장 연동형 수익 모델의 지속 가능성이 도전받고 있다"
+        },
+        {
+          "type": "content",
+          "text": "월풀이 주택건설 사이클에 기반한 전통적 이익 창출 전략의 재검토를 고려하고 있다"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/is-softer-appliance-demand-forcing-whirlpool-whr-to-rethink/amp"
+      },
+      "publishedAt": "2026-07-13T02:22:41.000Z",
+      "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/is-softer-appliance-demand-forcing-whirlpool-whr-to-rethink/amp",
+      "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
+      "imageChecked": true
+    },
     {
       "id": 1705,
       "lens": "기술",
@@ -46,48 +136,6 @@
       "url": "https://www.mk.co.kr/news/realestate/12096891",
       "image": "https://pimg.mk.co.kr/news/cms/202607/13/news-p.v1.20260713.6267d9e858ca4473aed9a591e62f4eed_R.png",
       "imageChecked": true
-    },
-    {
-      "id": 1711,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "스마트홈",
-        "AI",
-        "로봇",
-        "B2B",
-        "신사업"
-      ],
-      "headline": "LG전자·GS건설, Xi 아파트에 AI·로봇 적용",
-      "summary": "LG전자와 GS건설이 협력해 Xi 아파트에 인공지능과 로봇 기술을 도입한다. 스마트홈 생태계 및 자동화 기술을 고급 주거 공간에 통합하는 전략으로, 프리미엄 아파트 시장에서 기술 리더십을 강화하려는 움직임이다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자와 GS건설이 Xi 아파트 프로젝트에 AI 및 로봇 기술 통합 추진"
-        },
-        {
-          "type": "content",
-          "text": "스마트홈 및 자동화 솔루션을 프리미엄 주거 공간에 적용하는 전략"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://en.sedaily.com/finance/2026/07/13/lg-electronics-gs-engineering-bring-ai-robots-to-xi"
-      },
-      "publishedAt": "2026-07-13T01:00:05.000Z",
-      "url": "https://en.sedaily.com/finance/2026/07/13/lg-electronics-gs-engineering-bring-ai-robots-to-xi",
-      "image": null
     },
     {
       "id": 1709,
@@ -5048,7 +5096,8 @@
       },
       "publishedAt": "2026-07-06T02:09:00.000Z",
       "url": "https://www.hellot.net/news/article.html?no=113624",
-      "image": "https://www.hellot.net/data/photos/20260728/art_17833036934744_d39160.jpg"
+      "image": "https://www.hellot.net/data/photos/20260728/art_17833036934744_d39160.jpg",
+      "imageChecked": true
     },
     {
       "id": 1420,
