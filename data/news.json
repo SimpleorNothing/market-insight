@@ -1,7 +1,86 @@
 {
-  "updatedAt": "2026-07-13T08:47:56.731Z",
+  "updatedAt": "2026-07-13T11:52:29.512Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1728,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.7,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "저소득층",
+        "에너지빈곤",
+        "폭염대응",
+        "전기료"
+      ],
+      "headline": "전기료 부담으로 저소득층 에어컨 사용 회피",
+      "summary": "폭염 시즌에도 전기료 비용 부담으로 저소득층이 에어컨 사용을 꺼리고 있는 상황이 보도됐다. 쪽방촌 등 취약계층의 냉방 기기 접근성과 사용 의사 감소가 주요 이슈로 지적되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "저소득층이 폭염 속에서도 전기료 부담으로 에어컨 사용을 회피하고 있음"
+        },
+        {
+          "type": "content",
+          "text": "쪽방촌 등 취약계층이 여름철 냉방 기기 접근성 및 사용에 어려움을 겪고 있음"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3028834"
+      },
+      "publishedAt": "2026-07-13T10:44:34.000Z",
+      "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3028834",
+      "image": "https://cdn.kihoilbo.co.kr/news/photo/202607/3028834_572584_2327.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1729,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "투자등급",
+        "애널리스트평가",
+        "월풀",
+        "북미"
+      ],
+      "headline": "BNP Paribas Exane, 월풀에 중립 평가 신규 개시",
+      "summary": "금융 분석사 BNP Paribas Exane이 월풀(Whirlpool Corporation)에 대해 신규 개시 등급으로 '중립(Neutral)' 평가를 부여했다. 당사 북미 주요 경쟁사의 투자등급 변화로 시장 심리 반영 가능성이 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "BNP Paribas Exane이 월풀에 신규 개시 등급 '중립' 부여"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.streetinsider.com/New+Coverage/BNP+Paribas+Exane+Starts+Whirlpool+Corporation+%28WHR%29+at+Neutral/26759285.html"
+      },
+      "publishedAt": "2026-07-13T10:27:07.000Z",
+      "url": "https://www.streetinsider.com/New+Coverage/BNP+Paribas+Exane+Starts+Whirlpool+Corporation+%28WHR%29+at+Neutral/26759285.html",
+      "image": null
+    },
     {
       "id": 1718,
       "lens": "소비자",
@@ -6228,37 +6307,6 @@
       "publishedAt": "2026-07-04T00:36:04.000Z",
       "url": "https://www.asiatime.co.kr/article/20260703500335",
       "image": "https://csossihettpx2597658.cdn.gov-ntruss.com/data2/content/image/2026/07/03/.cache/512/20260703500334.jpg"
-    },
-    {
-      "id": 1358,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "신사업",
-        "로보틱스",
-        "가전역량",
-        "미래전략"
-      ],
-      "headline": "LG전자, 로봇사업 진출…가전 역량 활용한 신사업 전략",
-      "summary": "LG전자가 로봇 산업 진출을 추진하며 기존 가전 사업에서 축적한 기술과 역량을 로봇에 접목하는 전략을 수립. 가전 DNA를 바탕으로 한 로봇 개발을 통해 새로운 수익원 창출을 목표로 함.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=127951"
-      },
-      "publishedAt": "2026-07-04T00:00:00.000Z",
-      "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=127951",
-      "image": "https://cdn.ntoday.co.kr/news/thumbnail/202607/127951_113512_4828_v150.jpg"
     },
     {
       "id": 1343,
