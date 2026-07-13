@@ -1,7 +1,93 @@
 {
-  "updatedAt": "2026-07-13T21:45:12.272Z",
+  "updatedAt": "2026-07-13T22:45:25.725Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1746,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "냉방기기",
+        "소비자수요",
+        "노후기기교체",
+        "저소득층"
+      ],
+      "headline": "폭염 속 노후 냉방기기 사용자 급증, 교체 수요 확대",
+      "summary": "극한 기후로 인한 폭염이 심화되면서 40년 된 에어컨 같은 노후 냉방기기를 사용 중인 저소득층 가구가 증가하고 있다. 기기 고장에도 불구하고 교체 비용 부담으로 선풍기에만 의존하는 소비자들이 늘어나면서 에어컨 교체 수요가 높아지는 추세다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "폭염으로 인해 40년 된 노후 에어컨을 사용 중인 가구들의 기기 고장 문제가 심화되고 있다"
+        },
+        {
+          "type": "content",
+          "text": "교체 비용 부담으로 선풍기에만 의존하는 저소득층 가구가 증가하면서 냉방기기 교체 수요가 확대되는 중이다"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.nocutnews.co.kr/news/6547546"
+      },
+      "publishedAt": "2026-07-13T20:00:00.000Z",
+      "url": "https://www.nocutnews.co.kr/news/6547546",
+      "image": "https://file2.nocutnews.co.kr/newsroom/image/2026/07/13/202607132036489035_0.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1747,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "GE어플라이언스",
+        "긱이코노미",
+        "스마트팩토리",
+        "인력운영",
+        "앱기반"
+      ],
+      "headline": "GE어플라이언스, 공장 근로자 확보를 위해 긱 워크 앱 도입",
+      "summary": "GE Appliances(Haier 자회사)가 공장 근로자 확보 문제 해결을 위해 우버 모델의 긱 워크 플랫폼 앱을 자체 개발·도입했다. 이는 제조업 현장의 인력난 해소와 근로 유연성 제고를 위한 신규 운영 모델 시도로, 가전 제조업체의 근로 방식 혁신 사례로 주목된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE Appliances가 공장 근로자 채용·유지 문제 해결을 위해 긱 워크 방식의 앱 플랫폼 자체 개발"
+        },
+        {
+          "type": "content",
+          "text": "우버 형태의 유연 근로 모델 도입으로 공장 인력 확보 및 근로 방식의 현대화 추진"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.techspot.com/news/113084-ge-appliances-replacing-fixed-factory-shifts-app-workers.html"
+      },
+      "publishedAt": "2026-07-13T19:35:00.000Z",
+      "url": "https://www.techspot.com/news/113084-ge-appliances-replacing-fixed-factory-shifts-app-workers.html",
+      "image": "https://www.techspot.com/images2/news/bigimage/2026/07/2026-07-13-image.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1736,
       "lens": "소비자",
@@ -217,6 +303,50 @@
       "imageChecked": true
     },
     {
+      "id": 1752,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "B2B",
+        "신사업",
+        "지역확장",
+        "상업용",
+        "인도시장"
+      ],
+      "headline": "LG전자, 인도 B2B 세탁기 라인업 2027년 상반기 출시 계획",
+      "summary": "LG전자가 상업용 세탁기 사업을 확장하며 인도 시장을 겨냥한 전문가용 세탁기 라인업을 2027년 초에 출시할 예정이다. B2B 및 상업 부문 진출을 통해 세탁기 사업 다각화를 추진하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자, 상업용 세탁기 사업 확장 추진"
+        },
+        {
+          "type": "content",
+          "text": "인도 시장 대상 전문가용 세탁기 라인업 2027년 초 출시 계획"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.mysmartprice.com/gear/washing-machine/washing-machine-news/lg-expands-commercial-laundry-business-plans-professional-laundry-lineup-for-india-in-early-2027/?amp"
+      },
+      "publishedAt": "2026-07-13T12:33:51.000Z",
+      "url": "https://www.mysmartprice.com/gear/washing-machine/washing-machine-news/lg-expands-commercial-laundry-business-plans-professional-laundry-lineup-for-india-in-early-2027/?amp",
+      "image": "https://assets.mspimages.in/hi/wp-content/uploads/sites/5/2026/07/lg11.jpg-1.jpeg"
+    },
+    {
       "id": 1735,
       "lens": "소비자",
       "grade": "주시",
@@ -338,7 +468,7 @@
       "image": null
     },
     {
-      "id": 1745,
+      "id": 1748,
       "lens": "기술",
       "grade": "주요",
       "impact": 3.9,
@@ -358,19 +488,23 @@
         "AI어시스턴트",
         "스마트홈",
         "IoT",
-        "생태계",
-        "음성제어"
+        "신사업",
+        "플랫폼"
       ],
-      "headline": "LG, 아파트용 AI 어시스턴트로 HVAC 스마트화",
-      "summary": "LG전자가 'Xi 아파트'에 AI 어시스턴트를 도입해 거주자의 귀가 시간을 감지해 에어컨을 자동으로 제어하는 스마트홈 기능을 선보였다. 음성 인식 기반의 생활편의 기능으로 스마트홈 생태계 확대를 추진 중이다.",
+      "headline": "LG, 아파트용 AI 어시스턴트로 스마트홈 생태계 확대",
+      "summary": "LG전자가 'Xi Apartments'에 AI 어시스턴트 기술을 공급하며 스마트홈 플랫폼 확대에 나선다. 거주자의 귀가 일정을 감지해 에어컨을 자동 제어하는 기술로 편의성을 강화하는 동시에 주거 공간의 IoT 생태계 진출을 가속화하는 전략이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "Xi 아파트에 AI 어시스턴트 도입, 거주자 귀가 시간 감지 시 에어컨 자동 제어"
+          "text": "LG전자, Xi Apartments에 AI 어시스턴트 기술 공급으로 스마트 주거 솔루션 제공"
         },
         {
           "type": "content",
-          "text": "음성 인식 기반 생활편의 기능으로 스마트홈 통합 플랫폼 구성"
+          "text": "거주자 귀가 일정 감지 시 에어컨 자동 제어 등 편의 기능 구현"
+        },
+        {
+          "type": "content",
+          "text": "주거용 빌트인·플랫폼 확산으로 신사업 수익모델 강화 의도"
         }
       ],
       "source": {
