@@ -1,7 +1,84 @@
 {
-  "updatedAt": "2026-07-13T23:43:32.407Z",
+  "updatedAt": "2026-07-14T01:22:42.593Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1756,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "D2C",
+        "유통",
+        "신사업",
+        "직영채널"
+      ],
+      "headline": "LG전자, 'LG채널' 5천개 돌파…폴란드 진출",
+      "summary": "LG전자가 자체 유통채널 'LG채널'이 5000개를 돌파했으며 폴란드 진출을 추진 중이다. D2C 전략의 일환으로 직영점 확대를 통해 소비자 접근성을 강화하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자의 'LG채널' 매장이 5000개를 돌파했다."
+        },
+        {
+          "type": "content",
+          "text": "LG전자가 폴란드로 진출하며 유럽 시장 확대를 추진 중이다."
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260714100150346"
+      },
+      "publishedAt": "2026-07-14T01:01:50.000Z",
+      "url": "https://v.daum.net/v/20260714100150346",
+      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/14/ZDNetKorea/20260714100152048zwjn.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1755,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "실적전망",
+        "증권사분석"
+      ],
+      "headline": "LG전자, 하반기 실적 예상 상회 전망",
+      "summary": "교보증권이 LG전자의 올해 하반기 실적이 예상을 상회할 것으로 전망했다. 구체적인 근거나 수치는 원문에 제시되지 않았으나, 증권사 분석 기반의 긍정적 전망으로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "교보증권이 LG전자의 2026년 하반기 실적이 시장 예상을 상회할 것으로 전망"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.mt.co.kr/stock/2026/07/14/2026071408494269325"
+      },
+      "publishedAt": "2026-07-13T23:54:19.000Z",
+      "url": "https://www.mt.co.kr/stock/2026/07/14/2026071408494269325",
+      "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/07/2026071408494269325_1.jpg"
+    },
     {
       "id": 1754,
       "lens": "소비자",
@@ -514,7 +591,7 @@
       "image": null
     },
     {
-      "id": 1755,
+      "id": 1757,
       "lens": "기술",
       "grade": "주요",
       "impact": 3.9,
@@ -532,20 +609,25 @@
       ],
       "tags": [
         "스마트홈",
-        "AI 어시스턴트",
+        "AI",
         "IoT",
+        "음성제어",
         "신사업"
       ],
-      "headline": "LG, 아파트 맞춤형 AI 어시스턴트 서비스 출시",
-      "summary": "LG전자가 Xi 아파트 거주자를 위한 AI 어시스턴트 서비스를 선보인다. 거주자가 귀가 중일 때 에어컨 사전 가동 등 주거 환경을 자동 제어하는 스마트홈 기술을 구현하며, 글로벌 주거 공간의 지능형 통제 경험을 확대하려는 전략으로 평가된다.",
+      "headline": "LG, 아파트 AI 어시스턴트로 공조 자동화 추진",
+      "summary": "LG전자가 스마트홈 플랫폼 기반 AI 어시스턴트를 주거 공간에 도입, 냉난방 자동 제어 기능을 구현한다. 사용자가 귀가하기 전 음성 명령으로 실시간 공조 제어가 가능해지며, IoT 생활가전 연동 생태계 확대 전략의 일환이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 Xi 아파트 거주자용 AI 어시스턴트 출시, 귀가 예정 시점에 자동으로 에어컨 제어"
+          "text": "LG 스마트홈 AI 어시스턴트가 아파트에 도입돼 냉난방 시스템 자동 제어 지원"
         },
         {
           "type": "content",
-          "text": "음성 기반 스마트홈 통제 기술로 글로벌 주거 공간 IoT 솔루션 확대 추진"
+          "text": "사용자 위치 기반 사전 음성 명령으로 귀가 전 공조 사전 가동 가능"
+        },
+        {
+          "type": "content",
+          "text": "생활가전 IoT 연동 플랫폼 강화로 스마트홈 생태계 확대 추진"
         }
       ],
       "source": {
@@ -826,6 +908,48 @@
       "imageChecked": true
     },
     {
+      "id": 1759,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "스마트홈",
+        "AI",
+        "로봇",
+        "빌트인",
+        "신사업"
+      ],
+      "headline": "LG전자·GS공사, 아파트에 AI·로봇 기술 도입",
+      "summary": "LG전자와 GS공사가 Xi 아파트 프로젝트에 AI 및 로봇 기술을 적용하는 협력을 추진 중이다. 스마트홈 기반 신규 거주 경험 제공을 목표로 하는 사업으로, 가전업체의 빌트인·스마트홈 생태계 확대 전략을 보여준다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자와 GS공사가 Xi 아파트에 AI·로봇 기술을 적용하는 협력 추진"
+        },
+        {
+          "type": "content",
+          "text": "스마트홈 기반 신규 주거 경험 제공을 통한 가전업체의 빌트인 사업 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://en.sedaily.com/finance/2026/07/12/lg-electronics-gs-engineering-bring-ai-robots-to-xi"
+      },
+      "publishedAt": "2026-07-13T01:00:05.000Z",
+      "url": "https://en.sedaily.com/finance/2026/07/12/lg-electronics-gs-engineering-bring-ai-robots-to-xi",
+      "image": null
+    },
+    {
       "id": 1709,
       "lens": "경쟁사",
       "grade": "참고",
@@ -957,6 +1081,51 @@
       "publishedAt": "2026-07-12T20:55:01.000Z",
       "url": "https://www.yna.co.kr/view/AKR20260712045900003",
       "image": "https://img7.yna.co.kr/photo/yna/YH/2026/04/21/PYH2026042100950001300_P4.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1761,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "B2B",
+        "신사업",
+        "상업용",
+        "세탁기",
+        "신제품"
+      ],
+      "headline": "LG전자, 상업용 세탁기 라인 신규 출시",
+      "summary": "LG전자가 B2B 상업용 세탁 솔루션인 'LG Professional Laundry' 신제품군을 글로벌 시장에 론칭했다. 상업 및 기관 운영자를 대상으로 한 전문 세탁기 라인업으로, 가전사의 B2B·상업용 시장 진출 확대 움직임을 보여준다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자, 상업 및 기관용 세탁 솔루션 'LG Professional Laundry' 신규 출시"
+        },
+        {
+          "type": "content",
+          "text": "B2B 상업용 시장 진출을 통한 수익모델 다각화 추진"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://pokde.net/smart-home/lg-professional-laundry-lineup"
+      },
+      "publishedAt": "2026-07-12T19:58:04.000Z",
+      "url": "https://pokde.net/smart-home/lg-professional-laundry-lineup",
+      "image": "https://cdn.pokde.net/wp-content/uploads/2026/07/13031430/lgprofessionalaundrylineupcover.jpg",
       "imageChecked": true
     },
     {
