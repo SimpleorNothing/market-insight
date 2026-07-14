@@ -1,7 +1,45 @@
 {
-  "updatedAt": "2026-07-14T07:04:51.658Z",
+  "updatedAt": "2026-07-14T09:47:40.295Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1765,
+      "lens": "기술",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "로보틱스",
+        "디자인상",
+        "키즈 로봇",
+        "신사업"
+      ],
+      "headline": "삼성전자 키즈 로봇, 레드닷 어워드 2026 최고상",
+      "summary": "삼성전자의 키즈 로봇이 레드닷 어워드 2026 디자인 콘셉트 부문에서 최고상을 수상했다. 이는 삼성전자의 로봇 기술 및 디자인 경쟁력을 국제적으로 인정받은 것으로, 아동용 로봇 시장에서의 기술 우위를 나타낸다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자 키즈 로봇이 레드닷 어워드 2026 디자인 콘셉트 부문 최고상 수상"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.irobotnews.com/news/articleView.html?idxno=47426"
+      },
+      "publishedAt": "2026-07-14T07:29:24.000Z",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=47426",
+      "image": "https://cdn.irobotnews.com/news/photo/202607/47426_101885_2725.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1764,
       "lens": "소비자",
@@ -730,12 +768,12 @@
       "id": 1766,
       "lens": "기술",
       "grade": "주요",
-      "impact": 3.9,
+      "impact": 4,
       "factors": {
         "salesRelevance": 4,
         "timeUrgency": 4,
         "marketSize": 4,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [
         "HVAC"
@@ -746,24 +784,19 @@
       "tags": [
         "AI어시스턴트",
         "스마트홈",
-        "IoT",
-        "신사업",
-        "플랫폼"
+        "IoT제어",
+        "사용자경험"
       ],
-      "headline": "LG, 아파트용 AI 어시스턴트 출시…스마트홈 생태계 확대",
-      "summary": "LG전자가 아파트 거주자를 위한 AI 어시스턴트 서비스를 선보인다. 귀가 예상 시간에 에어컨을 미리 켜는 등 거주자의 행동 패턴을 학습해 생활 편의를 제공한다. 스마트홈 플랫폼 기반 신규 비즈니스 모델로 가전 제어 범위를 확대하는 전략이다.",
+      "headline": "LG, 아파트向 AI 어시스턴트 냉방 자동제어 서비스 출시",
+      "summary": "LG전자가 Xi 아파트에 AI 어시스턴트를 설치해 거주자의 귀가 시간에 자동으로 에어컨을 제어하는 스마트홈 통합 서비스를 시작했다. 음성 지시 기반 냉난방 자동화로 스마트홈 에코시스템 고도화를 추진 중이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자, Xi 아파트 입주자 대상 AI 어시스턴트 서비스 제공"
+          "text": "LG전자가 Xi 아파트에 AI 어시스턴트를 도입, 거주자 귀가 예상 시간에 자동으로 냉방 제어"
         },
         {
           "type": "content",
-          "text": "귀가 예상 시간 인식해 에어컨 자동 제어 등 생활 패턴 학습 기반 편의 제공"
-        },
-        {
-          "type": "content",
-          "text": "스마트홈 플랫폼 확장 통한 신규 구독·서비스 비즈니스 진출"
+          "text": "음성 명령과 예측 알고리즘으로 에너지 효율과 거주 편의성을 동시에 제공하는 스마트홈 통합 솔루션"
         }
       ],
       "source": {
