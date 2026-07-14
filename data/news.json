@@ -1,7 +1,45 @@
 {
-  "updatedAt": "2026-07-14T01:22:42.593Z",
+  "updatedAt": "2026-07-14T04:41:14.107Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1762,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "AI기술",
+        "소프트웨어",
+        "글로벌전략",
+        "기술경쟁"
+      ],
+      "headline": "삼성·LG, AI·소프트웨어로 글로벌 가전 영토 확장",
+      "summary": "삼성전자와 LG전자가 AI·소프트웨어 기술을 앞세워 글로벌 가전 시장 확장에 나서고 있다. 두 회사는 전자 레이더 형식의 기술 혁신을 통해 시장 영토 확대를 모색 중이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자·LG전자가 AI·소프트웨어 기술을 핵심 경쟁 수단으로 글로벌 가전 시장 영토 확장 추진"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.thevaluenews.co.kr/news/200076"
+      },
+      "publishedAt": "2026-07-14T04:23:39.000Z",
+      "url": "https://www.thevaluenews.co.kr/news/200076",
+      "image": null
+    },
     {
       "id": 1756,
       "lens": "경쟁사",
@@ -123,6 +161,53 @@
       "publishedAt": "2026-07-13T23:31:34.000Z",
       "url": "https://www.yna.co.kr/view/AKR20260714028700003",
       "image": "https://img6.yna.co.kr/etc/inner/KR/2026/07/14/AKR20260714028700003_01_i_P4.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1763,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "실적부진",
+        "배당중단",
+        "수요부진",
+        "북미시장"
+      ],
+      "headline": "월풀, 올해 이익 전망 50% 하향 조정·배당 폐지",
+      "summary": "월풀이 2026년 이익 예측을 절반으로 대폭 하향 조정하고 배당금 지급을 중단했다. 북미 가전시장의 수요 부진과 비용 압박이 주요 원인으로 지적되고 있으며, 이는 업계 전반의 경기 둔화를 시사한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 2026년 연간 이익 전망을 50% 하향 조정하고 배당금 지급을 폐지했다"
+        },
+        {
+          "type": "content",
+          "text": "북미 가전 수요 부진과 운영 비용 증가로 인한 수익성 악화가 배경"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.briefs.co/news/whirlpool-just-cut-its-profit-forecast-in-half-and-killed-its-dividend/"
+      },
+      "publishedAt": "2026-07-13T22:53:19.000Z",
+      "url": "https://www.briefs.co/news/whirlpool-just-cut-its-profit-forecast-in-half-and-killed-its-dividend/",
+      "image": "https://www.briefs.co/wp-content/uploads/2026/07/whirlpool-cuts-forecast.png",
       "imageChecked": true
     },
     {
@@ -591,15 +676,15 @@
       "image": null
     },
     {
-      "id": 1757,
+      "id": 1764,
       "lens": "기술",
       "grade": "주요",
-      "impact": 3.9,
+      "impact": 4,
       "factors": {
         "salesRelevance": 4,
         "timeUrgency": 4,
         "marketSize": 4,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [
         "HVAC"
@@ -608,26 +693,26 @@
         "LG전자"
       ],
       "tags": [
+        "AI어시스턴트",
         "스마트홈",
-        "AI",
-        "IoT",
         "음성제어",
+        "IoT",
         "신사업"
       ],
-      "headline": "LG, 아파트 AI 어시스턴트로 공조 자동화 추진",
-      "summary": "LG전자가 스마트홈 플랫폼 기반 AI 어시스턴트를 주거 공간에 도입, 냉난방 자동 제어 기능을 구현한다. 사용자가 귀가하기 전 음성 명령으로 실시간 공조 제어가 가능해지며, IoT 생활가전 연동 생태계 확대 전략의 일환이다.",
+      "headline": "LG, 아파트용 AI 어시스턴트 에어컨 자동제어 기능 추가",
+      "summary": "LG전자가 Xi 아파트에 AI 어시스턴트 기능을 탑재한 스마트홈 시스템을 도입한다. 사용자가 귀가 중일 때 음성으로 에어컨 온도 조절 등 가전기기를 사전에 제어할 수 있는 기능이 추가되며, 이는 IoT 기반 스마트홈 생태계 확대 전략의 일환이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG 스마트홈 AI 어시스턴트가 아파트에 도입돼 냉난방 시스템 자동 제어 지원"
+          "text": "LG전자, Xi 아파트에 AI 어시스턴트 시스템 도입"
         },
         {
           "type": "content",
-          "text": "사용자 위치 기반 사전 음성 명령으로 귀가 전 공조 사전 가동 가능"
+          "text": "사용자 귀가 시 음성 명령으로 에어컨 온도 자동제어 가능"
         },
         {
           "type": "content",
-          "text": "생활가전 IoT 연동 플랫폼 강화로 스마트홈 생태계 확대 추진"
+          "text": "스마트홈 플랫폼 생태계 확대 및 구독형 서비스 연계 추진"
         }
       ],
       "source": {
@@ -906,48 +991,6 @@
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/is-softer-appliance-demand-forcing-whirlpool-whr-to-rethink/amp",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true
-    },
-    {
-      "id": 1759,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 3.3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "스마트홈",
-        "AI",
-        "로봇",
-        "빌트인",
-        "신사업"
-      ],
-      "headline": "LG전자·GS공사, 아파트에 AI·로봇 기술 도입",
-      "summary": "LG전자와 GS공사가 Xi 아파트 프로젝트에 AI 및 로봇 기술을 적용하는 협력을 추진 중이다. 스마트홈 기반 신규 거주 경험 제공을 목표로 하는 사업으로, 가전업체의 빌트인·스마트홈 생태계 확대 전략을 보여준다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자와 GS공사가 Xi 아파트에 AI·로봇 기술을 적용하는 협력 추진"
-        },
-        {
-          "type": "content",
-          "text": "스마트홈 기반 신규 주거 경험 제공을 통한 가전업체의 빌트인 사업 확대"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://en.sedaily.com/finance/2026/07/12/lg-electronics-gs-engineering-bring-ai-robots-to-xi"
-      },
-      "publishedAt": "2026-07-13T01:00:05.000Z",
-      "url": "https://en.sedaily.com/finance/2026/07/12/lg-electronics-gs-engineering-bring-ai-robots-to-xi",
-      "image": null
     },
     {
       "id": 1709,
@@ -7098,38 +7141,6 @@
       "publishedAt": "2026-07-03T20:02:37.000Z",
       "url": "https://v.daum.net/v/20260704050237686",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/04/segye/20260704050237398brdq.jpg"
-    },
-    {
-      "id": 1338,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 2.8,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "AI",
-        "스마트홈",
-        "B2B",
-        "생태계",
-        "신사업"
-      ],
-      "headline": "LG, AI 기반 스마트홈·업무 솔루션 선보여",
-      "summary": "LG전자가 Opalnet과 협력하여 AI 기반의 스마트홈 연결성과 효율적인 비즈니스 운영 솔루션을 선보였다. 스마트홈 에코시스템과 B2B 운영 효율화를 결합한 통합 솔루션으로, 가전 제품 지능화 추세를 반영한 사업 확장 시도이다.",
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://nation.africa/kenya/brand-book/lg-and-opalnet-showcase-ai-powered-solutions-for-efficient-business-operations-smart-home-connectivity-5517234"
-      },
-      "publishedAt": "2026-07-03T13:52:55.000Z",
-      "url": "https://nation.africa/kenya/brand-book/lg-and-opalnet-showcase-ai-powered-solutions-for-efficient-business-operations-smart-home-connectivity-5517234",
-      "image": null
     },
     {
       "id": 1356,
