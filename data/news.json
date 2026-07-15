@@ -1,7 +1,90 @@
 {
-  "updatedAt": "2026-07-15T11:22:11.768Z",
+  "updatedAt": "2026-07-15T13:10:20.014Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1808,
+      "lens": "거시",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "생산자물가",
+        "인플레",
+        "미국거시",
+        "원가"
+      ],
+      "headline": "미국 6월 PPI 5.5% 상승, 예상치 하회",
+      "summary": "미국 6월 생산자물가지수(PPI)가 전년 대비 5.5% 상승으로 예상치 6.2%를 하회했다. 5월의 6.0%에서 하락하며 인플레 완화 신호를 보였다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "6월 미국 PPI 전년비 5.5% 상승, 5월 6.0%에서 하락"
+        },
+        {
+          "type": "content",
+          "text": "예상치 6.2%를 하회하며 인플레 압력 완화 추세 확인"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12099708"
+      },
+      "publishedAt": "2026-07-15T12:39:52.000Z",
+      "url": "https://www.mk.co.kr/news/world/12099708",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/15/news-p.v1.20260715.b03e74d7bce44f6d854b2b993eb55330_R.jpeg",
+      "imageChecked": true
+    },
+    {
+      "id": 1810,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "만족도조사",
+        "JDPower",
+        "소비자만족",
+        "미국시장"
+      ],
+      "headline": "월풀, 2026년 美 가전 만족도 조사 주도",
+      "summary": "JD Power가 2026년 미국 가전 만족도 조사를 발표했으며, 월풀이 기사 주제로 거명되었다. 해당 조사는 냉장고, 세탁기, 건조기, 조리기기, 식기세척기 등 주요 가전 제품 카테고리의 소비자 만족도를 조사하는 연례 보고서이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "JD Power 2026 미국 가전 만족도 조사 발표"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.jdpower.com/business/press-releases/2026-u-s-appliance-satisfaction-study/"
+      },
+      "publishedAt": "2026-07-15T12:09:32.000Z",
+      "url": "https://www.jdpower.com/business/press-releases/2026-u-s-appliance-satisfaction-study/",
+      "image": null
+    },
     {
       "id": 1803,
       "lens": "경쟁사",
