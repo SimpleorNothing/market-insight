@@ -1,7 +1,93 @@
 {
-  "updatedAt": "2026-07-15T09:51:01.880Z",
+  "updatedAt": "2026-07-15T11:22:11.768Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1803,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelivance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "인원감축",
+        "구조조정",
+        "미국"
+      ],
+      "headline": "월풀, 아이오와서 1년 최대 규모 인원감축 단행",
+      "summary": "월풀이 아이오와주에서 1년 최대 규모의 인원감축을 주도하고 있으며, IT 부문 일자리 축소도 함께 진행 중인 것으로 나타났다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 아이오와주 내 1년 최대 규모 인원감축을 주도 중"
+        },
+        {
+          "type": "content",
+          "text": "IT 부문 일자리 축소도 동시 진행 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.desmoinesregister.com/story/money/business/2026/07/15/wells-fargo-layoffs-whirlpool-iowa-june-job-losses/90840247007/"
+      },
+      "publishedAt": "2026-07-15T11:01:00.000Z",
+      "url": "https://www.desmoinesregister.com/story/money/business/2026/07/15/wells-fargo-layoffs-whirlpool-iowa-june-job-losses/90840247007/",
+      "image": null
+    },
+    {
+      "id": 1804,
+      "lens": "거시",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "경기침체",
+        "미국가전시장",
+        "경영전망",
+        "수요위축"
+      ],
+      "headline": "경기침체 우려 속 월풀, 경영 악재 지속 예상",
+      "summary": "미국 경기침체 진입 가능성 속에서 월풀이 경영상 어려움을 지속할 것으로 전망된다. 가전업계의 수요 둔화가 예상되는 상황에서 월풀의 실적 부진이 심화될 수 있다는 분석이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 경기침체 진입 우려 확산 속 월풀의 경영 악화 가능성 지적"
+        },
+        {
+          "type": "content",
+          "text": "경기둔화로 인한 가전 수요 감소가 월풀 실적에 부정적 영향 예상"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://seekingalpha.com/article/4922208-as-we-enter-a-recession-whirlpool-corporation-will-continue-to-face-turbulent-waters"
+      },
+      "publishedAt": "2026-07-15T10:51:34.000Z",
+      "url": "https://seekingalpha.com/article/4922208-as-we-enter-a-recession-whirlpool-corporation-will-continue-to-face-turbulent-waters",
+      "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1457955441/image_1457955441.jpg?io=getty-c-w1536",
+      "imageChecked": true
+    },
     {
       "id": 1800,
       "lens": "경쟁사",
@@ -43,6 +129,49 @@
       "publishedAt": "2026-07-15T07:56:00.000Z",
       "url": "https://www.newspim.com/news/view/20260715001257",
       "image": "https://img.newspim.com/news/2026/04/22/2604221629335890_t1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1802,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "B2B",
+        "신사업",
+        "로보틱스",
+        "사업 다각화",
+        "수익모델 전환"
+      ],
+      "headline": "LG전자, 가전 넘어 B2B·로보틱스로 사업 다각화",
+      "summary": "LG전자가 기존 가전 사업에서 벗어나 공간·인프라·로봇 영역으로 B2B 사업 전환을 가속화하고 있다. 가전 중심의 단순 제품 판매 모델에서 벗어나 신규 수익원 창출을 위한 전략적 포지셔닝으로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 전통 가전 사업 중심에서 공간·인프라·로봇 등 B2B 영역으로 사업 확장 추진"
+        },
+        {
+          "type": "content",
+          "text": "가전 제품 판매 중심의 수익모델에서 탈피하여 신규 비즈니스 카테고리 진입 가속"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://m.ddaily.co.kr/page/view/2026071516311153367"
+      },
+      "publishedAt": "2026-07-15T07:35:38.000Z",
+      "url": "https://m.ddaily.co.kr/page/view/2026071516311153367",
+      "image": "https://m.ddaily.co.kr/photos/2026/06/28/2026062809504419539_l.jpg",
       "imageChecked": true
     },
     {
@@ -614,6 +743,51 @@
       "image": null
     },
     {
+      "id": 1806,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "로봇청소기",
+        "신사업",
+        "시장진출",
+        "경쟁심화"
+      ],
+      "headline": "삼성·LG, 로봇청소기 시장 진출…다기능 모델 670달러 대중화",
+      "summary": "삼성전자와 LG전자가 로봇청소기 시장에 본격 진입하면서 경쟁이 심화되고 있다. 다기능 로봇청소기 가격이 670달러 수준으로 대중화되고 있으며, 시장이 '전국시대'로 진입했다는 평가다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자, LG전자가 로봇청소기 시장 진출로 경쟁 구도 변화"
+        },
+        {
+          "type": "content",
+          "text": "다기능 로봇청소기 모델이 670달러 수준에서 주류화"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://finance.biggo.com/news/4a46cd91-ea99-4bb8-9c94-db87a56a01e5"
+      },
+      "publishedAt": "2026-07-14T08:26:00.000Z",
+      "url": "https://finance.biggo.com/news/4a46cd91-ea99-4bb8-9c94-db87a56a01e5",
+      "image": "https://img.biggo.com/SEy6KzO449oizOH5OZF1CE-c7gsJKJDo1AIo-S5uQ0c/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3LzRhNDZjZDkxLWVhOTktNGJiOC05Yzk0LWRiODdhNTZhMDFlNV8xNzg0MDMwNjUzX2RlZmF1bHQuanBn.jpg",
+      "imageChecked": true
+    },
+    {
       "id": 1765,
       "lens": "기술",
       "grade": "참고",
@@ -649,6 +823,49 @@
       "publishedAt": "2026-07-14T07:29:24.000Z",
       "url": "https://www.irobotnews.com/news/articleView.html?idxno=47426",
       "image": "https://cdn.irobotnews.com/news/photo/202607/47426_101885_2725.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1807,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "모듈식주택",
+        "B2B",
+        "전략"
+      ],
+      "headline": "삼성·LG, 모듈식 주택사업 확대 추진",
+      "summary": "삼성전자와 LG전자가 모듈식 주택 시장 진출을 확대하고 있다. 대통령이 언급한 주택이 주목받으면서 두 회사의 모듈식 주택 사업 동향에 관심이 집중되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자와 LG전자가 모듈식 주택 시장 진출을 주력 사업으로 추진 중"
+        },
+        {
+          "type": "content",
+          "text": "대통령이 언급한 모듈식 주택 사례로 두 사의 제품이 주목받음"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.mk.co.kr/en/business/12098331"
+      },
+      "publishedAt": "2026-07-14T07:11:53.000Z",
+      "url": "https://www.mk.co.kr/en/business/12098331",
+      "image": "https://wimg.mk.co.kr/news/cms/202607/14/news-p.v1.20260714.dfc56d8aa4d44ac08419d87fabe1c425_P1.jpg",
       "imageChecked": true
     },
     {
@@ -2906,47 +3123,6 @@
       },
       "publishedAt": "2026-07-10T06:22:00.000Z",
       "url": "https://biz.chosun.com/it-science/ict/2026/07/10/H3S2PHZJKVD7NMY75FD4CCLUMA/",
-      "image": "https://biz.chosun.com/resizer/v2/GMYGIYTBGRSTOMRTMY2DGZJZMU.jpg?auth=07f46a375b04b79422a1ed7ccbe199dba3e22ff48b2af3dc33b91d85782900c1&width=1200&height=630&smart=true"
-    },
-    {
-      "id": 1626,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesReliability": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3,
-        "salesRelevance": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "신사업",
-        "다각화",
-        "실적호조"
-      ],
-      "headline": "LG전자, 가전 외 사업 다각화로 한국 실적 호조",
-      "summary": "LG전자가 가전사업 범위를 확장해 사업 다각화에 나서며 한국 시장에서 수익 증가세를 보이고 있다. 구체적 수치와 신사업 내역은 원문 발췌 부족으로 확인 불가.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자가 기존 가전사업 범위를 벗어나 사업 다각화 추진 중"
-        },
-        {
-          "type": "content",
-          "text": "한국 시장에서 수익 증가 추세 기록"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://biz.chosun.com/en/en-it/2026/07/10/VVD3VDSS6ZBTLFHZYDW3G55V6M/"
-      },
-      "publishedAt": "2026-07-10T06:22:00.000Z",
-      "url": "https://biz.chosun.com/en/en-it/2026/07/10/VVD3VDSS6ZBTLFHZYDW3G55V6M/",
       "image": "https://biz.chosun.com/resizer/v2/GMYGIYTBGRSTOMRTMY2DGZJZMU.jpg?auth=07f46a375b04b79422a1ed7ccbe199dba3e22ff48b2af3dc33b91d85782900c1&width=1200&height=630&smart=true"
     },
     {
