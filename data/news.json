@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T18:55:56.634Z",
+  "updatedAt": "2026-07-16T19:57:24.812Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -130,13 +130,13 @@
       "imageChecked": true
     },
     {
-      "id": 1834,
+      "id": 1839,
       "lens": "정책",
       "grade": "주시",
-      "impact": 3,
+      "impact": 3.3,
       "factors": {
         "salesRelevance": 3,
-        "timeUrgency": 3,
+        "timeUrgency": 4,
         "marketSize": 3,
         "sourceReliability": 3
       },
@@ -148,33 +148,29 @@
       ],
       "competitors": [],
       "tags": [
-        "정부정책",
         "에너지효율",
-        "보조금",
-        "교체사업"
+        "정부지원",
+        "소비자혜택",
+        "가전교체"
       ],
-      "headline": "고효율 가전 교체 지원사업 추진, 전기료 절감",
-      "summary": "한국 정부가 고효율 가전 제품으로의 교체 비용을 지원하는 정책을 추진 중이다. 지원 대상은 에너지 효율등급이 우수한 냉장고, 세탁기 등 생활가전이며, 교체 시 전기료 절감 효과를 기대할 수 있다.",
+      "headline": "고효율 가전 교체 비용 지원 정책 시행",
+      "summary": "한국 정부가 고효율 에너지등급 가전으로의 교체를 유도하기 위해 교체 비용을 지원하는 정책을 추진 중이다. 이를 통해 소비자는 구매 비용 절감과 전기료 절약 이중 혜택을 기대할 수 있다. 에너지 효율 규제 강화에 따른 소비자 부담 완화 방안이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "고효율 가전 교체 비용을 정부가 지원하는 사업 추진"
+          "text": "고효율 에너지등급 가전으로 교체하는 소비자에게 교체 비용을 지원하는 정책 시행"
         },
         {
           "type": "content",
-          "text": "냉장고, 세탁기 등 주요 가전제품을 지원 대상으로 선정"
-        },
-        {
-          "type": "content",
-          "text": "교체를 통해 소비자의 전기요금 절감 효과 제공"
+          "text": "교체 비용 지원으로 초기 구매 부담 경감 및 전기료 절약 이중 효과 제공"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://gonggam.korea.kr/newsContentView.es?mid=a10201000000&section_id=NCCD_POLICY&content=NC002&code_cd=0101000000&nPage=1&b_list=9&news_id=59907992-6d19-4438-ac96-902ea866a015"
+        "url": "https://gonggam.korea.kr/newsContentView.es?mid=a10201000000&section_id=NCCD_POLICY&news_id=59907992-6d19-4438-ac96-902ea866a015"
       },
       "publishedAt": "2026-07-16T12:10:51.000Z",
-      "url": "https://gonggam.korea.kr/newsContentView.es?mid=a10201000000&section_id=NCCD_POLICY&content=NC002&code_cd=0101000000&nPage=1&b_list=9&news_id=59907992-6d19-4438-ac96-902ea866a015",
+      "url": "https://gonggam.korea.kr/newsContentView.es?mid=a10201000000&section_id=NCCD_POLICY&news_id=59907992-6d19-4438-ac96-902ea866a015",
       "image": "https://gonggam.korea.kr/gonggamFileDownload.es?fileName=20260716204848546.jpg&filePath1=newsContent"
     },
     {
@@ -384,6 +380,49 @@
       "url": "https://www.mk.co.kr/en/business/12100000",
       "image": "https://wimg.mk.co.kr/news/cms/202607/16/news-p.v1.20260716.7e84d37a20a640588bdd1669173df0d9_P1.jpg",
       "imageChecked": true
+    },
+    {
+      "id": 1843,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "조리기기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신제품",
+        "AI음성",
+        "정수기",
+        "스마트홈"
+      ],
+      "headline": "LG, AI 기반 정수기 신제품 'PuriCare' 출시",
+      "summary": "LG전자가 AI 음성인식 기능을 탑재한 신형 정수기 'PuriCare AI Frozen Ice Water Purifier'를 글로벌 시장에 출시했다. 사용자가 음성으로 얼음물을 요청할 수 있는 스마트 기능을 갖추고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 AI 기반 음성인식 기능이 탑재된 정수기 'PuriCare AI Frozen Ice Water Purifier' 신제품 출시"
+        },
+        {
+          "type": "content",
+          "text": "사용자가 '얼음물 한 잔 달라'는 음성 명령으로 조작 가능한 스마트 정수기"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.asiae.co.kr/en/article/enterprise-CEO/2026071607333670805"
+      },
+      "publishedAt": "2026-07-16T01:00:00.000Z",
+      "url": "https://www.asiae.co.kr/en/article/enterprise-CEO/2026071607333670805",
+      "image": null
     },
     {
       "id": 1817,
