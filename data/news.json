@@ -1,54 +1,126 @@
 {
-  "updatedAt": "2026-07-16T01:29:38.241Z",
+  "updatedAt": "2026-07-16T04:52:01.145Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1823,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 3.6,
+      "id": 1828,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.2,
       "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
       },
-      "products": [
-        "냉장고"
-      ],
+      "products": [],
       "competitors": [
         "LG전자"
       ],
       "tags": [
-        "신제품",
-        "AI기능",
-        "음성인식",
-        "정수기",
-        "스마트홈"
+        "전략회의",
+        "미래사업",
+        "경영진"
       ],
-      "headline": "LG, AI 음성인식 정수기 냉장고 신제품 출시",
-      "summary": "LG전자가 AI 기반 음성인식 기능을 탑재한 PuriCare AI Frozen Ice Water Purifier 정수기 냉장고를 출시했다. 사용자가 음성 명령으로 얼음물을 요청할 수 있는 스마트 기능으로 프리미엄 냉장고 시장 확대를 목표로 한다.",
+      "headline": "LG전자, 4대 미래사업 전략점검 회의 개최",
+      "summary": "LG전자가 국내외 임원들을 소집해 4대 미래사업에 대한 집중점검을 실시했다. 구체적인 사업 내용과 진행 현황은 보도되지 않았다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자, PuriCare AI Frozen Ice Water Purifier 신제품 글로벌 출시"
-        },
-        {
-          "type": "content",
-          "text": "AI 음성인식 기반 얼음물 제공 기능으로 사용자 편의성 강화"
-        },
-        {
-          "type": "content",
-          "text": "스마트 정수 기능 탑재로 프리미엄 냉장고 포지셔닝 강화"
+          "text": "LG전자가 국내외 임원을 집결시켜 4대 미래사업에 대한 집중점검 회의를 개최"
         }
       ],
       "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.asiae.co.kr/en/article/enterprise-CEO/2026071607333670805"
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.newstomato.com/ReadNews.aspx?no=1307377"
       },
-      "publishedAt": "2026-07-16T01:00:00.000Z",
-      "url": "https://www.asiae.co.kr/en/article/enterprise-CEO/2026071607333670805",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026071607320547741_1784154725.jpg",
+      "publishedAt": "2026-07-16T04:31:02.000Z",
+      "url": "https://www.newstomato.com/ReadNews.aspx?no=1307377",
+      "image": "https://image.newstomato.com/newsimg/2026/7/16/1307377/attach.jpg?v=202607161330",
+      "imageChecked": true
+    },
+    {
+      "id": 1827,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "임원회의",
+        "전략",
+        "미래사업"
+      ],
+      "headline": "LG전자, 국내외 임원 300명 모여 미래 먹거리 전략 논의",
+      "summary": "LG전자가 국내외 임원 300명을 참석시킨 대규모 회의를 개최했다. 회의에서 4대 미래 먹거리 사업에 대한 전략을 논의한 것으로 알려졌다. 구체적인 4대 사업 항목은 기사에 명시되지 않았다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 국내외 임원 300명이 참석한 회의에서 4대 미래 먹거리 사업을 주제로 논의"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.munhwa.com/article/11603133"
+      },
+      "publishedAt": "2026-07-16T03:00:00.000Z",
+      "url": "https://www.munhwa.com/article/11603133",
+      "image": "assets/img/topics/news.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://wimg.munhwa.com/news/cms/2026/07/16/news-p.v1.20260716.43d66d3253884c3d8bc8085f07f2bc6f_R.jpg",
+      "thumbFace": true
+    },
+    {
+      "id": 1824,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "M&A",
+        "신사업",
+        "로보틱스",
+        "휴머노이드로봇",
+        "AI"
+      ],
+      "headline": "현대차그룹, 보스턴 다이나믹스 100% 인수로 로보틱스 전환 가속",
+      "summary": "현대차그룹이 소프트뱅크의 보스턴 다이나믹스 지분 10%를 인수해 100% 완전자회사화한다. 풋옵션 행사를 통한 지분 인수로 휴머노이드 로봇·피지컬 AI 상용화 추진을 강화하고, 장기 로보틱스 기업 전환 전략을 가속화할 방침이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "현대차그룹이 소프트뱅크의 보스턴 다이나믹스 지분 10%를 인수해 100% 지분 확보"
+        },
+        {
+          "type": "content",
+          "text": "풋옵션 행사로 피지컬 AI와 휴머노이드 로봇 상용화 추진 탄력"
+        },
+        {
+          "type": "content",
+          "text": "현대차그룹의 장기 로보틱스 기업 전환 전략의 핵심 단계"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260716000170"
+      },
+      "publishedAt": "2026-07-16T02:50:20.000Z",
+      "url": "https://www.etnews.com/20260716000170",
+      "image": "https://img.etnews.com/news/article/2026/07/16/news-p.v1.20260716.9885ea687e054a45b3653eff42751db5_P1.jpg",
       "imageChecked": true
     },
     {
