@@ -1,7 +1,86 @@
 {
-  "updatedAt": "2026-07-16T13:18:32.421Z",
+  "updatedAt": "2026-07-16T15:27:18.983Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1835,
+      "lens": "거시",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "미국소비",
+        "소매판매",
+        "거시지표"
+      ],
+      "headline": "美 6월 소비판매 0.2% 증가, 유가하락·월드컵 특수",
+      "summary": "미국의 6월 소매판매액이 전월 대비 0.2% 증가했다. 유가 하락과 월드컵 특수 등이 소비 증가에 영향을 미친 것으로 분석된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "6월 미국 소비판매액 전월 대비 0.2% 증가"
+        },
+        {
+          "type": "content",
+          "text": "유가 하락 및 월드컵 특수가 소비 증가에 기여"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12100774"
+      },
+      "publishedAt": "2026-07-16T14:18:39.000Z",
+      "url": "https://www.mk.co.kr/news/world/12100774",
+      "image": "https://static.mk.co.kr/facebook_mknews.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1836,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "유가",
+        "호르무즈해협",
+        "원유공급",
+        "지정학적리스크"
+      ],
+      "headline": "호르무즈해협 긴장 고조로 유가 변동성 확대 우려",
+      "summary": "미국과 이란 간 군사 충돌 고조로 호르무즈해협 재봉쇄 위험이 증가하면서 원유 공급 부족 사태 재발 가능성이 제기되고 있다. 세계 원유 비축량 감소세가 동시에 진행 중이어서 공급 차질 시 유가 급등 위험이 커지는 상황이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국-이란 군사 충돌 고조로 호르무즈해협 봉쇄 위험 증가"
+        },
+        {
+          "type": "content",
+          "text": "세계 원유 비축량 감소세 진행 중으로 공급 부족 사태 재발 우려"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12100770"
+      },
+      "publishedAt": "2026-07-16T14:01:55.000Z",
+      "url": "https://www.mk.co.kr/news/world/12100770",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/16/news-p.v1.20260716.0270120904a24c6c97ca0005599d93fb_R.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1834,
       "lens": "정책",
