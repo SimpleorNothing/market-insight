@@ -1,7 +1,84 @@
 {
-  "updatedAt": "2026-07-17T13:03:39.034Z",
+  "updatedAt": "2026-07-17T15:06:22.723Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1854,
+      "lens": "정책",
+      "grade": "참고",
+      "impact": 2.3,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "지속가능성",
+        "ESG",
+        "환경경영",
+        "기업평가"
+      ],
+      "headline": "월풀, ESG 평가 지수 선정…지속가능성 리더십 인정",
+      "summary": "월풀이 Dow Jones Best-in-Class Indices와 S&P Global Sustainability Yearbook에 선정돼 지속가능성 리더십을 인정받았다. ESG 평가 상향으로 자본시장 평가 제고 기대.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 Dow Jones Best-in-Class Indices와 S&P Global Sustainability Yearbook 선정"
+        },
+        {
+          "type": "content",
+          "text": "지속가능성 리더십 인정으로 ESG 평가 상향 평가"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://finance.yahoo.com/media-advertising/articles/whirlpool-corp-recognized-sustainability-leadership-143000834.html"
+      },
+      "publishedAt": "2026-07-17T14:30:00.000Z",
+      "url": "https://finance.yahoo.com/media-advertising/articles/whirlpool-corp-recognized-sustainability-leadership-143000834.html",
+      "image": null
+    },
+    {
+      "id": 1855,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "규제",
+        "가스온수기",
+        "미국정책",
+        "환경규제"
+      ],
+      "headline": "베이에어리어 가스온수기 판매금지 연기, 규제 재조정",
+      "summary": "베이에어리어 공기질관리국(Air District)이 가스온수기 판매금지 규제를 연기하고 재조정하기로 결정했다. 환경 규제 강화 추세 속 북미 가전 시장의 규제 리스크 변동성이 증가하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "베이에어리어 Air District이 가스온수기 판매금지 규제를 연기 및 재조정하기로 결정"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.eastbaytimes.com/2026/07/17/bay-area-gas-water-heater-ban-delayed-retooled-by-air-district/"
+      },
+      "publishedAt": "2026-07-17T12:59:25.000Z",
+      "url": "https://www.eastbaytimes.com/2026/07/17/bay-area-gas-water-heater-ban-delayed-retooled-by-air-district/",
+      "image": "https://www.eastbaytimes.com/wp-content/uploads/2026/05/ap172974004898302.jpg?w=1024&#038;h=649",
+      "imageChecked": true
+    },
     {
       "id": 1850,
       "lens": "소비자",
@@ -8145,40 +8222,6 @@
       "image": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/07/05095102/thumb_PC.jpg"
     },
     {
-      "id": 1378,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.1,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "조리기기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "빌트인",
-        "B2B",
-        "북미시장",
-        "신사업",
-        "프리미엄"
-      ],
-      "headline": "LG전자 SKS, 보스턴 진출로 북미 빌트인 시장 공략",
-      "summary": "LG전자 계열사 SKS가 보스턴에 진출하며 북미 빌트인 조리기기 시장 진입을 본격화한다. 프리미엄 빌트인 시장 공략으로 고마진 사업 확대를 추진 중이다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.newspim.com/news/view/20260705000015"
-      },
-      "publishedAt": "2026-07-05T01:00:00.000Z",
-      "url": "https://www.newspim.com/news/view/20260705000015",
-      "image": "https://img.newspim.com/news/2026/07/05/2607050856163760_691_tc.jpg"
-    },
-    {
       "id": 1640,
       "lens": "경쟁사",
       "grade": "주요",
@@ -8227,6 +8270,40 @@
       "publishedAt": "2026-07-05T01:00:00.000Z",
       "url": "https://www.etnews.com/20260630000313",
       "image": null
+    },
+    {
+      "id": 1378,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "조리기기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "빌트인",
+        "B2B",
+        "북미시장",
+        "신사업",
+        "프리미엄"
+      ],
+      "headline": "LG전자 SKS, 보스턴 진출로 북미 빌트인 시장 공략",
+      "summary": "LG전자 계열사 SKS가 보스턴에 진출하며 북미 빌트인 조리기기 시장 진입을 본격화한다. 프리미엄 빌트인 시장 공략으로 고마진 사업 확대를 추진 중이다.",
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.newspim.com/news/view/20260705000015"
+      },
+      "publishedAt": "2026-07-05T01:00:00.000Z",
+      "url": "https://www.newspim.com/news/view/20260705000015",
+      "image": "https://img.newspim.com/news/2026/07/05/2607050856163760_691_tc.jpg"
     },
     {
       "id": 1377,
