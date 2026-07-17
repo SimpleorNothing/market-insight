@@ -1,7 +1,50 @@
 {
-  "updatedAt": "2026-07-17T09:47:37.290Z",
+  "updatedAt": "2026-07-17T11:15:22.058Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1850,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "냉방기기",
+        "계절수요",
+        "소비패턴",
+        "한국시장"
+      ],
+      "headline": "폭염에 에어컨·냉풍기 수요 급증, 가전 소비 급팀",
+      "summary": "한국에서 극심한 폭염으로 냉방기기 판매가 급증하고 있으며, 소비자들이 한 번에 80만원대 가전제품을 구매하는 현상이 나타나고 있다. 여름철 폭염 특수가 냉방 관련 가전제품의 수요와 소비 패턴에 직접적인 영향을 미치고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "폭염으로 냉방기기 수요 급증, 소비자 1회 구매액 80만원대 기록"
+        },
+        {
+          "type": "content",
+          "text": "여름 시즌 에어컨·냉풍기 등 냉방가전 판매량 및 가격대 상승세"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hankyung.com/article/202607168080g"
+      },
+      "publishedAt": "2026-07-17T09:12:14.000Z",
+      "url": "https://www.hankyung.com/article/202607168080g",
+      "image": "https://img.hankyung.com/photo/202607/01.45047821.1.png",
+      "imageChecked": true
+    },
     {
       "id": 1847,
       "lens": "기술",
