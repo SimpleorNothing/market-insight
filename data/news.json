@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T08:43:26.807Z",
+  "updatedAt": "2026-07-18T10:09:42.453Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -1502,6 +1502,48 @@
       "image": null
     },
     {
+      "id": 1874,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "주가",
+        "실적부진",
+        "수요약세",
+        "북미시장"
+      ],
+      "headline": "월풀 주가 59.5% 급락, 약한 수요에 투자등급 강등",
+      "summary": "월풀의 주가가 59.5% 급락했으며, 매출 부진과 약한 수요를 배경으로 투자등급이 투기등급으로 강등되었다. 북미 주요 경쟁사의 실적 부진 신호로, 지역 시장 수요 약세를 시사한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀 주가 59.5% 하락, 매출 감소와 수요 부진 배경"
+        },
+        {
+          "type": "content",
+          "text": "투자등급 투기등급으로 강등"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://pluang.com/en/news-feed/whirlpool-corporation-menghadapi-tantangan-ekonomi-dan-performa-lemah"
+      },
+      "publishedAt": "2026-07-15T11:12:51.000Z",
+      "url": "https://pluang.com/en/news-feed/whirlpool-corporation-menghadapi-tantangan-ekonomi-dan-performa-lemah",
+      "image": "https://image-cdn.pluang.com/web/compressed/analyst_insights.webp",
+      "imageChecked": true
+    },
+    {
       "id": 1803,
       "lens": "경쟁사",
       "grade": "주시",
@@ -2496,41 +2538,6 @@
       "url": "https://v.daum.net/v/20260714100150346",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/14/ZDNetKorea/20260714100152048zwjn.jpg",
       "imageChecked": true
-    },
-    {
-      "id": 1755,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 2.6,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 2,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "실적전망",
-        "증권사분석"
-      ],
-      "headline": "LG전자, 하반기 실적 예상 상회 전망",
-      "summary": "교보증권이 LG전자의 올해 하반기 실적이 예상을 상회할 것으로 전망했다. 구체적인 근거나 수치는 원문에 제시되지 않았으나, 증권사 분석 기반의 긍정적 전망으로 평가된다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "교보증권이 LG전자의 2026년 하반기 실적이 시장 예상을 상회할 것으로 전망"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.mt.co.kr/stock/2026/07/14/2026071408494269325"
-      },
-      "publishedAt": "2026-07-13T23:54:19.000Z",
-      "url": "https://www.mt.co.kr/stock/2026/07/14/2026071408494269325",
-      "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/07/2026071408494269325_1.jpg"
     },
     {
       "id": 1754,
@@ -6418,54 +6425,6 @@
       "imageChecked": true
     },
     {
-      "id": 1520,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4.3,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "실적",
-        "신사업",
-        "로보틱스",
-        "목표주가"
-      ],
-      "headline": "LG전자 2분기 호실적, 로봇·공조 신성장 사업 견인",
-      "summary": "LG전자가 2분기 실적에서 시장 기대를 상회했으며, 대신증권은 로봇과 HVAC 등 신성장 사업 본격화를 배경으로 목표주가를 16만원에서 24만원으로 50% 상향 조정했다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자 2분기 실적이 시장 기대치를 웃돌고 있는 것으로 평가"
-        },
-        {
-          "type": "content",
-          "text": "로봇과 공조 등 신성장 사업이 본격화 단계로 진입 중"
-        },
-        {
-          "type": "content",
-          "text": "대신증권이 목표주가를 16만원에서 24만원으로 상향 조정"
-        }
-      ],
-      "source": {
-        "name": "매일경제 산업",
-        "url": "https://www.mk.co.kr/news/stock/12092976"
-      },
-      "publishedAt": "2026-07-07T23:19:11.000Z",
-      "url": "https://www.mk.co.kr/news/stock/12092976",
-      "image": "https://pimg.mk.co.kr/news/cms/202607/08/rcv.YNA.20260707.PYH2026070711150001300_R.jpg",
-      "imageChecked": true
-    },
-    {
       "id": 1552,
       "lens": "경쟁사",
       "grade": "긴급",
@@ -6913,54 +6872,6 @@
       "imageChecked": true,
       "imageOriginal": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-07/Whirlpool-Corporation-img-2026-Mercedes-Esclusa-Lopez-1-MBN.jpg?h=92cd1bca&itok=DqC6kdDn",
       "thumbFace": true
-    },
-    {
-      "id": 1495,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "청소기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "분기실적",
-        "가전부문",
-        "성장동향",
-        "북미시장"
-      ],
-      "headline": "LG전자, 가전 부문 강세로 2분기 실적 견인",
-      "summary": "LG전자가 2분기 실적 발표에서 가전(Home Appliances)과 자동차 부품 부문이 성장을 주도했다. 가전 부문의 매출 기여가 당분기 강세를 견인하는 핵심 요소로 평가된다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자 2분기 가전사업 실적 호조"
-        },
-        {
-          "type": "content",
-          "text": "경쟁사 가전 부문 성장세 강화"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.mk.co.kr/en/business/12092622"
-      },
-      "publishedAt": "2026-07-07T08:47:57.000Z",
-      "url": "https://www.mk.co.kr/en/business/12092622",
-      "image": "https://wimg.mk.co.kr/news/cms/202607/08/20260708_01110115000002_L00.jpg",
-      "imageChecked": true
     },
     {
       "id": 1493,
@@ -14656,37 +14567,6 @@
       "publishedAt": "2026-06-21T23:16:24.000Z",
       "url": "https://www.etnews.com/20260622000005",
       "image": "https://img.etnews.com/news/article/2026/06/22/news-p.v1.20260622.6fb4ad06d2f6409395efc1bd479cee8f_P1.jpg"
-    },
-    {
-      "id": 937,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.9,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "2분기 실적",
-        "LG전자",
-        "가전경쟁력",
-        "실적발표"
-      ],
-      "headline": "LG전자 2분기 실적 발표 임박, 가전 경쟁력 검증 시점",
-      "summary": "LG전자가 2분기 실적 발표를 앞두고 있으며, 가전 사업의 경쟁력 회복 여부가 주목되고 있다. 시장의 높은 관심과 기대감이 모여 있는 가운데 당사 성과 평가의 중요한 분기점이 될 것으로 예상된다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "http://www.economytalk.kr/news/articleView.html?idxno=422088"
-      },
-      "publishedAt": "2026-06-21T22:30:00.000Z",
-      "url": "http://www.economytalk.kr/news/articleView.html?idxno=422088",
-      "image": "https://cdn.economytalk.kr/news/photo/202606/422088_227873_5210.jpeg"
     },
     {
       "id": 966,
