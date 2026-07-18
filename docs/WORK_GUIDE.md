@@ -90,6 +90,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #108 | 07-18 | fix(group): 경쟁사 다중 기사를 단일 묶음 섹션으로 노출 |
 | #107 | 07-15 | feat(classify): 거시 렌즈 요약에 매크로 지표 표준 항목 체크리스트 추가 |
 | #106 | 07-13 | feat: mi.samsungda.net SSO 비밀번호 게이트(gate Worker) |
 | #105 | 07-12 | feat: 서버 없이 더블클릭으로 여는 단독 실행 HTML(mi-local.html) |
