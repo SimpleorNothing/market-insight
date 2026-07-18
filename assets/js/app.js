@@ -576,14 +576,13 @@ function makeGroups(items) {
       }
     });
   } else if (state.group === "competitor") {
-    COMPETITORS.forEach((c) => map.set(c, []));
-    map.set("경쟁사 미분류", []);
+    // 같은 기사에 경쟁사가 여러 개면 기업명을 함께 묶어 한 섹션으로 1회만 노출한다.
+    // (기존: 경쟁사별 버킷에 각각 push → 동일 기사가 기업 수만큼 중복 노출)
     items.forEach((n) => {
-      if (!n.competitors || n.competitors.length === 0) {
-        map.get("경쟁사 미분류").push(n);
-      } else {
-        n.competitors.forEach((c) => map.get(c)?.push(n));
-      }
+      const comps = n.competitors || [];
+      const key = comps.length === 0 ? "경쟁사 미분류" : comps.join(", ");
+      if (!map.has(key)) map.set(key, []);
+      map.get(key).push(n);
     });
   }
 
