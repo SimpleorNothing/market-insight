@@ -1,7 +1,91 @@
 {
-  "updatedAt": "2026-07-17T23:42:59.161Z",
+  "updatedAt": "2026-07-18T01:24:03.974Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1864,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "냉방기",
+        "에너지효율",
+        "계절수요",
+        "소비트렌드"
+      ],
+      "headline": "폭염 속 냉방기 수요 급증, 고효율 제품 선호 확대",
+      "summary": "이번 폭염으로 냉방 가전 수요가 급증하면서 에너지 효율성을 중심으로 한 소비 트렌드가 확산 중. 소비자들이 냉방 기능과 전력 효율을 모두 고려한 제품 구매 의향 증가.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "폭염으로 인한 냉방 가전 수요 급증"
+        },
+        {
+          "type": "content",
+          "text": "소비자 중심 에너지 효율성 및 냉방 성능 중시 트렌드 확산"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.2news.co.kr/news/articleView.html?idxno=16504"
+      },
+      "publishedAt": "2026-07-18T00:27:00.000Z",
+      "url": "https://www.2news.co.kr/news/articleView.html?idxno=16504",
+      "image": "https://cdn.2news.co.kr/news/photo/202607/mn_16504_20260718092720_3.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1865,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "냉방가전",
+        "소비트렌드",
+        "계절수요",
+        "포터블에어컨"
+      ],
+      "headline": "폭염·장마 시즌, 실외기 없는 틈새 냉방가전 수요 급증",
+      "summary": "극한 기후 조건(폭염·장마)으로 인해 실외기가 필요 없는 포터블·윈도우형 냉방기 등 틈새 냉방가전 제품에 대한 소비자 수요가 증가하고 있다. 주거 환경 제약(소형주택, 반려동물·실외기 설치 불가)을 가진 소비자층이 대체 냉방 솔루션을 찾고 있는 추세다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "폭염과 장마 기후에서 실외기 미설치 냉방가전(포터블, 윈도우형) 수요 증가"
+        },
+        {
+          "type": "content",
+          "text": "소형주택·반려동물·건물 제약 등으로 기존 에어컨 설치 불가능한 소비자층이 대안 모색"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://m.segye.com/ampView/20260718503721"
+      },
+      "publishedAt": "2026-07-17T22:24:30.000Z",
+      "url": "https://m.segye.com/ampView/20260718503721",
+      "image": "https://img.segye.com/content/image/2026/07/18/20260718503723.jpg"
+    },
     {
       "id": 1859,
       "lens": "소비자",
