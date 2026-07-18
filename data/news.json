@@ -1,7 +1,138 @@
 {
-  "updatedAt": "2026-07-18T06:54:12.032Z",
+  "updatedAt": "2026-07-18T08:43:26.807Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1870,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "거시경제",
+        "원유공급",
+        "해상운송",
+        "지정학"
+      ],
+      "headline": "홍해·호르무즈 해협 봉쇄 위기로 글로벌 원유 수송 차질 우려",
+      "summary": "호르무즈 해협에 이어 홍해 항로도 안전 위협에 직면했다. 예멘 후티 반군의 활동으로 중동의 양대 원유 수송로 동시 봉쇄 가능성이 높아져, 세계 경제에 미치는 영향이 우려된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "호르무즈 해협과 홍해가 중동의 양대 원유 수송로로 기능 중"
+        },
+        {
+          "type": "content",
+          "text": "예멘 친이란 후티 반군이 바브엘만데브 해협 인근을 근거지로 해상 안전 위협"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12101439"
+      },
+      "publishedAt": "2026-07-18T08:35:30.000Z",
+      "url": "https://www.mk.co.kr/news/world/12101439",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/18/news-p.v1.20260718.b157d0e638744fce8d8f184678df3a5d_R.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1871,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "주거·공간",
+        "히트펌프",
+        "정부정책",
+        "모듈러주택"
+      ],
+      "headline": "삼성·LG, 모듈러주택·히트펌프 사업 확대",
+      "summary": "李대통령의 정책 언급에 따라 삼성전자와 LG전자가 모듈러주택과 히트펌프 사업 확대에 주목하고 있다. 모듈러주택은 생활가전·공조를 번들로 공급하는 신규 판로이며, 히트펌프는 저탄소 냉난방 솔루션으로 정부 정책과 맞닿아 시장 기회가 확대되는 상황.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "李대통령이 모듈러주택과 히트펌프를 잇단 언급하며 정책적 관심 표명"
+        },
+        {
+          "type": "content",
+          "text": "삼성전자·LG전자가 모듈러주택 진출 통해 생활가전·공조 판로 확대 추진"
+        },
+        {
+          "type": "content",
+          "text": "저탄소 냉난방 솔루션인 히트펌프가 정부 정책 지원의 신성장 동력으로 부상"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.newsis.com/view/NISX20260716_0003712455"
+      },
+      "publishedAt": "2026-07-18T07:00:00.000Z",
+      "url": "https://www.newsis.com/view/NISX20260716_0003712455",
+      "image": "https://img1.newsis.com/2026/07/13/NISI20260713_0021362571_web.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1872,
+      "lens": "거시",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "극한기후",
+        "전력난",
+        "수요제약",
+        "중동"
+      ],
+      "headline": "이란 폭염 시 피크 전력난으로 에어컨 사용 제한",
+      "summary": "이란이 41도 폭염 상황에도 전력 공급 불안정으로 피크타임 에어컨 사용 제한 요청. 전력 수급 위기가 냉난방공조 수요 제약 요인으로 작용할 수 있는 상황.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "이란에서 41도 폭염에도 불구하고 전력 공급 불안정으로 피크타임 에어컨 사용을 줄여달라고 요청"
+        },
+        {
+          "type": "content",
+          "text": "중동 지역 전력 공급 출렁임이 냉난방공조 기기 가동의 제약 요소로 작용"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.asiae.co.kr/article/2026071815322341465"
+      },
+      "publishedAt": "2026-07-18T06:36:08.000Z",
+      "url": "https://www.asiae.co.kr/article/2026071815322341465",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026071815251249748_1784355912.png"
+    },
     {
       "id": 1867,
       "lens": "기술",
@@ -6925,56 +7056,6 @@
       "publishedAt": "2026-07-07T08:05:05.000Z",
       "url": "https://www.koreajoongangdaily.com/business/lg-electronics-posts-record-q2-earnings-on-premium-appliances-us-tariff-refund/12759352",
       "image": "https://image.koreajoongangdaily.com/12603092.jpg?imageId=12603092&x=0&y=0&cropw=100&croph=71.27&panox=0&panoy=0&panow=100&panoh=71.27&width=1200&height=683",
-      "imageChecked": true
-    },
-    {
-      "id": 1513,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "HVAC",
-        "청소기",
-        "식기세척기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "실적",
-        "영업익",
-        "Q2어닝",
-        "관세환급"
-      ],
-      "headline": "LG전자, 2분기 영업익 약 10억달러 기록…관세환급 제외해도 실적 배증",
-      "summary": "LG전자가 2분기 영업익 약 10억달러를 기록하며 시장 예상을 뛰어넘었다. 관세 환급금을 제외하더라도 실적이 전년 대비 2배 증가했으며, 이는 본업 부문의 실질적 개선을 시사한다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자 2분기 영업익이 약 10억달러 기록하며 시장 예상을 상회"
-        },
-        {
-          "type": "content",
-          "text": "관세 환급금을 제외하더라도 전년 동기 대비 실적이 2배 증가"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://finance.biggo.com/news/2bd89290-258d-444f-b82e-3265fcb4932d"
-      },
-      "publishedAt": "2026-07-07T07:26:00.000Z",
-      "url": "https://finance.biggo.com/news/2bd89290-258d-444f-b82e-3265fcb4932d",
-      "image": "https://img.biggo.com/wtp-_DlhkUeya5VkegGV1iUebycaJ658ctQLMudZFV8/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3LzJiZDg5MjkwLTI1OGQtNDQ0Zi1iODJlLTMyNjVmY2I0OTMyZF8xNzgzNDE0MzQ1X2RlZmF1bHQuanBn.jpg",
       "imageChecked": true
     },
     {
