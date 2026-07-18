@@ -90,6 +90,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #109 | 07-18 | feat(sensing): 경쟁사 주거·공간 신사업 판단 로직 보완 + 센싱 가이드 md/README 정비 |
 | #108 | 07-18 | fix(group): 경쟁사 다중 기사를 단일 묶음 섹션으로 노출 |
 | #107 | 07-15 | feat(classify): 거시 렌즈 요약에 매크로 지표 표준 항목 체크리스트 추가 |
 | #106 | 07-13 | feat: mi.samsungda.net SSO 비밀번호 게이트(gate Worker) |
