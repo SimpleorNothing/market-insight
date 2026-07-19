@@ -1,7 +1,144 @@
 {
-  "updatedAt": "2026-07-18T23:42:55.649Z",
+  "updatedAt": "2026-07-19T01:30:11.037Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1887,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "구조조정",
+        "미국",
+        "고용",
+        "경영효율화"
+      ],
+      "headline": "삼성전자 아메리카, 뉴저지 거점 739명 감원",
+      "summary": "삼성전자 아메리카가 뉴저지 주의 거점에서 739명 감원을 계획 중이다. 이는 미국 현지 구조 조정의 일환으로 보인다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자 아메리카가 뉴저지에서 739명 감원 추진"
+        },
+        {
+          "type": "content",
+          "text": "미국 현지 조직 구조 조정의 일환"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://kr.investing.com/news/company-news/article-2020188"
+      },
+      "publishedAt": "2026-07-19T01:17:00.000Z",
+      "url": "https://kr.investing.com/news/company-news/article-2020188",
+      "image": null
+    },
+    {
+      "id": 1888,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "B2B",
+        "중동시장",
+        "건물용공조",
+        "신규프로젝트"
+      ],
+      "headline": "삼성전자, 사우디 모스크 맞춤형 HVAC 공급 개시",
+      "summary": "삼성전자가 사우디아라비아의 주요 모스크에 맞춤형 HVAC 솔루션을 공급하기 시작했다. 중동 건물용 공조 시장 진출의 신호로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 사우디아라비아의 주요 모스크에 맞춤형 HVAC 솔루션 공급"
+        },
+        {
+          "type": "content",
+          "text": "중동 건물용 공조 시장 진출 확대의 일환"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260719101542325"
+      },
+      "publishedAt": "2026-07-19T01:15:42.000Z",
+      "url": "https://v.daum.net/v/20260719101542325",
+      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/19/551719-ORAHujo/20260719101544205jyrx.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 1890,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기",
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "구독",
+        "B2B",
+        "주거·공간",
+        "수익다각화"
+      ],
+      "headline": "LG전자, 압구정 재건축 B2B 주거시장 가전 구독 모델 진출",
+      "summary": "LG전자가 압구정 재건축 프로젝트에 가전 구독 서비스를 도입하며 B2B 주거시장 공략을 본격화하고 있다. 이는 기존 판매 중심에서 구독·렌탈 기반 순환 비즈니스 모델로 수익구조 다각화를 추진하는 신사업 전략으로, 대형 주택·건설사와의 협력을 통해 생활가전과 냉난방공조를 번들로 공급하는 방식이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 압구정 재건축 프로젝트에 가전 구독 서비스 도입"
+        },
+        {
+          "type": "content",
+          "text": "B2B 주거시장 공략으로 대형 건설사·주택사와의 가전 번들 공급 추진"
+        },
+        {
+          "type": "content",
+          "text": "구독·렌탈 기반 순환 비즈니스로 매출 외 반복 수익 창출 모델 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.mtn.co.kr/news-detail/2026071909554947287"
+      },
+      "publishedAt": "2026-07-19T01:12:14.000Z",
+      "url": "https://news.mtn.co.kr/news-detail/2026071909554947287",
+      "image": "https://menu.mtn.co.kr/upload/article/2026/07/19/2026071909554947287_00_438.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1883,
       "lens": "경쟁사",
@@ -20005,46 +20142,6 @@
       "publishedAt": "2026-06-10T22:00:01.000Z",
       "url": "https://www.inews24.com/view/1975422",
       "image": "https://image.inews24.com/v1/b6906ed7bc19ac.jpg"
-    },
-    {
-      "id": 612,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.6,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "HVAC",
-        "청소기",
-        "식기세척기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "구독경제",
-        "서비스혁신",
-        "해외진출",
-        "수익다각화",
-        "가전시장"
-      ],
-      "headline": "LG전자, 가전구독 서비스 3조원 시대 진입…해외 확대",
-      "summary": "LG전자가 국내 가전구독 시장 안착을 넘어 해외 시장으로 확대하며 3조원 규모의 구독 매출 시대를 앞두고 있다. 구독형 비즈니스 모델이 전사적 전략으로 확산되고 있으며, 글로벌 고객층의 수요 변화에 대응하는 핵심 수익 동력으로 자리잡고 있다.",
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.news2day.co.kr/article/20260610500238"
-      },
-      "publishedAt": "2026-06-10T21:34:36.000Z",
-      "url": "https://www.news2day.co.kr/article/20260610500238",
-      "image": "https://cdn.news2day.co.kr/data2/content/image/2026/06/10/.cache/512/20260610500194.png"
     },
     {
       "id": 611,
