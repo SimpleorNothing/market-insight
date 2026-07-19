@@ -1,7 +1,51 @@
 {
-  "updatedAt": "2026-07-19T11:05:32.511Z",
+  "updatedAt": "2026-07-19T12:53:58.308Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1911,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기",
+        "냉장고",
+        "조리기기"
+      ],
+      "competitors": [],
+      "tags": [
+        "구독모델",
+        "렌탈서비스",
+        "소비자트렌드",
+        "유지보수"
+      ],
+      "headline": "가전 구독 서비스 확산, 소비자 수요 증가세",
+      "summary": "국내 가전 시장에서 구독·렌탈 모델이 확산하고 있다. 소비자들이 구매 대신 구독을 선택하는 이유는 유지보수·세척 등 추가 서비스를 함께 제공받을 수 있기 때문이다. 이는 전통적 판매 모델의 변화를 시사한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "가전 구독 서비스에서 세척·유지보수 등 추가 서비스 제공으로 소비자 수요 증대"
+        },
+        {
+          "type": "content",
+          "text": "전통적 구매 대신 구독 선택 추세, 소비 패턴 변화 반영"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.khan.co.kr/article/202607192040015"
+      },
+      "publishedAt": "2026-07-19T11:40:00.000Z",
+      "url": "https://www.khan.co.kr/article/202607192040015",
+      "image": "https://img.khan.co.kr/news/2026/07/19/l_2026072001000545600054051.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1910,
       "lens": "경쟁사",
@@ -141,55 +185,6 @@
       "publishedAt": "2026-07-19T04:03:06.000Z",
       "url": "https://www.mk.co.kr/news/business/12101626",
       "image": "https://pimg.mk.co.kr/news/cms/202607/19/news-p.v1.20260719.1f7bccecdac244c2b84b82086d1597ec_R.jpg",
-      "imageChecked": true
-    },
-    {
-      "id": 1915,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "HVAC"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "신사업",
-        "구독모델",
-        "주거·공간",
-        "B2B",
-        "생활가전"
-      ],
-      "headline": "LG, 현대E&C와 강남 아파트 7000호 구독형 가전 공급",
-      "summary": "LG전자가 현대건설과 협력해 강남 압구정 아파트단지 7000호에 가전 구독 서비스를 공급한다. 신규 주거·공간 비즈니스를 통한 생활가전 판로 확대 전략으로, 빌트인 가전·공조 제품군의 대규모 번들 수주를 의미한다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자, 현대E&C와 손잡고 압구정 아파트 7000호에 구독형 생활가전 공급"
-        },
-        {
-          "type": "content",
-          "text": "신축 주거단지 입주층 대상 구독 플랫폼으로, 냉장고·세탁기·조리기기·HVAC 등 주요 제품의 판로 확대"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://finance.biggo.com/news/8e205724-3740-4450-9d3f-8d67ca6dbfc7"
-      },
-      "publishedAt": "2026-07-19T02:25:00.000Z",
-      "url": "https://finance.biggo.com/news/8e205724-3740-4450-9d3f-8d67ca6dbfc7",
-      "image": "https://img.biggo.com/Xfz50BSfa5C4P9-ahcDKrEsP-tDeHO0Alrm7P7qhGLs/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3LzhlMjA1NzI0LTM3NDAtNDQ1MC05ZDNmLThkNjdjYTZkYmZjN18xNzg0NDI4NDYxX2RlZmF1bHQuanBn.jpg",
       "imageChecked": true
     },
     {
@@ -843,6 +838,48 @@
       "publishedAt": "2026-07-17T22:24:30.000Z",
       "url": "https://m.segye.com/ampView/20260718503721",
       "image": "https://img.segye.com/content/image/2026/07/18/20260718503723.jpg"
+    },
+    {
+      "id": 1917,
+      "lens": "기술",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "제조",
+        "스마트팩토리",
+        "운영효율",
+        "공정혁신"
+      ],
+      "headline": "GE어플라이언스, 생산 현장 유연성 혁신",
+      "summary": "GE어플라이언스(Haier 자회사)가 제조 공정의 유연성을 재정의하는 혁신 사례를 미국 제조업 협회(NAM)를 통해 공개했다. 제조 현장의 운영 효율성 및 제품 다양화 대응 강화를 중심으로 전개되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE어플라이언스가 생산 현장의 유연성 혁신을 NAM 플랫폼을 통해 공개"
+        },
+        {
+          "type": "content",
+          "text": "제조 공정의 적응 능력과 다품종 소량 생산 대응력 강화에 초점"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://nam.org/how-ge-appliances-is-redefining-flexibility-on-the-plant-floor/"
+      },
+      "publishedAt": "2026-07-17T21:35:29.000Z",
+      "url": "https://nam.org/how-ge-appliances-is-redefining-flexibility-on-the-plant-floor/",
+      "image": "https://nam.org/wp-content/uploads/2026/07/30514059-1720-4e43-81ca-8422680488e4.jpg",
+      "imageChecked": true
     },
     {
       "id": 1869,
