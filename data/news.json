@@ -1,7 +1,48 @@
 {
-  "updatedAt": "2026-07-19T18:50:26.497Z",
+  "updatedAt": "2026-07-19T20:04:24.875Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1940,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "실적",
+        "지역 사업"
+      ],
+      "headline": "월풀 인도, 마진·매출 개선으로 주가 견고",
+      "summary": "월풀 인도 법인의 마진이 개선되고 매출이 두 자릿수 성장을 기록하며 주가가 견고한 흐름을 유지 중. 지역별 실적 다각화 신호.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀 인도 법인의 마진 개선과 매출 두 자릿수 성장이 보도됨"
+        },
+        {
+          "type": "content",
+          "text": "주가가 견고하게 유지되는 추세 지속"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-india-stock-holds-firm-as-margins-improve-and-revenue-grows/69807402"
+      },
+      "publishedAt": "2026-07-19T19:32:08.000Z",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-india-stock-holds-firm-as-margins-improve-and-revenue-grows/69807402",
+      "image": "https://mdb.ad-hoc-news.de/bild/bild-2405052_1920_1080.webp",
+      "imageChecked": true
+    },
     {
       "id": 1924,
       "lens": "경쟁사",
@@ -334,42 +375,47 @@
       "imageChecked": true
     },
     {
-      "id": 1937,
+      "id": 1941,
       "lens": "경쟁사",
       "grade": "주요",
-      "impact": 3.7,
+      "impact": 3.8,
       "factors": {
         "salesRelevance": 4,
         "timeUrgency": 4,
         "marketSize": 3,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [
         "냉장고",
         "세탁기",
         "건조기",
-        "조리기기"
+        "조리기기",
+        "HVAC"
       ],
       "competitors": [
         "LG전자"
       ],
       "tags": [
-        "신사업",
         "구독",
+        "신사업",
         "주거·공간",
         "B2C",
-        "한국시장"
+        "파트너십"
       ],
-      "headline": "LG전자, 현대E&C와 강남 아파트 7000가구에 생활가전 구독 공급",
-      "summary": "LG전자가 현대E&C와 협력해 서울 강남 아파트 7000가구에 생활가전 구독 서비스를 공급한다. 냉장고·세탁기 등 주요 가전을 구독 모델로 제공해 신규 주택 판로를 확보하고 구독 사업 확대를 추진한다.",
+      "headline": "LG, 현대E&C와 강남 대형프로젝트 구독형 가전 7,000호 공급",
+      "summary": "LG전자가 강남 압구정 대규모 주거 프로젝트에서 현대E&C와 파트너십을 맺고 7,000호에 구독형 가전을 공급한다. 세탁기, 냉장고, 조리기기 등 주력 생활가전을 번들 구독 모델로 제공하며, B2C 구독 사업의 신규 판로 확대 사례다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 현대E&C와 강남 아파트 7000가구 입주자를 대상으로 생활가전 구독 서비스 공급"
+          "text": "LG전자, 현대E&C와 협력해 강남 압구정 7,000호에 구독형 가전 공급"
         },
         {
           "type": "content",
-          "text": "주택 판로 확보를 통한 생활가전 신규 수요 창출 및 구독 사업 모델 확대 추진"
+          "text": "세탁기, 냉장고, 조리기기 등 주력 생활가전을 구독 모델로 제공하는 신규 판로"
+        },
+        {
+          "type": "content",
+          "text": "대규모 주거 프로젝트 패키지 거래로 구독 사업 확대"
         }
       ],
       "source": {
