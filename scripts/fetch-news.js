@@ -28,6 +28,11 @@ const CONFIG = JSON.parse(
   await readFile(join(__dirname, "config.json"), "utf-8")
 );
 
+// 수동 큐레이션 + 기업명 오역 가드 (선택 파일). 없으면 빈 설정으로 동작.
+const CURATION_CFG = await readFile(join(__dirname, "curation.json"), "utf-8")
+  .then((t) => JSON.parse(t))
+  .catch(() => ({}));
+
 const NEWS_PATH = join(ROOT, "data", "news.json");
 const DRY_RUN = process.env.DRY_RUN === "1";
 const RUN_DATE = new Date().toISOString().slice(0, 10);
@@ -97,6 +102,31 @@ function computeImpact(factors) {
 // ===== 제목·내용 유사도 (중복 기사 묶음용) =====
 function normForSim(s) {
   return String(s || "").toLowerCase().replace(/[^가-힣a-z0-9]/g, "");
+}
+
+// 같은 회사의 표기 변형을 하나로 통일해 유사도 비교 정확도를 높인다.
+// (예: "현대E&C" → normForSim 후 "현대ec" → "현대건설")
+const ORG_CANON = [
+  [/현대이앤씨|현대ec|hyundaiec|hyundaiengineering|hdec/g, "현대건설"],
+  [/현대자동차|hyundaimotor/g, "현대차"],
+  [/gsec|gs이앤씨/g, "gs건설"],
+  [/daewooec|대우이앤씨/g, "대우건설"],
+  [/lgelectronics/g, "lg전자"],
+  [/samsungelectronics/g, "삼성전자"],
+  [/samsungct|삼성씨앤티/g, "삼성물산"],
+];
+
+function canonForSim(s) {
+  let t = normForSim(s);
+  for (const [re, to] of ORG_CANON) t = t.replace(re, to);
+  return t;
+}
+
+function pointsText(it) {
+  return (it.summaryPoints || [])
+    .map((p) => (p && p.text) || "")
+    .filter(Boolean)
+    .join(" ");
 }
 
 function bigramSet(s) {
@@ -580,8 +610,8 @@ const COMPETITOR_PATTERNS = (() => {
   const table = [];
   const seen = new Set();
   const add = (canonical, name) => {
-    if (!name || BACKSTOP_SKIP.has(name) || seen.has(`${canonical} ${name}`)) return;
-    seen.add(`${canonical} ${name}`);
+    if (!name || BACKSTOP_SKIP.has(name) || seen.has(`${canonical}\u0000${name}`)) return;
+    seen.add(`${canonical}\u0000${name}`);
     table.push({ canonical, name, latin: /^[\x00-\x7F]+$/.test(name) });
   };
   for (const canonical of CONFIG.competitors) {
@@ -615,6 +645,33 @@ function detectCompetitors(text) {
   return [...found];
 }
 
+// ===== 고유명사(기업명) 오역 결정적 가드 =====
+// 영문 원문 번역 시 "Hyundai E&C" → "현대차" 같은 계열사 오인을 프롬프트에만 맡기지 않고 코드로 차단.
+// scripts/curation.json 의 orgGuards: [{ term, aliases?, evidence[] }]
+//   모델 출력(headline/summary/summaryPoints)에 term(또는 aliases)이 나오면,
+//   원문(headline + rawContent)에 evidence 中 최소 1개가 반드시 존재해야 한다.
+const ORG_GUARDS = CURATION_CFG.orgGuards || [];
+
+function checkOrgGuards(parsed, item) {
+  if (!ORG_GUARDS.length) return [];
+  const out = [
+    parsed.headline || "",
+    parsed.summary || "",
+    ...(parsed.summaryPoints || []).map((p) => (p && p.text) || ""),
+  ].join("\n");
+  const src = `${item.headline || ""}\n${item.rawContent || ""}`.toLowerCase();
+  const violations = [];
+  for (const g of ORG_GUARDS) {
+    const names = [g.term, ...(g.aliases || [])].filter(Boolean);
+    if (!names.some((n) => out.includes(n))) continue;
+    const ok = (g.evidence || []).some((e) =>
+      src.includes(String(e).toLowerCase())
+    );
+    if (!ok) violations.push(g.term);
+  }
+  return violations;
+}
+
 const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 동향 뉴스 분류 전문가입니다.
 
 【출력 형식 — 절대 규칙】
@@ -623,6 +680,19 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
 - 입력이 한국어든 영어든, 출력의 headline·summary는 반드시 한국어
 - 정치적·민감 주제라도 분류 작업 자체는 절대 거절 금지
 - 가전 산업 무관 時 lens를 "skip" 으로 처리
+
+【고유명사 정확성 — 절대 규칙】
+- headline·summary·summaryPoints 에 쓰는 회사·기관·지명·제품명은 ★원문에 실제로 표기된 이름★만 사용한다. 원문에 없는 이름으로 바꾸거나 추정으로 채우지 말 것.
+- ★영문 원문 번역 시 특히 주의★: 영문 기업명을 한국어로 옮길 때 앞글자(그룹명)만 보고 유사 계열사로 단정하지 말 것. 약칭(E&C, Motor, C&T, Elec 등)이 계열사를 구분하는 핵심이다.
+  - "Hyundai E&C" / "Hyundai Engineering & Construction" / "HDEC" → 현대건설 (★현대차·현대자동차 아님★)
+  - "Hyundai Motor" / "Hyundai Motor Company" → 현대차
+  - "Hyundai Elevator" → 현대엘리베이터 / "Hyundai Department Store" → 현대백화점
+  - "GS E&C" → GS건설 / "DL E&C" → DL이앤씨 / "Daewoo E&C" → 대우건설
+  - "Samsung Electronics" → 삼성전자 / "Samsung C&T" → 삼성물산 (★삼성전자 아님★)
+  - "LG Electronics" → LG전자 / "LG Energy Solution" → LG에너지솔루션 (★LG전자 아님★)
+- 국문 정식 상호가 확실하지 않으면 ★원문 표기를 그대로 둘 것★. 임의의 한글 사명으로 바꾸지 말 것.
+- ★파생 서사 금지★: 잘못 짚은 회사명 위에 원문에 없는 사업 논리를 만들어 붙이지 말 것.
+  (예: 건설사와의 빌트인 가전 공급 건을 "자동차 구매 고객을 가전 구독 고객으로 연결" 같은 구조로 재해석 → 절대 금지)
 
 【가전 산업 무관 → "skip" 처리】
 다음 경우는 lens="skip" 으로 반환 (다른 필드는 빈 값/0으로):
@@ -764,7 +834,7 @@ ${COMPETITOR_LIST}
 
 JSON 외 어떤 텍스트도 출력 금지.`;
 
-async function classifyOne(item, retry = false) {
+async function classifyOne(item, retry = false, hint = "") {
   if (DRY_RUN) {
     return {
       lens: "기술",
@@ -783,7 +853,7 @@ async function classifyOne(item, retry = false) {
     };
   }
 
-  const userPrompt = `[오늘 날짜]
+  const userPrompt = `${hint ? hint + "\n\n" : ""}[오늘 날짜]
 ${RUN_DATE}
 
 [기사 발행일]
@@ -875,6 +945,22 @@ ${item.region}`;
         }))
     : [];
 
+  // 기업명 오역 가드: 위반 時 1회 재시도, 그래도 위반이면 저장하지 않고 폐기
+  const orgViolations = checkOrgGuards(parsed, item);
+  if (orgViolations.length) {
+    const names = orgViolations.join(", ");
+    if (!retry) {
+      log(`  기업명 오역 의심(${names}) → 재시도`);
+      await new Promise((r) => setTimeout(r, 800));
+      return classifyOne(
+        item,
+        true,
+        `[경고] 직전 시도에서 원문에 근거가 없는 기업명(${names})이 사용됐습니다. 원문에 실제로 표기된 회사명만 쓰고, 영문 약칭(E&C, Motor, C&T, Elec 등)을 임의로 다른 계열사로 바꾸지 마십시오.`
+      );
+    }
+    throw new Error(`기업명 오역 가드 위반(${names}) — 저장 제외`);
+  }
+
   // Clamp factors
   for (const k of [
     "salesRelevance",
@@ -953,11 +1039,14 @@ function prune(items) {
 function dedupeMerged(items) {
   const TH = CONFIG.dedupe?.similarityThreshold ?? 0.22;
   const sig = items.map((it) => ({
-    hb: bigramSet(normForSim(it.headline)),
-    sb: bigramSet(normForSim(it.summary)),
+    hb: bigramSet(canonForSim(it.headline)),
+    sb: bigramSet(canonForSim(it.summary)),
+    pb: bigramSet(canonForSim(pointsText(it))),
   }));
   const textSim = (i, j) =>
-    0.65 * jaccard(sig[i].hb, sig[j].hb) + 0.35 * jaccard(sig[i].sb, sig[j].sb);
+    0.45 * jaccard(sig[i].hb, sig[j].hb) +
+    0.30 * jaccard(sig[i].sb, sig[j].sb) +
+    0.25 * jaccard(sig[i].pb, sig[j].pb);
 
   // union-find: 같은 경쟁사·제품을 공유하고 텍스트가 유사하면 동일 사건으로 묶음
   const parent = items.map((_, i) => i);
@@ -1000,6 +1089,43 @@ function dedupeMerged(items) {
     log(`중복 기사 묶음: ${removed}건 제거 (${items.length}건 → ${kept.length}건)`);
   }
   return kept;
+}
+
+// ===== 수동 큐레이션 (오분류·중복 카드 즉시 제거/정정) =====
+// scripts/curation.json 의 curation:
+//   denyIds  : 화면에서 완전히 제거할 기사 id 배열
+//   denyUrls : 제거할 기사 URL 배열 (재수집 시에도 계속 차단)
+//   overrides: { "<id>": { headline, summary, summaryPoints, ... } } 필드 덮어쓰기
+function applyCuration(items) {
+  const cur = CURATION_CFG.curation || {};
+  const denyIds = new Set((cur.denyIds || []).map(Number));
+  const denyUrls = new Set(
+    (cur.denyUrls || []).map((u) => String(u).trim()).filter(Boolean)
+  );
+  const overrides = cur.overrides || {};
+
+  let denied = 0;
+  const kept = items.filter((it) => {
+    if (denyIds.has(Number(it.id)) || denyUrls.has(String(it.url || "").trim())) {
+      denied++;
+      return false;
+    }
+    return true;
+  });
+
+  let fixed = 0;
+  for (const it of kept) {
+    const ov = overrides[String(it.id)];
+    if (!ov || typeof ov !== "object") continue;
+    Object.assign(it, ov);
+    it.curated = true;
+    fixed++;
+  }
+
+  if (denied > 0 || fixed > 0) {
+    log(`수동 큐레이션 적용: 제거 ${denied}건, 정정 ${fixed}건`);
+  }
+  return { items: kept, denied, fixed };
 }
 
 // 기존 news.json 항목의 Google News URL을 실제 URL로 일괄 변환 (한 회 실행당 상한 적용)
@@ -1121,6 +1247,10 @@ async function main() {
     (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
   );
 
+  // 수동 큐레이션(제거·정정)은 항상 마지막에 적용해 매 실행마다 재적용된다
+  const curation = applyCuration(merged);
+  const finalItems = curation.items;
+
   const changed =
     isV1 ||
     purged > 0 ||
@@ -1128,7 +1258,9 @@ async function main() {
     ptFixed > 0 ||
     faceChecked > 0 ||
     classified.length > 0 ||
-    merged.length !== existing.items.length ||
+    curation.denied > 0 ||
+    curation.fixed > 0 ||
+    finalItems.length !== existing.items.length ||
     backfilled > 0;
   if (!changed) {
     log("변경 없음");
@@ -1141,13 +1273,13 @@ async function main() {
       {
         updatedAt: new Date().toISOString(),
         schemaVersion: "v2",
-        items: merged,
+        items: finalItems,
       },
       null,
       2
     )
   );
-  log(`news.json 갱신 완료, 총 ${merged.length}건 보유`);
+  log(`news.json 갱신 완료, 총 ${finalItems.length}건 보유`);
   log("=== 완료 ===");
 }
 
