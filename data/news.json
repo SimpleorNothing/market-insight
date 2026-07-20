@@ -1,7 +1,47 @@
 {
-  "updatedAt": "2026-07-20T19:25:02.913Z",
+  "updatedAt": "2026-07-20T21:01:42.775Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1972,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "환율",
+        "일본",
+        "엔화",
+        "아시아 통화"
+      ],
+      "headline": "엔저 심화로 160엔 마지노선 붕괴, 일본 정부 대응 카드 검토",
+      "summary": "달러당 엔화 환율이 162.30엔까지 하락해 160엔 심리 마지노선을 무너뜨렸다. 엔저가 지속되면서 일본 정부가 대응책으로 국민연금 운용 전략 조정을 검토 중이다. 일본발 엔저 심화는 당사의 아시아 생산 기지 환율 리스크에 직접 영향을 미칠 수 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "뉴욕 외환시장에서 달러당 엔화 환율 162.30엔으로 하락, 160엔 심리적 저점 돌파"
+        },
+        {
+          "type": "content",
+          "text": "엔저 심화에 따라 일본 정부가 일본판 국민연금(GPIF) 운용 전략 조정 카드 검토 중"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/stock/12102774"
+      },
+      "publishedAt": "2026-07-20T19:44:00.000Z",
+      "url": "https://www.mk.co.kr/news/stock/12102774",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/20/rcv.YNA.20260701.PEP20260701156901009_R.jpg",
+      "imageChecked": true
+    },
     {
       "id": 1971,
       "lens": "경쟁사",
@@ -130,6 +170,42 @@
       "image": null
     },
     {
+      "id": 1974,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "실적 전망",
+        "애널리스트",
+        "북미"
+      ],
+      "headline": "월풀, 실적 부진 전망 분석",
+      "summary": "애널리스트들이 월풀의 실적 악화를 예상하고 있다. 기사는 향후 주목할 사항을 분석한 애널리스트 보도로, 구체적인 실적 수치나 근거는 발췌문에 미포함되어 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀의 실적 악화를 애널리스트들이 예상 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-estimate-whirlpool-whr-report-140003271.html"
+      },
+      "publishedAt": "2026-07-20T14:00:03.000Z",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-estimate-whirlpool-whr-report-140003271.html",
+      "image": null
+    },
+    {
       "id": 1961,
       "lens": "경쟁사",
       "grade": "참고",
@@ -171,7 +247,7 @@
       "imageChecked": true
     },
     {
-      "id": 1970,
+      "id": 1975,
       "lens": "소비자",
       "grade": "주요",
       "impact": 4,
@@ -193,34 +269,33 @@
         "삼성전자"
       ],
       "tags": [
-        "소비자만족도",
-        "가격상승",
-        "JDPower",
+        "고객만족도",
+        "가격",
         "미국시장",
-        "가전산업"
+        "만족도조사"
       ],
-      "headline": "미국 가전 만족도 가격 인상에도 상승, 월풀·LG·삼성 상위권",
-      "summary": "JD Power 조사 결과 미국 가전 소비자 만족도가 가격 인상에도 불구하고 상승세를 보였다. 월풀, LG전자, 삼성전자 등이 각 부문에서 최고 평가를 받았으며, 베스트바이도 유통 부문에서 최상위 순위를 차지했다.",
+      "headline": "JD파워, 美 가전 고객만족도 가격인상에도 상승",
+      "summary": "JD파워 조사에서 미국 가전 시장의 고객만족도가 가격 인상에도 불구하고 상승한 것으로 나타났다. 월풀, LG전자, 삼성전자, KitchenAid, Maytag 등이 각 부문에서 최고 순위를 기록했으며, Best Buy도 유통채널 부문에서 최상위를 유지했다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "JD Power 조사에서 미국 가전 만족도 수준이 가격 인상 폭에도 불구하고 상승"
+          "text": "JD파워 조사로 미국 가전 고객만족도가 가격 인상 속에도 상승세 보임"
         },
         {
           "type": "content",
-          "text": "월풀, LG전자, 삼성전자가 각 부문에서 최고 순위 기록"
+          "text": "월풀, LG전자, 삼성전자, KitchenAid, Maytag이 각 부문 최고 순위 달성"
         },
         {
           "type": "content",
-          "text": "베스트바이가 가전 유통 부문 최상위 평가"
+          "text": "Best Buy가 가전 유통채널 부문에서 최상위 평가 유지"
         }
       ],
       "source": {
         "name": "Google News - US Home Appliances",
-        "url": "http://goldrushcam.com/sierrasuntimes/index.php/news/local-news/79998-jd-power-finds-appliance-satisfaction-levels-up-despite-price-hike-whirlpool-lg-samsung-kitchenaid-maytag-and-best-buy-rank-highest-in-respective-segment"
+        "url": "https://goldrushcam.com/sierrasuntimes/index.php/news/local-news/79998-jd-power-finds-appliance-satisfaction-levels-up-despite-price-hike-whirlpool-lg-samsung-kitchenaid-maytag-and-best-buy-rank-highest-in-respective-segment"
       },
       "publishedAt": "2026-07-20T12:10:19.000Z",
-      "url": "http://goldrushcam.com/sierrasuntimes/index.php/news/local-news/79998-jd-power-finds-appliance-satisfaction-levels-up-despite-price-hike-whirlpool-lg-samsung-kitchenaid-maytag-and-best-buy-rank-highest-in-respective-segment",
+      "url": "https://goldrushcam.com/sierrasuntimes/index.php/news/local-news/79998-jd-power-finds-appliance-satisfaction-levels-up-despite-price-hike-whirlpool-lg-samsung-kitchenaid-maytag-and-best-buy-rank-highest-in-respective-segment",
       "image": "https://goldrushcam.com/sierrasuntimes/images/headers/High-Country.jpg",
       "imageChecked": true
     },
