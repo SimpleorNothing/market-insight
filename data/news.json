@@ -1,7 +1,49 @@
 {
-  "updatedAt": "2026-07-20T01:55:47.896Z",
+  "updatedAt": "2026-07-20T05:31:21.486Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 1951,
+      "lens": "정책",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "상법개정",
+        "지배구조",
+        "규제",
+        "소액주주권익"
+      ],
+      "headline": "상법 개정 9월 시행, LG·효성 지배구조 수혜",
+      "summary": "감사위원 분리선출·집중투표제 의무화 등을 담은 2차 상법개정이 9월 시행을 앞두면서 LG와 효성이 수혜주로 주목받고 있다. 소액주주 권익 강화를 통한 지배구조 개선이 핵심이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "2차 상법개정 9월 시행으로 감사위원 분리선출·집중투표제 의무화"
+        },
+        {
+          "type": "content",
+          "text": "LG는 로봇사업, 효성은 배당 모멘텀 강화로 수혜 예상"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/business/12102375"
+      },
+      "publishedAt": "2026-07-20T05:21:48.000Z",
+      "url": "https://www.mk.co.kr/news/business/12102375",
+      "image": "https://static.mk.co.kr/2025/economy/images/economy600600.png",
+      "imageChecked": true
+    },
     {
       "id": 1950,
       "lens": "경쟁사",
@@ -511,6 +553,53 @@
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-trades-steadily-as-revenue-recovers-and-margins-expand/69799376",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2701702_1920_1080.webp",
       "imageChecked": true
+    },
+    {
+      "id": 1956,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "구독",
+        "신사업",
+        "B2B",
+        "주거·공간",
+        "강남 재개발"
+      ],
+      "headline": "LG전자, 강남 재개발 7000호 아파트에 가전 구독 공급",
+      "summary": "LG전자가 서울 강남 재개발 단지(7000호)에 가전 구독 서비스를 대규모 공급하기로 했다. 냉장고·세탁기·건조기·조리기기 등 주방·생활 가전을 구독 모델로 단지 입주민에게 제공하는 신규 비즈니스 사례다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 서울 강남 아파트 재개발 단지 7000호를 대상으로 가전 구독 서비스 공급 계약 체결"
+        },
+        {
+          "type": "content",
+          "text": "냉장고·세탁기·건조기·조리기기 등 생활가전을 구독 모델로 입주민에게 제공하는 B2B 판로 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://en.sedaily.com/finance/2026/07/19/lg-electronics-to-supply-appliance-subscription-to-7000"
+      },
+      "publishedAt": "2026-07-19T01:22:13.000Z",
+      "url": "https://en.sedaily.com/finance/2026/07/19/lg-electronics-to-supply-appliance-subscription-to-7000",
+      "image": null
     },
     {
       "id": 1887,
@@ -2351,6 +2440,42 @@
       "publishedAt": "2026-07-15T12:39:52.000Z",
       "url": "https://www.mk.co.kr/news/world/12099708",
       "image": "https://pimg.mk.co.kr/news/cms/202607/15/news-p.v1.20260715.b03e74d7bce44f6d854b2b993eb55330_R.jpeg",
+      "imageChecked": true
+    },
+    {
+      "id": 1952,
+      "lens": "정책",
+      "grade": "참고",
+      "impact": 1.8,
+      "factors": {
+        "salesRelevance": 1,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "정책",
+        "데이터센터",
+        "전력규제",
+        "미국"
+      ],
+      "headline": "뉴욕주, 전력 부담 이유로 데이터센터 건설 중단",
+      "summary": "뉴욕주가 전력 소비 증가를 이유로 데이터센터 건설을 중단하기로 결정했다. 이는 데이터센터 확산에 따른 전력 수급 부담이 정책 우선순위로 떠오르고 있음을 보여준다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "뉴욕주가 전기 소비 증가를 이유로 데이터센터 신규 건설을 중단하는 정책을 추진 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - 캐리어/오텍캐리어 KR",
+        "url": "https://www.hankyung.com/article/202607157871i"
+      },
+      "publishedAt": "2026-07-15T12:09:44.000Z",
+      "url": "https://www.hankyung.com/article/202607157871i",
+      "image": "https://img.hankyung.com/photo/202607/01.45043336.1.png",
       "imageChecked": true
     },
     {
