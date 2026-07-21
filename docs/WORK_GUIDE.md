@@ -91,6 +91,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #91 | 07-21 | fix: 안 열리는(죽은) 링크 기사 자동 제외 |
 | #116 | 07-21 | feat(config): 소비자·기술·경쟁사 렌즈 센싱 키워드 확충 |
 | #115 | 07-21 | fix: 경쟁사 필터 칩에서 Haier를 Midea 다음으로 이동 |
 | #113 | 07-21 | feat(sensing): 경쟁사 로보락·샤크닌자 추가 (15사) |
