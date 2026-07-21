@@ -1,43 +1,94 @@
 {
-  "updatedAt": "2026-07-21T04:59:49.465Z",
+  "updatedAt": "2026-07-21T07:32:15.442Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 1994,
+      "id": 2000,
       "lens": "경쟁사",
       "grade": "주시",
-      "impact": 3.1,
+      "impact": 3,
       "factors": {
         "salesRelevance": 3,
-        "timeUrgency": 4,
+        "timeUrgency": 3,
         "marketSize": 2,
-        "sourceReliability": 3
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [],
+      "tags": [
+        "신사업",
+        "포트폴리오 확장",
+        "말레이시아",
+        "냉장고",
+        "구독"
+      ],
+      "headline": "코웨이, 말레이시아서 냉장고 첫 출시…포트폴리오 다각화",
+      "summary": "코웨이가 말레이시아 진출 20주년을 맞아 551L 멀티도어·715L 사이드바이사이드 냉장고 2종을 출시했다. 정수기·공기청정기 렌탈 중심에서 종합가전 기업으로 사업 포트폴리오를 확장하며, 기존 구축한 높은 점유율과 구독 네트워크를 신제품 판로로 활용한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "코웨이가 말레이시아에서 냉장고 첫 출시, 551L 멀티도어·715L 사이드바이사이드 2종"
+        },
+        {
+          "type": "content",
+          "text": "정수기·공기청정기 렌탈 중심 사업에서 종합가전 기업으로 포트폴리오 다각화"
+        },
+        {
+          "type": "content",
+          "text": "기존 구축한 압도적 점유율과 구독 관리 네트워크를 신제품 판로로 활용"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260721000261"
+      },
+      "publishedAt": "2026-07-21T07:00:00.000Z",
+      "url": "https://www.etnews.com/20260721000261",
+      "image": "https://img.etnews.com/news/article/2026/07/21/news-p.v1.20260721.82cc44eac1524b6cbdfbc2abdb796e54_P1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2002,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelivance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4,
+        "salesRelevance": 3
       },
       "products": [],
       "competitors": [
         "삼성전자"
       ],
       "tags": [
-        "조직개편",
-        "신설",
-        "경영전략"
+        "신사업",
+        "로보틱스",
+        "성장전략"
       ],
-      "headline": "삼성전자, 노태문 대표 직속 'RX사업추진실' 신설",
-      "summary": "삼성전자가 노태문 대표 직속 조직인 'RX사업추진실'을 신설했다. 구체적인 사업 목표나 추진 배경에 대한 상세 정보는 제한적이다.",
+      "headline": "삼성전자, 로봇을 차세대 먹거리로 전략 추진",
+      "summary": "삼성전자가 로봇 사업을 새로운 성장 동력으로 육성하는 전략을 밝혔다. 헬스케어·자동화 등 신규 카테고리 진출을 통해 기존 가전 사업의 한계를 극복하고 수익원을 다각화하려는 움직임으로 해석된다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "삼성전자가 노태문 대표 직속 'RX사업추진실' 신설"
+          "text": "삼성전자가 로봇을 차세대 전략 사업으로 지정하고 본격 육성 중"
+        },
+        {
+          "type": "content",
+          "text": "기존 가전 중심의 사업 구조에서 신규 카테고리로의 포트폴리오 다각화 추진"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.thelec.kr/news/articleView.html?idxno=59787"
+        "url": "https://www.chosun.com/economy/tech_it/2026/07/21/KD2K6H5PDRFDJOQ42F6XSMH2B4/"
       },
-      "publishedAt": "2026-07-21T04:26:06.000Z",
-      "url": "https://www.thelec.kr/news/articleView.html?idxno=59787",
-      "image": "https://cdn.thelec.kr/news/photo/202607/59787_47177_4552.png",
-      "imageChecked": true
+      "publishedAt": "2026-07-21T05:56:00.000Z",
+      "url": "https://www.chosun.com/economy/tech_it/2026/07/21/KD2K6H5PDRFDJOQ42F6XSMH2B4/",
+      "image": "https://www.chosun.com/resizer/v2/BDQHWTAKNFHBBA5Z4AZJV3LEJA.jpg?auth=be469bcb7c7215a038b6dd2d5287a866055772e9ae502185eeba6a332ea741e2&width=1200&height=630&smart=true"
     },
     {
       "id": 1991,
@@ -136,53 +187,6 @@
       "thumbFace": true
     },
     {
-      "id": 1993,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.6,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "신사업",
-        "로보틱스",
-        "조직개편",
-        "AI",
-        "자율공장"
-      ],
-      "headline": "삼성전자, 로봇 사업 통합 조직 신설·AI 자율공장 전환 가속",
-      "summary": "삼성전자가 노태문 대표이사 직속 '로봇 경험(RX) 사업추진실'을 신설해 분산된 로봇 역량을 결집했다. 기존에 미래로봇추진단, 삼성리서치, 생산기술연구소, 레인보우로보틱스(2024년 인수) 등으로 흩어져 있던 로봇 개발 조직을 통합 운영해 로봇 기반 자율공장 전환을 본격화한다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "노태문 대표이사 직속 '로봇 경험(RX) 사업추진실' 신설해 로봇 사업 본격화"
-        },
-        {
-          "type": "content",
-          "text": "미래로봇추진단·삼성리서치·생산기술연구소·레인보우로보틱스 등 분산 조직을 통합 운영"
-        },
-        {
-          "type": "content",
-          "text": "로봇 기반 AI 자율공장 전환 목표로 제조 역량 강화"
-        }
-      ],
-      "source": {
-        "name": "전자신문",
-        "url": "https://www.etnews.com/20260721000172"
-      },
-      "publishedAt": "2026-07-21T03:37:39.000Z",
-      "url": "https://www.etnews.com/20260721000172",
-      "image": "https://img.etnews.com/news/article/2024/01/09/news-p.v1.20240109.82431a6f5174443b8d2c99d91530f879_P1.jpg",
-      "imageChecked": true
-    },
-    {
       "id": 1999,
       "lens": "기술",
       "grade": "주시",
@@ -269,6 +273,58 @@
       "publishedAt": "2026-07-21T01:06:57.000Z",
       "url": "https://www.thelec.kr/news/articleView.html?idxno=59784",
       "image": "https://cdn.thelec.kr/news/photo/202607/59784_47174_2249.png",
+      "imageChecked": true
+    },
+    {
+      "id": 2005,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesReliability": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 5,
+        "salesRelevance": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "에너지효율",
+        "친환경",
+        "정부상",
+        "기술혁신"
+      ],
+      "headline": "삼성전자 8년 연속, LG전자 12관왕 '에너지대상' 수상",
+      "summary": "삼성전자가 에너지대상을 8년 연속 수상했으며, LG전자는 업계 최다인 12관왕을 달성했다. 양사 모두 에너지 효율 기술 및 친환경 제품 개발을 통해 정부 정책 목표 달성에 기여하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 8년 연속 에너지대상 수상, 에너지 효율 기술 개발 지속"
+        },
+        {
+          "type": "content",
+          "text": "LG전자가 업계 최다인 12관왕 달성, 친환경 제품 라인업 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.yna.co.kr/view/AKR20260721038600003"
+      },
+      "publishedAt": "2026-07-21T01:00:02.000Z",
+      "url": "https://www.yna.co.kr/view/AKR20260721038600003",
+      "image": "https://img6.yna.co.kr/etc/inner/KR/2026/07/21/AKR20260721038600003_01_i_P4.jpg",
       "imageChecked": true
     },
     {
@@ -2825,48 +2881,6 @@
       "publishedAt": "2026-07-16T12:10:51.000Z",
       "url": "https://gonggam.korea.kr/newsContentView.es?mid=a10201000000&section_id=NCCD_POLICY&content=NC002&code_cd=0101000000&nPage=1&b_list=9&news_id=59907992-6d19-4438-ac96-902ea866a015",
       "image": "https://gonggam.korea.kr/gonggamFileDownload.es?fileName=20260716204848546.jpg&filePath1=newsContent"
-    },
-    {
-      "id": 1833,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.6,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "신사업",
-        "로보틱스",
-        "조직개편",
-        "기술통합"
-      ],
-      "headline": "삼성전자, 로봇사업부 출범 통합 역량 집결",
-      "summary": "삼성전자가 로봇 관련 역량을 통합하는 로봇사업부 출범을 준비 중이다. 현재 산재된 로봇 기술 및 사업을 단일 조직으로 결집해 신사업 확대를 추진하려는 전략으로, 가전 제조사의 로보틱스 분야 진출 움직임이 강화되고 있다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "삼성전자가 산재된 로봇 관련 역량을 통합하는 로봇사업부 출범을 준비 중"
-        },
-        {
-          "type": "content",
-          "text": "로보틱스를 신규 사업 축으로 확대하기 위한 조직 개편 추진"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.joongang.co.kr/article/25445724"
-      },
-      "publishedAt": "2026-07-16T08:24:03.000Z",
-      "url": "https://www.joongang.co.kr/article/25445724",
-      "image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202607/16/916cbc52-e940-4fd1-bb48-ccfb57002f0b.jpg",
-      "imageChecked": true
     },
     {
       "id": 1881,
