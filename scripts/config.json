@@ -129,7 +129,9 @@
     "JCI",
     "Daikin",
     "Lennox",
-    "Haier"
+    "Haier",
+    "로보락",
+    "샤크닌자"
   ],
   "competitorBrands": {
     "_comment": "경쟁사별 자회사·하위 브랜드. 본문에 하위 브랜드가 등장하면 모기업 경쟁사로 분류.",
@@ -191,6 +193,13 @@
       "Candy",
       "Fisher & Paykel",
       "Casarte"
+    ],
+    "로보락": [
+      "Roborock"
+    ],
+    "샤크닌자": [
+      "Shark",
+      "Ninja"
     ]
   },
   "competitorAliases": {
@@ -206,7 +215,9 @@
     "지멘스": "BSH",
     "미디어그룹": "Midea",
     "오텍캐리어": "Carrier",
-    "캐리어에어컨": "Carrier"
+    "캐리어에어컨": "Carrier",
+    "Roborock": "로보락",
+    "SharkNinja": "샤크닌자"
   },
   "competitorAliasExcludes": [
     "New York",
@@ -249,7 +260,9 @@
     "names": [
       "York",
       "Coleman",
-      "Candy"
+      "Candy",
+      "Shark",
+      "Ninja"
     ]
   },
   "gradeThresholds": {
@@ -350,7 +363,8 @@
         "BSH",
         "월풀",
         "Midea",
-        "Haier"
+        "Haier",
+        "샤크닌자"
       ],
       "kpis": [
         "빌트인 채택률",
@@ -394,7 +408,9 @@
       ],
       "majorCompetitors": [
         "LG전자",
-        "Midea"
+        "Midea",
+        "로보락",
+        "샤크닌자"
       ],
       "kpis": [
         "프리미엄 ASP",
