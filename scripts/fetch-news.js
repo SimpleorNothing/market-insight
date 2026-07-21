@@ -727,8 +727,8 @@ const COMPETITOR_PATTERNS = (() => {
   const table = [];
   const seen = new Set();
   const add = (canonical, name) => {
-    if (!name || BACKSTOP_SKIP.has(name) || seen.has(`${canonical}\u0000${name}`)) return;
-    seen.add(`${canonical}\u0000${name}`);
+    if (!name || BACKSTOP_SKIP.has(name) || seen.has(`${canonical} ${name}`)) return;
+    seen.add(`${canonical} ${name}`);
     table.push({ canonical, name, latin: /^[\x00-\x7F]+$/.test(name) });
   };
   for (const canonical of CONFIG.competitors) {
@@ -1337,6 +1337,9 @@ async function main() {
     log(`기존 Google News URL ${backfilled}건 → 실제 발행처 URL로 변환`);
   }
 
+  // 기존 항목 링크 생존 재검증(회당 상한) → 죽은 링크 id 집합을 prune 단계에서 제외
+  const { removedIds: deadIds } = await pruneDeadExistingLinks(existing.items);
+
   const fresh = await fetchAllRss();
   log(`RSS 폴링 총 ${fresh.length}건 수집`);
 
@@ -1375,6 +1378,7 @@ async function main() {
   const changed =
     isV1 ||
     purged > 0 ||
+    deadIds.size > 0 ||
     compFixed > 0 ||
     ptFixed > 0 ||
     faceChecked > 0 ||
