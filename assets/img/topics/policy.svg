@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="정책">
+  <rect width="100" height="100" fill="#4B5566"/>
+  <rect width="100" height="100" fill="url(#pg)"/>
+  <defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#6B7688"/><stop offset="1" stop-color="#3A4557"/>
+  </linearGradient></defs>
+  <rect x="30" y="20" width="40" height="52" rx="4" fill="#F4F6FA"/>
+  <g stroke="#9AA6B8" stroke-width="3.4" stroke-linecap="round">
+    <line x1="38" y1="32" x2="62" y2="32"/><line x1="38" y1="42" x2="62" y2="42"/><line x1="38" y1="52" x2="54" y2="52"/>
+  </g>
+  <circle cx="64" cy="62" r="12" fill="#2FA968"/>
+  <path d="M58 62l4 4 8-9" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

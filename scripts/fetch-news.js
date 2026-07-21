@@ -14,6 +14,7 @@
  */
 
 import Anthropic from "@anthropic-ai/sdk";
+import { isPortraitImage, pickTopicImage } from "./detect-portrait.mjs";
 import Parser from "rss-parser";
 import { readFile, writeFile } from "fs/promises";
 import { createHash } from "crypto";
@@ -26,6 +27,11 @@ const ROOT = join(__dirname, "..");
 const CONFIG = JSON.parse(
   await readFile(join(__dirname, "config.json"), "utf-8")
 );
+
+// 수동 큐레이션 + 기업명 오역 가드 (선택 파일). 없으면 빈 설정으로 동작.
+const CURATION_CFG = await readFile(join(__dirname, "curation.json"), "utf-8")
+  .then((t) => JSON.parse(t))
+  .catch(() => ({}));
 
 const NEWS_PATH = join(ROOT, "data", "news.json");
 const DRY_RUN = process.env.DRY_RUN === "1";
@@ -98,6 +104,31 @@ function normForSim(s) {
   return String(s || "").toLowerCase().replace(/[^가-힣a-z0-9]/g, "");
 }
 
+// 같은 회사의 표기 변형을 하나로 통일해 유사도 비교 정확도를 높인다.
+// (예: "현대E&C" → normForSim 후 "현대ec" → "현대건설")
+const ORG_CANON = [
+  [/현대이앤씨|현대ec|hyundaiec|hyundaiengineering|hdec/g, "현대건설"],
+  [/현대자동차|hyundaimotor/g, "현대차"],
+  [/gsec|gs이앤씨/g, "gs건설"],
+  [/daewooec|대우이앤씨/g, "대우건설"],
+  [/lgelectronics/g, "lg전자"],
+  [/samsungelectronics/g, "삼성전자"],
+  [/samsungct|삼성씨앤티/g, "삼성물산"],
+];
+
+function canonForSim(s) {
+  let t = normForSim(s);
+  for (const [re, to] of ORG_CANON) t = t.replace(re, to);
+  return t;
+}
+
+function pointsText(it) {
+  return (it.summaryPoints || [])
+    .map((p) => (p && p.text) || "")
+    .filter(Boolean)
+    .join(" ");
+}
+
 function bigramSet(s) {
   const set = new Set();
   for (let i = 0; i < s.length - 1; i++) set.add(s.slice(i, i + 2));
@@ -135,6 +166,27 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 12000) {
   }
 }
 
+// /rss/articles/{id} 페이지에는 대상 기사 外에도 "관련기사" 등 다른 기사 카드가
+// 함께 렌더링되며, 각 카드는 자신만의 data-n-a-id/-sg/-ts 트리플을 갖는다.
+// 과거에는 페이지 전체에서 첫 번째 sg/ts만 취했는데, 그 첫 매치가 대상 기사가 아닌
+// 다른(관련) 기사 카드일 경우 garturlreq가 엉뚱한 기사의 URL을 반환해 클릭 시
+// 완전히 다른 기사로 연결되는 버그가 있었다. 반드시 대상 base64ArticleId를 가진
+// 태그 자신의 sg/ts를 찾아야 한다.
+function extractSignatureForId(html, targetId) {
+  const tagRe = /<[a-zA-Z][^>]*\bdata-n-a-id="([^"]+)"[^>]*>/g;
+  let m;
+  while ((m = tagRe.exec(html))) {
+    if (m[1] !== targetId) continue;
+    const tag = m[0];
+    const sigM = tag.match(/data-n-a-sg="([^"]+)"/);
+    const tsM = tag.match(/data-n-a-ts="([^"]+)"/);
+    if (sigM && tsM) {
+      return { signature: sigM[1], timestamp: Number(tsM[1]) };
+    }
+  }
+  return null;
+}
+
 async function decodeGoogleNewsUrl(url) {
   if (!isGoogleNewsUrl(url)) return url;
   try {
@@ -150,11 +202,17 @@ async function decodeGoogleNewsUrl(url) {
     if (!pageRes.ok) return url;
     const html = await pageRes.text();
 
-    const sigMatch = html.match(/data-n-a-sg="([^"]+)"/);
-    const tsMatch = html.match(/data-n-a-ts="([^"]+)"/);
-    if (!sigMatch || !tsMatch) return url;
-    const signature = sigMatch[1];
-    const timestamp = Number(tsMatch[1]);
+    let signature, timestamp;
+    const scoped = extractSignatureForId(html, base64ArticleId);
+    if (scoped) {
+      ({ signature, timestamp } = scoped);
+    } else {
+      // 대상 id를 가진 태그를 페이지에서 찾지 못한 경우(레이아웃 변경 等) — 다른
+      // 기사로 잘못 연결될 위험을 감수하느니 변환을 포기하고 원본(Google News) 링크를
+      // 그대로 반환한다. 원본 링크는 리다이렉트되므로 최소한 오배송은 없다.
+      log(`  ! ${base64ArticleId} 대상 서명 태그 미발견 → 변환 스킵(원본 링크 유지)`);
+      return url;
+    }
 
     // garturlreq에는 URL의 base64 article id를 그대로 넣는다(data-n-a-id 아님).
     const innerJson = JSON.stringify([
@@ -542,6 +600,41 @@ async function enrichImages(items) {
   return items;
 }
 
+// 인물 증명사진(기자 얼굴) 썸네일 → 토픽 일러스트로 교체.
+// http(s) 이미지·미확인(imageChecked 미설정) 항목만 대상, 회당 limit 건까지 판별(비용 분산).
+// 원본은 imageOriginal 에 보존. 판별부는 detect-portrait.mjs (정밀도 우선, 애매하면 미교체).
+// 반환값: 이번 회차에 상태가 확정(imageChecked 설정)된 건수 → news.json 기록 트리거용.
+async function applyPortraitThumbnails(items, limit) {
+  const cfg = CONFIG.portraitDetection || {};
+  if (DRY_RUN || !client || cfg.enabled === false) return 0;
+  const cands = items.filter(
+    (it) =>
+      it &&
+      typeof it.image === "string" &&
+      /^https?:\/\//i.test(it.image) &&
+      !it.imageChecked
+  );
+  const batch = cands.slice(0, Math.max(0, limit || 0));
+  let replaced = 0;
+  let checked = 0;
+  for (const it of batch) {
+    const verdict = await isPortraitImage(it.image, client);
+    if (verdict === null) continue; // 미확정(차단/오류) → 다음 회차 재시도
+    it.imageChecked = true;
+    checked++;
+    if (verdict === true) {
+      it.imageOriginal = it.image;
+      it.image = pickTopicImage(it);
+      it.thumbFace = true;
+      replaced++;
+    }
+  }
+  if (checked > 0) {
+    log(`썸네일 인물사진 판별: ${checked}건 검사, ${replaced}건 → 토픽 일러스트 교체`);
+  }
+  return checked;
+}
+
 // ===== Load existing =====
 async function loadExisting() {
   try {
@@ -669,6 +762,33 @@ function detectCompetitors(text) {
   return [...found];
 }
 
+// ===== 고유명사(기업명) 오역 결정적 가드 =====
+// 영문 원문 번역 시 "Hyundai E&C" → "현대차" 같은 계열사 오인을 프롬프트에만 맡기지 않고 코드로 차단.
+// scripts/curation.json 의 orgGuards: [{ term, aliases?, evidence[] }]
+//   모델 출력(headline/summary/summaryPoints)에 term(또는 aliases)이 나오면,
+//   원문(headline + rawContent)에 evidence 中 최소 1개가 반드시 존재해야 한다.
+const ORG_GUARDS = CURATION_CFG.orgGuards || [];
+
+function checkOrgGuards(parsed, item) {
+  if (!ORG_GUARDS.length) return [];
+  const out = [
+    parsed.headline || "",
+    parsed.summary || "",
+    ...(parsed.summaryPoints || []).map((p) => (p && p.text) || ""),
+  ].join("\n");
+  const src = `${item.headline || ""}\n${item.rawContent || ""}`.toLowerCase();
+  const violations = [];
+  for (const g of ORG_GUARDS) {
+    const names = [g.term, ...(g.aliases || [])].filter(Boolean);
+    if (!names.some((n) => out.includes(n))) continue;
+    const ok = (g.evidence || []).some((e) =>
+      src.includes(String(e).toLowerCase())
+    );
+    if (!ok) violations.push(g.term);
+  }
+  return violations;
+}
+
 const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 동향 뉴스 분류 전문가입니다.
 
 【출력 형식 — 절대 규칙】
@@ -678,11 +798,25 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
 - 정치적·민감 주제라도 분류 작업 자체는 절대 거절 금지
 - 가전 산업 무관 時 lens를 "skip" 으로 처리
 
+【고유명사 정확성 — 절대 규칙】
+- headline·summary·summaryPoints 에 쓰는 회사·기관·지명·제품명은 ★원문에 실제로 표기된 이름★만 사용한다. 원문에 없는 이름으로 바꾸거나 추정으로 채우지 말 것.
+- ★영문 원문 번역 시 특히 주의★: 영문 기업명을 한국어로 옮길 때 앞글자(그룹명)만 보고 유사 계열사로 단정하지 말 것. 약칭(E&C, Motor, C&T, Elec 등)이 계열사를 구분하는 핵심이다.
+  - "Hyundai E&C" / "Hyundai Engineering & Construction" / "HDEC" → 현대건설 (★현대차·현대자동차 아님★)
+  - "Hyundai Motor" / "Hyundai Motor Company" → 현대차
+  - "Hyundai Elevator" → 현대엘리베이터 / "Hyundai Department Store" → 현대백화점
+  - "GS E&C" → GS건설 / "DL E&C" → DL이앤씨 / "Daewoo E&C" → 대우건설
+  - "Samsung Electronics" → 삼성전자 / "Samsung C&T" → 삼성물산 (★삼성전자 아님★)
+  - "LG Electronics" → LG전자 / "LG Energy Solution" → LG에너지솔루션 (★LG전자 아님★)
+- 국문 정식 상호가 확실하지 않으면 ★원문 표기를 그대로 둘 것★. 임의의 한글 사명으로 바꾸지 말 것.
+- ★파생 서사 금지★: 잘못 짚은 회사명 위에 원문에 없는 사업 논리를 만들어 붙이지 말 것.
+  (예: 건설사와의 빌트인 가전 공급 건을 "자동차 구매 고객을 가전 구독 고객으로 연결" 같은 구조로 재해석 → 절대 금지)
+
 【가전 산업 무관 → "skip" 처리】
 다음 경우는 lens="skip" 으로 반환 (다른 필드는 빈 값/0으로):
 - 정치, 외교, 사설, 칼럼, 논평
   ★ 단, 통상·관세 정책 보도(관세율, 무역협정 개정·재협상, USMCA, 원산지 규정, 수출입 규제, Section 232/301, USTR 조치, 보호무역 기조)는 정치·외교 기사로 간주하지 말고 반드시 lens="정책" 으로 정상 분류할 것. 정상회담·행정부 발표가 형식이어도 내용이 통상 정책이면 skip 금지.
-- 가전사 무관 일반 금융 (주가, ETF, 환율, 부동산)
+- 가전사 무관 일반 금융 (주가, ETF, 환율, 부동산 시황·투자)
+  ★ 단, 경쟁사(가전사)가 주체가 되어 주거·공간 사업(모듈러/프리팹 주택, 스마트홈 패키지 등)에 진출하며 생활가전·냉난방공조를 함께 공급하는 보도는 '부동산' 기사가 아니라 '경쟁사 신사업'이다 → skip 금지(아래 【경쟁사 신사업】 규칙 적용).
 - 연예, 스포츠, 사고, 일반 IT(반도체·통신 등)
 - TV·디스플레이 중심 기사 (OLED TV, QLED, 스마트TV, 텔레비전 등 TV 제품이 주제인 보도)
 - 반도체·전자부품 산업 기사: 파운드리, 칩, HBM, 기판, 웨이퍼, 디스플레이 패널 등이 주제인 보도.
@@ -705,9 +839,11 @@ const CLASSIFY_SYSTEM = `당신은 가전 산업(DA, Digital Appliances) 시장 
 
 【경쟁사 신사업·신규 비즈니스 모델 — 중점 센싱】
 경쟁사의 수익모델·사업영역 확장 보도는 당사 전략 수립의 핵심 입력이므로 절대 skip 하지 말 것:
-- 대상: 구독·렌탈(HaaS), 케어·수리·유지보수 서비스, 스마트홈 플랫폼·생태계, B2B·빌트인 진출, 로보틱스 等 신규 카테고리 진입, M&A·JV·지분투자, D2C·유통모델 전환
-- 해당 時 tags 에 "신사업" 을 반드시 포함하고, 모델 유형 태그를 함께 부여 (예: 구독, M&A, 플랫폼, 로보틱스, B2B)
-- 사업구조 변화는 일회성 신제품보다 파급이 크므로 salesRelevance·marketSize 를 한 단계 상향 검토
+- 대상: 구독·렌탈(HaaS), 케어·수리·유지보수 서비스, 스마트홈 플랫폼·생태계, B2B·빌트인 진출, 주거·공간 솔루션(모듈러·프리팹 주택, 공간 패키지), 로보틱스·헬스케어/뷰티 디바이스 等 신규 카테고리 진입, M&A·JV·지분투자, D2C·B2C·유통모델 전환
+- ★ 주력제품 판로·번들 판단(중요): 경쟁사의 인접·신규 사업이 당사 주력 제품(생활가전·냉난방공조)의 새로운 판로가 되거나 이를 번들로 함께 공급해 판매를 촉진하는 구조이면, 기사에 특정 가전 제품군(냉장고·세탁기 등)이 명시되지 않아도 DA 사업에 직접 유관하다 → 절대 skip 금지, 정상 분류할 것(lens 는 앵글 우선순위대로, 순수 경쟁 동향이면 "경쟁사").
+  예: "경쟁사가 모듈러 주택 B2C 진출, 생활가전·공조를 함께 공급" → 주택 자체가 아니라 '가전 판로 확장·번들 판매'가 핵심 시사점이므로 유관. products 는 비어도 무방하되 tags 에 "신사업","주거·공간" 을 부여.
+- 해당 時 tags 에 "신사업" 을 반드시 포함하고, 모델 유형 태그를 함께 부여 (예: 구독, M&A, 플랫폼, 로보틱스, B2B, 주거·공간)
+- 사업구조 변화는 일회성 신제품보다 파급이 크므로 salesRelevance·marketSize 를 한 단계 상향 검토 (시장 규모·성장률 수치가 본문에 있으면 marketSize 근거로 활용)
 
 【정상 분류】
 ★★ lens 와 competitors 는 서로 독립된 필드다 ★★
@@ -780,6 +916,19 @@ ${COMPETITOR_LIST}
      ② 기록·이정표 / 전분기·컨센서스 대비 (예: "상반기 영업익 3조2525억, 작년 연간 초과")
      ③ 실적 요인·부문별 기여 — 원문이 밝힌 사실만 (예: "가전 구독·webOS 확대, 美 관세 환급 약 3000억 반영")
      ④ 회사가 공식 제시한 가이던스·전망
+   - ★거시(매크로) 지표 기사 표준 항목★ — lens="거시" 기사에 한해 적용. 원문에 보도된 항목만 담고, 없으면 만들지 말고 건너뛸 것.
+     지표의 수치·전월/전년/전주 방향만 사실 그대로 옮기고, 당사 유불리·원가 유리/불리 같은 해석은 절대 금지(해석은 뉴스레터 역할):
+     ① 물가·인플레: CPI/PCE/생산자·수입물가 상승률 + 전월·전년비 (예: "6월 미국 CPI 2.4%, 전월비 상승폭 둔화")
+     ② 금리·모기지: 기준·국채·모기지 금리 수준 + bp 변화
+     ③ 원가 원자재: 유가(WTI)·구리·철강·철광석·레진 등 가격 + 방향 (예: "WTI 배럴당 78달러, 이란 변수로 반등")
+     ④ 환율: 원/달러 및 생산거점 통화(페소·바트·동·루피·즈워티) 수준 + 방향
+     ⑤ 수요 선행: 주택착공·거래·소비자심리(CCSI 등)·해상운임(SCFI) 수치 + 방향
+   - ★정책·규제 기사 표준 항목★ — lens="정책" 기사에 한해 적용. 원문에 보도된 항목만 담고, 없으면 만들지 말 것.
+     규제의 도입·강화뿐 아니라 ★연기·완화·재조정·철회의 '사유'★를 사실 그대로 옮긴다(당사 유불리 해석 금지 — 해석은 뉴스레터 역할):
+     ① 규제 조치·대상·발효/시행 시점(과 그 변경) (예: "가스온수기 판매금지 시행 '27.1→'28.1 1년 유예")
+     ② 연기·완화·재조정 사유 — 비용 부담·형평성·업계/주민 반발 등 원문의 구체 수치 그대로 (예: "전기 전환 설치비 약 $3,500로 가스 대비 $600~1,600 高 → 비용 부담")
+     ③ 예외·유예·보조 대상 범위 (예: "저소득 약 18%·전기용량 부족 약 20% 가구 예외 검토")
+     ④ 향후 절차·확정 일정 (예: "11월 이사회 표결 예정")
    - type 은 항상 "content" 고정
    - text 는 원문 사실 기반 20~35자 內外 간결체, 기호·번호 없이 본문만
 
@@ -802,7 +951,7 @@ ${COMPETITOR_LIST}
 
 JSON 외 어떤 텍스트도 출력 금지.`;
 
-async function classifyOne(item, retry = false) {
+async function classifyOne(item, retry = false, hint = "") {
   if (DRY_RUN) {
     return {
       lens: "기술",
@@ -821,7 +970,7 @@ async function classifyOne(item, retry = false) {
     };
   }
 
-  const userPrompt = `[오늘 날짜]
+  const userPrompt = `${hint ? hint + "\n\n" : ""}[오늘 날짜]
 ${RUN_DATE}
 
 [기사 발행일]
@@ -913,6 +1062,22 @@ ${item.region}`;
         }))
     : [];
 
+  // 기업명 오역 가드: 위반 時 1회 재시도, 그래도 위반이면 저장하지 않고 폐기
+  const orgViolations = checkOrgGuards(parsed, item);
+  if (orgViolations.length) {
+    const names = orgViolations.join(", ");
+    if (!retry) {
+      log(`  기업명 오역 의심(${names}) → 재시도`);
+      await new Promise((r) => setTimeout(r, 800));
+      return classifyOne(
+        item,
+        true,
+        `[경고] 직전 시도에서 원문에 근거가 없는 기업명(${names})이 사용됐습니다. 원문에 실제로 표기된 회사명만 쓰고, 영문 약칭(E&C, Motor, C&T, Elec 등)을 임의로 다른 계열사로 바꾸지 마십시오.`
+      );
+    }
+    throw new Error(`기업명 오역 가드 위반(${names}) — 저장 제외`);
+  }
+
   // Clamp factors
   for (const k of [
     "salesRelevance",
@@ -992,11 +1157,14 @@ function prune(items) {
 function dedupeMerged(items) {
   const TH = CONFIG.dedupe?.similarityThreshold ?? 0.22;
   const sig = items.map((it) => ({
-    hb: bigramSet(normForSim(it.headline)),
-    sb: bigramSet(normForSim(it.summary)),
+    hb: bigramSet(canonForSim(it.headline)),
+    sb: bigramSet(canonForSim(it.summary)),
+    pb: bigramSet(canonForSim(pointsText(it))),
   }));
   const textSim = (i, j) =>
-    0.65 * jaccard(sig[i].hb, sig[j].hb) + 0.35 * jaccard(sig[i].sb, sig[j].sb);
+    0.45 * jaccard(sig[i].hb, sig[j].hb) +
+    0.30 * jaccard(sig[i].sb, sig[j].sb) +
+    0.25 * jaccard(sig[i].pb, sig[j].pb);
 
   // union-find: 같은 경쟁사·제품을 공유하고 텍스트가 유사하면 동일 사건으로 묶음
   const parent = items.map((_, i) => i);
@@ -1039,6 +1207,43 @@ function dedupeMerged(items) {
     log(`중복 기사 묶음: ${removed}건 제거 (${items.length}건 → ${kept.length}건)`);
   }
   return kept;
+}
+
+// ===== 수동 큐레이션 (오분류·중복 카드 즉시 제거/정정) =====
+// scripts/curation.json 의 curation:
+//   denyIds  : 화면에서 완전히 제거할 기사 id 배열
+//   denyUrls : 제거할 기사 URL 배열 (재수집 시에도 계속 차단)
+//   overrides: { "<id>": { headline, summary, summaryPoints, ... } } 필드 덮어쓰기
+function applyCuration(items) {
+  const cur = CURATION_CFG.curation || {};
+  const denyIds = new Set((cur.denyIds || []).map(Number));
+  const denyUrls = new Set(
+    (cur.denyUrls || []).map((u) => String(u).trim()).filter(Boolean)
+  );
+  const overrides = cur.overrides || {};
+
+  let denied = 0;
+  const kept = items.filter((it) => {
+    if (denyIds.has(Number(it.id)) || denyUrls.has(String(it.url || "").trim())) {
+      denied++;
+      return false;
+    }
+    return true;
+  });
+
+  let fixed = 0;
+  for (const it of kept) {
+    const ov = overrides[String(it.id)];
+    if (!ov || typeof ov !== "object") continue;
+    Object.assign(it, ov);
+    it.curated = true;
+    fixed++;
+  }
+
+  if (denied > 0 || fixed > 0) {
+    log(`수동 큐레이션 적용: 제거 ${denied}건, 정정 ${fixed}건`);
+  }
+  return { items: kept, denied, fixed };
 }
 
 // 기존 news.json 항목의 Google News URL을 실제 URL로 일괄 변환 (한 회 실행당 상한 적용)
@@ -1150,9 +1355,10 @@ async function main() {
 
   await enrichImages(classified); // 신규 분류분에 og:image 부착(토큰 비용 0)
 
-  // 기존 항목 링크 순환 재검증 → "안 열리는" 기사 제거
-  const { removedIds: deadIds, checked: linkChecked } =
-    await pruneDeadExistingLinks(existing.items);
+  // 인물 증명사진 썸네일 → 토픽 일러스트 교체 (신규분 전량 + 기존분 회전 배치)
+  const faceNew = await applyPortraitThumbnails(classified, classified.length);
+  const backlogN = CONFIG.portraitDetection?.backlogPerRun ?? 12;
+  const faceChecked = faceNew + (await applyPortraitThumbnails(existing.items, backlogN));
 
   // 보존 기간 정리 → 같은 사건 기사 묶음 → 최신순 정렬
   const pruned = prune(
@@ -1162,15 +1368,21 @@ async function main() {
     (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
   );
 
+  // 수동 큐레이션(제거·정정)은 항상 마지막에 적용해 매 실행마다 재적용된다
+  const curation = applyCuration(merged);
+  const finalItems = curation.items;
+
   const changed =
     isV1 ||
     purged > 0 ||
     compFixed > 0 ||
     ptFixed > 0 ||
+    faceChecked > 0 ||
     classified.length > 0 ||
-    merged.length !== existing.items.length ||
-    backfilled > 0 ||
-    linkChecked > 0;
+    curation.denied > 0 ||
+    curation.fixed > 0 ||
+    finalItems.length !== existing.items.length ||
+    backfilled > 0;
   if (!changed) {
     log("변경 없음");
     return;
@@ -1182,26 +1394,18 @@ async function main() {
       {
         updatedAt: new Date().toISOString(),
         schemaVersion: "v2",
-        items: merged,
+        items: finalItems,
       },
       null,
       2
     )
   );
-  log(`news.json 갱신 완료, 총 ${merged.length}건 보유`);
+  log(`news.json 갱신 완료, 총 ${finalItems.length}건 보유`);
   log("=== 완료 ===");
 }
 
-// 재사용을 위한 export (reclassify.mjs 등에서 분류 로직 재활용)
-export {
-  CONFIG,
-  CLASSIFY_SYSTEM,
-  classifyOne,
-  computeImpact,
-  gradeFromImpact,
-  extractIdToken,
-  checkLinkAlive,
-};
+// 재사용을 위한 export (reclassify.mjs 等에서 분류 로직 재활용)
+export { CONFIG, CLASSIFY_SYSTEM, classifyOne, computeImpact, gradeFromImpact };
 
 // 직접 실행(node fetch-news.js)일 때만 전체 파이프라인 구동. import 時엔 실행 안 함.
 if (import.meta.url === pathToFileURL(process.argv[1] || "").href) {

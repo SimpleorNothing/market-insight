@@ -1,0 +1,119 @@
+{
+  "_comment": "수동 큐레이션 + 기업명 오역 가드. fetch-news.js 가 실행 시 읽어 매번 재적용한다. 이 파일만 고치면 재배포 없이 카드 제거·정정이 반영된다.",
+  "orgGuards": [
+    {
+      "_comment": "모델 출력에 term/aliases 가 나오면 원문에 evidence 中 1개 이상이 반드시 있어야 함. 없으면 1회 재분류 후 폐기.",
+      "term": "현대차",
+      "aliases": [
+        "현대자동차",
+        "현대차그룹"
+      ],
+      "evidence": [
+        "현대차",
+        "현대자동차",
+        "hyundai motor",
+        "hyundai mobis",
+        "현대모비스",
+        "기아",
+        "보스턴다이내믹스",
+        "boston dynamics"
+      ]
+    },
+    {
+      "term": "현대건설",
+      "aliases": [
+        "현대이앤씨"
+      ],
+      "evidence": [
+        "현대건설",
+        "hyundai e&c",
+        "hyundai engineering",
+        "hdec",
+        "현대이앤씨"
+      ]
+    },
+    {
+      "term": "현대엘리베이터",
+      "aliases": [],
+      "evidence": [
+        "현대엘리베이터",
+        "hyundai elevator"
+      ]
+    },
+    {
+      "term": "현대백화점",
+      "aliases": [],
+      "evidence": [
+        "현대백화점",
+        "hyundai department"
+      ]
+    },
+    {
+      "term": "LG에너지솔루션",
+      "aliases": [
+        "LG엔솔"
+      ],
+      "evidence": [
+        "lg에너지솔루션",
+        "lg엔솔",
+        "lg energy solution"
+      ]
+    },
+    {
+      "term": "삼성물산",
+      "aliases": [],
+      "evidence": [
+        "삼성물산",
+        "samsung c&t"
+      ]
+    },
+    {
+      "term": "GS건설",
+      "aliases": [],
+      "evidence": [
+        "gs건설",
+        "gs e&c",
+        "gs이앤씨"
+      ]
+    },
+    {
+      "term": "대우건설",
+      "aliases": [],
+      "evidence": [
+        "대우건설",
+        "daewoo e&c"
+      ]
+    }
+  ],
+  "curation": {
+    "_comment": "수동 큐레이션. denyIds/denyUrls = 화면에서 완전 제거, overrides = 해당 id의 필드 덮어쓰기. 매 실행마다 재적용된다.",
+    "denyIds": [
+      1924,
+      1941
+    ],
+    "denyUrls": [
+      "https://www.chosun.com/english/industry-en/2026/07/20/DXA6NMVFWRHNZEOUSSBPZKQMVQ/",
+      "https://finance.biggo.com/news/8e205724-3740-4450-9d3f-8d67ca6dbfc7"
+    ],
+    "overrides": {
+      "1944": {
+        "headline": "LG전자, 현대건설 압구정 재건축 7000세대 가전 구독",
+        "summary": "LG전자가 현대건설과 협력해 서울 압구정 2·3·5구역 재건축 조합원 7000여 세대에 프리미엄 빌트인 가전 구독 서비스를 공급한다. 구역에 따라 냉장고·세탁기·건조기·스타일러·식기세척기 등 5~7종을 선택할 수 있으며, 입주 후 5년간 전문 케어 서비스가 함께 제공된다. 3·5구역 펜트하우스에는 SKS·LG 시그니처 등 초프리미엄 라인을 적용한다.",
+        "summaryPoints": [
+          {
+            "type": "content",
+            "text": "LG전자, 현대건설과 압구정 2·3·5구역 조합원 7000여 세대에 가전 구독 공급"
+          },
+          {
+            "type": "content",
+            "text": "구역별 냉장고·세탁기·건조기·스타일러·식기세척기 5~7종 선택, 입주 후 5년 전문 케어"
+          },
+          {
+            "type": "content",
+            "text": "펜트하우스 SKS·LG 시그니처 적용, 씽큐 온 '우리 단지 연결' 30만 세대 돌파"
+          }
+        ]
+      }
+    }
+  }
+}

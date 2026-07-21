@@ -15,6 +15,11 @@
       "region": "KR"
     },
     {
+      "name": "Google News - 캐리어/오텍캐리어 KR",
+      "url": "https://news.google.com/rss/search?q=(%22%EC%98%A4%ED%85%8D%EC%BA%90%EB%A6%AC%EC%96%B4%22%20OR%20%22%EC%BA%90%EB%A6%AC%EC%96%B4%EC%97%90%EC%96%B4%EC%BB%A8%22%20OR%20%22%EC%BA%90%EB%A6%AC%EC%96%B4%20%EC%97%90%EC%96%B4%EC%BB%A8%22%20OR%20%22%EC%BA%90%EB%A6%AC%EC%96%B4%20%ED%9E%88%ED%8A%B8%ED%8E%8C%ED%94%84%22%20OR%20%22%EC%BA%90%EB%A6%AC%EC%96%B4%20%EA%B3%B5%EC%A1%B0%22)%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako",
+      "region": "KR"
+    },
+    {
       "name": "Google News - 한국 가전 산업",
       "url": "https://news.google.com/rss/search?q=%EA%B0%80%EC%A0%84+OR+%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90+OR+LG%EC%A0%84%EC%9E%90+OR+%EB%83%89%EC%9E%A5%EA%B3%A0+OR+%EC%84%B8%ED%83%81%EA%B8%B0+OR+%EC%97%90%EC%96%B4%EC%BB%A8+OR+%ED%9E%88%ED%8A%B8%ED%8E%8C%ED%94%84+when%3A1d&hl=ko&gl=KR&ceid=KR%3Ako",
       "region": "KR"
@@ -93,6 +98,46 @@
       "name": "Google News - US Trade Policy",
       "url": "https://news.google.com/rss/search?q=%28tariff%20OR%20USMCA%20OR%20USTR%20OR%20%22Section%20232%22%20OR%20%22rules%20of%20origin%22%20OR%20%22trade%20agreement%22%29%20%28appliance%20OR%20appliances%20OR%20Samsung%20OR%20%22LG%20Electronics%22%20OR%20Whirlpool%20OR%20Mexico%29%20when%3A2d&hl=en-US&gl=US&ceid=US%3Aen",
       "region": "US"
+    },
+    {
+      "name": "Google News - 가전 소비·유통 KR",
+      "url": "https://news.google.com/rss/search?q=%28%EA%B0%80%EC%A0%84%20%ED%8C%90%EB%A7%A4%20OR%20%EA%B0%80%EC%A0%84%20%EC%88%98%EC%9A%94%20OR%20%ED%95%98%EC%9D%B4%EB%A7%88%ED%8A%B8%20OR%20%EC%A0%84%EC%9E%90%EB%9E%9C%EB%93%9C%20OR%20%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20%EA%B0%80%EC%A0%84%20OR%201%EC%9D%B8%EA%B0%80%EA%B5%AC%20%EA%B0%80%EC%A0%84%20OR%20%ED%8E%AB%EA%B0%80%EC%A0%84%20OR%20%EC%8B%A4%EB%B2%84%EA%B0%80%EC%A0%84%29%20when%3A3d&hl=ko&gl=KR&ceid=KR%3Ako",
+      "region": "KR"
+    },
+    {
+      "name": "Google News - Appliance Consumer & Retail US",
+      "url": "https://news.google.com/rss/search?q=%28appliance%20sales%20OR%20appliance%20demand%20OR%20%22Best%20Buy%22%20appliance%20OR%20%22Home%20Depot%22%20appliance%20OR%20%22Consumer%20Reports%22%20appliance%29%20when%3A3d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "US"
+    },
+    {
+      "name": "Google News - AI·친환경 가전 기술 KR",
+      "url": "https://news.google.com/rss/search?q=%28AI%20%EA%B0%80%EC%A0%84%20OR%20%EC%98%A8%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4%20AI%20OR%20%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%8B%B1%EC%8A%A4%20OR%20%EC%94%BD%ED%81%90%20OR%20%ED%9E%88%ED%8A%B8%ED%8E%8C%ED%94%84%20%EB%83%89%EB%A7%A4%20OR%20%ED%94%84%EB%A1%9C%ED%8C%90%20%EB%83%89%EB%A7%A4%20OR%20%EC%9D%B8%EB%B2%84%ED%84%B0%20%EC%BB%B4%ED%94%84%EB%A0%88%EC%84%9C%20OR%20%EC%97%90%EB%84%88%EC%A7%80%ED%9A%A8%EC%9C%A8%201%EB%93%B1%EA%B8%89%29%20when%3A3d&hl=ko&gl=KR&ceid=KR%3Ako",
+      "region": "KR"
+    },
+    {
+      "name": "Google News - Appliance Tech (Refrigerant/AI/SmartHome)",
+      "url": "https://news.google.com/rss/search?q=%28R290%20OR%20%22low-GWP%20refrigerant%22%20OR%20%22HFC%20phasedown%22%20OR%20%22AIM%20Act%22%20OR%20%22Energy%20Star%22%20OR%20%22AI%20appliance%22%20OR%20SmartThings%20OR%20ThinQ%20OR%20Matter%20smart%20home%20OR%20%22connected%20appliance%22%20OR%20%22home%20robot%22%29%20when%3A5d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "Global"
+    },
+    {
+      "name": "Google News - 로봇청소기·소형가전 경쟁 KR",
+      "url": "https://news.google.com/rss/search?q=%28%EB%A1%9C%EB%B3%B4%EB%9D%BD%20OR%20%EC%97%90%EC%BD%94%EB%B0%B1%EC%8A%A4%20OR%20%EB%93%9C%EB%A6%AC%EB%AF%B8%20OR%20%EB%8B%A4%EC%9D%B4%EC%8A%A8%20OR%20%EB%82%98%EB%A5%B4%EC%99%88%20OR%20eufy%29%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako",
+      "region": "KR"
+    },
+    {
+      "name": "Google News - Robot Vacuum & Small Appliance Rivals",
+      "url": "https://news.google.com/rss/search?q=%28Roborock%20OR%20Ecovacs%20OR%20Dreame%20OR%20iRobot%20OR%20Roomba%20OR%20Dyson%20OR%20SharkNinja%20OR%20eufy%29%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "Global"
+    },
+    {
+      "name": "Google News - TCL·하이센스·파나소닉 등 KR",
+      "url": "https://news.google.com/rss/search?q=%28TCL%20%EA%B0%80%EC%A0%84%20OR%20%ED%95%98%EC%9D%B4%EC%84%BC%EC%8A%A4%20%EA%B0%80%EC%A0%84%20OR%20%ED%8C%8C%EB%82%98%EC%86%8C%EB%8B%89%20%EA%B0%80%EC%A0%84%20OR%20%EB%B2%A0%EC%BD%94%20OR%20%ED%9E%88%ED%83%80%EC%B9%98%20%EA%B0%80%EC%A0%84%29%20when%3A7d&hl=ko&gl=KR&ceid=KR%3Ako",
+      "region": "KR"
+    },
+    {
+      "name": "Google News - TCL Hisense Panasonic Global",
+      "url": "https://news.google.com/rss/search?q=%28%22TCL%20appliance%22%20OR%20Hisense%20appliance%20OR%20Panasonic%20appliance%20OR%20Beko%20OR%20Ar%C3%A7elik%20OR%20Hitachi%20appliance%29%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+      "region": "Global"
     }
   ],
   "lenses": [
@@ -118,13 +163,24 @@
     "삼성전자",
     "BSH",
     "Midea",
+    "Haier",
     "Gree",
     "Carrier",
     "Trane",
     "JCI",
     "Daikin",
     "Lennox",
-    "Haier"
+    "로보락",
+    "샤크닌자",
+    "다이슨",
+    "아이로봇",
+    "에코백스",
+    "드리미",
+    "TCL",
+    "하이센스",
+    "파나소닉",
+    "아르첼릭",
+    "히타치"
   ],
   "competitorBrands": {
     "_comment": "경쟁사별 자회사·하위 브랜드. 본문에 하위 브랜드가 등장하면 모기업 경쟁사로 분류.",
@@ -186,6 +242,45 @@
       "Candy",
       "Fisher & Paykel",
       "Casarte"
+    ],
+    "로보락": [
+      "Roborock"
+    ],
+    "샤크닌자": [
+      "Shark",
+      "Ninja"
+    ],
+    "다이슨": [
+      "Dyson"
+    ],
+    "아이로봇": [
+      "iRobot",
+      "Roomba"
+    ],
+    "에코백스": [
+      "Ecovacs",
+      "Deebot",
+      "WINBOT"
+    ],
+    "드리미": [
+      "Dreame"
+    ],
+    "TCL": [],
+    "하이센스": [
+      "Hisense",
+      "Gorenje",
+      "Kelon"
+    ],
+    "파나소닉": [
+      "Panasonic"
+    ],
+    "아르첼릭": [
+      "Arçelik",
+      "Beko",
+      "Grundig"
+    ],
+    "히타치": [
+      "Hitachi"
     ]
   },
   "competitorAliases": {
@@ -199,7 +294,23 @@
     "다이킨": "Daikin",
     "보쉬": "BSH",
     "지멘스": "BSH",
-    "미디어그룹": "Midea"
+    "미디어그룹": "Midea",
+    "오텍캐리어": "Carrier",
+    "캐리어에어컨": "Carrier",
+    "Roborock": "로보락",
+    "SharkNinja": "샤크닌자",
+    "Dyson": "다이슨",
+    "iRobot": "아이로봇",
+    "Roomba": "아이로봇",
+    "Ecovacs": "에코백스",
+    "Deebot": "에코백스",
+    "Dreame": "드리미",
+    "Hisense": "하이센스",
+    "Gorenje": "하이센스",
+    "Panasonic": "파나소닉",
+    "Arçelik": "아르첼릭",
+    "Beko": "아르첼릭",
+    "Hitachi": "히타치"
   },
   "competitorAliasExcludes": [
     "New York",
@@ -242,7 +353,9 @@
     "names": [
       "York",
       "Coleman",
-      "Candy"
+      "Candy",
+      "Shark",
+      "Ninja"
     ]
   },
   "gradeThresholds": {
@@ -343,7 +456,8 @@
         "BSH",
         "월풀",
         "Midea",
-        "Haier"
+        "Haier",
+        "샤크닌자"
       ],
       "kpis": [
         "빌트인 채택률",
@@ -383,11 +497,22 @@
         "로봇청소기",
         "무선청소기",
         "vacuum",
-        "robot cleaner"
+        "robot cleaner",
+        "물걸레 로봇청소기",
+        "스틱청소기",
+        "robot vacuum",
+        "cordless vacuum",
+        "stick vacuum"
       ],
       "majorCompetitors": [
         "LG전자",
-        "Midea"
+        "Midea",
+        "로보락",
+        "샤크닌자",
+        "에코백스",
+        "드리미",
+        "아이로봇",
+        "다이슨"
       ],
       "kpis": [
         "프리미엄 ASP",
@@ -413,7 +538,7 @@
   },
   "filterRules": {
     "_comment": "가전 산업 무관 뉴스 자동 제외 키워드. 헤드라인에 포함 時 분류 단계 진입 前 차단 + 기존 적재분도 매 실행 시 소급 제거.",
-    "_allowOverride_comment": "통상·관세 정책 키워드가 헤드라인에 있으면 blockKeywords보다 우선 → 차단하지 않고 분류 단계로 넘김 (예: '정상회담서 관세 논의'). 당사는 멕시코 등 역외 생산 비중이 높아 보호무역 정책 밀착 모니터링 필수.",
+    "_allowOverride_comment": "통상·관세 정책 키워드가 헤드라인에 있으면 blockKeywords보다 우선 → 차단하지 않고 분류 단계로 넘김 (예: '정상회담서 관세 논의'). 당사는 멕시코 등 역외 생산 비중이 높아 보호무역 정책 밀착 모니터링 필수. 또한 핵심 센싱 대상인 캐리어 계열(오텍캐리어·캐리어에어컨) 브랜드 키워드도 여기 포함 → 반도체·금융 등 blockKeywords와 겹쳐도 사전 차단하지 않고 분류 단계로 넘겨 LLM이 가전/HVAC 사업 기사인지 판단하게 함. 스마트싱스·씽큐(ThinQ) 등 가전 IoT 플랫폼 키워드도 포함 → 모바일 키워드(갤럭시·스마트폰 등)와 겹쳐도 가전 연동 기사는 살림.",
     "allowOverrideKeywords": [
       "관세",
       "통상",
@@ -429,7 +554,13 @@
       "rules of origin",
       "trade agreement",
       "trade deal",
-      "nearshoring"
+      "nearshoring",
+      "오텍캐리어",
+      "캐리어에어컨",
+      "스마트싱스",
+      "SmartThings",
+      "씽큐",
+      "ThinQ"
     ],
     "blockKeywords": [
       "정상회담",
@@ -485,7 +616,36 @@
       "semiconductor",
       "foundry",
       "Nvidia",
-      "Anthropic"
+      "Anthropic",
+      "나노프리즘",
+      "이미지센서",
+      "이미지 센서",
+      "아이소셀",
+      "ISOCELL",
+      "CMOS",
+      "갤럭시",
+      "Galaxy",
+      "스마트폰",
+      "smartphone",
+      "폴더블",
+      "아이폰",
+      "iPhone",
+      "태블릿",
+      "노트북",
+      "웨어러블",
+      "스마트워치",
+      "언팩",
+      "Unpacked",
+      "전장부품",
+      "인포테인먼트",
+      "전기차",
+      "자율주행",
+      "2차전지",
+      "이차전지",
+      "LG에너지솔루션",
+      "5G",
+      "6G",
+      "통신사"
     ]
   },
   "retention": {
@@ -501,7 +661,7 @@
   },
   "limits": {
     "_comment": "1회 실행 처리 제한 (API 비용 보호용).",
-    "maxArticlesPerRun": 40,
+    "maxArticlesPerRun": 70,
     "maxArticlesPerSource": 8,
     "minHeadlineLength": 10
   }
