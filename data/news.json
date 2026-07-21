@@ -1,7 +1,96 @@
 {
-  "updatedAt": "2026-07-21T10:16:00.673Z",
+  "updatedAt": "2026-07-21T12:20:32.640Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2013,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상정책",
+        "관세",
+        "USMCA",
+        "북미무역",
+        "보호무역"
+      ],
+      "headline": "트럼프, 캐나다 제품에 50% 관세 부과…USMCA 협상 압박",
+      "summary": "미국 트럼프 행정부가 캐나다 제품에 50% 관세를 부과했다. 100년 전 법을 동원해 '캐나다의 미국 차별대우'를 주장하며 시멘트 등에 보복 관세를 적용했다. USMCA 후속협상에서 우위를 선점하려는 의도로 분석된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "트럼프 행정부가 캐나다 제품에 50% 관세 부과"
+        },
+        {
+          "type": "content",
+          "text": "100년 전 법 동원해 캐나다의 미국 차별대우 주장"
+        },
+        {
+          "type": "content",
+          "text": "USMCA 무역협정 후속협상에서 우위 선점 의도로 평가됨"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12103822"
+      },
+      "publishedAt": "2026-07-21T11:37:39.000Z",
+      "url": "https://www.mk.co.kr/news/world/12103822",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/21/news-p.v1.20260721.a0403956bbef49ed8d88fd53515fefd0_R.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2017,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "구조조정",
+        "생산기지",
+        "북미",
+        "월풀"
+      ],
+      "headline": "월풀, 멕시코 공장 폐쇄·주가 저평가 평가",
+      "summary": "월풀이 멕시코 생산거점을 폐쇄하는 조치를 단행했다. 시장에서는 이 같은 구조 조정이 단기적 부담이지만 주가가 저평가 상태로 평가하고 있다. 북미 가전업체의 생산 기지 재편 신호로 관측된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 멕시코 생산 공장을 폐쇄하는 구조 조정 단행"
+        },
+        {
+          "type": "content",
+          "text": "시장에서는 이 조치로 인한 단기 부담에도 불구하고 월풀 주가가 저평가 상태로 평가"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpool-whr-stock-looks-cheap-100716507.html"
+      },
+      "publishedAt": "2026-07-21T10:07:16.000Z",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpool-whr-stock-looks-cheap-100716507.html",
+      "image": null
+    },
     {
       "id": 2010,
       "lens": "경쟁사",
@@ -258,6 +347,47 @@
       "publishedAt": "2026-07-21T07:00:00.000Z",
       "url": "https://www.etnews.com/20260721000261",
       "image": "https://img.etnews.com/news/article/2026/07/21/news-p.v1.20260721.82cc44eac1524b6cbdfbc2abdb796e54_P1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2018,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "주가",
+        "원가관리",
+        "수요전망"
+      ],
+      "headline": "월풀, 가전 수요·원가관리로 주가 안정적 움직임",
+      "summary": "월풀의 주가가 가전 수요 및 원가통제 요인으로 안정적인 흐름을 보이고 있다. 업체의 향후 실적 전망은 가전 시장 수요와 비용 관리 능력에 따라 결정될 것으로 예상된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀 주가가 가전 수요 및 원가통제 요인으로 안정적 추이"
+        },
+        {
+          "type": "content",
+          "text": "향후 전망은 시장 수요와 비용 관리 능력에 의존"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-trades-steadily-as-appliance-demand-and-cost-controls/69818960"
+      },
+      "publishedAt": "2026-07-21T06:08:51.000Z",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-trades-steadily-as-appliance-demand-and-cost-controls/69818960",
+      "image": "https://mdb.ad-hoc-news.de/bild/bild-2701697_1920_1080.webp",
       "imageChecked": true
     },
     {
@@ -2404,48 +2534,6 @@
       "publishedAt": "2026-07-17T21:35:29.000Z",
       "url": "https://nam.org/how-ge-appliances-is-redefining-flexibility-on-the-plant-floor/",
       "image": "https://nam.org/wp-content/uploads/2026/07/30514059-1720-4e43-81ca-8422680488e4.jpg",
-      "imageChecked": true
-    },
-    {
-      "id": 1869,
-      "lens": "정책",
-      "grade": "주시",
-      "impact": 2.5,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 2,
-        "marketSize": 3,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "탄소중립",
-        "ESG",
-        "온실가스",
-        "환경규제"
-      ],
-      "headline": "LG전자, 2025년 온실가스 배출량 목표 달성",
-      "summary": "LG전자가 최신 지속가능성 보고서에서 2025년 Scope 1·2 온실가스 배출량이 2023년 목표 수준 이하로 감소했다고 발표했다. 환경 규제 대응 및 탄소중립 목표 달성 현황을 공식 공시했다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자 2025년 Scope 1·2 배출량이 2023년 목표 수준 이하로 달성"
-        },
-        {
-          "type": "content",
-          "text": "최신 지속가능성 보고서를 통해 온실가스 감축 현황 공식 공시"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://csrwire.com/press-release/lg-electronics-reports-2025-scope-1-and-2-emissions-below-2023-target-levels-latest/"
-      },
-      "publishedAt": "2026-07-17T16:00:30.000Z",
-      "url": "https://csrwire.com/press-release/lg-electronics-reports-2025-scope-1-and-2-emissions-below-2023-target-levels-latest/",
-      "image": "https://csrwire.com/wp-content/uploads/sites/2/2026/07/Sustainability-Report_LG_071626.png",
       "imageChecked": true
     },
     {
