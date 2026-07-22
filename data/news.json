@@ -1,7 +1,87 @@
 {
-  "updatedAt": "2026-07-22T20:08:51.634Z",
+  "updatedAt": "2026-07-22T21:58:50.842Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2100,
+      "lens": "거시",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "원자재",
+        "유가",
+        "중동리스크"
+      ],
+      "headline": "이란 긴장 고조로 브렌트유 배럴당 94달러대 상승",
+      "summary": "미국·이란 간 충돌 심화로 국제유가가 상승했다. 22일 9월 인도분 브렌트유 선물이 배럴당 94.07달러로 전장 대비 3.36% 올랐다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국·이란 강대강 대치로 22일 9월 브렌트유 선물 배럴당 94.07달러, 전장 대비 3.36% 상승"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/business/12105033"
+      },
+      "publishedAt": "2026-07-22T21:20:00.000Z",
+      "url": "https://www.mk.co.kr/news/business/12105033",
+      "linkCheckedAt": "2026-07-22T21:55:54.201Z",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260723.3799251e088a485887fe84db81fc6689_R.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2102,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Trane"
+      ],
+      "tags": [
+        "AI",
+        "에너지효율",
+        "HVAC",
+        "스마트빌딩"
+      ],
+      "headline": "Trane, AI 기반 에너지관리 기술 개발 추진",
+      "summary": "Trane Technologies가 BrainBox AI 랩과 협력해 HVAC 시스템의 AI 기반 에너지관리 솔루션을 개발 중이다. 이는 건물 냉난방의 효율성 극대화와 운영비용 절감을 목표로 한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Trane Technologies가 BrainBox AI 랩과 협력하여 AI 기반 에너지관리 기술 개발"
+        },
+        {
+          "type": "content",
+          "text": "HVAC 시스템의 자동 최적화를 통한 에너지 효율성 및 비용 절감 솔루션"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://www.tranetechnologies.com/en/index/blog/solutions-innovation/ai-and-energy-management.html"
+      },
+      "publishedAt": "2026-07-22T17:38:08.000Z",
+      "url": "https://www.tranetechnologies.com/en/index/blog/solutions-innovation/ai-and-energy-management.html",
+      "linkCheckedAt": "2026-07-22T21:55:54.201Z",
+      "image": "https://media.tranetechnologies.com/is/image/TraneTechnologies/Riaz-Raihan-speaking-on-stage:medium-2-1"
+    },
     {
       "id": 2091,
       "lens": "경쟁사",
