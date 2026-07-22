@@ -692,6 +692,7 @@ function renderCard(n) {
             .join("")}
         </div>
       </div>
+      ${window.renderRelatedLinks ? window.renderRelatedLinks(n) : ""}
       <div class="news-card__footer">
         <span class="news-card__meta">
           ${timeAgo(n.publishedAt)} · <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceName)}</a>

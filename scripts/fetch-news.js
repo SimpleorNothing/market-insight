@@ -149,6 +149,22 @@ function sharesEntity(a, b) {
   );
 }
 
+// ===== 같은 사건 묶음: 대표 기사에 접어 보존할 관련기사 항목 =====
+// news.json 비대화를 막기 위해 헤드라인·URL·출처만 담은 경량 스냅샷을 저장한다.
+// url 기준 dedup 키(없으면 id). 이미 관련기사 형태로 접힌 항목에도 idempotent 하게 동작.
+function relatedKey(it) {
+  return String((it && (it.url || it.id)) || "").trim();
+}
+function toRelated(it) {
+  return {
+    id: it.id,
+    headline: it.headline,
+    url: it.url || it.source?.url || "",
+    source: { name: it.source?.name || "" },
+    publishedAt: it.publishedAt,
+  };
+}
+
 // ===== Google News URL 디코딩 =====
 // Google News의 /articles/{id} 리다이렉트는 일부 사내망에서 차단·리다이렉션 오류를 일으킴.
 // batchexecute 내부 API로 실제 발행처 URL을 미리 해석해 둠.
@@ -1155,11 +1171,13 @@ function prune(items) {
 
 // 제목·내용이 유사한 같은 사건 기사를 1건으로 묶음 (영향도 높은 기사 유지)
 function dedupeMerged(items) {
-  const TH = CONFIG.dedupe?.similarityThreshold ?? 0.22;
+  const TH = CONFIG.dedupe?.similarityThreshold ?? 0.16;
+  const WIN_MS = (CONFIG.dedupe?.timeWindowHours ?? 72) * 3600e3;
   const sig = items.map((it) => ({
     hb: bigramSet(canonForSim(it.headline)),
     sb: bigramSet(canonForSim(it.summary)),
     pb: bigramSet(canonForSim(pointsText(it))),
+    t: new Date(it.publishedAt).getTime(),
   }));
   const textSim = (i, j) =>
     0.45 * jaccard(sig[i].hb, sig[j].hb) +
@@ -1177,7 +1195,10 @@ function dedupeMerged(items) {
   };
   for (let i = 0; i < items.length; i++) {
     for (let j = i + 1; j < items.length; j++) {
-      if (sharesEntity(items[i], items[j]) && textSim(i, j) >= TH) {
+      // 같은 사건은 좁은 시간창에 몰려 터진다. 시간창 게이트가 없으면 낮은 임계값에서
+      // 서로 다른 사건이 union-find 전이로 대형 오병합 덩어리를 만든다(검증 완료).
+      const sameWindow = Math.abs(sig[i].t - sig[j].t) <= WIN_MS;
+      if (sameWindow && sharesEntity(items[i], items[j]) && textSim(i, j) >= TH) {
         parent[find(i)] = find(j);
       }
     }
@@ -1191,20 +1212,46 @@ function dedupeMerged(items) {
   });
 
   const kept = [];
-  let removed = 0;
+  let foldedGroups = 0;
+  let foldedTotal = 0;
   for (const group of clusters.values()) {
-    if (group.length > 1) {
-      group.sort(
-        (a, b) =>
-          (b.impact || 0) - (a.impact || 0) ||
-          new Date(b.publishedAt) - new Date(a.publishedAt)
-      );
-      removed += group.length - 1;
+    group.sort(
+      (a, b) =>
+        (b.impact || 0) - (a.impact || 0) ||
+        new Date(b.publishedAt) - new Date(a.publishedAt)
+    );
+    const rep = group[0];
+
+    // 대표 기사에 나머지 멤버 + 각 멤버가 이전 회차에 이미 보유한 관련기사를 병합해 보존.
+    // (losers 는 top-level 에서 사라지므로 다음 회차 재수집 없이도 관련기사 목록이 유지된다.
+    //  대표가 뒤바뀌어도 이전 대표·관련기사를 그대로 승계.)
+    const seen = new Set([relatedKey(rep)]);
+    const related = [];
+    const addRel = (r) => {
+      const k = relatedKey(r);
+      if (!k || seen.has(k)) return;
+      seen.add(k);
+      related.push(toRelated(r));
+    };
+    for (const m of group) {
+      for (const prev of m.relatedArticles || []) addRel(prev);
+      if (m !== rep) addRel(m);
     }
-    kept.push(group[0]);
+
+    if (related.length) {
+      rep.relatedArticles = related.slice(0, 20);
+      foldedGroups += 1;
+      foldedTotal += related.length;
+    } else if (rep.relatedArticles) {
+      delete rep.relatedArticles;
+    }
+    kept.push(rep);
   }
-  if (removed > 0) {
-    log(`중복 기사 묶음: ${removed}건 제거 (${items.length}건 → ${kept.length}건)`);
+  if (foldedTotal > 0) {
+    log(
+      `같은 사건 묶음: 대표 ${foldedGroups}건에 관련기사 ${foldedTotal}건 접힘 ` +
+        `(${items.length}건 → 노출 ${kept.length}건)`
+    );
   }
   return kept;
 }
