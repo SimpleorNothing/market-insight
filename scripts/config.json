@@ -656,8 +656,9 @@
     "참고": 365
   },
   "dedupe": {
-    "_comment": "제목·내용이 유사한 같은 사건 기사를 1건으로 묶음. similarityThreshold(0~1) 높을수록 보수적.",
-    "similarityThreshold": 0.22
+    "_comment": "제목·내용이 유사한 같은 사건 기사를 대표 1건으로 접고 나머지는 관련기사로 보존. similarityThreshold(0~1) 높을수록 보수적. timeWindowHours: 이 시간창 內 기사끼리만 묶어 서로 다른 사건이 union-find 전이로 오병합되는 것을 차단.",
+    "similarityThreshold": 0.16,
+    "timeWindowHours": 72
   },
   "limits": {
     "_comment": "1회 실행 처리 제한 (API 비용 보호용).",
