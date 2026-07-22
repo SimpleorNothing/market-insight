@@ -1,7 +1,105 @@
 {
-  "updatedAt": "2026-07-22T22:56:24.381Z",
+  "updatedAt": "2026-07-22T23:57:17.996Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2108,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "고객만족도",
+        "북미시장",
+        "브랜드평가",
+        "JD파워"
+      ],
+      "headline": "삼성전자, 美 JD파워 가전만족도 6관왕",
+      "summary": "삼성전자가 미국 JD파워(J.D. Power) 가전 만족도 조사에서 6개 부문 1위를 차지했다. 이는 북미 시장에서의 강한 브랜드 평가와 소비자 신뢰도를 입증하는 성과로, 주요 생활가전 카테고리에서 경쟁력을 확보했음을 시사한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 미국 JD파워 가전만족도 조사에서 냉장고·세탁기·건조기 등 6개 부문에서 1위를 기록"
+        },
+        {
+          "type": "content",
+          "text": "북미 시장 내 삼성전자 생활가전 브랜드의 소비자 만족도가 경쟁사 대비 우위를 나타냄"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.newspim.com/news/view/20260723000093"
+      },
+      "publishedAt": "2026-07-22T23:35:00.000Z",
+      "url": "https://www.newspim.com/news/view/20260723000093",
+      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "image": "https://img.newspim.com/news/2026/07/23/2607230827340060_t1.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2109,
+          "headline": "삼성전자, 미 JD파워 평가서 가전 6개 부문 1위",
+          "url": "https://www.news1.kr/industry/general-industry/6236136",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-22T23:28:45.000Z"
+        }
+      ]
+    },
+    {
+      "id": 2112,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "무역협정",
+        "멕시코",
+        "EU",
+        "공급망",
+        "통상"
+      ],
+      "headline": "멕시코-EU 무역협정 체결, 북미 공급망 재편",
+      "summary": "멕시코와 EU가 새로운 무역협정에 서명했다. 이는 북미 공급망과 유럽을 연결하는 제2 통상축으로 기능할 것으로 예상된다. 멕시코는 미국·캐나다와의 USMCA에 이어 EU와의 협정으로 역외 생산기지의 수출 환경 변화에 직면할 수 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "멕시코-EU 새로운 무역협정 서명으로 북미 공급망과 유럽을 연결하는 제2 통상축 형성"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.dailian.co.kr/news/view/1669868/%EB%A9%95%EC%8B%9C%EC%BD%94-EU-%EC%83%88-%EB%AC%B4%EC%97%AD%ED%98%91%EC%A0%95-%EC%84%9C%EB%AA%85%EB%B6%81%EB%AF%B8-%EA%B3%B5-2026"
+      },
+      "publishedAt": "2026-07-22T23:29:00.000Z",
+      "url": "https://www.dailian.co.kr/news/view/1669868/%EB%A9%95%EC%8B%9C%EC%BD%94-EU-%EC%83%88-%EB%AC%B4%EC%97%AD%ED%98%91%EC%A0%95-%EC%84%9C%EB%AA%85%EB%B6%81%EB%AF%B8-%EA%B3%B5-2026",
+      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "image": "https://cdnimage.dailian.co.kr/news/202607/news_1784762912_1669868_m_1.jpg",
+      "imageChecked": true
+    },
     {
       "id": 2100,
       "lens": "거시",
@@ -523,6 +621,56 @@
       "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370551",
       "linkCheckedAt": "2026-07-22T07:31:56.695Z",
       "image": "https://www.electimes.com/news/photo/202607/370551_583220_1521.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2114,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "신사업",
+        "렌탈",
+        "멀티채널",
+        "프랜차이즈",
+        "구독모델"
+      ],
+      "headline": "옆커폰, 통신+가전 렌탈 결합 멀티창업으로 720호점 돌파",
+      "summary": "옆커폰이 통신과 가전 렌탈을 결합한 멀티창업 모델로 전국 720호점을 달성했다. 통신 서비스와 가전 렌탈을 함께 제공하는 결합형 프랜차이즈로 가맹 확장을 가속화하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "옆커폰이 전국 720호점 달성, 통신과 가전 렌탈을 결합한 멀티창업 모델로 확장 중"
+        },
+        {
+          "type": "content",
+          "text": "통신 서비스와 생활가전 렌탈을 함께 제공하는 결합형 프랜차이즈 전략으로 가맹점주 수익성 강화"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 신사업·비즈모델 KR",
+        "url": "http://m.socialvalue.kr/news/amp.html?ncode=1065592940386224"
+      },
+      "publishedAt": "2026-07-22T06:02:52.000Z",
+      "url": "http://m.socialvalue.kr/news/amp.html?ncode=1065592940386224",
+      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "image": "https://www.socialvalue.kr/news/data/20260722/p1065592940386224_142_thum.png",
       "imageChecked": true
     },
     {
@@ -1270,6 +1418,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-07-21T07:10:09.000Z"
+        },
+        {
+          "id": 2113,
+          "headline": "LG전자, webOS·구독으로 수익모델 다각화 추진",
+          "url": "https://v.daum.net/v/20260721222524399?f=p",
+          "source": {
+            "name": "Google News - 가전 신사업·비즈모델 KR"
+          },
+          "publishedAt": "2026-07-21T13:25:24.000Z"
         }
       ]
     },
@@ -1797,6 +1954,55 @@
           "publishedAt": "2026-07-20T12:21:28.000Z"
         }
       ]
+    },
+    {
+      "id": 2116,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기",
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "구독",
+        "D2C",
+        "신혼부부",
+        "렌탈"
+      ],
+      "headline": "LG전자 베스트샵, 예비부부층 겨냥 웨딩 구독 패키지 출시",
+      "summary": "LG전자 베스트샵이 예비부부를 대상으로 웨딩 구독 패키지 운영을 시작했다. 신혼 가구의 신규 가전 수요를 구독 모델로 포획하는 신규 비즈니스 전략으로, 생활가전 판매 촉진을 위한 고객층 세분화 및 렌탈·구독 판로 확대 사례다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 베스트샵이 예비부부 대상 웨딩 구독 패키지 운영 개시"
+        },
+        {
+          "type": "content",
+          "text": "신혼가구 신규 가전 수요를 구독 모델로 확보하는 판로 확장 전략"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 신사업·비즈모델 KR",
+        "url": "https://www.segye.com/newsView/20260721513422"
+      },
+      "publishedAt": "2026-07-21T04:51:24.000Z",
+      "url": "https://www.segye.com/newsView/20260721513422",
+      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "image": "https://www.segye.com/content/image/2026/07/21/20260721513417.jpg",
+      "imageChecked": true
     },
     {
       "id": 1992,
@@ -2761,6 +2967,47 @@
       "image": "https://images.simplywall.st/asset/company-cover/106335-main-header/1756253679915",
       "imageChecked": true,
       "linkCheckedAt": "2026-07-21T16:14:19.572Z"
+    },
+    {
+      "id": 2115,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "구독경제",
+        "소비자보호",
+        "서비스체험",
+        "해지절차"
+      ],
+      "headline": "가전 구독 서비스 해지 난제 부각",
+      "summary": "가전 구독 서비스의 편리한 가입 과정과 달리 해지 절차의 복잡성과 불편함이 소비자 불만의 핵심으로 지적되고 있다. 구독 모델 확산에 따른 소비자 보호 및 투명성 강화의 필요성이 제기되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "가전 구독 서비스는 온라인 클릭으로 가입이 용이하나 해지 시 다중 전화 연락 등 번거로운 절차 발생"
+        },
+        {
+          "type": "content",
+          "text": "구독형 비즈니스 모델 확산에 따른 소비자 보호 및 서비스 투명성 강화 요구 증가"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 신사업·비즈모델 KR",
+        "url": "https://www.dailyt.co.kr/newsView/dlt202607200013"
+      },
+      "publishedAt": "2026-07-20T07:00:00.000Z",
+      "url": "https://www.dailyt.co.kr/newsView/dlt202607200013",
+      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "image": "https://www.dailyt.co.kr/data/dlt/image/2026/07/21/dlt202607210008.jpeg",
+      "imageChecked": true
     },
     {
       "id": 1953,
