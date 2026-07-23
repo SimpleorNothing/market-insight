@@ -1,7 +1,110 @@
 {
-  "updatedAt": "2026-07-22T23:57:17.996Z",
+  "updatedAt": "2026-07-23T01:50:12.917Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2117,
+      "lens": "거시",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "거시경제",
+        "한국경제",
+        "반도체",
+        "수출"
+      ],
+      "headline": "한국 경제 2분기 0.6% 성장, 반도체 수출 견인",
+      "summary": "한국 경제가 2분기 분기당 0.6% 성장률을 기록, 중동 불안정 요인을 반도체 수출 호조로 상쇄했다. 경제 전망은 한반도 지정학적 리스크와 글로벌 수요 변수에 좌우될 것으로 보인다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "한국 2분기 경제성장률 분기당 0.6%, 중동 불안정 속에도 예상 상회"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/english/12105250"
+      },
+      "publishedAt": "2026-07-23T01:41:26.000Z",
+      "url": "https://www.mk.co.kr/news/english/12105250",
+      "linkCheckedAt": "2026-07-23T01:46:32.286Z",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260723.53f9a2bcb8264d9bb321c1b3ce35d39a_R.png",
+      "imageChecked": true
+    },
+    {
+      "id": 2118,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기",
+        "냉장고"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "생산거점 확대",
+        "소재 고도화",
+        "베트남",
+        "공급망"
+      ],
+      "headline": "LG전자, 베트남 하이퐁에 기능성 소재 생산라인 가동",
+      "summary": "LG전자가 베트남 하이퐁에 기능성 소재 생산라인을 신규 가동하며 생산 역량을 확대하고 있다. 이는 당사의 제품 고기능화 및 아시아 지역 생산 거점 다원화 전략의 일환이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 베트남 하이퐁에 기능성 소재 생산라인 신규 가동"
+        },
+        {
+          "type": "content",
+          "text": "세탁기·냉장고 등 핵심 제품의 소재 고기능화 목표"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260723010008335"
+      },
+      "publishedAt": "2026-07-23T01:00:00.000Z",
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260723010008335",
+      "linkCheckedAt": "2026-07-23T01:46:32.286Z",
+      "image": "https://img.asiatoday.co.kr/file/2026y/07m/23d/2026072301001519300083351.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2120,
+          "headline": "LG전자, 베트남 기능성 소재 생산거점 구축…글로벌 공급망 확대",
+          "url": "https://www.joongang.co.kr/article/25447433",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-23T01:22:09.000Z"
+        },
+        {
+          "id": 2121,
+          "headline": "LG전자, 항균 소재 글로벌 공급망 강화",
+          "url": "https://www.thailand-business-news.com/pr-news/lg-electronics-strengthens-global-supply-chain-for-advanced-antimicrobial-materials",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-23T01:38:52.000Z"
+        }
+      ]
+    },
     {
       "id": 2108,
       "lens": "소비자",
@@ -59,6 +162,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-07-22T23:28:45.000Z"
+        },
+        {
+          "id": 2119,
+          "headline": "삼성전자, 美 JD파워 최다 수상으로 소비자만족도 선도",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260723026500003",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-22T23:11:27.000Z"
         }
       ]
     },
