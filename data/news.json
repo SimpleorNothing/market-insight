@@ -1,7 +1,52 @@
 {
-  "updatedAt": "2026-07-23T08:13:01.737Z",
+  "updatedAt": "2026-07-23T11:01:51.431Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2131,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "BSH"
+      ],
+      "tags": [
+        "규제",
+        "스마트가전",
+        "EU시장",
+        "경쟁진출"
+      ],
+      "headline": "샤오미, 독일 진출 시 EU 데이터 규제 대응 필요",
+      "summary": "샤오미가 Mijia 세탁기를 독일 시장에 출시하며 EU 데이터 보호법(GDPR 등) 규제에 직면. 유럽의 강화된 개인정보·연결기기 규제가 진출 장벽이자 현지 제조사(BSH 등)의 경쟁 우위 요소로 작용.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "샤오미 Mijia 세탁기 독일 런칭, EU 데이터 보호법 준수 요구"
+        },
+        {
+          "type": "content",
+          "text": "EU 데이터 규제가 신규 진출사 진입장벽이자 현지 제조사 경쟁우위"
+        }
+      ],
+      "source": {
+        "name": "Google News - Bosch Miele Siemens EU",
+        "url": "https://www.techtimes.com/articles/321349/20260723/xiaomi-launches-mijia-washing-machines-germany-data-law-catch.htm"
+      },
+      "publishedAt": "2026-07-23T10:06:39.000Z",
+      "url": "https://www.techtimes.com/articles/321349/20260723/xiaomi-launches-mijia-washing-machines-germany-data-law-catch.htm",
+      "linkCheckedAt": "2026-07-23T10:58:40.988Z",
+      "image": "https://d.techtimes.com/en/full/469581/mijia-front-load-washer-dryer-pro.png",
+      "imageChecked": true
+    },
     {
       "id": 2127,
       "lens": "정책",
@@ -60,6 +105,108 @@
       "url": "https://www.etnews.com/20260723000347",
       "linkCheckedAt": "2026-07-23T08:12:24.871Z",
       "image": null
+    },
+    {
+      "id": 2130,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기",
+        "건조기",
+        "냉장고",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "실적악화",
+        "구조조정",
+        "북미시장",
+        "가전산업"
+      ],
+      "headline": "월풀, 실적 하향과 공장 폐쇄로 밸류에이션 재평가",
+      "summary": "월풀이 실적 감소 및 공장 폐쇄 우려로 주가 밸류에이션 재검토 국면에 진입했다. 북미 가전 시장 경기 둔화와 구조조정 신호가 겹치면서 투자자 신뢰도가 흔들리는 상황이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 실적 전망을 하향 조정하고 공장 폐쇄 가능성을 시사하면서 투자자의 밸류에이션 재평가 요구에 직면"
+        },
+        {
+          "type": "content",
+          "text": "북미 가전 시장의 경기 둔화와 경쟁 심화 속에서 월풀의 수익성 악화 우려가 증대"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-faces-a-fresh-valuation-test-after-earnings-cu/amp"
+      },
+      "publishedAt": "2026-07-23T06:32:17.000Z",
+      "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-faces-a-fresh-valuation-test-after-earnings-cu/amp",
+      "linkCheckedAt": "2026-07-23T10:58:40.988Z",
+      "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2012,
+          "headline": "월풀, EPS 하향·매출 감소 예상 속 밸류에이션 재평가",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpool-whr-fairly-valued-eps-081000447.html",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-07-21T08:10:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 2128,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "신기술",
+        "도시열섬",
+        "냉각",
+        "친환경",
+        "R&D"
+      ],
+      "headline": "에어컨 불필요한 도시냉각 신기술 개발",
+      "summary": "도시열섬 현상 완화를 위한 냉각 신기술이 개발됨. 에어컨 가동 없이 도시 기온을 최대 4.5도 낮출 수 있는 기술로, 향후 도시 냉난방 시장의 패러다임 변화를 예고.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "에어컨 없이 도시 기온을 4.5도 낮추는 신기술 개발"
+        },
+        {
+          "type": "content",
+          "text": "도시열섬 현상 완화와 에너지 효율성 향상이 주요 장점"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.chosun.com/economy/science/2026/07/23/RXO5EJJXFFB2VMNPHYOA33LQAA/"
+      },
+      "publishedAt": "2026-07-23T05:36:53.000Z",
+      "url": "https://www.chosun.com/economy/science/2026/07/23/RXO5EJJXFFB2VMNPHYOA33LQAA/",
+      "linkCheckedAt": "2026-07-23T10:58:40.988Z",
+      "image": "https://www.chosun.com/resizer/v2/O2HKLE5FIZFS7OT7DTWN2FF53A.png?auth=d93a58b2ad7768882d9933165846afbe44f3d687a869a01e62960c5fcd0d2726&width=1200&height=630&focal=621,16"
     },
     {
       "id": 2120,
@@ -257,6 +404,15 @@
             "name": "Google News - LG Global"
           },
           "publishedAt": "2026-07-23T01:04:00.000Z"
+        },
+        {
+          "id": 2129,
+          "headline": "LG전자, 베트남 기능성 소재 공장 가동…B2B 확대",
+          "url": "https://www.munhwa.com/article/11604579",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-23T06:19:38.000Z"
         }
       ]
     },
@@ -2070,48 +2226,6 @@
       "url": "https://www.newstap.co.kr/news/articleView.html?idxno=330626",
       "image": "https://cdn.newstap.co.kr/news/photo/202607/330626_438782_2657.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-07-21T16:14:19.572Z"
-    },
-    {
-      "id": 2012,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "실적부진",
-        "수요둔화",
-        "북미시장",
-        "밸류에이션"
-      ],
-      "headline": "월풀, EPS 하향·매출 감소 예상 속 밸류에이션 재평가",
-      "summary": "월풀이 EPS 상향조정을 철회하고 매출 감소를 예상하면서 주가 적정성에 대한 의문 제기. 북미 가전 시장의 수요 부진이 주요 배경으로 지적되고 있으며, 업계 전반의 거시 리스크가 가중되는 상황.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "월풀, EPS 하향조정 및 매출 감소 전망 발표로 투자자 신뢰도 하락"
-        },
-        {
-          "type": "content",
-          "text": "북미 주택 시장 약세와 가전 수요 부진이 영업 성과 악화의 주요 요인"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpool-whr-fairly-valued-eps-081000447.html"
-      },
-      "publishedAt": "2026-07-21T08:10:00.000Z",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpool-whr-fairly-valued-eps-081000447.html",
-      "image": null,
       "linkCheckedAt": "2026-07-21T16:14:19.572Z"
     },
     {
@@ -4859,6 +4973,15 @@
             "name": "Google News - Electrolux"
           },
           "publishedAt": "2026-07-16T14:12:14.000Z"
+        },
+        {
+          "id": 2132,
+          "headline": "Electrolux 2분기 실적 공개",
+          "url": "https://www.gurufocus.com/news/8962267/earnings-to-watch-electrolux-ab-eluxy-reports-q2-2026-result?mobile=true",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-16T13:24:55.000Z"
         }
       ]
     },
