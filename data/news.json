@@ -1,43 +1,130 @@
 {
-  "updatedAt": "2026-07-23T01:50:12.917Z",
+  "updatedAt": "2026-07-23T05:18:37.684Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 2117,
-      "lens": "거시",
-      "grade": "참고",
-      "impact": 2.4,
+      "id": 2120,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.4,
       "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 2,
-        "marketSize": 3,
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "항균소재",
+        "소재혁신",
+        "공급망",
+        "제품차별화"
+      ],
+      "headline": "LG전자, 항균소재 글로벌 공급망 강화",
+      "summary": "LG전자가 고급 항균소재의 글로벌 공급망을 강화하고 있다. 이는 생활가전 제품의 위생 기능 강화를 위한 소재 확보 전략으로, 냉장고·세탁기 등 주력 제품군에 적용 가능한 신소재 공급 기반을 구축하는 것으로 보인다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 고급 항균소재의 글로벌 공급망 강화에 나섰다"
+        },
+        {
+          "type": "content",
+          "text": "항균소재는 냉장고·세탁기 등 생활가전 제품의 위생 기능 강화에 적용되는 핵심 소재다"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.kipost.net/news/articleViewAmp.html?idxno=340090"
+      },
+      "publishedAt": "2026-07-23T03:00:14.000Z",
+      "url": "https://www.kipost.net/news/articleViewAmp.html?idxno=340090",
+      "linkCheckedAt": "2026-07-23T05:15:00.257Z",
+      "image": "https://www.kipost.net/news/photo/202607/340090_109234_1511.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2126,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상정책",
+        "USMCA",
+        "북미무역",
+        "원산지규정"
+      ],
+      "headline": "北美 진출 기업 절반, USMCA 변화 영향 우려",
+      "summary": "북미 진출 기업의 50% 이상이 미·멕·캐 무역협정(USMCA) 변화 시 기업 경영에 미치는 영향이 크다고 평가했다. 멕시코 등 역외 생산 거점을 통한 북미 수출 의존도가 높은 기업들의 통상 리스크 인식이 높아지고 있음을 시사한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "북미 진출 기업의 50% 이상이 미·멕·캐 무역협정 변화 시 영향이 크다고 응답"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260723076900003"
+      },
+      "publishedAt": "2026-07-23T02:06:02.000Z",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260723076900003",
+      "linkCheckedAt": "2026-07-23T05:15:00.257Z",
+      "image": "https://img0.yna.co.kr/photo/reuters/2026/06/30/PRU20260630183101009_P4.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2125,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
         "sourceReliability": 3
       },
       "products": [],
       "competitors": [],
       "tags": [
-        "거시경제",
-        "한국경제",
-        "반도체",
-        "수출"
+        "USMCA",
+        "통상협상",
+        "원산지규정",
+        "북미시장"
       ],
-      "headline": "한국 경제 2분기 0.6% 성장, 반도체 수출 견인",
-      "summary": "한국 경제가 2분기 분기당 0.6% 성장률을 기록, 중동 불안정 요인을 반도체 수출 호조로 상쇄했다. 경제 전망은 한반도 지정학적 리스크와 글로벌 수요 변수에 좌우될 것으로 보인다.",
+      "headline": "USMCA 재협상 본격화…미국·캐나다·멕시코 양자 협상 추진",
+      "summary": "미국·캐나다·멕시코가 USMCA(미국-멕시코-캐나다 협정)를 둘러싼 별도 양자 협상을 추진하면서 협정의 안정성이 시험대에 올랐다. 북미 역외 생산 수출거점인 멕시코의 원산지 규정·통상 조건 변화가 당사 북미향 공급망에 직접 영향을 미칠 수 있다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "한국 2분기 경제성장률 분기당 0.6%, 중동 불안정 속에도 예상 상회"
+          "text": "미국·캐나다·멕시코가 USMCA를 둘러싼 양자 협상을 별도로 추진하며 협정이 재협상 국면 진입"
+        },
+        {
+          "type": "content",
+          "text": "북미 역외 생산기지인 멕시코의 원산지 규정·관세 조건 변화로 인한 영향 예상"
         }
       ],
       "source": {
-        "name": "매일경제 산업",
-        "url": "https://www.mk.co.kr/news/english/12105250"
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.theguru.co.kr/news/article.html?no=104762"
       },
-      "publishedAt": "2026-07-23T01:41:26.000Z",
-      "url": "https://www.mk.co.kr/news/english/12105250",
-      "linkCheckedAt": "2026-07-23T01:46:32.286Z",
-      "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260723.53f9a2bcb8264d9bb321c1b3ce35d39a_R.png",
-      "imageChecked": true
+      "publishedAt": "2026-07-23T01:44:59.000Z",
+      "url": "https://www.theguru.co.kr/news/article.html?no=104762",
+      "linkCheckedAt": "2026-07-23T05:15:00.257Z",
+      "image": null
     },
     {
       "id": 2118,
@@ -102,6 +189,15 @@
             "name": "Google News - LG Global"
           },
           "publishedAt": "2026-07-23T01:38:52.000Z"
+        },
+        {
+          "id": 2121,
+          "headline": "LG전자, 베트남 B2B 소재 공장 신설 글로벌 확대",
+          "url": "https://biz.chosun.com/en/en-it/2026/07/23/53U55MLDGNAWJHEZVCDNIMLNUU/",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-23T01:04:00.000Z"
         }
       ]
     },
@@ -210,6 +306,42 @@
       "url": "https://www.dailian.co.kr/news/view/1669868/%EB%A9%95%EC%8B%9C%EC%BD%94-EU-%EC%83%88-%EB%AC%B4%EC%97%AD%ED%98%91%EC%A0%95-%EC%84%9C%EB%AA%85%EB%B6%81%EB%AF%B8-%EA%B3%B5-2026",
       "linkCheckedAt": "2026-07-22T23:53:59.178Z",
       "image": "https://cdnimage.dailian.co.kr/news/202607/news_1784762912_1669868_m_1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2119,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "통상정책",
+        "미국"
+      ],
+      "headline": "미국 관세 소용돌이 속 중개인 증언",
+      "summary": "미국 가전 시장의 관세 정책 환경 변화와 산업 영향을 중개인 증언을 통해 분석한 보도. 구체적 수치나 정책 내용 미상세.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 가전 시장의 관세 정책을 둘러싼 거래 환경 변화를 중개인 관점에서 조명"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.marketplace.org/story/2026/07/22/as-tariffs-change-this-brokerage-manager-is-navigating-chaos"
+      },
+      "publishedAt": "2026-07-22T22:20:00.000Z",
+      "url": "https://www.marketplace.org/story/2026/07/22/as-tariffs-change-this-brokerage-manager-is-navigating-chaos",
+      "linkCheckedAt": "2026-07-23T05:15:00.257Z",
+      "image": "https://img.apmcdn.org/ad394ade620f3ef7e5a45a3ebd3da2c3292ca584/widescreen/08e8f6-20260722-canada-ports-shipping-strike-labor-economy-2000.jpg",
       "imageChecked": true
     },
     {
@@ -2704,7 +2836,18 @@
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/electrolux-stock-trades-around-yearly-lows-as-margins-stay-under-pressure/69814803",
       "linkCheckedAt": "2026-07-21T18:08:46.796Z",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2706739_1920_1080.webp",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2124,
+          "headline": "Electrolux 약세 전망에 주가 하락, 마진 개선 관심 고조",
+          "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/electrolux-stock-trades-around-recent-lows-as-margin-focus-intensifies/69842835",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-22T23:47:20.000Z"
+        }
+      ]
     },
     {
       "id": 2096,
