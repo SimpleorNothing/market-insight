@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T11:01:51.431Z",
+  "updatedAt": "2026-07-23T12:26:28.208Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -253,7 +253,18 @@
       "url": "https://www.kipost.net/news/articleViewAmp.html?idxno=340090",
       "linkCheckedAt": "2026-07-23T05:15:00.257Z",
       "image": "https://www.kipost.net/news/photo/202607/340090_109234_1511.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2133,
+          "headline": "LG전자, 항균 소재 글로벌 공급망 강화",
+          "url": "https://themalaysianreserve.com/2026/07/23/lg-electronics-strengthens-global-supply-chain-for-advanced-antimicrobial-materials/amp/",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-23T01:50:10.000Z"
+        }
+      ]
     },
     {
       "id": 2126,
@@ -2469,6 +2480,54 @@
       "imageOriginal": "https://img.etnews.com/news/article/2026/07/21/rcv.YNA.20260721.PYH2026072109490001300_P1.jpg",
       "thumbFace": true,
       "linkCheckedAt": "2026-07-21T16:14:19.572Z"
+    },
+    {
+      "id": 2134,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "리쇼어링",
+        "미국 제조",
+        "경쟁사 투자",
+        "생산 기지 확충"
+      ],
+      "headline": "GE Appliances, 미국 제조시설에 30억 달러 투자",
+      "summary": "Haier 산하 GE Appliances가 미국 국내 제조 확대를 위해 30억 달러를 투자한다. 경쟁사의 리쇼어링 전략으로 북미 생산 기지 구축을 추진 중이며, 현지 가전 시장 장악 움직임이 가속화되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE Appliances가 미국 내 제조 시설 확대를 위해 30억 달러 투자 계획"
+        },
+        {
+          "type": "content",
+          "text": "Haier 자회사인 GE Appliances의 북미 생산 기지 구축 전략"
+        }
+      ],
+      "source": {
+        "name": "Google News - Haier Gree Hisense",
+        "url": "https://www.opportimes.com/en/manufacturing-reshoring-ge-appliances-invests-3-billion-in-the-united-states/"
+      },
+      "publishedAt": "2026-07-21T03:21:05.000Z",
+      "url": "https://www.opportimes.com/en/manufacturing-reshoring-ge-appliances-invests-3-billion-in-the-united-states/",
+      "linkCheckedAt": "2026-07-23T12:23:16.684Z",
+      "image": "https://8d073164.delivery.rocketcdn.me/wp-content/uploads/2026/07/Lavadoras-GE-1.png",
+      "imageChecked": true
     },
     {
       "id": 2049,
