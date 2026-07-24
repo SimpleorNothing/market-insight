@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T05:03:08.466Z",
+  "updatedAt": "2026-07-24T07:34:48.995Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -227,6 +227,50 @@
       ]
     },
     {
+      "id": 2202,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "관세",
+        "강제노동",
+        "WTO",
+        "공급망"
+      ],
+      "headline": "미국 강제노동 관세, 브라질 WTO 제소·멕시코·일본 영향 없음",
+      "summary": "미국이 강제노동을 사유로 부과한 관세에 브라질이 WTO 제소. 멕시코와 일본은 현재 정책 변화가 없다고 밝혀 글로벌 공급망 영향도 분화. 주요 생산거점 통상 리스크 상황 진전 주시 필요.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 강제노동 관세에 브라질이 WTO 제소, 정책 철회 촉구"
+        },
+        {
+          "type": "content",
+          "text": "멕시코와 일본은 현재 미국 정책 변화 없다고 공식 입장 표현"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://v.daum.net/v/QYs2OMQ9tA"
+      },
+      "publishedAt": "2026-07-24T01:22:00.000Z",
+      "url": "https://v.daum.net/v/QYs2OMQ9tA",
+      "linkCheckedAt": "2026-07-24T07:31:38.349Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/24/NEWS1/20260724102240422ufsp.jpg",
+      "thumbFace": true
+    },
+    {
       "id": 2190,
       "lens": "정책",
       "grade": "주요",
@@ -354,38 +398,36 @@
       "imageChecked": true
     },
     {
-      "id": 2197,
+      "id": 2201,
       "lens": "경쟁사",
-      "grade": "참고",
-      "impact": 2.4,
+      "grade": "주시",
+      "impact": 3,
       "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 2,
+        "salesRelevance": 3,
+        "timeUrgency": 3,
         "marketSize": 3,
         "sourceReliability": 3
       },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "건조기",
-        "조리기기",
-        "청소기"
-      ],
+      "products": [],
       "competitors": [
         "하이센스"
       ],
       "tags": [
-        "경쟁사 점유율",
         "호주 시장",
-        "가전·TV",
-        "시장 점유율 확대"
+        "점유율",
+        "경쟁 동향",
+        "TV"
       ],
-      "headline": "하이센스, 호주 가전·TV 시장서 경쟁사 추격 제치고 점유율 확대",
-      "summary": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들이 입지를 잃는 가운데 점유율을 확대하고 있다. 채널 뉴스 보도에 따르면 하이센스는 호주 가전업계에서 조용히 우위를 점하면서 주요 경쟁사들의 입지 약화를 활용하고 있다.",
+      "headline": "하이센스, 호주 가전·TV 시장서 경쟁사 추월",
+      "summary": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들을 제치고 점유율을 확대하고 있다. 현지 채널뉴스 보도로, 하이센스의 공격적 가격 경쟁과 제품 다양화가 주요 성장 동인으로 파악된다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들이 경쟁력을 잃는 상황을 활용해 점유율 확대"
+          "text": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들을 제치고 점유율을 확대 중"
+        },
+        {
+          "type": "content",
+          "text": "공격적인 가격 경쟁 및 제품 다양화로 시장 확대 진행"
         }
       ],
       "source": {
@@ -394,7 +436,7 @@
       },
       "publishedAt": "2026-07-24T00:25:21.000Z",
       "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/",
-      "linkCheckedAt": "2026-07-24T04:59:45.201Z",
+      "linkCheckedAt": "2026-07-24T07:31:38.349Z",
       "image": null
     },
     {
@@ -480,6 +522,51 @@
       "url": "https://datanews.co.kr/news/article.html?no=145690",
       "linkCheckedAt": "2026-07-23T23:49:53.736Z",
       "image": null
+    },
+    {
+      "id": 2200,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Trane"
+      ],
+      "tags": [
+        "재생에너지",
+        "탄소감축",
+        "HVAC제조",
+        "멕시코"
+      ],
+      "headline": "Trane, 멕시코 monterrey 공장 태양광 자가발전 확대",
+      "summary": "Trane이 멕시코 monterrey 공장에서 태양광 자가발전 시설을 확대하고 있다. 공조 제조 거점의 재생에너지 자립도 강화로 생산 원가 절감 및 탄소감축을 동시에 추진 중이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Trane이 멕시코 monterrey 생산시설의 태양광 자가발전 능력을 확대 추진 중"
+        },
+        {
+          "type": "content",
+          "text": "공조 제조거점의 에너지 자립 강화를 통한 원가 절감 및 환경 목표 동시 달성"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://mexicobusiness.news/trade-and-investment/news/trane-expands-solar-self-generation-monterrey-plant"
+      },
+      "publishedAt": "2026-07-23T23:02:50.000Z",
+      "url": "https://mexicobusiness.news/trade-and-investment/news/trane-expands-solar-self-generation-monterrey-plant",
+      "linkCheckedAt": "2026-07-24T07:31:38.349Z",
+      "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-07/pexels-quang-nguyen-vinh-222549-6876537.jpg?h=4938c091&itok=mzMhovP7",
+      "imageChecked": true
     },
     {
       "id": 2180,
@@ -1727,6 +1814,53 @@
       "imageChecked": true
     },
     {
+      "id": 2205,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기",
+        "HVAC",
+        "청소기"
+      ],
+      "competitors": [],
+      "tags": [
+        "신사업",
+        "유통모델",
+        "채널확대",
+        "국내"
+      ],
+      "headline": "옆커폰, 휴대폰판매점서 통신·가전 종합매장으로 업태 전환",
+      "summary": "옆커폰이 기존 휴대폰 판매 중심의 사업모델을 벗어나 통신과 가전을 함께 판매하는 종합매장 형태로 전환을 추진 중이다. 이는 유통채널 다각화를 통한 생활가전 판로 확대 전략으로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "옆커폰이 휴대폰 판매점에서 통신·가전 종합매장으로 사업영역 확장 추진"
+        },
+        {
+          "type": "content",
+          "text": "기존 휴대폰 중심 판로에서 생활가전 판매를 함께 취급하는 멀티채널 전략"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 신사업·비즈모델 KR",
+        "url": "https://economist.co.kr/article/view/ecn202607220029"
+      },
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "url": "https://economist.co.kr/article/view/ecn202607220029",
+      "linkCheckedAt": "2026-07-24T07:31:38.349Z",
+      "image": "https://economist.co.kr/data/ecn/image/2026/07/22/ecn20260722000038.800x.0.png",
+      "imageChecked": true
+    },
+    {
       "id": 2146,
       "lens": "경쟁사",
       "grade": "주시",
@@ -2685,6 +2819,63 @@
       "imageChecked": true,
       "imageOriginal": "https://img.asiatoday.co.kr/file/2026y/07m/22d/2026072201001445200079401.jpg",
       "thumbFace": true
+    },
+    {
+      "id": 2207,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "구조조정",
+        "북미전략",
+        "조직개편"
+      ],
+      "headline": "삼성전자, 미국 가전 부문 수백 명 감원 추진",
+      "summary": "삼성전자가 텍사스 본사 이전을 앞두고 미국 소비자 가전 부문에서 수백 명의 일자리를 감축하는 구조조정에 나선다. 이는 북미 가전 사업 재편의 신호로 보인다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 텍사스 본사 이전 앞두고 미국 소비자 가전 부문 수백 명 감원"
+        }
+      ],
+      "source": {
+        "name": "Google News - Appliance Plant Watch",
+        "url": "https://www.msn.com/en-us/money/companies/samsung-cuts-hundreds-of-us-consumer-electronics-jobs-ahead-of-texas-hq-move/ar-AA28f2tm?gemSnapshotKey=GM591B05F4-snapshot-4&uxmode=ruby&cvid=6a5e7a3d8ac343f29f833d7ba0d0d8b2&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
+      },
+      "publishedAt": "2026-07-22T01:24:25.000Z",
+      "url": "https://www.msn.com/en-us/money/companies/samsung-cuts-hundreds-of-us-consumer-electronics-jobs-ahead-of-texas-hq-move/ar-AA28f2tm?gemSnapshotKey=GM591B05F4-snapshot-4&uxmode=ruby&cvid=6a5e7a3d8ac343f29f833d7ba0d0d8b2&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
+      "linkCheckedAt": "2026-07-24T07:31:38.349Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 1887,
+          "headline": "삼성전자 아메리카, 뉴저지 거점 739명 감원",
+          "url": "https://kr.investing.com/news/company-news/article-2020188",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-19T01:17:00.000Z"
+        },
+        {
+          "id": 1958,
+          "headline": "삼성전자, 미국 휴대폰·가전 본부를 텍사스로 이전하며 739명 감원",
+          "url": "https://biz.chosun.com/en/en-it/2026/07/20/F4L557CPSRBO5DYIJGJ5U7FBGE/",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-07-20T08:46:00.000Z"
+        }
+      ]
     },
     {
       "id": 2077,
@@ -4763,59 +4954,6 @@
       "image": "https://cdn.coenworks.com/Files/478/News/202607/8664_20260720180321390.jpg",
       "imageChecked": true,
       "linkCheckedAt": "2026-07-21T16:14:19.572Z"
-    },
-    {
-      "id": 1958,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.4,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "조직개편",
-        "구조조정",
-        "미국시장",
-        "본부이전"
-      ],
-      "headline": "삼성전자, 미국 휴대폰·가전 본부를 텍사스로 이전하며 739명 감원",
-      "summary": "삼성전자가 미국 휴대폰·가전 부문 본부를 텍사스로 이전하면서 739명 규모의 감원을 단행했다. 본사 구조 재편으로 미국 가전 사업의 운영 기지를 조정하는 조치다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "삼성전자가 미국 휴대폰 및 가전 본부를 텍사스로 이전"
-        },
-        {
-          "type": "content",
-          "text": "조직 재편에 따라 739명 규모 감원 단행"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://biz.chosun.com/en/en-it/2026/07/20/F4L557CPSRBO5DYIJGJ5U7FBGE/"
-      },
-      "publishedAt": "2026-07-20T08:46:00.000Z",
-      "url": "https://biz.chosun.com/en/en-it/2026/07/20/F4L557CPSRBO5DYIJGJ5U7FBGE/",
-      "image": "https://biz.chosun.com/resizer/v2/MRSTAYRRGZRGCOJYMQYWINJUGE.jpg?auth=d2292d2c943b1b17f15ddcf79cbd059b7c16b07cb0cc04967c349908871db864&width=1200&height=630&smart=true",
-      "linkCheckedAt": "2026-07-21T16:14:19.572Z",
-      "relatedArticles": [
-        {
-          "id": 1887,
-          "headline": "삼성전자 아메리카, 뉴저지 거점 739명 감원",
-          "url": "https://kr.investing.com/news/company-news/article-2020188",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-07-19T01:17:00.000Z"
-        }
-      ]
     },
     {
       "id": 1956,
@@ -19680,6 +19818,32 @@
       "url": "https://kidd.co.kr/news/246453",
       "image": "https://pimg3.daara.co.kr/kidd/photo/2026/06/23/1782198643_74.jpg",
       "linkCheckedAt": "2026-07-22T01:26:40.868Z"
+    },
+    {
+      "id": 2206,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 1.8,
+      "factors": {
+        "salesRelevance": 1,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [],
+      "headline": "skip",
+      "summary": "",
+      "summaryPoints": [],
+      "source": {
+        "name": "Google News - Appliance New Business Models",
+        "url": "https://www.plasticsnews.com/mergers-acquisitions/pn-bizlink-buys-pas-appliance-systems/"
+      },
+      "publishedAt": "2026-06-23T07:00:00.000Z",
+      "url": "https://www.plasticsnews.com/mergers-acquisitions/pn-bizlink-buys-pas-appliance-systems/",
+      "linkCheckedAt": "2026-07-24T07:31:38.349Z",
+      "image": null
     },
     {
       "id": 976,
