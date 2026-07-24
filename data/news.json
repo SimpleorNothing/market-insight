@@ -1,7 +1,91 @@
 {
-  "updatedAt": "2026-07-24T12:14:57.113Z",
+  "updatedAt": "2026-07-24T14:47:21.736Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2226,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "통상정책",
+        "트럼프",
+        "북미"
+      ],
+      "headline": "트럼프 관세전, 기존 규제 만료 시점 신규 제재 추진",
+      "summary": "트럼프 행정부가 기존 관세 규제 만료를 앞두고 신규 관세 조치를 추진 중이다. 글로벌 가전 제조사의 미국 수출 및 북미 생산 전략에 직접 영향을 미치는 통상 정책 변화다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "트럼프 행정부가 기존 관세 규제 만료 시점에 신규 관세 조치를 추진 중"
+        },
+        {
+          "type": "content",
+          "text": "북미향 수출 기반 가전 제조사의 공급망·가격 전략에 구조적 영향"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.nytimes.com/article/trump-tariffs-trade.html"
+      },
+      "publishedAt": "2026-07-24T13:57:42.000Z",
+      "url": "https://www.nytimes.com/article/trump-tariffs-trade.html",
+      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
+      "image": null
+    },
+    {
+      "id": 2225,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "통상정책",
+        "멕시코",
+        "무역협정",
+        "불확실성"
+      ],
+      "headline": "USMCA 재검토 불확실성, 멕시코 GDP 성장 위협",
+      "summary": "미국의 USMCA 재검토 논의로 멕시코 경제 성장이 불확실성에 직면. 멕시코는 미국·캐나다와의 무역협정 개정 가능성에 따른 GDP 성장률 영향을 받을 전망. 협정 체결국 간 통상 정책 재협상 움직임이 확대되는 추세.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "USMCA 재검토로 멕시코의 GDP 성장 전망이 불확실성에 직면한 상황"
+        },
+        {
+          "type": "content",
+          "text": "미국·캐나다·멕시코 삼국 간 무역협정 개정 논의가 경제 성장에 미치는 영향 심화"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://mexicobusiness.news/policyandeconomy/news/usmca-uncertainty-how-trade-review-risks-mexicos-gdp-growth"
+      },
+      "publishedAt": "2026-07-24T13:00:00.000Z",
+      "url": "https://mexicobusiness.news/policyandeconomy/news/usmca-uncertainty-how-trade-review-risks-mexicos-gdp-growth",
+      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/pictures/2025-11/large-Greyhound-Trading-img-2025-Renato-Campos-1-MBN.jpg?h=61e19443&itok=A2Hexfeh",
+      "thumbFace": true
+    },
     {
       "id": 2212,
       "lens": "정책",
@@ -43,6 +127,50 @@
       "url": "http://www.e2news.com/news/articleViewAmp.html?idxno=332642",
       "linkCheckedAt": "2026-07-24T12:11:39.162Z",
       "image": "https://cdn.e2news.com/news/photo/202607/332642_230645_383.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2216,
+      "lens": "정책",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "ESG",
+        "환경규제",
+        "폐기물감량",
+        "재생에너지",
+        "RE100"
+      ],
+      "headline": "LG전자, 폐기물 감량 목표 조기 달성…재생에너지 이행은 초기 단계",
+      "summary": "LG전자가 폐기물 감량 목표를 예정보다 조기 달성했으나, RE100(재생에너지 100%) 이행은 아직 초기 단계에 있는 것으로 나타났다. ESG 전략 推進 과정에서 환경 목표별 진도가 편차를 보이고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 폐기물 감량 목표를 계획 기한 전에 달성했으나, RE100 이행은 초기 단계"
+        },
+        {
+          "type": "content",
+          "text": "ESG 전략 추진 중 환경 부문별 진도에 차등 발생"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16160"
+      },
+      "publishedAt": "2026-07-24T07:48:04.000Z",
+      "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16160",
+      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
+      "image": "https://cdn.esgeconomy.com/news/thumbnail/202607/16160_23803_1522_v150.jpg",
       "imageChecked": true
     },
     {
@@ -172,6 +300,91 @@
       "url": "https://www.mk.co.kr/news/economy/12106574",
       "linkCheckedAt": "2026-07-24T04:59:45.201Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/24/news-p.v1.20250910.d34d7194d482454daefe84d47fa36730_R.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2218,
+      "lens": "거시",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "거시지표",
+        "지역경제",
+        "자사주매입",
+        "전자산업"
+      ],
+      "headline": "광둥성 상장사 167곳 강세 신호, 전자·배터리 호황 4.4조 자사주 매입",
+      "summary": "광둥성의 167개 상장기업이 강기류 신호를 보이고 있으며, 전자·리튬배터리 부문 호황이 두드러지고 있다. 44억 달러 규모의 자사주 매입 물결이 밸류에이션 신뢰도를 뒷받침하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "광둥성 상장기업 167곳이 불리시 신호 시현, 전자·리튬배터리 부문 호황"
+        },
+        {
+          "type": "content",
+          "text": "44억 달러 규모 자사주 매입 물결이 밸류에이션 신뢰도 강화"
+        }
+      ],
+      "source": {
+        "name": "Google News - Midea Global",
+        "url": "https://finance.biggo.com/news/42be6c43-b537-4eb1-8839-7344c3310053"
+      },
+      "publishedAt": "2026-07-24T04:55:00.000Z",
+      "url": "https://finance.biggo.com/news/42be6c43-b537-4eb1-8839-7344c3310053",
+      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
+      "image": "https://img.biggo.com/hTUahsLGG7gTwK3bdYihZRlzMC59CwDe3zDk1ZQGrhw/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3LzQyYmU2YzQzLWI1MzctNGViMS04ODM5LTczNDRjMzMxMDA1M18xNzg0ODY5NDU2X2RlZmF1bHQuanBn.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2220,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelivance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "강제노동관세",
+        "미국정책",
+        "공급망영향",
+        "수출가격"
+      ],
+      "headline": "미국 강제노동 관세 12.5% 부과, 전자·가전 산업 촉각",
+      "summary": "미국이 강제노동 상품에 대해 12.5% 관세를 부과하는 정책을 추진 중이다. 전자·가전 산업이 해당 규제의 영향 범위와 시행 일정을 예의주시하고 있다. 글로벌 공급망 재편과 수출입 원가 부담 변화가 예상된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국이 강제노동 상품에 12.5% 관세 부과 정책 추진"
+        },
+        {
+          "type": "content",
+          "text": "전자·가전 산업이 규제 범위·시행 일정 확인 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://dealsite.co.kr/articles/165906"
+      },
+      "publishedAt": "2026-07-24T03:20:58.000Z",
+      "url": "https://dealsite.co.kr/articles/165906",
+      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
+      "image": "https://dtd31o1ybbmk8.cloudfront.net/photos/8db5c58a1d8a2dcf233972afffc9b7ae/thumb.png",
       "imageChecked": true
     },
     {
@@ -438,6 +651,47 @@
       "image": null
     },
     {
+      "id": 2224,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "통상협상",
+        "원산지규정",
+        "멕시코",
+        "자동차부품"
+      ],
+      "headline": "미국·멕시코, 자동차 부품 규정 차이로 9월 USMCA 재협상",
+      "summary": "미국과 멕시코가 USMCA(미국·멕시코·캐나다 협정) 자동차 부품 함량 규정을 놓고 입장 차를 보이며 9월 추가 협상을 예정했다. 양국의 자동차 및 관련 부품 산업에 직결된 협상으로, 원산지 규정 변화가 역외 생산 기지(멕시코)의 수출 경쟁력과 북미향 수출 비용을 크게 좌우할 전망이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국과 멕시코, USMCA 자동차 부품 함량 규정을 놓고 입장 차 노출"
+        },
+        {
+          "type": "content",
+          "text": "9월 추가 협상 일정 합의, 규정 재조정 재협상 진행 예정"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.reuters.com/world/americas/us-mexico-set-fourth-round-usmca-talks-amid-differences-over-key-issues-2026-07-24/"
+      },
+      "publishedAt": "2026-07-24T00:57:00.000Z",
+      "url": "https://www.reuters.com/world/americas/us-mexico-set-fourth-round-usmca-talks-amid-differences-over-key-issues-2026-07-24/",
+      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
+      "image": null
+    },
+    {
       "id": 2187,
       "lens": "정책",
       "grade": "긴급",
@@ -525,7 +779,7 @@
       "imageChecked": true
     },
     {
-      "id": 2216,
+      "id": 2219,
       "lens": "경쟁사",
       "grade": "주시",
       "impact": 3,
@@ -540,22 +794,20 @@
         "하이센스"
       ],
       "tags": [
-        "경쟁사 동향",
-        "시장점유율",
-        "호주 시장",
-        "가전",
-        "텔레비전"
+        "경쟁사동향",
+        "지역시장",
+        "호주"
       ],
-      "headline": "하이센스, 호주 가전·TV 시장서 경쟁사 따돌리며 점유율 확대",
-      "summary": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들을 제치고 성장 중이다. 기사는 주요 글로벌 가전업체들이 점유율을 잃어가는 가운데 하이센스의 시장 입지 강화 전략을 분석하고 있다.",
+      "headline": "하이센스, 호주 가전·TV 시장서 경쟁사 추월",
+      "summary": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들을 제치고 시장 점유율을 확대하고 있다. 채널뉴스 호주 보도에 따르면 하이센스는 가전과 TV 분야에서 조용하지만 확실한 성장을 기록하며 주요 경쟁사들의 지위를 약화시키고 있다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "하이센스가 호주 가전·TV 시장에서 경쟁사들에 비해 점유율 확보 중"
+          "text": "하이센스가 호주의 가전 및 TV 시장에서 경쟁사들을 추월하며 점유율을 확대 중"
         },
         {
           "type": "content",
-          "text": "글로벌 주요 가전 제조사들이 호주 시장에서 지분 감소 추세"
+          "text": "주요 경쟁사들이 시장에서 지위 하락을 경험하는 가운데 하이센스의 성장세 두드러짐"
         }
       ],
       "source": {
@@ -564,7 +816,7 @@
       },
       "publishedAt": "2026-07-24T00:25:21.000Z",
       "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/",
-      "linkCheckedAt": "2026-07-24T12:11:39.162Z",
+      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
       "image": "https://www.channelnews.com.au/wp-content/uploads/2025/11/image-1-3.png",
       "imageChecked": true
     },
@@ -1900,13 +2152,13 @@
       ]
     },
     {
-      "id": 2176,
+      "id": 2221,
       "lens": "경쟁사",
       "grade": "주시",
-      "impact": 2.8,
+      "impact": 3.1,
       "factors": {
         "salesRelevance": 3,
-        "timeUrgency": 3,
+        "timeUrgency": 4,
         "marketSize": 2,
         "sourceReliability": 3
       },
@@ -1918,29 +2170,40 @@
         "신사업",
         "렌탈",
         "B2B",
-        "공기청정기"
+        "기업시장"
       ],
-      "headline": "SK매직, 기업 시장 공기청정기 렌탈 사업 진출",
-      "summary": "SK매직이 우리은행에 공기청정기를 납입하며 기업 대상 가전 렌탈 사업을 본격화하고 있다. 가정용 중심의 가전 렌탈 사업을 B2B 시장으로 확대해 새로운 수익원을 확보하려는 움직임으로 보인다.",
+      "headline": "SK매직, 공기청정기 렌탈로 기업 시장 진출",
+      "summary": "SK매직이 우리은행에 공기청정기를 공급하며 기업 대상 가전 렌탈 사업을 본격화하고 있다. 기존 가정용 중심 렌탈 사업을 B2B 시장으로 확대해 새로운 수익원을 모색하고 있다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "SK매직이 우리은행에 공기청정기를 렌탈 형식으로 납입하며 기업 시장 진출"
+          "text": "SK매직이 우리은행 사옥에 공기청정기 렌탈 공급을 시작하며 기업 시장 진출 추진"
         },
         {
           "type": "content",
-          "text": "가정용 중심이던 가전 렌탈 사업을 B2B 고객사로 확대하는 전략"
+          "text": "기존 가정용 렌탈 사업 외에 기업·시설 대상 B2B 렌탈 사업으로 사업 다변화"
         }
       ],
       "source": {
         "name": "Google News - 가전 신사업·비즈모델 KR",
-        "url": "https://www.segye.com/newsView/20260723506332"
+        "url": "https://v.daum.net/v/YDLQ6q71Ae"
       },
-      "publishedAt": "2026-07-23T00:17:36.000Z",
-      "url": "https://www.segye.com/newsView/20260723506332",
-      "linkCheckedAt": "2026-07-23T22:46:50.741Z",
-      "image": "https://www.segye.com/content/image/2026/07/23/20260723506365.jpg",
-      "imageChecked": true
+      "publishedAt": "2026-07-23T00:19:08.000Z",
+      "url": "https://v.daum.net/v/YDLQ6q71Ae",
+      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
+      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/23/segye/20260723091908810rlqi.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2176,
+          "headline": "SK매직, 기업 시장 공기청정기 렌탈 사업 진출",
+          "url": "https://www.segye.com/newsView/20260723506332",
+          "source": {
+            "name": "Google News - 가전 신사업·비즈모델 KR"
+          },
+          "publishedAt": "2026-07-23T00:17:36.000Z"
+        }
+      ]
     },
     {
       "id": 2205,
@@ -3003,6 +3266,15 @@
             "name": "Google News - US Home Appliances"
           },
           "publishedAt": "2026-07-20T08:46:00.000Z"
+        },
+        {
+          "id": 2223,
+          "headline": "삼성전자, 미국 본사 텍사스 이전 및 인력 감축",
+          "url": "https://vocal.media/01/samsung-cuts-us-jobs-as-it-moves-hq-to-texas",
+          "source": {
+            "name": "Google News - Appliance Plant Watch"
+          },
+          "publishedAt": "2026-07-22T07:02:43.000Z"
         }
       ]
     },
