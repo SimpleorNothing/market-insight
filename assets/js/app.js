@@ -258,9 +258,14 @@ async function loadNewsData() {
     } catch (e) {
       /* 아카이브 없음 — 무시 */
     }
-    NEWS_DATA = [...(json.items || []), ...archiveItems].filter(
-      (n) => n.lens && n.grade
-    );
+    NEWS_DATA = [...(json.items || []), ...archiveItems].filter((n) => {
+      // 표시 백스톱: 분류기가 skip 의도로 남긴 오염 레코드
+      // (lens=skip, 또는 headline이 비었거나 "skip" 플레이스홀더)를 화면에서 제외
+      if (!n.lens || n.lens === "skip" || !n.grade) return false;
+      const hl = (n.headline || "").trim().toLowerCase();
+      if (!hl || hl === "skip") return false;
+      return true;
+    });
     NEWS_UPDATED_AT = json.updatedAt;
   } catch (err) {
     console.error("news.json 로드 실패:", err);
