@@ -1172,6 +1172,10 @@ function prune(items) {
 // 제목·내용이 유사한 같은 사건 기사를 1건으로 묶음 (영향도 높은 기사 유지)
 function dedupeMerged(items) {
   const TH = CONFIG.dedupe?.similarityThreshold ?? 0.16;
+  // 엔티티(경쟁사·제품) 폴백 임계: 통상·관세 등 엔티티 없는 정책·거시 기사는 sharesEntity
+  // 게이트를 통과 못 해 진짜 중복도 못 묶였다. 엔티티가 없어도 텍스트 유사도가 이 임계
+  // 이상이면 같은 사건으로 묶는다. TH보다 훨씬 높게 잡아 서로 다른 하위 사건 오병합 방지.
+  const ENTITYLESS_TH = CONFIG.dedupe?.entitylessThreshold ?? 0.3;
   const WIN_MS = (CONFIG.dedupe?.timeWindowHours ?? 72) * 3600e3;
   const sig = items.map((it) => ({
     hb: bigramSet(canonForSim(it.headline)),
@@ -1198,7 +1202,13 @@ function dedupeMerged(items) {
       // 같은 사건은 좁은 시간창에 몰려 터진다. 시간창 게이트가 없으면 낮은 임계값에서
       // 서로 다른 사건이 union-find 전이로 대형 오병합 덩어리를 만든다(검증 완료).
       const sameWindow = Math.abs(sig[i].t - sig[j].t) <= WIN_MS;
-      if (sameWindow && sharesEntity(items[i], items[j]) && textSim(i, j) >= TH) {
+      if (!sameWindow) continue;
+      const sim = textSim(i, j);
+      // (a) 엔티티 공유 + 일반 임계, 또는 (b) 엔티티 없음이어도 높은 텍스트 임계(폴백)
+      const entityMatch = sharesEntity(items[i], items[j]) && sim >= TH;
+      const entitylessMatch =
+        !sharesEntity(items[i], items[j]) && sim >= ENTITYLESS_TH;
+      if (entityMatch || entitylessMatch) {
         parent[find(i)] = find(j);
       }
     }
