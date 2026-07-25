@@ -1,6 +1,6 @@
 # MI (Market Insight) 작업가이드
 
-> **버전**: v1.1 (2026-07-18)
+> **버전**: v1.2 (2026-07-25)
 > **리포**: `SimpleorNothing/market-insight` · **서비스**: https://mi.samsungda.net
 > **유지 규칙**: MI에 변경이 머지될 때마다 이 문서의 §7 업데이트 이력에 한 줄 추가하고, 절차가 바뀌면 해당 섹션을 함께 갱신한다.
 
@@ -27,7 +27,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
       ② Google News 리다이렉트 URL → 발행처 실제 URL 디코딩 (batchexecute)
       ③ Haiku 분류: lens/grade/competitors/products/tags/summary/summaryPoints(원문 사실 정리 점 2~3개, 해석 금지)/insight, skip 규칙
          (시스템 프롬프트 cache_control 캐싱으로 비용 절감)
-      ④ dedupe(similarityThreshold 0.22) · retention(전 등급 365일) · blockKeywords 소급 제거
+      ④ dedupe(같은 사건 묶음: entity+텍스트≥0.16, 시간창 72h) · retention(전 등급 365일) · blockKeywords 소급 제거
       ⑤ og:image 부착(enrichImages, LLM 미사용)
   → data/news.json  (대용량 — API로 직접 로드 불가, raw curl 사용)
   → GitHub Pages 자동 배포 (.github/workflows/deploy-pages.yml, gen-version.mjs로 version.json 생성)
@@ -91,6 +91,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #119 | 07-25 | feat(group): 엔티티 없는 정책·거시 카드 토픽 묶음 — 동반 모듈 topic-group.js(app.js 무수정, makeGroups override) + '토픽별' 보기. (companion) fetch-news.js dedupe 엔티티 폴백(entitylessThreshold 기본 0.30) — 40KB+ 파일이라 §4.4대로 Claude Code 반영 |
 | #117 | 07-23 | feat: 같은 사건 dedupe에 시간창 게이트 + 관련기사 보존/렌더 |
 | #91 | 07-21 | fix: 안 열리는(죽은) 링크 기사 자동 제외 |
 | #116 | 07-21 | feat(config): 소비자·기술·경쟁사 렌즈 센싱 키워드 확충 |
