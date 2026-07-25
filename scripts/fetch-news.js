@@ -1044,6 +1044,11 @@ ${item.region}`;
 
   if (parsed.lens === "skip") return parsed;
 
+  // 오염 가드: 분류기가 skip 의도로 headline/summary에 "skip"(또는 빈 값)을
+  // 남겼는데 lens는 유효값으로 반환한 케이스 → skip 으로 강제해 저장하지 않음.
+  const _hl = (parsed.headline || "").trim();
+  if (!_hl || _hl.toLowerCase() === "skip") return { lens: "skip" };
+
   if (!CONFIG.lenses.includes(parsed.lens)) {
     throw new Error(`lens 검증 실패: ${parsed.lens}`);
   }
