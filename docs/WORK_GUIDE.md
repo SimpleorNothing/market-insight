@@ -91,7 +91,8 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
-| #119 | 07-25 | feat(group): 엔티티 없는 정책·거시 카드 토픽 묶음 — 동반 모듈 topic-group.js(app.js 무수정, makeGroups override) + '토픽별' 보기. (companion) fetch-news.js dedupe 엔티티 폴백(entitylessThreshold 기본 0.30) — 40KB+ 파일이라 §4.4대로 Claude Code 반영 |
+| #120 | 07-25 | feat(dedupe): 엔티티 없는 정책·거시 기사 텍스트 유사도 폴백 |
+| #119 | 07-25 | feat(group): 엔티티 없는 정책·거시 카드 토픽 묶음 — 동반 모듈 topic-group.js(app.js 무수정, makeGroups override) + '토픽별' 보기. companion(fetch-news.js dedupe 엔티티 폴백, entitylessThreshold 기본 0.30)은 #120으로 반영 |
 | #117 | 07-23 | feat: 같은 사건 dedupe에 시간창 게이트 + 관련기사 보존/렌더 |
 | #91 | 07-21 | fix: 안 열리는(죽은) 링크 기사 자동 제외 |
 | #116 | 07-21 | feat(config): 소비자·기술·경쟁사 렌즈 센싱 키워드 확충 |
