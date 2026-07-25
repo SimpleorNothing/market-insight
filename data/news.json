@@ -1,7 +1,48 @@
 {
-  "updatedAt": "2026-07-25T13:01:49.646Z",
+  "updatedAt": "2026-07-25T14:32:33.982Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2299,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "통상협정",
+        "북미 교역",
+        "정책 불확실성"
+      ],
+      "headline": "USMCA 불확실성, 미국 국경 투자 위협",
+      "summary": "미국 텍사스 쿨라 의원이 USMCA(미국-멕시코-캐나다 협정) 재협상·확실성 부족으로 인한 국경 지역 투자 위협을 제기했다. 협정 불확실성이 북미 교역 구조와 생산거점 입지 결정에 영향을 미칠 가능성이 지적되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "USMCA 재협상 및 협정 확실성 부족으로 인해 미국-멕시코 국경 지역의 투자 환경 악화 우려"
+        },
+        {
+          "type": "content",
+          "text": "협정 불확실성이 북미 제조업 생산거점 선정과 교역 흐름에 구조적 영향을 미칠 수 있음"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.tpr.org/economy-and-labor/2026-07-25/usmca-uncertainty-threatens-border-investment-cuellar-says?_amp=true"
+      },
+      "publishedAt": "2026-07-25T12:17:00.000Z",
+      "url": "https://www.tpr.org/economy-and-labor/2026-07-25/usmca-uncertainty-threatens-border-investment-cuellar-says?_amp=true",
+      "linkCheckedAt": "2026-07-25T14:28:59.283Z",
+      "image": "https://npr.brightspotcdn.com/dims4/default/73eeb84/2147483647/strip/true/crop/1920x1080+0+100/resize/1200x675!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F9c%2Fbd%2Fe7f4d1e9471591e6eb5447ad2a01%2Fthumbnail-dsc05645.jpg",
+      "imageChecked": true
+    },
     {
       "id": 2284,
       "lens": "소비자",
@@ -46,7 +87,18 @@
       "url": "https://v.daum.net/v/20260725140004458",
       "linkCheckedAt": "2026-07-25T07:09:54.783Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/25/552786-gygG85f/20260725140004954fbry.png",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2301,
+          "headline": "폭염 속 홈캉스 수요로 여름 가전 판매 급증",
+          "url": "https://www.etoday.co.kr/news/view/2607324",
+          "source": {
+            "name": "Google News - 가전 소비·유통 KR"
+          },
+          "publishedAt": "2026-07-25T05:00:00.000Z"
+        }
+      ]
     },
     {
       "id": 2276,
@@ -193,7 +245,7 @@
       ]
     },
     {
-      "id": 2274,
+      "id": 2300,
       "lens": "정책",
       "grade": "주요",
       "impact": 4.3,
@@ -206,37 +258,39 @@
       "products": [],
       "competitors": [],
       "tags": [
-        "관세",
         "USMCA",
-        "미멕 통상",
-        "북미 무역"
+        "관세",
+        "통상",
+        "미국-멕시코"
       ],
-      "headline": "멕시코, 트럼프 관세에 보복 거부·무역협정으로 수출 보호",
-      "summary": "멕시코가 트럼프 관세에 대한 보복을 거부하고 무역협정의 보호 조치를 통해 수출을 방어하겠다는 입장을 표명했다. 이는 USMCA 등 기존 무역협정 틀에서 수출 구조를 유지하겠다는 신호다.",
+      "headline": "멕시코, 트럼프 관세에 보복 않기로…무역협정으로 수출 보호",
+      "summary": "멕시코가 트럼프 행정부의 관세에 대한 보복을 하지 않기로 결정했다. 멕시코는 무역협정에 따라 수출이 보호받는 입장으로, 협정상 지위를 유지하는 방향을 택한 것으로 보인다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "멕시코 정부가 트럼프 관세에 대한 보복 조치를 거부하기로 결정"
+          "text": "멕시코 정부가 트럼프 행정부의 관세에 대한 보복 조치를 하지 않기로 공식 입장 표명"
         },
         {
           "type": "content",
-          "text": "무역협정 조항을 활용해 멕시코 수출품의 보호 기반 유지 추진"
+          "text": "멕시코 수출이 현행 무역협정에 따라 보호받고 있다는 근거 제시"
         }
       ],
       "source": {
         "name": "Google News - US Trade Policy",
-        "url": "https://aa.com.tr/en/americas/mexico-will-not-retaliate-against-trumps-tariffs-exports-sheltered-under-trade-agreement/4008776"
+        "url": "https://www.aa.com.tr/en/americas/mexico-will-not-retaliate-against-trumps-tariffs-exports-sheltered-under-trade-agreement/4008776"
       },
       "publishedAt": "2026-07-25T01:27:19.000Z",
-      "url": "https://aa.com.tr/en/americas/mexico-will-not-retaliate-against-trumps-tariffs-exports-sheltered-under-trade-agreement/4008776",
-      "linkCheckedAt": "2026-07-25T04:56:04.727Z",
-      "image": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/07/25/thumbs_b_c_5a6ba37c504e55f1a2599cc3142f9e0e.jpg",
+      "url": "https://www.aa.com.tr/en/americas/mexico-will-not-retaliate-against-trumps-tariffs-exports-sheltered-under-trade-agreement/4008776",
+      "linkCheckedAt": "2026-07-25T14:28:59.283Z",
+      "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
+      "imageOriginal": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/07/25/thumbs_b_c_5a6ba37c504e55f1a2599cc3142f9e0e.jpg",
+      "thumbFace": true,
       "relatedArticles": [
         {
-          "id": 2283,
-          "headline": "멕시코, 트럼프 관세에 보복 거부·무역협정 보호",
-          "url": "https://www.aa.com.tr/en/americas/mexico-will-not-retaliate-against-trumps-tariffs-exports-sheltered-under-trade-agreement/4008776",
+          "id": 2274,
+          "headline": "멕시코, 트럼프 관세에 보복 거부·무역협정으로 수출 보호",
+          "url": "https://aa.com.tr/en/americas/mexico-will-not-retaliate-against-trumps-tariffs-exports-sheltered-under-trade-agreement/4008776",
           "source": {
             "name": "Google News - US Trade Policy"
           },
@@ -1665,7 +1719,7 @@
       ]
     },
     {
-      "id": 2202,
+      "id": 2294,
       "lens": "정책",
       "grade": "주요",
       "impact": 4.1,
@@ -1678,31 +1732,31 @@
       "products": [],
       "competitors": [],
       "tags": [
-        "통상",
+        "통상정책",
         "관세",
         "강제노동",
-        "WTO",
+        "WTO분쟁",
         "공급망"
       ],
-      "headline": "미국 강제노동 관세, 브라질 WTO 제소·멕시코·일본 영향 없음",
-      "summary": "미국이 강제노동을 사유로 부과한 관세에 브라질이 WTO 제소. 멕시코와 일본은 현재 정책 변화가 없다고 밝혀 글로벌 공급망 영향도 분화. 주요 생산거점 통상 리스크 상황 진전 주시 필요.",
+      "headline": "미국 강제노동 관세, 브라질 WTO 제소·멕시코·日은 불변",
+      "summary": "미국의 강제노동 관세에 브라질이 WTO 제소로 대응. 멕시코와 일본은 현 상황에 변화가 없다는 입장 표명. 글로벌 공급망에 미치는 통상 규제의 향후 진전 불확실성 가중.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "미국 강제노동 관세에 브라질이 WTO 제소, 정책 철회 촉구"
+          "text": "브라질이 미국의 강제노동 관세에 대해 WTO에 제소 추진"
         },
         {
           "type": "content",
-          "text": "멕시코와 일본은 현재 미국 정책 변화 없다고 공식 입장 표현"
+          "text": "멕시코와 일본은 미국 강제노동 관세 정책에 현 상황 변화 없다는 입장"
         }
       ],
       "source": {
         "name": "Google News - 통상·관세 정책 KR",
-        "url": "https://v.daum.net/v/QYs2OMQ9tA"
+        "url": "https://v.daum.net/v/20260724102240498?f=p"
       },
-      "publishedAt": "2026-07-24T01:22:00.000Z",
-      "url": "https://v.daum.net/v/QYs2OMQ9tA",
-      "linkCheckedAt": "2026-07-24T07:31:38.349Z",
+      "publishedAt": "2026-07-24T01:22:40.000Z",
+      "url": "https://v.daum.net/v/20260724102240498?f=p",
+      "linkCheckedAt": "2026-07-25T14:28:59.283Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/24/NEWS1/20260724102240422ufsp.jpg",
@@ -1718,13 +1772,13 @@
           "publishedAt": "2026-07-24T01:21:21.000Z"
         },
         {
-          "id": 2280,
-          "headline": "미국 강제노동 관세로 브라질 WTO 제소",
-          "url": "https://v.daum.net/v/20260724102240498?f=p",
+          "id": 2202,
+          "headline": "미국 강제노동 관세, 브라질 WTO 제소·멕시코·일본 영향 없음",
+          "url": "https://v.daum.net/v/QYs2OMQ9tA",
           "source": {
             "name": "Google News - 통상·관세 정책 KR"
           },
-          "publishedAt": "2026-07-24T01:22:40.000Z"
+          "publishedAt": "2026-07-24T01:22:00.000Z"
         }
       ]
     },
@@ -2288,6 +2342,50 @@
       "publishedAt": "2026-07-23T18:36:00.000Z",
       "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/",
       "linkCheckedAt": "2026-07-23T18:57:27.952Z",
+      "image": null
+    },
+    {
+      "id": 2293,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Trane"
+      ],
+      "tags": [
+        "Trane",
+        "실적분석",
+        "HVAC",
+        "투자심사"
+      ],
+      "headline": "Trane, 실적 성장 예상으로 매수 검토 대상",
+      "summary": "Trane Technologies의 실적 성장 전망이 주목되고 있다. 야후 파이낸스가 실적 기반 투자 심사를 제시했다. HVAC 글로벌 시장에서 경쟁사 매출 모멘텀을 반영한 분석이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Trane Technologies의 실적 성장이 기대되는 상황"
+        },
+        {
+          "type": "content",
+          "text": "야후 파이낸스가 투자 매수 검토 대상으로 제시"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/trane-technologies-tt-earnings-expected-140033683.html"
+      },
+      "publishedAt": "2026-07-23T14:00:33.000Z",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trane-technologies-tt-earnings-expected-140033683.html",
+      "linkCheckedAt": "2026-07-25T14:28:59.283Z",
       "image": null
     },
     {
@@ -3136,14 +3234,14 @@
       ]
     },
     {
-      "id": 2221,
+      "id": 2296,
       "lens": "경쟁사",
       "grade": "주시",
-      "impact": 3.1,
+      "impact": 3.3,
       "factors": {
         "salesRelevance": 3,
         "timeUrgency": 4,
-        "marketSize": 2,
+        "marketSize": 3,
         "sourceReliability": 3
       },
       "products": [
@@ -3152,29 +3250,29 @@
       "competitors": [],
       "tags": [
         "신사업",
-        "렌탈",
+        "구독렌탈",
         "B2B",
         "기업시장"
       ],
-      "headline": "SK매직, 공기청정기 렌탈로 기업 시장 진출",
-      "summary": "SK매직이 우리은행에 공기청정기를 공급하며 기업 대상 가전 렌탈 사업을 본격화하고 있다. 기존 가정용 중심 렌탈 사업을 B2B 시장으로 확대해 새로운 수익원을 모색하고 있다.",
+      "headline": "SK매직, 기업 고객향 공기청정기 렌탈 사업 진출",
+      "summary": "SK매직이 우리은행에 공기청정기를 납품하며 기업 시장 대상 렌탈 사업을 확대하고 있다. 가전 제조사의 신규 수익모델인 구독·렌탈 서비스를 B2B 영역으로 확장하는 전략으로, 기존 가정용 시장을 넘어 기업·시설 고객층을 대상으로 한다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "SK매직이 우리은행 사옥에 공기청정기 렌탈 공급을 시작하며 기업 시장 진출 추진"
+          "text": "SK매직이 우리은행에 공기청정기를 납품하는 렌탈 사업 추진"
         },
         {
           "type": "content",
-          "text": "기존 가정용 렌탈 사업 외에 기업·시설 대상 B2B 렌탈 사업으로 사업 다변화"
+          "text": "기업 고객 대상 가전 렌탈 서비스로 B2B 시장 진출"
         }
       ],
       "source": {
         "name": "Google News - 가전 신사업·비즈모델 KR",
-        "url": "https://v.daum.net/v/YDLQ6q71Ae"
+        "url": "https://v.daum.net/v/20260723091908413?f=p"
       },
       "publishedAt": "2026-07-23T00:19:08.000Z",
-      "url": "https://v.daum.net/v/YDLQ6q71Ae",
-      "linkCheckedAt": "2026-07-24T14:43:41.325Z",
+      "url": "https://v.daum.net/v/20260723091908413?f=p",
+      "linkCheckedAt": "2026-07-25T14:28:59.283Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/23/segye/20260723091908810rlqi.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -3186,6 +3284,15 @@
             "name": "Google News - 가전 신사업·비즈모델 KR"
           },
           "publishedAt": "2026-07-23T00:17:36.000Z"
+        },
+        {
+          "id": 2221,
+          "headline": "SK매직, 공기청정기 렌탈로 기업 시장 진출",
+          "url": "https://v.daum.net/v/YDLQ6q71Ae",
+          "source": {
+            "name": "Google News - 가전 신사업·비즈모델 KR"
+          },
+          "publishedAt": "2026-07-23T00:19:08.000Z"
         }
       ]
     },
@@ -30000,7 +30107,7 @@
       "publishedAt": "2026-06-03T05:51:00.000Z",
       "url": "https://www.donga.com/news/Economy/article/all/20260603/134041702/1",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/06/03/134041616.1.jpg",
-      "linkCheckedAt": "2026-07-22T12:20:47.170Z"
+      "linkCheckedAt": "2026-07-25T14:28:11.140Z"
     },
     {
       "id": 405,
@@ -30032,7 +30139,7 @@
       "publishedAt": "2026-06-03T03:04:47.000Z",
       "url": "https://www.msn.com/en-us/money/topstocks/whirlpool-whr-stock-dips-while-market-gains-key-facts/ar-AA24GlMR",
       "image": null,
-      "linkCheckedAt": "2026-07-22T12:20:47.170Z"
+      "linkCheckedAt": "2026-07-25T14:28:11.140Z"
     },
     {
       "id": 391,
@@ -30063,7 +30170,7 @@
       "publishedAt": "2026-06-03T02:21:36.000Z",
       "url": "https://www.etnews.com/20260603000055",
       "image": "https://img.etnews.com/news/article/2025/08/07/news-p.v1.20250807.ee27c8bb11514ea99e6351ef3422c04a_P1.jpg",
-      "linkCheckedAt": "2026-07-22T12:20:47.170Z"
+      "linkCheckedAt": "2026-07-25T14:28:11.140Z"
     },
     {
       "id": 392,
@@ -30094,7 +30201,7 @@
       "publishedAt": "2026-06-03T02:02:53.000Z",
       "url": "https://www.etnews.com/20260603000044",
       "image": "https://img.etnews.com/news/article/2026/06/03/news-p.v1.20260603.1504fe8feef54bcb9f450594150d11b0_P1.jpg",
-      "linkCheckedAt": "2026-07-22T12:20:47.170Z"
+      "linkCheckedAt": "2026-07-25T14:28:11.140Z"
     },
     {
       "id": 389,
@@ -30127,7 +30234,7 @@
       "publishedAt": "2026-06-02T22:30:00.000Z",
       "url": "https://jejumbc.com/NewsArticle/843738",
       "image": "https://img.youtube.com/vi/3wMWntZPDIU/maxresdefault.jpg",
-      "linkCheckedAt": "2026-07-22T12:20:47.170Z"
+      "linkCheckedAt": "2026-07-25T14:28:11.140Z"
     },
     {
       "id": 426,
@@ -30167,7 +30274,7 @@
       "publishedAt": "2026-06-02T12:20:00.000Z",
       "url": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202606020009",
       "image": "https://www.kedglobal.com/data/ked/image/2026/06/02/ked202606020053.jpg",
-      "linkCheckedAt": "2026-07-22T12:20:47.170Z"
+      "linkCheckedAt": "2026-07-25T14:28:11.140Z"
     },
     {
       "id": 378,
@@ -30200,7 +30307,7 @@
       "publishedAt": "2026-06-02T07:00:00.000Z",
       "url": "https://www.yna.co.kr/amp/view/AKR20260602119600530",
       "image": "https://img7.yna.co.kr/etc/inner/KR/2026/06/02/AKR20260602119600530_01_i_P4.jpg",
-      "linkCheckedAt": "2026-07-22T12:20:47.170Z"
+      "linkCheckedAt": "2026-07-25T14:28:11.140Z"
     },
     {
       "id": 371,
@@ -30234,7 +30341,7 @@
       "publishedAt": "2026-06-02T03:59:08.000Z",
       "url": "https://www.etnews.com/20260602000190",
       "image": "https://img.etnews.com/news/article/2026/06/02/news-p.v1.20260602.42578e59d659427da38cc5e39f432295_P1.jpg",
-      "linkCheckedAt": "2026-07-22T12:20:47.170Z"
+      "linkCheckedAt": "2026-07-25T14:28:11.140Z"
     },
     {
       "id": 372,
