@@ -91,6 +91,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #122 | 07-27 | feat(sensing): 경쟁사 로봇·미래사업 기사 수집 커버리지 보강 |
 | #121 | 07-25 | fix: "skip"/빈 headline 오염 카드 화면 제외 + 분류기 저장 가드 |
 | #120 | 07-25 | feat(dedupe): 엔티티 없는 정책·거시 기사 텍스트 유사도 폴백 |
 | #119 | 07-25 | feat(group): 엔티티 없는 정책·거시 카드 토픽 묶음 — 동반 모듈 topic-group.js(app.js 무수정, makeGroups override) + '토픽별' 보기. companion(fetch-news.js dedupe 엔티티 폴백, entitylessThreshold 기본 0.30)은 #120으로 반영 |
