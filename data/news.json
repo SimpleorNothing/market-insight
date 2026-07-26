@@ -1,7 +1,182 @@
 {
-  "updatedAt": "2026-07-25T23:53:46.669Z",
+  "updatedAt": "2026-07-26T01:48:20.911Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2312,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesRelivance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "현대차그룹",
+        "피지컬AI",
+        "자율주행",
+        "전략발표"
+      ],
+      "headline": "현대차그룹, 피지컬AI 리더 포지셔닝 강화",
+      "summary": "현대차그룹이 샌프란시스코에서 피지컬AI 리더 비전을 발표했다. 엔비디아·웨이모·구글 등과 AI 협력을 확대하고, AVP(자율주행 플랫폼) 신설 및 글로벌 인재 확보에 나선다. 자동차 제조에서 미래 모빌리티 솔루션 기업으로의 전략적 전환을 추진 중이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "현대차그룹이 샌프란시스코에서 피지컬AI 리더 비전 발표"
+        },
+        {
+          "type": "content",
+          "text": "엔비디아·웨이모·구글과 AI 협력 확대, AVP 신설 추진"
+        },
+        {
+          "type": "content",
+          "text": "자동차 중심에서 미래 모빌리티 솔루션 기업으로 포지셔닝 전환"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/business/12107525"
+      },
+      "publishedAt": "2026-07-26T01:43:12.000Z",
+      "url": "https://www.mk.co.kr/news/business/12107525",
+      "linkCheckedAt": "2026-07-26T01:44:56.153Z",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/26/news-p.v1.20260726.945c0d82af4f42589eedc7ed34428e31_R.png",
+      "imageChecked": true
+    },
+    {
+      "id": 2318,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "냉장고",
+        "인스타뷰",
+        "판매실적",
+        "히트상품"
+      ],
+      "headline": "LG전자 인스타뷰 냉장고 530만대 판매, 분당 1대 판매율",
+      "summary": "LG전자의 '인스타뷰' 냉장고가 누적 판매 530만대를 기록했다. 분당 1대 판매율을 보이며 글로벌 시장에서 높은 소비자 수요를 입증하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 인스타뷰 냉장고 누적 판매량 530만대 달성"
+        },
+        {
+          "type": "content",
+          "text": "분당 1대 판매 페이스로 글로벌 소비자 수요 확인"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://thetracker.co.kr/View.aspx?No=4162248"
+      },
+      "publishedAt": "2026-07-26T01:00:16.000Z",
+      "url": "https://thetracker.co.kr/View.aspx?No=4162248",
+      "linkCheckedAt": "2026-07-26T01:44:56.153Z",
+      "image": "https://cdn.coenworks.com/Files/478/News/202607/8664_20260726095226590.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2313,
+          "headline": "LG전자 인스타뷰 냉장고 누적 판매 530만대 돌파",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4426871",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-26T01:06:20.000Z"
+        },
+        {
+          "id": 2320,
+          "headline": "LG전자, InstaView 냉장고 글로벌 500만 대 판매 돌파",
+          "url": "https://biz.chosun.com/en/en-it/2026/07/26/RXV6VEIJ6NBKHLB2WWJFRCBFAU/",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-26T01:00:00.000Z"
+        },
+        {
+          "id": 2286,
+          "headline": "LG 인스타뷰 냉장고 글로벌 530만대 판매 돌파",
+          "url": "https://www.thailand-business-news.com/pr-news/lg-instaview-refrigerator-surpasses-5-3-million-in-global-sales",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-24T02:05:47.000Z"
+        },
+        {
+          "id": 2215,
+          "headline": "LG 인스타뷰 냉장고 글로벌 누적 530만대 돌파",
+          "url": "https://themalaysianreserve.com/2026/07/24/lg-instaview-refrigerator-surpasses-5-3-million-in-global-sales/",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-24T02:50:32.000Z"
+        },
+        {
+          "id": 2302,
+          "headline": "LG InstaView 냉장고 누적 판매 530만 대 돌파",
+          "url": "https://www.kipost.net/news/articleViewAmp.html?idxno=340128",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-24T02:59:12.000Z"
+        },
+        {
+          "id": 2315,
+          "headline": "LG전자 노크온 냉장고 500만대 돌파, 10년간 누적",
+          "url": "https://v.daum.net/v/20260726100209294",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-26T01:02:09.000Z"
+        },
+        {
+          "id": 2314,
+          "headline": "LG전자 인스타뷰 냉장고 글로벌 500만대 돌파",
+          "url": "https://biz.chosun.com/it-science/ict/2026/07/26/FA3DLVGOS5DYNGYAUG4BEGZ7NM/",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-26T01:02:48.000Z"
+        },
+        {
+          "id": 2317,
+          "headline": "LG전자 인스타뷰 냉장고 글로벌 500만대 판매 달성",
+          "url": "https://www.viva100.com/article/20260726500094",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-26T01:01:00.000Z"
+        },
+        {
+          "id": 2316,
+          "headline": "LG 인스타뷰 냉장고 글로벌 500만대 판매 달성",
+          "url": "https://www.etnews.com/20260726000068",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-26T01:34:15.000Z"
+        }
+      ]
+    },
     {
       "id": 2311,
       "lens": "소비자",
@@ -1661,67 +1836,6 @@
       "imageChecked": true
     },
     {
-      "id": 2302,
-      "lens": "소비자",
-      "grade": "주요",
-      "impact": 3.8,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "냉장고"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "냉장고",
-        "프리미엄",
-        "글로벌 판매",
-        "누적 실적"
-      ],
-      "headline": "LG InstaView 냉장고 누적 판매 530만 대 돌파",
-      "summary": "LG전자의 InstaView 냉장고가 글로벌 누적 판매량 530만 대를 넘었다. 투명 도어 기술 기반 프리미엄 냉장고 라인으로, 출시 이후 지속적인 수요 증가를 기록하고 있다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG InstaView 냉장고 글로벌 누적 판매량 530만 대 달성"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.kipost.net/news/articleViewAmp.html?idxno=340128"
-      },
-      "publishedAt": "2026-07-24T02:59:12.000Z",
-      "url": "https://www.kipost.net/news/articleViewAmp.html?idxno=340128",
-      "linkCheckedAt": "2026-07-25T15:55:53.514Z",
-      "image": "https://www.kipost.net/news/photo/202607/340128_109286_5506.jpg",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 2286,
-          "headline": "LG 인스타뷰 냉장고 글로벌 530만대 판매 돌파",
-          "url": "https://www.thailand-business-news.com/pr-news/lg-instaview-refrigerator-surpasses-5-3-million-in-global-sales",
-          "source": {
-            "name": "Google News - LG Global"
-          },
-          "publishedAt": "2026-07-24T02:05:47.000Z"
-        },
-        {
-          "id": 2215,
-          "headline": "LG 인스타뷰 냉장고 글로벌 누적 530만대 돌파",
-          "url": "https://themalaysianreserve.com/2026/07/24/lg-instaview-refrigerator-surpasses-5-3-million-in-global-sales/",
-          "source": {
-            "name": "Google News - LG Global"
-          },
-          "publishedAt": "2026-07-24T02:50:32.000Z"
-        }
-      ]
-    },
-    {
       "id": 2198,
       "lens": "정책",
       "grade": "긴급",
@@ -2051,6 +2165,53 @@
       "url": "https://www.mtnews.net/news/articleView.html?idxno=25418",
       "linkCheckedAt": "2026-07-25T18:50:39.636Z",
       "image": "https://cdn.mtnews.net/news/photo/202607/25418_52996_4621.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2322,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "조리기기"
+      ],
+      "competitors": [
+        "하이센스"
+      ],
+      "tags": [
+        "시장점유율",
+        "호주시장",
+        "가전",
+        "경쟁동향"
+      ],
+      "headline": "하이센스, 호주 가전·TV 시장에서 경쟁사 추격",
+      "summary": "하이센스가 호주 가전 및 TV 시장에서 경쟁업체들이 입지를 잃는 와중에 점유율을 확대하고 있다. 채널뉴스 보도에 따르면 하이센스는 냉장고, 세탁기 등 생활가전과 텔레비전 카테고리에서 동시에 성장세를 이어가고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들이 지분을 잃는 가운데 성장 중"
+        },
+        {
+          "type": "content",
+          "text": "냉장고, 세탁기 등 주요 생활가전 카테고리에서 입지 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - Haier Gree Hisense",
+        "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/"
+      },
+      "publishedAt": "2026-07-24T00:25:21.000Z",
+      "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/",
+      "linkCheckedAt": "2026-07-26T01:44:56.153Z",
+      "image": "https://www.channelnews.com.au/wp-content/uploads/2025/11/image-1-3.png",
       "imageChecked": true
     },
     {
@@ -3634,7 +3795,7 @@
       },
       "publishedAt": "2026-07-22T23:35:00.000Z",
       "url": "https://www.newspim.com/news/view/20260723000093",
-      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "linkCheckedAt": "2026-07-26T01:44:32.760Z",
       "image": "https://img.newspim.com/news/2026/07/23/2607230827340060_t1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -3692,7 +3853,7 @@
       },
       "publishedAt": "2026-07-22T23:29:00.000Z",
       "url": "https://www.dailian.co.kr/news/view/1669868/%EB%A9%95%EC%8B%9C%EC%BD%94-EU-%EC%83%88-%EB%AC%B4%EC%97%AD%ED%98%91%EC%A0%95-%EC%84%9C%EB%AA%85%EB%B6%81%EB%AF%B8-%EA%B3%B5-2026",
-      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "linkCheckedAt": "2026-07-26T01:44:32.760Z",
       "image": "https://cdnimage.dailian.co.kr/news/202607/news_1784762912_1669868_m_1.jpg",
       "imageChecked": true
     },
@@ -4417,7 +4578,7 @@
       },
       "publishedAt": "2026-07-22T06:02:52.000Z",
       "url": "http://m.socialvalue.kr/news/amp.html?ncode=1065592940386224",
-      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "linkCheckedAt": "2026-07-26T01:44:32.760Z",
       "image": "https://www.socialvalue.kr/news/data/20260722/p1065592940386224_142_thum.png",
       "imageChecked": true
     },
@@ -5748,7 +5909,7 @@
       },
       "publishedAt": "2026-07-21T04:51:24.000Z",
       "url": "https://www.segye.com/newsView/20260721513422",
-      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "linkCheckedAt": "2026-07-26T01:44:32.760Z",
       "image": "https://www.segye.com/content/image/2026/07/21/20260721513417.jpg",
       "imageChecked": true
     },
@@ -6791,7 +6952,7 @@
       },
       "publishedAt": "2026-07-20T07:00:00.000Z",
       "url": "https://www.dailyt.co.kr/newsView/dlt202607200013",
-      "linkCheckedAt": "2026-07-22T23:53:59.178Z",
+      "linkCheckedAt": "2026-07-26T01:44:32.760Z",
       "image": "https://www.dailyt.co.kr/data/dlt/image/2026/07/21/dlt202607210008.jpeg",
       "imageChecked": true
     },
