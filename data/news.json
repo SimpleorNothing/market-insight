@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T12:59:09.814Z",
+  "updatedAt": "2026-07-26T14:26:51.164Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -721,7 +721,7 @@
       "thumbFace": true
     },
     {
-      "id": 2268,
+      "id": 2338,
       "lens": "정책",
       "grade": "긴급",
       "impact": 4.9,
@@ -731,45 +731,38 @@
         "marketSize": 5,
         "sourceReliability": 4
       },
-      "products": [
-        "냉장고",
-        "세탁기",
-        "조리기기",
-        "HVAC"
-      ],
+      "products": [],
       "competitors": [
         "삼성전자",
         "LG전자"
       ],
       "tags": [
-        "관세정책",
-        "통상규제",
-        "생산기지전략",
-        "북미시장"
+        "관세",
+        "통상정책",
+        "생산전략",
+        "공급망",
+        "북미"
       ],
-      "headline": "트럼프 관세 압박 재점화, 삼성·LG 글로벌 생산 전략 재구성",
-      "summary": "트럼프 관세 정책 재개로 삼성전자·LG전자의 다국적 생산기지 전략이 영향을 받을 것으로 예상된다. 특히 멕시코 등 역외 생산 및 북미 수출 비중이 높은 가전 부문에서 통상 구조 변화에 대응하는 생산기지 최적화가 시급한 상황이다.",
+      "headline": "트럼프 관세 압박, 삼성·LG 글로벌 생산 전략 시험台",
+      "summary": "Trump 행정부의 관세 정책이 강화되면서 삼성전자와 LG전자의 글로벌 생산 및 공급망 전략에 압력이 가해지고 있다. 두 사는 멕시코 등 역외 생산거점을 통한 북미 수출 구조를 재점검하고 있으며, 관세율 변화에 따른 원가 부담 및 경쟁력 조정이 불가피할 전망이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "트럼프 관세 압박이 재점화되며 삼성전자·LG전자의 글로벌 생산기지 전략이 시험대에 올랐다"
+          "text": "Trump 정책에 따른 관세 압박이 삼성전자, LG전자의 글로벌 생산 전략에 직접 영향 미치는 중"
         },
         {
           "type": "content",
-          "text": "멕시코 등 역외 생산거점과 북미향 수출 구조의 통상·관세 리스크 재평가 필요"
+          "text": "멕시코 등 역외 생산거점 경쟁력 재평가 및 공급망 최적화 필요성 대두"
         }
       ],
       "source": {
-        "name": "Google News - 통상·관세 정책 KR",
-        "url": "https://m.sedaily.com/amparticle/20071542"
+        "name": "Google News - LG Global",
+        "url": "https://en.sedaily.com/finance/2026/07/25/trump-tariff-pressure-tests-samsung-lg-global-production"
       },
-      "publishedAt": "2026-07-25T01:30:00.000Z",
-      "url": "https://m.sedaily.com/amparticle/20071542",
-      "linkCheckedAt": "2026-07-25T04:56:04.727Z",
-      "image": "assets/img/topics/policy.svg",
-      "imageChecked": true,
-      "imageOriginal": "https://wimg.sedaily.com/news/cms/2026/07/24/news-p.v1.20260723.9e4047d020d243aa9eda72f28c88d4e5_R.jpg",
-      "thumbFace": true,
+      "publishedAt": "2026-07-25T01:30:05.000Z",
+      "url": "https://en.sedaily.com/finance/2026/07/25/trump-tariff-pressure-tests-samsung-lg-global-production",
+      "linkCheckedAt": "2026-07-26T14:23:22.428Z",
+      "image": null,
       "relatedArticles": [
         {
           "id": 2265,
@@ -781,13 +774,13 @@
           "publishedAt": "2026-07-25T01:30:00.000Z"
         },
         {
-          "id": 2331,
-          "headline": "트럼프 관세 압박, 삼성·LG 글로벌 생산 전략 시험대",
-          "url": "https://en.sedaily.com/finance/2026/07/25/trump-tariff-pressure-tests-samsung-lg-global-production",
+          "id": 2268,
+          "headline": "트럼프 관세 압박 재점화, 삼성·LG 글로벌 생산 전략 재구성",
+          "url": "https://m.sedaily.com/amparticle/20071542",
           "source": {
-            "name": "Google News - LG Global"
+            "name": "Google News - 통상·관세 정책 KR"
           },
-          "publishedAt": "2026-07-25T01:30:05.000Z"
+          "publishedAt": "2026-07-25T01:30:00.000Z"
         }
       ]
     },
@@ -2458,6 +2451,48 @@
       "url": "https://www.mtnews.net/news/articleView.html?idxno=25418",
       "linkCheckedAt": "2026-07-25T18:50:39.636Z",
       "image": "https://cdn.mtnews.net/news/photo/202607/25418_52996_4621.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2339,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "하이센스"
+      ],
+      "tags": [
+        "시장점유",
+        "호주",
+        "경쟁동향"
+      ],
+      "headline": "하이센스, 호주 가전·TV 시장서 경쟁사 제치고 점유율 확대",
+      "summary": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들이 입지를 잃는 가운데 점유율을 확대하고 있다. 원문에 구체적인 수치나 제품별 성과는 기재되지 않았으나, 현지 시장에서 경쟁 동향의 변화가 일어나고 있음을 시사한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "하이센스가 호주 가전 및 TV 시장에서 경쟁사 대비 점유율을 확대 중"
+        },
+        {
+          "type": "content",
+          "text": "경쟁사들이 호주 시장에서 입지를 잃고 있는 상황"
+        }
+      ],
+      "source": {
+        "name": "Google News - Haier Gree Hisense",
+        "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/"
+      },
+      "publishedAt": "2026-07-24T00:25:21.000Z",
+      "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/",
+      "linkCheckedAt": "2026-07-26T14:23:22.428Z",
+      "image": "https://www.channelnews.com.au/wp-content/uploads/2025/11/image-1-3.png",
       "imageChecked": true
     },
     {
