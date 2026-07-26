@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T20:06:57.361Z",
+  "updatedAt": "2026-07-26T21:51:52.532Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -361,6 +361,59 @@
       "linkCheckedAt": "2026-07-26T12:55:33.426Z",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2701705_1920_1080.webp",
       "imageChecked": true
+    },
+    {
+      "id": 2352,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "실적",
+        "구조조정",
+        "수익성"
+      ],
+      "headline": "Electrolux, 실적·구조조정 평가 속 주가 변동성",
+      "summary": "Electrolux가 최근 실적 발표와 구조조정을 배경으로 마진율 개선에 대한 투자자 평가가 엇갈리며 주가가 변동 중이다. 회사의 수익성 전망이 시장의 주요 포커스가 되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Electrolux 주가, 최근 실적 발표와 구조조정 관련 투자자 평가 분산으로 변동성 중"
+        },
+        {
+          "type": "content",
+          "text": "마진율 개선이 시장의 핵심 평가 기준으로 부상 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/electrolux-stock-trades-amid-margin-focus-as-investors-assess-recent/69876510"
+      },
+      "publishedAt": "2026-07-26T09:51:21.000Z",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/electrolux-stock-trades-amid-margin-focus-as-investors-assess-recent/69876510",
+      "linkCheckedAt": "2026-07-26T21:48:45.967Z",
+      "image": "https://mdb.ad-hoc-news.de/bild/bild-2706736_1920_1080.webp",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2151,
+          "headline": "Electrolux 구조조정으로 부품사 Ilpea 사우스캐롤라이나 공장 폐쇄",
+          "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/",
+          "source": {
+            "name": "Google News - Midea Global"
+          },
+          "publishedAt": "2026-07-23T18:36:00.000Z"
+        }
+      ]
     },
     {
       "id": 2319,
@@ -2567,6 +2620,56 @@
       "imageChecked": true
     },
     {
+      "id": 2351,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "하이센스"
+      ],
+      "tags": [
+        "점유율",
+        "지역시장",
+        "경쟁전략",
+        "호주"
+      ],
+      "headline": "하이센스, 호주 가전시장서 경쟁사 추격 따돌리며 성장 중",
+      "summary": "하이센스가 호주 가전 및 TV 시장에서 경쟁사들의 입지를 잠식하며 점유율을 확대 중이다. 채널뉴스 보도에 따르면 하이센스는 호주 시장에서 조용히 존재감을 높이면서 기존 경쟁사들이 지반을 잃고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "하이센스가 호주 가전·TV 시장에서 경쟁사들의 입지를 추격하며 점유율 확대 중"
+        },
+        {
+          "type": "content",
+          "text": "기존 주요 경쟁사들이 호주 시장에서 지반 약화 추세 진행"
+        }
+      ],
+      "source": {
+        "name": "Google News - Haier Gree Hisense",
+        "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/"
+      },
+      "publishedAt": "2026-07-24T00:25:21.000Z",
+      "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/",
+      "linkCheckedAt": "2026-07-26T21:48:45.967Z",
+      "image": "https://www.channelnews.com.au/wp-content/uploads/2025/11/image-1-3.png",
+      "imageChecked": true
+    },
+    {
       "id": 2185,
       "lens": "정책",
       "grade": "긴급",
@@ -3044,47 +3147,6 @@
       "image": null
     },
     {
-      "id": 2151,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 2.8,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 2,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "Electrolux"
-      ],
-      "tags": [
-        "구조조정",
-        "공급망",
-        "북미"
-      ],
-      "headline": "Electrolux 구조조정으로 부품사 Ilpea 사우스캐롤라이나 공장 폐쇄",
-      "summary": "Electrolux의 구조조정이 협력사까지 영향을 미치고 있다. 주요 플라스틱 부품 공급업체 Ilpea가 사우스캐롤라이나 공장을 폐쇄하고 있으며, 이는 Electrolux의 리구조링 정책의 연쇄 효과로 지적된다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "Electrolux의 구조조정이 부품 공급업체에도 영향, Ilpea가 사우스캐롤라이나 공장 폐쇄 결정"
-        },
-        {
-          "type": "content",
-          "text": "플라스틱 부품 공급사 Ilpea의 사업 축소로 가전 업체들의 북미 공급망 재조정 가능성"
-        }
-      ],
-      "source": {
-        "name": "Google News - Midea Global",
-        "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/"
-      },
-      "publishedAt": "2026-07-23T18:36:00.000Z",
-      "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/",
-      "linkCheckedAt": "2026-07-26T20:03:22.659Z",
-      "image": null
-    },
-    {
       "id": 2138,
       "lens": "경쟁사",
       "grade": "참고",
@@ -3558,7 +3620,7 @@
       },
       "publishedAt": "2026-07-23T04:52:11.000Z",
       "url": "https://www.etnews.com/20260723000286",
-      "linkCheckedAt": "2026-07-23T20:09:06.950Z",
+      "linkCheckedAt": "2026-07-26T21:47:58.430Z",
       "image": "https://img.etnews.com/news/article/2024/09/22/news-p.v1.20240922.f3491a926fa14e408b0a6c0539b2d226_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -3618,7 +3680,7 @@
       },
       "publishedAt": "2026-07-23T02:24:42.000Z",
       "url": "http://www.china.org.cn/2026-07/23/content_118613747.shtml",
-      "linkCheckedAt": "2026-07-23T20:09:06.950Z",
+      "linkCheckedAt": "2026-07-26T21:47:58.430Z",
       "image": null
     },
     {
@@ -3751,7 +3813,7 @@
       },
       "publishedAt": "2026-07-23T02:00:00.000Z",
       "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260722_0003719055",
-      "linkCheckedAt": "2026-07-23T20:09:06.950Z",
+      "linkCheckedAt": "2026-07-26T21:47:58.430Z",
       "image": "https://img1.newsis.com/2026/07/22/NISI20260722_0002193037_web.jpg",
       "imageChecked": true
     },
