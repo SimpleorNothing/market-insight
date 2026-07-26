@@ -1,7 +1,101 @@
 {
-  "updatedAt": "2026-07-26T11:57:38.657Z",
+  "updatedAt": "2026-07-26T12:59:09.814Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2330,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesRelivance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3,
+        "salesRelevance": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "건강",
+        "실내환경",
+        "냉방",
+        "소비자인식"
+      ],
+      "headline": "에어컨 장시간 사용 시 안구건조증 위험 증가",
+      "summary": "에어컨을 하루종일 사용할 경우 안구건조증 위험이 높아진다는 내용의 보도. 냉방기기 사용이 실내 습도 저하와 눈 건조를 유발할 수 있음을 지적.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "에어컨 장시간 운전으로 인한 실내 습도 저하가 안구건조증 유발 요인으로 작용"
+        },
+        {
+          "type": "content",
+          "text": "냉방 환경에서 눈 건조 증상 호소 사례 증가"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.munhwa.com/article/11605080"
+      },
+      "publishedAt": "2026-07-26T12:31:21.000Z",
+      "url": "https://www.munhwa.com/article/11605080",
+      "linkCheckedAt": "2026-07-26T12:55:33.426Z",
+      "image": "assets/img/topics/aircon.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://wimg.munhwa.com/news/cms/2026/07/26/news-p.v1.20260725.939af4f7a0a748519ecc01dff76a23ac_R.jpg",
+      "thumbFace": true
+    },
+    {
+      "id": 2333,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "수요부진",
+        "북미시장",
+        "실적악화",
+        "주가"
+      ],
+      "headline": "월풀, 수요 부진으로 주가 최근 저점 거래",
+      "summary": "월풀의 주가가 최근 저점 부근에서 거래 중이며, 수요 약화가 실적에 미치는 부정적 영향이 주요 원인이다. 북미 가전시장의 소비 심리 약화를 반영한 결과로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀 주가가 최근 저점 부근에서 거래 중"
+        },
+        {
+          "type": "content",
+          "text": "수요 약화가 실적 부진의 주요 요인"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-trades-around-recent-lows-as-weaker-demand-weighs-on/69877866"
+      },
+      "publishedAt": "2026-07-26T12:12:23.000Z",
+      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-trades-around-recent-lows-as-weaker-demand-weighs-on/69877866",
+      "linkCheckedAt": "2026-07-26T12:55:33.426Z",
+      "image": "https://mdb.ad-hoc-news.de/bild/bild-2701705_1920_1080.webp",
+      "imageChecked": true
+    },
     {
       "id": 2328,
       "lens": "소비자",
@@ -6158,7 +6252,7 @@
       },
       "publishedAt": "2026-07-21T03:21:05.000Z",
       "url": "https://www.opportimes.com/en/manufacturing-reshoring-ge-appliances-invests-3-billion-in-the-united-states/",
-      "linkCheckedAt": "2026-07-23T12:23:16.684Z",
+      "linkCheckedAt": "2026-07-26T12:55:13.572Z",
       "image": "https://8d073164.delivery.rocketcdn.me/wp-content/uploads/2026/07/Lavadoras-GE-1.png",
       "imageChecked": true
     },
