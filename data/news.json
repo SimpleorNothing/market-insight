@@ -1,16 +1,60 @@
 {
-  "updatedAt": "2026-07-27T09:30:52.326Z",
+  "updatedAt": "2026-07-27T12:53:11.198Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 2371,
+      "id": 2377,
       "lens": "소비자",
-      "grade": "참고",
-      "impact": 2.2,
+      "grade": "주시",
+      "impact": 3.3,
       "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 2,
-        "marketSize": 2,
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "안전",
+        "HVAC",
+        "하계수요",
+        "공동주택",
+        "소비자안전"
+      ],
+      "headline": "폭염 중 에어컨 실외기 화재 급증, 공동주택 취약",
+      "summary": "폭염 시기 에어컨 실외기 화재가 급증하고 있으며, 공동주택의 환기·관리 구조상 단독주택보다 화재 위험도가 높은 것으로 나타났다. 소비자의 에어컨 유지보수 및 안전관리 관심도 증대가 예상된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "폭염 기간 에어컨 실외기 화재 사건이 급증하는 추세 보도"
+        },
+        {
+          "type": "content",
+          "text": "공동주택이 단독주택 대비 환기 및 관리 여건상 화재 취약도 높음"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6840430_37004.html"
+      },
+      "publishedAt": "2026-07-27T11:02:16.000Z",
+      "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6840430_37004.html",
+      "linkCheckedAt": "2026-07-27T12:49:37.654Z",
+      "image": "https://image.imnews.imbc.com/replay/2026/nwdesk/article/__icsFiles/afieldfile/2026/07/27/desk_20260727_200130_1_8_Large.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2379,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
         "sourceReliability": 3
       },
       "products": [
@@ -21,30 +65,83 @@
       ],
       "tags": [
         "마케팅",
-        "SNS캠페인",
         "냉장고",
-        "아이스솔루션"
+        "글로벌",
+        "프리미엄",
+        "소비자경험"
       ],
-      "headline": "LG전자, 아이스 솔루션 SNS 캠페인 전개",
-      "summary": "LG전자가 'Ice to meet you'를 주제로 SNS 캠페인을 시작하며 냉장고의 아이스 솔루션 기능을 소비자에게 홍보하고 있다. 캠페인을 통해 진화된 아이스 솔루션의 가치를 알리는 마케팅 활동을 추진 중이다.",
+      "headline": "LG전자, 얼음 기능 글로벌 캠페인 전개",
+      "summary": "LG전자가 냉장고 얼음 생성·제공 기능의 차별성을 강조하는 글로벌 마케팅 캠페인을 진행 중이다. 소비자 취향에 맞춘 얼음 경험을 핵심 가치로 알리며 프리미엄 냉장고 수요층을 겨냥한 전략으로 보인다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 'Ice to meet you' 주제의 SNS 캠페인으로 냉장고 아이스 솔루션을 소비자에게 홍보"
+          "text": "LG전자가 냉장고의 얼음 기능을 주제로 한 글로벌 캠페인을 전개하고 있다"
         },
         {
           "type": "content",
-          "text": "캠페인을 통해 진화하는 아이스 솔루션의 기능과 가치를 강조"
+          "text": "소비자 취향에 맞춘 다양한 얼음 경험을 차별화 포인트로 마케팅 중이다"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.greened.kr/news/articleView.html?idxno=346052"
+        "url": "https://www.newstree.kr/newsView/ntr202607270020"
       },
-      "publishedAt": "2026-07-27T08:09:16.000Z",
-      "url": "https://www.greened.kr/news/articleView.html?idxno=346052",
-      "linkCheckedAt": "2026-07-27T09:27:17.610Z",
-      "image": "https://cdn.greened.kr/news/thumbnail/202607/346052_397142_249_v150.jpg",
+      "publishedAt": "2026-07-27T08:44:52.000Z",
+      "url": "https://www.newstree.kr/newsView/ntr202607270020",
+      "linkCheckedAt": "2026-07-27T12:49:37.654Z",
+      "image": "https://www.newstree.kr/data/ntr/image/2026/07/27/ntr202607270021.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2371,
+          "headline": "LG전자, 아이스 솔루션 SNS 캠페인 전개",
+          "url": "https://www.greened.kr/news/articleView.html?idxno=346052",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-27T08:09:16.000Z"
+        }
+      ]
+    },
+    {
+      "id": 2378,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 2
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "기술개발",
+        "HVAC",
+        "에너지효율",
+        "칸"
+      ],
+      "headline": "삼성전자, 고효율 히트펌프 검증 본격화",
+      "summary": "삼성전자가 고효율 히트펌프 기술 검증을 본격화하고 있다. 히트펌프는 냉난방공조 시장에서 에너지 효율성과 탄소중립 규제 대응의 핵심 기술로 각광받고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 고효율 히트펌프 검증을 본격적으로 진행 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.kharn.kr/mobile/article.html?no=31415"
+      },
+      "publishedAt": "2026-07-27T08:06:48.000Z",
+      "url": "https://www.kharn.kr/mobile/article.html?no=31415",
+      "linkCheckedAt": "2026-07-27T12:49:37.654Z",
+      "image": "https://www.kharn.kr/data/photos/20260731/art_17851395278086_ad934c.jpg",
       "imageChecked": true
     },
     {
@@ -2489,7 +2586,7 @@
       },
       "publishedAt": "2026-07-24T09:11:52.000Z",
       "url": "http://www.e2news.com/news/articleViewAmp.html?idxno=332642",
-      "linkCheckedAt": "2026-07-24T12:11:39.162Z",
+      "linkCheckedAt": "2026-07-27T12:49:11.677Z",
       "image": "https://cdn.e2news.com/news/photo/202607/332642_230645_383.jpg",
       "imageChecked": true
     },
@@ -2575,7 +2672,7 @@
       },
       "publishedAt": "2026-07-24T06:11:58.000Z",
       "url": "https://www.huffingtonpost.kr/article/258973",
-      "linkCheckedAt": "2026-07-24T10:06:33.925Z",
+      "linkCheckedAt": "2026-07-27T12:49:11.677Z",
       "image": "assets/img/topics/retail.svg",
       "imageChecked": true,
       "imageOriginal": "https://cdn.huffingtonpost.kr/news/photo/202607/202607244224.jpg?v=258973",
