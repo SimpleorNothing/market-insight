@@ -1,17 +1,60 @@
 {
-  "updatedAt": "2026-07-27T01:54:59.580Z",
+  "updatedAt": "2026-07-27T05:42:40.922Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 2360,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 3.6,
+      "id": 2362,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.3,
       "factors": {
         "salesRelevance": 3,
         "timeUrgency": 4,
         "marketSize": 3,
-        "sourceReliability": 5
+        "sourceReliability": 3
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [],
+      "tags": [
+        "소비 트렌드",
+        "시즈널",
+        "1인가구",
+        "소형가전"
+      ],
+      "headline": "더위·장마 시즌 소형 가전 수요 급증",
+      "summary": "여름 날씨(고온·강수)에 따른 1인 가구 및 소비자의 소형 가전 구매 수요가 증가하고 있다. 개인화된 생활공간 특성상 소형 청소기, 제습기 등 계절 대응 제품의 인기가 높아지는 추세다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "더위와 장마철 날씨 변화에 따라 소형 가전에 대한 소비자 수요가 집중되는 중"
+        },
+        {
+          "type": "content",
+          "text": "1인 가구 증가로 개인 생활공간 맞춤형 소형 제품의 구매 선호도 상승"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.ytn.co.kr/_cs/_ln_0102_202607271236028340_005.html"
+      },
+      "publishedAt": "2026-07-27T03:36:00.000Z",
+      "url": "https://www.ytn.co.kr/_cs/_ln_0102_202607271236028340_005.html",
+      "linkCheckedAt": "2026-07-27T05:38:59.293Z",
+      "image": "https://image.ytn.co.kr/general/jpg/2026/0727/202607271236028340_t.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2361,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 4
       },
       "products": [
         "HVAC"
@@ -20,32 +63,32 @@
         "삼성전자"
       ],
       "tags": [
+        "기술실증",
         "히트펌프",
-        "HVAC",
-        "공동주택",
-        "에너지효율",
-        "신기술"
+        "EHS",
+        "난방공조",
+        "에너지전환"
       ],
-      "headline": "삼성전자, 공동주택용 고효율 히트펌프 'EHS 올인원' 실증 추진",
-      "summary": "삼성전자가 공동주택 환경에 최적화된 고효율 히트펌프 신제품 'EHS 올인원'의 실증을 진행 중이다. 해당 제품은 에너지 효율성을 강화한 공조 솔루션으로, 다중 주택 시장 수요 대응 기술로 평가된다.",
+      "headline": "삼성전자, 공동주택용 히트펌프 실증 시작…EHS 올인원 기술 적용",
+      "summary": "삼성전자가 공동주택을 대상으로 히트펌프 실증 사업을 착수했다. 통합 난방·환기·환수 시스템인 'EHS 올인원' 기술을 적용하며, 국내 난방·냉각 시장에서 전동화 수요 확대에 대응하는 전략으로 평가된다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "삼성전자가 공동주택 환경 맞춤형 고효율 히트펌프 'EHS 올인원' 제품의 실증을 추진 중"
+          "text": "삼성전자가 공동주택 대상 히트펌프 실증 착수"
         },
         {
           "type": "content",
-          "text": "다중 주택 공조 시장의 에너지 효율성 강화 솔루션으로 포지셔닝"
+          "text": "'EHS 올인원' 통합 난방·환기·환수 기술 적용"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.yna.co.kr/amp/view/AKR20260727021300003"
+        "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370687"
       },
-      "publishedAt": "2026-07-26T23:47:32.000Z",
-      "url": "https://www.yna.co.kr/amp/view/AKR20260727021300003",
-      "linkCheckedAt": "2026-07-27T01:51:58.491Z",
-      "image": "https://img3.yna.co.kr/etc/inner/KR/2026/07/27/AKR20260727021300003_01_i_P4.jpg",
+      "publishedAt": "2026-07-27T02:02:03.000Z",
+      "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370687",
+      "linkCheckedAt": "2026-07-27T05:38:59.293Z",
+      "image": "https://www.electimes.com/news/photo/202607/370687_583388_5051.jpg",
       "imageChecked": true,
       "relatedArticles": [
         {
@@ -65,8 +108,105 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-07-26T23:25:00.000Z"
+        },
+        {
+          "id": 2360,
+          "headline": "삼성전자, 공동주택용 고효율 히트펌프 'EHS 올인원' 실증 추진",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260727021300003",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-26T23:47:32.000Z"
         }
       ]
+    },
+    {
+      "id": 2367,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "관세",
+        "철광",
+        "멕시코",
+        "원자재"
+      ],
+      "headline": "미국, 멕시코에 중국산 철광 관세 동참 압박",
+      "summary": "미국이 멕시코를 상대로 중국산 철광 제품에 대한 관세 동참을 요구했다. 북미향 철강·생산재 공급망에 영향을 미칠 수 있는 통상 압박으로, 역외 생산 기지의 원자재 조달 비용 변동성이 증가할 수 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국이 멕시코에 대해 중국산 철광 관세 동참을 요구"
+        },
+        {
+          "type": "content",
+          "text": "USMCA 역외 생산기지의 원자재 비용 구조에 영향 가능"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.theguru.co.kr/news/article.html?no=104950"
+      },
+      "publishedAt": "2026-07-27T01:38:10.000Z",
+      "url": "https://www.theguru.co.kr/news/article.html?no=104950",
+      "linkCheckedAt": "2026-07-27T05:38:59.293Z",
+      "image": "https://www.theguru.co.kr/data/photos/20260731/art_17851156353309_8a67d9.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2368,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "B2B",
+        "신사업",
+        "AI인프라",
+        "냉각솔루션",
+        "데이터센터"
+      ],
+      "headline": "LG전자, 엔디비아 AI센터 냉각 공급망 진출",
+      "summary": "LG전자가 엔디비아의 AI데이터센터 냉각 설비 공급망에 진출한다. 생활가전 영역을 넘어 고성능 냉난방공조(HVAC) 솔루션으로 신규 B2B 시장을 개척하는 전략적 이동으로, 글로벌 AI인프라 구축 수요에 대응하는 사업 다각화를 의미한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 엔디비아 AI센터 냉각 공급망에 진출해 데이터센터용 고성능 냉난방공조 시장 개척"
+        },
+        {
+          "type": "content",
+          "text": "생활가전 외 B2B 고부가 신규 영역으로의 사업 확장으로 글로벌 AI인프라 수요 대응"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.newspim.com/news/view/20260727000057"
+      },
+      "publishedAt": "2026-07-27T01:00:00.000Z",
+      "url": "https://www.newspim.com/news/view/20260727000057",
+      "linkCheckedAt": "2026-07-27T05:38:59.293Z",
+      "image": "https://img.newspim.com/news/2026/07/27/2607270815422440_t1.jpg",
+      "imageChecked": true
     },
     {
       "id": 2357,
@@ -415,6 +555,48 @@
       "url": "https://www.fntimes.com/html/view.php?ud=202607242152314370dd55077bc2_18",
       "linkCheckedAt": "2026-07-26T16:45:14.310Z",
       "image": "https://cfnimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&idx=999&simg=20260724215305012630dd55077bc212411124362.jpg&nmt=18"
+    },
+    {
+      "id": 2369,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "관세",
+        "통상정책",
+        "원산지규정",
+        "북미"
+      ],
+      "headline": "트럼프, USMCA 재협상 추진…중국 우회 수출 차단",
+      "summary": "트럼프 전 대통령이 USMCA(미국-멕시코-캐나다 협정) 재협상을 추진 중이며, 중국의 우회 수출 통로 차단을 주요 목표로 삼고 있다. 이는 북미 역외 생산시설을 운영 중인 가전업계의 미국 수출 규제 리스크를 높일 가능성이 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "트럼프가 USMCA 재협상을 추진, 중국의 우회 수출 통로 차단을 주요 목표로 제시"
+        },
+        {
+          "type": "content",
+          "text": "협정 재협상은 원산지 규정 강화 및 중국산 부품·제품의 북미 역내 침투 방지를 핵심으로 함"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=388920"
+      },
+      "publishedAt": "2026-07-26T13:35:42.000Z",
+      "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=388920",
+      "linkCheckedAt": "2026-07-27T05:38:59.293Z",
+      "image": "https://www.fntoday.co.kr/news/thumbnail/202607/388920_311999_950_v150.jpg",
+      "imageChecked": true
     },
     {
       "id": 2330,
@@ -2388,7 +2570,7 @@
       },
       "publishedAt": "2026-07-24T04:57:50.000Z",
       "url": "https://www.mk.co.kr/news/english/12106579",
-      "linkCheckedAt": "2026-07-24T04:59:45.201Z",
+      "linkCheckedAt": "2026-07-27T05:38:19.666Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/24/rcv.YNA.20260724.PYH2026072404350001300_R.jpg",
       "imageChecked": true
     },
@@ -2433,7 +2615,7 @@
       },
       "publishedAt": "2026-07-24T04:57:02.000Z",
       "url": "https://www.mk.co.kr/news/economy/12106574",
-      "linkCheckedAt": "2026-07-24T04:59:45.201Z",
+      "linkCheckedAt": "2026-07-27T05:38:19.666Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/24/news-p.v1.20250910.d34d7194d482454daefe84d47fa36730_R.jpg",
       "imageChecked": true
     },
@@ -2520,7 +2702,7 @@
       },
       "publishedAt": "2026-07-24T02:47:00.000Z",
       "url": "https://www.newspim.com/news/view/20260724000362",
-      "linkCheckedAt": "2026-07-24T04:59:45.201Z",
+      "linkCheckedAt": "2026-07-27T05:38:19.666Z",
       "image": "https://img.newspim.com/news/2026/07/24/2607241036379540_t1.jpg",
       "imageChecked": true
     },
