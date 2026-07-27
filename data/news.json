@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-07-26T23:54:53.867Z",
+  "updatedAt": "2026-07-27T01:54:59.580Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 2353,
+      "id": 2360,
       "lens": "기술",
-      "grade": "주시",
-      "impact": 3.2,
+      "grade": "주요",
+      "impact": 3.6,
       "factors": {
         "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 5
       },
       "products": [
         "HVAC"
@@ -20,28 +20,53 @@
         "삼성전자"
       ],
       "tags": [
-        "기술개발",
         "히트펌프",
         "HVAC",
-        "에너지효율"
+        "공동주택",
+        "에너지효율",
+        "신기술"
       ],
-      "headline": "삼성전자, 고효율 히트펌프 실증 착수",
-      "summary": "삼성전자가 고효율 히트펌프 기술 실증을 시작했다. 히트펌프는 냉난방공조 분야에서 에너지효율이 높아 글로벌 시장 수요가 증가하고 있는 기술이다.",
+      "headline": "삼성전자, 공동주택용 고효율 히트펌프 'EHS 올인원' 실증 추진",
+      "summary": "삼성전자가 공동주택 환경에 최적화된 고효율 히트펌프 신제품 'EHS 올인원'의 실증을 진행 중이다. 해당 제품은 에너지 효율성을 강화한 공조 솔루션으로, 다중 주택 시장 수요 대응 기술로 평가된다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "삼성전자가 고효율 히트펌프 실증을 착수"
+          "text": "삼성전자가 공동주택 환경 맞춤형 고효율 히트펌프 'EHS 올인원' 제품의 실증을 추진 중"
+        },
+        {
+          "type": "content",
+          "text": "다중 주택 공조 시장의 에너지 효율성 강화 솔루션으로 포지셔닝"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.etoday.co.kr/news/view/2607586"
+        "url": "https://www.yna.co.kr/amp/view/AKR20260727021300003"
       },
-      "publishedAt": "2026-07-26T23:25:00.000Z",
-      "url": "https://www.etoday.co.kr/news/view/2607586",
-      "linkCheckedAt": "2026-07-26T23:51:38.297Z",
-      "image": "https://img.etoday.co.kr/pto_db/2026/07/20260727082240_2364293_1200_900.jpg",
-      "imageChecked": true
+      "publishedAt": "2026-07-26T23:47:32.000Z",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260727021300003",
+      "linkCheckedAt": "2026-07-27T01:51:58.491Z",
+      "image": "https://img3.yna.co.kr/etc/inner/KR/2026/07/27/AKR20260727021300003_01_i_P4.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2361,
+          "headline": "삼성전자, 공동주택용 고효율 히트펌프 'EHS 올인원' 검증 시작",
+          "url": "https://www.etnews.com/20260727000146",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-27T01:21:24.000Z"
+        },
+        {
+          "id": 2353,
+          "headline": "삼성전자, 고효율 히트펌프 실증 착수",
+          "url": "https://www.etoday.co.kr/news/view/2607586",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-26T23:25:00.000Z"
+        }
+      ]
     },
     {
       "id": 2357,
@@ -2537,7 +2562,7 @@
       },
       "publishedAt": "2026-07-24T01:23:00.000Z",
       "url": "http://www.wikileaks-kr.org/news/articleView.html?idxno=190112",
-      "linkCheckedAt": "2026-07-24T01:42:32.105Z",
+      "linkCheckedAt": "2026-07-27T01:51:36.193Z",
       "image": null
     },
     {
@@ -2579,7 +2604,7 @@
       },
       "publishedAt": "2026-07-24T01:22:42.000Z",
       "url": "https://www.etnews.com/20260724000069",
-      "linkCheckedAt": "2026-07-24T01:42:32.105Z",
+      "linkCheckedAt": "2026-07-27T01:51:36.193Z",
       "image": "https://img.etnews.com/news/article/2026/07/24/news-p.v1.20260724.c14d40f1aba1406fa3a1fba72af71970_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -2750,7 +2775,7 @@
       },
       "publishedAt": "2026-07-24T00:54:53.000Z",
       "url": "https://www.etnews.com/20260724000054",
-      "linkCheckedAt": "2026-07-24T01:42:32.105Z",
+      "linkCheckedAt": "2026-07-27T01:51:36.193Z",
       "image": "https://img.etnews.com/news/article/2026/04/02/news-p.v1.20260402.95c3b06c512442a38349d067acea3df2_P1.jpg",
       "imageChecked": true
     },
