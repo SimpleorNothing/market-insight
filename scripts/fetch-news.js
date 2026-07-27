@@ -340,7 +340,7 @@ async function mapWithConcurrency(items, concurrency, fn) {
 
 // ===== 링크 생존 확인 =====
 // 디코딩된 발행처 URL이 실제로 열리는지 확인해, "안 열리는" 기사는 파이프라인에서 제외.
-// 오탐(봇 차단 403·일시 오류 429/5xx/타임아웃)으로 멀쩡한 기사를 지우지 않도록,
+// 오탐(봇 차단 403·일시 오류 429/5xx·타임아웃)으로 멀쩡한 기사를 지우지 않도록,
 // 확실한 사망 신호(404/410/DNS 실패/기사 식별자 유실 리다이렉트)에만 "dead"를 반환한다.
 const DEAD_LINK_CHECK_CAP_PER_RUN = 60; // 기존 항목 재검증 1회 상한
 const LINK_RECHECK_INTERVAL_MS = 3 * 24 * 60 * 60 * 1000; // 재검증 주기 3일
@@ -755,8 +755,8 @@ const COMPETITOR_PATTERNS = (() => {
   const table = [];
   const seen = new Set();
   const add = (canonical, name) => {
-    if (!name || BACKSTOP_SKIP.has(name) || seen.has(`${canonical}${name}`)) return;
-    seen.add(`${canonical}${name}`);
+    if (!name || BACKSTOP_SKIP.has(name) || seen.has(`${canonical}\u0000${name}`)) return;
+    seen.add(`${canonical}\u0000${name}`);
     table.push({ canonical, name, latin: /^[\x00-\x7F]+$/.test(name) });
   };
   for (const canonical of CONFIG.competitors) {
