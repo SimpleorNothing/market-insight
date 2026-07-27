@@ -1,7 +1,53 @@
 {
-  "updatedAt": "2026-07-27T15:39:24.581Z",
+  "updatedAt": "2026-07-27T17:31:25.989Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2388,
+      "lens": "소비자",
+      "grade": "참고",
+      "impact": 2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 2
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "삼성전자",
+        "월풀"
+      ],
+      "tags": [
+        "설치 서비스",
+        "소비자 선택",
+        "소비자 만족도",
+        "북미"
+      ],
+      "headline": "삼성 냉장고 설치 거부로 월풀 제품으로 변경 구매",
+      "summary": "미국 소비자가 Best Buy에서 구입한 삼성 냉장고의 설치를 거부당해 월풀 제품으로 대체 구매했다. 설치 서비스 제공 거부에 따른 소비자 선택 변화 사례가 드러났다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Best Buy 설치 서비스가 삼성 냉장고 설치를 거부하자 소비자는 대신 월풀 냉장고로 긴급 구매 변경"
+        },
+        {
+          "type": "content",
+          "text": "설치 서비스 제공 가능 여부가 소비자의 제품 선택에 직접적인 영향을 미치는 사례"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.themarysue.com/best-buy-appliance-delivery/"
+      },
+      "publishedAt": "2026-07-27T16:00:00.000Z",
+      "url": "https://www.themarysue.com/best-buy-appliance-delivery/",
+      "linkCheckedAt": "2026-07-27T17:28:28.880Z",
+      "image": "https://www.themarysue.com/wp-content/uploads/2026/07/Woman-buys-refrigerator-from-Best-Buy.jpg?fit=2560%2C1440",
+      "imageChecked": true
+    },
     {
       "id": 2380,
       "lens": "경쟁사",
@@ -1059,6 +1105,58 @@
       ]
     },
     {
+      "id": 2392,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "HVAC",
+        "청소기",
+        "식기세척기"
+      ],
+      "competitors": [],
+      "tags": [
+        "미국 관세",
+        "강제노동",
+        "통상 규제",
+        "과잉생산",
+        "협상"
+      ],
+      "headline": "미국 강제노동 관세 부과 임박, 가전·석화 산업 긴장",
+      "summary": "미국이 강제노동 관세 부과를 추진하면서 가전 및 석유화학 업계가 긴장하고 있다. 과잉생산 규제를 둘러싼 협상이 관세 부과 회피의 열쇠로 지목되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국이 강제노동 관세 부과 추진 중이며 가전·석화 산업이 영향을 받을 것으로 예상"
+        },
+        {
+          "type": "content",
+          "text": "과잉생산 협상이 관세 부과 회피를 위한 협상의 핵심 쟁점으로 부각"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://v.daum.net/v/20260726151840710?f=p"
+      },
+      "publishedAt": "2026-07-26T06:18:40.000Z",
+      "url": "https://v.daum.net/v/20260726151840710?f=p",
+      "linkCheckedAt": "2026-07-27T17:28:28.880Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/26/khan/20260726151842274qdpd.jpg",
+      "thumbFace": true
+    },
+    {
       "id": 2359,
       "lens": "정책",
       "grade": "주요",
@@ -2083,6 +2181,15 @@
             "name": "Google News - US Home Appliances"
           },
           "publishedAt": "2026-07-23T20:15:00.000Z"
+        },
+        {
+          "id": 2387,
+          "headline": "월풀, 2분기 실적 발표 일정 변경…8월 3일 공시",
+          "url": "https://www.marketscreener.com/news/whirlpool-corporation-reschedules-second-quarter-earnings-release-to-august-3rd-and-conference-call-ce7f51dcde8ff32d",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-07-27T15:29:22.000Z"
         }
       ]
     },
