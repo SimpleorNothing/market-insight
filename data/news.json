@@ -1,49 +1,156 @@
 {
-  "updatedAt": "2026-07-28T22:58:48.208Z",
+  "updatedAt": "2026-07-28T23:54:22.131Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 2473,
+      "id": 2480,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "로봇",
+        "미국 규제",
+        "안보",
+        "중국산",
+        "수입 금지"
+      ],
+      "headline": "美 FCC, 휴머노이드·4족 로봇 수입 금지…中국산 겨냥",
+      "summary": "미국 FCC가 국가 안보와 핵심 인프라 보호를 명분으로 휴머노이드·4족 로봇의 신규 모델 수입을 전면 금지했다. 인버터 장치도 수입 금지 대상에 포함됐으며, 로봇이 수집한 데이터가 악의적 행위자에 악용될 수 있다는 우려가 배경이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 FCC, 휴머노이드·4족 보행 로봇 신규 모델 수입 전면 금지 조치 발표"
+        },
+        {
+          "type": "content",
+          "text": "인버터 장치도 수입 금지 대상에 포함, 국가 안보·핵심 인프라 보호 명분"
+        },
+        {
+          "type": "content",
+          "text": "로봇 수집 데이터가 악의적 행위자에 악용될 수 있다는 우려가 정책 배경"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260729000011"
+      },
+      "publishedAt": "2026-07-28T23:03:26.000Z",
+      "url": "https://www.etnews.com/20260729000011",
+      "linkCheckedAt": "2026-07-28T23:50:55.630Z",
+      "image": "https://img.etnews.com/news/article/2026/07/29/news-p.v1.20260729.4bafba0185594920864196a2fbc3d2c5_P1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2482,
+      "lens": "거시",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "HVAC",
+        "기후변화",
+        "AI수요",
+        "시장성장"
+      ],
+      "headline": "지구 온난화·AI 수요 확대로 HVAC 시장 성장, 삼성·LG 경쟁 심화",
+      "summary": "지구 온난화로 냉난방공조(HVAC) 수요가 증가하고 AI 붐까지 겹치면서 시장이 확대되고 있다. 삼성전자와 LG전자가 이 시장을 놓고 경쟁을 심화하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "지구 온난화로 냉난방공조 시장 수요 확대 추세"
+        },
+        {
+          "type": "content",
+          "text": "AI 붐에 따른 데이터센터 등 냉방 수요 증가"
+        },
+        {
+          "type": "content",
+          "text": "삼성전자, LG전자 HVAC 시장 놓고 격돌 심화"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.bizwatch.co.kr/article/industry/2026/07/28/0033"
+      },
+      "publishedAt": "2026-07-28T22:50:03.000Z",
+      "url": "https://news.bizwatch.co.kr/article/industry/2026/07/28/0033",
+      "linkCheckedAt": "2026-07-28T23:50:55.630Z",
+      "image": "https://cdn.bizwatch.co.kr/news/photo/2026/07/28/84564f3f9b1b356e77b8542431678c47.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2481,
       "lens": "거시",
       "grade": "주시",
-      "impact": 2.8,
+      "impact": 2.9,
       "factors": {
         "salesRelevance": 3,
         "timeUrgency": 2,
         "marketSize": 3,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [
         "HVAC"
       ],
       "competitors": [],
       "tags": [
-        "HVAC",
         "에너지가격",
-        "한일비교",
-        "소비패턴"
+        "소비패턴",
+        "국제비교",
+        "HVAC"
       ],
-      "headline": "한국 에어컨 사용량 일본 대비 1.2배, 전기요금은 반값",
-      "summary": "한국이 일본보다 에어컨을 1.2배 더 많이 사용하면서도 전기요금이 일본의 절반 수준인 것으로 나타났다. 이는 한국의 낮은 에너지 가격과 높은 냉방 수요가 대비되는 현상으로, 에어컨 시장의 수요 구조를 반영한다.",
+      "headline": "한국 에어컨 사용량 1.2배 높으나 전기요금 절반 수준",
+      "summary": "한국이 일본보다 에어컨 사용량이 1.2배 높으면서도 전기요금은 절반 수준으로 낮다는 통계가 나왔다. 냉난방공조 제품의 사용 환경과 에너지 가격 구조의 지역별 차이를 반영한 것으로, 에너지 정책과 소비 패턴의 국가 간 격차를 보여준다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "한국의 에어컨 사용량이 일본보다 1.2배 높으나 전기요금은 일본의 반값 수준"
+          "text": "한국의 에어컨 사용량이 일본보다 1.2배 높다"
         },
         {
           "type": "content",
-          "text": "한국의 낮은 전기요금이 에어컨 수요 증가를 뒷받침하는 주요 요인"
+          "text": "한국의 전기요금이 일본의 절반 수준으로 저렴하다"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://v.daum.net/v/20260729062701806"
+        "url": "https://www.yna.co.kr/amp/view/AKR20260728176600003"
       },
-      "publishedAt": "2026-07-28T21:27:01.000Z",
-      "url": "https://v.daum.net/v/20260729062701806",
-      "linkCheckedAt": "2026-07-28T22:02:52.230Z",
-      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/29/yonhap/20260729062701396plga.jpg",
-      "imageChecked": true
+      "publishedAt": "2026-07-28T21:24:40.000Z",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260728176600003",
+      "linkCheckedAt": "2026-07-28T23:50:55.630Z",
+      "image": "https://img2.yna.co.kr/photo/yna/YH/2025/08/26/PYH2025082614170005100_P4.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2473,
+          "headline": "한국 에어컨 사용량 일본 대비 1.2배, 전기요금은 반값",
+          "url": "https://v.daum.net/v/20260729062701806",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-28T21:27:01.000Z"
+        }
+      ]
     },
     {
       "id": 2474,
@@ -179,6 +286,63 @@
       "imageChecked": true
     },
     {
+      "id": 2483,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "로보틱스",
+        "휴머노이드",
+        "부품",
+        "신임경영진"
+      ],
+      "headline": "LG전자, 휴머노이드 로봇 부품 글로벌 톱티어 진입",
+      "summary": "LG전자가 류재철 신임 리더십 아래 휴머노이드 로봇 부품 개발에 집중해 글로벌 시장에서 톱티어 지위 획득을 목표하고 있다. 로봇 기술을 신규 성장동력으로 육성하는 전략의 일환이다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 류재철 리더십 아래 휴머노이드 로봇 부품 개발을 경쟁력 강화 분야로 전략화"
+        },
+        {
+          "type": "content",
+          "text": "글로벌 휴머노이드 로봇 시장에서 부품 톱티어 업체로 발돋움을 목표"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "http://www.greened.kr/news/articleView.html?idxno=346151"
+      },
+      "publishedAt": "2026-07-28T21:00:00.000Z",
+      "url": "http://www.greened.kr/news/articleView.html?idxno=346151",
+      "linkCheckedAt": "2026-07-28T23:50:55.630Z",
+      "image": "assets/img/topics/tech.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://cdn.greened.kr/news/thumbnail/202607/346151_397248_4253_v150.jpg",
+      "thumbFace": true,
+      "relatedArticles": [
+        {
+          "id": 2435,
+          "headline": "삼성·LG·현대차, 휴머노이드 로봇 전쟁 시작",
+          "url": "https://www.asiae.co.kr/en/article/2026072411230773805",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-26T22:17:00.000Z"
+        }
+      ]
+    },
+    {
       "id": 2477,
       "lens": "경쟁사",
       "grade": "주요",
@@ -240,6 +404,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-07-28T02:39:02.000Z"
+        },
+        {
+          "id": 2485,
+          "headline": "삼성·LG, 모듈러 주택 시장 진출 본격화",
+          "url": "https://it.chosun.com/news/articleViewAmp.html?idxno=2023092166748",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-28T18:51:28.000Z"
         }
       ]
     },
@@ -291,7 +464,7 @@
       "imageChecked": true
     },
     {
-      "id": 2478,
+      "id": 2484,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -307,18 +480,15 @@
       ],
       "tags": [
         "경영진",
-        "실적발표"
+        "실적발표",
+        "연기"
       ],
       "headline": "월풀, CEO 자전거 사고로 실적 발표 연기",
-      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 분기 실적 발표 일정을 변경했다. 경영진 공백에 따른 기업 운영 차질 우려가 제기된다.",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 실적 발표가 지연되는 상황 발생. 회사 경영진 건강상 이슈로 인한 실적 공시 일정 변경.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입음"
-        },
-        {
-          "type": "content",
-          "text": "분기 실적 발표 일정 연기 결정"
+          "text": "월풀 CEO의 자전거 사고 부상으로 인해 정기 실적 발표 일정이 지연됨"
         }
       ],
       "source": {
@@ -327,7 +497,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-28T22:56:09.466Z",
+      "linkCheckedAt": "2026-07-28T23:50:55.630Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -2273,50 +2443,6 @@
       "imageChecked": true,
       "imageOriginal": "https://cdn.alphabiz.co.kr/news/photo/202607/165312_99597_4452.jpg",
       "thumbFace": true
-    },
-    {
-      "id": 2435,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 2.8,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자",
-        "LG전자"
-      ],
-      "tags": [
-        "로보틱스",
-        "신사업",
-        "기술경쟁",
-        "휴머노이드"
-      ],
-      "headline": "삼성·LG·현대차, 휴머노이드 로봇 전쟁 시작",
-      "summary": "삼성전자의 휴머노이드 로봇 출시 임박 가운데 LG전자와 현대차가 로봇 시장 진출을 본격화하고 있다. 주요 가전사들이 신규 카테고리로 로봇 기술 개발·상용화 경쟁에 돌입하면서 업계의 경쟁 구도가 재편되는 추세다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "삼성전자 휴머노이드 로봇 출시 임박 상황 속 LG전자와 현대차가 로봇 시장 진출 가속화"
-        },
-        {
-          "type": "content",
-          "text": "주요 가전·자동차 제조사들이 로봇 기술 개발·상용화 경쟁에 본격 진입하며 신규 사업 영역 확보 중"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.asiae.co.kr/en/article/2026072411230773805"
-      },
-      "publishedAt": "2026-07-26T22:17:00.000Z",
-      "url": "https://www.asiae.co.kr/en/article/2026072411230773805",
-      "linkCheckedAt": "2026-07-28T01:27:26.853Z",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2025020709114023437_1738887100.jpg",
-      "imageChecked": true
     },
     {
       "id": 2356,
