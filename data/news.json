@@ -1,7 +1,53 @@
 {
-  "updatedAt": "2026-07-29T10:32:06.927Z",
+  "updatedAt": "2026-07-29T12:58:22.487Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2506,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "노크온",
+        "냉장고",
+        "10년",
+        "530만대",
+        "혁신기능"
+      ],
+      "headline": "LG전자 노크온 냉장고, 10년간 530만 대 판매 달성",
+      "summary": "LG전자의 노크온(Knock On) 냉장고가 출시 10년 만에 전 세계에서 530만 대 판매를 기록했다. 손가락으로 도어를 두드려 잠금을 해제하는 혁신 기능으로 고객 만족도를 확보해 장기간 시장에서 성공을 거뒀다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 노크온 냉장고는 출시 후 10년간 전 세계에서 530만 대 판매"
+        },
+        {
+          "type": "content",
+          "text": "손가락 두드림으로 도어 잠금 해제하는 기능이 소비자 선택 이유"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "http://www.economytalk.kr/news/articleView.html?idxno=423108"
+      },
+      "publishedAt": "2026-07-29T09:24:18.000Z",
+      "url": "http://www.economytalk.kr/news/articleView.html?idxno=423108",
+      "linkCheckedAt": "2026-07-29T12:54:53.254Z",
+      "image": "https://cdn.economytalk.kr/news/photo/202607/423108_229838_240.jpg",
+      "imageChecked": true
+    },
     {
       "id": 2492,
       "lens": "경쟁사",
@@ -91,7 +137,7 @@
       "imageChecked": true
     },
     {
-      "id": 2497,
+      "id": 2509,
       "lens": "경쟁사",
       "grade": "주요",
       "impact": 3.8,
@@ -105,31 +151,32 @@
         "냉장고",
         "세탁기",
         "건조기",
-        "조리기기"
+        "조리기기",
+        "식기세척기"
       ],
       "competitors": [
         "Electrolux"
       ],
       "tags": [
         "실적",
-        "어닝",
-        "EU"
+        "경쟁사",
+        "2분기"
       ],
-      "headline": "일렉스, 2분기 영업이익 기대치 상회",
-      "summary": "일렉스(Electrolux)가 2분기 영업이익으로 시장 기대치를 초과 달성했다. 구체적 수치는 원문 미제시.",
+      "headline": "Electrolux, 2분기 영업이익 기대치 상회",
+      "summary": "Electrolux가 2분기 영업이익으로 시장 예상을 상회하는 실적을 기록했다. EU 지역 주요 경쟁사의 실적 개선 신호로 글로벌 가전 시장의 회복 양상을 시사한다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "일렉스, 2분기 영업이익이 예상을 상회"
+          "text": "Electrolux 2분기 영업이익이 시장 기대치를 초과 달성"
         }
       ],
       "source": {
         "name": "Google News - Electrolux",
-        "url": "https://www.reuters.com/world/china/appliance-maker-electrolux-q2-operating-profit-beats-expectations-2026-07-29/"
+        "url": "https://m.investing.com/news/stock-market-news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-4818590?ampMode=1"
       },
-      "publishedAt": "2026-07-29T05:16:00.000Z",
-      "url": "https://www.reuters.com/world/china/appliance-maker-electrolux-q2-operating-profit-beats-expectations-2026-07-29/",
-      "linkCheckedAt": "2026-07-29T07:40:42.480Z",
+      "publishedAt": "2026-07-29T05:18:00.000Z",
+      "url": "https://m.investing.com/news/stock-market-news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-4818590?ampMode=1",
+      "linkCheckedAt": "2026-07-29T12:54:53.254Z",
       "image": null,
       "relatedArticles": [
         {
@@ -158,6 +205,15 @@
             "name": "Google News - Electrolux"
           },
           "publishedAt": "2026-07-26T09:51:21.000Z"
+        },
+        {
+          "id": 2497,
+          "headline": "일렉스, 2분기 영업이익 기대치 상회",
+          "url": "https://www.reuters.com/world/china/appliance-maker-electrolux-q2-operating-profit-beats-expectations-2026-07-29/",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-29T05:16:00.000Z"
         }
       ]
     },
@@ -952,7 +1008,7 @@
       "imageChecked": true
     },
     {
-      "id": 2502,
+      "id": 2507,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -967,19 +1023,20 @@
         "월풀"
       ],
       "tags": [
-        "경영진 변수",
-        "실적공시"
+        "경영진",
+        "실적 공시",
+        "리더십 공백"
       ],
-      "headline": "월풀, CEO 자전거 사고로 실적 발표 연기",
-      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 실적 발표 일정을 연기했다. 구체적인 발표 일정 변경 내용과 CEO의 부상 정도는 추가 공지 예정이다.",
+      "headline": "월풀 CEO 자전거 사고로 실적 발표 연기",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 당해 정기 실적 발표가 지연되었다. 회사 리더십 공백에 따른 실적 공시 일정 변경이 발생했다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입었으며 정기 실적 발표를 연기했다"
+          "text": "월풀 CEO가 자전거 사고로 부상을 입어 정기 실적 발표 일정이 지연"
         },
         {
           "type": "content",
-          "text": "새로운 실적 발표 일정은 추후 공지될 예정이다"
+          "text": "경영진 공백으로 인한 회사 공시 일정 영향"
         }
       ],
       "source": {
@@ -988,7 +1045,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-29T10:28:25.068Z",
+      "linkCheckedAt": "2026-07-29T12:54:53.254Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -6570,7 +6627,7 @@
       },
       "publishedAt": "2026-07-23T10:06:39.000Z",
       "url": "https://www.techtimes.com/articles/321349/20260723/xiaomi-launches-mijia-washing-machines-germany-data-law-catch.htm",
-      "linkCheckedAt": "2026-07-26T11:53:39.040Z",
+      "linkCheckedAt": "2026-07-29T12:54:28.991Z",
       "image": "https://d.techtimes.com/en/full/469581/mijia-front-load-washer-dryer-pro.png",
       "imageChecked": true
     },
@@ -6719,7 +6776,7 @@
       },
       "publishedAt": "2026-07-23T06:32:17.000Z",
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-faces-a-fresh-valuation-test-after-earnings-cu/amp",
-      "linkCheckedAt": "2026-07-26T11:53:39.040Z",
+      "linkCheckedAt": "2026-07-29T12:54:28.991Z",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true,
       "relatedArticles": [
@@ -6800,7 +6857,7 @@
       },
       "publishedAt": "2026-07-23T05:36:53.000Z",
       "url": "https://www.chosun.com/economy/science/2026/07/23/RXO5EJJXFFB2VMNPHYOA33LQAA/",
-      "linkCheckedAt": "2026-07-26T11:53:39.040Z",
+      "linkCheckedAt": "2026-07-29T12:54:28.991Z",
       "image": "https://www.chosun.com/resizer/v2/O2HKLE5FIZFS7OT7DTWN2FF53A.png?auth=d93a58b2ad7768882d9933165846afbe44f3d687a869a01e62960c5fcd0d2726&width=1200&height=630&focal=621,16"
     },
     {
