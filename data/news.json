@@ -1,7 +1,84 @@
 {
-  "updatedAt": "2026-07-29T18:58:09.926Z",
+  "updatedAt": "2026-07-29T20:10:29.883Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2527,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "금리",
+        "거시경제",
+        "미국",
+        "금융시장"
+      ],
+      "headline": "미국채 30년물 금리 5.2%대로 급등, 19년 만 최고",
+      "summary": "미국채 30년물 금리가 5.2%대로 급등해 2007년 이후 최고치를 기록했다. 이는 글로벌 금리 환경 변화와 미국 경제 지표 움직임을 반영한 것으로, 가전 산업의 금융 비용과 소비자 구매력에 영향을 미칠 수 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국채 30년물 금리가 5.2%대로 상승, 2007년 이후 최고 수준 기록"
+        },
+        {
+          "type": "content",
+          "text": "장기 금리 급등은 주택담보대출 모기지 금리와 소비자 신용 비용 상승으로 이어질 가능성"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12111226"
+      },
+      "publishedAt": "2026-07-29T20:05:17.000Z",
+      "url": "https://www.mk.co.kr/news/world/12111226",
+      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "image": null
+    },
+    {
+      "id": 2530,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "실적",
+        "인도시장",
+        "적자"
+      ],
+      "headline": "LG전자 인도법인, FY26 순이익 23.5% 하락",
+      "summary": "LG Electronics India의 FY26(2025년 4월~2026년 3월) 순이익이 전년 동기 대비 23.5% 감소했다. 인도 시장의 가전 수요 약세와 경쟁 심화의 영향으로 보인다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG Electronics India FY26 순이익이 전년 동기 대비 23.5% 감소"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://scanx.trade/stock-market-news/companies/lg-electronics-india-fy26-results-net-profit-down-23-5-yoy/46899761"
+      },
+      "publishedAt": "2026-07-29T19:46:47.000Z",
+      "url": "https://scanx.trade/stock-market-news/companies/lg-electronics-india-fy26-results-net-profit-down-23-5-yoy/46899761",
+      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "image": null
+    },
     {
       "id": 2521,
       "lens": "거시",
@@ -539,6 +616,15 @@
             "name": "Google News - Electrolux"
           },
           "publishedAt": "2026-07-29T05:58:15.000Z"
+        },
+        {
+          "id": 2534,
+          "headline": "Electrolux 2분기 영업익 예상 상회",
+          "url": "https://www.marketscreener.com/news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-ce7f51d2dd8ff32c",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-29T12:06:00.000Z"
         }
       ]
     },
@@ -1394,7 +1480,7 @@
       "imageChecked": true
     },
     {
-      "id": 2524,
+      "id": 2528,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -1409,20 +1495,20 @@
         "월풀"
       ],
       "tags": [
-        "경영진_변수",
-        "실적발표",
-        "운영_차질"
+        "경영진",
+        "인사",
+        "실적"
       ],
       "headline": "월풀, CEO 자전거 사고로 실적 발표 연기",
-      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 분기 실적 발표가 예정보다 연기되었다. 구체적인 발표 일정과 부상 정도는 미공개 상태다.",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 실적 발표 일정이 연기됐다. 경영 공백에 따른 시장 파급 우려로 이목이 집중되고 있다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입은 것으로 보도됨"
+          "text": "월풀 CEO가 자전거 사고로 부상을 입어 실적 발표 일정이 예정보다 연기됨"
         },
         {
           "type": "content",
-          "text": "이에 따라 분기 실적 발표 일정이 예정된 날짜보다 연기됨"
+          "text": "경영 공백 상황에서 실적 발표 연기로 시장 불안정 우려"
         }
       ],
       "source": {
@@ -1431,7 +1517,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-29T18:54:46.071Z",
+      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -2052,6 +2138,46 @@
       "url": "https://www.newstomato.com/ReadNews.aspx?no=1308471",
       "linkCheckedAt": "2026-07-28T10:22:31.313Z",
       "image": "https://image.newstomato.com/newsimg/2026/7/28/1308471/attach.jpg?v=202607281559",
+      "imageChecked": true
+    },
+    {
+      "id": 2532,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "JCI"
+      ],
+      "tags": [
+        "실적",
+        "HVAC",
+        "영업이익"
+      ],
+      "headline": "JCI 어닝 발표 예상, HVAC 사업 성과 주목",
+      "summary": "Johnson Controls의 분기 실적 발표 전망 분석 기사. HVAC 사업 부문의 성과 및 시장 점유율 추이가 핵심 주목 지점으로 제시됨.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Johnson Controls의 분기 어닝 발표를 앞두고 HVAC 사업 성과 분석"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://stockstory.org/us/stocks/nyse/jci/news/earnings/johnson-controls-earnings-what-to-look-for-from-jci-2"
+      },
+      "publishedAt": "2026-07-28T03:59:41.000Z",
+      "url": "https://stockstory.org/us/stocks/nyse/jci/news/earnings/johnson-controls-earnings-what-to-look-for-from-jci-2",
+      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "image": "https://stockstory.org/stockstory/company-image/JCI",
       "imageChecked": true
     },
     {
@@ -7016,6 +7142,48 @@
       "image": null
     },
     {
+      "id": 2531,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.9,
+      "factors": {
+        "salesRelivance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4,
+        "salesRelevance": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "냉장고",
+        "제품평가",
+        "소비자선택",
+        "북미시장"
+      ],
+      "headline": "월풀 제품 포함, 2026년 최고 평점 냉장고 6선 발표",
+      "summary": "소비자리포트가 실험실 테스트 기반 2026년 냉장고 평가에서 월풀 제품을 포함한 6개 모델을 최고 등급으로 선정했다. 북미 시장의 냉장고 선택 기준과 제품 만족도를 반영한 보도다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "소비자리포트 랩 테스트 기반 2026년 냉장고 평가에서 월풀 모델 포함 6개 제품을 최고 평점으로 선정"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.consumerreports.org/appliances/refrigerators/best-bottom-freezer-refrigerators-of-the-year-a2988839570/"
+      },
+      "publishedAt": "2026-07-23T07:00:00.000Z",
+      "url": "https://www.consumerreports.org/appliances/refrigerators/best-bottom-freezer-refrigerators-of-the-year-a2988839570/",
+      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "image": "https://article.images.consumerreports.org/image/upload/t_article_tout/v1741119445/prod/content/dam/CRO-Images-2025/Appliances/CR-Appliances-InlineHero-Best-Bottom-Freezers-0325",
+      "imageChecked": true
+    },
+    {
       "id": 2127,
       "lens": "정책",
       "grade": "주요",
@@ -7345,7 +7513,7 @@
       },
       "publishedAt": "2026-07-23T02:11:00.000Z",
       "url": "https://m.kr.investing.com/news/stock-market-news/article-2025702?ampMode=1",
-      "linkCheckedAt": "2026-07-26T20:03:22.659Z",
+      "linkCheckedAt": "2026-07-29T20:06:49.540Z",
       "image": null,
       "relatedArticles": [
         {
