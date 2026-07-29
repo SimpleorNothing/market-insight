@@ -1,49 +1,7 @@
 {
-  "updatedAt": "2026-07-29T07:44:08.700Z",
+  "updatedAt": "2026-07-29T10:32:06.927Z",
   "schemaVersion": "v2",
   "items": [
-    {
-      "id": 2491,
-      "lens": "거시",
-      "grade": "주시",
-      "impact": 3.1,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "금리",
-        "기준금리",
-        "금융통화위",
-        "한국은행",
-        "통화정책"
-      ],
-      "headline": "한은, 8월 추가 금리인상 시사…기준금리 인상 기조 지속",
-      "summary": "한국은행 신현송 총재가 8월 금융통화위원회에서 기준금리 인상 기조를 이어갈 필요가 있다고 밝혔다. 한은은 지난달 기준금리를 2.50%에서 2.75%로 0.25%포인트 인상했으며, 주가·외국인 자금 변동성 등을 고려해 추가 인상을 검토 중이다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "한은 신현송 총재, 8월 금통위에서 금리 인상 기조 지속 필요성 언급"
-        },
-        {
-          "type": "content",
-          "text": "지난달 기준금리 2.50%→2.75%로 0.25%포인트 인상, 주가·외국인 변동 등 모니터링"
-        }
-      ],
-      "source": {
-        "name": "매일경제 산업",
-        "url": "https://www.mk.co.kr/news/economy/12110621"
-      },
-      "publishedAt": "2026-07-29T07:22:14.000Z",
-      "url": "https://www.mk.co.kr/news/economy/12110621",
-      "linkCheckedAt": "2026-07-29T07:40:42.480Z",
-      "image": "https://pimg.mk.co.kr/news/cms/202607/29/news-p.v1.20260729.9a063d7630634014a33b0e2609a13720_R.jpg",
-      "imageChecked": true
-    },
     {
       "id": 2492,
       "lens": "경쟁사",
@@ -172,7 +130,79 @@
       "publishedAt": "2026-07-29T05:16:00.000Z",
       "url": "https://www.reuters.com/world/china/appliance-maker-electrolux-q2-operating-profit-beats-expectations-2026-07-29/",
       "linkCheckedAt": "2026-07-29T07:40:42.480Z",
-      "image": null
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 2504,
+          "headline": "Electrolux 2분기 영업이익 예상 초과달성",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L8N43V0BZ:0-appliance-maker-electrolux-q2-operating-profit-beats-expectations/",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-29T05:11:00.000Z"
+        },
+        {
+          "id": 2151,
+          "headline": "Electrolux 구조조정으로 부품사 Ilpea 사우스캐롤라이나 공장 폐쇄",
+          "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/",
+          "source": {
+            "name": "Google News - Midea Global"
+          },
+          "publishedAt": "2026-07-23T18:36:00.000Z"
+        },
+        {
+          "id": 2352,
+          "headline": "Electrolux, 실적·구조조정 평가 속 주가 변동성",
+          "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/electrolux-stock-trades-amid-margin-focus-as-investors-assess-recent/69876510",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-26T09:51:21.000Z"
+        }
+      ]
+    },
+    {
+      "id": 2499,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에너지효율",
+        "절전",
+        "소비자팁",
+        "하절기"
+      ],
+      "headline": "에어컨 온오프 반복 금지, 올바른 절전법 있다",
+      "summary": "여름철 에어컨 사용 시 전기요금을 낮추기 위한 올바른 운영 방법을 제시. 에어컨을 자주 껐다 켜는 것이 전력소비를 증가시키므로 피해야 하며, 효율적인 절전 방안이 따로 있음을 설명.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "에어컨을 자주 껐다 켰다 하면 오히려 전기요금이 증가할 수 있다는 조언"
+        },
+        {
+          "type": "content",
+          "text": "전기요금 절감을 위한 별도의 올바른 에어컨 운영 방법이 존재"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.ardentnews.co.kr/news/articleView.html?idxno=17332"
+      },
+      "publishedAt": "2026-07-29T04:00:00.000Z",
+      "url": "https://www.ardentnews.co.kr/news/articleView.html?idxno=17332",
+      "linkCheckedAt": "2026-07-29T10:28:25.068Z",
+      "image": "https://cdn.ardentnews.co.kr/news/thumbnail/202607/17332_72437_5254_v150.jpg",
+      "imageChecked": true
     },
     {
       "id": 2485,
@@ -348,6 +378,59 @@
       "publishedAt": "2026-07-29T01:00:05.000Z",
       "url": "https://www.yna.co.kr/amp/view/AKR20260729022900003",
       "linkCheckedAt": "2026-07-29T04:58:30.293Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 2501,
+          "headline": "LG전자, 임직원 해커톤으로 AI 과제 5건 발굴",
+          "url": "https://weekly.hankooki.com/news/articleViewAmp.html?idxno=7176491",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-29T09:20:59.000Z"
+        }
+      ]
+    },
+    {
+      "id": 2505,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "실적",
+        "경쟁사 동향",
+        "지역별 실적",
+        "북미시장"
+      ],
+      "headline": "일렉트롤럭스, 수익 전망 상회했으나 북미 부진 지속",
+      "summary": "일렉트롤럭스가 이익 전망을 초과 달성했으나 북미 지역의 실적 부진이 계속되고 있다. 글로벌 수익성은 개선됐으나 핵심 시장인 북미에서의 약세가 향후 과제로 지목되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Electrolux 2분기 이익이 시장 전망을 초과 달성했으나 북미 지역 실적 부진이 지속되고 있음"
+        },
+        {
+          "type": "content",
+          "text": "글로벌 수익성 개선에도 불구하고 북미 시장에서의 약세가 회사 실적 개선을 제약하는 요인으로 작용"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://finimize.com/content/electrolux-beat-profit-forecasts-but-north-america-still-dragged"
+      },
+      "publishedAt": "2026-07-29T00:19:09.000Z",
+      "url": "https://finimize.com/content/electrolux-beat-profit-forecasts-but-north-america-still-dragged",
+      "linkCheckedAt": "2026-07-29T10:28:25.068Z",
       "image": null
     },
     {
@@ -869,13 +952,13 @@
       "imageChecked": true
     },
     {
-      "id": 2494,
+      "id": 2502,
       "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 2.7,
+      "grade": "참고",
+      "impact": 2.4,
       "factors": {
         "salesRelevance": 2,
-        "timeUrgency": 4,
+        "timeUrgency": 3,
         "marketSize": 2,
         "sourceReliability": 3
       },
@@ -884,20 +967,19 @@
         "월풀"
       ],
       "tags": [
-        "인사",
-        "실적발표",
-        "CEO"
+        "경영진 변수",
+        "실적공시"
       ],
-      "headline": "월풀 CEO 자전거 사고로 분기 실적 발표 연기",
-      "summary": "월풀의 최고경영자가 자전거 사고로 부상을 입어 분기 실적 발표가 연기됐다. 구체적인 발표 일정 변경 내용은 명확하지 않다.",
+      "headline": "월풀, CEO 자전거 사고로 실적 발표 연기",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 실적 발표 일정을 연기했다. 구체적인 발표 일정 변경 내용과 CEO의 부상 정도는 추가 공지 예정이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입었다"
+          "text": "월풀 CEO가 자전거 사고로 부상을 입었으며 정기 실적 발표를 연기했다"
         },
         {
           "type": "content",
-          "text": "이로 인해 분기 실적 발표가 연기된 상태다"
+          "text": "새로운 실적 발표 일정은 추후 공지될 예정이다"
         }
       ],
       "source": {
@@ -906,7 +988,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-29T07:40:42.480Z",
+      "linkCheckedAt": "2026-07-29T10:28:25.068Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -1130,6 +1212,47 @@
       "url": "https://m.economictimes.com/magazines/panache/whirlpool-invests-over-rs-245-crore-to-expand-refrigerator-manufacturing-capacity-in-india/articleshow/132682012.cms",
       "linkCheckedAt": "2026-07-28T12:30:20.386Z",
       "image": "https://img.etimg.com/thumb/msid-132682030,width-1200,height-630,imgsize-149994,overlay-etpanache/articleshow.jpg"
+    },
+    {
+      "id": 2498,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Carrier"
+      ],
+      "tags": [
+        "HVAC",
+        "실적전망",
+        "수요증가",
+        "냉난방공조"
+      ],
+      "headline": "캐리어, 에어컨 수요 증가로 연간 실적 전망 상향",
+      "summary": "캐리어가 에어컨 수요 증가에 힘입어 연간 실적 전망치를 상향 조정했다. 글로벌 냉난방공조 시장의 수요 강세를 반영한 조치로, 경쟁 업체들의 실적 동향을 파악할 수 있는 지표가 된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "캐리어가 에어컨 수요 증가에 힘입어 연간 실적 전망치를 상향 조정"
+        }
+      ],
+      "source": {
+        "name": "Google News - 캐리어/오텍캐리어 KR",
+        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N43U0Z7:0/"
+      },
+      "publishedAt": "2026-07-28T10:26:47.000Z",
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L4N43U0Z7:0/",
+      "linkCheckedAt": "2026-07-29T10:28:25.068Z",
+      "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "imageChecked": true
     },
     {
       "id": 2496,
@@ -3391,59 +3514,6 @@
       "linkCheckedAt": "2026-07-26T12:55:33.426Z",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2701705_1920_1080.webp",
       "imageChecked": true
-    },
-    {
-      "id": 2352,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "Electrolux"
-      ],
-      "tags": [
-        "실적",
-        "구조조정",
-        "수익성"
-      ],
-      "headline": "Electrolux, 실적·구조조정 평가 속 주가 변동성",
-      "summary": "Electrolux가 최근 실적 발표와 구조조정을 배경으로 마진율 개선에 대한 투자자 평가가 엇갈리며 주가가 변동 중이다. 회사의 수익성 전망이 시장의 주요 포커스가 되고 있다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "Electrolux 주가, 최근 실적 발표와 구조조정 관련 투자자 평가 분산으로 변동성 중"
-        },
-        {
-          "type": "content",
-          "text": "마진율 개선이 시장의 핵심 평가 기준으로 부상 중"
-        }
-      ],
-      "source": {
-        "name": "Google News - Electrolux",
-        "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/electrolux-stock-trades-amid-margin-focus-as-investors-assess-recent/69876510"
-      },
-      "publishedAt": "2026-07-26T09:51:21.000Z",
-      "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/electrolux-stock-trades-amid-margin-focus-as-investors-assess-recent/69876510",
-      "linkCheckedAt": "2026-07-26T21:48:45.967Z",
-      "image": "https://mdb.ad-hoc-news.de/bild/bild-2706736_1920_1080.webp",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 2151,
-          "headline": "Electrolux 구조조정으로 부품사 Ilpea 사우스캐롤라이나 공장 폐쇄",
-          "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/",
-          "source": {
-            "name": "Google News - Midea Global"
-          },
-          "publishedAt": "2026-07-23T18:36:00.000Z"
-        }
-      ]
     },
     {
       "id": 2400,
@@ -6602,7 +6672,7 @@
       },
       "publishedAt": "2026-07-23T07:00:00.000Z",
       "url": "https://www.etnews.com/20260723000347",
-      "linkCheckedAt": "2026-07-26T10:27:48.424Z",
+      "linkCheckedAt": "2026-07-29T10:28:03.799Z",
       "image": null
     },
     {
