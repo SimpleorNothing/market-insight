@@ -1,7 +1,49 @@
 {
-  "updatedAt": "2026-07-29T12:58:22.487Z",
+  "updatedAt": "2026-07-29T15:07:50.777Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2512,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "데이터센터",
+        "냉각수요",
+        "HVAC수요",
+        "실적상향"
+      ],
+      "headline": "Johnson Controls, 데이터센터 수요로 연간 이익 전망 상향",
+      "summary": "Johnson Controls가 데이터센터 냉각 수요 강세에 따라 2026년 연간 순이익 전망을 상향 조정했다. AI 산업 급성장으로 고성능 냉난방공조 수요가 확대되면서 실적 개선이 가시화되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Johnson Controls가 데이터센터 수요 강세를 근거로 2026년 연간 순이익 전망을 상향 조정"
+        },
+        {
+          "type": "content",
+          "text": "AI 산업 성장으로 고성능 냉난방공조·냉각 솔루션 수요 급증 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://www.reuters.com/business/johnson-controls-lifts-annual-profit-forecast-data-center-demand-2026-07-29/"
+      },
+      "publishedAt": "2026-07-29T12:31:46.000Z",
+      "url": "https://www.reuters.com/business/johnson-controls-lifts-annual-profit-forecast-data-center-demand-2026-07-29/",
+      "linkCheckedAt": "2026-07-29T15:04:11.937Z",
+      "image": null
+    },
     {
       "id": 2506,
       "lens": "소비자",
@@ -137,6 +179,49 @@
       "imageChecked": true
     },
     {
+      "id": 2514,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "실적",
+        "2분기",
+        "경쟁사"
+      ],
+      "headline": "일렉트룩스 2분기 영업익, 시장 전망 상회",
+      "summary": "일렉트룩스가 2분기 영업익으로 애널리스트 포전망을 초과 달성했다. 글로벌 가전 경쟁사의 실적 호조가 확인됐다. EU 시장 동향을 반영한 경쟁 구도 변화로 주목된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "일렉트룩스 2분기 영업익이 애널리스트 포전망을 상회했다"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://www.globalbankingandfinance.com/appliance-maker-electrolux-q2-operating-profit-beats/"
+      },
+      "publishedAt": "2026-07-29T05:58:15.000Z",
+      "url": "https://www.globalbankingandfinance.com/appliance-maker-electrolux-q2-operating-profit-beats/",
+      "linkCheckedAt": "2026-07-29T15:04:11.937Z",
+      "image": "https://www.globalbankingandfinance.com/i/cloud-acad185e-b063-452f-a6e3-6ec6b2ba7003/width=1200,height=630,quality=80,format=auto,fit=cover/"
+    },
+    {
       "id": 2509,
       "lens": "경쟁사",
       "grade": "주요",
@@ -214,6 +299,65 @@
             "name": "Google News - Electrolux"
           },
           "publishedAt": "2026-07-29T05:16:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 2513,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "냉장고",
+        "세탁기",
+        "건조기",
+        "조리기기",
+        "식기세척기"
+      ],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "실적",
+        "비용절감",
+        "지역별 수요",
+        "미국시장"
+      ],
+      "headline": "일렉트롤럭스, 비용절감 효과로 이익전망 상회하나 미국 수요 약화",
+      "summary": "일렉트롤럭스가 비용절감 효과에 힘입어 이익 전망치를 상회했으나, 미국 시장의 수요 약화가 주목된다. 유럽 대형 가전사의 실적 개선과 지역별 시장 동향을 보여주는 결과다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "일렉트롤럭스가 비용절감 효과로 이익 전망치를 초과 달성"
+        },
+        {
+          "type": "content",
+          "text": "미국 지역 수요 약화가 실적 제약 요인으로 작용"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://www.reuters.com/world/china/appliance-maker-electrolux-q2-operating-profit-beats-expectations-2026-07-29/"
+      },
+      "publishedAt": "2026-07-29T05:16:00.000Z",
+      "url": "https://www.reuters.com/world/china/appliance-maker-electrolux-q2-operating-profit-beats-expectations-2026-07-29/",
+      "linkCheckedAt": "2026-07-29T15:04:11.937Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 2505,
+          "headline": "일렉트롤럭스, 수익 전망 상회했으나 북미 부진 지속",
+          "url": "https://finimize.com/content/electrolux-beat-profit-forecasts-but-north-america-still-dragged",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-29T00:19:09.000Z"
         }
       ]
     },
@@ -446,48 +590,6 @@
           "publishedAt": "2026-07-29T09:20:59.000Z"
         }
       ]
-    },
-    {
-      "id": 2505,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "Electrolux"
-      ],
-      "tags": [
-        "실적",
-        "경쟁사 동향",
-        "지역별 실적",
-        "북미시장"
-      ],
-      "headline": "일렉트롤럭스, 수익 전망 상회했으나 북미 부진 지속",
-      "summary": "일렉트롤럭스가 이익 전망을 초과 달성했으나 북미 지역의 실적 부진이 계속되고 있다. 글로벌 수익성은 개선됐으나 핵심 시장인 북미에서의 약세가 향후 과제로 지목되고 있다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "Electrolux 2분기 이익이 시장 전망을 초과 달성했으나 북미 지역 실적 부진이 지속되고 있음"
-        },
-        {
-          "type": "content",
-          "text": "글로벌 수익성 개선에도 불구하고 북미 시장에서의 약세가 회사 실적 개선을 제약하는 요인으로 작용"
-        }
-      ],
-      "source": {
-        "name": "Google News - Electrolux",
-        "url": "https://finimize.com/content/electrolux-beat-profit-forecasts-but-north-america-still-dragged"
-      },
-      "publishedAt": "2026-07-29T00:19:09.000Z",
-      "url": "https://finimize.com/content/electrolux-beat-profit-forecasts-but-north-america-still-dragged",
-      "linkCheckedAt": "2026-07-29T10:28:25.068Z",
-      "image": null
     },
     {
       "id": 2480,
@@ -1008,7 +1110,7 @@
       "imageChecked": true
     },
     {
-      "id": 2507,
+      "id": 2510,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -1024,19 +1126,19 @@
       ],
       "tags": [
         "경영진",
-        "실적 공시",
-        "리더십 공백"
+        "실적",
+        "북미"
       ],
-      "headline": "월풀 CEO 자전거 사고로 실적 발표 연기",
-      "summary": "월풀의 CEO가 자전거 사고로 부상을 당해 정기 실적 발표가 지연되었다. 회사 리더십 공백에 따른 실적 공시 일정 변경이 발생했다.",
+      "headline": "월풀, CEO 자전거 사고로 실적 공시 연기",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 당해 정기 실적 공시가 지연되었다. CEO의 구체적 상태와 복귀 일정은 공개되지 않았으며, 실적 재공시 시점도 미정이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입어 정기 실적 발표 일정이 지연"
+          "text": "월풀 CEO가 자전거 사고로 부상해 정기 실적 공시 일정이 연기됨"
         },
         {
           "type": "content",
-          "text": "경영진 공백으로 인한 회사 공시 일정 영향"
+          "text": "회사가 CEO의 상태와 복귀 시점에 대해 구체적 정보를 공개하지 않음"
         }
       ],
       "source": {
@@ -1045,7 +1147,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-29T12:54:53.254Z",
+      "linkCheckedAt": "2026-07-29T15:04:11.937Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -3465,7 +3567,7 @@
       },
       "publishedAt": "2026-07-26T12:31:21.000Z",
       "url": "https://www.munhwa.com/article/11605080",
-      "linkCheckedAt": "2026-07-26T12:55:33.426Z",
+      "linkCheckedAt": "2026-07-29T15:03:44.649Z",
       "image": "assets/img/topics/aircon.svg",
       "imageChecked": true,
       "imageOriginal": "https://wimg.munhwa.com/news/cms/2026/07/26/news-p.v1.20260725.939af4f7a0a748519ecc01dff76a23ac_R.jpg",
@@ -3568,7 +3670,7 @@
       },
       "publishedAt": "2026-07-26T12:12:23.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-trades-around-recent-lows-as-weaker-demand-weighs-on/69877866",
-      "linkCheckedAt": "2026-07-26T12:55:33.426Z",
+      "linkCheckedAt": "2026-07-29T15:03:44.649Z",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2701705_1920_1080.webp",
       "imageChecked": true
     },
@@ -4248,7 +4350,7 @@
       },
       "publishedAt": "2026-07-25T01:30:05.000Z",
       "url": "https://en.sedaily.com/finance/2026/07/25/trump-tariff-pressure-tests-samsung-lg-global-production",
-      "linkCheckedAt": "2026-07-26T14:23:22.428Z",
+      "linkCheckedAt": "2026-07-29T15:03:44.649Z",
       "image": null,
       "relatedArticles": [
         {
@@ -9771,7 +9873,7 @@
       },
       "publishedAt": "2026-07-21T03:21:05.000Z",
       "url": "https://www.opportimes.com/en/manufacturing-reshoring-ge-appliances-invests-3-billion-in-the-united-states/",
-      "linkCheckedAt": "2026-07-26T12:55:13.572Z",
+      "linkCheckedAt": "2026-07-29T15:03:44.649Z",
       "image": "https://8d073164.delivery.rocketcdn.me/wp-content/uploads/2026/07/Lavadoras-GE-1.png",
       "imageChecked": true
     },
