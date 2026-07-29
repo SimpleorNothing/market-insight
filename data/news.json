@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T20:10:29.883Z",
+  "updatedAt": "2026-07-29T21:49:29.642Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -1480,7 +1480,7 @@
       "imageChecked": true
     },
     {
-      "id": 2528,
+      "id": 2533,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -1496,19 +1496,19 @@
       ],
       "tags": [
         "경영진",
-        "인사",
-        "실적"
+        "실적발표",
+        "미국"
       ],
-      "headline": "월풀, CEO 자전거 사고로 실적 발표 연기",
-      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 실적 발표 일정이 연기됐다. 경영 공백에 따른 시장 파급 우려로 이목이 집중되고 있다.",
+      "headline": "월풀, CEO 자전거 사고로 어닝 발표 연기",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 실적 발표가 지연되고 있다. 사고의 구체적 심각도와 회복 일정은 아직 공개되지 않았으며, 회사의 공식 성명과 어닝 재일정이 주목된다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입어 실적 발표 일정이 예정보다 연기됨"
+          "text": "월풀 CEO 자전거 사고로 인해 정기 실적 발표가 지연됨"
         },
         {
           "type": "content",
-          "text": "경영 공백 상황에서 실적 발표 연기로 시장 불안정 우려"
+          "text": "CEO의 부상 정도와 회복 일정에 대한 세부 정보는 아직 미공개"
         }
       ],
       "source": {
@@ -1517,7 +1517,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "linkCheckedAt": "2026-07-29T21:46:08.871Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -1782,6 +1782,50 @@
       "linkCheckedAt": "2026-07-29T10:28:25.068Z",
       "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
       "imageChecked": true
+    },
+    {
+      "id": 2535,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Trane"
+      ],
+      "tags": [
+        "경영진 변화",
+        "공급망",
+        "밸류에이션",
+        "HVAC"
+      ],
+      "headline": "Trane, 공급망 책임자 퇴사로 밸류에이션 재평가",
+      "summary": "Trane Technologies의 공급망 담당 임원 퇴사로 기업 밸류에이션이 재검토되고 있다. 공급망 안정성과 운영 효율성에 대한 시장의 신뢰가 흔들리면서 투자자들의 우려가 커지고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Trane Technologies의 공급망 최고책임자 퇴사로 기업의 밸류에이션 및 운영 안정성이 재평가 대상이 됨"
+        },
+        {
+          "type": "content",
+          "text": "글로벌 HVAC 시장에서 공급망 관리의 중요성이 강조되며 투자자 신뢰도 영향을 받음"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/trane-technologies-tt-faces-fresh-100743870.html"
+      },
+      "publishedAt": "2026-07-28T10:07:43.000Z",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trane-technologies-tt-faces-fresh-100743870.html",
+      "linkCheckedAt": "2026-07-29T21:46:08.871Z",
+      "image": null
     },
     {
       "id": 2496,
