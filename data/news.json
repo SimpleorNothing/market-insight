@@ -1,7 +1,61 @@
 {
-  "updatedAt": "2026-07-30T15:04:50.297Z",
+  "updatedAt": "2026-07-30T17:17:32.438Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2605,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "AI협업",
+        "피지컬AI",
+        "기술혁신",
+        "국제협력"
+      ],
+      "headline": "LG전자, 美中기업과 피지컬 AI 협업 추진",
+      "summary": "LG전자가 미국과 중국 기업들과 피지컬 AI 분야의 협업을 시작한다. 피지컬 AI는 로봇·자동화 시스템이 물리 환경과 상호작용하는 기술로, 향후 생활가전 자동화 등 새로운 비즈니스 기회가 될 것으로 예상된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 미국 및 중국 기업과 피지컬 AI 분야 협업 시작"
+        },
+        {
+          "type": "content",
+          "text": "피지컬 AI는 로봇·자동화가 물리 환경과 상호작용하는 기술로 생활가전 영역 적용 가능"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hankyung.com/article/2026073064771"
+      },
+      "publishedAt": "2026-07-30T16:52:00.000Z",
+      "url": "https://www.hankyung.com/article/2026073064771",
+      "linkCheckedAt": "2026-07-30T17:13:46.245Z",
+      "image": "https://img.hankyung.com/photo/202607/AA.45199084.1.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2544,
+          "headline": "LG전자, 미래에셋벤처와 800억 피지컬AI 펀드 결성",
+          "url": "https://www.topdaily.kr/articles/111204",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-29T23:30:00.000Z"
+        }
+      ]
+    },
     {
       "id": 2591,
       "lens": "거시",
@@ -255,6 +309,24 @@
             "name": "Google News - LG Global"
           },
           "publishedAt": "2026-07-30T05:36:21.000Z"
+        },
+        {
+          "id": 2604,
+          "headline": "LG전자 2분기 가전·전장사업 신기록 달성",
+          "url": "https://www.joongang.co.kr/article/25449623",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-30T15:02:00.000Z"
+        },
+        {
+          "id": 2607,
+          "headline": "LG전자 2분기 역대 최대 실적, 가전·전장 부문 주도",
+          "url": "https://v.daum.net/v/20260731002651982",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-30T15:26:51.000Z"
         }
       ]
     },
@@ -640,50 +712,6 @@
           "publishedAt": "2026-07-30T00:39:12.000Z"
         }
       ]
-    },
-    {
-      "id": 2544,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 2.9,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 4,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "신사업",
-        "투자",
-        "AI",
-        "로보틱스",
-        "벤처펀드"
-      ],
-      "headline": "LG전자, 미래에셋벤처와 800억 피지컬AI 펀드 결성",
-      "summary": "LG전자가 미래에셋벤처와 함께 800억원 규모의 전략펀드를 결성하며 피지컬 AI 분야에 진출한다. 로보틱스·자동화 등 물리적 인공지능 기술 스타트업 육성과 투자를 통해 신사업 생태계를 확대하는 전략이다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자와 미래에셋벤처가 800억원 규모 피지컬AI 전략펀드 결성"
-        },
-        {
-          "type": "content",
-          "text": "로보틱스·자동화 등 물리적 인공지능 기술 분야 스타트업 투자·육성 추진"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.topdaily.kr/articles/111204"
-      },
-      "publishedAt": "2026-07-29T23:30:00.000Z",
-      "url": "https://www.topdaily.kr/articles/111204",
-      "linkCheckedAt": "2026-07-29T23:52:47.918Z",
-      "image": "https://assets.repress.co.kr/photos/e80ac21f5d83568d601691b20b275a51/thumb.jpg",
-      "imageChecked": true
     },
     {
       "id": 2541,
@@ -1414,7 +1442,18 @@
       "publishedAt": "2026-07-29T12:31:46.000Z",
       "url": "https://www.reuters.com/business/johnson-controls-lifts-annual-profit-forecast-data-center-demand-2026-07-29/",
       "linkCheckedAt": "2026-07-29T15:04:11.937Z",
-      "image": null
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 2617,
+          "headline": "Johnson Controls, 데이터센터용 흡수식 칠러로 에너지 효율 강조",
+          "url": "https://www.facilitiesdive.com/news/johnson-controls-touts-absorption-chillers-for-lower-data-center-energy-dem/826549/",
+          "source": {
+            "name": "Google News - HVAC Majors"
+          },
+          "publishedAt": "2026-07-30T16:39:08.000Z"
+        }
+      ]
     },
     {
       "id": 2547,
@@ -2568,7 +2607,7 @@
       "imageChecked": true
     },
     {
-      "id": 2595,
+      "id": 2616,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -2583,24 +2622,29 @@
         "월풀"
       ],
       "tags": [
-        "경영진 이슈",
-        "실적 발표"
+        "경영진",
+        "실적공시",
+        "북미"
       ],
-      "headline": "월풀, CEO 자전거 사고로 어닝 발표 연기",
-      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 어닝 발표 일정을 연기했다. 구체적인 재무 수치나 새 발표 일정은 보도되지 않았다.",
+      "headline": "월풀, CEO 자전거 사고로 실적 공시 연기",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 실적 발표를 연기했다. 경영진 비상 상황에 따른 공시 일정 조정으로, 추후 공식 발표 일정이 예정되어 있다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상, 정기 어닝 발표 일정 연기"
+          "text": "월풀 CEO가 자전거 사고로 부상, 정기 실적 공시 일정 연기"
+        },
+        {
+          "type": "content",
+          "text": "사건으로 인한 경영 연속성 관리 차원의 공식 발표 일정 조정"
         }
       ],
       "source": {
-        "name": "Google News - US Home Appliances",
+        "name": "Google News - Whirlpool",
         "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/"
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-30T15:01:01.970Z",
+      "linkCheckedAt": "2026-07-30T17:13:46.245Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -4091,7 +4135,7 @@
       },
       "publishedAt": "2026-07-27T11:02:22.000Z",
       "url": "https://americancoinop.com/articles/whirlpool-corp-strengthens-commercial-laundry-leadership-team",
-      "linkCheckedAt": "2026-07-27T15:36:01.528Z",
+      "linkCheckedAt": "2026-07-30T17:13:13.234Z",
       "image": "assets/img/topics/news.svg",
       "imageChecked": true,
       "imageOriginal": "https://americancoinop.com/sites/default/files/styles/article_main_facebook/public/images/articles/main/whirlpool_corporation_logo_and_buzzard_-_vasconcellos-v2.jpg?h=30914f02&itok=B5VI-8Kt",
@@ -4322,7 +4366,7 @@
       },
       "publishedAt": "2026-07-27T06:21:58.000Z",
       "url": "https://www.newstomato.com/ReadNews.aspx?no=1308314",
-      "linkCheckedAt": "2026-07-27T15:36:01.528Z",
+      "linkCheckedAt": "2026-07-30T17:13:13.234Z",
       "image": "https://image.newstomato.com/newsimg/2026/7/27/1308314/attach.jpg?v=202607271621",
       "imageChecked": true
     },
@@ -6606,7 +6650,7 @@
       },
       "publishedAt": "2026-07-24T13:57:42.000Z",
       "url": "https://www.nytimes.com/article/trump-tariffs-trade.html",
-      "linkCheckedAt": "2026-07-27T15:35:37.051Z",
+      "linkCheckedAt": "2026-07-30T17:13:13.234Z",
       "image": null
     },
     {
@@ -6647,7 +6691,7 @@
       },
       "publishedAt": "2026-07-24T13:00:00.000Z",
       "url": "https://mexicobusiness.news/policyandeconomy/news/usmca-uncertainty-how-trade-review-risks-mexicos-gdp-growth",
-      "linkCheckedAt": "2026-07-27T15:35:37.051Z",
+      "linkCheckedAt": "2026-07-30T17:13:13.234Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/pictures/2025-11/large-Greyhound-Trading-img-2025-Renato-Campos-1-MBN.jpg?h=61e19443&itok=A2Hexfeh",
@@ -6859,7 +6903,7 @@
       },
       "publishedAt": "2026-07-24T07:48:04.000Z",
       "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16160",
-      "linkCheckedAt": "2026-07-27T15:35:37.051Z",
+      "linkCheckedAt": "2026-07-30T17:13:13.234Z",
       "image": "https://cdn.esgeconomy.com/news/thumbnail/202607/16160_23803_1522_v150.jpg",
       "imageChecked": true
     },
@@ -7073,7 +7117,7 @@
       },
       "publishedAt": "2026-07-24T04:55:00.000Z",
       "url": "https://finance.biggo.com/news/42be6c43-b537-4eb1-8839-7344c3310053",
-      "linkCheckedAt": "2026-07-27T15:35:37.051Z",
+      "linkCheckedAt": "2026-07-30T17:13:13.234Z",
       "image": "https://img.biggo.com/hTUahsLGG7gTwK3bdYihZRlzMC59CwDe3zDk1ZQGrhw/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3LzQyYmU2YzQzLWI1MzctNGViMS04ODM5LTczNDRjMzMxMDA1M18xNzg0ODY5NDU2X2RlZmF1bHQuanBn.jpg",
       "imageChecked": true
     },
@@ -7327,7 +7371,7 @@
       },
       "publishedAt": "2026-07-24T00:57:00.000Z",
       "url": "https://www.reuters.com/world/americas/us-mexico-set-fourth-round-usmca-talks-amid-differences-over-key-issues-2026-07-24/",
-      "linkCheckedAt": "2026-07-27T15:35:37.051Z",
+      "linkCheckedAt": "2026-07-30T17:13:13.234Z",
       "image": null
     },
     {
