@@ -1,7 +1,48 @@
 {
-  "updatedAt": "2026-07-30T17:17:32.438Z",
+  "updatedAt": "2026-07-30T19:11:18.348Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2606,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상정책",
+        "FTA",
+        "한칠레",
+        "무역협상"
+      ],
+      "headline": "한·칠레 FTA 10년만에 개정 추진",
+      "summary": "이재명 대통령이 칠레 방문 중 카스트 대통령과 정상회담을 열고 한·칠레 자유무역협정(FTA) 개정을 추진하기로 합의했다. 양국은 자유무역위를 10년 만에 재가동하기로 했다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "이재명 대통령이 칠레 방문 중 한·칠레 FTA 개정을 추진하기로 합의"
+        },
+        {
+          "type": "content",
+          "text": "양국 자유무역위를 10년 만에 재가동하기로 결정"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/business/12112680"
+      },
+      "publishedAt": "2026-07-30T19:00:00.000Z",
+      "url": "https://www.mk.co.kr/news/business/12112680",
+      "linkCheckedAt": "2026-07-30T19:07:26.970Z",
+      "image": "https://pimg.mk.co.kr/news/cms/202607/31/20260731_01170108000001_M00.jpg",
+      "imageChecked": true
+    },
     {
       "id": 2605,
       "lens": "기술",
@@ -55,6 +96,86 @@
           "publishedAt": "2026-07-29T23:30:00.000Z"
         }
       ]
+    },
+    {
+      "id": 2621,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "데이터센터",
+        "에너지효율",
+        "냉동기",
+        "HVAC혁신"
+      ],
+      "headline": "존슨콘트롤스, 데이터센터용 흡수식 냉동기 에너지 효율 강조",
+      "summary": "존슨콘트롤스가 데이터센터의 에너지 소비 절감을 목표로 흡수식 냉동기 솔루션을 제시했다. 글로벌 데이터센터 냉방 시장에서 저에너지 기술 도입 움직임이 확대되고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "존슨콘트롤스가 데이터센터 전용 흡수식 냉동기 기술을 통해 냉방 에너지 수요 감소 방안 제시"
+        },
+        {
+          "type": "content",
+          "text": "AI 서버 열량 증가로 데이터센터 냉방 효율성이 핵심 경쟁 요소로 부상"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://www.facilitiesdive.com/news/johnson-controls-touts-absorption-chillers-for-lower-data-center-energy-dem/826549/"
+      },
+      "publishedAt": "2026-07-30T16:39:08.000Z",
+      "url": "https://www.facilitiesdive.com/news/johnson-controls-touts-absorption-chillers-for-lower-data-center-energy-dem/826549/",
+      "linkCheckedAt": "2026-07-30T19:07:26.970Z",
+      "image": null
+    },
+    {
+      "id": 2611,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "지분투자",
+        "기관투자자",
+        "자본구조"
+      ],
+      "headline": "BlackRock, 월풀 9.4% 지분 공개",
+      "summary": "BlackRock이 월풀의 9.4% 지분을 보유 중인 것으로 공개했다. 이는 월풀의 주요 기관 투자자 편입을 의미한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "BlackRock이 월풀의 9.4% 지분을 beneficial stake로 공개"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.stocktitan.net/sec-filings/WHR/schedule-13g-a-whirlpool-corp-de-amended-passive-investment-disclosur-07ed9d008a5f.html"
+      },
+      "publishedAt": "2026-07-30T15:21:53.000Z",
+      "url": "https://www.stocktitan.net/sec-filings/WHR/schedule-13g-a-whirlpool-corp-de-amended-passive-investment-disclosur-07ed9d008a5f.html",
+      "linkCheckedAt": "2026-07-30T19:07:26.970Z",
+      "image": "https://static.stocktitan.net/company-logo/whr-lg.png?v=3022c9b91f",
+      "imageChecked": true
     },
     {
       "id": 2591,
@@ -1356,6 +1477,50 @@
       "image": "https://qz.com/cdn-cgi/image/width=1200,quality=85,format=auto/https://assets.qz.com/media/pexels-castorlystock-3829549-300x200.jpg"
     },
     {
+      "id": 2620,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "JCI"
+      ],
+      "tags": [
+        "실적",
+        "HVAC",
+        "건물자동화",
+        "북미"
+      ],
+      "headline": "JCI 3분기 어닝·레버뉴 모두 컨센서스 상회, FY26 전망 상향",
+      "summary": "Johnson Controls International(JCI)이 3분기 실적에서 어닝과 레버뉴 모두 시장 추정치를 초과했으며, 2026년 전체 연간 가이던스를 상향 조정했다. HVAC 및 건물 자동화 부문의 강세가 주도했다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "JCI 3분기 어닝·매출이 시장 컨센서스를 초과, 연간 가이던스를 상향 조정"
+        },
+        {
+          "type": "content",
+          "text": "HVAC·건물 자동화 사업의 강세가 실적 성장을 견인"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/johnson-controls-tops-q3-earnings-153500394.html"
+      },
+      "publishedAt": "2026-07-29T15:35:00.000Z",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/johnson-controls-tops-q3-earnings-153500394.html",
+      "linkCheckedAt": "2026-07-30T19:07:26.970Z",
+      "image": null
+    },
+    {
       "id": 2515,
       "lens": "소비자",
       "grade": "주요",
@@ -2607,7 +2772,7 @@
       "imageChecked": true
     },
     {
-      "id": 2616,
+      "id": 2619,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -2623,19 +2788,19 @@
       ],
       "tags": [
         "경영진",
-        "실적공시",
-        "북미"
+        "공시",
+        "실적"
       ],
-      "headline": "월풀, CEO 자전거 사고로 실적 공시 연기",
-      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 실적 발표를 연기했다. 경영진 비상 상황에 따른 공시 일정 조정으로, 추후 공식 발표 일정이 예정되어 있다.",
+      "headline": "월풀 CEO 자전거 사고로 어닝 공시 연기",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 실적 공시가 지연됐다. 경영진 건강 문제로 인한 기업공시 일정 변경 사례로, 기업지배구조 리스크 요인이 가시화됐다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상, 정기 실적 공시 일정 연기"
+          "text": "월풀 CEO가 자전거 사고로 부상을 입고 어닝 발표 일정이 조정됨"
         },
         {
           "type": "content",
-          "text": "사건으로 인한 경영 연속성 관리 차원의 공식 발표 일정 조정"
+          "text": "경영진 건강 이슈로 인한 기업공시 지연은 투자자신뢰도와 시장 불확실성에 영향을 줄 수 있음"
         }
       ],
       "source": {
@@ -2644,7 +2809,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-30T17:13:46.245Z",
+      "linkCheckedAt": "2026-07-30T19:07:26.970Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -3905,7 +4070,7 @@
       },
       "publishedAt": "2026-07-27T16:00:00.000Z",
       "url": "https://www.themarysue.com/best-buy-appliance-delivery/",
-      "linkCheckedAt": "2026-07-27T17:28:28.880Z",
+      "linkCheckedAt": "2026-07-30T19:07:05.934Z",
       "image": "https://www.themarysue.com/wp-content/uploads/2026/07/Woman-buys-refrigerator-from-Best-Buy.jpg?fit=2560%2C1440",
       "imageChecked": true
     },
@@ -5341,7 +5506,7 @@
       },
       "publishedAt": "2026-07-26T06:18:40.000Z",
       "url": "https://v.daum.net/v/20260726151840710?f=p",
-      "linkCheckedAt": "2026-07-27T17:28:28.880Z",
+      "linkCheckedAt": "2026-07-30T19:07:05.934Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/26/khan/20260726151842274qdpd.jpg",
