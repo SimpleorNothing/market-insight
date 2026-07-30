@@ -1,7 +1,61 @@
 {
-  "updatedAt": "2026-07-29T23:56:21.133Z",
+  "updatedAt": "2026-07-30T01:23:32.130Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2552,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 5,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "실적",
+        "어닝",
+        "반도체",
+        "메모리"
+      ],
+      "headline": "삼성전자 2분기 매출 171.5조·영업익 89.5조 역대 최대",
+      "summary": "삼성전자가 2분기 매출 171.5조원, 영업이익 89.5조원을 기록해 분기별 역사상 최대치를 달성했다. 이는 메모리반도체 수급 개선과 고마진 제품 판매 확대에 따른 것으로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "2분기 매출 171.5조원, 영업이익 89.5조원으로 분기별 역대 최대 실적 달성"
+        },
+        {
+          "type": "content",
+          "text": "메모리반도체 수급 개선과 고마진 제품 판매 확대가 실적 성장을 견인"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1718333"
+      },
+      "publishedAt": "2026-07-29T23:51:44.000Z",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1718333",
+      "linkCheckedAt": "2026-07-30T01:20:15.143Z",
+      "image": "https://cdn.ebn.co.kr/news/thumbnail/202607/1718333_748722_5115_v150.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2551,
+          "headline": "삼성전자 2분기 매출 171.5조, 역대 분기 최대 실적 기록",
+          "url": "https://imnews.imbc.com/news/2026/econo/article/6841151_36932.html",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-07-30T00:39:12.000Z"
+        }
+      ]
+    },
     {
       "id": 2544,
       "lens": "경쟁사",
@@ -1773,6 +1827,45 @@
       ]
     },
     {
+      "id": 2554,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "주거·공간",
+        "AI",
+        "설계"
+      ],
+      "headline": "삼성·LG, AI 통합 주택설계 전환 주도",
+      "summary": "삼성전자와 LG전자가 AI 기반 주택설계 전환을 주도하고 있다. 양사의 이같은 움직임은 주거·공간 솔루션으로 가전 판로 확대를 모색하는 신사업 전략으로 평가된다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자와 LG전자가 AI 기술을 주택 설계에 통합하는 방향으로 전환 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.chosun.com/english/industry-en/2026/07/29/3SIEYXCOLZEDZFVWVGM2XR6RRM/"
+      },
+      "publishedAt": "2026-07-28T16:29:36.000Z",
+      "url": "https://www.chosun.com/english/industry-en/2026/07/29/3SIEYXCOLZEDZFVWVGM2XR6RRM/",
+      "linkCheckedAt": "2026-07-30T01:20:15.143Z",
+      "image": "https://www.chosun.com/resizer/v2/SSRB6F65KZHHHK5GZKV2E2TZNM.png?auth=5692c39821ebf61aa98b2537a1dcc593fb08e9d274899ba28c9dc643e485cd21&width=1084&height=569&smart=true"
+    },
+    {
       "id": 2470,
       "lens": "소비자",
       "grade": "주요",
@@ -1820,7 +1913,7 @@
       "imageChecked": true
     },
     {
-      "id": 2545,
+      "id": 2553,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -1835,16 +1928,20 @@
         "월풀"
       ],
       "tags": [
-        "경영진",
-        "실적공시",
-        "CEO"
+        "CEO 부상",
+        "실적 발표 연기",
+        "경영 공백"
       ],
-      "headline": "월풀, CEO 자전거 사고로 실적 발표 연기",
-      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 정기 실적 발표가 연기되었다. 사고 경위와 부상 정도, 발표 재일정에 대한 구체적 내용은 기사에 제시되지 않았다.",
+      "headline": "월풀, CEO 자전거 사고로 분기 실적 발표 연기",
+      "summary": "월풀의 CEO가 자전거 사고로 부상을 입어 분기 실적 발표를 연기했다. 사고로 인한 경영진 공백이 발표 일정에 영향을 미쳤으며, 회사 회복 상황에 따라 새로운 발표 일정이 결정될 예정이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상, 실적 발표 연기"
+          "text": "월풀 CEO가 자전거 사고로 부상을 입었으며, 이로 인해 분기 실적 발표가 연기됐다"
+        },
+        {
+          "type": "content",
+          "text": "새로운 실적 발표 일정은 CEO 회복 상황을 고려해 추후 공지될 예정이다"
         }
       ],
       "source": {
@@ -1853,7 +1950,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-07-29T23:52:47.918Z",
+      "linkCheckedAt": "2026-07-30T01:20:15.143Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
