@@ -91,6 +91,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-07
 | PR | 일자 | 내용 |
 |---|---|---|
+| #123 | 07-31 | perf: 입력 토큰 비용 절감 — Batches API 전환(50%↓) + URL 정규화 사전 dedup |
 | #124 | 07-31 | Migrate MI AI workflows to Gemini |
 | #122 | 07-27 | feat(sensing): 경쟁사 로봇·미래사업 기사 수집 커버리지 보강 |
 | #121 | 07-25 | fix: "skip"/빈 headline 오염 카드 화면 제외 + 분류기 저장 가드 |
