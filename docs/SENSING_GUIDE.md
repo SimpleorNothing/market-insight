@@ -13,7 +13,7 @@
 |---|---|---|
 | **센싱 기준(본 문서)** | `docs/SENSING_GUIDE.md` | 무엇을/어떻게 센싱하는지의 기준·정책 (사람이 읽는 기준서) |
 | 실제 설정값 | `scripts/config.json` | 피드·필터·등급·경쟁사·제품 전 설정 (운영 변경의 90%) |
-| 분류·스킵 로직 | `scripts/fetch-news.js` (`CLASSIFY_SYSTEM`) | Claude(Haiku) 분류·제외 규칙 |
+| 분류·스킵 로직 | `scripts/fetch-news.js` (`CLASSIFY_SYSTEM`) | Gemini Flash-Lite 분류·제외 규칙 |
 | 사이트 노출 팝업 | `assets/js/screening-info.js` | 푸터 **[기사 스크리닝 기준]** = "사이트 맨 아래 가이드", `config.json` 실시간 렌더 |
 | 정책 배경(원본) | Google Drive: `경쟁사 동향 센싱 가이드_v3.docx`, `가전2030_센싱_에이전트_instruction.md` | 상위 미션·정책 배경 |
 
@@ -33,7 +33,7 @@
 
 1. **RSS 수집** — `config.json`의 18개 피드에서 수집, 원문 링크 생존(dead-link) 확인.
 2. **키워드 필터 (코드 · 결정론적, 제목 기준)** — 제목에 `blockKeywords`가 있으면 AI 분류 전 제외. 단 `allowOverrideKeywords`가 함께 있으면 차단하지 않고 통과.
-3. **AI 분류 (Claude Haiku)** — **본문**을 읽고 생활가전(DA) 사업과 무관하면 최종 제외. 통과 기사는 lens · grade · competitors · products · summaryPoints(원문 사실 정리 2~3점) · insight를 부여받는다.
+3. **AI 분류 (Gemini 3.5 Flash-Lite)** — **본문**을 읽고 생활가전(DA) 사업과 무관하면 최종 제외. 통과 기사는 lens · grade · competitors · products · summaryPoints(원문 사실 정리 2~3점) · insight를 부여받는다.
 
 > ⚠ **1·2단계는 제목 기준, 3단계만 본문 기준**이다. 제목이 제품군을 안 드러내는 신사업 기사는 3단계에서 걸러지기 쉽다(§5 참고).
 
