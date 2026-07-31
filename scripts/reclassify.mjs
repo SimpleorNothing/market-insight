@@ -5,15 +5,16 @@
 //   (원문 본문이 저장돼 있지 않아 headline+summary 를 분류 입력으로 사용.
 //    headline·summary·tags 는 재생성하면 정보가 열화되므로 원본 보존.)
 //
-// 인증: ANTHROPIC_API_KEY 없으면 GEN_ANTHROPIC_KEY 사용.
+// 인증: GEMINI_API_KEY 없으면 GOOGLE_API_KEY 또는 GEN_GEMINI_KEY 사용.
 // 사용: node scripts/reclassify.mjs [--dry] [--limit=N] [--concurrency=N]
 import { readFile, writeFile } from "fs/promises";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
-// fetch-news.js 가 import 시점에 Anthropic 클라이언트를 생성하므로 그 前에 키 주입
-if (!process.env.ANTHROPIC_API_KEY && process.env.GEN_ANTHROPIC_KEY) {
-  process.env.ANTHROPIC_API_KEY = process.env.GEN_ANTHROPIC_KEY;
+// fetch-news.js 가 import 시점에 Gemini 키를 확인하므로 그 전에 키 주입
+if (!process.env.GEMINI_API_KEY) {
+  process.env.GEMINI_API_KEY =
+    process.env.GOOGLE_API_KEY || process.env.GEN_GEMINI_KEY || "";
 }
 
 const { classifyOne, computeImpact, gradeFromImpact } = await import(
