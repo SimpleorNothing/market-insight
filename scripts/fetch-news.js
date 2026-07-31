@@ -1004,13 +1004,42 @@ ${item.source}
 ${item.region}`;
 }
 
-  const text = await generateGemini({
-    apiKey,
-    model: GEMINI_FLASH_LITE_MODEL,
-    maxOutputTokens: 800,
-    systemText: CLASSIFY_SYSTEM,
-    parts: [{ text: userPrompt }],
-  });
+async function classifyOne(item, retry = false, hint = "", preText = null) {
+  if (DRY_RUN) {
+    return {
+      lens: "기술",
+      products: ["냉장고"],
+      competitors: [],
+      factors: {
+        salesRelevance: 3,
+        timeUrgency: 3,
+        marketSize: 3,
+        sourceReliability: 3,
+      },
+      headline: item.headline.slice(0, 30),
+      summary: `DRY_RUN 더미 요약: ${item.headline}`,
+      tags: ["test"],
+      summaryPoints: [
+        {
+          type: "content",
+          text: `DRY_RUN 포인트: ${item.headline.slice(0, 20)}`,
+        },
+      ],
+    };
+  }
+
+  // 배치 API가 이미 반환한 응답이 있으면 라이브 호출 없이 후속 검증만 수행한다.
+  // 재시도 시에는 preText를 넘기지 않아 Gemini를 직접 다시 호출한다.
+  const text =
+    preText != null
+      ? String(preText).trim()
+      : await generateGemini({
+          apiKey,
+          model: GEMINI_FLASH_LITE_MODEL,
+          maxOutputTokens: 800,
+          systemText: CLASSIFY_SYSTEM,
+          parts: [{ text: buildUserPrompt(item, hint) }],
+        });
 
   let cleaned = text.replace(/^```json\s*|\s*```$/g, "").trim();
   const firstBrace = cleaned.indexOf("{");
@@ -1405,18 +1434,8 @@ async function main() {
 
   const startId = Math.max(0, ...existing.items.map((i) => i.id || 0)) + 1;
 
-  // Batches API 선실행(비용 50% 할인). 실패·타임아웃 시 자동으로
-  // 기존 동기 경로 폴백 — USE_BATCH=0 으로 완전 비활성 가능.
-  let preTexts = null;
-  if (newOnes.length && !DRY_RUN && process.env.USE_BATCH !== "0") {
-    preTexts = await runClassifyBatch(
-      newOnes.slice(0, CONFIG.limits.maxArticlesPerRun),
-      { client, CLASSIFY_SYSTEM, buildUserPrompt, log }
-    );
-  }
-
   const classified = newOnes.length
-    ? await classifyAll(newOnes, startId, preTexts)
+    ? await classifyAll(newOnes, startId)
     : [];
   if (newOnes.length === 0) log("신규 분류 대상 없음");
   else log(`AI 분류 완료: ${classified.length}건 저장 대상`);
