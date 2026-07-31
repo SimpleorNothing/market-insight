@@ -8,7 +8,7 @@
 
 ## 1. 개요
 
-MI는 가전(DA) 산업 경쟁 인텔리전스 시스템이다. RSS 피드로 뉴스를 수집하고, Claude(Haiku)로 필터링·분류·등급화하여 GitHub Pages 정적 대시보드(`mi.samsungda.net`)에 노출한다. 카드 단위로 사업부 영향 리포트(docx)를 생성할 수 있다.
+MI는 가전(DA) 산업 경쟁 인텔리전스 시스템이다. RSS 피드로 뉴스를 수집하고, Gemini 3.5 Flash-Lite로 필터링·분류·등급화하여 GitHub Pages 정적 대시보드(`mi.samsungda.net`)에 노출한다. 카드 단위 사업부 영향 리포트는 Gemini 3.6 Flash로 생성한다.
 
 - **렌즈(lens)**: 소비자 · 기술 · 경쟁사 · 정책 · 거시
 - **액션 등급(grade)**: 긴급(≥4.5, 즉시 경영진 보고) · 주요(≥3.5, 주간 보고) · 주시(≥2.5) · 참고
@@ -25,7 +25,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
   → scripts/fetch-news.js  (GitHub Actions 크론 "Update news")
       ① blockKeywords 사전 차단 (allowOverrideKeywords가 우선 — 통상·관세는 차단 안 함)
       ② Google News 리다이렉트 URL → 발행처 실제 URL 디코딩 (batchexecute)
-      ③ Haiku 분류: lens/grade/competitors/products/tags/summary/summaryPoints(원문 사실 정리 점 2~3개, 해석 금지)/insight, skip 규칙
+      ③ Gemini Flash-Lite 분류: lens/grade/competitors/products/tags/summary/summaryPoints(원문 사실 정리 점 2~3개, 해석 금지)/insight, skip 규칙
          (시스템 프롬프트 cache_control 캐싱으로 비용 절감)
       ④ dedupe(같은 사건 묶음: entity+텍스트≥0.16, 시간창 72h) · retention(전 등급 365일) · blockKeywords 소급 제거
       ⑤ og:image 부착(enrichImages, LLM 미사용)
@@ -68,7 +68,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 
 ## 5. 자주 하는 작업 레시피
 
-- **RSS 피드 추가**: `config.json` `rssSources`에 항목 삽입. 쿼리는 `urllib.parse.quote`로 인코딩, `when:1d~14d` 윈도우 지정. 노이즈 방어는 3중 구조(blockKeywords → Haiku skip → maxArticlesPerSource=8)에 맡기고, 모호 단어는 구문으로 한정(예: WARN → "WARN notice"). 소급 수집은 불가(피드 윈도우 밖 과거 기사는 못 잡음).
+- **RSS 피드 추가**: `config.json` `rssSources`에 항목 삽입. 쿼리는 `urllib.parse.quote`로 인코딩, `when:1d~14d` 윈도우 지정. 노이즈 방어는 3중 구조(blockKeywords → Gemini skip → maxArticlesPerSource=8)에 맡기고, 모호 단어는 구문으로 한정(예: WARN → "WARN notice"). 소급 수집은 불가(피드 윈도우 밖 과거 기사는 못 잡음).
 - **차단 키워드 추가**: `filterRules.blockKeywords`. 헤드라인 매칭 시 분류 전 차단 + 기존 적재분도 매 실행 시 소급 제거. 통상·관세류는 `allowOverrideKeywords`가 우선.
 - **분류 규칙 변경**: `fetch-news.js`의 CLASSIFY_SYSTEM 프롬프트 수정. 원칙 — competitors는 본문에 실제 거명된 회사만(포괄 표현 금지), lens와 competitors는 독립 판단.
 - **기사 수동 삭제/정정**: `news.json` 직접 편집 PR. 기존 데이터 일괄 정정은 backfill 스크립트 작성(추가만, 삭제 금지 원칙).

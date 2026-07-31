@@ -9,12 +9,16 @@
  *   - 등급 자동 매핑 (점수 임계값 기반)
  *
  * 환경변수:
- *   ANTHROPIC_API_KEY (필수)
+ *   GEMINI_API_KEY 또는 GOOGLE_API_KEY (필수)
  *   DRY_RUN=1 (선택)
  */
 
-import Anthropic from "@anthropic-ai/sdk";
 import { isPortraitImage, pickTopicImage } from "./detect-portrait.mjs";
+import {
+  GEMINI_FLASH_LITE_MODEL,
+  geminiApiKey,
+  generateGemini,
+} from "./gemini-client.mjs";
 import Parser from "rss-parser";
 import { readFile, writeFile } from "fs/promises";
 import { createHash } from "crypto";
@@ -37,9 +41,10 @@ const NEWS_PATH = join(ROOT, "data", "news.json");
 const DRY_RUN = process.env.DRY_RUN === "1";
 const RUN_DATE = new Date().toISOString().slice(0, 10);
 
-const client = DRY_RUN
-  ? null
-  : new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const apiKey = DRY_RUN ? "" : geminiApiKey();
+if (!DRY_RUN && !apiKey) {
+  throw new Error("GEMINI_API_KEY 또는 GOOGLE_API_KEY 미설정");
+}
 
 const rssParser = new Parser({
   timeout: 15000,
@@ -622,7 +627,7 @@ async function enrichImages(items) {
 // 반환값: 이번 회차에 상태가 확정(imageChecked 설정)된 건수 → news.json 기록 트리거용.
 async function applyPortraitThumbnails(items, limit) {
   const cfg = CONFIG.portraitDetection || {};
-  if (DRY_RUN || !client || cfg.enabled === false) return 0;
+  if (DRY_RUN || !apiKey || cfg.enabled === false) return 0;
   const cands = items.filter(
     (it) =>
       it &&
@@ -634,7 +639,7 @@ async function applyPortraitThumbnails(items, limit) {
   let replaced = 0;
   let checked = 0;
   for (const it of batch) {
-    const verdict = await isPortraitImage(it.image, client);
+    const verdict = await isPortraitImage(it.image, apiKey);
     if (verdict === null) continue; // 미확정(차단/오류) → 다음 회차 재시도
     it.imageChecked = true;
     checked++;
@@ -722,7 +727,7 @@ function dedupeAndFilter(fresh, existing) {
   return kept;
 }
 
-// ===== Classify via Claude API =====
+// ===== Classify via Gemini API =====
 const COMPETITOR_LIST = CONFIG.competitors
   .map((name) => {
     const brands = CONFIG.competitorBrands?.[name] || [];
@@ -733,7 +738,7 @@ const COMPETITOR_LIST = CONFIG.competitors
   .join("\n");
 
 // ===== 경쟁사 결정적 백스톱 (LLM 거명 누락 보정) =====
-// 프롬프트 규칙(PR #58: lens·competitors 독립 판단)만으로는 Haiku가 확률적으로
+// 프롬프트 규칙(PR #58: lens·competitors 독립 판단)만으로는 경량 모델이 확률적으로
 // 거명된 회사를 competitors 에서 누락하는 사례가 재발 → 코드가 원문 문자열 매칭으로 강제 병합.
 // - competitorAliasExcludes(삼성전기·LG디스플레이 등 계열사)를 먼저 제거해 오탐 방지
 // - 영문 패턴은 대소문자 구분 + 단어 경계 매칭 (Carrier/Candy 등 일반명사 오탐 방지)
@@ -743,8 +748,9 @@ const COMPETITOR_PATTERNS = (() => {
   const table = [];
   const seen = new Set();
   const add = (canonical, name) => {
-    if (!name || BACKSTOP_SKIP.has(name) || seen.has(`${canonical} ${name}`)) return;
-    seen.add(`${canonical} ${name}`);
+    const key = `${canonical}\u0000${name}`;
+    if (!name || BACKSTOP_SKIP.has(name) || seen.has(key)) return;
+    seen.add(key);
     table.push({ canonical, name, latin: /^[\x00-\x7F]+$/.test(name) });
   };
   for (const canonical of CONFIG.competitors) {
@@ -1004,24 +1010,13 @@ ${item.source}
 [지역]
 ${item.region}`;
 
-  const res = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
-    max_tokens: 800,
-    system: [
-      {
-        type: "text",
-        text: CLASSIFY_SYSTEM,
-        cache_control: { type: "ephemeral" },
-      },
-    ],
-    messages: [{ role: "user", content: userPrompt }],
+  const text = await generateGemini({
+    apiKey,
+    model: GEMINI_FLASH_LITE_MODEL,
+    maxOutputTokens: 800,
+    systemText: CLASSIFY_SYSTEM,
+    parts: [{ text: userPrompt }],
   });
-
-  const text = res.content
-    .filter((b) => b.type === "text")
-    .map((b) => b.text)
-    .join("")
-    .trim();
 
   let cleaned = text.replace(/^```json\s*|\s*```$/g, "").trim();
   const firstBrace = cleaned.indexOf("{");

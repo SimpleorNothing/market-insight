@@ -4,7 +4,7 @@
  * - 신호 렌즈 + 액션 등급 + 영향도 점수
  * - 렌즈(단일) + 경쟁사(다중) + 제품(다중) 3행 필터
  * - 정렬·그룹·뷰 토글
- * - Claude API 직접 호출 → docx 자동 다운로드
+ * - Gemini API 직접 호출 → docx 자동 다운로드
  */
 
 // ===== State =====
@@ -793,27 +793,26 @@ function getReportProxyUrl() {
 }
 
 function getApiKey() {
-  return localStorage.getItem("anthropic_api_key");
+  return localStorage.getItem("gemini_api_key");
 }
 
 function setApiKey(key) {
-  localStorage.setItem("anthropic_api_key", key.trim());
+  localStorage.setItem("gemini_api_key", key.trim());
 }
 
 function clearApiKey() {
-  localStorage.removeItem("anthropic_api_key");
+  localStorage.removeItem("gemini_api_key");
 }
 
 function promptForApiKey() {
   const key = prompt(
-    "Anthropic API 키를 입력해 주세요.\n\n" +
-      "형식: sk-ant-api03-...\n" +
-      "발급: https://console.anthropic.com/settings/keys\n\n" +
-      "입력한 키는 본인 브라우저에만 저장되며 외부로 전송되지 않습니다."
+    "Google Gemini API 키를 입력해 주세요.\n\n" +
+      "발급: https://aistudio.google.com/app/apikey\n\n" +
+      "입력한 키는 본인 브라우저에 저장되며 Gemini API 호출에만 사용됩니다."
   );
   if (!key) return null;
   const trimmed = key.trim();
-  if (!trimmed.startsWith("sk-ant-")) {
+  if (trimmed.length < 20 || /\s/.test(trimmed)) {
     showToast("올바른 형식의 API 키가 아닙니다", false);
     return null;
   }
@@ -821,7 +820,7 @@ function promptForApiKey() {
   return trimmed;
 }
 
-async function callClaudeForReport(apiKey, news, products, perspectives) {
+async function callGeminiForReport(apiKey, news, products, perspectives) {
   const ctx = CONFIG?.productContext || {};
   const buContextLines = products.map((p) => {
     const c = ctx[p] || {};
@@ -867,12 +866,15 @@ ${perspectiveLines}
 [작성 지시]
 위 뉴스가 대상 제품에 미치는 영향을 요청 분석 관점에 따라 작성하세요. 제품 컨텍스트의 KPI·경쟁사를 본문에 반드시 활용하세요.`;
 
-  const body = JSON.stringify({
-    model: "claude-haiku-4-5-20251001",
-    max_tokens: 2000,
-    system: REPORT_SYSTEM_PROMPT,
-    messages: [{ role: "user", content: userPrompt }],
-  });
+  const model = "gemini-3.6-flash";
+  const requestBody = {
+    systemInstruction: { parts: [{ text: REPORT_SYSTEM_PROMPT }] },
+    contents: [{ role: "user", parts: [{ text: userPrompt }] }],
+    generationConfig: {
+      maxOutputTokens: 2000,
+      responseMimeType: "application/json",
+    },
+  };
 
   const proxyUrl = getReportProxyUrl();
   let res;
@@ -881,20 +883,21 @@ ${perspectiveLines}
     res = await fetch(proxyUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body,
+      body: JSON.stringify({ model, ...requestBody }),
     });
   } else {
-    // 폴백: 사용자별 키로 Anthropic API 직접 호출
-    res = await fetch("https://api.anthropic.com/v1/messages", {
+    // 폴백: 사용자별 키로 Gemini API 직접 호출
+    res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+      {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
-        "anthropic-dangerous-direct-browser-access": "true",
+          "x-goog-api-key": apiKey,
       },
-      body,
-    });
+        body: JSON.stringify(requestBody),
+      }
+    );
   }
 
   if (!res.ok) {
@@ -903,9 +906,8 @@ ${perspectiveLines}
   }
 
   const data = await res.json();
-  const text = data.content
-    .filter((b) => b.type === "text")
-    .map((b) => b.text)
+  const text = (data.candidates?.[0]?.content?.parts || [])
+    .map((part) => part.text || "")
     .join("")
     .trim();
 
@@ -1288,7 +1290,7 @@ async function generateReport() {
 
   try {
     const news = state.selectedNews;
-    const report = await callClaudeForReport(apiKey, news, checked, perspectives);
+    const report = await callGeminiForReport(apiKey, news, checked, perspectives);
 
     if (!report.sections || !Array.isArray(report.sections)) {
       throw new Error("리포트 구조 검증 실패");
@@ -1304,7 +1306,7 @@ async function generateReport() {
   } catch (err) {
     console.error(err);
     const msg = err.message || String(err);
-    if (msg.includes("401") || msg.includes("authentication") || msg.includes("invalid x-api-key")) {
+    if (msg.includes("401") || msg.includes("403") || msg.includes("UNAUTHENTICATED")) {
       if (getReportProxyUrl()) {
         // 공용 키 인증 실패 — 사용자가 아니라 관리자가 키를 점검해야 함
         showToast("공용 키 인증 실패. 관리자에게 문의해 주세요.", false);

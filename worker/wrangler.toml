@@ -6,5 +6,5 @@ compatibility_date = "2024-11-01"
 [vars]
 ALLOWED_ORIGINS = ""
 
-# ANTHROPIC_API_KEY 는 코드/설정에 넣지 말고 secret 으로 등록하세요:
-#   wrangler secret put ANTHROPIC_API_KEY
+# GEMINI_API_KEY 또는 GOOGLE_API_KEY는 secret으로 등록하세요:
+#   wrangler secret put GEMINI_API_KEY

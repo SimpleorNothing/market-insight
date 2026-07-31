@@ -1,7 +1,7 @@
 /**
  * detect-portrait.mjs
  *
- * 썸네일(og:image)이 "기자 증명사진/인물 얼굴 위주" 인지 Haiku 비전으로 판별하고,
+ * 썸네일(og:image)이 "기자 증명사진/인물 얼굴 위주" 인지 Gemini 비전으로 판별하고,
  * 그런 경우 기사 태그·렌즈에 맞는 자체 제작 토픽 일러스트(SVG) 경로를 골라준다.
  *
  * 설계 원칙
@@ -10,6 +10,11 @@
  *    교체하지 않는다(오탐 삭제 방지, dead-link unknown 처리와 동일 철학).
  *  - 프론트 무변경: 호출부가 item.image 를 SVG 경로로 덮어쓰면 기존 렌더가 그대로 표시.
  */
+
+import {
+  GEMINI_FLASH_LITE_MODEL,
+  generateGemini,
+} from "./gemini-client.mjs";
 
 const TOPIC_DIR = "assets/img/topics";
 
@@ -65,7 +70,7 @@ function mediaTypeFrom(contentType, url) {
   return null;
 }
 
-const MAX_BYTES = 3_500_000; // Anthropic 이미지 한도(5MB) 이내 + 토큰 방어
+const MAX_BYTES = 3_500_000; // 인라인 이미지 상한 이내 + 토큰 방어
 const BROWSER_UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
 
@@ -110,29 +115,25 @@ const VISION_PROMPT =
 /**
  * @returns {Promise<boolean|null>} true=얼굴 위주, false=아님, null=미확정(교체하지 않음)
  */
-export async function isPortraitImage(imageUrl, client) {
-  if (!client || !imageUrl || !/^https?:\/\//i.test(imageUrl)) return null;
+export async function isPortraitImage(imageUrl, apiKey) {
+  if (!apiKey || !imageUrl || !/^https?:\/\//i.test(imageUrl)) return null;
   const img = await fetchImage(imageUrl);
   if (!img) return null;
   try {
-    const res = await client.messages.create({
-      model: "claude-haiku-4-5-20251001",
-      max_tokens: 20,
-      messages: [
+    const text = await generateGemini({
+      apiKey,
+      model: GEMINI_FLASH_LITE_MODEL,
+      maxOutputTokens: 40,
+      parts: [
         {
-          role: "user",
-          content: [
-            { type: "image", source: { type: "base64", media_type: img.mediaType, data: img.data } },
-            { type: "text", text: VISION_PROMPT },
-          ],
+          inlineData: {
+            mimeType: img.mediaType,
+            data: img.data,
+          },
         },
+        { text: VISION_PROMPT },
       ],
     });
-    const text = res.content
-      .filter((b) => b.type === "text")
-      .map((b) => b.text)
-      .join("")
-      .trim();
     const m = text.match(/"portrait"\s*:\s*(true|false)/i);
     if (m) return m[1].toLowerCase() === "true";
     if (/\btrue\b/i.test(text) && !/\bfalse\b/i.test(text)) return true;
