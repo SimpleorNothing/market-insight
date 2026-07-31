@@ -1,11 +1,11 @@
 /**
- * DA Market Insight — Anthropic 공용 키 프록시 (Cloudflare Worker)
+ * DA Market Insight — Gemini 공용 키 프록시 (Cloudflare Worker)
  *
- * 목적: 미리 충전해 둔 공용 Anthropic API 키를 Worker secret에 보관하고,
+ * 목적: 공용 Gemini API 키를 Worker secret에 보관하고,
  *       브라우저는 이 Worker를 통해 리포트를 생성한다. 키는 절대 클라이언트로 나가지 않는다.
  *
  * 필요한 환경 변수 / 시크릿 (wrangler.toml + `wrangler secret put`):
- *   - ANTHROPIC_API_KEY (secret, 필수): sk-ant-... 공용 충전 키
+ *   - GEMINI_API_KEY 또는 GOOGLE_API_KEY (secret, 필수)
  *   - ALLOWED_ORIGINS   (var, 권장)  : 콤마로 구분한 허용 Origin 목록
  *                                       예) "https://simpleornothing.github.io,https://samsungda.net"
  *                                       비워두면 모든 Origin 허용(테스트용, 운영 비권장)
@@ -15,7 +15,7 @@
 
 // 남용 방지: 허용 모델과 토큰 상한을 고정한다.
 const ALLOWED_MODELS = new Set([
-  "claude-haiku-4-5-20251001",
+  "gemini-3.6-flash",
 ]);
 const MAX_TOKENS_CAP = 2000;
 
@@ -32,8 +32,9 @@ export default {
       return json({ error: "POST만 허용됩니다." }, 405, corsHeaders);
     }
 
-    if (!env.ANTHROPIC_API_KEY) {
-      return json({ error: "서버에 ANTHROPIC_API_KEY가 설정되지 않았습니다." }, 500, corsHeaders);
+    const apiKey = env.GEMINI_API_KEY || env.GOOGLE_API_KEY;
+    if (!apiKey) {
+      return json({ error: "서버에 GEMINI_API_KEY 또는 GOOGLE_API_KEY가 설정되지 않았습니다." }, 500, corsHeaders);
     }
 
     let payload;
@@ -47,29 +48,36 @@ export default {
     if (!ALLOWED_MODELS.has(payload.model)) {
       return json({ error: "허용되지 않은 model." }, 400, corsHeaders);
     }
-    if (!Array.isArray(payload.messages) || payload.messages.length === 0) {
-      return json({ error: "messages가 필요합니다." }, 400, corsHeaders);
+    if (!Array.isArray(payload.contents) || payload.contents.length === 0) {
+      return json({ error: "contents가 필요합니다." }, 400, corsHeaders);
     }
-    const maxTokens = Math.min(Number(payload.max_tokens) || MAX_TOKENS_CAP, MAX_TOKENS_CAP);
+    const maxTokens = Math.min(
+      Number(payload.generationConfig?.maxOutputTokens) || MAX_TOKENS_CAP,
+      MAX_TOKENS_CAP
+    );
 
     const upstreamBody = {
-      model: payload.model,
-      max_tokens: maxTokens,
-      system: typeof payload.system === "string" ? payload.system : undefined,
-      messages: payload.messages,
+      systemInstruction: payload.systemInstruction,
+      contents: payload.contents,
+      generationConfig: {
+        maxOutputTokens: maxTokens,
+        responseMimeType: "application/json",
+      },
     };
 
     let upstream;
     try {
-      upstream = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-api-key": env.ANTHROPIC_API_KEY,
-          "anthropic-version": "2023-06-01",
-        },
-        body: JSON.stringify(upstreamBody),
-      });
+      upstream = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${payload.model}:generateContent`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-goog-api-key": apiKey,
+          },
+          body: JSON.stringify(upstreamBody),
+        }
+      );
     } catch (err) {
       return json({ error: "업스트림 호출 실패: " + (err?.message || err) }, 502, corsHeaders);
     }

@@ -1,10 +1,11 @@
 # Market Insight
 
-시장 동향을 Daily로 센싱합니다. RSS 자동 수집 + Claude AI 분류 + 사업부 영향 리포트 생성을 한 시스템으로 통합.
+시장 동향을 Daily로 센싱합니다. RSS 자동 수집 + Gemini AI 분류 + 사업부 영향 리포트 생성을 한 시스템으로 통합.
 
 **배포 URL:** `https://mi.samsungda.net`
 **수집 주기:** 1시간 (GitHub Actions cron)
-**분류 모델:** Claude Haiku 4.5 (`claude-haiku-4-5-20251001`)
+**분류 모델:** Gemini 3.5 Flash-Lite (`gemini-3.5-flash-lite`)
+**제품 영향 보고서:** Gemini 3.6 Flash (`gemini-3.6-flash`)
 
 > 🧭 **기획 도구 모음**(`samsungda.net`) 생태계의 일부입니다 — 허브 레포: [`samsungda-portal`](https://github.com/SimpleorNothing/samsungda-portal)
 
@@ -43,7 +44,7 @@ market-insight/                         (= 레포 루트, mi.samsungda.net 으�
 │   ├── SENSING_GUIDE.md                ⭐ 센싱 기준(스크리닝·분류) — 먼저 읽기
 │   └── WORK_GUIDE.md                   운영 절차·아키텍처·PR 이력
 ├── scripts/
-│   ├── fetch-news.js                   RSS 수집 + Claude API 분류(CLASSIFY_SYSTEM)
+│   ├── fetch-news.js                   RSS 수집 + Gemini API 분류(CLASSIFY_SYSTEM)
 │   ├── config.json                     RSS 소스 + 사업부 컨텍스트·필터
 │   └── package.json
 ├── .github/
@@ -85,7 +86,7 @@ git push
 
 | 키 | 값 |
 |---|---|
-| `ANTHROPIC_API_KEY` | console.anthropic.com 에서 발급한 키 |
+| `GEMINI_API_KEY` 또는 `GOOGLE_API_KEY` | Google AI Studio에서 발급한 키 |
 
 ### 3단계: Actions 권한 확인
 
@@ -140,7 +141,7 @@ git push
 
 ## 예상 비용
 
-Claude Haiku 4.5 가격: $1.00/MTok 입력, $5.00/MTok 출력
+Gemini 3.5 Flash-Lite 가격은 Google Gemini API 가격표를 기준으로 확인합니다.
 
 분류 1건당:
 - 입력 ~1,000 토큰 = $0.001
@@ -168,7 +169,7 @@ DRY_RUN=1 node fetch-news.js
 
 ```bash
 cd scripts
-ANTHROPIC_API_KEY=sk-ant-... node fetch-news.js
+GEMINI_API_KEY=... node fetch-news.js
 ```
 
 브라우저에서 사이트 확인:
@@ -213,9 +214,9 @@ npm run build:standalone
 ### Actions 실행 실패 시
 
 1. Actions 탭에서 실패 로그 확인
-2. `ANTHROPIC_API_KEY` Secret 등록 여부 확인
+2. `GEMINI_API_KEY` 또는 `GOOGLE_API_KEY` Secret 등록 여부 확인
 3. RSS URL 응답 확인 (매체 측 RSS 폐쇄·이전 可)
-4. API 잔액 확인 (console.anthropic.com)
+4. API 사용량 확인 (Google AI Studio)
 
 ### 분류 결과가 이상한 경우
 
