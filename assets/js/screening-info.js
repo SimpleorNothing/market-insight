@@ -221,7 +221,7 @@
       '    <span class="scr-step__d">제목에 차단 키워드가 있으면 AI 분류 전에 제외합니다. 단, 우선 통과 키워드가 함께 있으면 차단하지 않고 다음 단계로 넘깁니다.</span>',
       "  </span></div>",
       '  <div class="scr-step"><span class="scr-step__no">3</span><span>',
-      '    <span class="scr-step__t">AI 분류 (Claude)</span>',
+      '    <span class="scr-step__t">AI 분류 (Gemini)</span>',
       '    <span class="scr-step__d">본문을 읽고 생활가전(DA) 사업과 무관하면 최종 제외합니다. 통과 기사는 렌즈·등급·경쟁사·요약을 부여받습니다.</span>',
       "  </span></div>",
       "</div>",
