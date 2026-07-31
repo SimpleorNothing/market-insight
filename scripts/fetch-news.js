@@ -20,6 +20,7 @@ import {
   generateGemini,
 } from "./gemini-client.mjs";
 import Parser from "rss-parser";
+import { normalizeUrl, sourceHeadlineKey } from "./url-normalize.js";
 import { readFile, writeFile } from "fs/promises";
 import { createHash } from "crypto";
 import { fileURLToPath, pathToFileURL } from "url";
@@ -702,16 +703,26 @@ async function fetchAllRss() {
 }
 
 function dedupeAndFilter(fresh, existing) {
-  const existingHashes = new Set(existing.items.map((i) => urlHash(i.url)));
+  // URL 정규화 키: AMP 변형·추적 파라미터·모바일 미러가 다른 URL로 재유입돼
+  // LLM 분류를 중복 호출하는 것을 차단 (저장된 url 원문은 변형하지 않음)
+  const existingHashes = new Set(
+    existing.items.map((i) => urlHash(normalizeUrl(i.url)))
+  );
   const seen = new Set();
+  const seenHeadlines = new Set();
   const blocked = [];
   const kept = [];
 
   for (const it of fresh) {
-    const h = urlHash(it.link);
+    const h = urlHash(normalizeUrl(it.link));
     if (existingHashes.has(h)) continue;
     if (seen.has(h)) continue;
     seen.add(h);
+
+    // 동일 출처가 같은 헤드라인을 다른 URL로 재송고한 경우 차단 (실행 내 한정)
+    const hk = sourceHeadlineKey(it);
+    if (hk && seenHeadlines.has(hk)) continue;
+    if (hk) seenHeadlines.add(hk);
 
     const blockReason = isBlockedByKeyword(it.headline);
     if (blockReason) {
@@ -973,26 +984,8 @@ ${COMPETITOR_LIST}
 
 JSON 외 어떤 텍스트도 출력 금지.`;
 
-async function classifyOne(item, retry = false, hint = "") {
-  if (DRY_RUN) {
-    return {
-      lens: "기술",
-      products: ["냉장고"],
-      competitors: [],
-      factors: {
-        salesRelevance: 3,
-        timeUrgency: 3,
-        marketSize: 3,
-        sourceReliability: 3,
-      },
-      headline: item.headline.slice(0, 30),
-      summary: `DRY_RUN 더미 요약: ${item.headline}`,
-      tags: ["test"],
-      summaryPoints: [{ type: "content", text: `DRY_RUN 포인트: ${item.headline.slice(0, 20)}` }],
-    };
-  }
-
-  const userPrompt = `${hint ? hint + "\n\n" : ""}[오늘 날짜]
+function buildUserPrompt(item, hint = "") {
+  return `${hint ? hint + "\n\n" : ""}[오늘 날짜]
 ${RUN_DATE}
 
 [기사 발행일]
@@ -1009,6 +1002,7 @@ ${item.source}
 
 [지역]
 ${item.region}`;
+}
 
   const text = await generateGemini({
     apiKey,
@@ -1110,7 +1104,7 @@ ${item.region}`;
   return parsed;
 }
 
-async function classifyAll(items, startId) {
+async function classifyAll(items, startId, preTexts = null) {
   const toProcess = items.slice(0, CONFIG.limits.maxArticlesPerRun);
   const classified = [];
   let nextId = startId;
@@ -1119,8 +1113,9 @@ async function classifyAll(items, startId) {
 
   for (const item of toProcess) {
     try {
-      log(`분류 中: ${item.headline.slice(0, 40)}...`);
-      const cls = await classifyOne(item);
+      const preText = preTexts ? preTexts.get(item) ?? null : null;
+      log(`분류 中${preText != null ? "(배치)" : ""}: ${item.headline.slice(0, 40)}...`);
+      const cls = await classifyOne(item, false, "", preText);
 
       if (cls.lens === "skip") {
         skipCount++;
@@ -1150,7 +1145,9 @@ async function classifyAll(items, startId) {
         });
         log(`  → ${cls.lens} / ${grade} (impact ${impact})`);
       }
-      await new Promise((r) => setTimeout(r, 400));
+      if (!preTexts || preTexts.get(item) == null) {
+        await new Promise((r) => setTimeout(r, 400)); // 라이브 호출 시에만 레이트 완충
+      }
     } catch (err) {
       failCount++;
       log(`  ! 분류 실패: ${err.message}`);
@@ -1407,8 +1404,19 @@ async function main() {
   log(`중복·필터·링크확인 後 분류 대상 ${newOnes.length}건`);
 
   const startId = Math.max(0, ...existing.items.map((i) => i.id || 0)) + 1;
+
+  // Batches API 선실행(비용 50% 할인). 실패·타임아웃 시 자동으로
+  // 기존 동기 경로 폴백 — USE_BATCH=0 으로 완전 비활성 가능.
+  let preTexts = null;
+  if (newOnes.length && !DRY_RUN && process.env.USE_BATCH !== "0") {
+    preTexts = await runClassifyBatch(
+      newOnes.slice(0, CONFIG.limits.maxArticlesPerRun),
+      { client, CLASSIFY_SYSTEM, buildUserPrompt, log }
+    );
+  }
+
   const classified = newOnes.length
-    ? await classifyAll(newOnes, startId)
+    ? await classifyAll(newOnes, startId, preTexts)
     : [];
   if (newOnes.length === 0) log("신규 분류 대상 없음");
   else log(`AI 분류 완료: ${classified.length}건 저장 대상`);
@@ -1466,7 +1474,7 @@ async function main() {
 }
 
 // 재사용을 위한 export (reclassify.mjs 等에서 분류 로직 재활용)
-export { CONFIG, CLASSIFY_SYSTEM, classifyOne, computeImpact, gradeFromImpact };
+export { CONFIG, CLASSIFY_SYSTEM, classifyOne, buildUserPrompt, computeImpact, gradeFromImpact };
 
 // 직접 실행(node fetch-news.js)일 때만 전체 파이프라인 구동. import 時엔 실행 안 함.
 if (import.meta.url === pathToFileURL(process.argv[1] || "").href) {
