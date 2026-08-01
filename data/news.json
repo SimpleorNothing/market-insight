@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T12:56:33.247Z",
+  "updatedAt": "2026-08-01T14:24:16.629Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -308,7 +308,18 @@
       "url": "https://v.daum.net/v/20260801100005514",
       "linkCheckedAt": "2026-08-01T01:48:11.135Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/01/552782-ZYLYaJX/20260801100007014rxks.png",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2908,
+          "headline": "한편 삼성 DX·LG전자 희비, 메모리 부담과 포트폴리오 차이",
+          "url": "https://news.mtn.co.kr/news-detail/2026073115360322944",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-01T01:00:01.000Z"
+        }
+      ]
     },
     {
       "id": 2828,
@@ -1044,6 +1055,15 @@
           "id": 2687,
           "headline": "오텍캐리어, 1등급 벽걸이 출하량 65% 증가",
           "url": "https://v.daum.net/v/20260731135852835",
+          "source": {
+            "name": "Google News - 캐리어/오텍캐리어 KR"
+          },
+          "publishedAt": "2026-07-31T04:58:52.000Z"
+        },
+        {
+          "id": 2906,
+          "headline": "오텍캐리어, 1등급 벽걸이 출하량 65% 증가",
+          "url": "https://v.daum.net/v/zs1Wmq71cI?f=p",
           "source": {
             "name": "Google News - 캐리어/오텍캐리어 KR"
           },
@@ -1976,46 +1996,46 @@
       ]
     },
     {
-      "id": 2901,
+      "id": 2921,
       "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.6,
+      "grade": "주시",
+      "impact": 3.4,
       "factors": {
-        "salesRelevance": 4,
+        "salesRelevance": 3,
         "timeUrgency": 3,
         "marketSize": 4,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [],
       "competitors": [
         "LG전자"
       ],
       "tags": [
-        "실적",
         "신사업",
+        "로보틱스",
         "LG전자",
-        "경쟁사동향"
+        "액추에이터"
       ],
-      "headline": "상반기 영업익 3.2조 달성한 LG전자, 하반기 신사업 집중",
-      "summary": "LG전자가 상반기 역대급 실적인 영업이익 3조2천억 원대를 기록한 가운데, 하반기 신사업에 집중할 계획이다.",
+      "headline": "한편 LG전자, 액추에이터 초도 생산 돌입",
+      "summary": "LG전자가 액추에이터 초도 생산에 돌입하며 하반기 글로벌 수주전을 본격화한다고 밝혔다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자 상반기 영업이익 3조 2천억 원대 기록"
+          "text": "LG전자, 액추에이터 초도 생산 돌입"
         },
         {
           "type": "content",
-          "text": "하반기 '신사업 집중' 전략 추진 발표"
+          "text": "하반기 글로벌 로봇 부품 수주전 본격화"
         }
       ],
       "source": {
-        "name": "Google News - 가전 신사업·비즈모델 KR",
-        "url": "https://www.newstomato.com/readnews.aspx?no=1308782"
+        "name": "Google News - 경쟁사 로봇·미래사업 KR",
+        "url": "https://www.greened.kr/news/articleView.html?idxno=346442"
       },
-      "publishedAt": "2026-07-30T07:48:07.000Z",
-      "url": "https://www.newstomato.com/readnews.aspx?no=1308782",
-      "linkCheckedAt": "2026-08-01T11:55:10.313Z",
-      "image": "https://image.newstomato.com/newsimg/2026/7/30/1308782/attach.jpg?v=202607301703",
+      "publishedAt": "2026-07-30T08:39:07.000Z",
+      "url": "https://www.greened.kr/news/articleView.html?idxno=346442",
+      "linkCheckedAt": "2026-08-01T14:21:21.564Z",
+      "image": "https://cdn.greened.kr/news/thumbnail/202607/346442_397576_2224_v150.jpg",
       "imageChecked": true
     },
     {
@@ -2364,6 +2384,49 @@
       "url": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=596736",
       "linkCheckedAt": "2026-07-30T07:26:47.793Z",
       "image": "https://www.headlinejeju.co.kr/news/photo/202607/596736_492502_915.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2920,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [],
+      "tags": [
+        "미국제재",
+        "로봇청소기",
+        "보안",
+        "중국산가전"
+      ],
+      "headline": "한편 미 제재 확산에 中 로봇청소기 경계감 증폭",
+      "summary": "미국의 대중 제재 강화로 중국산 로봇청소기를 향한 안보적 경계감이 가전 산업 전반으로 확산되고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국의 대중국 제재 여파가 중국산 로봇청소기로 확산되는 추세"
+        },
+        {
+          "type": "content",
+          "text": "가전제품을 통한 안보 위협 가능성에 경계감 고조"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 신사업·비즈모델 KR",
+        "url": "https://www.chosun.com/economy/tech_it/2026/07/30/QM3DUHY67FBSDCCHNGD4PY5M2Y/"
+      },
+      "publishedAt": "2026-07-30T05:56:40.000Z",
+      "url": "https://www.chosun.com/economy/tech_it/2026/07/30/QM3DUHY67FBSDCCHNGD4PY5M2Y/",
+      "linkCheckedAt": "2026-08-01T14:21:21.564Z",
+      "image": "https://www.chosun.com/resizer/v2/ATD6DKMA75D63GYPK2MZ2ZVMVE.png?auth=4dcec755aa9c3314c9cd8d306394d1ffbbb2b0ee43d1572a94e64ad0ea887712&width=1200&height=630&focal=1572,1054",
       "imageChecked": true
     },
     {
@@ -3463,7 +3526,7 @@
       },
       "publishedAt": "2026-07-29T09:24:18.000Z",
       "url": "http://www.economytalk.kr/news/articleView.html?idxno=423108",
-      "linkCheckedAt": "2026-07-29T12:54:53.254Z",
+      "linkCheckedAt": "2026-08-01T14:20:43.751Z",
       "image": "https://cdn.economytalk.kr/news/photo/202607/423108_229838_240.jpg",
       "imageChecked": true
     },
@@ -4596,13 +4659,13 @@
       "imageChecked": true
     },
     {
-      "id": 2906,
+      "id": 2910,
       "lens": "경쟁사",
       "grade": "주시",
-      "impact": 3.1,
+      "impact": 2.9,
       "factors": {
         "salesRelevance": 2,
-        "timeUrgency": 5,
+        "timeUrgency": 4,
         "marketSize": 3,
         "sourceReliability": 3
       },
@@ -4612,12 +4675,12 @@
       ],
       "tags": [
         "월풀",
-        "실적발표",
+        "실적",
         "CEO",
         "경쟁사동향"
       ],
-      "headline": "한편 월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
-      "summary": "월풀이 CEO의 자전거 사고 부상 여파로 실적 발표를 연기함.",
+      "headline": "월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
+      "summary": "월풀은 CEO가 자전거 사고로 부상을 입음에 따라 예정된 실적 발표를 연기한다고 밝혔다.",
       "summaryPoints": [
         {
           "type": "content",
@@ -4625,7 +4688,7 @@
         },
         {
           "type": "content",
-          "text": "부상 여파로 당초 예정된 실적 발표를 연기함"
+          "text": "CEO 부상 여파로 실적 발표 일정 연기"
         }
       ],
       "source": {
@@ -4634,7 +4697,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-08-01T12:54:01.660Z",
+      "linkCheckedAt": "2026-08-01T14:21:21.564Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -10452,7 +10515,7 @@
       },
       "publishedAt": "2026-07-23T10:06:39.000Z",
       "url": "https://www.techtimes.com/articles/321349/20260723/xiaomi-launches-mijia-washing-machines-germany-data-law-catch.htm",
-      "linkCheckedAt": "2026-07-29T12:54:28.991Z",
+      "linkCheckedAt": "2026-08-01T14:20:43.751Z",
       "image": "https://d.techtimes.com/en/full/469581/mijia-front-load-washer-dryer-pro.png",
       "imageChecked": true
     },
@@ -10643,7 +10706,7 @@
       },
       "publishedAt": "2026-07-23T06:32:17.000Z",
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-faces-a-fresh-valuation-test-after-earnings-cu/amp",
-      "linkCheckedAt": "2026-07-29T12:54:28.991Z",
+      "linkCheckedAt": "2026-08-01T14:20:43.751Z",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true,
       "relatedArticles": [
@@ -10724,7 +10787,7 @@
       },
       "publishedAt": "2026-07-23T05:36:53.000Z",
       "url": "https://www.chosun.com/economy/science/2026/07/23/RXO5EJJXFFB2VMNPHYOA33LQAA/",
-      "linkCheckedAt": "2026-07-29T12:54:28.991Z",
+      "linkCheckedAt": "2026-08-01T14:20:43.751Z",
       "image": "https://www.chosun.com/resizer/v2/O2HKLE5FIZFS7OT7DTWN2FF53A.png?auth=d93a58b2ad7768882d9933165846afbe44f3d687a869a01e62960c5fcd0d2726&width=1200&height=630&focal=621,16",
       "imageChecked": true
     },
@@ -26492,7 +26555,8 @@
           },
           "publishedAt": "2026-06-30T07:00:00.000Z"
         }
-      ]
+      ],
+      "imageChecked": true
     },
     {
       "id": 1193,
@@ -26527,7 +26591,8 @@
       "publishedAt": "2026-06-30T15:01:00.000Z",
       "url": "https://www.joongang.co.kr/article/25441340",
       "image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202607/01/12db8566-091a-4c63-a00c-7b7c50ab80c0.jpg",
-      "linkCheckedAt": "2026-07-31T05:23:28.434Z"
+      "linkCheckedAt": "2026-07-31T05:23:28.434Z",
+      "imageChecked": true
     },
     {
       "id": 1455,
@@ -26609,7 +26674,8 @@
       "publishedAt": "2026-06-30T12:03:40.000Z",
       "url": "https://www.newsspace.kr/news/article.html?no=14578",
       "image": "https://www.newsspace.kr/data/photos/20260627/art_17828206409196_e995e4.jpg",
-      "linkCheckedAt": "2026-07-31T05:23:28.434Z"
+      "linkCheckedAt": "2026-07-31T05:23:28.434Z",
+      "imageChecked": true
     },
     {
       "id": 1172,
