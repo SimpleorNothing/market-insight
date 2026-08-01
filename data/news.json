@@ -1,43 +1,58 @@
 {
-  "updatedAt": "2026-08-01T22:46:12.272Z",
+  "updatedAt": "2026-08-01T23:49:37.001Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 2945,
+      "id": 2953,
       "lens": "정책",
-      "grade": "주요",
-      "impact": 3.8,
+      "grade": "긴급",
+      "impact": 4.7,
       "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 4
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
       },
       "products": [],
       "competitors": [],
       "tags": [
         "관세",
-        "미국",
         "환급금",
-        "실적"
+        "실적",
+        "영업이익"
       ],
-      "headline": "한편 美 관세 환급금, 2분기 실적 영향 미쳐",
-      "summary": "미국의 관세 환급금이 2분기 영업이익 실적에 긍정적인 영향을 미친 것으로 나타났습니다.",
+      "headline": "관세 환급금 영향으로 2분기 영업이익 증가",
+      "summary": "미국 환급금이 2분기 실적에 큰 영향을 미치며 영업이익이 상승했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "미국 관세 환급금으로 인해 2분기 영업이익이 증가함"
+          "text": "미국 환급금이 2분기 실적에 영향 미침"
+        },
+        {
+          "type": "content",
+          "text": "관세 환급으로 인해 영업이익 증가"
         }
       ],
       "source": {
-        "name": "Google News - 통상·관세 정책 KR",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428169"
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4428169"
       },
-      "publishedAt": "2026-08-01T21:39:26.000Z",
-      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428169",
-      "linkCheckedAt": "2026-08-01T22:43:37.483Z",
-      "image": "https://cdn.news.einfomax.co.kr/news/thumbnail/202608/4428169_333987_407_v150.jpg",
-      "imageChecked": true
+      "publishedAt": "2026-08-01T21:48:54.000Z",
+      "url": "https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4428169",
+      "linkCheckedAt": "2026-08-01T23:47:07.298Z",
+      "image": "https://news.einfomax.co.kr/news/photo/202608/4428169_333987_407.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2945,
+          "headline": "한편 美 관세 환급금, 2분기 실적 영향 미쳐",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4428169",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-01T21:39:26.000Z"
+        }
+      ]
     },
     {
       "id": 2927,
@@ -179,6 +194,51 @@
       "url": "https://www.ardentnews.co.kr/news/articleViewAmp.html?idxno=17454",
       "linkCheckedAt": "2026-08-01T20:04:35.429Z",
       "image": null
+    },
+    {
+      "id": 2951,
+      "lens": "기술",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 1,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "로보틱스",
+        "AI",
+        "순찰로봇",
+        "신기술"
+      ],
+      "headline": "롤로 로보틱스, AI 순찰 로봇 공개",
+      "summary": "에스토니아 롤로 로보틱스가 외발바퀴 구조의 자율 순찰 보안 로봇 '1ROLLO'를 공개했습니다. 최고 시속 30km로 이동하며 360도 비전과 AI로 이상 상황을 감지합니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "롤로 로보틱스가 외발바퀴 구조의 자율 순찰 보안 로봇 1ROLLO 공개"
+        },
+        {
+          "type": "content",
+          "text": "최고 시속 30km 주행, 1회 충전 시 최대 8시간 순찰 및 자동 충전"
+        },
+        {
+          "type": "content",
+          "text": "360도 비전 시스템과 AI로 주변 환경 분석 및 사람·차량 이상 상황 감지"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260730000336"
+      },
+      "publishedAt": "2026-08-01T13:30:00.000Z",
+      "url": "https://www.etnews.com/20260730000336",
+      "linkCheckedAt": "2026-08-01T23:47:07.298Z",
+      "image": "https://img.etnews.com/news/article/2026/07/30/news-p.v1.20260730.b32997d1d666422e9ed0eb159154a7a6_P1.jpg",
+      "imageChecked": true
     },
     {
       "id": 2895,
@@ -2469,6 +2529,47 @@
       "imageChecked": true
     },
     {
+      "id": 2961,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "조리기기"
+      ],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "로봇",
+        "AI",
+        "신사업",
+        "조리기기"
+      ],
+      "headline": "한편 샹루로봇·하이얼로봇, 가정용 AI 요리로봇 공동개발",
+      "summary": "샹루로봇과 하이얼로봇이 협력하여 전자동 가정용 인공지능(AI) 요리로봇을 공동으로 개발한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "샹루로봇과 하이얼로봇이 전자동 가정용 AI 요리로봇 공동개발 착수"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 신사업·비즈모델 KR",
+        "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=606811"
+      },
+      "publishedAt": "2026-07-30T07:10:45.000Z",
+      "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=606811",
+      "linkCheckedAt": "2026-08-01T23:47:07.298Z",
+      "image": "https://cdn.mdtoday.co.kr/news/photo/202607/606811_307427_1785395445.png",
+      "imageChecked": true
+    },
+    {
       "id": 2931,
       "lens": "소비자",
       "grade": "주시",
@@ -3107,7 +3208,7 @@
       },
       "publishedAt": "2026-07-29T21:51:36.000Z",
       "url": "https://www.mk.co.kr/news/business/12111432",
-      "linkCheckedAt": "2026-07-29T22:47:52.623Z",
+      "linkCheckedAt": "2026-08-01T23:46:40.478Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/30/news-p.v1.20260730.4094ba1bf1f945489dbbce34e0cda6c6_R.jpg",
       "imageChecked": true
     },
@@ -3355,7 +3456,7 @@
       },
       "publishedAt": "2026-07-29T19:30:00.000Z",
       "url": "https://www.donga.com/news/amp/all/20260729/134382334/2",
-      "linkCheckedAt": "2026-07-29T22:47:52.623Z",
+      "linkCheckedAt": "2026-08-01T23:46:40.478Z",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/07/29/134382333.3.jpg",
       "imageChecked": true
     },
@@ -5050,7 +5151,7 @@
       "imageChecked": true
     },
     {
-      "id": 2939,
+      "id": 2954,
       "lens": "경쟁사",
       "grade": "주시",
       "impact": 2.9,
@@ -5066,20 +5167,20 @@
       ],
       "tags": [
         "월풀",
-        "실적",
+        "실적발표",
         "CEO",
-        "경쟁동향"
+        "경쟁사동향"
       ],
-      "headline": "월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
-      "summary": "월풀이 CEO의 자전거 사고 부상으로 인해 실적 발표 일정을 연기했습니다.",
+      "headline": "한편 월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
+      "summary": "월풀 CEO가 자전거 사고로 부상을 입어 예정된 실적 발표 일정을 연기했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입음"
+          "text": "월풀 CEO 자전거 사고로 부상 발생"
         },
         {
           "type": "content",
-          "text": "이에 따라 예정되었던 실적 발표를 연기함"
+          "text": "부상 여파로 실적 발표 일정 연기"
         }
       ],
       "source": {
@@ -5088,7 +5189,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-08-01T22:43:37.483Z",
+      "linkCheckedAt": "2026-08-01T23:47:07.298Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -10142,7 +10243,7 @@
       },
       "publishedAt": "2026-07-24T00:25:21.000Z",
       "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/",
-      "linkCheckedAt": "2026-07-29T22:47:29.718Z",
+      "linkCheckedAt": "2026-08-01T23:46:40.478Z",
       "image": "https://www.channelnews.com.au/wp-content/uploads/2025/11/image-1-3.png",
       "imageChecked": true
     },
@@ -10699,7 +10800,7 @@
       },
       "publishedAt": "2026-07-23T14:22:00.000Z",
       "url": "https://kalkinemedia.com/us/stocks/consumer/whirlpool-nysewhr-faces-fresh-valuation-crossroads",
-      "linkCheckedAt": "2026-07-29T22:47:52.623Z",
+      "linkCheckedAt": "2026-08-01T23:46:40.478Z",
       "image": "https://kalkinemedia.com/storage/uploads/original/TV_12_24_2024_11_38_06_670008.jpg",
       "imageChecked": true
     },
@@ -11220,7 +11321,7 @@
       },
       "publishedAt": "2026-07-23T04:52:11.000Z",
       "url": "https://www.etnews.com/20260723000286",
-      "linkCheckedAt": "2026-07-29T22:47:29.718Z",
+      "linkCheckedAt": "2026-08-01T23:46:40.478Z",
       "image": "https://img.etnews.com/news/article/2024/09/22/news-p.v1.20240922.f3491a926fa14e408b0a6c0539b2d226_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -11280,7 +11381,7 @@
       },
       "publishedAt": "2026-07-23T02:24:42.000Z",
       "url": "http://www.china.org.cn/2026-07/23/content_118613747.shtml",
-      "linkCheckedAt": "2026-07-29T22:47:29.718Z",
+      "linkCheckedAt": "2026-08-01T23:46:40.478Z",
       "image": null
     },
     {
@@ -11413,7 +11514,7 @@
       },
       "publishedAt": "2026-07-23T02:00:00.000Z",
       "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260722_0003719055",
-      "linkCheckedAt": "2026-07-29T22:47:29.718Z",
+      "linkCheckedAt": "2026-08-01T23:46:40.478Z",
       "image": "https://img1.newsis.com/2026/07/22/NISI20260722_0002193037_web.jpg",
       "imageChecked": true
     },
@@ -27934,7 +28035,8 @@
       "publishedAt": "2026-06-29T01:03:00.000Z",
       "url": "https://www.chosun.com/economy/tech_it/2026/06/29/YUDR3T2ZARDO7DLJLRZ5FDOBSY/",
       "image": "https://www.chosun.com/resizer/v2/QK3JSY4XH5B57PBYTNNFUXZM2A.jpg?auth=7e954c078a4bc56fe3cd80d06b08bc060c2a0ae5cf3f24a6c51ec1c10f09a223&width=1200&height=630&smart=true",
-      "linkCheckedAt": "2026-07-31T05:23:28.434Z"
+      "linkCheckedAt": "2026-07-31T05:23:28.434Z",
+      "imageChecked": true
     },
     {
       "id": 1106,
@@ -27967,7 +28069,8 @@
       "publishedAt": "2026-06-28T22:26:29.000Z",
       "url": "https://www.g-enews.com/article/Global-Biz/2026/06/2026062907242330702bd56fbc3c_1",
       "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=20260629072532045922bd56fbc3c21121419978.jpg",
-      "linkCheckedAt": "2026-07-31T05:23:28.434Z"
+      "linkCheckedAt": "2026-07-31T05:23:28.434Z",
+      "imageChecked": true
     },
     {
       "id": 1108,
@@ -28000,7 +28103,8 @@
       "publishedAt": "2026-06-28T21:30:00.000Z",
       "url": "https://www.chosun.com/economy/tech_it/2026/06/29/OAS2ROW6TFCURAYQJGYMOFIOSQ/",
       "image": "https://www.chosun.com/resizer/v2/BAQWOU74YNFFFGQ75O7CN4S37M.jpg?auth=94f58bf2688fb4c29b0c85dcc8daa13d97f2aa0fd284ccf6339002814a8d5dc6&width=1200&height=630&focal=1695,2542",
-      "linkCheckedAt": "2026-07-31T05:23:28.434Z"
+      "linkCheckedAt": "2026-07-31T05:23:28.434Z",
+      "imageChecked": true
     },
     {
       "id": 1101,
