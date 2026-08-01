@@ -1,7 +1,106 @@
 {
-  "updatedAt": "2026-08-01T20:07:02.062Z",
+  "updatedAt": "2026-08-01T21:46:28.149Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2927,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "실적",
+        "삼성전자",
+        "LG전자",
+        "가전"
+      ],
+      "headline": "가전서 희비 갈린 삼성·LG 영업익 2분기째 1조원 격차",
+      "summary": "삼성전자와 LG전자의 가전 사업 부문 영업이익 격차가 2분기째 1조원 규모를 기록하며 희비가 갈렸습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "가전 부문서 삼성전자와 LG전자 간 영업이익 격차 1조원 지속"
+        },
+        {
+          "type": "content",
+          "text": "2분기째 이어진 실적 격차로 양사 간 희비 교차"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.yna.co.kr/view/AKR20260731167500003"
+      },
+      "publishedAt": "2026-08-01T21:03:01.000Z",
+      "url": "https://www.yna.co.kr/view/AKR20260731167500003",
+      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
+      "image": "https://img3.yna.co.kr/photo/yna/YH/2026/07/30/PYH2026073013420001300_P4.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2928,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "HVAC",
+        "냉각설루션",
+        "AIDC",
+        "수주"
+      ],
+      "headline": "한편 LG전자, AIDC 냉각 설루션 상반기 6000억 수주",
+      "summary": "LG전자가 AIDC 냉각 설루션 부문에서 상반기 6000억 원의 수주를 달성했으며, 연내 추가 빅딜이 기대되고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 AIDC 냉각 설루션 상반기 6000억 수주"
+        },
+        {
+          "type": "content",
+          "text": "연내 추가적인 빅딜 달성 기대감 표명"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.news1.kr/industry/general-industry/6246173"
+      },
+      "publishedAt": "2026-08-01T21:00:00.000Z",
+      "url": "https://www.news1.kr/industry/general-industry/6246173",
+      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 2943,
+          "headline": "LG전자 컨콜서 로봇·AIDC 냉각 신사업 상용화 속도",
+          "url": "https://www.bloter.net/news/articleView.html?idxno=669587",
+          "source": {
+            "name": "Google News - 경쟁사 로봇·미래사업 KR"
+          },
+          "publishedAt": "2026-07-30T09:14:08.000Z"
+        }
+      ]
+    },
     {
       "id": 2925,
       "lens": "소비자",
@@ -1772,6 +1871,42 @@
       ]
     },
     {
+      "id": 2937,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "EU",
+        "에너지라벨링",
+        "규제"
+      ],
+      "headline": "한편 EU 에너지 라벨링 요구사항 발표",
+      "summary": "EU 지역 내 에너지 라벨링 요구사항 관련 동향이 보도되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "EU 에너지 라벨링 요구사항 관련 내용 보도"
+        }
+      ],
+      "source": {
+        "name": "Google News - EU Energy Regulation",
+        "url": "https://irishtechnews.ie/eu-energy-labelling-requirements/"
+      },
+      "publishedAt": "2026-07-30T11:00:45.000Z",
+      "url": "https://irishtechnews.ie/eu-energy-labelling-requirements/",
+      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
+      "image": "https://irishtechnews.ie/wp-content/uploads/2026/07/flock-of-birds-flying-in-sunset-sky-over-green-meadow-in-countryside-stockpack-pexels.jpg",
+      "imageChecked": true
+    },
+    {
       "id": 2859,
       "lens": "경쟁사",
       "grade": "주요",
@@ -2161,6 +2296,50 @@
       "url": "https://www.newspim.com/news/view/20260730001260",
       "linkCheckedAt": "2026-08-01T11:55:10.313Z",
       "image": "https://img.newspim.com/news/2026/04/22/2604221629335890_t1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 2931,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 1,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "세탁기"
+      ],
+      "competitors": [
+        "BSH"
+      ],
+      "tags": [
+        "세탁기",
+        "소비자",
+        "신뢰도"
+      ],
+      "headline": "컨슈머 리포트, 신뢰도 높은 세탁기 브랜드 조사 결과 발표",
+      "summary": "컨슈머 리포트가 가장 신뢰할 수 있는 세탁기 브랜드 순위와 평가 결과를 발표했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "컨슈머 리포트가 가장 신뢰할 수 있는 세탁기 브랜드를 조사함"
+        },
+        {
+          "type": "content",
+          "text": "주요 제조사별 세탁기 제품의 신뢰성 평가 결과 제공"
+        }
+      ],
+      "source": {
+        "name": "Google News - Bosch Miele Siemens EU",
+        "url": "https://www.consumerreports.org/appliances/washing-machines/which-brands-make-the-most-reliable-washing-machines-a5270664856/"
+      },
+      "publishedAt": "2026-07-30T07:00:00.000Z",
+      "url": "https://www.consumerreports.org/appliances/washing-machines/which-brands-make-the-most-reliable-washing-machines-a5270664856/",
+      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
+      "image": "https://article.images.consumerreports.org/image/upload/t_article_tout/v1777918280/prod/content/dam/CRO-images-2026/Appliances/CR-Appliances-InlineHero-Which-Brands-Make-the-Most-Reliable-Washing-Machines-0526",
       "imageChecked": true
     },
     {
@@ -2890,7 +3069,7 @@
       },
       "publishedAt": "2026-07-29T20:05:17.000Z",
       "url": "https://www.mk.co.kr/news/world/12111226",
-      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
       "image": null
     },
     {
@@ -2927,7 +3106,7 @@
       },
       "publishedAt": "2026-07-29T19:46:47.000Z",
       "url": "https://scanx.trade/stock-market-news/companies/lg-electronics-india-fy26-results-net-profit-down-23-5-yoy/46899761",
-      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
       "image": null
     },
     {
@@ -4701,13 +4880,13 @@
       "imageChecked": true
     },
     {
-      "id": 2927,
+      "id": 2930,
       "lens": "경쟁사",
       "grade": "주시",
-      "impact": 2.9,
+      "impact": 2.6,
       "factors": {
         "salesRelevance": 2,
-        "timeUrgency": 4,
+        "timeUrgency": 3,
         "marketSize": 3,
         "sourceReliability": 3
       },
@@ -4716,21 +4895,20 @@
         "월풀"
       ],
       "tags": [
-        "월풀",
-        "실적발표",
-        "CEO",
-        "경쟁사동향"
+        "경쟁사",
+        "실적",
+        "월풀"
       ],
-      "headline": "한편 월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
-      "summary": "월풀이 CEO의 자전거 사고 부상으로 인해 실적 발표 일정을 연기했습니다.",
+      "headline": "월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
+      "summary": "월풀은 CEO가 자전거 사고로 부상을 입음에 따라 실적 발표 일정을 연기한다고 밝혔다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입음"
+          "text": "월풀 CEO가 자전거 사고로 부상을 당함"
         },
         {
           "type": "content",
-          "text": "부상 여파로 예정된 실적 발표 일정이 연기됨"
+          "text": "이에 따라 예정되었던 실적 발표를 연기함"
         }
       ],
       "source": {
@@ -4739,7 +4917,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-08-01T20:04:35.429Z",
+      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -5497,7 +5675,7 @@
       },
       "publishedAt": "2026-07-28T03:59:41.000Z",
       "url": "https://stockstory.org/us/stocks/nyse/jci/news/earnings/johnson-controls-earnings-what-to-look-for-from-jci-2",
-      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
       "image": "https://stockstory.org/stockstory/company-image/JCI",
       "imageChecked": true
     },
@@ -10641,7 +10819,7 @@
       },
       "publishedAt": "2026-07-23T07:00:00.000Z",
       "url": "https://www.consumerreports.org/appliances/refrigerators/best-bottom-freezer-refrigerators-of-the-year-a2988839570/",
-      "linkCheckedAt": "2026-07-29T20:07:14.821Z",
+      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
       "image": "https://article.images.consumerreports.org/image/upload/t_article_tout/v1741119445/prod/content/dam/CRO-Images-2025/Appliances/CR-Appliances-InlineHero-Best-Bottom-Freezers-0325",
       "imageChecked": true
     },
@@ -10976,7 +11154,7 @@
       },
       "publishedAt": "2026-07-23T02:11:00.000Z",
       "url": "https://m.kr.investing.com/news/stock-market-news/article-2025702?ampMode=1",
-      "linkCheckedAt": "2026-07-29T20:06:49.540Z",
+      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
       "image": null,
       "relatedArticles": [
         {
@@ -27378,7 +27556,8 @@
       "publishedAt": "2026-06-29T06:29:53.000Z",
       "url": "https://www.hankyung.com/amp/2026062934931",
       "image": "https://img.hankyung.com/photo/202606/AA.44836275.1.jpg",
-      "linkCheckedAt": "2026-07-31T05:23:28.434Z"
+      "linkCheckedAt": "2026-07-31T05:23:28.434Z",
+      "imageChecked": true
     },
     {
       "id": 1115,
@@ -27414,7 +27593,8 @@
       "publishedAt": "2026-06-29T06:18:32.000Z",
       "url": "https://www.greened.kr/news/articleView.html?idxno=343636",
       "image": "https://cdn.greened.kr/news/thumbnail/202606/343636_394603_720_v150.jpg",
-      "linkCheckedAt": "2026-07-31T05:23:28.434Z"
+      "linkCheckedAt": "2026-07-31T05:23:28.434Z",
+      "imageChecked": true
     },
     {
       "id": 1127,
@@ -27447,7 +27627,8 @@
       "publishedAt": "2026-06-29T06:03:46.000Z",
       "url": "https://v.daum.net/v/20260629150346769",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202606/29/551725-bDDlA7g/20260629150347906qxif.jpg",
-      "linkCheckedAt": "2026-07-31T05:23:28.434Z"
+      "linkCheckedAt": "2026-07-31T05:23:28.434Z",
+      "imageChecked": true
     },
     {
       "id": 1148,
