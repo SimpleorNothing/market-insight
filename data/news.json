@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T01:51:24.961Z",
+  "updatedAt": "2026-08-01T05:20:12.267Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -90,6 +90,44 @@
       "imageChecked": true
     },
     {
+      "id": 2835,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "실적",
+        "월풀",
+        "어닝"
+      ],
+      "headline": "월풀, 주당 5센트 순손실 전망",
+      "summary": "월풀이 주당 5센트의 순손실을 기록할 것으로 예상되는 어닝 프리뷰가 공개됐다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀 주당 5센트 순손실 기록 예상"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L8N43X3FX:0-whirlpool-corp-expected-to-post-a-loss-of-5-cents-a-share-earnings-preview/"
+      },
+      "publishedAt": "2026-07-31T22:55:52.000Z",
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L8N43X3FX:0-whirlpool-corp-expected-to-post-a-loss-of-5-cents-a-share-earnings-preview/",
+      "linkCheckedAt": "2026-08-01T05:17:01.910Z",
+      "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "imageChecked": true
+    },
+    {
       "id": 2823,
       "lens": "소비자",
       "grade": "주요",
@@ -168,6 +206,50 @@
       "imageChecked": true
     },
     {
+      "id": 2845,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Trane"
+      ],
+      "tags": [
+        "HVAC",
+        "상업용공조",
+        "Trane",
+        "생산능력"
+      ],
+      "headline": "한편 트레인, 상업용 HVAC 수요 급증에 생산능력 관리",
+      "summary": "트레인이 상업용 HVAC 수요 급증에 대응하여 생산능력 관리에 나섰습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "상업용 HVAC 수요 급증 발생"
+        },
+        {
+          "type": "content",
+          "text": "트레인, 생산능력 적극 관리 대응"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://www.facilitiesdive.com/news/trane-managing-capacity-as-commercial-hvac-demand-surges/826711/"
+      },
+      "publishedAt": "2026-07-31T16:49:04.000Z",
+      "url": "https://www.facilitiesdive.com/news/trane-managing-capacity-as-commercial-hvac-demand-surges/826711/",
+      "linkCheckedAt": "2026-08-01T05:17:01.910Z",
+      "image": null
+    },
+    {
       "id": 2760,
       "lens": "정책",
       "grade": "주시",
@@ -232,6 +314,24 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-07-31T10:33:52.000Z"
+        },
+        {
+          "id": 2833,
+          "headline": "한편 제주 1042가구 히트펌프 설치로 난방 전기화 본격화",
+          "url": "https://www.fnnews.com/news/202608011140404935",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-01T02:56:24.000Z"
+        },
+        {
+          "id": 2830,
+          "headline": "한편 제주, 전국 첫 난방 전기화 본격화…히트펌프 1호 공개",
+          "url": "http://www.headlinejeju.co.kr/news/articleView.html?idxno=596839",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-01T02:38:49.000Z"
         }
       ]
     },
@@ -450,6 +550,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-07-31T23:30:00.000Z"
+        },
+        {
+          "id": 2834,
+          "headline": "삼성전자, 가정용 EHS 히트펌프 보일러 본격 공급",
+          "url": "https://m.segye.com/ampView/20260731512578",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-01T02:20:00.000Z"
         }
       ]
     },
@@ -593,48 +702,6 @@
       "url": "https://globallegalchronicle.com/post-238039/",
       "linkCheckedAt": "2026-07-31T11:17:38.967Z",
       "image": null
-    },
-    {
-      "id": 2654,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.2,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 3,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "실적",
-        "증권",
-        "목표가"
-      ],
-      "headline": "한편 IBK투자증권, LG전자 목표가 상향…2분기 영업익 전망치 상회",
-      "summary": "IBK투자증권은 LG전자의 2분기 영업이익이 시장 전망치를 상회할 것으로 전망하며 목표주가를 상향 조정함.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "IBK투자증권에서 LG전자 목표가 상향 조정"
-        },
-        {
-          "type": "content",
-          "text": "2분기 영업이익 전망치 상회 예상"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.yna.co.kr/amp/view/AKR20260731027400008"
-      },
-      "publishedAt": "2026-07-30T23:29:30.000Z",
-      "url": "https://www.yna.co.kr/amp/view/AKR20260731027400008",
-      "linkCheckedAt": "2026-07-31T01:41:39.201Z",
-      "image": "https://img1.yna.co.kr/photo/yna/YH/2026/07/30/PYH2026073013400001300_P4.jpg",
-      "imageChecked": true
     },
     {
       "id": 2790,
@@ -3045,7 +3112,7 @@
       },
       "publishedAt": "2026-07-29T04:00:00.000Z",
       "url": "https://www.etnews.com/20260729000082",
-      "linkCheckedAt": "2026-07-29T04:58:30.293Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://img.etnews.com/news/article/2026/07/29/news-p.v1.20260729.06d669411da5446d9209367feaa881f5_P1.png",
       "imageChecked": true
     },
@@ -3087,7 +3154,7 @@
       },
       "publishedAt": "2026-07-29T04:00:00.000Z",
       "url": "https://www.etnews.com/20260729000026",
-      "linkCheckedAt": "2026-07-29T04:58:30.293Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://img.etnews.com/news/article/2026/07/28/news-p.v1.20260728.550aeb0a7c2d49bcb79628ef10f1ca65_P1.png",
       "imageChecked": true
     },
@@ -3171,7 +3238,7 @@
       },
       "publishedAt": "2026-07-29T02:42:05.000Z",
       "url": "https://www.dhilbo.co.kr/news/articleView.html?idxno=1442",
-      "linkCheckedAt": "2026-07-29T04:58:30.293Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://cdn.dhilbo.co.kr/news/photo/202607/1442_1393_4130.png",
       "imageChecked": true
     },
@@ -3254,7 +3321,7 @@
       },
       "publishedAt": "2026-07-29T01:00:05.000Z",
       "url": "https://www.yna.co.kr/amp/view/AKR20260729022900003",
-      "linkCheckedAt": "2026-07-29T04:58:30.293Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": null,
       "relatedArticles": [
         {
@@ -3399,7 +3466,7 @@
       },
       "publishedAt": "2026-07-28T21:55:51.000Z",
       "url": "https://v.daum.net/v/20260729065551400",
-      "linkCheckedAt": "2026-07-29T04:58:30.293Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/29/kedtv/20260729065551922glys.jpg",
       "imageChecked": true
     },
@@ -3796,7 +3863,7 @@
       "imageChecked": true
     },
     {
-      "id": 2837,
+      "id": 2844,
       "lens": "경쟁사",
       "grade": "주시",
       "impact": 3.1,
@@ -3816,16 +3883,16 @@
         "CEO",
         "경쟁사동향"
       ],
-      "headline": "한편 월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
-      "summary": "월풀이 CEO의 자전거 사고 부상으로 인해 실적 발표를 연기했습니다.",
+      "headline": "월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
+      "summary": "월풀이 최고경영자(CEO)의 자전거 사고 부상으로 인해 실적 발표 일정을 연기했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입음"
+          "text": "월풀 CEO의 자전거 사고 부상 발생"
         },
         {
           "type": "content",
-          "text": "부상 여파로 예정되었던 실적 발표를 연기함"
+          "text": "CEO 부상 여파로 실적 발표 일정 연기"
         }
       ],
       "source": {
@@ -3834,7 +3901,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-08-01T01:48:11.135Z",
+      "linkCheckedAt": "2026-08-01T05:17:01.910Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -6852,7 +6919,7 @@
       },
       "publishedAt": "2026-07-26T01:43:12.000Z",
       "url": "https://www.mk.co.kr/news/business/12107525",
-      "linkCheckedAt": "2026-07-29T04:58:11.167Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/26/news-p.v1.20260726.945c0d82af4f42589eedc7ed34428e31_R.png",
       "imageChecked": true
     },
@@ -10510,7 +10577,7 @@
       },
       "publishedAt": "2026-07-22T23:35:00.000Z",
       "url": "https://www.newspim.com/news/view/20260723000093",
-      "linkCheckedAt": "2026-07-29T04:58:11.167Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://img.newspim.com/news/2026/07/23/2607230827340060_t1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -10568,7 +10635,7 @@
       },
       "publishedAt": "2026-07-22T23:29:00.000Z",
       "url": "https://www.dailian.co.kr/news/view/1669868/%EB%A9%95%EC%8B%9C%EC%BD%94-EU-%EC%83%88-%EB%AC%B4%EC%97%AD%ED%98%91%EC%A0%95-%EC%84%9C%EB%AA%85%EB%B6%81%EB%AF%B8-%EA%B3%B5-2026",
-      "linkCheckedAt": "2026-07-29T04:58:11.167Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://cdnimage.dailian.co.kr/news/202607/news_1784762912_1669868_m_1.jpg",
       "imageChecked": true
     },
@@ -11316,7 +11383,7 @@
       },
       "publishedAt": "2026-07-22T06:02:52.000Z",
       "url": "http://m.socialvalue.kr/news/amp.html?ncode=1065592940386224",
-      "linkCheckedAt": "2026-07-29T04:58:11.167Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://www.socialvalue.kr/news/data/20260722/p1065592940386224_142_thum.png",
       "imageChecked": true
     },
@@ -12697,7 +12764,7 @@
       },
       "publishedAt": "2026-07-21T04:51:24.000Z",
       "url": "https://www.segye.com/newsView/20260721513422",
-      "linkCheckedAt": "2026-07-29T04:58:11.167Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://www.segye.com/content/image/2026/07/21/20260721513417.jpg",
       "imageChecked": true
     },
@@ -13751,7 +13818,7 @@
       },
       "publishedAt": "2026-07-20T07:00:00.000Z",
       "url": "https://www.dailyt.co.kr/newsView/dlt202607200013",
-      "linkCheckedAt": "2026-07-29T04:58:11.167Z",
+      "linkCheckedAt": "2026-08-01T05:16:35.781Z",
       "image": "https://www.dailyt.co.kr/data/dlt/image/2026/07/21/dlt202607210008.jpeg",
       "imageChecked": true
     },
@@ -24972,7 +25039,8 @@
       "publishedAt": "2026-07-01T11:15:30.000Z",
       "url": "https://www.storyboard18.com/brand-makers/whirlpool-of-india-reshuffles-top-roles-names-new-head-of-service-ws-l-102909.htm",
       "image": "https://images.storyboard18.com/storyboard18/2026/02/Screenshot-2026-02-19-122457-2026-02-5b90c97ad14650632844fcec690bdb48.png",
-      "linkCheckedAt": "2026-07-31T01:46:37.362Z"
+      "linkCheckedAt": "2026-07-31T01:46:37.362Z",
+      "imageChecked": true
     },
     {
       "id": 1212,
@@ -25003,7 +25071,8 @@
       "publishedAt": "2026-07-01T10:15:12.000Z",
       "url": "https://www.etnews.com/20260701000606",
       "image": "https://img.etnews.com/news/article/2026/07/01/news-p.v1.20260701.5d096065fa434ee8952b637bc4fb6b92_P1.jpeg",
-      "linkCheckedAt": "2026-07-31T01:46:37.362Z"
+      "linkCheckedAt": "2026-07-31T01:46:37.362Z",
+      "imageChecked": true
     },
     {
       "id": 1203,
@@ -25033,7 +25102,8 @@
       "publishedAt": "2026-07-01T07:00:00.000Z",
       "url": "https://www.etnews.com/20260701000450",
       "image": "https://img.etnews.com/news/article/2025/07/02/news-p.v1.20250702.a8883676bb6e468dab9d86a7690be1e8_P1.png",
-      "linkCheckedAt": "2026-07-31T01:46:37.362Z"
+      "linkCheckedAt": "2026-07-31T01:46:37.362Z",
+      "imageChecked": true
     },
     {
       "id": 1204,
