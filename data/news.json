@@ -1,7 +1,50 @@
 {
-  "updatedAt": "2026-08-02T11:56:06.154Z",
+  "updatedAt": "2026-08-02T12:58:41.972Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3030,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "냉방비",
+        "에어컨",
+        "전기요금"
+      ],
+      "headline": "폭염 속 에어컨 가동 증가로 냉방비 폭탄 우려 고조",
+      "summary": "폭염이 이어지면서 에어컨 가동에 따른 8월 냉방비 부담과 전기요금 폭탄 우려가 커지고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "폭염 지속으로 에어컨 가동량 급증"
+        },
+        {
+          "type": "content",
+          "text": "8월 전기요금 폭탄에 대한 소비자 걱정 고조"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://m.yeongnam.com/view.php?key=20260802020159623"
+      },
+      "publishedAt": "2026-08-02T12:12:38.000Z",
+      "url": "https://m.yeongnam.com/view.php?key=20260802020159623",
+      "linkCheckedAt": "2026-08-02T12:55:36.114Z",
+      "image": "https://www.yeongnam.com/mnt/file/202608/news-p.v1.20260802.12f40e7fbd5b4c6c86c27c7fce02f1c8_R.jpg",
+      "imageChecked": true
+    },
     {
       "id": 3019,
       "lens": "경쟁사",
@@ -42,6 +85,47 @@
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-stock-looks-undervalued-on-earnings-but-mixed",
       "linkCheckedAt": "2026-08-02T11:53:21.103Z",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
+      "imageChecked": true
+    },
+    {
+      "id": 3045,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "무역정책",
+        "보호무역",
+        "수출입규제"
+      ],
+      "headline": "미국의 관세 장벽 재건과 세계 무역 불안정 우려 심화",
+      "summary": "미국이 관세 장벽을 재건하면서 세계 무역 불안정이 심화되고 있다는 우려가 커지고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국이 관세 장벽을 재건하는 움직임을 보임"
+        },
+        {
+          "type": "content",
+          "text": "세계 무역 불안정이 심화될 것이라는 우려 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.vietnam.vn/ko/my-dung-lai-buc-tuong-thue-quan-quan-ngai-gia-tang-bat-on-thuong-mai-toan-cau"
+      },
+      "publishedAt": "2026-08-02T09:37:30.000Z",
+      "url": "https://www.vietnam.vn/ko/my-dung-lai-buc-tuong-thue-quan-quan-ngai-gia-tang-bat-on-thuong-mai-toan-cau",
+      "linkCheckedAt": "2026-08-02T12:55:36.114Z",
+      "image": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/02/1785640845494_my-dung-lai-buc-w720t0-di2630d204d0101516t83l1.webp",
       "imageChecked": true
     },
     {
@@ -145,6 +229,55 @@
       "url": "https://www.ajunews.com/amp/20260802145635368",
       "linkCheckedAt": "2026-08-02T11:53:21.103Z",
       "image": "https://image.ajunews.com/content/image/2026/08/02/20260802150505667831.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3037,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC",
+        "냉장고",
+        "세탁기"
+      ],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "주거·공간",
+        "삼성전자",
+        "LG전자",
+        "모듈러주택"
+      ],
+      "headline": "삼성·LG, 3개월 만에 모듈러 주택 완공",
+      "summary": "삼성전자와 LG전자가 모듈러 주택 사업에 참여해 3개월 만에 주택을 완공하며 빌트인 및 주거 솔루션 시장 공략을 확대하고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자와 LG전자가 참여한 모듈러 주택이 3개월 만에 완공됨"
+        },
+        {
+          "type": "content",
+          "text": "가전사들의 주거 및 공간 솔루션 사업 다각화 흐름을 보여줌"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://en.sedaily.com/finance/2026/08/02/samsung-lg-build-homes-modular-houses-completed-in-three"
+      },
+      "publishedAt": "2026-08-02T07:21:10.000Z",
+      "url": "https://en.sedaily.com/finance/2026/08/02/samsung-lg-build-homes-modular-houses-completed-in-three",
+      "linkCheckedAt": "2026-08-02T12:55:36.114Z",
+      "image": "https://wimg.sedaily.com/news/cms/2026/08/02/news-p.v1.20260802.c320285bc9054cb3b64613b318c44d06_P1.png",
       "imageChecked": true
     },
     {
@@ -373,233 +506,6 @@
             "name": "Google News - LG Global"
           },
           "publishedAt": "2026-08-02T10:19:43.000Z"
-        }
-      ]
-    },
-    {
-      "id": 2966,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.9,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "HVAC",
-        "히트펌프",
-        "난방전기화",
-        "제주"
-      ],
-      "headline": "LG전자, 제주 히트펌프 보급사업 1호 현판식 개최",
-      "summary": "LG전자가 국내 난방 전기화 시장 선도를 위해 '제주 히트펌프 보급사업' 1호 현판식을 개최했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자가 제주 히트펌프 보급사업 1호 현판식을 개최함"
-        },
-        {
-          "type": "content",
-          "text": "국내 난방 전기화 시장 선도를 위한 행보 가속화"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.viva100.com/article/20260802500279"
-      },
-      "publishedAt": "2026-08-02T01:16:00.000Z",
-      "url": "https://www.viva100.com/article/20260802500279",
-      "linkCheckedAt": "2026-08-02T01:44:23.394Z",
-      "image": "https://stqnq5ux4599.edge.naverncp.com/data2//content/image/2026/08/02/.cache/512/20260802500265.jpg?v=20260802104602",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 2964,
-          "headline": "LG전자, 제주 히트펌프 설치 1호 현판식 개최",
-          "url": "https://zdnet.co.kr/view/?no=20260802092022",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T01:00:04.000Z"
-        },
-        {
-          "id": 2963,
-          "headline": "LG전자, 제주 히트펌프 1호 보급…난방 전기화 선도",
-          "url": "https://www.asiae.co.kr/article/2026080210001029578",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T01:00:10.000Z"
-        },
-        {
-          "id": 2967,
-          "headline": "LG전자, 제주 히트펌프 보급사업 1위 달성",
-          "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=849092",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T01:00:00.000Z"
-        },
-        {
-          "id": 2866,
-          "headline": "제주, 전국 첫 '난방 전기화' 본격화…히트펌프 1호 주택 공개",
-          "url": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=596839",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-01T02:38:49.000Z"
-        },
-        {
-          "id": 2727,
-          "headline": "한편, 공기열 히트펌프 난방 전기화 지원 1호 현판식 개최",
-          "url": "http://www.e-platform.net/news/articleViewAmp.html?idxno=104289",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-07-31T10:56:27.000Z"
-        },
-        {
-          "id": 2726,
-          "headline": "한편 제주, 히트펌프 보급으로 난방 전기화 추진",
-          "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=201928",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-07-31T11:17:45.000Z"
-        },
-        {
-          "id": 2761,
-          "headline": "한편, 공기열 히트펌프 난방 전기화 지원 1호 현판식 개최",
-          "url": "https://www.e-platform.net/news/articleView.html?idxno=104289",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-07-31T10:33:52.000Z"
-        },
-        {
-          "id": 2830,
-          "headline": "한편 제주, 전국 첫 난방 전기화 본격화…히트펌프 1호 공개",
-          "url": "http://www.headlinejeju.co.kr/news/articleView.html?idxno=596839",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-01T02:38:49.000Z"
-        },
-        {
-          "id": 2760,
-          "headline": "한편 제주 난방 전기화 추진, 정부 히트펌프 1호 가구 설치",
-          "url": "http://www.energy-news.co.kr/news/articleView.html?idxno=227175",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-07-31T14:51:18.000Z"
-        },
-        {
-          "id": 2849,
-          "headline": "제주 1042가구, 8월부터 히트펌프 설치 착수",
-          "url": "https://www.fnnews.com/news/202608011140404935",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-01T02:56:24.000Z"
-        },
-        {
-          "id": 2974,
-          "headline": "제주서 맞붙은 LG·삼성 히트펌프, 내수 선점 경쟁",
-          "url": "https://www.mt.co.kr/industry/2026/08/02/2026080211115088459",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T04:30:32.000Z"
-        },
-        {
-          "id": 2979,
-          "headline": "LG전자, 제주 히트펌프 450가구 설치…난방 전기화 확대",
-          "url": "https://www.ddaily.co.kr/page/view/2026080210001230070",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T02:21:53.000Z"
-        },
-        {
-          "id": 2975,
-          "headline": "삼성·LG, 제주서 난방 전기화 히트펌프 경쟁 본격화",
-          "url": "https://www.newstomato.com/ReadNews.aspx?no=1308951",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T03:59:11.000Z"
-        },
-        {
-          "id": 2980,
-          "headline": "LG전자, 제주 히트펌프 보급 사업 1위 기록",
-          "url": "https://www.etnews.com/20260802000056",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T02:13:47.000Z"
-        },
-        {
-          "id": 2981,
-          "headline": "LG전자, 제주 히트펌프 보급사업 공식 1호 현판식 개최",
-          "url": "http://www.inews24.com/view/1991103",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T01:35:44.000Z"
-        },
-        {
-          "id": 2976,
-          "headline": "LG전자, 제주 히트펌프 보급사업 1호 설치 현판식 개최",
-          "url": "https://www.yna.co.kr/amp/view/AKR20260802010800003",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T01:00:01.000Z"
-        },
-        {
-          "id": 2977,
-          "headline": "LG전자, 제주 히트펌프 보급 1위 사업자 선정",
-          "url": "https://www.khan.co.kr/article/202608021134001/amp",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T02:34:00.000Z"
-        },
-        {
-          "id": 2978,
-          "headline": "LG전자, 제주 히트펌프 보급사업 최대 공급사 선정",
-          "url": "https://www.straightnews.co.kr/news/articleViewAmp.html?idxno=308140",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T01:28:13.000Z"
-        },
-        {
-          "id": 2995,
-          "headline": "제주서 맞붙은 LG·삼성 히트펌프..유럽 이어 내수 선점 경쟁",
-          "url": "https://www.mt.co.kr/amp/industry/2026/08/02/2026080211115088459",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T04:30:32.000Z"
-        },
-        {
-          "id": 2997,
-          "headline": "LG전자, 제주 히트펌프 보급 1위 사업자 선정",
-          "url": "https://v.daum.net/v/20260802113609705",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-02T02:36:09.000Z"
         }
       ]
     },
@@ -1431,47 +1337,6 @@
       "linkCheckedAt": "2026-08-01T08:02:04.948Z",
       "image": "https://cdn.mos.cms.futurecdn.net/J8RmmYh8kgfnoi4DK8ANPF-1280-80.jpg",
       "imageChecked": true
-    },
-    {
-      "id": 2853,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.1,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "Electrolux"
-      ],
-      "tags": [
-        "일렉트로룩스",
-        "실적",
-        "경쟁사동향"
-      ],
-      "headline": "일렉트로룩스, 실적 반등 조짐 포착",
-      "summary": "스웨덴 가전사 일렉트로룩스가 성공적인 턴어라운드 조항을 보이고 있다고 블룸버그가 보도했다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "스웨덴의 일렉트로룩스가 턴어라운드 조짐을 보임"
-        },
-        {
-          "type": "content",
-          "text": "블룸버그를 통해 성공적인 반등 징후가 보도됨"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.bloomberg.com/news/newsletters/2026-07-31/appliance-maker-electrolux-shows-signs-of-successful-turnaround"
-      },
-      "publishedAt": "2026-07-31T10:00:01.000Z",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-07-31/appliance-maker-electrolux-shows-signs-of-successful-turnaround",
-      "linkCheckedAt": "2026-08-01T08:02:04.948Z",
-      "image": null
     },
     {
       "id": 2722,
@@ -4723,6 +4588,63 @@
       "imageChecked": true
     },
     {
+      "id": 3041,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "실적",
+        "일렉트로룩스",
+        "경쟁사동향"
+      ],
+      "headline": "일렉트로룩스, 2분기 영업이익 시장 기대치 상회",
+      "summary": "가전 제조사 일렉트로룩스의 2분기 영업이익이 시장 예상치를 상회했다고 로이터가 보도했다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "일렉트로룩스의 2분기 영업이익이 시장 기대치 상회"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://www.investing.com/news/stock-market-news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-4818590"
+      },
+      "publishedAt": "2026-07-29T05:23:40.000Z",
+      "url": "https://www.investing.com/news/stock-market-news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-4818590",
+      "linkCheckedAt": "2026-08-02T12:55:36.114Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 3042,
+          "headline": "일렉트로룩스, 2분기 영업이익 컨센서스 상회",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L8N43V0BZ:0-appliance-maker-electrolux-q2-operating-profit-beats-expectations/",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-29T05:11:00.000Z"
+        },
+        {
+          "id": 2853,
+          "headline": "일렉트로룩스, 실적 반등 조짐 포착",
+          "url": "https://www.bloomberg.com/news/newsletters/2026-07-31/appliance-maker-electrolux-shows-signs-of-successful-turnaround",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-07-31T10:00:01.000Z"
+        }
+      ]
+    },
+    {
       "id": 2513,
       "lens": "경쟁사",
       "grade": "주요",
@@ -5621,15 +5543,15 @@
       "imageChecked": true
     },
     {
-      "id": 3023,
+      "id": 3038,
       "lens": "경쟁사",
       "grade": "주시",
-      "impact": 2.8,
+      "impact": 2.6,
       "factors": {
         "salesRelevance": 2,
         "timeUrgency": 3,
         "marketSize": 3,
-        "sourceReliability": 4
+        "sourceReliability": 3
       },
       "products": [],
       "competitors": [
@@ -5637,9 +5559,9 @@
       ],
       "tags": [
         "월풀",
-        "실적발표",
+        "실적",
         "CEO",
-        "경쟁사동향"
+        "경쟁사"
       ],
       "headline": "월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
       "summary": "월풀이 CEO의 자전거 사고 부상으로 인해 실적 발표 일정을 연기했습니다.",
@@ -5650,7 +5572,7 @@
         },
         {
           "type": "content",
-          "text": "부상 여파로 실적 발표 일정 연기"
+          "text": "부상 여파로 실적 발표 일정이 연기됨"
         }
       ],
       "source": {
@@ -5659,7 +5581,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-08-02T11:53:21.103Z",
+      "linkCheckedAt": "2026-08-02T12:55:36.114Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -29225,7 +29147,8 @@
       "publishedAt": "2026-06-26T06:44:47.000Z",
       "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=369623",
       "image": "https://www.electimes.com/news/photo/202606/369623_581995_3217.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1055,
@@ -29257,7 +29180,8 @@
       "publishedAt": "2026-06-26T05:00:00.000Z",
       "url": "https://www.khan.co.kr/article/202606261400021",
       "image": "https://img.khan.co.kr/news/2026/06/26/news-p.v1.20260623.5a63a21a67274f39a522fee6f0214e9c_P1.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1051,
@@ -29289,7 +29213,8 @@
       "publishedAt": "2026-06-26T00:15:03.000Z",
       "url": "https://mbiz.heraldcorp.com/article/10788932",
       "image": "https://wimg.heraldcorp.com/news/cms/2026/06/26/news-p.v1.20260626.566251ce44444ec7b13a04126ddfcc7c_T1.png",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1046,
