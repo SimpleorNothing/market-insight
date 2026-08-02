@@ -166,6 +166,12 @@ function matchesCompanyAlias(text, alias) {
   return lower.includes(needle);
 }
 
+const ARTICLE_HEADLINE_LEAD_RE = /^(?:(?:한편|우선|그 결과|이에 따라|종합하면|가장 먼저)\s*[,，:·\\-–—]?\s*)+/;
+
+function cleanArticleHeadline(value) {
+  return String(value || "").replace(ARTICLE_HEADLINE_LEAD_RE, "").trim();
+}
+
 function findHeadlineCompanyLogo(headline) {
   const text = String(headline || "");
   if (!text) return null;
@@ -258,7 +264,9 @@ async function loadNewsData() {
     } catch (e) {
       /* 아카이브 없음 — 무시 */
     }
-    NEWS_DATA = [...(json.items || []), ...archiveItems].filter((n) => {
+    NEWS_DATA = [...(json.items || []), ...archiveItems]
+      .map((n) => ({ ...n, headline: cleanArticleHeadline(n.headline) }))
+      .filter((n) => {
       // 표시 백스톱: 분류기가 skip 의도로 남긴 오염 레코드
       // (lens=skip, 또는 headline이 비었거나 "skip" 플레이스홀더)를 화면에서 제외
       if (!n.lens || n.lens === "skip" || !n.grade) return false;
