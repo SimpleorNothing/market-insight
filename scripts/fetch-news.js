@@ -128,7 +128,7 @@ function canonForSim(s) {
   return t;
 }
 
-const HEADLINE_LEAD_RE = /^(?:(?:한편|우선|그 결과|이에 따라|종합하면|가장 먼저)\s*[,，:·\\-–—]?\s*)+/;
+const HEADLINE_LEAD_RE = /^(?:(?:한편|우선|그 결과|이에 따라|종합하면|가장 먼저)\s*[,，:·–—-]?\s*)+/;
 
 function cleanArticleHeadline(value) {
   return String(value || "").replace(HEADLINE_LEAD_RE, "").trim();
