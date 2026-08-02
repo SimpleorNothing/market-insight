@@ -128,6 +128,12 @@ function canonForSim(s) {
   return t;
 }
 
+const HEADLINE_LEAD_RE = /^(?:(?:한편|우선|그 결과|이에 따라|종합하면|가장 먼저)\s*[,，:·\\-–—]?\s*)+/;
+
+function cleanArticleHeadline(value) {
+  return String(value || "").replace(HEADLINE_LEAD_RE, "").trim();
+}
+
 function pointsText(it) {
   return (it.summaryPoints || [])
     .map((p) => (p && p.text) || "")
@@ -925,8 +931,8 @@ ${COMPETITOR_LIST}
    - sourceReliability: 출처 신뢰도 (1차보도·공시=5, 분석=4, 종합=3, 게시판=1)
 
 5. headline: Herald 압축형 한국어 (30자 이내)
-   - 첫머리 연결어 (우선/그 결과/한편/이에 따라/종합하면)
-   - 결론 + 수치 권장
+   - 핵심 주어·사실로 바로 시작하고 결론 + 수치 권장
+   - '한편', '우선', '그 결과', '이에 따라', '종합하면', '가장 먼저' 같은 첫머리 연결어 금지
 
 6. summary: 3줄 이내 한국어
    - 정량 수치 1개 이상
@@ -1064,7 +1070,8 @@ async function classifyOne(item, retry = false, hint = "", preText = null) {
 
   // 오염 가드: 분류기가 skip 의도로 headline/summary에 "skip"(또는 빈 값)을
   // 남겼는데 lens는 유효값으로 반환한 케이스 → skip 으로 강제해 저장하지 않음.
-  const _hl = (parsed.headline || "").trim();
+  parsed.headline = cleanArticleHeadline(parsed.headline);
+  const _hl = parsed.headline;
   if (!_hl || _hl.toLowerCase() === "skip") return { lens: "skip" };
 
   if (!CONFIG.lenses.includes(parsed.lens)) {
@@ -1383,6 +1390,17 @@ async function main() {
   if (purged > 0) {
     log(`차단 키워드 소급 적용: 기존 ${purged}건 제거`);
   }
+
+  // 기존 적재 제목도 매 실행 시 정규화해 과거 데이터의 불필요한 첫머리 연결어를 제거
+  let headlineFixed = 0;
+  for (const i of existing.items) {
+    const cleaned = cleanArticleHeadline(i.headline);
+    if (cleaned && cleaned !== i.headline) {
+      i.headline = cleaned;
+      headlineFixed++;
+    }
+  }
+  if (headlineFixed > 0) log(`기사 제목 첫머리 연결어 소급 제거: ${headlineFixed}건`);
 
   // 경쟁사 백스톱 소급 적용: 기존 적재분도 headline·summary 거명 기준으로 매 실행 시 보정
   let compFixed = 0;
