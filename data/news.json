@@ -1,7 +1,52 @@
 {
-  "updatedAt": "2026-08-02T05:19:21.055Z",
+  "updatedAt": "2026-08-02T08:06:09.376Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 2990,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "알리익스프레스",
+        "C커머스",
+        "수수료인상",
+        "이커머스"
+      ],
+      "headline": "알리익스프레스, 韓 셀러 67개 카테고리 판매 수수료 인상",
+      "summary": "알리익스프레스가 한국 로컬 셀러를 대상으로 67개 세부 카테고리 판매 수수료율을 인상하며 본격적인 수익화에 나섰습니다. 사진기 및 사진 카테고리는 5.5%에서 6.6%로 상향되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "알리익스프레스, 8월부터 67개 세부 카테고리 판매 수수료율 상향"
+        },
+        {
+          "type": "content",
+          "text": "사진기 및 사진 카테고리 수수료율 기존 5.5%에서 6.6%로 인상"
+        },
+        {
+          "type": "content",
+          "text": "수산·과일·복사 용지 카테고리 수수료율 각각 6.6%에서 8.8%로 인상"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260731000239"
+      },
+      "publishedAt": "2026-08-02T07:00:00.000Z",
+      "url": "https://www.etnews.com/20260731000239",
+      "linkCheckedAt": "2026-08-02T08:03:20.495Z",
+      "image": "https://img.etnews.com/news/article/2026/07/31/news-p.v1.20260731.3ed2cb24b9d948fdada46963cca8357c_P1.png",
+      "imageChecked": true
+    },
     {
       "id": 2989,
       "lens": "정책",
@@ -45,6 +90,78 @@
       "linkCheckedAt": "2026-08-02T05:16:06.026Z",
       "image": "https://www.newstnt.com/image/logo/snslogotrans_20260415040448.png",
       "imageChecked": true
+    },
+    {
+      "id": 3000,
+      "lens": "경쟁사",
+      "grade": "긴급",
+      "impact": 4.9,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자",
+        "LG전자"
+      ],
+      "tags": [
+        "실적",
+        "경쟁동향",
+        "가전사업"
+      ],
+      "headline": "삼성 적자 전환 속 LG 가전 1조원대 영업이익 방어",
+      "summary": "삼성전자가 적자로 전환한 가운데, LG전자는 가전 부문에서 1조원대 영업이익선을 지켜냈다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 적자(in the red)로 전환함"
+        },
+        {
+          "type": "content",
+          "text": "LG전자의 가전 부문은 1조원 선을 방어함"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.ajupress.com/view/20260802102853980"
+      },
+      "publishedAt": "2026-08-02T01:36:43.000Z",
+      "url": "https://www.ajupress.com/view/20260802102853980",
+      "linkCheckedAt": "2026-08-02T08:03:20.495Z",
+      "image": "https://image.ajunews.com/content/image/2026/08/02/20260802103535796972.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2947,
+          "headline": "LG전자 영업이익 147% 급증…생활가전 이익률 9.7%",
+          "url": "https://www.jabon.co.kr/news/articleView.html?idxno=5484",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-07-31T01:00:00.000Z"
+        },
+        {
+          "id": 2982,
+          "headline": "LG전자 가전 1조원 영업이익 기록, 삼성전자 적자",
+          "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008686165",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-02T00:43:00.000Z"
+        },
+        {
+          "id": 2927,
+          "headline": "가전서 희비 갈린 삼성·LG 영업익 2분기째 1조원 격차",
+          "url": "https://www.yna.co.kr/view/AKR20260731167500003",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-01T21:03:01.000Z"
+        }
+      ]
     },
     {
       "id": 2966,
@@ -252,6 +369,24 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-02T01:28:13.000Z"
+        },
+        {
+          "id": 2995,
+          "headline": "제주서 맞붙은 LG·삼성 히트펌프..유럽 이어 내수 선점 경쟁",
+          "url": "https://www.mt.co.kr/amp/industry/2026/08/02/2026080211115088459",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-02T04:30:32.000Z"
+        },
+        {
+          "id": 2997,
+          "headline": "LG전자, 제주 히트펌프 보급 1위 사업자 선정",
+          "url": "https://v.daum.net/v/20260802113609705",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-02T02:36:09.000Z"
         }
       ]
     },
@@ -292,7 +427,18 @@
       "url": "https://biz.chosun.com/it-science/ict/2026/08/02/Z65327O4HFGDNIJINX2W3R3HAA/",
       "linkCheckedAt": "2026-08-02T01:44:23.394Z",
       "image": "https://biz.chosun.com/resizer/v2/U74467QFMFMQNG3GJEXFJQ74EM.jpg?auth=8d575e544a8fdc15b83e53be5eb77b83794f2e8a0b0111409ea26bb651e7d4ef&width=1200&height=630&smart=true",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3001,
+          "headline": "삼성·LG, 3개월 만에 완성하는 모듈러 주택 건설",
+          "url": "https://en.sedaily.com/finance/2026/08/02/samsung-lg-build-homes-modular-houses-completed-in-three",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-02T07:21:10.000Z"
+        }
+      ]
     },
     {
       "id": 2953,
@@ -343,70 +489,6 @@
             "name": "Google News - 통상·관세 정책 KR"
           },
           "publishedAt": "2026-08-01T21:39:26.000Z"
-        }
-      ]
-    },
-    {
-      "id": 2927,
-      "lens": "경쟁사",
-      "grade": "긴급",
-      "impact": 4.6,
-      "factors": {
-        "salesRelevance": 5,
-        "timeUrgency": 4,
-        "marketSize": 4,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [
-        "삼성전자",
-        "LG전자"
-      ],
-      "tags": [
-        "실적",
-        "삼성전자",
-        "LG전자",
-        "가전"
-      ],
-      "headline": "가전서 희비 갈린 삼성·LG 영업익 2분기째 1조원 격차",
-      "summary": "삼성전자와 LG전자의 가전 사업 부문 영업이익 격차가 2분기째 1조원 규모를 기록하며 희비가 갈렸습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "가전 부문서 삼성전자와 LG전자 간 영업이익 격차 1조원 지속"
-        },
-        {
-          "type": "content",
-          "text": "2분기째 이어진 실적 격차로 양사 간 희비 교차"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.yna.co.kr/view/AKR20260731167500003"
-      },
-      "publishedAt": "2026-08-01T21:03:01.000Z",
-      "url": "https://www.yna.co.kr/view/AKR20260731167500003",
-      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
-      "image": "https://img3.yna.co.kr/photo/yna/YH/2026/07/30/PYH2026073013420001300_P4.jpg",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 2947,
-          "headline": "LG전자 영업이익 147% 급증…생활가전 이익률 9.7%",
-          "url": "https://www.jabon.co.kr/news/articleView.html?idxno=5484",
-          "source": {
-            "name": "Google News - 통상·관세 정책 KR"
-          },
-          "publishedAt": "2026-07-31T01:00:00.000Z"
-        },
-        {
-          "id": 2982,
-          "headline": "LG전자 가전 1조원 영업이익 기록, 삼성전자 적자",
-          "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008686165",
-          "source": {
-            "name": "Google News - US Home Appliances"
-          },
-          "publishedAt": "2026-08-02T00:43:00.000Z"
         }
       ]
     },
@@ -2873,7 +2955,7 @@
       },
       "publishedAt": "2026-07-30T07:00:00.000Z",
       "url": "https://www.etnews.com/20260730000075",
-      "linkCheckedAt": "2026-07-30T07:26:47.793Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://img.etnews.com/news/article/2026/07/29/news-p.v1.20260729.25e2922e76b549989dcc5f74b7ea9afa_P1.jpg",
       "imageChecked": true
     },
@@ -2920,7 +3002,7 @@
       },
       "publishedAt": "2026-07-30T07:00:00.000Z",
       "url": "https://www.etnews.com/20260730000063",
-      "linkCheckedAt": "2026-07-30T07:26:47.793Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://img.etnews.com/news/article/2026/03/24/news-p.v1.20260324.e5cc5a0c383b489db4efaec3517b0d6f_P1.jpg",
       "imageChecked": true
     },
@@ -2965,7 +3047,7 @@
       },
       "publishedAt": "2026-07-30T06:38:13.000Z",
       "url": "https://ekn.kr/web/view.php?key=20260730024007943",
-      "linkCheckedAt": "2026-07-30T07:26:47.793Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://www.ekn.kr/mnt/file/202607/news-p.v1.20260730.615ad2ba58f641c5a9744bc47f88fdaf_R.jpg",
       "imageChecked": true
     },
@@ -3051,7 +3133,7 @@
       },
       "publishedAt": "2026-07-30T06:07:00.000Z",
       "url": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=596736",
-      "linkCheckedAt": "2026-07-30T07:26:47.793Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://www.headlinejeju.co.kr/news/photo/202607/596736_492502_915.jpg",
       "imageChecked": true
     },
@@ -5386,27 +5468,27 @@
       "imageChecked": true
     },
     {
-      "id": 2984,
+      "id": 3002,
       "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.1,
+      "grade": "참고",
+      "impact": 2.4,
       "factors": {
         "salesRelevance": 2,
-        "timeUrgency": 5,
+        "timeUrgency": 3,
         "marketSize": 2,
-        "sourceReliability": 4
+        "sourceReliability": 3
       },
       "products": [],
       "competitors": [
         "월풀"
       ],
       "tags": [
-        "월풀",
-        "실적발표",
-        "CEO"
+        "실적연기",
+        "경쟁사동향",
+        "월풀"
       ],
       "headline": "월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
-      "summary": "월풀은 최고경영자(CEO)가 자전거 사고로 부상을 입어 예정된 실적 발표를 연기한다고 밝혔다.",
+      "summary": "월풀이 CEO의 자전거 사고 부상으로 인해 예정된 실적 발표를 연기한다고 밝혔다.",
       "summaryPoints": [
         {
           "type": "content",
@@ -5414,7 +5496,7 @@
         },
         {
           "type": "content",
-          "text": "부상 여파로 예정되었던 실적 발표 일정 연기"
+          "text": "부상 여파로 실적 발표 일정이 연기됨"
         }
       ],
       "source": {
@@ -5423,9 +5505,8 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-08-02T05:16:06.026Z",
-      "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
-      "imageChecked": true
+      "linkCheckedAt": "2026-08-02T08:03:20.495Z",
+      "image": null
     },
     {
       "id": 2787,
@@ -7374,7 +7455,7 @@
       },
       "publishedAt": "2026-07-27T03:36:00.000Z",
       "url": "https://www.ytn.co.kr/_cs/_ln_0102_202607271236028340_005.html",
-      "linkCheckedAt": "2026-07-30T07:26:22.906Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://image.ytn.co.kr/general/jpg/2026/0727/202607271236028340_t.jpg",
       "imageChecked": true
     },
@@ -7416,7 +7497,7 @@
       },
       "publishedAt": "2026-07-27T01:38:10.000Z",
       "url": "https://www.theguru.co.kr/news/article.html?no=104950",
-      "linkCheckedAt": "2026-07-30T07:26:22.906Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://www.theguru.co.kr/data/photos/20260731/art_17851156353309_8a67d9.jpg",
       "imageChecked": true
     },
@@ -7462,7 +7543,7 @@
       },
       "publishedAt": "2026-07-27T01:00:00.000Z",
       "url": "https://www.newspim.com/news/view/20260727000057",
-      "linkCheckedAt": "2026-07-30T07:26:22.906Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://img.newspim.com/news/2026/07/27/2607270815422440_t1.jpg",
       "imageChecked": true
     },
@@ -7996,7 +8077,7 @@
       },
       "publishedAt": "2026-07-26T13:35:42.000Z",
       "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=388920",
-      "linkCheckedAt": "2026-07-30T07:26:22.906Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://www.fntoday.co.kr/news/thumbnail/202607/388920_311999_950_v150.jpg",
       "imageChecked": true
     },
@@ -9998,7 +10079,7 @@
       },
       "publishedAt": "2026-07-24T04:57:50.000Z",
       "url": "https://www.mk.co.kr/news/english/12106579",
-      "linkCheckedAt": "2026-07-30T07:26:22.906Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/24/rcv.YNA.20260724.PYH2026072404350001300_R.jpg",
       "imageChecked": true
     },
@@ -10043,7 +10124,7 @@
       },
       "publishedAt": "2026-07-24T04:57:02.000Z",
       "url": "https://www.mk.co.kr/news/economy/12106574",
-      "linkCheckedAt": "2026-07-30T07:26:22.906Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/24/news-p.v1.20250910.d34d7194d482454daefe84d47fa36730_R.jpg",
       "imageChecked": true
     },
@@ -10130,7 +10211,7 @@
       },
       "publishedAt": "2026-07-24T02:47:00.000Z",
       "url": "https://www.newspim.com/news/view/20260724000362",
-      "linkCheckedAt": "2026-07-30T07:26:22.906Z",
+      "linkCheckedAt": "2026-08-02T08:02:51.654Z",
       "image": "https://img.newspim.com/news/2026/07/24/2607241036379540_t1.jpg",
       "imageChecked": true
     },
@@ -28597,7 +28678,8 @@
       "publishedAt": "2026-06-27T22:25:00.000Z",
       "url": "https://www.ytn.co.kr/_ln/0102_202606280725090654",
       "image": "https://image.ytn.co.kr/general/jpg/2026/0628/202606280725090654_t.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1082,
@@ -28667,7 +28749,8 @@
       "publishedAt": "2026-06-27T00:30:00.000Z",
       "url": "https://m.economictimes.com/industry/cons-products/electronics/consumer-companies-ramp-up-festive-production-on-demand-hope/amp_articleshow/132024135.cms",
       "image": "https://m.economictimes.com/thumb/msid-132024170,width-1200,height-900,resizemode-4,imgsize-70080/electronics.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1073,
@@ -28700,7 +28783,8 @@
       "publishedAt": "2026-06-26T23:32:35.000Z",
       "url": "https://mbiz.heraldcorp.com/article/10790032",
       "image": "https://wimg.heraldcorp.com/news/cms/2026/06/27/news-p.v1.20260625.2546e41f3a2c44f0a1faf187490e64fb_T1.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1075,
