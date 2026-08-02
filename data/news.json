@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T15:55:10.550Z",
+  "updatedAt": "2026-08-02T16:47:54.221Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -1854,6 +1854,15 @@
             "name": "Google News - 캐리어/오텍캐리어 KR"
           },
           "publishedAt": "2026-07-31T04:58:52.000Z"
+        },
+        {
+          "id": 3076,
+          "headline": "에어컨 전기요금 부담…오텍캐리어 1등급 벽걸이 출하 65%↑",
+          "url": "https://news.nate.com/view/20260731n17328",
+          "source": {
+            "name": "Google News - 캐리어/오텍캐리어 KR"
+          },
+          "publishedAt": "2026-07-31T04:58:00.000Z"
         }
       ]
     },
@@ -4456,7 +4465,18 @@
       "url": "https://www.prnewswire.com/news-releases/lennox-reports-2026-second-quarter-results-302836916.html",
       "linkCheckedAt": "2026-08-02T01:43:56.082Z",
       "image": "https://mmx.prnewswire.com/media/MS262780/LENNOX-LOGO.jpg?id=OA2796619&p=facebook",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3083,
+          "headline": "Lennox, 2026년 2분기 매출 분석가 예상치 밑돌아 주가 하락",
+          "url": "https://stockstory.org/us/stocks/nyse/lii/news/earnings/lennox-nyselii-reports-sales-below-analyst-estimates-in-q2-cy2026-earnings-stock-drops",
+          "source": {
+            "name": "Google News - HVAC Majors"
+          },
+          "publishedAt": "2026-07-29T11:35:03.000Z"
+        }
+      ]
     },
     {
       "id": 2506,
@@ -4643,6 +4663,15 @@
             "name": "Google News - Electrolux"
           },
           "publishedAt": "2026-07-29T05:23:40.000Z"
+        },
+        {
+          "id": 3088,
+          "headline": "일렉트로룩스, 예상치 밑돈 손실에 주가 21% 급등",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-29/appliance-maker-electrolux-soars-on-smaller-than-forecast-loss",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-29T07:27:39.000Z"
         }
       ]
     },
@@ -4733,6 +4762,59 @@
       "linkCheckedAt": "2026-08-01T08:01:43.976Z",
       "image": "https://cdn.bizwatch.co.kr/news/photo/2025/08/06/d832161e5f1d017ba0a33f31f67f104c.jpg",
       "imageChecked": true
+    },
+    {
+      "id": 3086,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "실적",
+        "일렉트로룩스",
+        "2분기실적",
+        "경쟁동향"
+      ],
+      "headline": "일렉트로룩스, 2분기 영업이익 시장 기대치 상회",
+      "summary": "가전 제조사 일렉트로룩스가 2분기 영업이익에서 시장 예상치를 뛰어넘는 실적을 기록했다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "일렉트로룩스 2분기 영업이익 시장 예상치 상회"
+        },
+        {
+          "type": "content",
+          "text": "가전 제조사 일렉트로룩스의 실적 관련 보도"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://www.investing.com/news/stock-market-news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-4818590"
+      },
+      "publishedAt": "2026-07-29T05:23:40.000Z",
+      "url": "https://www.investing.com/news/stock-market-news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-4818590",
+      "linkCheckedAt": "2026-08-02T16:45:01.722Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 3087,
+          "headline": "일렉트로룩스, 2분기 영업이익 시장 기대치 상회",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L8N43V0BZ:0-appliance-maker-electrolux-q2-operating-profit-beats-expectations/",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-29T05:11:00.000Z"
+        }
+      ]
     },
     {
       "id": 2513,
@@ -5670,7 +5752,7 @@
       "imageChecked": true
     },
     {
-      "id": 3067,
+      "id": 3082,
       "lens": "경쟁사",
       "grade": "참고",
       "impact": 2.4,
@@ -5685,20 +5767,20 @@
         "월풀"
       ],
       "tags": [
-        "월풀",
         "실적",
-        "CEO"
+        "CEO",
+        "월풀"
       ],
       "headline": "월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
-      "summary": "월풀이 CEO의 자전거 사고 부상으로 인해 예정되었던 실적 발표를 연기한다고 밝혔다.",
+      "summary": "월풀이 CEO의 자전거 사고 부상으로 인해 예정되었던 실적 발표를 연기했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀 CEO가 자전거 사고로 부상을 입음"
+          "text": "CEO가 자전거 사고로 부상을 입음"
         },
         {
           "type": "content",
-          "text": "사고 여파로 예정된 실적 발표 일정이 연기됨"
+          "text": "월풀이 실적 발표 일정을 연기함"
         }
       ],
       "source": {
@@ -5707,7 +5789,7 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-08-02T15:52:02.930Z",
+      "linkCheckedAt": "2026-08-02T16:45:01.722Z",
       "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
       "imageChecked": true
     },
@@ -29598,7 +29680,8 @@
       "publishedAt": "2026-06-25T07:00:00.000Z",
       "url": "https://www.etnews.com/20260625000102",
       "image": "https://img.etnews.com/news/article/2026/06/22/news-p.v1.20260622.84e9f38321bb4bb4addc37130ca6a6f9_P1.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1035,
@@ -29640,7 +29723,8 @@
       "publishedAt": "2026-06-25T06:31:10.000Z",
       "url": "https://www.newstomato.com/readnews.aspx?no=1305189",
       "image": "https://image.newstomato.com/newsimg/2026/6/25/1305189/attach.jpg?v=202606251557",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1026,
@@ -29681,7 +29765,8 @@
       "publishedAt": "2026-06-25T06:17:00.000Z",
       "url": "https://www.asiatime.co.kr/article/20260625500269",
       "image": "https://csossihettpx2597658.cdn.gov-ntruss.com/data2/content/image/2026/06/25/.cache/512/20260625500268.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1027,
