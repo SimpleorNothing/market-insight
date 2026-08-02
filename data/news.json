@@ -1,7 +1,66 @@
 {
-  "updatedAt": "2026-08-02T08:06:09.376Z",
+  "updatedAt": "2026-08-02T10:27:12.274Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3005,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "주거·공간",
+        "홈쇼핑",
+        "유통"
+      ],
+      "headline": "LG전자, 홈쇼핑 통해 모듈러 주택 판매 진행",
+      "summary": "LG전자가 홈쇼핑 방송을 통해 모듈러 주택 판매에 나선다고 한국경제 등이 보도했습니다. 이는 주거·공간 솔루션 및 신사업 영역으로의 유통 채널 확장을 의미합니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 모듈러 주택을 홈쇼핑 채널을 통해 판매함"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hankyung.com/article/2026080202191"
+      },
+      "publishedAt": "2026-08-02T09:33:46.000Z",
+      "url": "https://www.hankyung.com/article/2026080202191",
+      "linkCheckedAt": "2026-08-02T10:24:28.844Z",
+      "image": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3001,
+          "headline": "삼성·LG, 3개월 만에 완성하는 모듈러 주택 건설",
+          "url": "https://en.sedaily.com/finance/2026/08/02/samsung-lg-build-homes-modular-houses-completed-in-three",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-02T07:21:10.000Z"
+        },
+        {
+          "id": 2965,
+          "headline": "LG전자, 모듈러주택 국내 첫 방송 판매",
+          "url": "https://biz.chosun.com/it-science/ict/2026/08/02/Z65327O4HFGDNIJINX2W3R3HAA/",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-02T00:20:00.000Z"
+        }
+      ]
+    },
     {
       "id": 2990,
       "lens": "소비자",
@@ -45,6 +104,47 @@
       "url": "https://www.etnews.com/20260731000239",
       "linkCheckedAt": "2026-08-02T08:03:20.495Z",
       "image": "https://img.etnews.com/news/article/2026/07/31/news-p.v1.20260731.3ed2cb24b9d948fdada46963cca8357c_P1.png",
+      "imageChecked": true
+    },
+    {
+      "id": 3011,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "사회공헌",
+        "세탁기"
+      ],
+      "headline": "LG전자, 젠산 지역 주민 대상 무료 세탁 서비스 제공",
+      "summary": "LG전자가 Imperial과 협력하여 젠산(GenSan) 지역 가정에 무료 세탁 서비스를 제공하는 행사를 진행합니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자와 Imperial이 젠산(GenSan) 지역 가정 대상 무료 세탁 서비스 런칭"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.sunstar.com.ph/amp/story/davao/lg-imperial-launch-free-laundry-for-gensan-families"
+      },
+      "publishedAt": "2026-08-02T06:18:30.000Z",
+      "url": "https://www.sunstar.com.ph/amp/story/davao/lg-imperial-launch-free-laundry-for-gensan-families",
+      "linkCheckedAt": "2026-08-02T10:24:28.844Z",
+      "image": "https://cf-images.assettype.com/sunstar%2F2026-08-02%2F4xw7i04b%2FMans-Carpio-seeks-TRO-vs-subpoena-issued-by-HOR-Committee-on-Justice202608021412560000.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
       "imageChecked": true
     },
     {
@@ -160,6 +260,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-01T21:03:01.000Z"
+        },
+        {
+          "id": 2871,
+          "headline": "LG전자 인도 법인, 2000억 원 규모 세무 분쟁 승소",
+          "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=273936",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-07-31T02:33:23.000Z"
         }
       ]
     },
@@ -387,56 +496,6 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-02T02:36:09.000Z"
-        }
-      ]
-    },
-    {
-      "id": 2965,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.9,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "신사업",
-        "주거·공간",
-        "B2B",
-        "LG전자"
-      ],
-      "headline": "LG전자, 모듈러주택 국내 첫 방송 판매",
-      "summary": "LG전자가 모듈러주택을 국내에서 처음으로 방송을 통해 판매한다고 보도되었습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자의 모듈러주택 국내 첫 방송 판매 추진"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://biz.chosun.com/it-science/ict/2026/08/02/Z65327O4HFGDNIJINX2W3R3HAA/"
-      },
-      "publishedAt": "2026-08-02T00:20:00.000Z",
-      "url": "https://biz.chosun.com/it-science/ict/2026/08/02/Z65327O4HFGDNIJINX2W3R3HAA/",
-      "linkCheckedAt": "2026-08-02T01:44:23.394Z",
-      "image": "https://biz.chosun.com/resizer/v2/U74467QFMFMQNG3GJEXFJQ74EM.jpg?auth=8d575e544a8fdc15b83e53be5eb77b83794f2e8a0b0111409ea26bb651e7d4ef&width=1200&height=630&smart=true",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 3001,
-          "headline": "삼성·LG, 3개월 만에 완성하는 모듈러 주택 건설",
-          "url": "https://en.sedaily.com/finance/2026/08/02/samsung-lg-build-homes-modular-houses-completed-in-three",
-          "source": {
-            "name": "Google News - LG Global"
-          },
-          "publishedAt": "2026-08-02T07:21:10.000Z"
         }
       ]
     },
@@ -1643,45 +1702,6 @@
       "url": "https://www.press9.kr/news/articleView.html?idxno=80422",
       "linkCheckedAt": "2026-08-01T11:55:10.313Z",
       "image": null
-    },
-    {
-      "id": 2871,
-      "lens": "정책",
-      "grade": "주시",
-      "impact": 2.8,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "인도",
-        "세무분쟁",
-        "LG전자",
-        "소송"
-      ],
-      "headline": "LG전자 인도 법인, 2000억 원 규모 세무 분쟁 승소",
-      "summary": "LG전자의 인도 법인이 2000억 원 규모의 세무 분쟁에서 승소했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자 인도 법인, 2000억 원 규모 세무 분쟁 승소"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=273936"
-      },
-      "publishedAt": "2026-07-31T02:33:23.000Z",
-      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=273936",
-      "linkCheckedAt": "2026-08-01T10:25:48.039Z",
-      "image": "https://www.businesskorea.co.kr/news/thumbnail/202607/273936_281228_3246_v150.jpg",
-      "imageChecked": true
     },
     {
       "id": 2988,
@@ -5468,13 +5488,13 @@
       "imageChecked": true
     },
     {
-      "id": 3002,
+      "id": 3013,
       "lens": "경쟁사",
-      "grade": "참고",
-      "impact": 2.4,
+      "grade": "주시",
+      "impact": 2.7,
       "factors": {
         "salesRelevance": 2,
-        "timeUrgency": 3,
+        "timeUrgency": 4,
         "marketSize": 2,
         "sourceReliability": 3
       },
@@ -5483,12 +5503,13 @@
         "월풀"
       ],
       "tags": [
-        "실적연기",
-        "경쟁사동향",
-        "월풀"
+        "월풀",
+        "실적발표",
+        "CEO",
+        "경쟁사동향"
       ],
       "headline": "월풀, CEO 자전거 사고 부상으로 실적 발표 연기",
-      "summary": "월풀이 CEO의 자전거 사고 부상으로 인해 예정된 실적 발표를 연기한다고 밝혔다.",
+      "summary": "월풀은 최고경영자(CEO)가 자전거 사고로 부상을 입음에 따라 실적 발표를 연기한다고 밝혔다.",
       "summaryPoints": [
         {
           "type": "content",
@@ -5496,7 +5517,7 @@
         },
         {
           "type": "content",
-          "text": "부상 여파로 실적 발표 일정이 연기됨"
+          "text": "부상 여파로 예정된 실적 발표 일정이 연기됨"
         }
       ],
       "source": {
@@ -5505,8 +5526,9 @@
       },
       "publishedAt": "2026-07-28T15:16:30.000Z",
       "url": "https://www.moodyonthemarket.com/whirlpool-delays-earnings-release-after-ceo-injured-in-bicycle-accident/",
-      "linkCheckedAt": "2026-08-02T08:03:20.495Z",
-      "image": null
+      "linkCheckedAt": "2026-08-02T10:24:28.844Z",
+      "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/01211957/Whirlpool-Corp-Global-Headquarters.jpg",
+      "imageChecked": true
     },
     {
       "id": 2787,
@@ -7326,7 +7348,7 @@
       },
       "publishedAt": "2026-07-27T06:55:00.000Z",
       "url": "https://www.moneycontrol.com/news/business/small-ticket-loans-emerge-as-the-new-engine-of-india-s-consumption-boom-13979179.html",
-      "linkCheckedAt": "2026-07-30T10:10:41.938Z",
+      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
       "image": "https://images.moneycontrol.com/static-mcnews/2024/12/20241212063302_BeFunky-collage-2024-12-12T120122.717.jpg",
       "imageChecked": true
     },
@@ -10687,7 +10709,7 @@
       },
       "publishedAt": "2026-07-23T23:02:50.000Z",
       "url": "https://mexicobusiness.news/trade-and-investment/news/trane-expands-solar-self-generation-monterrey-plant",
-      "linkCheckedAt": "2026-07-30T10:10:41.938Z",
+      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-07/pexels-quang-nguyen-vinh-222549-6876537.jpg?h=4938c091&itok=mzMhovP7",
       "imageChecked": true
     },
@@ -11078,7 +11100,7 @@
       },
       "publishedAt": "2026-07-23T18:36:00.000Z",
       "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/",
-      "linkCheckedAt": "2026-07-30T10:10:41.938Z",
+      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
       "image": null
     },
     {
@@ -12113,7 +12135,7 @@
       },
       "publishedAt": "2026-07-23T00:00:00.000Z",
       "url": "https://economist.co.kr/article/view/ecn202607220029",
-      "linkCheckedAt": "2026-07-30T10:10:41.938Z",
+      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
       "image": "https://economist.co.kr/data/ecn/image/2026/07/22/ecn20260722000038.800x.0.png",
       "imageChecked": true
     },
@@ -13165,7 +13187,7 @@
       },
       "publishedAt": "2026-07-22T01:24:25.000Z",
       "url": "https://www.msn.com/en-us/money/companies/samsung-cuts-hundreds-of-us-consumer-electronics-jobs-ahead-of-texas-hq-move/ar-AA28f2tm?gemSnapshotKey=GM591B05F4-snapshot-4&uxmode=ruby&cvid=6a5e7a3d8ac343f29f833d7ba0d0d8b2&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
-      "linkCheckedAt": "2026-07-30T10:10:41.938Z",
+      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
       "image": null,
       "relatedArticles": [
         {
@@ -28817,7 +28839,8 @@
       "publishedAt": "2026-06-26T23:20:00.000Z",
       "url": "https://www.mt.co.kr/amp/industry/2026/06/27/2026062417151033283",
       "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/06/2026062417151033283_5.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1072,
@@ -28884,7 +28907,8 @@
       "publishedAt": "2026-06-26T15:43:00.000Z",
       "url": "https://www.kitchenbathdesign.com/ge-appliances-creates-digital-hub/",
       "image": "https://sola-images.s3.us-west-2.amazonaws.com/wp-content/uploads/2026/06/26104148/GE-Entrance-to-Appliance-Park-GE-Appliances-Global-Headquarters-scaled.jpg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1070,
@@ -28925,7 +28949,8 @@
       "publishedAt": "2026-06-26T15:18:32.000Z",
       "url": "https://www.hindustantimes.com/technology/ht-tech-power-list-awards-2026-samsung-lg-qubo-win-big-in-home-appliances-and-lifestyle-categories-101782388866536.html",
       "image": "https://www.hindustantimes.com/ht-img/img/2026/06/26/550x309/HT_Tech_Award_2026_1782486818253_1782486829856_b64f8eb4-8682-486b-988b-a1845e312688.jpeg",
-      "linkCheckedAt": "2026-07-31T08:31:29.503Z"
+      "linkCheckedAt": "2026-07-31T08:31:29.503Z",
+      "imageChecked": true
     },
     {
       "id": 1113,
@@ -30322,7 +30347,7 @@
       },
       "publishedAt": "2026-06-23T07:00:00.000Z",
       "url": "https://www.plasticsnews.com/mergers-acquisitions/pn-bizlink-buys-pas-appliance-systems/",
-      "linkCheckedAt": "2026-07-30T10:10:41.938Z",
+      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
       "image": null
     },
     {
