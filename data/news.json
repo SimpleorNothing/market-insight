@@ -1,47 +1,124 @@
 {
-  "updatedAt": "2026-08-04T16:09:33.191Z",
+  "updatedAt": "2026-08-04T18:24:59.212Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 3429,
-      "lens": "경쟁사",
+      "id": 3438,
+      "lens": "기술",
       "grade": "주시",
-      "impact": 3,
+      "impact": 2.7,
       "factors": {
         "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 3,
+        "timeUrgency": 1,
+        "marketSize": 4,
         "sourceReliability": 3
       },
-      "products": [],
-      "competitors": [
-        "월풀"
+      "products": [
+        "HVAC"
       ],
+      "competitors": [],
       "tags": [
-        "월풀",
-        "실적",
-        "주가동향"
+        "히트펌프",
+        "난방의전기화",
+        "탄소중립",
+        "고효율난방",
+        "가치소비"
       ],
-      "headline": "월풀, 2분기 확대된 손실에도 주가 상승 기록",
-      "summary": "월풀이 2분기 확대된 순손실과 매출 감소에도 불구하고 주가 상승세를 기록했다고 보도되었습니다.",
+      "headline": "난방의 전기화와 히트펌프, 탄소중립·고효율 난방 시대 열다",
+      "summary": "난방의 전기화 핵심 기술인 히트펌프가 탄소중립과 고효율 난방을 이끄는 가치소비 트렌드로 부상하고 있습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀은 2분기 확대된 손실과 매출 감소를 기록함"
+          "text": "난방의 전기화 핵심 기술로 히트펌프가 주목받고 있음"
         },
         {
           "type": "content",
-          "text": "부진한 실적 발표에도 불구하고 주가는 상승세를 보임"
+          "text": "탄소중립과 고효율 난방을 중심으로 가치소비 시대 개막"
         }
       ],
       "source": {
-        "name": "Google News - Whirlpool",
-        "url": "https://www.gurufocus.com/news/9002331/whirlpool-whr-sees-stock-surge-despite-wider-q2-losses-and-revenue-decline"
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.consumerwide.com/news/articleViewAmp.html?idxno=66651"
       },
-      "publishedAt": "2026-08-04T15:33:51.000Z",
-      "url": "https://www.gurufocus.com/news/9002331/whirlpool-whr-sees-stock-surge-despite-wider-q2-losses-and-revenue-decline",
-      "linkCheckedAt": "2026-08-04T16:06:27.380Z",
-      "image": null
+      "publishedAt": "2026-08-04T16:46:22.000Z",
+      "url": "https://www.consumerwide.com/news/articleViewAmp.html?idxno=66651",
+      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "image": "https://cdn.consumerwide.com/news/photo/202608/66651_82731_5734.png",
+      "imageChecked": true
+    },
+    {
+      "id": 3450,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "정책",
+        "관세",
+        "미국"
+      ],
+      "headline": "미 25개 주 정부, 트럼프 행정부 신규 관세 조치 대상 제소",
+      "summary": "미국 내 25개 주 정부가 트럼프 행정부의 새로운 관세 정책에 반발하여 소송을 제기했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 내 25개 주 트럼프 행정부 신규 관세 제소"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://mexicobusiness.news/trade-and-investment/news/25-states-sue-trump-administration-over-new-tariffs"
+      },
+      "publishedAt": "2026-08-04T16:07:46.000Z",
+      "url": "https://mexicobusiness.news/trade-and-investment/news/25-states-sue-trump-administration-over-new-tariffs",
+      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/kelly-sikkema-6406RHVquFs-unsplash.jpg?h=eeecee23&itok=z_PBWo1J",
+      "imageChecked": true
+    },
+    {
+      "id": 3452,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "정책",
+        "USMCA",
+        "무역협정",
+        "멕시코",
+        "미국"
+      ],
+      "headline": "카미멕스, USMCA 광업 포함 촉구",
+      "summary": "멕시코 광업협회(Camimex)는 USMCA(미국·멕시코·캐나다 협정)에 광업 부문이 포함되어야 한다고 촉구했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "카미멕스는 USMCA에 광업이 포함되어야 한다고 주장함"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://mexico-now.com/camimex-mining-should-be-included-in-the-usmca/"
+      },
+      "publishedAt": "2026-08-04T15:24:33.000Z",
+      "url": "https://mexico-now.com/camimex-mining-should-be-included-in-the-usmca/",
+      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "image": "https://mexico-now.com/wp-content/uploads/2026/08/Mineria-y-economia-1024x576-1.jpg",
+      "imageChecked": true
     },
     {
       "id": 3426,
@@ -88,6 +165,42 @@
       "thumbFace": true
     },
     {
+      "id": 3451,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "관세",
+        "USMCA",
+        "무역정책"
+      ],
+      "headline": "캐나다산 화장품, USMCA 보호 실패로 미국 50% 관세 직면",
+      "summary": "캐나다산 화장품이 USMCA 보호 적용에 실패하며 미국으로부터 50%의 관세를 부과받게 되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "캐나다산 화장품이 USMCA 보호 실패로 미국 50% 관세 직면"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.personalcareinsights.com/news/canada-us-cosmetics-tariff-usmca.html"
+      },
+      "publishedAt": "2026-08-04T14:03:20.000Z",
+      "url": "https://www.personalcareinsights.com/news/canada-us-cosmetics-tariff-usmca.html",
+      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "image": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639214486856788005The_Canada_and_US_flag_next_to_each_other..jpg"
+    },
+    {
       "id": 3423,
       "lens": "정책",
       "grade": "주요",
@@ -127,7 +240,18 @@
       "url": "https://news.nate.com/view/20260804n33472?mid=n0100",
       "linkCheckedAt": "2026-08-04T13:44:33.113Z",
       "image": "https://thumbnews.nateimg.co.kr/view610///news.nateimg.co.kr/orgImg/hk/2026/08/04/ZA.45142646.1.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3446,
+          "headline": "미국 6월 무역적자 올 들어 첫 감소",
+          "url": "https://www.hankyung.com/article/202608045055i",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-04T13:16:29.000Z"
+        }
+      ]
     },
     {
       "id": 3412,
@@ -171,6 +295,46 @@
       "url": "https://www.wave3.com/2026/08/04/ge-appliances-teams-with-texas-instruments-power-smart-laundry-machines/",
       "linkCheckedAt": "2026-08-04T13:44:33.113Z",
       "image": "https://gray-wave-prod.gtv-cdn.com/resizer/v2/72PVHEDCRBF27BOLJSAQVGWSLQ.jpg?auth=c7edb360ed69fedb7fd624ca6c6f26da5e5db8f3a56b9e0280933133aeb5abdb&width=1200&height=600&smart=true",
+      "imageChecked": true
+    },
+    {
+      "id": 3439,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [],
+      "tags": [
+        "상업용세탁",
+        "시장전망",
+        "세탁기",
+        "건조기"
+      ],
+      "headline": "상업용 세탁 시장, 30% 성장 전망",
+      "summary": "상업용 세탁 시장이 30% 성장할 것으로 예상됨.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "상업용 세탁 시장 30% 성장 전망"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://sokodirectory.com/2026/08/30-growth-expected-in-on-premise-laundry-market/amp/"
+      },
+      "publishedAt": "2026-08-04T12:46:13.000Z",
+      "url": "https://sokodirectory.com/2026/08/30-growth-expected-in-on-premise-laundry-market/amp/",
+      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "image": "https://sokodirectory.com/wp-content/uploads/2026/08/Laundry.jpg",
       "imageChecked": true
     },
     {
@@ -1118,7 +1282,7 @@
       "imageChecked": true
     },
     {
-      "id": 3425,
+      "id": 3442,
       "lens": "경쟁사",
       "grade": "주요",
       "impact": 4,
@@ -1134,24 +1298,24 @@
       ],
       "tags": [
         "실적",
-        "경쟁사동향"
+        "월풀"
       ],
       "headline": "월풀, 2분기 실적 발표",
-      "summary": "월풀이 2분기 실적을 발표했으나 원문에 구체적인 수치는 제시되지 않았습니다.",
+      "summary": "월풀이 2분기 경영 실적을 공식 발표했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀, 2분기 경영 실적 공식 발표"
+          "text": "월풀, 2분기 실적 발표"
         }
       ],
       "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html"
+        "name": "Google News - Whirlpool",
+        "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html"
       },
       "publishedAt": "2026-08-03T20:05:00.000Z",
-      "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
-      "linkCheckedAt": "2026-08-04T16:06:27.380Z",
-      "image": "https://mmx.prnewswire.com/media/MS426698/Whirlpool-Corporation-Logo.jpg?id=OA2822391&p=facebook",
+      "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html",
+      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "image": "https://bloximages.chicago2.vip.townnews.com/journalstar.com/content/tncms/assets/v3/editorial/f/87/f87941c5-97bc-5f20-b65d-4ded94d8aa9d/6a7196664a0b0.image.jpg?crop=267%2C267%2C266%2C0&resize=200%2C200&order=crop%2Cresize",
       "imageChecked": true,
       "relatedArticles": [
         {
@@ -1236,13 +1400,40 @@
           "publishedAt": "2026-08-03T20:18:28.000Z"
         },
         {
-          "id": 3415,
+          "id": 3425,
           "headline": "월풀, 2분기 실적 발표",
-          "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html",
+          "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-03T20:05:00.000Z"
+        },
+        {
+          "id": 3440,
+          "headline": "월풀, 2026년 2분기 실적 전망치 하회에도 주가 상승",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-whirlpool-misses-q2-2026-estimates-but-shares-rise-93CH-4834496",
           "source": {
             "name": "Google News - Whirlpool"
           },
-          "publishedAt": "2026-08-03T20:05:00.000Z"
+          "publishedAt": "2026-08-04T13:33:25.000Z"
+        },
+        {
+          "id": 3253,
+          "headline": "월풀 실적 발표 앞두고 투자자 긴장",
+          "url": "https://ng.investing.com/news/earnings/investors-brace-for-whirlpool-earnings-after-steep-estimate-cuts-93CH-2634224",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-03T14:40:52.000Z"
+        },
+        {
+          "id": 3429,
+          "headline": "월풀, 2분기 확대된 손실에도 주가 상승 기록",
+          "url": "https://www.gurufocus.com/news/9002331/whirlpool-whr-sees-stock-surge-despite-wider-q2-losses-and-revenue-decline",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-04T15:33:51.000Z"
         }
       ]
     },
@@ -1401,47 +1592,6 @@
       "linkCheckedAt": "2026-08-03T17:41:13.567Z",
       "image": "https://img.seoul.co.kr//img/upload/2026/08/04/SSC_20260804000503_O2.png",
       "imageChecked": true
-    },
-    {
-      "id": 3253,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "실적",
-        "월풀",
-        "투자자"
-      ],
-      "headline": "월풀 실적 발표 앞두고 투자자 긴장",
-      "summary": "월풀의 실적 발표를 앞두고 실적 전망치가 대폭 하향 조정되면서 투자자들이 긴장하고 있습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "월풀 실적 발표를 앞두고 전망치 대폭 하향 조정"
-        },
-        {
-          "type": "content",
-          "text": "투자자들 실적 결과 주시하며 긴장하는 양상"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://ng.investing.com/news/earnings/investors-brace-for-whirlpool-earnings-after-steep-estimate-cuts-93CH-2634224"
-      },
-      "publishedAt": "2026-08-03T14:40:52.000Z",
-      "url": "https://ng.investing.com/news/earnings/investors-brace-for-whirlpool-earnings-after-steep-estimate-cuts-93CH-2634224",
-      "linkCheckedAt": "2026-08-03T15:37:01.497Z",
-      "image": null
     },
     {
       "id": 3374,
@@ -5953,6 +6103,45 @@
       "imageChecked": true
     },
     {
+      "id": 3448,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "신사업",
+        "M&A",
+        "로보틱스",
+        "삼성전자"
+      ],
+      "headline": "삼성전자, 휴머노이드 육성 위해 해외 로봇 M&A 검토",
+      "summary": "삼성전자가 휴머노이드 사업 육성을 위해 해외 유망 로봇 기업 M&A를 검토 중이라고 밝혔습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자 휴머노이드 육성을 위해 해외 유망 로봇 기업 M&A 검토"
+        }
+      ],
+      "source": {
+        "name": "Google News - 경쟁사 로봇·미래사업 KR",
+        "url": "https://zdnet.co.kr/view/?no=20260730122243"
+      },
+      "publishedAt": "2026-07-30T04:05:42.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20260730122243",
+      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "image": "https://image.zdnet.co.kr/2026/07/30/f30d595637f416d46164f6f01b6fa7b6.jpg",
+      "imageChecked": true
+    },
+    {
       "id": 2555,
       "lens": "경쟁사",
       "grade": "주요",
@@ -6807,7 +6996,7 @@
       },
       "publishedAt": "2026-07-29T15:49:08.000Z",
       "url": "https://qz.com/best-energy-efficient-dishwashers-consumer-reports",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": "https://qz.com/cdn-cgi/image/width=1200,quality=85,format=auto/https://assets.qz.com/media/pexels-castorlystock-3829549-300x200.jpg",
       "imageChecked": true
     },
@@ -6898,7 +7087,7 @@
       },
       "publishedAt": "2026-07-29T15:30:00.000Z",
       "url": "https://www.donga.com/news/Economy/article/all/20260729/134389995/2",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/07/30/134391743.1.jpg",
       "imageChecked": true
     },
@@ -7304,6 +7493,54 @@
       "linkCheckedAt": "2026-08-04T08:16:27.408Z",
       "image": "https://cdn.bizwatch.co.kr/news/photo/2025/08/06/d832161e5f1d017ba0a33f31f67f104c.jpg",
       "imageChecked": true
+    },
+    {
+      "id": 3444,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "실적",
+        "일렉트로룩스",
+        "경쟁사동향"
+      ],
+      "headline": "일렉트로룩스, 2분기 영업이익 시장 기대치 상회",
+      "summary": "일렉트로룩스가 2분기 영업이익에서 시장 전망치를 웃도는 실적을 기록했다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "일렉트로룩스 2분기 영업이익 예상치 상회"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://www.investing.com/news/stock-market-news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-4818590"
+      },
+      "publishedAt": "2026-07-29T05:23:40.000Z",
+      "url": "https://www.investing.com/news/stock-market-news/appliance-maker-electrolux-q2-operating-profit-beats-expectations-4818590",
+      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 3445,
+          "headline": "일렉트로룩스, 2분기 영업이익 시장 기대치 상회",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L8N43V0BZ:0-appliance-maker-electrolux-q2-operating-profit-beats-expectations/",
+          "source": {
+            "name": "Google News - Electrolux"
+          },
+          "publishedAt": "2026-07-29T05:11:00.000Z"
+        }
+      ]
     },
     {
       "id": 2513,
@@ -7729,7 +7966,7 @@
       },
       "publishedAt": "2026-07-29T02:19:28.000Z",
       "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4097688",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://cdn.news.bbsi.co.kr/news/thumbnail/202607/4097688_750851_820_v150.jpg",
@@ -10873,7 +11110,7 @@
       },
       "publishedAt": "2026-07-26T15:00:00.000Z",
       "url": "https://www.fntimes.com/html/view.php?ud=202607242152314370dd55077bc2_18",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": "assets/img/topics/news.svg",
       "imageChecked": true,
       "imageOriginal": "https://cfnimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&idx=999&simg=20260724215305012630dd55077bc212411124362.jpg&nmt=18",
@@ -13994,7 +14231,7 @@
       },
       "publishedAt": "2026-07-23T13:45:58.000Z",
       "url": "https://www.marketbeat.com/instant-alerts/stifel-nicolaus-has-lowered-expectations-for-whirlpool-nysewhr-stock-price-2026-07-23/",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": "https://www.marketbeat.com/logos/whirlpool-co-logo-1200x675.jpg?v=20240426082740",
       "imageChecked": true
     },
@@ -14076,7 +14313,7 @@
       },
       "publishedAt": "2026-07-23T13:16:01.000Z",
       "url": "https://www.mk.co.kr/news/economy/12106036",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260708.b0c42cffc5af4ee9ac988467868e4d1f_R.png",
       "imageChecked": true
     },
@@ -14117,7 +14354,7 @@
       },
       "publishedAt": "2026-07-23T12:55:03.000Z",
       "url": "https://www.mk.co.kr/news/world/12106016",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260611.7f70d031df9543fe8ab386d724faf363_R.png",
       "imageChecked": true
     },
@@ -14391,7 +14628,7 @@
       },
       "publishedAt": "2026-07-23T06:05:23.000Z",
       "url": "https://impakter.com/trump-administration-to-cut-federal-energy-efficiency-programs/",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": null
     },
     {
@@ -15418,7 +15655,7 @@
       },
       "publishedAt": "2026-07-22T14:57:25.000Z",
       "url": "https://www.tikr.com/blog/trane-technologies-stock-erased-most-of-a-20-drawdown-its-backlog-may-explain-why",
-      "linkCheckedAt": "2026-08-01T17:51:20.228Z",
+      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
       "image": "https://res.cloudinary.com/tikr/images/w_600,h_360,c_scale/f_webp,q_auto/v1784706216/images/FEATURED-IMAGE-MAKER-1123/FEATURED-IMAGE-MAKER-1123.png?_i=AA",
       "imageChecked": true,
       "relatedArticles": [
@@ -34919,7 +35156,8 @@
       "publishedAt": "2026-06-19T09:52:47.000Z",
       "url": "https://www.kyosu.net/news/articleView.html?idxno=206828",
       "image": "https://cdn.kyosu.net/news/photo/202606/206828_207813_5034.jpg",
-      "linkCheckedAt": "2026-08-03T15:36:20.195Z"
+      "linkCheckedAt": "2026-08-03T15:36:20.195Z",
+      "imageChecked": true
     },
     {
       "id": 917,
