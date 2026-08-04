@@ -1,7 +1,88 @@
 {
-  "updatedAt": "2026-08-04T20:20:41.429Z",
+  "updatedAt": "2026-08-04T22:05:54.248Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3470,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "주거·공간",
+        "홈쇼핑"
+      ],
+      "headline": "LG 스마트코티지, 홈쇼핑 데뷔 방송서 3초마다 한 통 흥행",
+      "summary": "LG 스마트코티지가 홈쇼핑 데뷔 방송에서 3초마다 한 통의 문의를 기록하며 흥행을 거뒀다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG 스마트코티지가 홈쇼핑 데뷔 방송을 진행함"
+        },
+        {
+          "type": "content",
+          "text": "방송 중 3초마다 한 통의 문의를 기록하며 흥행함"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://news.nate.com/view/20260805n02524?mid=n0300"
+      },
+      "publishedAt": "2026-08-04T21:45:00.000Z",
+      "url": "https://news.nate.com/view/20260805n02524?mid=n0300",
+      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
+      "image": "https://thumbnews.nateimg.co.kr/view610///news.nateimg.co.kr/orgImg/na/2026/08/05/8040833_high.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3459,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.6,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에어컨",
+        "전기요금",
+        "소비자트렌드",
+        "냉방"
+      ],
+      "headline": "에어컨 하루 종일 가동 시 4인 기준 월 평균 7.7만 원",
+      "summary": "4인 가구 기준으로 에어컨을 하루 종일 가동할 경우 월 평균 7만 7000원의 전기료가 발생하는 것으로 나타났습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "에어컨을 하루 종일 가동 시 4인 가구 기준 월 평균 7.7만 원 발생"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.munhwa.com/article/11607261"
+      },
+      "publishedAt": "2026-08-04T20:33:22.000Z",
+      "url": "https://www.munhwa.com/article/11607261",
+      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
+      "image": "https://wimg.munhwa.com/news/cms/2026/08/05/news-p.v1.20260804.cb5b9f377eee4b62a4f0064d1f8766ae_R.jpg",
+      "imageChecked": true
+    },
     {
       "id": 3457,
       "lens": "기술",
@@ -61,8 +142,56 @@
             "name": "Google News - US Home Appliances"
           },
           "publishedAt": "2026-08-04T12:55:00.000Z"
+        },
+        {
+          "id": 3461,
+          "headline": "GE어플라이언스, 루이빌 공장에 미국산 TI 칩 도입",
+          "url": "https://www.wdrb.com/news/business/ge-appliances-to-use-us-made-ti-chips-at-new-louisville-laundry-plant/article_d86bbd72-863f-4a75-859c-b1e0c56a3d5d.html",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-04T21:46:23.000Z"
         }
       ]
+    },
+    {
+      "id": 3460,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "GE Appliances",
+        "텍사스 인스트루먼트",
+        "마이크로컨트롤러",
+        "부품"
+      ],
+      "headline": "GE Appliances, 미국산 TI 마이크로컨트롤러 통합 발표",
+      "summary": "GE Appliances가 미국에서 제조된 텍사스 인스트루먼트(TI)의 마이크로컨트롤러를 제품에 통합한다고 발표했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE Appliances가 미국산 텍사스 인스트루먼트 마이크로컨트롤러 통합 발표"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.lanereport.com/188701/2026/08/ge-appliances-announces-the-integration-of-us-manufactured-texas-instruments-ti-microcontrollers/"
+      },
+      "publishedAt": "2026-08-04T19:38:42.000Z",
+      "url": "https://www.lanereport.com/188701/2026/08/ge-appliances-announces-the-integration-of-us-manufactured-texas-instruments-ti-microcontrollers/",
+      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
+      "image": "https://ae-lane-report.s3.amazonaws.com/wp-content/uploads/2026/08/04152142/ti-gallium-nitride-intelligent-power-module-chip-scaled.jpg",
+      "imageChecked": true
     },
     {
       "id": 3454,
@@ -108,6 +237,43 @@
       "imageChecked": true
     },
     {
+      "id": 3476,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "인프라",
+        "리쇼어링",
+        "멕시코"
+      ],
+      "headline": "인프라와 USMCA, 멕시코 리쇼어링의 핵심 축",
+      "summary": "인프라와 USMCA가 멕시코 리쇼어링의 핵심 기둥으로 작용하고 있음을 조명",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "인프라와 USMCA는 멕시코 리쇼어링의 핵심 축으로 작용"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://mexico-now.com/infrastructure-and-the-usmca-key-pillars-of-nearshoring-for-mexico/"
+      },
+      "publishedAt": "2026-08-04T19:24:33.000Z",
+      "url": "https://mexico-now.com/infrastructure-and-the-usmca-key-pillars-of-nearshoring-for-mexico/",
+      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
+      "image": "https://mexico-now.com/wp-content/uploads/2026/08/PIB-8.png",
+      "imageChecked": true
+    },
+    {
       "id": 3438,
       "lens": "기술",
       "grade": "주시",
@@ -149,6 +315,47 @@
       "url": "https://www.consumerwide.com/news/articleViewAmp.html?idxno=66651",
       "linkCheckedAt": "2026-08-04T18:22:12.255Z",
       "image": "https://cdn.consumerwide.com/news/photo/202608/66651_82731_5734.png",
+      "imageChecked": true
+    },
+    {
+      "id": 3475,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "관세",
+        "무역정책",
+        "연방준비은행"
+      ],
+      "headline": "연은 분석: USMCA 준수가 2025년 관세 충격 완화",
+      "summary": "댈러스 연방준비은행은 USMCA 준수가 2025년 관세 충격을 완화했다고 발표했습니다. 역외 생산 비중이 높은 가전 업계에 미치는 영향이 분석되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "댈러스 연은이 2025년 관세 충격과 USMCA 준수 효과 분석 발표"
+        },
+        {
+          "type": "content",
+          "text": "USMCA 규정 준수가 북미 교역에서 관세 타격을 완화한 요인으로 지목"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.dallasfed.org/research/economics/2026/0804-emg-usmca-tariffs"
+      },
+      "publishedAt": "2026-08-04T16:39:45.000Z",
+      "url": "https://www.dallasfed.org/research/economics/2026/0804-emg-usmca-tariffs",
+      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
+      "image": "https://www.dallasfed.org/-/media/Images/research/economics/2026/0804/port-houston-pri.jpg",
       "imageChecked": true
     },
     {
@@ -713,6 +920,87 @@
       "imageChecked": true,
       "imageOriginal": "https://image.newstomato.com/newsimg/2026/8/4/1309209/attach.jpg?v=202608041710",
       "thumbFace": true
+    },
+    {
+      "id": 3472,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "관세",
+        "무역적자",
+        "정책"
+      ],
+      "headline": "나바로, 한국 무역적자 역대 최고 기록 강조",
+      "summary": "나바로는 한국과의 무역적자가 역대 최고 수준을 기록해 간과할 수 없다고 밝혔습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "나바로는 한국과의 무역적자가 역대 최고치를 기록했다고 언급함"
+        },
+        {
+          "type": "content",
+          "text": "해당 무역적자 규모를 결코 간과할 수 없다는 입장을 표명함"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://newsandpost.com/data/read.php?id=news&category=1&no=27174"
+      },
+      "publishedAt": "2026-08-04T07:58:01.000Z",
+      "url": "https://newsandpost.com/data/read.php?id=news&category=1&no=27174",
+      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
+      "image": "https://newsandpost.com/data/data/news/industrial_port_container_yard.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3477,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "롯데하이마트",
+        "실적",
+        "가전유통",
+        "소비자"
+      ],
+      "headline": "롯데하이마트 2분기 영업이익 9억…91.4% 급감",
+      "summary": "롯데하이마트가 2분기 고마진 가전 판매 부진의 영향으로 영업이익이 9억 원을 기록하며 전년 동기 대비 91.4% 감소했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "롯데하이마트 2분기 영업이익 9억 원으로 전년 대비 91.4% 감소"
+        },
+        {
+          "type": "content",
+          "text": "고마진 가전 판매 부진이 실적 악화의 주요 원인으로 작용"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 소비·유통 KR",
+        "url": "https://www.businesspost.co.kr/BP?command=article_view&num=443928"
+      },
+      "publishedAt": "2026-08-04T07:46:31.000Z",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=443928",
+      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
+      "image": null
     },
     {
       "id": 3380,
@@ -1352,7 +1640,7 @@
       "imageChecked": true
     },
     {
-      "id": 3456,
+      "id": 3466,
       "lens": "경쟁사",
       "grade": "주요",
       "impact": 4,
@@ -1367,26 +1655,26 @@
         "월풀"
       ],
       "tags": [
-        "월풀",
         "실적",
+        "월풀",
         "경쟁동향"
       ],
       "headline": "월풀, 2분기 실적 발표",
-      "summary": "월풀이 2분기 경영 실적을 발표했다.",
+      "summary": "월풀이 2분기 경영 실적을 공식 발표했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀이 2분기 실적을 발표함"
+          "text": "월풀, 2분기 실적 발표 진행"
         }
       ],
       "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html"
+        "name": "Google News - Whirlpool",
+        "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html"
       },
       "publishedAt": "2026-08-03T20:05:00.000Z",
-      "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
-      "linkCheckedAt": "2026-08-04T20:17:47.348Z",
-      "image": "https://mmx.prnewswire.com/media/MS426698/Whirlpool-Corporation-Logo.jpg?id=OA2822391&p=facebook",
+      "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html",
+      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
+      "image": "https://bloximages.chicago2.vip.townnews.com/journalstar.com/content/tncms/assets/v3/editorial/f/87/f87941c5-97bc-5f20-b65d-4ded94d8aa9d/6a7196664a0b0.image.jpg?crop=267%2C267%2C266%2C0&resize=200%2C200&order=crop%2Cresize",
       "imageChecked": true,
       "relatedArticles": [
         {
@@ -1498,11 +1786,11 @@
           "publishedAt": "2026-08-04T15:33:51.000Z"
         },
         {
-          "id": 3442,
+          "id": 3456,
           "headline": "월풀, 2분기 실적 발표",
-          "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html",
+          "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
           "source": {
-            "name": "Google News - Whirlpool"
+            "name": "Google News - US Home Appliances"
           },
           "publishedAt": "2026-08-03T20:05:00.000Z"
         }
@@ -3427,7 +3715,7 @@
       },
       "publishedAt": "2026-08-01T21:00:00.000Z",
       "url": "https://www.news1.kr/industry/general-industry/6246173",
-      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
+      "linkCheckedAt": "2026-08-04T22:02:15.035Z",
       "image": null,
       "relatedArticles": [
         {
@@ -5279,7 +5567,7 @@
       },
       "publishedAt": "2026-07-30T11:00:45.000Z",
       "url": "https://irishtechnews.ie/eu-energy-labelling-requirements/",
-      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
+      "linkCheckedAt": "2026-08-04T22:02:15.035Z",
       "image": "https://irishtechnews.ie/wp-content/uploads/2026/07/flock-of-birds-flying-in-sunset-sky-over-green-meadow-in-countryside-stockpack-pexels.jpg",
       "imageChecked": true
     },
@@ -5861,7 +6149,7 @@
       },
       "publishedAt": "2026-07-30T07:00:00.000Z",
       "url": "https://www.consumerreports.org/appliances/washing-machines/which-brands-make-the-most-reliable-washing-machines-a5270664856/",
-      "linkCheckedAt": "2026-08-01T21:43:26.674Z",
+      "linkCheckedAt": "2026-08-04T22:02:15.035Z",
       "image": "https://article.images.consumerreports.org/image/upload/t_article_tout/v1777918280/prod/content/dam/CRO-images-2026/Appliances/CR-Appliances-InlineHero-Which-Brands-Make-the-Most-Reliable-Washing-Machines-0526",
       "imageChecked": true
     },
@@ -6682,7 +6970,7 @@
       },
       "publishedAt": "2026-07-29T20:05:17.000Z",
       "url": "https://www.mk.co.kr/news/world/12111226",
-      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
+      "linkCheckedAt": "2026-08-04T22:02:15.035Z",
       "image": null
     },
     {
@@ -6719,7 +7007,7 @@
       },
       "publishedAt": "2026-07-29T19:46:47.000Z",
       "url": "https://scanx.trade/stock-market-news/companies/lg-electronics-india-fy26-results-net-profit-down-23-5-yoy/46899761",
-      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
+      "linkCheckedAt": "2026-08-04T22:02:15.035Z",
       "image": null
     },
     {
@@ -9410,7 +9698,7 @@
       },
       "publishedAt": "2026-07-28T03:59:41.000Z",
       "url": "https://stockstory.org/us/stocks/nyse/jci/news/earnings/johnson-controls-earnings-what-to-look-for-from-jci-2",
-      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
+      "linkCheckedAt": "2026-08-04T22:02:15.035Z",
       "image": "https://stockstory.org/stockstory/company-image/JCI",
       "imageChecked": true
     },
@@ -14554,7 +14842,7 @@
       },
       "publishedAt": "2026-07-23T07:00:00.000Z",
       "url": "https://www.consumerreports.org/appliances/refrigerators/best-bottom-freezer-refrigerators-of-the-year-a2988839570/",
-      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
+      "linkCheckedAt": "2026-08-04T22:02:15.035Z",
       "image": "https://article.images.consumerreports.org/image/upload/t_article_tout/v1741119445/prod/content/dam/CRO-Images-2025/Appliances/CR-Appliances-InlineHero-Best-Bottom-Freezers-0325",
       "imageChecked": true
     },
@@ -14889,7 +15177,7 @@
       },
       "publishedAt": "2026-07-23T02:11:00.000Z",
       "url": "https://m.kr.investing.com/news/stock-market-news/article-2025702?ampMode=1",
-      "linkCheckedAt": "2026-08-01T21:42:50.545Z",
+      "linkCheckedAt": "2026-08-04T22:02:15.035Z",
       "image": null,
       "relatedArticles": [
         {
