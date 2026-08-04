@@ -1,7 +1,112 @@
 {
-  "updatedAt": "2026-08-04T18:24:59.212Z",
+  "updatedAt": "2026-08-04T20:20:41.429Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3457,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "공급망",
+        "미국산 칩",
+        "GE어플라이언스"
+      ],
+      "headline": "GE어플라이언스, 미국산 칩 공급 확대",
+      "summary": "GE어플라이언스가 미국산 칩 사용을 확대하기로 결정했습니다. 이는 공급망 안정성을 강화하기 위한 조치입니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE어플라이언스가 미국산 칩 사용을 확대함"
+        },
+        {
+          "type": "content",
+          "text": "공급망 안정성 강화 목적의 전략적 조치"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.theverge.com/tech/975324/ge-appliances-doubles-down-on-us-made-chips"
+      },
+      "publishedAt": "2026-08-04T20:04:04.000Z",
+      "url": "https://www.theverge.com/tech/975324/ge-appliances-doubles-down-on-us-made-chips",
+      "linkCheckedAt": "2026-08-04T20:17:47.348Z",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/FINAL-GE-Appliances-x-TI-Press-Release-Infographic.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3455,
+          "headline": "GE 어플라이언스, 미국산 텍사스 인스트루먼트 마이크로컨트롤러 통합",
+          "url": "https://www.lanereport.com/188701/2026/08/ge-appliances-announces-the-integration-of-us-manufactured-texas-instruments-ti-microcontrollers/",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-04T19:38:42.000Z"
+        },
+        {
+          "id": 3412,
+          "headline": "GE어플라이언스, 텍사스인스트루먼트와 스마트 세탁기 협력",
+          "url": "https://www.wave3.com/2026/08/04/ge-appliances-teams-with-texas-instruments-power-smart-laundry-machines/",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-04T12:55:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 3454,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에어컨",
+        "화재",
+        "폭염",
+        "안전"
+      ],
+      "headline": "에어컨 사용 급증으로 한 달 새 과열 화재 136건 발생",
+      "summary": "폭염 속 가동이 이어진 에어컨에서 과열 화재가 한 달 동안 136건 발생하며 소비자 안전 주의가 요구되고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "에어컨 과열로 인한 화재가 한 달 새 136건 발생"
+        },
+        {
+          "type": "content",
+          "text": "연이은 폭염으로 에어컨 가동이 급증한 것이 원인"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.donga.com/news/Society/article/all/20260805/134421742/2"
+      },
+      "publishedAt": "2026-08-04T19:30:00.000Z",
+      "url": "https://www.donga.com/news/Society/article/all/20260805/134421742/2",
+      "linkCheckedAt": "2026-08-04T20:17:47.348Z",
+      "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/08/04/134416839.1.jpg",
+      "imageChecked": true
+    },
     {
       "id": 3438,
       "lens": "기술",
@@ -250,52 +355,17 @@
             "name": "Google News - 통상·관세 정책 KR"
           },
           "publishedAt": "2026-08-04T13:16:29.000Z"
-        }
-      ]
-    },
-    {
-      "id": 3412,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 2.8,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "세탁기"
-      ],
-      "competitors": [
-        "Haier"
-      ],
-      "tags": [
-        "스마트가전",
-        "세탁기",
-        "기술협력"
-      ],
-      "headline": "GE어플라이언스, 텍사스인스트루먼트와 스마트 세탁기 협력",
-      "summary": "GE어플라이언스가 텍사스인스트루먼트와 손잡고 스마트 세탁기 구동을 위한 기술 협력에 나선다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "GE어플라이언스가 텍사스인스트루먼트와 협력 발표"
         },
         {
-          "type": "content",
-          "text": "스마트 세탁기 구동을 위한 기술 제휴 진행"
+          "id": 3465,
+          "headline": "미국 6월 무역적자, 수입 감소 영향으로 올들어 첫 감소",
+          "url": "https://m.news.nate.com/view/20260805n00723?mid=m04&list=recent&cpcd=",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-04T19:05:00.000Z"
         }
-      ],
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.wave3.com/2026/08/04/ge-appliances-teams-with-texas-instruments-power-smart-laundry-machines/"
-      },
-      "publishedAt": "2026-08-04T12:55:00.000Z",
-      "url": "https://www.wave3.com/2026/08/04/ge-appliances-teams-with-texas-instruments-power-smart-laundry-machines/",
-      "linkCheckedAt": "2026-08-04T13:44:33.113Z",
-      "image": "https://gray-wave-prod.gtv-cdn.com/resizer/v2/72PVHEDCRBF27BOLJSAQVGWSLQ.jpg?auth=c7edb360ed69fedb7fd624ca6c6f26da5e5db8f3a56b9e0280933133aeb5abdb&width=1200&height=600&smart=true",
-      "imageChecked": true
+      ]
     },
     {
       "id": 3439,
@@ -1282,7 +1352,7 @@
       "imageChecked": true
     },
     {
-      "id": 3442,
+      "id": 3456,
       "lens": "경쟁사",
       "grade": "주요",
       "impact": 4,
@@ -1297,25 +1367,26 @@
         "월풀"
       ],
       "tags": [
+        "월풀",
         "실적",
-        "월풀"
+        "경쟁동향"
       ],
       "headline": "월풀, 2분기 실적 발표",
-      "summary": "월풀이 2분기 경영 실적을 공식 발표했습니다.",
+      "summary": "월풀이 2분기 경영 실적을 발표했다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "월풀, 2분기 실적 발표"
+          "text": "월풀이 2분기 실적을 발표함"
         }
       ],
       "source": {
-        "name": "Google News - Whirlpool",
-        "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html"
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html"
       },
       "publishedAt": "2026-08-03T20:05:00.000Z",
-      "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html",
-      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
-      "image": "https://bloximages.chicago2.vip.townnews.com/journalstar.com/content/tncms/assets/v3/editorial/f/87/f87941c5-97bc-5f20-b65d-4ded94d8aa9d/6a7196664a0b0.image.jpg?crop=267%2C267%2C266%2C0&resize=200%2C200&order=crop%2Cresize",
+      "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
+      "linkCheckedAt": "2026-08-04T20:17:47.348Z",
+      "image": "https://mmx.prnewswire.com/media/MS426698/Whirlpool-Corporation-Logo.jpg?id=OA2822391&p=facebook",
       "imageChecked": true,
       "relatedArticles": [
         {
@@ -1400,15 +1471,6 @@
           "publishedAt": "2026-08-03T20:18:28.000Z"
         },
         {
-          "id": 3425,
-          "headline": "월풀, 2분기 실적 발표",
-          "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
-          "source": {
-            "name": "Google News - US Home Appliances"
-          },
-          "publishedAt": "2026-08-03T20:05:00.000Z"
-        },
-        {
           "id": 3440,
           "headline": "월풀, 2026년 2분기 실적 전망치 하회에도 주가 상승",
           "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-whirlpool-misses-q2-2026-estimates-but-shares-rise-93CH-4834496",
@@ -1434,6 +1496,15 @@
             "name": "Google News - Whirlpool"
           },
           "publishedAt": "2026-08-04T15:33:51.000Z"
+        },
+        {
+          "id": 3442,
+          "headline": "월풀, 2분기 실적 발표",
+          "url": "https://journalstar.com/online_features/press_releases/article_d830a90e-cc52-5ca1-b3fc-2c5e51d5ab07.html",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-03T20:05:00.000Z"
         }
       ]
     },
@@ -6772,7 +6843,7 @@
       },
       "publishedAt": "2026-07-29T18:14:41.000Z",
       "url": "https://www.mk.co.kr/news/economy/12111212",
-      "linkCheckedAt": "2026-08-01T20:04:06.948Z",
+      "linkCheckedAt": "2026-08-04T20:17:21.169Z",
       "image": "https://static.mk.co.kr/facebook_mknews.jpg",
       "imageChecked": true
     },
@@ -6814,7 +6885,7 @@
       },
       "publishedAt": "2026-07-29T18:02:00.000Z",
       "url": "https://www.mk.co.kr/news/economy/12111209",
-      "linkCheckedAt": "2026-08-01T20:04:06.948Z",
+      "linkCheckedAt": "2026-08-04T20:17:21.169Z",
       "image": "assets/img/topics/climate.svg",
       "imageChecked": true,
       "imageOriginal": "https://pimg.mk.co.kr/news/cms/202607/30/news-p.v1.20260730.248c4173aef24d82b9b8897fd40c63c6_R.jpg",
@@ -6855,7 +6926,7 @@
       },
       "publishedAt": "2026-07-29T17:27:03.000Z",
       "url": "https://www.tipranks.com/news/company-announcements/lg-electronics-india-files-voluntary-sustainability-report-for-first-year-of-listing",
-      "linkCheckedAt": "2026-08-01T20:04:06.948Z",
+      "linkCheckedAt": "2026-08-04T20:17:21.169Z",
       "image": null
     },
     {
@@ -6940,7 +7011,7 @@
       },
       "publishedAt": "2026-07-29T15:55:43.000Z",
       "url": "https://www.aol.com/articles/not-whirlpool-affordable-dishwasher-earns-210000000.html",
-      "linkCheckedAt": "2026-08-01T20:04:06.948Z",
+      "linkCheckedAt": "2026-08-04T20:17:21.169Z",
       "image": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
       "imageChecked": true,
       "relatedArticles": [
@@ -10885,7 +10956,7 @@
       },
       "publishedAt": "2026-07-26T15:45:54.000Z",
       "url": "https://www.seoul.co.kr/news/economy/industry/2026/07/27/20260727031003",
-      "linkCheckedAt": "2026-08-01T20:04:06.948Z",
+      "linkCheckedAt": "2026-08-04T20:17:21.169Z",
       "image": "https://img.seoul.co.kr//img/upload/2026/07/27/SSC_20260727004552_O2.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -14272,7 +14343,7 @@
       },
       "publishedAt": "2026-07-23T13:45:55.000Z",
       "url": "https://www.sejongyeonhap.co.kr/news/articleView.html?idxno=55968",
-      "linkCheckedAt": "2026-08-01T20:04:06.948Z",
+      "linkCheckedAt": "2026-08-04T20:17:21.169Z",
       "image": "https://cdn.sejongyeonhap.co.kr/news/photo/202607/55968_31002_4412.png",
       "imageChecked": true
     },
@@ -15233,7 +15304,7 @@
       },
       "publishedAt": "2026-07-22T23:47:20.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/electrolux-stock-trades-around-recent-lows-as-margin-focus-intensifies/69842835",
-      "linkCheckedAt": "2026-08-01T20:04:06.948Z",
+      "linkCheckedAt": "2026-08-04T20:17:21.169Z",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2706741_1920_1080.webp",
       "imageChecked": true,
       "relatedArticles": [
