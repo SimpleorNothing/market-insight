@@ -1,7 +1,49 @@
 {
-  "updatedAt": "2026-08-05T10:26:49.395Z",
+  "updatedAt": "2026-08-05T12:49:52.456Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3603,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "샤크닌자"
+      ],
+      "tags": [
+        "실적",
+        "샤크닌자",
+        "매출"
+      ],
+      "headline": "샤크닌자 2분기 매출 22% 급증, 연간 전망치 상향",
+      "summary": "샤크닌자의 2분기 매출이 22% 급증함에 따라 연간 전망치를 상향 조정했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "샤크닌자 2분기 매출 22% 급증"
+        },
+        {
+          "type": "content",
+          "text": "연간 실적 전망치 상향 조정"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.datatooza.com/article/202608052103085976cd1e7846b9_80"
+      },
+      "publishedAt": "2026-08-05T12:03:08.000Z",
+      "url": "https://www.datatooza.com/article/202608052103085976cd1e7846b9_80",
+      "linkCheckedAt": "2026-08-05T12:46:47.508Z",
+      "image": "https://cgeimage.commutil.kr/datatooza202508_www/img/default_bimg.png?p=003",
+      "imageChecked": true
+    },
     {
       "id": 3568,
       "lens": "정책",
@@ -91,53 +133,166 @@
       "imageChecked": true
     },
     {
-      "id": 3573,
-      "lens": "경쟁사",
+      "id": 3610,
+      "lens": "소비자",
       "grade": "주시",
-      "impact": 2.8,
+      "impact": 2.5,
       "factors": {
         "salesRelevance": 3,
-        "timeUrgency": 2,
+        "timeUrgency": 1,
         "marketSize": 3,
         "sourceReliability": 3
       },
-      "products": [
-        "청소기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
+      "products": [],
+      "competitors": [],
       "tags": [
-        "청소로봇",
-        "팝업스토어",
-        "체험존"
+        "구독",
+        "유통",
+        "서비스",
+        "소비자"
       ],
-      "headline": "LG전자, 청소로봇 팝업 체험존 운영",
-      "summary": "LG전자가 청소로봇을 직접 경험할 수 있는 팝업 체험존을 마련하며 소비자 접점을 확대합니다.",
+      "headline": "롯데하이마트, 관리·구독 서비스로 고객 Lock-in 강화",
+      "summary": "롯데하이마트가 단순 가전 판매를 넘어 관리 및 구독 서비스 확대를 추진하며 고객 유지에 나섰습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 청소로봇 팝업 체험존을 마련함"
+          "text": "롯데하이마트가 관리 및 구독 서비스를 강화"
+        },
+        {
+          "type": "content",
+          "text": "단순 가전 판매를 넘어 고객 락인(Lock-in) 전략 추진"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 소비·유통 KR",
+        "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=238393"
+      },
+      "publishedAt": "2026-08-05T09:29:53.000Z",
+      "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=238393",
+      "linkCheckedAt": "2026-08-05T12:46:47.508Z",
+      "image": "https://cdn.ezyeconomy.com/news/thumbnail/202608/238393_139779_655_v150.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3592,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "실적",
+        "월풀",
+        "재무"
+      ],
+      "headline": "월풀, 회계연도 2027년 1분기 순이익 10,288만 루피로 감소",
+      "summary": "월풀의 회계연도 2027년 1분기 순이익이 전년 동기 대비 10,288만 루피로 감소했으며, 주요 재무 임원이 사임했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "회계연도 2027년 1분기 순이익 전년 동기 대비 10,288만 루피로 감소"
+        },
+        {
+          "type": "content",
+          "text": "핵심 재무 담당 임원 사임"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.tradingview.com/news/urn:summary_document_report:quartr.com:3692922:0-whirlpool-q1-fy27-net-profit-declined-year-over-year-to-10-288-lakhs-key-finance-executive-resigned/"
+      },
+      "publishedAt": "2026-08-05T09:08:36.000Z",
+      "url": "https://www.tradingview.com/news/urn:summary_document_report:quartr.com:3692922:0-whirlpool-q1-fy27-net-profit-declined-year-over-year-to-10-288-lakhs-key-finance-executive-resigned/",
+      "linkCheckedAt": "2026-08-05T12:46:47.508Z",
+      "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3589,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "기술",
+        "HVAC",
+        "히트펌프",
+        "R&D"
+      ],
+      "headline": "기계연, 전력 소비 줄이고 폐열 활용하는 무소음 차세대 히트펌프 개발",
+      "summary": "기계연이 전력을 덜 소모하고 폐열을 이용해 냉방을 구현하는 무소음 차세대 히트펌프를 개발했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "기계연, 무소음 차세대 히트펌프 개발 성공"
+        },
+        {
+          "type": "content",
+          "text": "전력 소모를 줄이고 폐열을 활용해 냉방 기능 구현"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=361337"
+        "url": "https://www.hellodd.com/news/articleView.html?idxno=112726"
       },
-      "publishedAt": "2026-08-05T08:25:36.000Z",
-      "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=361337",
-      "linkCheckedAt": "2026-08-05T10:23:51.399Z",
-      "image": "https://cdn.smedaily.co.kr/news/thumbnail/202608/361337_296410_1923_v150.jpg",
+      "publishedAt": "2026-08-05T07:30:00.000Z",
+      "url": "https://www.hellodd.com/news/articleView.html?idxno=112726",
+      "linkCheckedAt": "2026-08-05T12:46:47.508Z",
+      "image": "https://cdn.hellodd.com/news/thumbnail/202608/112726_337251_4455_v150.jpg",
       "imageChecked": true,
       "relatedArticles": [
         {
-          "id": 3499,
-          "headline": "LG전자, AI 오브제컬렉션 ‘로니’ 팝업 체험존 운영",
-          "url": "https://futurechosun.com/archives/156823",
+          "id": 3519,
+          "headline": "버려지는 열 활용하는 차세대 히트펌프 시스템 개발",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260805064600063",
           "source": {
             "name": "Google News - 한국 가전 산업"
           },
-          "publishedAt": "2026-08-05T01:07:00.000Z"
+          "publishedAt": "2026-08-05T01:41:14.000Z"
+        },
+        {
+          "id": 3521,
+          "headline": "40도 폐열을 냉방으로 전환하는 차세대 히트펌프 실증",
+          "url": "https://www.hydrogennews.co.kr/news/articleView.html?idxno=4582",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-05T01:56:12.000Z"
+        },
+        {
+          "id": 3342,
+          "headline": "링크솔루션, 차세대 히트펌프 국제공동연구 착수",
+          "url": "https://www.newspim.com/news/view/20260804000344",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-04T01:22:00.000Z"
+        },
+        {
+          "id": 3542,
+          "headline": "버려지는 열을 냉방에너지로 재활용하는 차세대 히트펌프 개발",
+          "url": "https://www.newstree.kr/newsView/ntr202608050010",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-05T03:42:30.000Z"
         }
       ]
     },
@@ -225,83 +380,6 @@
       "linkCheckedAt": "2026-08-05T07:32:00.458Z",
       "image": "https://nimage.newsway.co.kr/photo/2026/08/05/20260805000068_1200.png",
       "imageChecked": true
-    },
-    {
-      "id": 3542,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "히트펌프",
-        "HVAC",
-        "신기술",
-        "에너지"
-      ],
-      "headline": "버려지는 열을 냉방에너지로 재활용하는 차세대 히트펌프 개발",
-      "summary": "폐열을 냉방에너지로 재활용하는 차세대 히트펌프가 개발되어 에너지 효율 향상이 기대됩니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "버려지는 열을 냉방에너지로 재활용하는 차세대 히트펌프 개발"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.newstree.kr/newsView/ntr202608050010"
-      },
-      "publishedAt": "2026-08-05T03:42:30.000Z",
-      "url": "https://www.newstree.kr/newsView/ntr202608050010",
-      "linkCheckedAt": "2026-08-05T07:32:00.458Z",
-      "image": "https://www.newstree.kr/data/ntr/image/2026/08/05/ntr202608050010.jpg",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 3519,
-          "headline": "버려지는 열 활용하는 차세대 히트펌프 시스템 개발",
-          "url": "https://www.yna.co.kr/amp/view/AKR20260805064600063",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-05T01:41:14.000Z"
-        },
-        {
-          "id": 3521,
-          "headline": "40도 폐열을 냉방으로 전환하는 차세대 히트펌프 실증",
-          "url": "https://www.hydrogennews.co.kr/news/articleView.html?idxno=4582",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-05T01:56:12.000Z"
-        },
-        {
-          "id": 3342,
-          "headline": "링크솔루션, 차세대 히트펌프 국제공동연구 착수",
-          "url": "https://www.newspim.com/news/view/20260804000344",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-04T01:22:00.000Z"
-        },
-        {
-          "id": 3571,
-          "headline": "기계연, 전력 저감 및 무소음 차세대 히트펌프 개발",
-          "url": "https://www.hellodd.com/news/articleView.html?idxno=112726",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-08-05T07:30:00.000Z"
-        }
-      ]
     },
     {
       "id": 3576,
@@ -835,7 +913,36 @@
       "url": "https://www.newspim.com/news/view/20260805000246",
       "linkCheckedAt": "2026-08-05T04:54:13.693Z",
       "image": "https://img.newspim.com/news/2026/08/05/2608050929379610_t1.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3607,
+          "headline": "LG전자, 판교 현대백화점서 청소로봇 '로니' 팝업 행사 개최",
+          "url": "https://www.yna.co.kr/view/AKR20260805028100003",
+          "source": {
+            "name": "Google News - 경쟁사 로봇·미래사업 KR"
+          },
+          "publishedAt": "2026-08-05T01:00:02.000Z"
+        },
+        {
+          "id": 3499,
+          "headline": "LG전자, AI 오브제컬렉션 ‘로니’ 팝업 체험존 운영",
+          "url": "https://futurechosun.com/archives/156823",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-05T01:07:00.000Z"
+        },
+        {
+          "id": 3573,
+          "headline": "LG전자, 청소로봇 팝업 체험존 운영",
+          "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=361337",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-05T08:25:36.000Z"
+        }
+      ]
     },
     {
       "id": 3515,
@@ -916,6 +1023,15 @@
             "name": "Google News - 통상·관세 정책 KR"
           },
           "publishedAt": "2026-08-05T00:06:17.000Z"
+        },
+        {
+          "id": 3609,
+          "headline": "멕시코 대통령, 미국의 관세 정책 비판",
+          "url": "https://news.cgtn.com/news/2026-08-05/Mexican-president-decries-US-tariff-policy-1Pm43W6sSXu/share_amp.html",
+          "source": {
+            "name": "Google News - US Trade Policy"
+          },
+          "publishedAt": "2026-08-05T02:49:29.000Z"
         }
       ]
     },
@@ -1443,6 +1559,15 @@
             "name": "Google News - US Home Appliances"
           },
           "publishedAt": "2026-08-04T21:58:00.000Z"
+        },
+        {
+          "id": 3593,
+          "headline": "GE어플라이언스, 미국산 마이크로칩 도입 발표",
+          "url": "https://www.whas11.com/video/news/local/ge-appliances-adds-us-microchips/417-9dd3d39b-750e-40e3-aaab-fde156d427d8",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-04T20:22:00.000Z"
         }
       ]
     },
@@ -2990,6 +3115,91 @@
       "imageChecked": true
     },
     {
+      "id": 3590,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "실적",
+        "2분기"
+      ],
+      "headline": "월풀, 제2분기 실적 발표",
+      "summary": "월풀이 제2분기 실적을 발표했으나 상세 수치는 발췌문에 포함되지 않았습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 제2분기 실적을 공식 발표함"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html"
+      },
+      "publishedAt": "2026-08-03T20:05:00.000Z",
+      "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
+      "linkCheckedAt": "2026-08-05T12:46:47.508Z",
+      "image": "https://mmx.prnewswire.com/media/MS426698/Whirlpool-Corporation-Logo.jpg?id=OA2822391&p=facebook",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3594,
+          "headline": "월풀, 2026년 2분기 실적 전망치 하회… 주가는 상승",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-whirlpool-misses-q2-2026-estimates-but-shares-rise-93CH-4834496",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-04T13:33:25.000Z"
+        },
+        {
+          "id": 3596,
+          "headline": "월풀, 2026년 2분기 실적 컨퍼런스 콜 프레젠테이션 개최",
+          "url": "https://www.marketscreener.com/news/whirlpool-q2-2026-whirlpool-corporation-earnings-conference-call-presentation-ce7f50dedd8cfe21",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-04T13:26:17.000Z"
+        },
+        {
+          "id": 3598,
+          "headline": "월풀 2분기 실적, 판매량 감소 및 비용 압박으로 부진",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpools-q2-earnings-miss-lower-164000435.html",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-04T16:40:00.000Z"
+        },
+        {
+          "id": 3595,
+          "headline": "월풀, 2분기 실적 개선 불구 수익성 압박 지속",
+          "url": "https://www.moodyonthemarket.com/whirlpool-reports-improved-second-quarter-but-profits-remain-under-pressure/",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-03T21:22:49.000Z"
+        },
+        {
+          "id": 3597,
+          "headline": "월풀, 2분기 확대된 손실과 매출 감소에도 주가 상승",
+          "url": "https://www.gurufocus.com/news/9002331/whirlpool-whr-sees-stock-surge-despite-wider-q2-losses-and-revenue-decline",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-04T15:33:51.000Z"
+        }
+      ]
+    },
+    {
       "id": 3375,
       "lens": "정책",
       "grade": "주요",
@@ -4427,7 +4637,7 @@
       },
       "publishedAt": "2026-08-02T10:23:57.000Z",
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-stock-looks-undervalued-on-earnings-but-mixed",
-      "linkCheckedAt": "2026-08-02T11:53:21.103Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true
     },
@@ -4634,7 +4844,7 @@
       },
       "publishedAt": "2026-08-02T09:33:46.000Z",
       "url": "https://www.hankyung.com/article/2026080202191",
-      "linkCheckedAt": "2026-08-02T10:24:28.844Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130",
       "imageChecked": true,
       "relatedArticles": [
@@ -4716,7 +4926,7 @@
       },
       "publishedAt": "2026-08-02T09:00:00.000Z",
       "url": "https://www.ajunews.com/amp/20260802145635368",
-      "linkCheckedAt": "2026-08-02T11:53:21.103Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": "https://image.ajunews.com/content/image/2026/08/02/20260802150505667831.jpg",
       "imageChecked": true
     },
@@ -4802,7 +5012,7 @@
       },
       "publishedAt": "2026-08-02T06:18:30.000Z",
       "url": "https://www.sunstar.com.ph/amp/story/davao/lg-imperial-launch-free-laundry-for-gensan-families",
-      "linkCheckedAt": "2026-08-02T10:24:28.844Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": "https://cf-images.assettype.com/sunstar%2F2026-08-02%2F4xw7i04b%2FMans-Carpio-seeks-TRO-vs-subpoena-issued-by-HOR-Committee-on-Justice202608021412560000.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
       "imageChecked": true
     },
@@ -5495,7 +5705,7 @@
       },
       "publishedAt": "2026-07-31T15:46:00.000Z",
       "url": "https://www.popularmechanics.com/home/g35900013/best-dishwashers/",
-      "linkCheckedAt": "2026-08-02T11:53:21.103Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": "https://hips.hearstapps.com/hmg-prod/images/pop-dishwasher-697385e50468d.jpg?crop=1.00xw:0.752xh;0,0.168xh&resize=1200:*",
       "imageChecked": true
     },
@@ -11983,7 +12193,7 @@
       },
       "publishedAt": "2026-07-27T06:55:00.000Z",
       "url": "https://www.moneycontrol.com/news/business/small-ticket-loans-emerge-as-the-new-engine-of-india-s-consumption-boom-13979179.html",
-      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": "https://images.moneycontrol.com/static-mcnews/2024/12/20241212063302_BeFunky-collage-2024-12-12T120122.717.jpg",
       "imageChecked": true
     },
@@ -15344,7 +15554,7 @@
       },
       "publishedAt": "2026-07-23T23:02:50.000Z",
       "url": "https://mexicobusiness.news/trade-and-investment/news/trane-expands-solar-self-generation-monterrey-plant",
-      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-07/pexels-quang-nguyen-vinh-222549-6876537.jpg?h=4938c091&itok=mzMhovP7",
       "imageChecked": true
     },
@@ -15735,7 +15945,7 @@
       },
       "publishedAt": "2026-07-23T18:36:00.000Z",
       "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/",
-      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": null
     },
     {
@@ -16770,7 +16980,7 @@
       },
       "publishedAt": "2026-07-23T00:00:00.000Z",
       "url": "https://economist.co.kr/article/view/ecn202607220029",
-      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": "https://economist.co.kr/data/ecn/image/2026/07/22/ecn20260722000038.800x.0.png",
       "imageChecked": true
     },
@@ -17784,7 +17994,7 @@
       },
       "publishedAt": "2026-07-22T01:24:25.000Z",
       "url": "https://www.msn.com/en-us/money/companies/samsung-cuts-hundreds-of-us-consumer-electronics-jobs-ahead-of-texas-hq-move/ar-AA28f2tm?gemSnapshotKey=GM591B05F4-snapshot-4&uxmode=ruby&cvid=6a5e7a3d8ac343f29f833d7ba0d0d8b2&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
-      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": null,
       "relatedArticles": [
         {
@@ -34980,7 +35190,7 @@
       },
       "publishedAt": "2026-06-23T07:00:00.000Z",
       "url": "https://www.plasticsnews.com/mergers-acquisitions/pn-bizlink-buys-pas-appliance-systems/",
-      "linkCheckedAt": "2026-08-02T10:23:59.852Z",
+      "linkCheckedAt": "2026-08-05T12:46:07.794Z",
       "image": null
     },
     {
