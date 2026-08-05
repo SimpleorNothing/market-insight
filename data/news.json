@@ -1,7 +1,54 @@
 {
-  "updatedAt": "2026-08-05T17:21:17.292Z",
+  "updatedAt": "2026-08-05T19:16:01.895Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3654,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "Haier",
+        "Gree"
+      ],
+      "tags": [
+        "세탁건조기",
+        "AI가전",
+        "프리미엄",
+        "Haier"
+      ],
+      "headline": "3,499파운드 프리미엄 AI 세탁건조기 공개",
+      "summary": "가격이 3,499파운드에 달하는 고가의 AI 기반 세탁건조기가 등장해 주목받고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "3,499파운드 가격의 AI 기반 세탁건조기 출시"
+        },
+        {
+          "type": "content",
+          "text": "가장 호화로운 가전제품 중 하나로 평가받음"
+        }
+      ],
+      "source": {
+        "name": "Google News - Haier Gree Hisense",
+        "url": "https://www.nationalworld.com/recommended/haier-luxury-washer-dryer-laundry-couture-8838680"
+      },
+      "publishedAt": "2026-08-05T19:05:20.000Z",
+      "url": "https://www.nationalworld.com/recommended/haier-luxury-washer-dryer-laundry-couture-8838680",
+      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
+      "image": "https://www.nationalworld.com/jpim-static/image/2026/08/04/13/24/28_31021311_13_22_m_hwd180bd12lgnuuk-X-(1).jpeg?width=1200&auto=webp&quality=75&trim=0,0,1,0&crop=",
+      "imageChecked": true
+    },
     {
       "id": 3638,
       "lens": "경쟁사",
@@ -65,6 +112,89 @@
           "publishedAt": "2026-08-03T22:11:00.000Z"
         }
       ]
+    },
+    {
+      "id": 3663,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상정책",
+        "관세",
+        "멕시코",
+        "무역"
+      ],
+      "headline": "멕시코 10% 관세 부과 및 불확실성 고조",
+      "summary": "멕시코를 향한 10% 관세 부과 방침과 함께 정책의 불확실성이 지속되고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "멕시코를 대상으로 10% 수준의 관세 부과 방침 보도"
+        },
+        {
+          "type": "content",
+          "text": "정책 시행과 관련한 불확실성이 지속되는 상황"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.bnamericas.com/en/news/mexico-10-tariff-0-certainty"
+      },
+      "publishedAt": "2026-08-05T15:54:14.000Z",
+      "url": "https://www.bnamericas.com/en/news/mexico-10-tariff-0-certainty",
+      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
+      "image": "https://www.bnamericas.com/assets/img/opengraphbna.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3646,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "노동정책",
+        "직업훈련",
+        "미국"
+      ],
+      "headline": "미 노동부 장관 권한대행, 월풀 직업훈련 프로그램 시찰",
+      "summary": "Keith Sonderling 미국 노동부 장관 권한대행이 월풀을 방문하여 사내 직업훈련 프로그램을 시찰했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Keith Sonderling 미국 노동부 장관 권한대행이 월풀 방문"
+        },
+        {
+          "type": "content",
+          "text": "월풀의 사내 직업훈련 프로그램 운영 현황 시찰"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.prnewswire.com/news-releases/whirlpool-showcases-apprenticeship-programs-during-visit-from-acting-us-labor-secretary-keith-sonderling-302843932.html"
+      },
+      "publishedAt": "2026-08-05T15:44:00.000Z",
+      "url": "https://www.prnewswire.com/news-releases/whirlpool-showcases-apprenticeship-programs-during-visit-from-acting-us-labor-secretary-keith-sonderling-302843932.html",
+      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
+      "image": "https://mmx.prnewswire.com/media/MS1964598/DOL_CLyde_1054.jpg?id=OA2826783&p=facebook",
+      "imageChecked": true
     },
     {
       "id": 3620,
@@ -455,6 +585,47 @@
       "url": "https://www.tradingview.com/news/urn:summary_document_report:quartr.com:3692922:0-whirlpool-q1-fy27-net-profit-declined-year-over-year-to-10-288-lakhs-key-finance-executive-resigned/",
       "linkCheckedAt": "2026-08-05T12:46:47.508Z",
       "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3666,
+      "lens": "소비자",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "가전양판점",
+        "유통",
+        "소비자",
+        "서비스"
+      ],
+      "headline": "가전양판점 불황기 생존 전략... 하이마트 '평생 케어'·전자랜드 'MZ 특화'",
+      "summary": "국내 가전양판점들이 불황기를 극복하기 위해 하이마트의 '평생 케어' 서비스와 전자랜드의 'MZ 특화' 매장 등 차별화된 생존 전략을 전개하고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "롯데하이마트는 '평생 케어' 서비스를 통해 고객 유지 전략 추진"
+        },
+        {
+          "type": "content",
+          "text": "전자랜드는 'MZ 특화' 매장으로 젊은 층 공략에 나섬"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 소비·유통 KR",
+        "url": "https://www.edaily.co.kr/News/Read?newsId=05553046645544368&mediaCodeNo=257"
+      },
+      "publishedAt": "2026-08-05T07:59:27.000Z",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=05553046645544368&mediaCodeNo=257",
+      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
+      "image": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26080501470.jpg",
       "imageChecked": true
     },
     {
@@ -2029,7 +2200,18 @@
       "url": "https://www.dallasfed.org/research/economics/2026/0804-emg-usmca-tariffs",
       "linkCheckedAt": "2026-08-04T22:02:57.829Z",
       "image": "https://www.dallasfed.org/-/media/Images/research/economics/2026/0804/port-houston-pri.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3664,
+          "headline": "미 연준 댈러스 연은, USMCA 준수가 2025년 관세 충격 완화 분석",
+          "url": "https://www.dallasfed.org/research/economics/2026/0804",
+          "source": {
+            "name": "Google News - US Trade Policy"
+          },
+          "publishedAt": "2026-08-05T00:39:33.000Z"
+        }
+      ]
     },
     {
       "id": 3450,
@@ -2066,6 +2248,47 @@
       "linkCheckedAt": "2026-08-04T18:22:12.255Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/kelly-sikkema-6406RHVquFs-unsplash.jpg?h=eeecee23&itok=z_PBWo1J",
       "imageChecked": true
+    },
+    {
+      "id": 3651,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "실적",
+        "주가"
+      ],
+      "headline": "월풀, 2분기 확대된 손실에도 주가 상승",
+      "summary": "월풀이 2분기 매출 감소 및 손실 확대에도 불구하고 주가 급등세를 기록했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀 2분기 손실 및 매출 감소 기록"
+        },
+        {
+          "type": "content",
+          "text": "실적 부진에도 불구하고 주가 급등세 시현"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.gurufocus.com/news/9002331/whirlpool-whr-sees-stock-surge-despite-wider-q2-losses-and-revenue-decline"
+      },
+      "publishedAt": "2026-08-04T15:33:51.000Z",
+      "url": "https://www.gurufocus.com/news/9002331/whirlpool-whr-sees-stock-surge-despite-wider-q2-losses-and-revenue-decline",
+      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
+      "image": null
     },
     {
       "id": 3452,
@@ -2184,6 +2407,67 @@
       "url": "https://www.personalcareinsights.com/news/canada-us-cosmetics-tariff-usmca.html",
       "linkCheckedAt": "2026-08-04T18:22:12.255Z",
       "image": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639214486856788005The_Canada_and_US_flag_next_to_each_other..jpg"
+    },
+    {
+      "id": 3650,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "실적",
+        "경쟁사동향"
+      ],
+      "headline": "월풀, 2026년 2분기 실적 컨퍼런스 콜 프레젠테이션 공개",
+      "summary": "월풀이 2026년 2분기 실적 발표를 위한 컨퍼런스 콜 프레젠테이션을 진행했습니다. 시장조사 및 분석 매체를 통해 관련 실적 자료가 공개되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀, 2026년 2분기 실적 컨퍼런스 콜 진행"
+        },
+        {
+          "type": "content",
+          "text": "marketscreener.com을 통해 관련 프레젠테이션 공개"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.marketscreener.com/news/whirlpool-q2-2026-whirlpool-corporation-earnings-conference-call-presentation-ce7f50dedd8cfe21"
+      },
+      "publishedAt": "2026-08-04T13:26:17.000Z",
+      "url": "https://www.marketscreener.com/news/whirlpool-q2-2026-whirlpool-corporation-earnings-conference-call-presentation-ce7f50dedd8cfe21",
+      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 3647,
+          "headline": "월풀, 제2분기 경영 실적 발표",
+          "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-03T20:05:00.000Z"
+        },
+        {
+          "id": 3648,
+          "headline": "월풀 2026년 2분기 실적 발표, 가격 정책으로 마진 회복",
+          "url": "https://www.investing.com/news/company-news/whirlpool-q2-2026-slides-pricing-actions-drive-margin-recovery-plan-93CH-4834559",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-08-04T13:32:10.000Z"
+        }
+      ]
     },
     {
       "id": 3495,
@@ -3186,6 +3470,48 @@
       "url": "https://www.kmecnews.co.kr/news/articleView.html?idxno=51141",
       "linkCheckedAt": "2026-08-04T08:16:49.435Z",
       "image": "https://cdn.kmecnews.co.kr/news/photo/202608/51141_41202_5827.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3649,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "실적",
+        "월풀",
+        "경쟁사동향"
+      ],
+      "headline": "월풀, 2분기 실적 개선됐으나 이익 압박 지속",
+      "summary": "월풀이 2분기 실적 개선을 기록했으나 이익은 여전히 압박을 받고 있는 것으로 나타났다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀이 2분기 실적 개선을 보고함"
+        },
+        {
+          "type": "content",
+          "text": "개선세에도 불구하고 이익은 압박을 받는 상태 지속"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://www.moodyonthemarket.com/whirlpool-reports-improved-second-quarter-but-profits-remain-under-pressure/"
+      },
+      "publishedAt": "2026-08-03T21:22:49.000Z",
+      "url": "https://www.moodyonthemarket.com/whirlpool-reports-improved-second-quarter-but-profits-remain-under-pressure/",
+      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
+      "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/27165953/WHRPylon-1024x679.jpg",
       "imageChecked": true
     },
     {
@@ -6004,7 +6330,7 @@
       },
       "publishedAt": "2026-07-31T10:00:01.000Z",
       "url": "https://www.bloomberg.com/news/newsletters/2026-07-31/appliance-maker-electrolux-shows-signs-of-successful-turnaround",
-      "linkCheckedAt": "2026-08-02T18:52:51.051Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": null
     },
     {
@@ -6959,7 +7285,7 @@
       },
       "publishedAt": "2026-07-30T16:52:00.000Z",
       "url": "https://www.hankyung.com/article/2026073064771",
-      "linkCheckedAt": "2026-08-02T17:52:12.856Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": "https://img.hankyung.com/photo/202607/AA.45199084.1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -8208,6 +8534,47 @@
       ]
     },
     {
+      "id": 3655,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "실적",
+        "일렉트로룩스",
+        "경쟁사동향"
+      ],
+      "headline": "일렉트로룩스, 2026년 2분기 중간 실적 발표",
+      "summary": "일렉트로룩스 그룹이 2026년 2분기 중간 실적을 발표하며 글로벌 가전 시장 내 경영 성과와 실적 추이를 공개했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "일렉트로룩스 그룹은 2026년 2분기 중간 실적을 공식 발표함"
+        },
+        {
+          "type": "content",
+          "text": "이번 보고서를 통해 2026년 2분기 기간 동안의 경영 성과를 공개함"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://macaubusiness.com/electrolux-group-interim-report-q2-2026/"
+      },
+      "publishedAt": "2026-07-30T00:01:33.000Z",
+      "url": "https://macaubusiness.com/electrolux-group-interim-report-q2-2026/",
+      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
+      "image": "https://macaubusiness.com/images/business-intelligence.svg"
+    },
+    {
       "id": 2552,
       "lens": "경쟁사",
       "grade": "긴급",
@@ -9148,7 +9515,7 @@
       },
       "publishedAt": "2026-07-29T11:35:03.000Z",
       "url": "https://stockstory.org/us/stocks/nyse/lii/news/earnings/lennox-nyselii-reports-sales-below-analyst-estimates-in-q2-cy2026-earnings-stock-drops",
-      "linkCheckedAt": "2026-08-02T17:52:46.100Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": "https://stockstory.org/stockstory/company-image/LII",
       "imageChecked": true,
       "relatedArticles": [
@@ -12087,7 +12454,7 @@
       },
       "publishedAt": "2026-07-27T11:02:22.000Z",
       "url": "https://americancoinop.com/articles/whirlpool-corp-strengthens-commercial-laundry-leadership-team",
-      "linkCheckedAt": "2026-08-02T17:52:12.856Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": "assets/img/topics/news.svg",
       "imageChecked": true,
       "imageOriginal": "https://americancoinop.com/sites/default/files/styles/article_main_facebook/public/images/articles/main/whirlpool_corporation_logo_and_buzzard_-_vasconcellos-v2.jpg?h=30914f02&itok=B5VI-8Kt",
@@ -12360,7 +12727,7 @@
       },
       "publishedAt": "2026-07-27T06:21:58.000Z",
       "url": "https://www.newstomato.com/ReadNews.aspx?no=1308314",
-      "linkCheckedAt": "2026-08-02T17:52:12.856Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": "https://image.newstomato.com/newsimg/2026/7/27/1308314/attach.jpg?v=202607271621",
       "imageChecked": true
     },
@@ -14693,7 +15060,7 @@
       },
       "publishedAt": "2026-07-24T13:57:42.000Z",
       "url": "https://www.nytimes.com/article/trump-tariffs-trade.html",
-      "linkCheckedAt": "2026-08-02T17:52:12.856Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": null
     },
     {
@@ -14734,7 +15101,7 @@
       },
       "publishedAt": "2026-07-24T13:00:00.000Z",
       "url": "https://mexicobusiness.news/policyandeconomy/news/usmca-uncertainty-how-trade-review-risks-mexicos-gdp-growth",
-      "linkCheckedAt": "2026-08-02T17:52:12.856Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/pictures/2025-11/large-Greyhound-Trading-img-2025-Renato-Campos-1-MBN.jpg?h=61e19443&itok=A2Hexfeh",
@@ -14946,7 +15313,7 @@
       },
       "publishedAt": "2026-07-24T07:48:04.000Z",
       "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16160",
-      "linkCheckedAt": "2026-08-02T17:52:12.856Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": "https://cdn.esgeconomy.com/news/thumbnail/202607/16160_23803_1522_v150.jpg",
       "imageChecked": true
     },
@@ -15160,7 +15527,7 @@
       },
       "publishedAt": "2026-07-24T04:55:00.000Z",
       "url": "https://finance.biggo.com/news/42be6c43-b537-4eb1-8839-7344c3310053",
-      "linkCheckedAt": "2026-08-02T17:52:12.856Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": "https://img.biggo.com/hTUahsLGG7gTwK3bdYihZRlzMC59CwDe3zDk1ZQGrhw/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3LzQyYmU2YzQzLWI1MzctNGViMS04ODM5LTczNDRjMzMxMDA1M18xNzg0ODY5NDU2X2RlZmF1bHQuanBn.jpg",
       "imageChecked": true
     },
@@ -15414,7 +15781,7 @@
       },
       "publishedAt": "2026-07-24T00:57:00.000Z",
       "url": "https://www.reuters.com/world/americas/us-mexico-set-fourth-round-usmca-talks-amid-differences-over-key-issues-2026-07-24/",
-      "linkCheckedAt": "2026-08-02T17:52:12.856Z",
+      "linkCheckedAt": "2026-08-05T19:12:09.035Z",
       "image": null
     },
     {
