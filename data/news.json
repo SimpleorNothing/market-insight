@@ -1,7 +1,82 @@
 {
-  "updatedAt": "2026-08-05T19:16:01.895Z",
+  "updatedAt": "2026-08-05T20:59:03.884Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3669,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "스마트가전",
+        "기술제휴",
+        "커넥티드"
+      ],
+      "headline": "GE, TI와 손잡고 신형 스마트 가전 개발 협력",
+      "summary": "GE와 TI가 협력하여 새로운 커넥티드 가전제품 구동을 위한 기술 제휴를 추진합니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE와 TI가 새로운 커넥티드 가전 구동을 위해 협력"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://embeddedcomputing.com/application/industrial/industrial-networking-connectivity/ge-and-ti-team-up-to-power-new-connected-appliances"
+      },
+      "publishedAt": "2026-08-05T19:41:48.000Z",
+      "url": "https://embeddedcomputing.com/application/industrial/industrial-networking-connectivity/ge-and-ti-team-up-to-power-new-connected-appliances",
+      "linkCheckedAt": "2026-08-05T20:56:00.619Z",
+      "image": "https://data.embeddedcomputing.com/uploads/resize/1256/756/external/data.embeddedcomputing.com/uploads/articles/primary_images/1785958776.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3683,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "정책",
+        "관세",
+        "무역",
+        "미국"
+      ],
+      "headline": "미국, 1000억 달러 규모 관세 환급 승인",
+      "summary": "미국 정부가 1000억 달러 규모의 관세 환급을 승인하며 관련 기업들의 비용 부담 완화가 기대됩니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국, 1000억 달러 규모의 관세 환급 승인"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://mexicobusiness.news/trade-and-investment/news/us-clears-us100-billion-tariff-refunds"
+      },
+      "publishedAt": "2026-08-05T19:07:41.000Z",
+      "url": "https://mexicobusiness.news/trade-and-investment/news/us-clears-us100-billion-tariff-refunds",
+      "linkCheckedAt": "2026-08-05T20:56:00.619Z",
+      "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/the-now-time-30oZkAz4u1Y-unsplash.jpg?h=b5955f22&itok=InB_qG_h",
+      "imageChecked": true
+    },
     {
       "id": 3654,
       "lens": "소비자",
@@ -1455,6 +1530,57 @@
       ]
     },
     {
+      "id": 3684,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "관세",
+        "무역정책"
+      ],
+      "headline": "댈러스 연은, USMCA 준수가 2025년 관세 충격 완화 분석",
+      "summary": "댈러스 연방준비은행이 USMCA 준수가 2025년 관세 충격을 완화했다고 분석함.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "USMCA 준수가 2025년 관세 충격을 완화"
+        },
+        {
+          "type": "content",
+          "text": "미국 댈러스 연방준비은행 분석 결과 발표"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.dallasfed.org/research/economics/2026/0804"
+      },
+      "publishedAt": "2026-08-05T00:39:33.000Z",
+      "url": "https://www.dallasfed.org/research/economics/2026/0804",
+      "linkCheckedAt": "2026-08-05T20:56:00.619Z",
+      "image": "https://www.dallasfed.org/-/media/Images/research/economics/2026/0804/port-houston-pri.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3475,
+          "headline": "연은 분석: USMCA 준수가 2025년 관세 충격 완화",
+          "url": "https://www.dallasfed.org/research/economics/2026/0804-emg-usmca-tariffs",
+          "source": {
+            "name": "Google News - US Trade Policy"
+          },
+          "publishedAt": "2026-08-04T16:39:45.000Z"
+        }
+      ]
+    },
+    {
       "id": 3498,
       "lens": "기술",
       "grade": "주시",
@@ -2162,58 +2288,6 @@
       "imageChecked": true
     },
     {
-      "id": 3475,
-      "lens": "정책",
-      "grade": "주요",
-      "impact": 4.3,
-      "factors": {
-        "salesRelevance": 5,
-        "timeUrgency": 2,
-        "marketSize": 5,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "USMCA",
-        "관세",
-        "무역정책",
-        "연방준비은행"
-      ],
-      "headline": "연은 분석: USMCA 준수가 2025년 관세 충격 완화",
-      "summary": "댈러스 연방준비은행은 USMCA 준수가 2025년 관세 충격을 완화했다고 발표했습니다. 역외 생산 비중이 높은 가전 업계에 미치는 영향이 분석되었습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "댈러스 연은이 2025년 관세 충격과 USMCA 준수 효과 분석 발표"
-        },
-        {
-          "type": "content",
-          "text": "USMCA 규정 준수가 북미 교역에서 관세 타격을 완화한 요인으로 지목"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Trade Policy",
-        "url": "https://www.dallasfed.org/research/economics/2026/0804-emg-usmca-tariffs"
-      },
-      "publishedAt": "2026-08-04T16:39:45.000Z",
-      "url": "https://www.dallasfed.org/research/economics/2026/0804-emg-usmca-tariffs",
-      "linkCheckedAt": "2026-08-04T22:02:57.829Z",
-      "image": "https://www.dallasfed.org/-/media/Images/research/economics/2026/0804/port-houston-pri.jpg",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 3664,
-          "headline": "미 연준 댈러스 연은, USMCA 준수가 2025년 관세 충격 완화 분석",
-          "url": "https://www.dallasfed.org/research/economics/2026/0804",
-          "source": {
-            "name": "Google News - US Trade Policy"
-          },
-          "publishedAt": "2026-08-05T00:39:33.000Z"
-        }
-      ]
-    },
-    {
       "id": 3450,
       "lens": "정책",
       "grade": "긴급",
@@ -2407,67 +2481,6 @@
       "url": "https://www.personalcareinsights.com/news/canada-us-cosmetics-tariff-usmca.html",
       "linkCheckedAt": "2026-08-04T18:22:12.255Z",
       "image": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639214486856788005The_Canada_and_US_flag_next_to_each_other..jpg"
-    },
-    {
-      "id": 3650,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 4,
-        "sourceReliability": 5
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "월풀",
-        "실적",
-        "경쟁사동향"
-      ],
-      "headline": "월풀, 2026년 2분기 실적 컨퍼런스 콜 프레젠테이션 공개",
-      "summary": "월풀이 2026년 2분기 실적 발표를 위한 컨퍼런스 콜 프레젠테이션을 진행했습니다. 시장조사 및 분석 매체를 통해 관련 실적 자료가 공개되었습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "월풀, 2026년 2분기 실적 컨퍼런스 콜 진행"
-        },
-        {
-          "type": "content",
-          "text": "marketscreener.com을 통해 관련 프레젠테이션 공개"
-        }
-      ],
-      "source": {
-        "name": "Google News - Whirlpool",
-        "url": "https://www.marketscreener.com/news/whirlpool-q2-2026-whirlpool-corporation-earnings-conference-call-presentation-ce7f50dedd8cfe21"
-      },
-      "publishedAt": "2026-08-04T13:26:17.000Z",
-      "url": "https://www.marketscreener.com/news/whirlpool-q2-2026-whirlpool-corporation-earnings-conference-call-presentation-ce7f50dedd8cfe21",
-      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
-      "image": null,
-      "relatedArticles": [
-        {
-          "id": 3647,
-          "headline": "월풀, 제2분기 경영 실적 발표",
-          "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-announces-second-quarter-results-302841564.html",
-          "source": {
-            "name": "Google News - Whirlpool"
-          },
-          "publishedAt": "2026-08-03T20:05:00.000Z"
-        },
-        {
-          "id": 3648,
-          "headline": "월풀 2026년 2분기 실적 발표, 가격 정책으로 마진 회복",
-          "url": "https://www.investing.com/news/company-news/whirlpool-q2-2026-slides-pricing-actions-drive-margin-recovery-plan-93CH-4834559",
-          "source": {
-            "name": "Google News - Whirlpool"
-          },
-          "publishedAt": "2026-08-04T13:32:10.000Z"
-        }
-      ]
     },
     {
       "id": 3495,
@@ -2752,50 +2765,51 @@
       "imageChecked": true
     },
     {
-      "id": 3436,
+      "id": 3678,
       "lens": "정책",
-      "grade": "주시",
-      "impact": 3,
+      "grade": "주요",
+      "impact": 3.7,
       "factors": {
-        "salesRelevance": 2,
+        "salesRelevance": 4,
         "timeUrgency": 4,
         "marketSize": 3,
-        "sourceReliability": 4
+        "sourceReliability": 3
       },
       "products": [],
       "competitors": [],
       "tags": [
-        "CEPA",
         "통상",
+        "CEPA",
         "관세",
-        "방글라데시"
+        "방글라데시",
+        "무역협정"
       ],
-      "headline": "한·방글라데시 CEPA 원칙적 타결",
+      "headline": "한·방글라데시 CEPA 원칙적 타결…관세 장벽 인하",
       "summary": "한국과 방글라데시가 CEPA를 원칙적 타결하며 자동차 및 K푸드 등 주요 품목의 관세 장벽을 낮추기로 합의했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "한·방글라데시 CEPA 원칙적 타결"
+          "text": "한국과 방글라데시 간 CEPA 협상이 원칙적으로 타결됨"
         },
         {
           "type": "content",
-          "text": "자동차 및 K푸드 등 관세 장벽 인하"
+          "text": "자동차 및 K푸드 등 주요 품목의 관세 장벽을 낮출 예정"
         }
       ],
       "source": {
         "name": "Google News - 통상·관세 정책 KR",
-        "url": "https://www.ajunews.com/view/20260804175700177"
+        "url": "https://www.ajunews.com/amp/20260804175700177"
       },
       "publishedAt": "2026-08-04T09:17:07.000Z",
-      "url": "https://www.ajunews.com/view/20260804175700177",
-      "linkCheckedAt": "2026-08-04T16:06:27.380Z",
+      "url": "https://www.ajunews.com/amp/20260804175700177",
+      "linkCheckedAt": "2026-08-05T20:56:00.619Z",
       "image": "https://image.ajunews.com/content/image/2026/08/04/20260804181556948659.jpg",
       "imageChecked": true,
       "relatedArticles": [
         {
-          "id": 3518,
+          "id": 3436,
           "headline": "한·방글라데시 CEPA 원칙적 타결",
-          "url": "https://www.ajunews.com/amp/20260804175700177",
+          "url": "https://www.ajunews.com/view/20260804175700177",
           "source": {
             "name": "Google News - 통상·관세 정책 KR"
           },
@@ -3470,48 +3484,6 @@
       "url": "https://www.kmecnews.co.kr/news/articleView.html?idxno=51141",
       "linkCheckedAt": "2026-08-04T08:16:49.435Z",
       "image": "https://cdn.kmecnews.co.kr/news/photo/202608/51141_41202_5827.jpg",
-      "imageChecked": true
-    },
-    {
-      "id": 3649,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "실적",
-        "월풀",
-        "경쟁사동향"
-      ],
-      "headline": "월풀, 2분기 실적 개선됐으나 이익 압박 지속",
-      "summary": "월풀이 2분기 실적 개선을 기록했으나 이익은 여전히 압박을 받고 있는 것으로 나타났다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "월풀이 2분기 실적 개선을 보고함"
-        },
-        {
-          "type": "content",
-          "text": "개선세에도 불구하고 이익은 압박을 받는 상태 지속"
-        }
-      ],
-      "source": {
-        "name": "Google News - Whirlpool",
-        "url": "https://www.moodyonthemarket.com/whirlpool-reports-improved-second-quarter-but-profits-remain-under-pressure/"
-      },
-      "publishedAt": "2026-08-03T21:22:49.000Z",
-      "url": "https://www.moodyonthemarket.com/whirlpool-reports-improved-second-quarter-but-profits-remain-under-pressure/",
-      "linkCheckedAt": "2026-08-05T19:12:47.611Z",
-      "image": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/27165953/WHRPylon-1024x679.jpg",
       "imageChecked": true
     },
     {
@@ -7161,7 +7133,7 @@
       },
       "publishedAt": "2026-07-30T19:00:00.000Z",
       "url": "https://www.mk.co.kr/news/business/12112680",
-      "linkCheckedAt": "2026-08-02T20:04:39.218Z",
+      "linkCheckedAt": "2026-08-05T20:55:37.841Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/31/20260731_01170108000001_M00.jpg",
       "imageChecked": true
     },
@@ -7373,7 +7345,7 @@
       },
       "publishedAt": "2026-07-30T15:21:53.000Z",
       "url": "https://www.stocktitan.net/sec-filings/WHR/schedule-13g-a-whirlpool-corp-de-amended-passive-investment-disclosur-07ed9d008a5f.html",
-      "linkCheckedAt": "2026-08-02T20:04:39.218Z",
+      "linkCheckedAt": "2026-08-05T20:55:37.841Z",
       "image": "https://static.stocktitan.net/company-logo/whr-lg.png?v=3022c9b91f",
       "imageChecked": true
     },
@@ -9354,7 +9326,7 @@
       },
       "publishedAt": "2026-07-29T15:35:00.000Z",
       "url": "https://finance.yahoo.com/markets/stocks/articles/johnson-controls-tops-q3-earnings-153500394.html",
-      "linkCheckedAt": "2026-08-02T20:04:39.218Z",
+      "linkCheckedAt": "2026-08-05T20:55:37.841Z",
       "image": null
     },
     {
@@ -12223,7 +12195,7 @@
       },
       "publishedAt": "2026-07-27T16:00:00.000Z",
       "url": "https://www.themarysue.com/best-buy-appliance-delivery/",
-      "linkCheckedAt": "2026-08-02T20:04:39.218Z",
+      "linkCheckedAt": "2026-08-05T20:55:37.841Z",
       "image": "https://www.themarysue.com/wp-content/uploads/2026/07/Woman-buys-refrigerator-from-Best-Buy.jpg?fit=2560%2C1440",
       "imageChecked": true
     },
@@ -13750,7 +13722,7 @@
       },
       "publishedAt": "2026-07-26T06:18:40.000Z",
       "url": "https://v.daum.net/v/20260726151840710?f=p",
-      "linkCheckedAt": "2026-08-02T20:04:39.218Z",
+      "linkCheckedAt": "2026-08-05T20:55:37.841Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/26/khan/20260726151842274qdpd.jpg",
