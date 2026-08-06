@@ -1,7 +1,49 @@
 {
-  "updatedAt": "2026-08-06T12:52:56.147Z",
+  "updatedAt": "2026-08-06T15:09:05.716Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3793,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "폭염",
+        "에어컨",
+        "냉방"
+      ],
+      "headline": "폭염 속 에어컨 가동에도 실내 32도 찜통",
+      "summary": "체감 온도 38도를 웃도는 폭염 속에서 에어컨을 켜도 집안 온도가 32도에 머무는 등 냉방 효율 저하 문제가 대두되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "집밖 체감온도 38도 대비 집안은 41도까지 치솟음"
+        },
+        {
+          "type": "content",
+          "text": "에어컨을 가동해도 실내 온도가 32도에 머무는 찜통현상 발생"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260806215328812"
+      },
+      "publishedAt": "2026-08-06T12:53:28.000Z",
+      "url": "https://v.daum.net/v/20260806215328812",
+      "linkCheckedAt": "2026-08-06T15:06:09.293Z",
+      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/06/khan/20260806222410924kxdf.jpg",
+      "imageChecked": true
+    },
     {
       "id": 3780,
       "lens": "소비자",
@@ -42,6 +84,53 @@
       "url": "https://www.hani.co.kr/arti/international/international_general/1271711.html",
       "linkCheckedAt": "2026-08-06T12:49:54.941Z",
       "image": "https://flexible.img.hani.co.kr/flexible/normal/970/582/imgdb/original/2026/0806/20260806502367.webp",
+      "imageChecked": true
+    },
+    {
+      "id": 3794,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "실적전망",
+        "비용절감",
+        "주가상승"
+      ],
+      "headline": "월풀, 2026년 실적 전망 하향 속 주가 17.5% 급등",
+      "summary": "월풀이 2026년 실적 전망을 하향 조정하고 비용 절감에 집중하겠다고 밝힌 가운데, 주가가 17.5% 상승했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀 주가 17.5% 상승"
+        },
+        {
+          "type": "content",
+          "text": "2026년 실적 전망 하향 조정"
+        },
+        {
+          "type": "content",
+          "text": "비용 절감 기조 강화"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/why-whirlpool-whr-is-up-175-after-cutting-2026-outlook-and-d"
+      },
+      "publishedAt": "2026-08-06T10:33:11.000Z",
+      "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/why-whirlpool-whr-is-up-175-after-cutting-2026-outlook-and-d",
+      "linkCheckedAt": "2026-08-06T15:06:09.293Z",
+      "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true
     },
     {
@@ -324,6 +413,33 @@
             "name": "Google News - 캐리어/오텍캐리어 KR"
           },
           "publishedAt": "2026-08-06T07:29:17.000Z"
+        },
+        {
+          "id": 3791,
+          "headline": "오텍캐리어, 고효율 히트펌프 2종 정부 지원 대상 선정",
+          "url": "https://www.econovill.com/news/articleView.html?idxno=747338",
+          "source": {
+            "name": "Google News - 캐리어/오텍캐리어 KR"
+          },
+          "publishedAt": "2026-08-06T07:55:00.000Z"
+        },
+        {
+          "id": 3787,
+          "headline": "오텍캐리어, 정부 난방 전기화 보급사업 참여",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260806010002248",
+          "source": {
+            "name": "Google News - 캐리어/오텍캐리어 KR"
+          },
+          "publishedAt": "2026-08-06T09:38:46.000Z"
+        },
+        {
+          "id": 3792,
+          "headline": "오텍캐리어, 난방 전기화사업 지원 대상 선정",
+          "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=855053",
+          "source": {
+            "name": "Google News - 캐리어/오텍캐리어 KR"
+          },
+          "publishedAt": "2026-08-06T07:00:37.000Z"
         }
       ]
     },
@@ -524,6 +640,42 @@
       "linkCheckedAt": "2026-08-06T04:54:41.395Z",
       "image": "https://d.latintimes.com/en/full/590241/us-economy-tariffs.jpg",
       "imageChecked": true
+    },
+    {
+      "id": 3797,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "통상정책",
+        "미국",
+        "301조"
+      ],
+      "headline": "미국 301조 관세, 상시 통상정책으로 고착화",
+      "summary": "미국의 301조 관세가 일회성 조치를 넘어 상시적인 통상 정책으로 굳어지는 양상을 보이고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 301조 관세가 상시 통상정책으로 고착화되는 추세"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://oceanpress.co.kr/news/article.html?no=30844"
+      },
+      "publishedAt": "2026-08-06T01:21:35.000Z",
+      "url": "https://oceanpress.co.kr/news/article.html?no=30844",
+      "linkCheckedAt": "2026-08-06T15:06:09.293Z",
+      "image": null
     },
     {
       "id": 3738,
@@ -4686,6 +4838,46 @@
       "imageChecked": true
     },
     {
+      "id": 3795,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Lennox"
+      ],
+      "tags": [
+        "HVAC",
+        "실적",
+        "공조"
+      ],
+      "headline": "레녹스, 2분기 주거용 HVAC 매출 7% 감소",
+      "summary": "레녹스의 2분기 주거용 HVAC 매출이 전년 동기 대비 7% 감소했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "레녹스 2분기 주거용 HVAC 매출 7% 하락"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://www.achrnews.com/articles/166507-lennox-residential-hvac-sales-fall-7-in-second-quarter"
+      },
+      "publishedAt": "2026-08-03T11:00:00.000Z",
+      "url": "https://www.achrnews.com/articles/166507-lennox-residential-hvac-sales-fall-7-in-second-quarter",
+      "linkCheckedAt": "2026-08-06T15:06:09.293Z",
+      "image": "https://www.achrnews.com/ext/resources/2026/07/31/Lennox-Heat-Pump.jpg?height=635&t=1785517188&width=1200",
+      "imageChecked": true
+    },
+    {
       "id": 3264,
       "lens": "정책",
       "grade": "주요",
@@ -8037,7 +8229,7 @@
       },
       "publishedAt": "2026-07-30T16:39:08.000Z",
       "url": "https://www.facilitiesdive.com/news/johnson-controls-touts-absorption-chillers-for-lower-data-center-energy-dem/826549/",
-      "linkCheckedAt": "2026-08-03T12:25:15.764Z",
+      "linkCheckedAt": "2026-08-06T15:05:35.747Z",
       "image": null
     },
     {
@@ -9569,7 +9761,7 @@
       },
       "publishedAt": "2026-07-29T21:48:34.000Z",
       "url": "https://www.phcppros.com/articles/23841-johnson-controls-introduces-absorption-chiller-reference-design-guide",
-      "linkCheckedAt": "2026-08-03T12:25:15.764Z",
+      "linkCheckedAt": "2026-08-06T15:05:35.747Z",
       "image": "https://www.phcppros.com/ext/resources/2026/07/29/Johnson-Controls-Introduces-Absorption-Chiller-Reference-Design-Guide.jpg?height=635&t=1785344614&width=1200",
       "imageChecked": true
     },
@@ -36040,7 +36232,7 @@
       "publishedAt": "2026-06-24T07:00:00.000Z",
       "url": "https://www.etnews.com/20260624000096",
       "image": "https://img.etnews.com/news/article/2026/06/21/news-p.v1.20260621.98b638ee32a44ab2a6fa9981500a3499_P1.png",
-      "linkCheckedAt": "2026-08-03T12:23:51.683Z",
+      "linkCheckedAt": "2026-08-06T15:05:35.747Z",
       "imageChecked": true
     },
     {
@@ -36082,7 +36274,7 @@
       "publishedAt": "2026-06-24T06:42:35.000Z",
       "url": "https://v.daum.net/v/20260624154235758",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202606/24/sbscnbc/20260624154236547prbx.jpg",
-      "linkCheckedAt": "2026-08-03T12:23:51.683Z",
+      "linkCheckedAt": "2026-08-06T15:05:35.747Z",
       "imageChecked": true
     },
     {
@@ -36121,7 +36313,7 @@
       "publishedAt": "2026-06-23T19:30:00.000Z",
       "url": "https://www.donga.com/news/amp/all/20260623/134160683/2",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/06/23/134160677.3.jpg",
-      "linkCheckedAt": "2026-08-03T12:23:51.683Z",
+      "linkCheckedAt": "2026-08-06T15:05:35.747Z",
       "imageChecked": true
     },
     {
@@ -36155,7 +36347,7 @@
       "publishedAt": "2026-06-23T16:01:26.000Z",
       "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L8N42V1H7:0-arcelik-says-it-completes-of-sale-of-buy-back-shares-to-whirlpool-emea-holdings-llc/",
       "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
-      "linkCheckedAt": "2026-08-03T12:23:51.683Z",
+      "linkCheckedAt": "2026-08-06T15:05:35.747Z",
       "imageChecked": true
     },
     {
@@ -36195,7 +36387,7 @@
       "publishedAt": "2026-06-23T11:19:24.000Z",
       "url": "https://tech.einnews.com/amp/pr_news/921520132/home-appliances-market-to-reach-us-1-213-6-billion-by-2033-driven-by-smart-technology-adoption",
       "image": null,
-      "linkCheckedAt": "2026-08-03T12:23:51.683Z"
+      "linkCheckedAt": "2026-08-06T15:05:35.747Z"
     },
     {
       "id": 983,
@@ -36232,7 +36424,7 @@
       "publishedAt": "2026-06-23T11:03:27.000Z",
       "url": "https://kidd.co.kr/news/246453",
       "image": "https://pimg3.daara.co.kr/kidd/photo/2026/06/23/1782198643_74.jpg",
-      "linkCheckedAt": "2026-08-03T12:23:51.683Z",
+      "linkCheckedAt": "2026-08-06T15:05:35.747Z",
       "imageChecked": true
     },
     {
