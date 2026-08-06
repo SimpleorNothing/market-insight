@@ -34,8 +34,17 @@
   ];
 
   var MISC = "기타 이슈";
-  // 그룹 정렬 시 항상 맨 뒤로 보낼 '미분류/기타' 버킷
+  // 그룹 정렬 시 후순위로 보낼 '미분류/기타' 버킷.
+  // 통상·관세를 포함한 정책은 기업·산업 동향을 모두 본 뒤 확인하도록 최하단에 둔다.
   var TAIL = ["경쟁사 미분류", MISC];
+  var POLICY_TOPICS = ["美 통상·관세 (USMCA)", "환경·에너지 규제"];
+
+  function isPolicyGroup(group) {
+    if (POLICY_TOPICS.indexOf(group.key) >= 0 || group.key === "정책") return true;
+    return group.items.length > 0 && group.items.every(function (n) {
+      return n.lens === "정책";
+    });
+  }
 
   function matchTopic(n) {
     var hay = (n.tags || []).slice();
@@ -61,6 +70,10 @@
 
   function sortGroups(result) {
     result.sort(function (a, b) {
+      var ap = isPolicyGroup(a);
+      var bp = isPolicyGroup(b);
+      if (ap && !bp) return 1;
+      if (bp && !ap) return -1;
       var at = TAIL.indexOf(a.key) >= 0;
       var bt = TAIL.indexOf(b.key) >= 0;
       if (at && !bt) return 1;
@@ -86,6 +99,11 @@
     }
 
     var groups = original(items);
+
+    // '렌즈별' 보기에서도 정책 렌즈를 기사 수와 무관하게 최하단에 고정한다.
+    if (typeof state !== "undefined" && state.group === "lens") {
+      return sortGroups(groups);
+    }
 
     // '경쟁사별' 보기: '경쟁사 미분류'(엔티티 없는 정책·거시) 한 덩어리를 토픽으로 재분할.
     if (typeof state !== "undefined" && state.group === "competitor") {
