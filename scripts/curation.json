@@ -89,11 +89,13 @@
     "_comment": "수동 큐레이션. denyIds/denyUrls = 화면에서 완전 제거, overrides = 해당 id의 필드 덮어쓰기. 매 실행마다 재적용된다.",
     "denyIds": [
       1924,
-      1941
+      1941,
+      3576
     ],
     "denyUrls": [
       "https://www.chosun.com/english/industry-en/2026/07/20/DXA6NMVFWRHNZEOUSSBPZKQMVQ/",
-      "https://finance.biggo.com/news/8e205724-3740-4450-9d3f-8d67ca6dbfc7"
+      "https://finance.biggo.com/news/8e205724-3740-4450-9d3f-8d67ca6dbfc7",
+      "https://www.albawaba.com/business/pr/lg-electronics-releases-second-quarter-1634452"
     ],
     "overrides": {
       "1944": {
