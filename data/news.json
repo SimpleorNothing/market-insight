@@ -1,7 +1,48 @@
 {
-  "updatedAt": "2026-08-07T15:46:55.464Z",
+  "updatedAt": "2026-08-07T16:44:27.620Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3939,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "USMCA",
+        "멕시코",
+        "관세정책"
+      ],
+      "headline": "멕시코 펀드 순자산 3.5억 달러, USMCA 2036년까지 유지 합의",
+      "summary": "멕시코 펀드의 7월 순자산 가치가 3억 5460만 달러를 기록했으며, USMCA는 2036년까지 유지하기로 합의했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "멕시코 펀드 7월 순자산 가치 3억 5460만 달러 기록"
+        },
+        {
+          "type": "content",
+          "text": "USMCA 협정 2036년까지 유지하기로 합의"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.datatooza.com/article/202608080130374183cd1e7eebae_80"
+      },
+      "publishedAt": "2026-08-07T16:30:37.000Z",
+      "url": "https://www.datatooza.com/article/202608080130374183cd1e7eebae_80",
+      "linkCheckedAt": "2026-08-07T16:40:58.240Z",
+      "image": "https://cgeimage.commutil.kr/datatooza202508_www/img/default_bimg.png?p=003",
+      "imageChecked": true
+    },
     {
       "id": 3909,
       "lens": "거시",
@@ -441,32 +482,36 @@
       "imageChecked": true
     },
     {
-      "id": 3920,
+      "id": 3935,
       "lens": "기술",
-      "grade": "주시",
-      "impact": 3.4,
+      "grade": "주요",
+      "impact": 3.5,
       "factors": {
         "salesRelevance": 4,
         "timeUrgency": 2,
         "marketSize": 4,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [],
       "competitors": [
         "LG전자"
       ],
       "tags": [
-        "LG전자",
         "AI칩",
         "홈로봇",
-        "가전용기술"
+        "스마트가전",
+        "기술혁신"
       ],
-      "headline": "LG전자, 가전 및 홈로봇용 3단계 AI 칩 도입 계획",
-      "summary": "LG전자가 가전제품과 홈로봇에 적용하기 위한 3단계 AI 칩 도입 계획을 추진하고 있습니다.",
+      "headline": "LG전자, 가전·홈로봇용 3단계 AI 칩 도입 계획",
+      "summary": "LG전자가 가전제품과 홈로봇에 적용하기 위한 3단계 AI 칩 도입 계획을 추진합니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 가전과 홈로봇용 AI 칩을 3단계로 나누어 도입할 계획임"
+          "text": "LG전자가 가전과 홈로봇용 3단계 AI 칩 도입 계획을 발표함"
+        },
+        {
+          "type": "content",
+          "text": "디지타임스를 통해 가전 및 로봇 분야의 AI 역량 강화 방침이 전해짐"
         }
       ],
       "source": {
@@ -475,7 +520,7 @@
       },
       "publishedAt": "2026-08-07T03:49:57.000Z",
       "url": "https://www.digitimes.com/news/a20260806VL219/chips-lg-lg-electronics-on-device-ai-soc.html",
-      "linkCheckedAt": "2026-08-07T15:43:16.411Z",
+      "linkCheckedAt": "2026-08-07T16:40:58.240Z",
       "image": "https://img.digitimes.com/newsshow/20260806vl219_files/2_b.jpg",
       "imageChecked": true
     },
@@ -1241,7 +1286,18 @@
       "url": "https://v.daum.net/v/20260806163050489",
       "linkCheckedAt": "2026-08-06T10:26:55.915Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/06/donga/20260806174652565fsou.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3942,
+          "headline": "LG·삼성 가전 업황 엇갈림…미래 승부처는 로봇",
+          "url": "https://www.donga.com/news/amp/all/20260806/134432545/1",
+          "source": {
+            "name": "Google News - 가전 신사업·비즈모델 KR"
+          },
+          "publishedAt": "2026-08-06T07:29:00.000Z"
+        }
+      ]
     },
     {
       "id": 3764,
@@ -3113,7 +3169,18 @@
       "url": "https://www.yna.co.kr/view/AKR20260805028100003",
       "linkCheckedAt": "2026-08-07T15:43:16.411Z",
       "image": "https://img6.yna.co.kr/etc/inner/KR/2026/08/05/AKR20260805028100003_01_i_P4.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 3944,
+          "headline": "LG전자, 로봇청소기 ‘로니’ 체험 행사 확대 운영",
+          "url": "https://www.dt.co.kr/article/12076596",
+          "source": {
+            "name": "Google News - 경쟁사 로봇·미래사업 KR"
+          },
+          "publishedAt": "2026-08-05T01:00:04.000Z"
+        }
+      ]
     },
     {
       "id": 3539,
@@ -4306,7 +4373,7 @@
       },
       "publishedAt": "2026-08-04T14:28:08.000Z",
       "url": "https://www.moodyonthemarket.com/bitzer-team-underline-confidence-in-whirlpool-recovery-plans/",
-      "linkCheckedAt": "2026-08-04T16:06:27.380Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "assets/img/topics/news.svg",
       "imageChecked": true,
       "imageOriginal": "https://dehayf5mhw1h7.cloudfront.net/wp-content/uploads/sites/2181/2024/04/26174614/MarcBitzer-1024x620.jpg",
@@ -4803,7 +4870,7 @@
       },
       "publishedAt": "2026-08-04T08:05:48.000Z",
       "url": "https://www.newstomato.com/ReadNews.aspx?no=1309209",
-      "linkCheckedAt": "2026-08-04T16:06:27.380Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://image.newstomato.com/newsimg/2026/8/4/1309209/attach.jpg?v=202608041710",
@@ -10394,7 +10461,7 @@
       },
       "publishedAt": "2026-07-30T05:56:40.000Z",
       "url": "https://www.chosun.com/economy/tech_it/2026/07/30/QM3DUHY67FBSDCCHNGD4PY5M2Y/",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "https://www.chosun.com/resizer/v2/ATD6DKMA75D63GYPK2MZ2ZVMVE.png?auth=4dcec755aa9c3314c9cd8d306394d1ffbbb2b0ee43d1572a94e64ad0ea887712&width=1200&height=630&focal=1572,1054",
       "imageChecked": true
     },
@@ -11448,7 +11515,7 @@
       },
       "publishedAt": "2026-07-29T12:31:46.000Z",
       "url": "https://www.reuters.com/business/johnson-controls-lifts-annual-profit-forecast-data-center-demand-2026-07-29/",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": null,
       "relatedArticles": [
         {
@@ -11640,7 +11707,7 @@
       },
       "publishedAt": "2026-07-29T09:24:18.000Z",
       "url": "http://www.economytalk.kr/news/articleView.html?idxno=423108",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "https://cdn.economytalk.kr/news/photo/202607/423108_229838_240.jpg",
       "imageChecked": true
     },
@@ -11875,7 +11942,7 @@
       },
       "publishedAt": "2026-07-29T05:16:00.000Z",
       "url": "https://www.reuters.com/world/china/appliance-maker-electrolux-q2-operating-profit-beats-expectations-2026-07-29/",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": null,
       "relatedArticles": [
         {
@@ -13132,7 +13199,7 @@
       },
       "publishedAt": "2026-07-28T10:26:47.000Z",
       "url": "https://es.tradingview.com/news/reuters.com,2026:newsml_L4N43U0Z7:0/",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -15486,7 +15553,7 @@
       },
       "publishedAt": "2026-07-26T12:31:21.000Z",
       "url": "https://www.munhwa.com/article/11605080",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "assets/img/topics/aircon.svg",
       "imageChecked": true,
       "imageOriginal": "https://wimg.munhwa.com/news/cms/2026/07/26/news-p.v1.20260725.939af4f7a0a748519ecc01dff76a23ac_R.jpg",
@@ -15589,7 +15656,7 @@
       },
       "publishedAt": "2026-07-26T12:12:23.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-trades-around-recent-lows-as-weaker-demand-weighs-on/69877866",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2701705_1920_1080.webp",
       "imageChecked": true
     },
@@ -16269,7 +16336,7 @@
       },
       "publishedAt": "2026-07-25T01:30:05.000Z",
       "url": "https://en.sedaily.com/finance/2026/07/25/trump-tariff-pressure-tests-samsung-lg-global-production",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": null,
       "relatedArticles": [
         {
@@ -18687,7 +18754,7 @@
       },
       "publishedAt": "2026-07-23T10:06:39.000Z",
       "url": "https://www.techtimes.com/articles/321349/20260723/xiaomi-launches-mijia-washing-machines-germany-data-law-catch.htm",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "https://d.techtimes.com/en/full/469581/mijia-front-load-washer-dryer-pro.png",
       "imageChecked": true
     },
@@ -18878,7 +18945,7 @@
       },
       "publishedAt": "2026-07-23T06:32:17.000Z",
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-faces-a-fresh-valuation-test-after-earnings-cu/amp",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true,
       "relatedArticles": [
@@ -18959,7 +19026,7 @@
       },
       "publishedAt": "2026-07-23T05:36:53.000Z",
       "url": "https://www.chosun.com/economy/science/2026/07/23/RXO5EJJXFFB2VMNPHYOA33LQAA/",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "https://www.chosun.com/resizer/v2/O2HKLE5FIZFS7OT7DTWN2FF53A.png?auth=d93a58b2ad7768882d9933165846afbe44f3d687a869a01e62960c5fcd0d2726&width=1200&height=630&focal=621,16",
       "imageChecked": true
     },
@@ -21836,7 +21903,7 @@
       },
       "publishedAt": "2026-07-21T03:21:05.000Z",
       "url": "https://www.opportimes.com/en/manufacturing-reshoring-ge-appliances-invests-3-billion-in-the-united-states/",
-      "linkCheckedAt": "2026-08-04T16:05:55.102Z",
+      "linkCheckedAt": "2026-08-07T16:40:07.781Z",
       "image": "https://8d073164.delivery.rocketcdn.me/wp-content/uploads/2026/07/Lavadoras-GE-1.png",
       "imageChecked": true
     },
