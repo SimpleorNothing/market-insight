@@ -1,7 +1,59 @@
 {
-  "updatedAt": "2026-08-07T17:42:27.806Z",
+  "updatedAt": "2026-08-07T18:41:03.636Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3961,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "제조",
+        "파트너십",
+        "미국"
+      ],
+      "headline": "GE Appliances와 TI, 미국 제조 파트너십 강화",
+      "summary": "GE Appliances와 TI가 미국 내 제조 파트너십을 강화하며 협력을 확대한다고 밝혔다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE Appliances와 TI가 미국 제조 파트너십을 강화함"
+        },
+        {
+          "type": "content",
+          "text": "양사의 협력 확대를 통한 미국 내 생산 공조 체계 구축"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.designnews.com/semiconductors-chips/your-next-ge-washer-may-contain-ti-parts"
+      },
+      "publishedAt": "2026-08-07T18:05:53.000Z",
+      "url": "https://www.designnews.com/semiconductors-chips/your-next-ge-washer-may-contain-ti-parts",
+      "linkCheckedAt": "2026-08-07T18:38:29.699Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 3811,
+          "headline": "GE Appliances, 텍사스인스트루먼트 미국산 칩 조달",
+          "url": "https://www.thomasnet.com/insights/ge-appliances-texas-instruments-chips-supply/",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-06T19:11:09.000Z"
+        }
+      ]
+    },
     {
       "id": 3939,
       "lens": "정책",
@@ -482,7 +534,7 @@
       "imageChecked": true
     },
     {
-      "id": 3949,
+      "id": 3962,
       "lens": "기술",
       "grade": "주요",
       "impact": 3.5,
@@ -499,15 +551,14 @@
       "tags": [
         "AI칩",
         "홈로봇",
-        "스마트가전",
-        "기술전략"
+        "가전"
       ],
-      "headline": "LG전자, 가전 및 홈로봇용 3단계 AI 칩 도입 계획",
+      "headline": "LG전자, 가전·홈로봇용 3단계 AI 칩 도입 계획",
       "summary": "LG전자가 가전제품과 홈로봇에 적용하기 위한 3단계 AI 칩 도입 계획을 추진 중이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 가전과 홈로봇용 3단계 AI 칩 도입을 추진함"
+          "text": "LG전자가 가전과 홈로봇용 3단계 AI 칩 도입 계획을 추진함"
         }
       ],
       "source": {
@@ -516,7 +567,7 @@
       },
       "publishedAt": "2026-08-07T03:49:57.000Z",
       "url": "https://www.digitimes.com/news/a20260806VL219/chips-lg-lg-electronics-on-device-ai-soc.html",
-      "linkCheckedAt": "2026-08-07T17:39:24.024Z",
+      "linkCheckedAt": "2026-08-07T18:38:29.699Z",
       "image": "https://img.digitimes.com/newsshow/20260806vl219_files/2_b.jpg",
       "imageChecked": true
     },
@@ -667,49 +718,6 @@
           "publishedAt": "2026-08-05T01:41:45.000Z"
         }
       ]
-    },
-    {
-      "id": 3811,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 2.8,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [
-        "세탁기"
-      ],
-      "competitors": [
-        "Haier"
-      ],
-      "tags": [
-        "공급망",
-        "부품조달",
-        "스마트가전"
-      ],
-      "headline": "GE Appliances, 텍사스인스트루먼트 미국산 칩 조달",
-      "summary": "GE Appliances는 연결형 세탁기용 미국산 칩을 텍사스인스트루먼트로부터 조달한다고 발표했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "GE Appliances는 텍사스인스트루먼트로부터 미국산 칩을 조달"
-        },
-        {
-          "type": "content",
-          "text": "해당 칩은 연결형 세탁기 제품에 적용될 예정"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.thomasnet.com/insights/ge-appliances-texas-instruments-chips-supply/"
-      },
-      "publishedAt": "2026-08-06T19:11:09.000Z",
-      "url": "https://www.thomasnet.com/insights/ge-appliances-texas-instruments-chips-supply/",
-      "linkCheckedAt": "2026-08-07T02:04:02.558Z",
-      "image": null
     },
     {
       "id": 3814,
@@ -4212,7 +4220,7 @@
       },
       "publishedAt": "2026-08-04T16:46:22.000Z",
       "url": "https://www.consumerwide.com/news/articleViewAmp.html?idxno=66651",
-      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://cdn.consumerwide.com/news/photo/202608/66651_82731_5734.png",
       "imageChecked": true
     },
@@ -4248,7 +4256,7 @@
       },
       "publishedAt": "2026-08-04T16:07:46.000Z",
       "url": "https://mexicobusiness.news/trade-and-investment/news/25-states-sue-trump-administration-over-new-tariffs",
-      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/kelly-sikkema-6406RHVquFs-unsplash.jpg?h=eeecee23&itok=z_PBWo1J",
       "imageChecked": true
     },
@@ -4327,7 +4335,7 @@
       },
       "publishedAt": "2026-08-04T15:24:33.000Z",
       "url": "https://mexico-now.com/camimex-mining-should-be-included-in-the-usmca/",
-      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://mexico-now.com/wp-content/uploads/2026/08/Mineria-y-economia-1024x576-1.jpg",
       "imageChecked": true
     },
@@ -4408,7 +4416,7 @@
       },
       "publishedAt": "2026-08-04T14:03:20.000Z",
       "url": "https://www.personalcareinsights.com/news/canada-us-cosmetics-tariff-usmca.html",
-      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639214486856788005The_Canada_and_US_flag_next_to_each_other..jpg"
     },
     {
@@ -4549,7 +4557,7 @@
       },
       "publishedAt": "2026-08-04T12:46:13.000Z",
       "url": "https://sokodirectory.com/2026/08/30-growth-expected-in-on-premise-laundry-market/amp/",
-      "linkCheckedAt": "2026-08-04T18:22:12.255Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://sokodirectory.com/wp-content/uploads/2026/08/Laundry.jpg",
       "imageChecked": true
     },
@@ -11418,7 +11426,7 @@
       },
       "publishedAt": "2026-07-29T15:49:08.000Z",
       "url": "https://qz.com/best-energy-efficient-dishwashers-consumer-reports",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://qz.com/cdn-cgi/image/width=1200,quality=85,format=auto/https://assets.qz.com/media/pexels-castorlystock-3829549-300x200.jpg",
       "imageChecked": true
     },
@@ -11509,7 +11517,7 @@
       },
       "publishedAt": "2026-07-29T15:30:00.000Z",
       "url": "https://www.donga.com/news/Economy/article/all/20260729/134389995/2",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/07/30/134391743.1.jpg",
       "imageChecked": true
     },
@@ -12358,7 +12366,7 @@
       },
       "publishedAt": "2026-07-29T02:19:28.000Z",
       "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4097688",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://cdn.news.bbsi.co.kr/news/thumbnail/202607/4097688_750851_820_v150.jpg",
@@ -15502,7 +15510,7 @@
       },
       "publishedAt": "2026-07-26T15:00:00.000Z",
       "url": "https://www.fntimes.com/html/view.php?ud=202607242152314370dd55077bc2_18",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "assets/img/topics/news.svg",
       "imageChecked": true,
       "imageOriginal": "https://cfnimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&idx=999&simg=20260724215305012630dd55077bc212411124362.jpg&nmt=18",
@@ -18623,7 +18631,7 @@
       },
       "publishedAt": "2026-07-23T13:45:58.000Z",
       "url": "https://www.marketbeat.com/instant-alerts/stifel-nicolaus-has-lowered-expectations-for-whirlpool-nysewhr-stock-price-2026-07-23/",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://www.marketbeat.com/logos/whirlpool-co-logo-1200x675.jpg?v=20240426082740",
       "imageChecked": true
     },
@@ -18705,7 +18713,7 @@
       },
       "publishedAt": "2026-07-23T13:16:01.000Z",
       "url": "https://www.mk.co.kr/news/economy/12106036",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260708.b0c42cffc5af4ee9ac988467868e4d1f_R.png",
       "imageChecked": true
     },
@@ -18746,7 +18754,7 @@
       },
       "publishedAt": "2026-07-23T12:55:03.000Z",
       "url": "https://www.mk.co.kr/news/world/12106016",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260611.7f70d031df9543fe8ab386d724faf363_R.png",
       "imageChecked": true
     },
@@ -19020,7 +19028,7 @@
       },
       "publishedAt": "2026-07-23T06:05:23.000Z",
       "url": "https://impakter.com/trump-administration-to-cut-federal-energy-efficiency-programs/",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": null
     },
     {
@@ -20047,7 +20055,7 @@
       },
       "publishedAt": "2026-07-22T14:57:25.000Z",
       "url": "https://www.tikr.com/blog/trane-technologies-stock-erased-most-of-a-20-drawdown-its-backlog-may-explain-why",
-      "linkCheckedAt": "2026-08-04T18:21:31.612Z",
+      "linkCheckedAt": "2026-08-07T18:37:53.718Z",
       "image": "https://res.cloudinary.com/tikr/images/w_600,h_360,c_scale/f_webp,q_auto/v1784706216/images/FEATURED-IMAGE-MAKER-1123/FEATURED-IMAGE-MAKER-1123.png?_i=AA",
       "imageChecked": true,
       "relatedArticles": [
