@@ -1,7 +1,91 @@
 {
-  "updatedAt": "2026-08-07T14:07:47.807Z",
+  "updatedAt": "2026-08-07T15:46:55.464Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 3909,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "고용쇼크",
+        "금리인상",
+        "미국경제",
+        "거시경제"
+      ],
+      "headline": "미국 7월 비농업 일자리 2만3000명 감소, 고용쇼크 발생",
+      "summary": "7월 미국 비농업 일자리가 2만3000명 감소하며 지난 2월에 이어 또 한 차례 고용쇼크를 기록해 9월 금리 인상 전망에 변동성이 커지고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "7월 미국 비농업 일자리 2만3000명 감소"
+        },
+        {
+          "type": "content",
+          "text": "지난 2월에 이어 또 한 번의 고용쇼크 기록"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12121493"
+      },
+      "publishedAt": "2026-08-07T14:14:10.000Z",
+      "url": "https://www.mk.co.kr/news/world/12121493",
+      "linkCheckedAt": "2026-08-07T15:43:16.411Z",
+      "image": "https://pimg.mk.co.kr/news/cms/202608/08/20260808_01170108000001_S00.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 3919,
+      "lens": "소비자",
+      "grade": "참고",
+      "impact": 2,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 1,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [],
+      "tags": [
+        "AI",
+        "냉장고",
+        "지자체",
+        "소비자"
+      ],
+      "headline": "연수구 꿈이음길, AI 생수 냉장고 설치 운영",
+      "summary": "인천 연수구 꿈이음길에 누구나 하루 1병의 생수를 이용할 수 있는 AI 생수 냉장고가 설치되어 운영에 들어갔다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "인천 연수구 꿈이음길에 AI 생수 냉장고가 설치됨"
+        },
+        {
+          "type": "content",
+          "text": "누구나 하루에 1병씩 생수를 이용할 수 있음"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.ifm.kr/news/articleViewAmp.html?idxno=476679"
+      },
+      "publishedAt": "2026-08-07T12:13:45.000Z",
+      "url": "https://news.ifm.kr/news/articleViewAmp.html?idxno=476679",
+      "linkCheckedAt": "2026-08-07T15:43:16.411Z",
+      "image": "https://cdn.news.ifm.kr/news/photo/202608/476679_152161_4544.jpg",
+      "imageChecked": true
+    },
     {
       "id": 3849,
       "lens": "정책",
@@ -357,31 +441,32 @@
       "imageChecked": true
     },
     {
-      "id": 3918,
+      "id": 3920,
       "lens": "기술",
-      "grade": "주요",
-      "impact": 3.5,
+      "grade": "주시",
+      "impact": 3.4,
       "factors": {
         "salesRelevance": 4,
         "timeUrgency": 2,
         "marketSize": 4,
-        "sourceReliability": 4
+        "sourceReliability": 3
       },
       "products": [],
       "competitors": [
         "LG전자"
       ],
       "tags": [
+        "LG전자",
         "AI칩",
         "홈로봇",
-        "가전"
+        "가전용기술"
       ],
       "headline": "LG전자, 가전 및 홈로봇용 3단계 AI 칩 도입 계획",
       "summary": "LG전자가 가전제품과 홈로봇에 적용하기 위한 3단계 AI 칩 도입 계획을 추진하고 있습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 가전 및 홈로봇용 3단계 AI 칩 도입 계획 수립"
+          "text": "LG전자가 가전과 홈로봇용 AI 칩을 3단계로 나누어 도입할 계획임"
         }
       ],
       "source": {
@@ -390,7 +475,7 @@
       },
       "publishedAt": "2026-08-07T03:49:57.000Z",
       "url": "https://www.digitimes.com/news/a20260806VL219/chips-lg-lg-electronics-on-device-ai-soc.html",
-      "linkCheckedAt": "2026-08-07T14:04:43.623Z",
+      "linkCheckedAt": "2026-08-07T15:43:16.411Z",
       "image": "https://img.digitimes.com/newsshow/20260806vl219_files/2_b.jpg",
       "imageChecked": true
     },
@@ -2988,6 +3073,47 @@
       "url": "https://finance.yahoo.com/markets/stocks/articles/texas-instruments-txn-lands-ge-010914599.html",
       "linkCheckedAt": "2026-08-06T10:26:55.915Z",
       "image": null
+    },
+    {
+      "id": 3925,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 5
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "로보틱스",
+        "청소로봇",
+        "팝업행사"
+      ],
+      "headline": "LG전자, 판교 현대백화점서 청소로봇 신제품 '로니' 팝업 행사 개최",
+      "summary": "LG전자가 판교 현대백화점에서 청소로봇 신제품 '로니'를 선보이는 팝업 행사를 진행합니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 판교 현대백화점에서 청소로봇 신제품 '로니' 팝업 행사를 진행함"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 신사업·비즈모델 KR",
+        "url": "https://www.yna.co.kr/view/AKR20260805028100003"
+      },
+      "publishedAt": "2026-08-05T01:00:02.000Z",
+      "url": "https://www.yna.co.kr/view/AKR20260805028100003",
+      "linkCheckedAt": "2026-08-07T15:43:16.411Z",
+      "image": "https://img6.yna.co.kr/etc/inner/KR/2026/08/05/AKR20260805028100003_01_i_P4.jpg",
+      "imageChecked": true
     },
     {
       "id": 3539,
