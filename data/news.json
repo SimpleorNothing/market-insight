@@ -1,7 +1,54 @@
 {
-  "updatedAt": "2026-08-08T07:42:47.283Z",
+  "updatedAt": "2026-08-08T08:32:52.598Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4023,
+      "lens": "소비자",
+      "grade": "참고",
+      "impact": 2.1,
+      "factors": {
+        "salesRelevance": 1,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "AI",
+        "스마트안경",
+        "사생활침해",
+        "영국"
+      ],
+      "headline": "영국 공공장소서 AI 스마트 안경 착용 제한 확산",
+      "summary": "영국 런던의 유명 식당과 펍 등 공공장소를 중심으로 사생활 침해 우려로 인해 녹화 기능을 가진 AI 스마트 안경 착용을 제한하는 움직임이 확산하고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "영국 식당과 펍 등에서 AI 스마트 안경 착용 제한 확산"
+        },
+        {
+          "type": "content",
+          "text": "일반 안경과 구분이 어렵고 촬영 인지가 힘들어 사생활 우려"
+        },
+        {
+          "type": "content",
+          "text": "런던 유명 식당 운영자 제러미 킹 등이 착용 제한 움직임 주도"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260808000005"
+      },
+      "publishedAt": "2026-08-08T07:50:00.000Z",
+      "url": "https://www.etnews.com/20260808000005",
+      "linkCheckedAt": "2026-08-08T08:26:36.510Z",
+      "image": "assets/img/topics/tech.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://img.etnews.com/news/article/2026/08/07/news-p.v1.20260807.118ad106bb084be1bab1b9d798ba8a54_P1.png",
+      "thumbFace": true
+    },
     {
       "id": 4022,
       "lens": "경쟁사",
@@ -911,7 +958,7 @@
       "imageChecked": true
     },
     {
-      "id": 4030,
+      "id": 4031,
       "lens": "기술",
       "grade": "주요",
       "impact": 3.5,
@@ -929,18 +976,18 @@
         "AI칩",
         "홈로봇",
         "스마트가전",
-        "기술혁신"
+        "기술개발"
       ],
       "headline": "LG전자, 가전 및 홈로봇용 3단계 AI 칩 도입 계획",
-      "summary": "LG전자가 가전제품과 홈로봇에 적용하기 위한 3단계 AI 칩 도입 계획을 추진합니다. 이번 전략은 향후 스마트 가전의 인공지능 성능 고도화에 기여할 것으로 기대됩니다.",
+      "summary": "LG전자가 가전제품과 홈로봇에 적용하기 위한 3단계 AI 칩 도입 계획을 추진합니다. 이번 전략은 가전 내 AI 성능 고도화와 로보틱스 역량 강화를 목표로 합니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자는 가전과 홈로봇을 위한 3단계 AI 칩 도입 계획을 수립함"
+          "text": "LG전자가 가전 및 홈로봇용 3단계 AI 칩 도입 계획을 발표함"
         },
         {
           "type": "content",
-          "text": "이번 3단계 AI 칩 전략은 가전제품의 지능화 수준을 높이기 위함임"
+          "text": "가전제품의 지능화와 홈로봇 기능 고도화를 위한 칩 전략 추진"
         }
       ],
       "source": {
@@ -949,9 +996,8 @@
       },
       "publishedAt": "2026-08-07T03:49:57.000Z",
       "url": "https://www.digitimes.com/news/a20260806VL219/chips-lg-lg-electronics-on-device-ai-soc.html",
-      "linkCheckedAt": "2026-08-08T07:39:58.876Z",
-      "image": "https://img.digitimes.com/newsshow/20260806vl219_files/2_b.jpg",
-      "imageChecked": true
+      "linkCheckedAt": "2026-08-08T08:26:36.510Z",
+      "image": null
     },
     {
       "id": 3833,
