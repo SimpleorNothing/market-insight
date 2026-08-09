@@ -1,7 +1,87 @@
 {
-  "updatedAt": "2026-08-09T21:24:27.109Z",
+  "updatedAt": "2026-08-09T22:21:41.575Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4264,
+      "lens": "소비자",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에어컨",
+        "상권",
+        "에너지"
+      ],
+      "headline": "주요 상권 매장 절반 문 열고 에어컨 풀가동",
+      "summary": "주요 상권 매장 중 절반이 문을 연 채 에어컨을 가동하고 있어 에너지 낭비와 전력 소모 우려가 커지고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "주요 상권 매장의 절반이 문을 열고 에어컨을 가동 중임"
+        },
+        {
+          "type": "content",
+          "text": "여름철 냉방 전력 낭비 및 효율 저하 우려 제기"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=236143"
+      },
+      "publishedAt": "2026-08-09T21:30:04.000Z",
+      "url": "https://www.labortoday.co.kr/news/articleView.html?idxno=236143",
+      "linkCheckedAt": "2026-08-09T22:18:55.349Z",
+      "image": "https://cdn.labortoday.co.kr/news/thumbnail/202608/236143_114233_0936_v150.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 4263,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "차세대기술",
+        "HVAC",
+        "복사열"
+      ],
+      "headline": "대기 중 복사열 활용 차세대 히트펌프 냉방 기술 개발",
+      "summary": "대기 중 복사열을 이용하여 시원한 냉방을 구현할 수 있는 차세대 히트펌프 기술이 개발되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "대기 중 복사열을 이용한 차세대 히트펌프 냉방 기술 개발"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.kbs.co.kr/news/view.do?ncd=8632370"
+      },
+      "publishedAt": "2026-08-09T21:28:00.000Z",
+      "url": "https://news.kbs.co.kr/news/view.do?ncd=8632370",
+      "linkCheckedAt": "2026-08-09T22:18:55.349Z",
+      "image": null
+    },
     {
       "id": 4250,
       "lens": "기술",
