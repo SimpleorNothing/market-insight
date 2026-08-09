@@ -1,7 +1,57 @@
 {
-  "updatedAt": "2026-08-09T22:21:41.575Z",
+  "updatedAt": "2026-08-09T23:22:02.135Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4273,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "히트펌프",
+        "B2B",
+        "HVAC"
+      ],
+      "headline": "LG전자, 국내 및 산업현장으로 히트펌프 사업 확대",
+      "summary": "LG전자가 유럽 시장을 넘어 국내 및 산업현장으로 히트펌프 영토를 넓히며 사업 확장에 나선다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 유럽을 넘어 국내 및 산업현장으로 히트펌프 사업 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.news1.kr/industry/electronics/6253305"
+      },
+      "publishedAt": "2026-08-09T23:00:00.000Z",
+      "url": "https://www.news1.kr/industry/electronics/6253305",
+      "linkCheckedAt": "2026-08-09T23:19:31.785Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 4250,
+          "headline": "LG전자, 가정용부터 118℃ 산업용까지 히트펌프 라인업 확대",
+          "url": "https://www.newspim.com/news/view/20260807001063",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-09T21:00:00.000Z"
+        }
+      ]
+    },
     {
       "id": 4264,
       "lens": "소비자",
@@ -80,52 +130,18 @@
       "publishedAt": "2026-08-09T21:28:00.000Z",
       "url": "https://news.kbs.co.kr/news/view.do?ncd=8632370",
       "linkCheckedAt": "2026-08-09T22:18:55.349Z",
-      "image": null
-    },
-    {
-      "id": 4250,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 3.4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "히트펌프",
-        "B2B",
-        "산업용",
-        "냉난방공조"
-      ],
-      "headline": "LG전자, 가정용부터 118℃ 산업용까지 히트펌프 라인업 확대",
-      "summary": "LG전자가 가정용에 이어 118℃ 산업용까지 히트펌프 제품군을 확대하며 시장 공략을 강화합니다.",
-      "summaryPoints": [
+      "image": null,
+      "relatedArticles": [
         {
-          "type": "content",
-          "text": "LG전자가 히트펌프 사업 영역을 가정용에서 산업용까지 확장"
-        },
-        {
-          "type": "content",
-          "text": "최고 118℃ 온도 구현이 가능한 산업용 히트펌프 제품군 확보"
+          "id": 4274,
+          "headline": "대기 중 복사열 활용 차세대 히트펌프 냉방 기술 개발",
+          "url": "https://v.daum.net/v/20260810063819966",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-09T21:38:19.000Z"
         }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.newspim.com/news/view/20260807001063"
-      },
-      "publishedAt": "2026-08-09T21:00:00.000Z",
-      "url": "https://www.newspim.com/news/view/20260807001063",
-      "linkCheckedAt": "2026-08-09T21:21:24.671Z",
-      "image": "https://img.newspim.com/news/2026/08/07/2608071658583730_829_tc.jpg",
-      "imageChecked": true
+      ]
     },
     {
       "id": 4251,
