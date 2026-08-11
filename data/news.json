@@ -1,7 +1,136 @@
 {
-  "updatedAt": "2026-08-11T14:14:07.843Z",
+  "updatedAt": "2026-08-11T15:51:52.307Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4576,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "GE Appliances",
+        "텍사스인스트루먼트",
+        "공급망",
+        "부품"
+      ],
+      "headline": "GE어플라이언스, 공급망 회복력 위해 텍사스인스트루먼트 조달 확대",
+      "summary": "GE어플라이언스가 공급망 회복력을 강화하기 위해 텍사스인스트루먼트(TI)로부터의 부품 조달을 확대합니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "GE어플라이언스, 공급망 회복력 위해 TI 조달 확대"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.supplychaindive.com/news/ge-appliances-deepens-texas-instruments-sourcing-for-resilience/827455/"
+      },
+      "publishedAt": "2026-08-11T15:16:01.000Z",
+      "url": "https://www.supplychaindive.com/news/ge-appliances-deepens-texas-instruments-sourcing-for-resilience/827455/",
+      "linkCheckedAt": "2026-08-11T15:49:04.678Z",
+      "image": null
+    },
+    {
+      "id": 4575,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "히트펌프",
+        "공조",
+        "제주",
+        "신사업"
+      ],
+      "headline": "삼성, 300조 히트펌프 시장 공략… 제주를 전초기지로 활용",
+      "summary": "삼성전자가 300조원 규모의 글로벌 히트펌프 시장 공략을 위해 제주도를 전초기지로 삼아 본격적인 사업 확대에 나섰습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 300조원 규모의 히트펌프 시장 공략을 본격화함."
+        },
+        {
+          "type": "content",
+          "text": "제주도를 히트펌프 사업의 전초기지로 활용해 영토 확장 추진."
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.hankyung.com/article/2026081149301"
+      },
+      "publishedAt": "2026-08-11T15:08:00.000Z",
+      "url": "https://www.hankyung.com/article/2026081149301",
+      "linkCheckedAt": "2026-08-11T15:49:04.678Z",
+      "image": "https://img.hankyung.com/photo/202608/AA.45305980.1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 4577,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "재무구조",
+        "월풀",
+        "배당중단"
+      ],
+      "headline": "월풀, 51억 달러 자본 재조정 및 배당금 중단 단행",
+      "summary": "월풀이 2026년 및 2027년 만기가 도래하는 부채에 대응하기 위해 51억 달러 규모의 자본 재조정을 실시하고 배당금을 중단했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "월풀, 51억 달러 규모 자본 재조정 단행"
+        },
+        {
+          "type": "content",
+          "text": "2026년 및 2027년 만기 부채 대응 목적"
+        },
+        {
+          "type": "content",
+          "text": "주주 배당금 지급 중단 결정"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://pulse2.com/whirlpool-5-1-billion-recapitalization-addresses-2026-and-2027-maturities-as-dividend-is-suspended/"
+      },
+      "publishedAt": "2026-08-11T14:12:04.000Z",
+      "url": "https://pulse2.com/whirlpool-5-1-billion-recapitalization-addresses-2026-and-2027-maturities-as-dividend-is-suspended/",
+      "linkCheckedAt": "2026-08-11T15:49:04.678Z",
+      "image": "https://cdn.pulse2.com/cdn/2020/02/Whirlpool.jpg",
+      "imageChecked": true
+    },
     {
       "id": 4568,
       "lens": "정책",
@@ -1144,7 +1273,7 @@
       ]
     },
     {
-      "id": 4387,
+      "id": 4578,
       "lens": "소비자",
       "grade": "주시",
       "impact": 2.9,
@@ -1159,28 +1288,39 @@
       "tags": [
         "스마트가전",
         "시장전망",
-        "성장률"
+        "CAGR"
       ],
-      "headline": "스마트 가전 시장, 2035년까지 10.9% CAGR 성장",
-      "summary": "글로벌 스마트 홈 가전 시장이 2035년까지 연평균 10.9%의 복합성장률(CAGR)을 기록하며 확대될 것으로 전망되었습니다.",
+      "headline": "스마트 가전 시장, 2035년까지 연평균 10.9% 성장 전망",
+      "summary": "글로벌 스마트 가전 시장 수익이 2035년까지 연평균 10.9%의 성장률(CAGR)을 기록하며 확대될 것으로 전망되었습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "스마트 홈 가전 시장 매출 2035년까지 증가 전망"
+          "text": "글로벌 스마트 가전 시장 수익 2035년까지 확대 전망"
         },
         {
           "type": "content",
-          "text": "연평균 복합성장률(CAGR) 10.9% 기록 예상"
+          "text": "예상 연평균 성장률(CAGR) 10.9% 기록 전망"
         }
       ],
       "source": {
-        "name": "Google News - US Home Appliances",
-        "url": "https://www.einnews.com/pr_news/932179967/smart-home-appliances-market-revenue-to-increase-at-a-10-9-cagr-through-2035"
+        "name": "Google News - LG Global",
+        "url": "https://www.einpresswire.com/article/932179967/smart-home-appliances-market-revenue-to-increase-at-a-10-9-cagr-through-2035"
       },
       "publishedAt": "2026-08-10T13:14:00.000Z",
-      "url": "https://www.einnews.com/pr_news/932179967/smart-home-appliances-market-revenue-to-increase-at-a-10-9-cagr-through-2035",
-      "linkCheckedAt": "2026-08-10T14:12:21.907Z",
-      "image": null
+      "url": "https://www.einpresswire.com/article/932179967/smart-home-appliances-market-revenue-to-increase-at-a-10-9-cagr-through-2035",
+      "linkCheckedAt": "2026-08-11T15:49:04.678Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 4387,
+          "headline": "스마트 가전 시장, 2035년까지 10.9% CAGR 성장",
+          "url": "https://www.einnews.com/pr_news/932179967/smart-home-appliances-market-revenue-to-increase-at-a-10-9-cagr-through-2035",
+          "source": {
+            "name": "Google News - US Home Appliances"
+          },
+          "publishedAt": "2026-08-10T13:14:00.000Z"
+        }
+      ]
     },
     {
       "id": 4363,
@@ -5806,7 +5946,7 @@
       },
       "publishedAt": "2026-08-05T12:19:46.000Z",
       "url": "https://www.hindustantimes.com/technology/bsh-expands-premium-appliance-portfolio-with-new-bosch-kitchen-products-showcases-siemens-coffee-machine-101785930534720.html",
-      "linkCheckedAt": "2026-08-08T15:18:09.676Z",
+      "linkCheckedAt": "2026-08-11T15:48:18.224Z",
       "image": "https://www.hindustantimes.com/ht-img/img/2026/08/05/1600x900/logo/BSH_home_appliances_1785932279391_1785932288134_6338d9c8-910d-4647-8f27-dc4b50e47359.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -5901,7 +6041,7 @@
       },
       "publishedAt": "2026-08-05T12:01:10.000Z",
       "url": "https://electronics360.globalspec.com/article/24065/ge-is-ti-s-first-named-gan-customer-in-appliances",
-      "linkCheckedAt": "2026-08-08T15:18:09.676Z",
+      "linkCheckedAt": "2026-08-11T15:48:18.224Z",
       "image": null
     },
     {
@@ -5936,7 +6076,7 @@
       },
       "publishedAt": "2026-08-05T10:07:21.000Z",
       "url": "https://simplywall.st/stocks/us/automobiles/nyse-f/ford-motor/news/ford-stock-and-2-trade-exposed-industrial-shares-facing-tari/amp",
-      "linkCheckedAt": "2026-08-08T15:18:09.676Z",
+      "linkCheckedAt": "2026-08-11T15:48:18.224Z",
       "image": "https://images.simplywall.st/asset/company-cover/106335-main-header/1756253679915",
       "imageChecked": true
     },
@@ -6285,7 +6425,7 @@
       },
       "publishedAt": "2026-08-05T07:51:15.000Z",
       "url": "https://www.thevaluenews.co.kr/news/200579",
-      "linkCheckedAt": "2026-08-08T15:18:09.676Z",
+      "linkCheckedAt": "2026-08-11T15:48:18.224Z",
       "image": null,
       "relatedArticles": [
         {
@@ -10688,7 +10828,7 @@
       },
       "publishedAt": "2026-08-02T12:12:38.000Z",
       "url": "https://m.yeongnam.com/view.php?key=20260802020159623",
-      "linkCheckedAt": "2026-08-08T15:18:09.676Z",
+      "linkCheckedAt": "2026-08-11T15:48:18.224Z",
       "image": "https://www.yeongnam.com/mnt/file/202608/news-p.v1.20260802.12f40e7fbd5b4c6c86c27c7fce02f1c8_R.jpg",
       "imageChecked": true
     },
@@ -10943,7 +11083,7 @@
       },
       "publishedAt": "2026-08-02T09:37:30.000Z",
       "url": "https://www.vietnam.vn/ko/my-dung-lai-buc-tuong-thue-quan-quan-ngai-gia-tang-bat-on-thuong-mai-toan-cau",
-      "linkCheckedAt": "2026-08-08T15:18:09.676Z",
+      "linkCheckedAt": "2026-08-11T15:48:18.224Z",
       "image": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/02/1785640845494_my-dung-lai-buc-w720t0-di2630d204d0101516t83l1.webp",
       "imageChecked": true
     },
