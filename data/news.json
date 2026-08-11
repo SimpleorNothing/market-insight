@@ -1,7 +1,53 @@
 {
-  "updatedAt": "2026-08-11T20:35:05.615Z",
+  "updatedAt": "2026-08-11T21:37:12.135Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4603,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "물가상승률",
+        "지정학적리스크",
+        "국제유가",
+        "농산물가격",
+        "폭염"
+      ],
+      "headline": "폭염·유가 급등에 소비자물가 상승률 3% 재진입 공포",
+      "summary": "기록적인 폭염으로 인한 농산물 가격 폭등과 중동 지정학적 리스크에 따른 국제유가 급등이 겹치며 하반기 소비자물가 상승률이 3%대로 다시 진입할 우려가 커지고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "기록적인 폭염으로 인해 시금치, 상추 등 농산물 가격이 폭등함"
+        },
+        {
+          "type": "content",
+          "text": "중동발 지정학적 리스크로 인해 국제유가가 급등세를 보이고 있음"
+        },
+        {
+          "type": "content",
+          "text": "에너지 비용과 장바구니 물가가 동반 상승하며 하반기 물가 불안 가중"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/economy/12124744"
+      },
+      "publishedAt": "2026-08-11T20:51:58.000Z",
+      "url": "https://www.mk.co.kr/news/economy/12124744",
+      "linkCheckedAt": "2026-08-11T21:34:27.828Z",
+      "image": "https://pimg.mk.co.kr/news/cms/202608/12/news-p.v1.20260811.2467bcc8a331413093f3920472907f75_R.png",
+      "imageChecked": true
+    },
     {
       "id": 4601,
       "lens": "기술",
@@ -1672,6 +1718,50 @@
       "linkCheckedAt": "2026-08-10T09:06:35.581Z",
       "image": "https://cdn.energydaily.co.kr/news/photo/202608/202121_201837_3221.jpg",
       "imageChecked": true
+    },
+    {
+      "id": 4611,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 1,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Trane"
+      ],
+      "tags": [
+        "HVAC",
+        "데이터센터",
+        "냉각",
+        "AI"
+      ],
+      "headline": "트레인 테크놀로지스, AI 인프라 데이터센터 냉각 기술 조명",
+      "summary": "트레인 테크놀로지스가 지속 가능한 AI 인프라를 지원하는 데이터센터 냉각 기술의 중요성과 역할을 소개했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "트레인 테크놀로지스가 데이터센터 냉각 기술을 조명함"
+        },
+        {
+          "type": "content",
+          "text": "지속 가능한 AI 인프라를 지원하는 냉각 방식의 역할 소개"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://www.tranetechnologies.com/en/index/blog/solutions-innovation/data-center-cooling-sustainable-ai.html"
+      },
+      "publishedAt": "2026-08-10T07:00:00.000Z",
+      "url": "https://www.tranetechnologies.com/en/index/blog/solutions-innovation/data-center-cooling-sustainable-ai.html",
+      "linkCheckedAt": "2026-08-11T21:34:27.828Z",
+      "image": "https://media.tranetechnologies.com/is/image/TraneTechnologies/uplift-perspective_shadowed-building-sunny-sky_tt:medium-2-1"
     },
     {
       "id": 4520,
@@ -5732,7 +5822,7 @@
       },
       "publishedAt": "2026-08-05T19:41:48.000Z",
       "url": "https://embeddedcomputing.com/application/industrial/industrial-networking-connectivity/ge-and-ti-team-up-to-power-new-connected-appliances",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": "https://data.embeddedcomputing.com/uploads/resize/1256/756/external/data.embeddedcomputing.com/uploads/articles/primary_images/1785958776.jpg",
       "imageChecked": true
     },
@@ -5809,7 +5899,7 @@
       },
       "publishedAt": "2026-08-05T19:07:41.000Z",
       "url": "https://mexicobusiness.news/trade-and-investment/news/us-clears-us100-billion-tariff-refunds",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/the-now-time-30oZkAz4u1Y-unsplash.jpg?h=b5955f22&itok=InB_qG_h",
       "imageChecked": true
     },
@@ -7247,7 +7337,7 @@
       },
       "publishedAt": "2026-08-05T00:39:33.000Z",
       "url": "https://www.dallasfed.org/research/economics/2026/0804",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": "https://www.dallasfed.org/-/media/Images/research/economics/2026/0804/port-houston-pri.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -8650,7 +8740,7 @@
       },
       "publishedAt": "2026-08-04T09:17:07.000Z",
       "url": "https://www.ajunews.com/amp/20260804175700177",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": "https://image.ajunews.com/content/image/2026/08/04/20260804181556948659.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -13107,7 +13197,7 @@
       },
       "publishedAt": "2026-07-30T19:00:00.000Z",
       "url": "https://www.mk.co.kr/news/business/12112680",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/31/20260731_01170108000001_M00.jpg",
       "imageChecked": true
     },
@@ -13319,7 +13409,7 @@
       },
       "publishedAt": "2026-07-30T15:21:53.000Z",
       "url": "https://www.stocktitan.net/sec-filings/WHR/schedule-13g-a-whirlpool-corp-de-amended-passive-investment-disclosur-07ed9d008a5f.html",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": "https://static.stocktitan.net/company-logo/whr-lg.png?v=3022c9b91f",
       "imageChecked": true
     },
@@ -15376,7 +15466,7 @@
       },
       "publishedAt": "2026-07-29T15:35:00.000Z",
       "url": "https://finance.yahoo.com/markets/stocks/articles/johnson-controls-tops-q3-earnings-153500394.html",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": null
     },
     {
@@ -18245,7 +18335,7 @@
       },
       "publishedAt": "2026-07-27T16:00:00.000Z",
       "url": "https://www.themarysue.com/best-buy-appliance-delivery/",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": "https://www.themarysue.com/wp-content/uploads/2026/07/Woman-buys-refrigerator-from-Best-Buy.jpg?fit=2560%2C1440",
       "imageChecked": true
     },
@@ -19772,7 +19862,7 @@
       },
       "publishedAt": "2026-07-26T06:18:40.000Z",
       "url": "https://v.daum.net/v/20260726151840710?f=p",
-      "linkCheckedAt": "2026-08-08T21:19:01.032Z",
+      "linkCheckedAt": "2026-08-11T21:34:06.026Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/26/khan/20260726151842274qdpd.jpg",
