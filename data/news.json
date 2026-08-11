@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-08-11T09:52:08.879Z",
+  "updatedAt": "2026-08-11T10:44:00.755Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 4531,
-      "lens": "기술",
+      "id": 4544,
+      "lens": "소비자",
       "grade": "주요",
-      "impact": 3.5,
+      "impact": 4.1,
       "factors": {
         "salesRelevance": 4,
-        "timeUrgency": 2,
-        "marketSize": 4,
+        "timeUrgency": 5,
+        "marketSize": 3,
         "sourceReliability": 4
       },
       "products": [
@@ -21,28 +21,31 @@
       ],
       "tags": [
         "히트펌프",
-        "냉난방공조",
-        "HVAC"
+        "HVAC",
+        "친환경난방",
+        "삼성전자"
       ],
-      "headline": "삼성전자, 제주서 히트펌프 냉난방 시동",
-      "summary": "삼성전자가 제주 지역에서 실외기 하나로 냉방과 난방을 동시에 구현하는 히트펌프 기술을 선보이며 친환경 냉난방 시장 공략을 본격화했다.",
+      "headline": "제주 주거지에 적용된 삼성 히트펌프",
+      "summary": "제주 지역에서 기존 기름 및 LPG 보일러를 대신해 삼성전자의 히트펌프가 주거지에 도입되는 사례가 보도되었습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "삼성전자가 실외기 하나로 냉난방을 제공하는 히트펌프를 제주에 도입함"
+          "text": "제주 지역 주거지에서 기존 기름·LPG 보일러를 철거"
+        },
+        {
+          "type": "content",
+          "text": "삼성전자 히트펌프로 난방 시스템을 교체 적용"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://v.daum.net/v/20260811181111744"
+        "url": "https://www.kmib.co.kr/article/view_amp.asp?arcid=9000002271"
       },
-      "publishedAt": "2026-08-11T09:11:11.000Z",
-      "url": "https://v.daum.net/v/20260811181111744",
-      "linkCheckedAt": "2026-08-11T09:49:33.896Z",
-      "image": "assets/img/topics/aircon.svg",
+      "publishedAt": "2026-08-11T08:58:00.000Z",
+      "url": "https://www.kmib.co.kr/article/view_amp.asp?arcid=9000002271",
+      "linkCheckedAt": "2026-08-11T10:40:50.115Z",
+      "image": "https://image.kmib.co.kr/online_image/2026/0811/01100201.20260811501353.jpg",
       "imageChecked": true,
-      "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/11/fnnewsi/20260811181111142wwqx.jpg",
-      "thumbFace": true,
       "relatedArticles": [
         {
           "id": 4488,
@@ -61,8 +64,61 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-11T02:03:37.000Z"
+        },
+        {
+          "id": 4531,
+          "headline": "삼성전자, 제주서 히트펌프 냉난방 시동",
+          "url": "https://v.daum.net/v/20260811181111744",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-11T09:11:11.000Z"
         }
       ]
+    },
+    {
+      "id": 4551,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "관세환급",
+        "실적분석",
+        "북미"
+      ],
+      "headline": "LG전자, 美 관세환급 3000억 제외한 실적 분석",
+      "summary": "LG전자의 실적에서 미국 관세환급분 약 3000억 원을 제외한 사업부별 실제 체력을 분석한 보도입니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 관세환급 약 3000억 원이 실적에 반영됨"
+        },
+        {
+          "type": "content",
+          "text": "일회성 요인을 제외한 사업부별 실제 영업 체력 분석"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=238611"
+      },
+      "publishedAt": "2026-08-11T08:41:36.000Z",
+      "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=238611",
+      "linkCheckedAt": "2026-08-11T10:40:50.115Z",
+      "image": "assets/img/topics/finance.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://cdn.ezyeconomy.com/news/thumbnail/202608/238611_140018_1435_v150.jpg",
+      "thumbFace": true
     },
     {
       "id": 4524,
@@ -197,15 +253,15 @@
       "imageChecked": true
     },
     {
-      "id": 4503,
+      "id": 4545,
       "lens": "소비자",
-      "grade": "주시",
-      "impact": 3.4,
+      "grade": "주요",
+      "impact": 4.1,
       "factors": {
         "salesRelevance": 4,
-        "timeUrgency": 3,
+        "timeUrgency": 5,
         "marketSize": 3,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [],
       "competitors": [
@@ -213,31 +269,42 @@
       ],
       "tags": [
         "삼성전자",
-        "가전",
         "배송",
-        "환급"
+        "환급",
+        "가전"
       ],
-      "headline": "삼성 가전 판매 급증 속 배송 지연 시 20% 환급",
-      "summary": "삼성 가전 판매가 크게 늘어난 가운데, 배송이 지연될 경우 20%를 환급해주는 제도가 시행됩니다.",
+      "headline": "삼성 가전 판매 급증에 배송 지연…20% 환급 보상 실시",
+      "summary": "삼성 가전이 높은 판매량으로 배송 지연을 겪는 가운데, 배송이 늦어질 경우 최대 20%를 환급해 주는 보상 정책이 시행됩니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "삼성 가전 판매량 급증으로 배송 지연 발생"
+          "text": "삼성 가전 판매량 급증으로 인해 배송 지연 발생"
         },
         {
           "type": "content",
-          "text": "배송이 늦어질 경우 20% 환급 혜택 적용"
+          "text": "배송이 늦어지는 경우 20% 환급 보상 적용"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://v.daum.net/v/20260811152402168"
+        "url": "https://biz.sbs.co.kr/article/20000328005"
       },
-      "publishedAt": "2026-08-11T06:24:02.000Z",
-      "url": "https://v.daum.net/v/20260811152402168",
-      "linkCheckedAt": "2026-08-11T06:44:59.682Z",
-      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/11/sbscnbc/20260811152402251zdxf.jpg",
-      "imageChecked": true
+      "publishedAt": "2026-08-11T06:22:00.000Z",
+      "url": "https://biz.sbs.co.kr/article/20000328005",
+      "linkCheckedAt": "2026-08-11T10:40:50.115Z",
+      "image": "https://img.biz.sbs.co.kr/upload/2026/08/11/Fsy1786440043587.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4503,
+          "headline": "삼성 가전 판매 급증 속 배송 지연 시 20% 환급",
+          "url": "https://v.daum.net/v/20260811152402168",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-11T06:24:02.000Z"
+        }
+      ]
     },
     {
       "id": 4481,
@@ -4222,6 +4289,47 @@
       "linkCheckedAt": "2026-08-09T14:23:05.471Z",
       "image": "https://www.hydrogennews.co.kr/news/photo/202608/4587_5450_4122.png",
       "imageChecked": true
+    },
+    {
+      "id": 4549,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 3,
+        "marketSize": 2,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "BSH"
+      ],
+      "tags": [
+        "보쉬",
+        "공급망",
+        "재고손실"
+      ],
+      "headline": "보쉬, 러시아 공격으로 창고 재고 전소",
+      "summary": "우크라이나 매체 우크라뉴스에 따르면 보쉬가 러시아의 공격을 받아 창고 내 모든 재고를 소실했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "러시아의 공격으로 보쉬 창고 재고 전소"
+        },
+        {
+          "type": "content",
+          "text": "창고 내 모든 물류 및 재고 소실 피해 발생"
+        }
+      ],
+      "source": {
+        "name": "Google News - Bosch Miele Siemens EU",
+        "url": "https://ukranews.com/en/news/1167169-bosch-lost-all-of-its-inventory-from-its-warehouse-after-attack-by-russia"
+      },
+      "publishedAt": "2026-08-06T10:23:33.000Z",
+      "url": "https://ukranews.com/en/news/1167169-bosch-lost-all-of-its-inventory-from-its-warehouse-after-attack-by-russia",
+      "linkCheckedAt": "2026-08-11T10:40:50.115Z",
+      "image": null
     },
     {
       "id": 3763,
