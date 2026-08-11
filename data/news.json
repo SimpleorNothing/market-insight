@@ -1,7 +1,160 @@
 {
-  "updatedAt": "2026-08-11T08:05:39.861Z",
+  "updatedAt": "2026-08-11T09:52:08.879Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4531,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "히트펌프",
+        "냉난방공조",
+        "HVAC"
+      ],
+      "headline": "삼성전자, 제주서 히트펌프 냉난방 시동",
+      "summary": "삼성전자가 제주 지역에서 실외기 하나로 냉방과 난방을 동시에 구현하는 히트펌프 기술을 선보이며 친환경 냉난방 시장 공략을 본격화했다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성전자가 실외기 하나로 냉난방을 제공하는 히트펌프를 제주에 도입함"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260811181111744"
+      },
+      "publishedAt": "2026-08-11T09:11:11.000Z",
+      "url": "https://v.daum.net/v/20260811181111744",
+      "linkCheckedAt": "2026-08-11T09:49:33.896Z",
+      "image": "assets/img/topics/aircon.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/11/fnnewsi/20260811181111142wwqx.jpg",
+      "thumbFace": true,
+      "relatedArticles": [
+        {
+          "id": 4488,
+          "headline": "삼성전자, 효율·소음 잡은 히트펌프 전진기지 공개",
+          "url": "https://www.newstomato.com/ReadNews.aspx?no=1309843",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-11T05:34:31.000Z"
+        },
+        {
+          "id": 4466,
+          "headline": "제주 주택에 적용된 삼성전자 냉난방온수 통합 신기술",
+          "url": "https://biz.chosun.com/it-science/ict/2026/08/11/F2JBJAOWRVF3JJ7G2H3WZCWVWY/",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-11T02:03:37.000Z"
+        }
+      ]
+    },
+    {
+      "id": 4524,
+      "lens": "기술",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 1,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "미용기기",
+        "일본",
+        "스타트업",
+        "헬스케어"
+      ],
+      "headline": "日 스타트업, 땀으로 피부 분석하는 미용기기 상용화",
+      "summary": "일본 오사카의 스타트업 피탄이 땀 성분을 10분 내로 분석해 맞춤형 화장품과 관리법을 제안하는 미용 측정 장비 '피타고라스'의 상용 생산에 돌입했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "스타트업 피탄이 땀을 활용한 피부 분석 미용기기 '피타고라스' 상용 생산 시작"
+        },
+        {
+          "type": "content",
+          "text": "사용자의 땀 성분을 약 10분 안에 판독해 맞춤형 화장품 및 관리법 제안"
+        },
+        {
+          "type": "content",
+          "text": "미용실이나 약국 등에서 고객 상담 과정에 활용될 예정"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260811000333"
+      },
+      "publishedAt": "2026-08-11T08:00:00.000Z",
+      "url": "https://www.etnews.com/20260811000333",
+      "linkCheckedAt": "2026-08-11T09:49:33.896Z",
+      "image": "https://img.etnews.com/news/article/2026/08/11/news-p.v1.20260811.ba9135d3eceb4f81a7481102949f1f87_P1.png",
+      "imageChecked": true
+    },
+    {
+      "id": 4537,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "세탁기",
+        "건조기"
+      ],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "하이얼",
+        "세탁건조기",
+        "인도",
+        "신제품"
+      ],
+      "headline": "하이얼, 인도 시장에 F17 시리즈 12kg 세탁건조기 출시",
+      "summary": "하이얼이 인도 시장에 틸티드 터치스크린과 AI 세탁 기능을 탑재한 F17 시리즈 12kg 세탁건조기를 출시했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "하이얼, 인도 시장에 F17 시리즈 12kg 세탁건조기 출시"
+        },
+        {
+          "type": "content",
+          "text": "틸티드 터치스크린 및 AI 세탁 기능 탑재"
+        }
+      ],
+      "source": {
+        "name": "Google News - Haier Gree Hisense",
+        "url": "https://www.fonearena.com/blog/489307/haier-f17-washer-dryer-price-india-features.html"
+      },
+      "publishedAt": "2026-08-11T06:46:17.000Z",
+      "url": "https://www.fonearena.com/blog/489307/haier-f17-washer-dryer-price-india-features.html",
+      "linkCheckedAt": "2026-08-11T09:49:33.896Z",
+      "image": "https://images.fonearena.com/blog/wp-content/uploads/2026/08/Haier-F17-washing-machine-series.jpg",
+      "imageChecked": true
+    },
     {
       "id": 4523,
       "lens": "정책",
@@ -84,51 +237,6 @@
       "url": "https://v.daum.net/v/20260811152402168",
       "linkCheckedAt": "2026-08-11T06:44:59.682Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/11/sbscnbc/20260811152402251zdxf.jpg",
-      "imageChecked": true
-    },
-    {
-      "id": 4488,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "히트펌프",
-        "공조",
-        "HVAC",
-        "기술"
-      ],
-      "headline": "삼성전자, 효율·소음 잡은 히트펌프 전진기지 공개",
-      "summary": "삼성전자가 고효율과 저소음, 편의성을 강화한 히트펌프 신기술 전진기지를 현장에서 선보이며 기술력을 입증했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "삼성전자가 히트펌프 전진기지 현장을 공개함"
-        },
-        {
-          "type": "content",
-          "text": "효율과 소음, 편의성을 모두 잡은 기술력 강조"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.newstomato.com/ReadNews.aspx?no=1309843"
-      },
-      "publishedAt": "2026-08-11T05:34:31.000Z",
-      "url": "https://www.newstomato.com/ReadNews.aspx?no=1309843",
-      "linkCheckedAt": "2026-08-11T05:46:45.398Z",
-      "image": "https://image.newstomato.com/newsimg/2026/8/11/1309843/attach.jpg?v=202608111434",
       "imageChecked": true
     },
     {
@@ -277,51 +385,6 @@
           "publishedAt": "2026-08-11T05:38:48.000Z"
         }
       ]
-    },
-    {
-      "id": 4466,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 2.9,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 3,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [
-        "삼성전자"
-      ],
-      "tags": [
-        "HVAC",
-        "신기술",
-        "냉난방",
-        "제주주택"
-      ],
-      "headline": "제주 주택에 적용된 삼성전자 냉난방온수 통합 신기술",
-      "summary": "실외기 하나로 냉방과 난방, 온수를 모두 제공하는 삼성전자의 새로운 공조 기술이 제주 지역 주택에 적용되었습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "실외기 하나로 냉방·난방·온수 제공 가능한 신기술 적용"
-        },
-        {
-          "type": "content",
-          "text": "제주 지역 주택 현장에 도입된 삼성전자 신기술 르포 보도"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://biz.chosun.com/it-science/ict/2026/08/11/F2JBJAOWRVF3JJ7G2H3WZCWVWY/"
-      },
-      "publishedAt": "2026-08-11T02:03:37.000Z",
-      "url": "https://biz.chosun.com/it-science/ict/2026/08/11/F2JBJAOWRVF3JJ7G2H3WZCWVWY/",
-      "linkCheckedAt": "2026-08-11T02:59:04.140Z",
-      "image": "https://biz.chosun.com/resizer/v2/NS55E4YKT5DQ7NEDS426MPIR6U.gif?auth=35c0746d6bd2d18ae35960627bf7e8061a7b8f450fbf6f10d3be527900e56b4f&width=600&height=315&smart=true",
-      "imageChecked": true
     },
     {
       "id": 4456,
@@ -724,6 +787,51 @@
       "url": "https://www.news1.kr/amp/world/usa-canada/6254799",
       "linkCheckedAt": "2026-08-10T21:31:17.560Z",
       "image": null
+    },
+    {
+      "id": 4535,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "폭염",
+        "이동형에어컨",
+        "유럽",
+        "출하량"
+      ],
+      "headline": "유럽 폭염에 메이디 이동형 에어컨 상반기 20만대 돌파",
+      "summary": "유럽 지역의 폭염으로 인해 Midea Group의 상반기 이동형 에어컨 출하량이 전년 대비 두 배 증가한 20만 대를 넘어섰습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "유럽 폭염으로 Midea Group 이동형 에어컨 수요 증가"
+        },
+        {
+          "type": "content",
+          "text": "상반기 출하량 20만 대를 넘어서며 전년 대비 두 배 급증"
+        }
+      ],
+      "source": {
+        "name": "Google News - Midea Global",
+        "url": "https://finance.biggo.com/news/c5f5ae19-aaa4-418a-a92a-8294b3bdcb8c"
+      },
+      "publishedAt": "2026-08-10T18:35:00.000Z",
+      "url": "https://finance.biggo.com/news/c5f5ae19-aaa4-418a-a92a-8294b3bdcb8c",
+      "linkCheckedAt": "2026-08-11T09:49:33.896Z",
+      "image": "https://img.biggo.com/I2CAVlYSFUBEuQhNYITjp56aSQVn_7i-07Md6DQYEHc/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA4L2M1ZjVhZTE5LWFhYTQtNDE4YS1hOTJhLTgyOTRiM2JkY2I4Y18xNzg2Mzk0MTkwX2RlZmF1bHQuanBn.jpg",
+      "imageChecked": true
     },
     {
       "id": 4455,
@@ -1227,6 +1335,62 @@
       "imageChecked": true
     },
     {
+      "id": 4300,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "에어컨",
+        "팬",
+        "신기술",
+        "전력절감"
+      ],
+      "headline": "혹등고래 지느러미 형상 에어컨 팬 개발, 풍량 20% 향상·전력 20% 절감",
+      "summary": "혹등고래 지느러미를 모티브로 한 에어컨 팬이 개발되어 풍량이 20% 높아지고 전력 소비는 20% 감소했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "혹등고래 지느러미를 닮은 에어컨 팬을 개발"
+        },
+        {
+          "type": "content",
+          "text": "풍량을 20% 높이고 전력 소비는 20% 줄임"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.asiae.co.kr/article/2026081009380193822"
+      },
+      "publishedAt": "2026-08-10T03:00:00.000Z",
+      "url": "https://www.asiae.co.kr/article/2026081009380193822",
+      "linkCheckedAt": "2026-08-10T03:06:17.604Z",
+      "image": "assets/img/topics/aircon.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://cphoto.asiae.co.kr/listimglink/1/2026081009361574725_1786322175.jpg",
+      "thumbFace": true,
+      "relatedArticles": [
+        {
+          "id": 4533,
+          "headline": "혹스등 가인 팬 적용 에어컨, 풍량 20%·전력 20% 개선",
+          "url": "https://www.asiae.co.kr/en/article/IT/2026081009380193822",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-10T03:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": 4287,
       "lens": "정책",
       "grade": "주시",
@@ -1270,51 +1434,6 @@
       "linkCheckedAt": "2026-08-10T03:06:17.604Z",
       "image": "https://pimg.mk.co.kr/news/cms/202608/10/news-p.v1.20260810.a92a8350bc694facba5ac57ee154ba9b_R.jpg",
       "imageChecked": true
-    },
-    {
-      "id": 4300,
-      "lens": "기술",
-      "grade": "주요",
-      "impact": 3.5,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "에어컨",
-        "팬",
-        "신기술",
-        "전력절감"
-      ],
-      "headline": "혹등고래 지느러미 형상 에어컨 팬 개발, 풍량 20% 향상·전력 20% 절감",
-      "summary": "혹등고래 지느러미를 모티브로 한 에어컨 팬이 개발되어 풍량이 20% 높아지고 전력 소비는 20% 감소했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "혹등고래 지느러미를 닮은 에어컨 팬을 개발"
-        },
-        {
-          "type": "content",
-          "text": "풍량을 20% 높이고 전력 소비는 20% 줄임"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.asiae.co.kr/article/2026081009380193822"
-      },
-      "publishedAt": "2026-08-10T03:00:00.000Z",
-      "url": "https://www.asiae.co.kr/article/2026081009380193822",
-      "linkCheckedAt": "2026-08-10T03:06:17.604Z",
-      "image": "assets/img/topics/aircon.svg",
-      "imageChecked": true,
-      "imageOriginal": "https://cphoto.asiae.co.kr/listimglink/1/2026081009361574725_1786322175.jpg",
-      "thumbFace": true
     },
     {
       "id": 4288,
@@ -2635,7 +2754,7 @@
       },
       "publishedAt": "2026-08-08T07:50:00.000Z",
       "url": "https://www.etnews.com/20260808000005",
-      "linkCheckedAt": "2026-08-08T08:26:36.510Z",
+      "linkCheckedAt": "2026-08-11T09:49:15.702Z",
       "image": "assets/img/topics/tech.svg",
       "imageChecked": true,
       "imageOriginal": "https://img.etnews.com/news/article/2026/08/07/news-p.v1.20260807.118ad106bb084be1bab1b9d798ba8a54_P1.png",
