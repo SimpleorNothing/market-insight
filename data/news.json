@@ -1,7 +1,50 @@
 {
-  "updatedAt": "2026-08-11T05:49:30.638Z",
+  "updatedAt": "2026-08-11T06:47:46.771Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4503,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "삼성전자",
+        "가전",
+        "배송",
+        "환급"
+      ],
+      "headline": "삼성 가전 판매 급증 속 배송 지연 시 20% 환급",
+      "summary": "삼성 가전 판매가 크게 늘어난 가운데, 배송이 지연될 경우 20%를 환급해주는 제도가 시행됩니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "삼성 가전 판매량 급증으로 배송 지연 발생"
+        },
+        {
+          "type": "content",
+          "text": "배송이 늦어질 경우 20% 환급 혜택 적용"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://v.daum.net/v/20260811152402168"
+      },
+      "publishedAt": "2026-08-11T06:24:02.000Z",
+      "url": "https://v.daum.net/v/20260811152402168",
+      "linkCheckedAt": "2026-08-11T06:44:59.682Z",
+      "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/11/sbscnbc/20260811152402251zdxf.jpg",
+      "imageChecked": true
+    },
     {
       "id": 4488,
       "lens": "기술",
@@ -2617,7 +2660,7 @@
       },
       "publishedAt": "2026-08-08T06:05:00.000Z",
       "url": "https://finance.biggo.com/news/30a6f230-8ef6-4b40-b2bc-8b79923cf755",
-      "linkCheckedAt": "2026-08-08T06:32:17.807Z",
+      "linkCheckedAt": "2026-08-11T06:44:39.822Z",
       "image": "https://img.biggo.com/ZD8L3ZIj_yYFfmAddTCwJlMcmR9ywz5ZOjzLeLqnHOc/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA4LzMwYTZmMjMwLThlZjYtNGI0MC1iMmJjLThiNzk5MjNjZjc1NV8xNzg2MTY5NDY1X2RlZmF1bHQuanBn.jpg",
       "imageChecked": true
     },
@@ -3642,15 +3685,15 @@
       "imageChecked": true
     },
     {
-      "id": 4496,
+      "id": 4509,
       "lens": "경쟁사",
       "grade": "주시",
-      "impact": 3,
+      "impact": 3.1,
       "factors": {
         "salesRelevance": 3,
         "timeUrgency": 2,
         "marketSize": 4,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [],
       "competitors": [
@@ -3659,7 +3702,6 @@
       "tags": [
         "EU",
         "M&A",
-        "유럽시장",
         "Electrolux"
       ],
       "headline": "EU, 유럽 시장 영향 제한적인 다국적 가전 거래 승인",
@@ -3667,26 +3709,22 @@
       "summaryPoints": [
         {
           "type": "content",
-          "text": "EU 집행위원회는 유럽 시장에 미치는 영향이 제한적인 다국적 가전 거래를 승인함"
-        },
-        {
-          "type": "content",
-          "text": "이번 승인으로 관련 가전 기업들의 다국적 기업 간 거래가 진행될 예정임"
+          "text": "EU가 유럽 가전 시장 영향이 제한적인 다국적 가전 거래를 승인함"
         }
       ],
       "source": {
         "name": "Google News - Electrolux",
-        "url": "https://www.brusselstimes.com/eu-affairs/2261108/eu-clears-multi-country-appliance-deal-with-limited-impact-on-european-market"
+        "url": "https://www.brusselstimes.com/2261108/eu-clears-multi-country-appliance-deal-with-limited-impact-on-european-market"
       },
       "publishedAt": "2026-08-07T00:23:57.000Z",
-      "url": "https://www.brusselstimes.com/eu-affairs/2261108/eu-clears-multi-country-appliance-deal-with-limited-impact-on-european-market",
-      "linkCheckedAt": "2026-08-11T05:46:45.398Z",
+      "url": "https://www.brusselstimes.com/2261108/eu-clears-multi-country-appliance-deal-with-limited-impact-on-european-market",
+      "linkCheckedAt": "2026-08-11T06:44:59.682Z",
       "image": null,
       "relatedArticles": [
         {
-          "id": 4446,
-          "headline": "EU, 유럽 시장 영향 제한적인 다국가 가전 인수합병 승인",
-          "url": "https://www.brusselstimes.com/2261108/eu-clears-multi-country-appliance-deal-with-limited-impact-on-european-market",
+          "id": 4496,
+          "headline": "EU, 유럽 시장 영향 제한적인 다국적 가전 거래 승인",
+          "url": "https://www.brusselstimes.com/eu-affairs/2261108/eu-clears-multi-country-appliance-deal-with-limited-impact-on-european-market",
           "source": {
             "name": "Google News - Electrolux"
           },
@@ -7309,47 +7347,6 @@
       "linkCheckedAt": "2026-08-10T18:40:40.975Z",
       "image": "https://cdn.consumerwide.com/news/photo/202608/66651_82731_5734.png",
       "imageChecked": true
-    },
-    {
-      "id": 4480,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.4,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "월풀"
-      ],
-      "tags": [
-        "실적",
-        "월풀",
-        "북미시장"
-      ],
-      "headline": "월풀, 2분기 판매량 감소 및 비용 압박으로 실적 부진",
-      "summary": "월풀이 판매량 감소와 비용 압박 요인으로 인해 2분기 실적 부진을 기록했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "월풀의 2분기 실적이 예상치에 미치지 못함"
-        },
-        {
-          "type": "content",
-          "text": "판매량 감소와 비용 압박이 실적 부진의 주요 원인으로 작용"
-        }
-      ],
-      "source": {
-        "name": "Google News - Whirlpool",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpools-q2-earnings-miss-lower-164000435.html"
-      },
-      "publishedAt": "2026-08-04T16:40:00.000Z",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpools-q2-earnings-miss-lower-164000435.html",
-      "linkCheckedAt": "2026-08-11T04:18:04.259Z",
-      "image": null
     },
     {
       "id": 3450,
