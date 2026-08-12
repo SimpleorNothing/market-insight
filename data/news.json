@@ -1,7 +1,152 @@
 {
-  "updatedAt": "2026-08-12T05:26:18.263Z",
+  "updatedAt": "2026-08-12T07:08:47.668Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4633,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "HVAC",
+        "공조",
+        "신공장",
+        "투자"
+      ],
+      "headline": "삼성전자, 광주 HVAC 신공장 내달 착공…중앙공조 국산화",
+      "summary": "삼성전자가 지난해 인수한 플랙트그룹의 해외 HVAC 생산 물량을 광주로 전환하고 내달 신공장 착공식을 추진합니다. AIDC 투자 활성화에 맞춰 중앙공조 및 정밀냉각 장비를 국내에서 직접 생산해 대응할 계획입니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "플랙트그룹의 해외 HVAC 생산 물량을 광주로 전환 추진"
+        },
+        {
+          "type": "content",
+          "text": "AIDC 맞춤형 중앙공조·정밀냉각 장비 국내 직접 생산 계획"
+        },
+        {
+          "type": "content",
+          "text": "이달 신공장 건축허가를 마치고 다음 달 착공식 조율 중"
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260812000304"
+      },
+      "publishedAt": "2026-08-12T07:00:00.000Z",
+      "url": "https://www.etnews.com/20260812000304",
+      "linkCheckedAt": "2026-08-12T07:06:14.260Z",
+      "image": "https://img.etnews.com/news/article/2026/08/10/news-p.v1.20260810.cc06b5d5bbb14344aa9c00902d0b2087_P1.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 4640,
+      "lens": "정책",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [],
+      "tags": [
+        "히트펌프",
+        "재생에너지",
+        "유연성자원",
+        "HVAC"
+      ],
+      "headline": "히트펌프, 재생에너지 연계 유연성 자원으로 부각",
+      "summary": "히트펌프가 재생에너지 확대에 대응한 전력망 유연성 자원으로 주목받으며 재생에너지 공급이 풍부할 때 가동하는 방식으로 전환이 요구되고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "히트펌프를 전력망의 유연성 자원으로 활용해야 한다는 의견 제기"
+        },
+        {
+          "type": "content",
+          "text": "재생에너지 공급이 풍부한 시점에 가동하는 운영 방식 필요"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.electimes.com/news/articleView.html?idxno=371232"
+      },
+      "publishedAt": "2026-08-12T06:24:50.000Z",
+      "url": "https://www.electimes.com/news/articleView.html?idxno=371232",
+      "linkCheckedAt": "2026-08-12T07:06:14.260Z",
+      "image": "https://cdn.electimes.com/news/thumbnail/202608/371232_584034_936_v150.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4336,
+          "headline": "히트펌프, 산업부문 에너지 전환 핵심수단으로 부상",
+          "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=202121",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-10T08:32:30.000Z"
+        }
+      ]
+    },
+    {
+      "id": 4642,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "월풀"
+      ],
+      "tags": [
+        "월풀",
+        "실적",
+        "마진",
+        "북미"
+      ],
+      "headline": "월풀, 수요 부진 속 2분기 마진 개선 배경 분석",
+      "summary": "수요 부진 환경 속에서 월풀의 2분기 마진이 개선됨에 따라 향후 투자 관점이 변화할 가능성이 제기되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "수요 부진 속 월풀 2분기 마진 개선 기록"
+        },
+        {
+          "type": "content",
+          "text": "향후 투자 관점 및 실적 배경 변화 주목"
+        }
+      ],
+      "source": {
+        "name": "Google News - Whirlpool",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/bull-case-whirlpool-whr-could-043909919.html"
+      },
+      "publishedAt": "2026-08-12T04:39:09.000Z",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/bull-case-whirlpool-whr-could-043909919.html",
+      "linkCheckedAt": "2026-08-12T07:06:14.260Z",
+      "image": null
+    },
     {
       "id": 4632,
       "lens": "경쟁사",
@@ -873,6 +1018,48 @@
       "linkCheckedAt": "2026-08-11T05:46:45.398Z",
       "image": "https://pimg.mk.co.kr/news/cms/202608/11/news-p.v1.20260811.860cdde9cfc54f52b3a1ca45e4c8f8a0_R.png",
       "imageChecked": true
+    },
+    {
+      "id": 4645,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Haier"
+      ],
+      "tags": [
+        "인사동향",
+        "유통",
+        "디지털",
+        "하이얼"
+      ],
+      "headline": "하이얼 유럽, 영국·아일랜드 디지털 옴니채널 디렉터 영입",
+      "summary": "하이얼 유럽이 영국 및 아일랜드 시장의 디지털 옴니채널 강화를 위해 전 더 베리 그룹 임원인 벤 데이비슨을 신임 디렉터로 영입했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "더 베리 그룹 출신 벤 데이비슨이 하이얼 유럽에 합류"
+        },
+        {
+          "type": "content",
+          "text": "영국 및 아일랜드 지역의 디지털 옴니채널 디렉터로 임명"
+        }
+      ],
+      "source": {
+        "name": "Google News - Haier Gree Hisense",
+        "url": "https://retailtechinnovationhub.com/home/2026/8/10/former-the-very-group-executive-ben-davidson-joins-haier-europe-as-digital-and-omnichannel-director-ukandi"
+      },
+      "publishedAt": "2026-08-11T04:40:23.000Z",
+      "url": "https://retailtechinnovationhub.com/home/2026/8/10/former-the-very-group-executive-ben-davidson-joins-haier-europe-as-digital-and-omnichannel-director-ukandi",
+      "linkCheckedAt": "2026-08-12T07:06:14.260Z",
+      "image": null
     },
     {
       "id": 4491,
@@ -1755,45 +1942,6 @@
           "publishedAt": "2026-08-10T09:13:00.000Z"
         }
       ]
-    },
-    {
-      "id": 4336,
-      "lens": "정책",
-      "grade": "주시",
-      "impact": 3,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [
-        "HVAC"
-      ],
-      "competitors": [],
-      "tags": [
-        "히트펌프",
-        "에너지전환",
-        "산업부문",
-        "HVAC"
-      ],
-      "headline": "히트펌프, 산업부문 에너지 전환 핵심수단으로 부상",
-      "summary": "히트펌프가 산업부문의 에너지 전환을 위한 핵심 수단으로 부상하며 관련 정책 및 도입 필요성이 조명받고 있습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "히트펌프가 산업부문 에너지 전환의 핵심 수단으로 부상함"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=202121"
-      },
-      "publishedAt": "2026-08-10T08:32:30.000Z",
-      "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=202121",
-      "linkCheckedAt": "2026-08-10T09:06:35.581Z",
-      "image": "https://cdn.energydaily.co.kr/news/photo/202608/202121_201837_3221.jpg",
-      "imageChecked": true
     },
     {
       "id": 4611,
@@ -2949,7 +3097,7 @@
       },
       "publishedAt": "2026-08-09T03:04:51.000Z",
       "url": "https://v.daum.net/v/20260809120451248",
-      "linkCheckedAt": "2026-08-09T04:12:47.429Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/09/ZDNetKorea/20260809120452755admc.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -5533,7 +5681,7 @@
       },
       "publishedAt": "2026-08-06T02:46:00.000Z",
       "url": "https://www.bangkokpost.com/thailand/pr/3297457/lg-marks-38-years-in-thailand-launches-make-it-yours-make-it-easy-campaign",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": "https://static.bangkokpost.com/media/content/20260806/c1_3297457_700.jpg",
       "imageChecked": true
     },
@@ -5575,7 +5723,7 @@
       },
       "publishedAt": "2026-08-06T01:46:07.000Z",
       "url": "https://www.latintimes.com/mexico-thrives-under-usmca-while-brazil-absorbs-double-us-tariffs-598443",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": "https://d.latintimes.com/en/full/590241/us-economy-tariffs.jpg",
       "imageChecked": true
     },
@@ -5658,7 +5806,7 @@
       },
       "publishedAt": "2026-08-05T23:48:45.000Z",
       "url": "https://www.tikr.com/blog/whirlpool-stock-drops-wider-loss-guidance-cut",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": "https://res.cloudinary.com/tikr/images/w_600,h_400,c_scale/f_webp,q_auto/v1785848685/images/WHR-stock_12172231dc7/WHR-stock_12172231dc7.png?_i=AA",
       "imageChecked": true
     },
@@ -7904,7 +8052,7 @@
       },
       "publishedAt": "2026-08-04T21:45:00.000Z",
       "url": "https://www.news1.kr/industry/general-industry/6248912",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": null,
       "relatedArticles": [
         {
@@ -9670,7 +9818,7 @@
       },
       "publishedAt": "2026-08-03T20:18:28.000Z",
       "url": "https://seekingalpha.com/news/4623884-whirlpool-falls-after-posting-a-surprise-q2-loss",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": null,
       "relatedArticles": [
         {
@@ -10557,7 +10705,7 @@
       },
       "publishedAt": "2026-08-03T01:05:46.000Z",
       "url": "http://www.ksdaily.co.kr/news/articleView.html?idxno=110357",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": null
     },
     {
@@ -10596,7 +10744,7 @@
       },
       "publishedAt": "2026-08-03T01:03:15.000Z",
       "url": "https://mb.com.ph/2026/08/03/lg-instaview-refrigerator-surprises-53-million-in-global-sales",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": "https://mb.com.ph/manilabulletin/uploads/images/2026/08/03/120566.webp",
       "imageChecked": true
     },
@@ -10969,6 +11117,45 @@
           "publishedAt": "2026-08-04T01:27:03.000Z"
         }
       ]
+    },
+    {
+      "id": 4644,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.1,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 1,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "미디어",
+        "디자인상",
+        "IFA2025",
+        "레드닷"
+      ],
+      "headline": "아이데틱, 미디어 IFA 2025 전시관으로 레드닷 디자인 본상 수상",
+      "summary": "아이데틱이 디자인한 미디어의 IFA 2025 전시관이 2026 레드닷 디자인 본상을 수상했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "아이데틱이 미디어의 IFA 2025 전시관으로 2026 레드닷 디자인 본상을 수상"
+        }
+      ],
+      "source": {
+        "name": "Google News - Midea/KUKA KR",
+        "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=02269766645543712"
+      },
+      "publishedAt": "2026-08-03T00:00:03.000Z",
+      "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=02269766645543712",
+      "linkCheckedAt": "2026-08-12T07:06:14.260Z",
+      "image": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26080300225.jpg",
+      "imageChecked": true
     },
     {
       "id": 3147,
@@ -13040,7 +13227,7 @@
       },
       "publishedAt": "2026-07-31T02:13:46.000Z",
       "url": "https://www.digitimes.com/news/a20260731VL202/lg-electronics-robotics-infrastructure-lg-sales.html",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "image": "https://img.digitimes.com/newsshow/20260731vl202_files/1_b.jpg",
       "imageChecked": true
     },
@@ -35810,7 +35997,7 @@
       "publishedAt": "2026-07-05T15:37:57.000Z",
       "url": "https://www.chosun.com/economy/industry-company/2026/07/06/OEPBHZEWJJFVJPQUTLRG5KCMSY/",
       "image": "https://www.chosun.com/resizer/v2/B7WCMRE7EFC4JGT3I2QJYQOERM.jpg?auth=52931044a29de37165310c81bb6db690e8a89fd12dcdf537b4bfd983a771aca8&width=667&height=350&smart=true",
-      "linkCheckedAt": "2026-08-09T04:12:01.379Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "imageChecked": true
     },
     {
@@ -35855,7 +36042,7 @@
       "publishedAt": "2026-07-05T15:30:00.000Z",
       "url": "https://www.donga.com/news/Economy/article/all/20260705/134239700/2",
       "image": "https://image.donga.com/pc/2022/images/common/donga_icon.jpg",
-      "linkCheckedAt": "2026-08-09T04:12:01.379Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "imageChecked": true
     },
     {
@@ -35899,7 +36086,7 @@
       "publishedAt": "2026-07-05T15:28:00.000Z",
       "url": "https://www.kmib.co.kr/article/view.asp?arcid=1783221998",
       "image": "https://image.kmib.co.kr/online_image/2026/0706/2026070522290740232_1783261941_1783221998.jpg",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "relatedArticles": [
         {
           "id": 1420,
@@ -35959,7 +36146,7 @@
       "publishedAt": "2026-07-05T13:22:00.000Z",
       "url": "https://www.marketscreener.com/news/whirlpool-q1-2026-whirlpool-corporation-earnings-conference-call-presentation-ce7f58d3d188f724",
       "image": null,
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z"
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z"
     },
     {
       "id": 1388,
@@ -35989,7 +36176,7 @@
       "publishedAt": "2026-07-05T12:40:38.000Z",
       "url": "https://www.mk.co.kr/news/economy/12090800",
       "image": "https://pimg.mk.co.kr/news/cms/202607/05/news-p.v1.20260705.2e8398300ac149398dc065638501f4a2_R.jpg",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "imageChecked": true
     },
     {
@@ -36038,7 +36225,7 @@
       "publishedAt": "2026-07-05T12:28:56.000Z",
       "url": "https://enterpriseai.economictimes.indiatimes.com/amp/news/industry/ai-creating-new-consumer-demands-biz-opportunities-beyond-productivity-gains-bosch-global-software-technologies-ceo/132195771",
       "image": "https://etimg.etb2bimg.com/thumb/msid-132195771,imgsize-1072545,width-1200,height=627,overlay-etenterpriseai,resizemode-75/news/industry/ai-creating-new-consumer-demands-biz-opportunities-beyond-productivity-gains-bosch-global-software-technologies-ceo.jpg",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "imageChecked": true
     },
     {
@@ -36072,7 +36259,7 @@
       "publishedAt": "2026-07-05T10:00:00.000Z",
       "url": "https://www.realsimple.com/is-it-safe-to-leave-your-dryer-running-while-you-are-out-12008129",
       "image": null,
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z"
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z"
     },
     {
       "id": 1409,
@@ -36113,7 +36300,7 @@
       "publishedAt": "2026-07-05T09:20:16.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-leans-on-its-appliance-franchise-investors-await-the-next/69695063",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2405046_1200_800.webp",
-      "linkCheckedAt": "2026-08-09T05:39:45.648Z",
+      "linkCheckedAt": "2026-08-12T07:05:52.304Z",
       "imageChecked": true
     },
     {
