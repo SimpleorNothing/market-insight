@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T17:51:55.776Z",
+  "updatedAt": "2026-08-13T18:49:17.456Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -55,8 +55,58 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-13T15:30:00.000Z"
+        },
+        {
+          "id": 4811,
+          "headline": "삼성전자, 신규 생산라인 준공으로 인도 및 아태 지역 공급 거점 확보",
+          "url": "https://elec4.co.kr/contents/article_detail?article_idx=37930",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-13T18:05:55.000Z"
         }
       ]
+    },
+    {
+      "id": 4820,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "통상정책",
+        "멕시코",
+        "공급망"
+      ],
+      "headline": "미국 경제 의존도에 대한 멕시코의 통상·경제 과제 점검",
+      "summary": "멕시코 셰인바움 정부가 USMCA 협정과 미국 경제 중심의 전략을 넘어 다각화 필요성에 직면했다는 분석이 제기되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "USMCA 협정 및 미국 경제에만 과도하게 의존할 수 없는 구조적 배경 분석"
+        },
+        {
+          "type": "content",
+          "text": "멕시코 셰인바움 정부의 대외 경제 전략 다각화 필요성 제기"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://mexicosolidarity.com/beyond-the-usmca/"
+      },
+      "publishedAt": "2026-08-13T15:58:46.000Z",
+      "url": "https://mexicosolidarity.com/beyond-the-usmca/",
+      "linkCheckedAt": "2026-08-13T18:46:56.088Z",
+      "image": "https://mexicosolidarity.com/wp-content/uploads/2026/08/beyond-the-usmca-sm-1.jpg",
+      "imageChecked": true
     },
     {
       "id": 4806,
@@ -728,6 +778,77 @@
       "imageChecked": true
     },
     {
+      "id": 4817,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.7,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "관세",
+        "미국",
+        "중국",
+        "공급망"
+      ],
+      "headline": "미국, 한국 포함 40여개국의 중국산 우회 관세 회피 지적",
+      "summary": "미국 정부가 한국을 포함한 40여개국을 통해 중국산 제품이 관세를 회피하고 있다고 지적했습니다. 통상 및 공급망 규제 강화에 따른 영향이 주목됩니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국이 한국을 포함한 40여개국을 통한 중국산 관세 회피 거론"
+        },
+        {
+          "type": "content",
+          "text": "중국산 제품의 우회 수출 및 관세 회피 문제 제기"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://news.nate.com/view/20260813n34663"
+      },
+      "publishedAt": "2026-08-13T11:05:00.000Z",
+      "url": "https://news.nate.com/view/20260813n34663",
+      "linkCheckedAt": "2026-08-13T18:46:56.088Z",
+      "image": "https://thumbnews.nateimg.co.kr/view610///news.nateimg.co.kr/orgImg/ht/2026/08/13/A202608130711_1.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4783,
+          "headline": "미국, 40여개국 통한 중국산 상품 불법 관세회피 지적... 한국도 거론",
+          "url": "https://news.nate.com/view/20260813n34317",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-13T10:48:00.000Z"
+        },
+        {
+          "id": 4793,
+          "headline": "미국, 한국 포함 40여개국의 중국산 관세 우회 지적",
+          "url": "https://m.wowtv.co.kr/NewsCenter/AMP/Read?articleId=A202608130711",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-13T11:04:00.000Z"
+        },
+        {
+          "id": 4810,
+          "headline": "미국, 한국 포함 40여개국의 중국산 불법 관세회피 지적",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260813166400009",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-13T10:47:35.000Z"
+        }
+      ]
+    },
+    {
       "id": 4763,
       "lens": "정책",
       "grade": "주요",
@@ -767,76 +888,6 @@
       "linkCheckedAt": "2026-08-13T11:38:37.288Z",
       "image": "https://static.mk.co.kr/facebook_mknews.jpg",
       "imageChecked": true
-    },
-    {
-      "id": 4810,
-      "lens": "정책",
-      "grade": "긴급",
-      "impact": 4.6,
-      "factors": {
-        "salesRelevance": 5,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "통상정책",
-        "관세회피",
-        "중국산",
-        "미국"
-      ],
-      "headline": "미국, 한국 포함 40여개국의 중국산 불법 관세회피 지적",
-      "summary": "미국 정부가 한국을 포함한 40여개국을 통해 중국산 상품이 불법적으로 관세를 회피하고 있다고 발표했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "미국이 40여개국을 통한 중국산 상품의 불법 관세회피 지적"
-        },
-        {
-          "type": "content",
-          "text": "한국도 우회 수출 및 관세회피 국가 중 하나로 거론됨"
-        }
-      ],
-      "source": {
-        "name": "Google News - 통상·관세 정책 KR",
-        "url": "https://www.yna.co.kr/amp/view/AKR20260813166400009"
-      },
-      "publishedAt": "2026-08-13T10:47:35.000Z",
-      "url": "https://www.yna.co.kr/amp/view/AKR20260813166400009",
-      "linkCheckedAt": "2026-08-13T17:48:52.382Z",
-      "image": "https://img4.yna.co.kr/photo/cms/2019/09/03/81/PCM20190903000081990_P4.jpg",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 4783,
-          "headline": "미국, 40여개국 통한 중국산 상품 불법 관세회피 지적... 한국도 거론",
-          "url": "https://news.nate.com/view/20260813n34317",
-          "source": {
-            "name": "Google News - 통상·관세 정책 KR"
-          },
-          "publishedAt": "2026-08-13T10:48:00.000Z"
-        },
-        {
-          "id": 4793,
-          "headline": "미국, 한국 포함 40여개국의 중국산 관세 우회 지적",
-          "url": "https://m.wowtv.co.kr/NewsCenter/AMP/Read?articleId=A202608130711",
-          "source": {
-            "name": "Google News - 통상·관세 정책 KR"
-          },
-          "publishedAt": "2026-08-13T11:04:00.000Z"
-        },
-        {
-          "id": 4812,
-          "headline": "미국, 중국산 우회 관세 회피 지적에 한국 거론",
-          "url": "https://news.nate.com/view/20260813n34663",
-          "source": {
-            "name": "Google News - 통상·관세 정책 KR"
-          },
-          "publishedAt": "2026-08-13T11:05:00.000Z"
-        }
-      ]
     },
     {
       "id": 4759,
@@ -6790,7 +6841,7 @@
       },
       "publishedAt": "2026-08-07T18:05:53.000Z",
       "url": "https://www.designnews.com/semiconductors-chips/your-next-ge-washer-may-contain-ti-parts",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": null,
       "relatedArticles": [
         {
@@ -11114,7 +11165,7 @@
       },
       "publishedAt": "2026-08-04T16:46:22.000Z",
       "url": "https://www.consumerwide.com/news/articleViewAmp.html?idxno=66651",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://cdn.consumerwide.com/news/photo/202608/66651_82731_5734.png",
       "imageChecked": true
     },
@@ -11191,7 +11242,7 @@
       },
       "publishedAt": "2026-08-04T16:07:46.000Z",
       "url": "https://mexicobusiness.news/trade-and-investment/news/25-states-sue-trump-administration-over-new-tariffs",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/kelly-sikkema-6406RHVquFs-unsplash.jpg?h=eeecee23&itok=z_PBWo1J",
       "imageChecked": true
     },
@@ -11229,7 +11280,7 @@
       },
       "publishedAt": "2026-08-04T15:24:33.000Z",
       "url": "https://mexico-now.com/camimex-mining-should-be-included-in-the-usmca/",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://mexico-now.com/wp-content/uploads/2026/08/Mineria-y-economia-1024x576-1.jpg",
       "imageChecked": true
     },
@@ -11310,7 +11361,7 @@
       },
       "publishedAt": "2026-08-04T14:03:20.000Z",
       "url": "https://www.personalcareinsights.com/news/canada-us-cosmetics-tariff-usmca.html",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639214486856788005The_Canada_and_US_flag_next_to_each_other..jpg"
     },
     {
@@ -11451,7 +11502,7 @@
       },
       "publishedAt": "2026-08-04T12:46:13.000Z",
       "url": "https://sokodirectory.com/2026/08/30-growth-expected-in-on-premise-laundry-market/amp/",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://sokodirectory.com/wp-content/uploads/2026/08/Laundry.jpg",
       "imageChecked": true
     },
@@ -18440,7 +18491,7 @@
       },
       "publishedAt": "2026-07-29T15:49:08.000Z",
       "url": "https://qz.com/best-energy-efficient-dishwashers-consumer-reports",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://qz.com/cdn-cgi/image/width=1200,quality=85,format=auto/https://assets.qz.com/media/pexels-castorlystock-3829549-300x200.jpg",
       "imageChecked": true
     },
@@ -18531,7 +18582,7 @@
       },
       "publishedAt": "2026-07-29T15:30:00.000Z",
       "url": "https://www.donga.com/news/Economy/article/all/20260729/134389995/2",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/07/30/134391743.1.jpg",
       "imageChecked": true
     },
@@ -19380,7 +19431,7 @@
       },
       "publishedAt": "2026-07-29T02:19:28.000Z",
       "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4097688",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://cdn.news.bbsi.co.kr/news/thumbnail/202607/4097688_750851_820_v150.jpg",
@@ -22524,7 +22575,7 @@
       },
       "publishedAt": "2026-07-26T15:00:00.000Z",
       "url": "https://www.fntimes.com/html/view.php?ud=202607242152314370dd55077bc2_18",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "assets/img/topics/news.svg",
       "imageChecked": true,
       "imageOriginal": "https://cfnimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&idx=999&simg=20260724215305012630dd55077bc212411124362.jpg&nmt=18",
@@ -25645,7 +25696,7 @@
       },
       "publishedAt": "2026-07-23T13:45:58.000Z",
       "url": "https://www.marketbeat.com/instant-alerts/stifel-nicolaus-has-lowered-expectations-for-whirlpool-nysewhr-stock-price-2026-07-23/",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://www.marketbeat.com/logos/whirlpool-co-logo-1200x675.jpg?v=20240426082740",
       "imageChecked": true
     },
@@ -25727,7 +25778,7 @@
       },
       "publishedAt": "2026-07-23T13:16:01.000Z",
       "url": "https://www.mk.co.kr/news/economy/12106036",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260708.b0c42cffc5af4ee9ac988467868e4d1f_R.png",
       "imageChecked": true
     },
@@ -25768,7 +25819,7 @@
       },
       "publishedAt": "2026-07-23T12:55:03.000Z",
       "url": "https://www.mk.co.kr/news/world/12106016",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/23/news-p.v1.20260611.7f70d031df9543fe8ab386d724faf363_R.png",
       "imageChecked": true
     },
@@ -26042,7 +26093,7 @@
       },
       "publishedAt": "2026-07-23T06:05:23.000Z",
       "url": "https://impakter.com/trump-administration-to-cut-federal-energy-efficiency-programs/",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": null
     },
     {
@@ -27069,7 +27120,7 @@
       },
       "publishedAt": "2026-07-22T14:57:25.000Z",
       "url": "https://www.tikr.com/blog/trane-technologies-stock-erased-most-of-a-20-drawdown-its-backlog-may-explain-why",
-      "linkCheckedAt": "2026-08-10T18:40:40.975Z",
+      "linkCheckedAt": "2026-08-13T18:46:14.458Z",
       "image": "https://res.cloudinary.com/tikr/images/w_600,h_360,c_scale/f_webp,q_auto/v1784706216/images/FEATURED-IMAGE-MAKER-1123/FEATURED-IMAGE-MAKER-1123.png?_i=AA",
       "imageChecked": true,
       "relatedArticles": [
