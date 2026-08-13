@@ -1,17 +1,17 @@
 {
-  "updatedAt": "2026-08-13T15:51:45.147Z",
+  "updatedAt": "2026-08-13T16:50:10.111Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 4788,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.4,
+      "id": 4800,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4,
       "factors": {
         "salesRelevance": 4,
-        "timeUrgency": 2,
-        "marketSize": 4,
-        "sourceReliability": 3
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 4
       },
       "products": [
         "HVAC"
@@ -20,29 +20,188 @@
         "삼성전자"
       ],
       "tags": [
-        "삼성전자",
-        "냉난방공조",
-        "인도",
         "HVAC",
-        "생산라인"
+        "인도",
+        "생산라인",
+        "AI냉난방공조"
       ],
-      "headline": "삼성전자, 인도에 냉난방공조 생산라인 준공",
-      "summary": "삼성전자가 인도 현지에 냉난방공조 생산라인을 준공하며 공조 사업 확대를 본격화했습니다.",
+      "headline": "삼성전자, 인도에 AI 냉난방공조 생산라인 구축",
+      "summary": "삼성전자가 급성장하는 AI 냉난방공조 시장 공략을 위해 인도에 새로운 생산라인을 구축하며 인프라 확대에 나섰다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "삼성전자가 인도에 냉난방공조 생산라인을 준공함"
+          "text": "삼성전자, 인도에 AI 냉난방공조 생산라인 구축"
+        },
+        {
+          "type": "content",
+          "text": "AI 냉난방공조 인프라 선점을 위한 생산 거점 확대"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://www.donga.com/news/Economy/article/all/20260813/134475279/2"
+        "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/14/20260814029004"
       },
-      "publishedAt": "2026-08-13T15:30:00.000Z",
-      "url": "https://www.donga.com/news/Economy/article/all/20260813/134475279/2",
-      "linkCheckedAt": "2026-08-13T15:49:04.381Z",
-      "image": "https://image.donga.com/pc/2022/images/common/donga_default_img.png",
-      "imageChecked": true
+      "publishedAt": "2026-08-13T16:19:57.000Z",
+      "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/14/20260814029004",
+      "linkCheckedAt": "2026-08-13T16:44:00.921Z",
+      "image": "https://img.seoul.co.kr//img/upload/2026/08/13/SSC_20260813175159_O2.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4788,
+          "headline": "삼성전자, 인도에 냉난방공조 생산라인 준공",
+          "url": "https://www.donga.com/news/Economy/article/all/20260813/134475279/2",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-13T15:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 4806,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "USMCA",
+        "무역협정",
+        "관세",
+        "멕시코",
+        "미국"
+      ],
+      "headline": "멕시코, USMCA 협상서 자동차 관세 인하 촉구",
+      "summary": "WSJ 보도에 따르면 멕시코는 USMCA 협상이 진행되는 가운데 자동차 관세 인하를 추진하고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "멕시코는 USMCA 협상 과정에서 자동차 관세 인하를 촉구함"
+        },
+        {
+          "type": "content",
+          "text": "WSJ 보도를 통해 관련 협상 진행 상황이 전해짐"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.cbtnews.com/mexicos-new-tariff-proposal/"
+      },
+      "publishedAt": "2026-08-13T15:07:51.000Z",
+      "url": "https://www.cbtnews.com/mexicos-new-tariff-proposal/",
+      "linkCheckedAt": "2026-08-13T16:44:00.921Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://d9s1543upwp3n.cloudfront.net/wp-content/uploads/2026/08/USMCA-talks-8.13.26-.webp",
+      "thumbFace": true,
+      "relatedArticles": [
+        {
+          "id": 4754,
+          "headline": "멕시코, 자동차 관세 인하 역제안…USMCA 개정 협상 돌입",
+          "url": "https://www.newspim.com/news/view/20260813000988",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-13T06:25:00.000Z"
+        },
+        {
+          "id": 4796,
+          "headline": "멕시코, USMCA 검토 회담서 북미 자동차 관세 인하 요구",
+          "url": "https://finance.biggo.com/news/6ef4925b-c167-4ee4-9110-a64c19cb4cf1",
+          "source": {
+            "name": "Google News - US Trade Policy"
+          },
+          "publishedAt": "2026-08-13T03:36:00.000Z"
+        },
+        {
+          "id": 4795,
+          "headline": "멕시코, USMCA 협상에서 자동차 관세 인하 촉구",
+          "url": "https://qz.com/mexico-auto-tariffs-usmca-trade-talks-081326",
+          "source": {
+            "name": "Google News - US Trade Policy"
+          },
+          "publishedAt": "2026-08-13T13:37:44.000Z"
+        }
+      ]
+    },
+    {
+      "id": 4801,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "실적",
+        "LG전자",
+        "매출",
+        "영업이익"
+      ],
+      "headline": "LG전자 1분기 순이익 27.2% 증가… 매출 및 EBITDA 동반 상승",
+      "summary": "LG전자의 1분기 순이익이 전년 대비 27.2% 증가한 652억 9000만 루피를 기록했으며, 매출과 EBITDA도 함께 상승했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "1분기 순이익 652억 9000만 루피로 27.2% 증가"
+        },
+        {
+          "type": "content",
+          "text": "매출과 EBITDA 모두 상승세 기록"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.outlookbusiness.com/amp/story/corporate/lg-electronics-q1-results-profit-rises-272-to-6529-cr-revenue-ebitda-also-up"
+      },
+      "publishedAt": "2026-08-13T14:26:12.000Z",
+      "url": "https://www.outlookbusiness.com/amp/story/corporate/lg-electronics-q1-results-profit-rises-272-to-6529-cr-revenue-ebitda-also-up",
+      "linkCheckedAt": "2026-08-13T16:44:00.921Z",
+      "image": "https://media.assettype.com/outlookbusiness/2026-08-13/k3r151kl/IMAGE_1673961999.webp?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4790,
+          "headline": "LG전자 Q1 순이익 652.9억 루피, 전년비 27.2% 증가",
+          "url": "https://www.outlookbusiness.com/corporate/lg-electronics-q1-results-profit-rises-272-to-6529-cr-revenue-ebitda-also-up",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-13T14:26:12.000Z"
+        },
+        {
+          "id": 4779,
+          "headline": "LG전자 인도법인 Q1 매출 15% 증가·순이익 653억 루피",
+          "url": "https://m.economictimes.com/markets/stocks/earnings/lg-electronics-india-q1-results-pat-rises-marginally-to-rs-653-crore-revenue-up-15/articleshow/133212601.cms",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-13T12:53:37.000Z"
+        },
+        {
+          "id": 4808,
+          "headline": "LG전자 인도 법인, 여름철 가전 호조로 분기 순이익 증가",
+          "url": "https://sg.news.yahoo.com/lg-electronics-indias-quarterly-profit-120313908.html",
+          "source": {
+            "name": "Google News - Appliance Consumer & Retail US"
+          },
+          "publishedAt": "2026-08-13T12:03:13.000Z"
+        }
+      ]
     },
     {
       "id": 4774,
@@ -125,64 +284,6 @@
       "linkCheckedAt": "2026-08-13T15:49:04.381Z",
       "image": "https://images.mlssoccer.com/image/private/t_editorial_landscape_3_4_desktop/mls-clt/bayckrmogmrm6eyhwakp.jpg",
       "imageChecked": true
-    },
-    {
-      "id": 4795,
-      "lens": "정책",
-      "grade": "주요",
-      "impact": 4,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 5,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "통상",
-        "USMCA",
-        "관세",
-        "멕시코",
-        "무역협정"
-      ],
-      "headline": "멕시코, USMCA 협상에서 자동차 관세 인하 촉구",
-      "summary": "멕시코가 USMCA 협상 과정에서 자동차 관세 인하를 적극 요구하고 나섰습니다. 북미 지역 공급망과 무역 정책 변화에 영향을 미칠 전망입니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "멕시코가 USMCA 협상에서 자동차 관세 인하를 추진함"
-        }
-      ],
-      "source": {
-        "name": "Google News - US Trade Policy",
-        "url": "https://qz.com/mexico-auto-tariffs-usmca-trade-talks-081326"
-      },
-      "publishedAt": "2026-08-13T13:37:44.000Z",
-      "url": "https://qz.com/mexico-auto-tariffs-usmca-trade-talks-081326",
-      "linkCheckedAt": "2026-08-13T15:49:04.381Z",
-      "image": "https://qz.com/cdn-cgi/image/width=1200,quality=85,format=auto/https://assets.qz.com/media/GettyImages-187684353-300x200.jpg",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 4754,
-          "headline": "멕시코, 자동차 관세 인하 역제안…USMCA 개정 협상 돌입",
-          "url": "https://www.newspim.com/news/view/20260813000988",
-          "source": {
-            "name": "Google News - 통상·관세 정책 KR"
-          },
-          "publishedAt": "2026-08-13T06:25:00.000Z"
-        },
-        {
-          "id": 4796,
-          "headline": "멕시코, USMCA 검토 회담서 북미 자동차 관세 인하 요구",
-          "url": "https://finance.biggo.com/news/6ef4925b-c167-4ee4-9110-a64c19cb4cf1",
-          "source": {
-            "name": "Google News - US Trade Policy"
-          },
-          "publishedAt": "2026-08-13T03:36:00.000Z"
-        }
-      ]
     },
     {
       "id": 4775,
@@ -307,59 +408,6 @@
       "linkCheckedAt": "2026-08-13T14:15:06.258Z",
       "image": "https://img.etimg.com/thumb/msid-133213487,width-1200,height-630,imgsize-119840,overlay-economictimes/articleshow.jpg",
       "imageChecked": true
-    },
-    {
-      "id": 4779,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 5,
-        "marketSize": 3,
-        "sourceReliability": 4
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "실적",
-        "인도",
-        "LG전자"
-      ],
-      "headline": "LG전자 인도법인 Q1 매출 15% 증가·순이익 653억 루피",
-      "summary": "LG전자 인도법인이 1분기 매출 15% 증가와 함께 순이익 653억 루피를 기록하며 소폭 상승했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자 인도법인 1분기 순이익 653억 루피로 전년 대비 소폭 상승"
-        },
-        {
-          "type": "content",
-          "text": "1분기 매출은 전년 대비 15% 증가 기록"
-        }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://m.economictimes.com/markets/stocks/earnings/lg-electronics-india-q1-results-pat-rises-marginally-to-rs-653-crore-revenue-up-15/articleshow/133212601.cms"
-      },
-      "publishedAt": "2026-08-13T12:53:37.000Z",
-      "url": "https://m.economictimes.com/markets/stocks/earnings/lg-electronics-india-q1-results-pat-rises-marginally-to-rs-653-crore-revenue-up-15/articleshow/133212601.cms",
-      "linkCheckedAt": "2026-08-13T14:15:06.258Z",
-      "image": "https://img.etimg.com/thumb/msid-133212749,width-1200,height-630,imgsize-120976,overlay-etmarkets/articleshow.jpg",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 4790,
-          "headline": "LG전자 Q1 순이익 652.9억 루피, 전년비 27.2% 증가",
-          "url": "https://www.outlookbusiness.com/corporate/lg-electronics-q1-results-profit-rises-272-to-6529-cr-revenue-ebitda-also-up",
-          "source": {
-            "name": "Google News - LG Global"
-          },
-          "publishedAt": "2026-08-13T14:26:12.000Z"
-        }
-      ]
     },
     {
       "id": 4777,
@@ -1216,7 +1264,18 @@
       "url": "https://kr.aving.net/news/articleViewAmp.html?idxno=1813150",
       "linkCheckedAt": "2026-08-13T15:49:04.381Z",
       "image": "https://kr.aving.net/news/photo/202608/1813150_777045_374.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4807,
+          "headline": "LG전자, 태국 트렌디 워시 630개 매장에 상업용 세탁가전 공급",
+          "url": "https://kr.aving.net/news/articleView.html?idxno=1813150",
+          "source": {
+            "name": "Google News - 가전 소비·유통 KR"
+          },
+          "publishedAt": "2026-08-13T02:41:18.000Z"
+        }
+      ]
     },
     {
       "id": 4797,
@@ -1461,6 +1520,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-13T01:38:45.000Z"
+        },
+        {
+          "id": 4799,
+          "headline": "LG전자, 온라인 커뮤니티 '라이프집' 첫 단독 전시 개최",
+          "url": "https://weekly.hankooki.com/news/articleViewAmp.html?idxno=7178953",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-13T14:23:52.000Z"
         }
       ]
     },
@@ -4301,7 +4369,7 @@
       },
       "publishedAt": "2026-08-10T13:37:13.000Z",
       "url": "https://v.daum.net/v/20260810223713975",
-      "linkCheckedAt": "2026-08-10T14:12:21.907Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/10/kbs/20260810223714865nlps.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -4456,7 +4524,7 @@
       },
       "publishedAt": "2026-08-10T10:26:43.000Z",
       "url": "https://www.moomoo.com/news/post/74416191/midea-group-00300-repurchased-300000-a-shares-on-august-10",
-      "linkCheckedAt": "2026-08-10T14:12:21.907Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": null
     },
     {
@@ -6911,7 +6979,7 @@
       },
       "publishedAt": "2026-08-07T14:14:10.000Z",
       "url": "https://www.mk.co.kr/news/world/12121493",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://pimg.mk.co.kr/news/cms/202608/08/20260808_01170108000001_S00.jpg",
       "imageChecked": true
     },
@@ -6954,7 +7022,7 @@
       },
       "publishedAt": "2026-08-07T12:13:45.000Z",
       "url": "https://news.ifm.kr/news/articleViewAmp.html?idxno=476679",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://cdn.news.ifm.kr/news/photo/202608/476679_152161_4544.jpg",
       "imageChecked": true
     },
@@ -8174,7 +8242,7 @@
       },
       "publishedAt": "2026-08-06T05:38:03.000Z",
       "url": "https://www.bitget.com/amp/news/detail/12560605620560",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img.bgstatic.com/multiLang/web/7373335a1a924f4eefc3608a77547fbe.png",
       "imageChecked": true
     },
@@ -11438,7 +11506,7 @@
       },
       "publishedAt": "2026-08-04T11:32:40.000Z",
       "url": "https://www.railwaypro.com/wp/european-heatwave-fills-china-europe-trains-with-ac-units/",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://www.railwaypro.com/wp/wp-content/uploads/2026/08/rail-convoy-China.jpg",
       "imageChecked": true
     },
@@ -11526,7 +11594,7 @@
       },
       "publishedAt": "2026-08-04T10:26:00.000Z",
       "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8628319",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": null,
       "relatedArticles": [
         {
@@ -11580,7 +11648,7 @@
       },
       "publishedAt": "2026-08-04T10:25:00.000Z",
       "url": "https://finance.biggo.com/news/838a2681-fc9d-46ec-a0aa-4df3668cd196",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img.biggo.com/Bu5OFOlI8qI7oxAMOxrMxjkeIKcUjmY4-tiHkm8vLo4/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA4LzgzOGEyNjgxLWZjOWQtNDZlYy1hMGFhLTRkZjM2NjhjZDE5Nl8xNzg1ODM5NDM5X2RlZmF1bHQuanBn.jpg",
       "imageChecked": true
     },
@@ -11721,7 +11789,7 @@
       },
       "publishedAt": "2026-08-04T09:00:00.000Z",
       "url": "https://www.etnews.com/20260804000315",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img.etnews.com/news/article/2026/01/01/news-p.v1.20260101.4c5698e324fd45a78d1dd05ebb9fed13_P1.jpg",
       "imageChecked": true
     },
@@ -11930,7 +11998,7 @@
       },
       "publishedAt": "2026-08-04T07:11:54.000Z",
       "url": "http://kr.news.cn/20260804/55d501c3025e44b1b266622ea18ce0f9/c.html",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": null
     },
     {
@@ -11975,7 +12043,7 @@
       },
       "publishedAt": "2026-08-04T07:06:34.000Z",
       "url": "https://www.etnews.com/20260804000149",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img.etnews.com/news/article/2026/08/04/news-p.v1.20260804.cd43074375a748e39b03d5e80e535d88_P1.jpg",
       "imageChecked": true
     },
@@ -12027,7 +12095,7 @@
       },
       "publishedAt": "2026-08-04T07:00:00.000Z",
       "url": "https://www.etnews.com/20260804000178",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img.etnews.com/news/article/2026/08/04/news-p.v1.20260804.a5bcdd9d672742aa86ae9d2de2447864_P1.png",
       "imageChecked": true
     },
@@ -12070,7 +12138,7 @@
       },
       "publishedAt": "2026-08-04T06:51:00.000Z",
       "url": "http://www.topdaily.kr/articles/111289",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://assets.repress.co.kr/photos/2ff17c3712000d29b4dbbc4d55d81f8f/thumb.jpg",
       "imageChecked": true
     },
@@ -12112,7 +12180,7 @@
       },
       "publishedAt": "2026-08-04T06:45:11.000Z",
       "url": "https://imnews.imbc.com/news/2026/econo/article/6842336_36933.html",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://image.imnews.imbc.com/news/2026/econo/article/__icsFiles/afieldfile/2026/08/04/jse_20260804_9.jpg",
@@ -12179,7 +12247,7 @@
       },
       "publishedAt": "2026-08-04T06:20:20.000Z",
       "url": "https://www.edaily.co.kr/News/Read?newsId=05136486645544040&mediaCodeNo=257",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/08/PS26080401199.jpg",
       "imageChecked": true
     },
@@ -12607,7 +12675,7 @@
       },
       "publishedAt": "2026-08-03T19:16:58.000Z",
       "url": "https://texasborderbusiness.com/glenn-hamer-says-u-s-mexico-economic-integration-is-accelerating-after-mexico-city-visit/",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://texasborderbusiness.com/wp-content/uploads/2026/08/Hamer-1024x556.jpg",
       "imageChecked": true
     },
@@ -12687,7 +12755,7 @@
       },
       "publishedAt": "2026-08-03T17:37:35.000Z",
       "url": "https://energynow.com/2026/08/trump-says-he-does-not-care-about-usmca-as-us-canada-plan-trade-talks/",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://energynow.com/wp-content/uploads/Nafta-Flags-Canada-Mexico-US-1200x810.png",
       "imageChecked": true
     },
@@ -12723,7 +12791,7 @@
       },
       "publishedAt": "2026-08-03T17:14:17.000Z",
       "url": "https://mexicobusiness.news/trade-and-investment/news/sectoral-consensus-synergies-anchor-usmcas-future-gbm",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/GBM-img-2026-Miriam-Acuna-1-MBN-cg.jpg?h=c9aa73af&itok=h5W4DPCq",
@@ -12803,7 +12871,7 @@
       },
       "publishedAt": "2026-08-03T14:08:56.000Z",
       "url": "https://www.forbes.com/sites/taxnotes/2026/08/03/blaming-canada-trump-leans-on-smoot-hawley-tariff-authority/",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://imageio.forbes.com/specials-images/imageserve/6a70a0040332095a8bea132f/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
       "imageChecked": true
     },
@@ -13138,7 +13206,7 @@
       },
       "publishedAt": "2026-08-03T03:10:05.000Z",
       "url": "https://en.sedaily.com/finance/2026/08/03/lg-electronics-tops-home-appliance-subscription-brand",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://wimg.sedaily.com/news/cms/2026/08/03/news-p.v1.20260803.c3dea6bda1c7495a95266860d5089d6b_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -13309,7 +13377,7 @@
       },
       "publishedAt": "2026-08-03T02:00:00.000Z",
       "url": "https://finance.yahoo.com/markets/stocks/articles/trane-technologies-reports-strong-second-020000188.html",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": null,
       "relatedArticles": [
         {
@@ -14742,7 +14810,7 @@
       },
       "publishedAt": "2026-08-01T08:28:38.000Z",
       "url": "https://www.vietnam.vn/ko/trung-quoc-va-my-tang-cuong-doi-thoai-ve-quan-he-thuong-mai-tin-hieu-tich-cuc-cho-kinh-te-toan-cau",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/01/1785571482735_trung-quoc-va-my-tang-cuong-doi-thoai-ve-quan-he-thuong-mai-tin-hieu-tich-cuc-cho-kinh-te-toan-cau_20260801134149.webp",
       "imageChecked": true
     },
@@ -14780,7 +14848,7 @@
       },
       "publishedAt": "2026-08-01T04:31:35.000Z",
       "url": "https://mb.com.ph/2026/07/31/early-victory-as-tech-brand-surpasses-key-2030-emissions-goal",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://mb.com.ph/manilabulletin/uploads/images/2026/08/01/119769.webp",
       "imageChecked": true
     },
@@ -14994,7 +15062,7 @@
       },
       "publishedAt": "2026-07-31T21:10:37.000Z",
       "url": "https://www.barchart.com/story/news/3585781/whirlpool-s-margin-recovery-timeline-faces-its-first-real-test-this-quarter",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://assets.barchart.com/img/barchart-og.png",
       "imageChecked": true
     },
@@ -15111,7 +15179,7 @@
       },
       "publishedAt": "2026-07-31T19:12:21.000Z",
       "url": "https://www.datatooza.com/article/202608010412212495cd1e758ad6_80",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&idx=999&simg=20260801041220790_secdisctop_SIM.jpg&nmt=80",
       "imageChecked": true
     },
@@ -15288,7 +15356,7 @@
       },
       "publishedAt": "2026-07-31T11:00:00.000Z",
       "url": "https://www.t3.com/home-living/appliances/hisense-takes-on-samsung-with-new-ai-powered-laundry-collection-i-never-thought-a-washing-machine-could-look-so-good",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://cdn.mos.cms.futurecdn.net/J8RmmYh8kgfnoi4DK8ANPF-1280-80.jpg",
       "imageChecked": true
     },
@@ -15686,7 +15754,7 @@
       },
       "publishedAt": "2026-07-31T05:05:00.000Z",
       "url": "https://www.albawaba.com/business/pr/lg-electronics-sustainability-1634170",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://www.albawaba.com/sites/default/files/styles/default/public/2026-07/unnamed%20%281%29_3.png?itok=-XjJAZcP",
       "imageChecked": true
     },
@@ -15802,7 +15870,7 @@
       },
       "publishedAt": "2026-07-31T03:23:45.000Z",
       "url": "https://www.press9.kr/news/articleView.html?idxno=80422",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": null
     },
     {
@@ -15925,7 +15993,7 @@
       },
       "publishedAt": "2026-07-31T02:03:13.000Z",
       "url": "https://pulse.mk.co.kr/news/english/12113185",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/31/rcv.YNA.20260731.PYH2026073104450001300_R.jpg",
       "imageChecked": true
     },
@@ -16010,7 +16078,7 @@
       },
       "publishedAt": "2026-07-30T20:15:17.000Z",
       "url": "https://m.economictimes.com/industry/cons-products/electronics/bosch-home-to-start-ac-exports-from-india-in-two-years-ceo-president-jan-brockmann/articleshow/132750023.cms",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "assets/img/topics/aircon.svg",
       "imageChecked": true,
       "imageOriginal": "https://img.etimg.com/thumb/msid-132750045,width-1200,height-630,imgsize-43532,overlay-economictimes/articleshow.jpg",
@@ -16240,7 +16308,7 @@
       },
       "publishedAt": "2026-07-30T17:39:24.000Z",
       "url": "https://www.yna.co.kr/amp/view/AKR20260731004000087",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://img3.yna.co.kr/etc/inner/KR/2026/07/31/AKR20260731004000087_01_i_P4.jpg",
@@ -16541,7 +16609,7 @@
       },
       "publishedAt": "2026-07-30T09:43:00.000Z",
       "url": "https://www.wsj.com/business/earnings/lg-electronics-posts-solid-quarterly-net-profit-9c3e15f0",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": null
     },
     {
@@ -18857,7 +18925,7 @@
       },
       "publishedAt": "2026-07-29T07:00:00.000Z",
       "url": "https://www.etnews.com/20260724000065",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img.etnews.com/news/article/2026/07/22/news-p.v1.20260722.f83bde0bc5cb4c519580144c3458972f_P1.png",
       "imageChecked": true
     },
@@ -18897,7 +18965,7 @@
       },
       "publishedAt": "2026-07-29T06:47:03.000Z",
       "url": "http://news.bizwatch.co.kr/article/industry/2026/07/29/0026",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://cdn.bizwatch.co.kr/news/photo/2025/08/06/d832161e5f1d017ba0a33f31f67f104c.jpg",
       "imageChecked": true
     },
@@ -19107,7 +19175,7 @@
       },
       "publishedAt": "2026-07-29T04:00:00.000Z",
       "url": "https://www.ardentnews.co.kr/news/articleView.html?idxno=17332",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://cdn.ardentnews.co.kr/news/thumbnail/202607/17332_72437_5254_v150.jpg",
       "imageChecked": true
     },
@@ -20301,7 +20369,7 @@
       },
       "publishedAt": "2026-07-28T10:06:10.000Z",
       "url": "https://news.futunn.com/en/post/76681820/research-insight-gf-securities-midea-group-s-overseas-expansion-and",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": null
     },
     {
@@ -20343,7 +20411,7 @@
       },
       "publishedAt": "2026-07-28T08:59:47.000Z",
       "url": "https://www.mk.co.kr/en/business/12109653",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/29/20260729_01110114000005_L00.jpg",
       "imageChecked": true
     },
@@ -22202,7 +22270,7 @@
       },
       "publishedAt": "2026-07-26T17:00:00.000Z",
       "url": "https://clarksvillenow.com/local/made-here-in-clarksville-trane-helps-keep-businesses-comfortable-around-world-video/",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://clarksvillenow.com/wp-content/blogs.dir/43/files/2026/07/Trane-07-2026-pipe-pull.jpg",
       "imageChecked": true
     },
@@ -22914,7 +22982,7 @@
       },
       "publishedAt": "2026-07-26T04:27:39.000Z",
       "url": "https://www.ajunews.com/view/20260726132403816",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://image.ajunews.com/content/image/2026/07/26/20260726132526946330.jpg",
       "imageChecked": true
     },
@@ -22957,7 +23025,7 @@
       },
       "publishedAt": "2026-07-26T04:27:00.000Z",
       "url": "https://v.daum.net/v/20260726132700197",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/26/sbscnbc/20260726133305489maso.jpg",
       "imageChecked": true
     },
@@ -23048,7 +23116,7 @@
       },
       "publishedAt": "2026-07-26T01:21:27.000Z",
       "url": "https://www.asiae.co.kr/en/article/2026072610212843282",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://cphoto.asiae.co.kr/listimglink/1/2026070711072436907_1783390044.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -25902,7 +25970,7 @@
       },
       "publishedAt": "2026-07-23T07:00:00.000Z",
       "url": "https://www.etnews.com/20260723000347",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": null
     },
     {
@@ -26224,7 +26292,7 @@
       },
       "publishedAt": "2026-07-23T02:06:02.000Z",
       "url": "https://www.yna.co.kr/amp/view/AKR20260723076900003",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img0.yna.co.kr/photo/reuters/2026/06/30/PRU20260630183101009_P4.jpg",
       "imageChecked": true
     },
@@ -26311,7 +26379,7 @@
       },
       "publishedAt": "2026-07-23T01:00:00.000Z",
       "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260723010008335",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img.asiatoday.co.kr/file/2026y/07m/23d/2026072301001519300083351.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -26755,7 +26823,7 @@
       },
       "publishedAt": "2026-07-22T22:20:00.000Z",
       "url": "https://www.marketplace.org/story/2026/07/22/as-tariffs-change-this-brokerage-manager-is-navigating-chaos",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z",
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z",
       "image": "https://img.apmcdn.org/ad394ade620f3ef7e5a45a3ebd3da2c3292ca584/widescreen/08e8f6-20260722-canada-ports-shipping-strike-labor-economy-2000.jpg",
       "imageChecked": true
     },
@@ -59289,7 +59357,7 @@
       "publishedAt": "2026-05-15T23:53:29.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/midea-group-co-ltd-stock-cne100001qq5-earnings-and-ai-appliances-in/69346303",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2404986_1200_800.webp",
-      "linkCheckedAt": "2026-08-10T14:11:28.372Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 15,
@@ -59327,7 +59395,7 @@
       "publishedAt": "2026-05-15T17:22:19.000Z",
       "url": "https://ca.investing.com/news/stock-market-news/raymond-james-reiterates-market-perform-on-whirlpool-stock-amid-weak-industry-data-93CH-4643200",
       "image": null,
-      "linkCheckedAt": "2026-08-10T14:11:28.372Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 11,
@@ -59362,7 +59430,7 @@
       "publishedAt": "2026-05-15T08:47:52.000Z",
       "url": "https://www.sahmcapital.com/news/content/whirlpools-kitchenaid-smart-thermometer-extends-connected-kitchen-ecosystem-potential-2026-05-14",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
-      "linkCheckedAt": "2026-08-10T14:11:28.372Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 68,
@@ -59395,7 +59463,7 @@
       "publishedAt": "2026-05-14T16:42:25.000Z",
       "url": "https://lbbonline.com/news/Bosch-Works-Like-A-Bosch-Bobs-Your-Uncle-Campaign-Canada",
       "image": null,
-      "linkCheckedAt": "2026-08-10T14:11:28.372Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 47,
@@ -59429,7 +59497,7 @@
       "publishedAt": "2026-05-14T13:16:01.000Z",
       "url": "http://www.msn.com/en-us/money/companies/feds-find-no-evidence-of-tariff-cheating-among-appliance-makers/ar-AA1Oy6JW?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
       "image": null,
-      "linkCheckedAt": "2026-08-10T14:11:28.372Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 38,
@@ -59465,7 +59533,7 @@
       "publishedAt": "2026-05-13T16:08:24.000Z",
       "url": "https://topclassactions.com/lawsuit-settlements/lawsuit-news/carrier-trane-rheem-among-hvac-companies-accused-of-price-fixing-in-class-action/",
       "image": null,
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 13,
@@ -59497,7 +59565,7 @@
       "publishedAt": "2026-05-13T13:34:33.000Z",
       "url": "https://www.stocktitan.net/sec-filings/WHR/schedule-13g-a-whirlpool-corp-de-amended-passive-investment-disclosur-f2ad94c29fe3.html",
       "image": "https://static.stocktitan.net/company-logo/whr-lg.png?v=3022c9b91f",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 43,
@@ -59531,7 +59599,7 @@
       "publishedAt": "2026-05-13T13:32:00.000Z",
       "url": "https://finance.yahoo.com/news/johnson-controls-completes-acquisition-alloy-133200526.html",
       "image": null,
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 67,
@@ -59563,7 +59631,7 @@
       "publishedAt": "2026-05-13T11:47:11.000Z",
       "url": "https://www.tipranks.com/news/company-announcements/midea-group-raises-hk17-2-billion-via-dual-tranche-zero-coupon-convertible-bonds",
       "image": null,
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 39,
@@ -59598,7 +59666,7 @@
       "publishedAt": "2026-05-13T07:00:00.000Z",
       "url": "https://www.johnsoncontrols.com/media-center/news/press-releases/2026/05/13/johnson-controls-expands-its-investment-in-workforce-development",
       "image": "https://www.johnsoncontrols.com/-/media/project/jci-global/johnson-controls/us-region/united-states-johnson-controls/media-center/2026/press-release-assets/jadec-1.png",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 32,
@@ -59632,7 +59700,7 @@
       "publishedAt": "2026-05-13T07:00:00.000Z",
       "url": "https://www.reviewed.com/dishwashers/best-right-now/the-best-dishwashers-that-dry-your-dishes",
       "image": "https://images.reviewed.com/fit-in/1200x0/filters:strip_icc():strip_exif():no_upscale():format(webp):quality(65)/1554486298000/Samsung-DW80K7050US-Glasses__1_.jpg",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 24,
@@ -59667,7 +59735,7 @@
       "publishedAt": "2026-05-12T19:02:00.000Z",
       "url": "https://www.nytimes.com/wirecutter/reviews/the-best-dishwasher/",
       "image": "https://cdn.thewirecutter.com/wp-content/media/2024/12/BEST-DISHWASHER-2048px-0408-2x1-1.jpg?auto=webp&quality=75&crop=1.91:1&width=1200",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 21,
@@ -59707,7 +59775,7 @@
       "publishedAt": "2026-05-12T13:02:00.000Z",
       "url": "https://news.futunn.com/en/post/72951087/midea-group-00300-hk-takeaways-from-2026-investor-day",
       "image": null,
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 30,
@@ -59745,7 +59813,7 @@
       "publishedAt": "2026-05-12T12:02:45.000Z",
       "url": "https://www.mexc.com/news/1084148",
       "image": "https://static.mocortech.com/image-host/web/new_og/news_og_en_US.webp",
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 12,
@@ -59783,7 +59851,7 @@
       "publishedAt": "2026-05-12T11:36:47.000Z",
       "url": "https://seekingalpha.com/article/4902939-whirlpool-downgrading-because-of-dividend-suspension-margin-compression-and-dilution",
       "image": null,
-      "linkCheckedAt": "2026-08-10T15:48:39.730Z"
+      "linkCheckedAt": "2026-08-13T16:43:21.115Z"
     },
     {
       "id": 44,
