@@ -1,7 +1,48 @@
 {
-  "updatedAt": "2026-08-13T19:53:19.402Z",
+  "updatedAt": "2026-08-13T20:32:10.774Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4835,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.1,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "관세",
+        "멕시코",
+        "USMCA"
+      ],
+      "headline": "멕시코, 북미산 차량 관세 인하 역제안",
+      "summary": "멕시코 정부가 트럼프의 압박에 맞서 북미산 자동차 관세 인하를 역제안하며 통상 대응에 나섰습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "멕시코가 북미산 차량 관세 인하를 역제안함"
+        },
+        {
+          "type": "content",
+          "text": "트럼프의 관세 압박에 맞대응하는 조치"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.g-enews.com/article/Global-Biz/2026/08/2026081321284056422bd56fbc3c_1"
+      },
+      "publishedAt": "2026-08-13T20:10:00.000Z",
+      "url": "https://www.g-enews.com/article/Global-Biz/2026/08/2026081321284056422bd56fbc3c_1",
+      "linkCheckedAt": "2026-08-13T20:29:37.341Z",
+      "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=20260813213237014672bd56fbc3c17520167154.jpg",
+      "imageChecked": true
+    },
     {
       "id": 4820,
       "lens": "정책",
@@ -30294,6 +30335,60 @@
       "linkCheckedAt": "2026-08-11T22:30:17.781Z"
     },
     {
+      "id": 4840,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "구독",
+        "B2B",
+        "신사업",
+        "주거·공간"
+      ],
+      "headline": "LG전자, 압구정 재건축 단지 대상 B2B 가전 구독 서비스 도입",
+      "summary": "LG전자가 성장 동력 확보를 위해 B2B 가전 구독 사업을 강화하며 압구정 재건축 단지에 서비스를 도입한다고 밝혔다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 성장 동력 확보를 위해 B2B 가전 구독 사업을 강화함"
+        },
+        {
+          "type": "content",
+          "text": "압구정 재건축 단지를 대상으로 가전 구독 서비스를 도입함"
+        }
+      ],
+      "source": {
+        "name": "Google News - Appliance New Business Models",
+        "url": "https://www.sportschosun.com/en/culture/2026-07-19/202607190100114520007247"
+      },
+      "publishedAt": "2026-07-19T07:00:00.000Z",
+      "url": "https://www.sportschosun.com/en/culture/2026-07-19/202607190100114520007247",
+      "linkCheckedAt": "2026-08-13T20:29:37.341Z",
+      "image": "https://www.sportschosun.com/article/html/2026/07/19/2026071901001145200072471_w.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 2235,
+          "headline": "LG전자, 아파주정 재건축단지에 냉장고·스타일러 구독 서비스 공급",
+          "url": "https://www.asiae.co.kr/en/article/2026071909235256719",
+          "source": {
+            "name": "Google News - Appliance New Business Models"
+          },
+          "publishedAt": "2026-07-19T01:00:00.000Z"
+        }
+      ]
+    },
+    {
       "id": 1910,
       "lens": "경쟁사",
       "grade": "주요",
@@ -30536,50 +30631,6 @@
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2701702_1920_1080.webp",
       "imageChecked": true,
       "linkCheckedAt": "2026-08-11T22:30:17.781Z"
-    },
-    {
-      "id": 2235,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.2,
-      "factors": {
-        "salesRelevance": 4,
-        "timeUrgency": 3,
-        "marketSize": 2,
-        "sourceReliability": 3
-      },
-      "products": [
-        "냉장고"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "신사업",
-        "구독",
-        "주거·공간",
-        "B2C"
-      ],
-      "headline": "LG전자, 아파주정 재건축단지에 냉장고·스타일러 구독 서비스 공급",
-      "summary": "LG전자가 강남 아파주정 재건축 복합 단지를 대상으로 냉장고와 스타일러를 포함한 생활가전 구독 서비스를 공급하기로 했다. 가전 구독 모델을 신규 주거 프로젝트와 연계해 확대하는 전략의 일환이다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자, 아파주정 재건축 복합단지에 냉장고·스타일러 포함 생활가전 구독 서비스 공급"
-        },
-        {
-          "type": "content",
-          "text": "신규 주택 프로젝트를 활용한 구독·렌탈 사업 모델 확대 추진"
-        }
-      ],
-      "source": {
-        "name": "Google News - Appliance New Business Models",
-        "url": "https://www.asiae.co.kr/en/article/2026071909235256719"
-      },
-      "publishedAt": "2026-07-19T01:00:00.000Z",
-      "url": "https://www.asiae.co.kr/en/article/2026071909235256719",
-      "linkCheckedAt": "2026-08-12T00:59:19.670Z",
-      "image": null
     },
     {
       "id": 1883,
