@@ -1,7 +1,114 @@
 {
-  "updatedAt": "2026-08-13T23:32:46.807Z",
+  "updatedAt": "2026-08-14T03:27:49.211Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4862,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "관세",
+        "우회수출",
+        "미중무역",
+        "정책"
+      ],
+      "headline": "미국, 중국의 한국 등 40개국 우회 수출로 연 37조원 세수 손실 지적",
+      "summary": "미국 정부가 중국이 한국을 포함한 40개국을 통한 우회 수출로 관세를 회피하고 있으며, 이로 인해 연간 37조원의 세수 손실이 발생하고 있다고 밝혔습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국, 중국이 한국 등 40개국을 통한 우회 수출로 관세 회피 지적"
+        },
+        {
+          "type": "content",
+          "text": "우회 수출로 인한 미국의 연간 세수 손실 규모 37조원 기록"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.newsis.com/view/NISX20260814_0003749123"
+      },
+      "publishedAt": "2026-08-14T02:26:43.000Z",
+      "url": "https://www.newsis.com/view/NISX20260814_0003749123",
+      "linkCheckedAt": "2026-08-14T03:25:01.709Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://img1.newsis.com/2026/08/10/NISI20260810_0002208261_web.jpg",
+      "thumbFace": true
+    },
+    {
+      "id": 4858,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "신사업",
+        "스마트홈",
+        "B2B",
+        "주거·공간"
+      ],
+      "headline": "반도건설, LG전자 등과 가전 연동형 스마트홈 서비스 개발 착수",
+      "summary": "반도건설이 LG전자 등과 함께 가전 연동형 스마트홈 서비스 개발에 착수하며 주거 공간과 가전을 결합한 신규 비즈니스 협력에 나섰다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "반도건설이 LG전자 등과 가전 연동형 스마트홈 서비스 개발에 착수함"
+        },
+        {
+          "type": "content",
+          "text": "주거 공간과 가전을 연동하는 스마트홈 기술 협력을 본격화함"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260814010004932"
+      },
+      "publishedAt": "2026-08-14T01:54:54.000Z",
+      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260814010004932",
+      "linkCheckedAt": "2026-08-14T03:25:01.709Z",
+      "image": "https://img.asiatoday.co.kr/file/2026y/08m/14d/2026081401000913800049321.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4857,
+          "headline": "반도건설, LG전자와 통합 스마트홈 구축 협력",
+          "url": "https://www.newspim.com/news/view/20260814000455",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-14T01:31:00.000Z"
+        },
+        {
+          "id": 4856,
+          "headline": "반도건설, LG전자 등과 스마트홈 서비스 협력",
+          "url": "https://www.topdaily.kr/articles/111471",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-14T01:57:00.000Z"
+        }
+      ]
+    },
     {
       "id": 4854,
       "lens": "경쟁사",
@@ -654,6 +761,15 @@
             "name": "Google News - LG Global"
           },
           "publishedAt": "2026-08-13T12:43:38.000Z"
+        },
+        {
+          "id": 4861,
+          "headline": "LG전자 인도법인 Q1 순이익 653억 루피, 매출 15% 증가",
+          "url": "https://m.economictimes.com/markets/stocks/earnings/lg-electronics-india-q1-results-pat-rises-marginally-to-rs-653-crore-revenue-up-15/amp_articleshow/133212601.cms",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-13T12:53:00.000Z"
         }
       ]
     },
@@ -4100,7 +4216,7 @@
       },
       "publishedAt": "2026-08-11T02:00:00.000Z",
       "url": "https://www.etnews.com/20260811000071",
-      "linkCheckedAt": "2026-08-11T02:59:04.140Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://img.etnews.com/news/article/2026/08/11/news-p.v1.20260811.e6768098526940e694c4a92ca578d299_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -4300,7 +4416,7 @@
       },
       "publishedAt": "2026-08-10T23:42:07.000Z",
       "url": "https://biz.heraldcorp.com/article/10836772",
-      "linkCheckedAt": "2026-08-11T00:52:53.609Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://wimg.heraldcorp.com/news/cms/2026/08/11/news-p.v1.20260811.e8db2d9ce44b4530891a2d04343caf08_T1.png",
       "imageChecked": true
     },
@@ -4618,7 +4734,7 @@
       },
       "publishedAt": "2026-08-10T18:20:00.000Z",
       "url": "https://finance.biggo.com/news/45f268c3-0021-45eb-9613-849afc820fef",
-      "linkCheckedAt": "2026-08-11T00:52:53.609Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://img.biggo.com/sCcTkbgfoGnnk83F0Okc1QlZHaM8kHF52RVHV5LoLZw/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA4LzQ1ZjI2OGMzLTAwMjEtNDVlYi05NjEzLTg0OWFmYzgyMGZlZl8xNzg2Mzg5MDkyX2RlZmF1bHQuanBn.jpg",
       "imageChecked": true
     },
@@ -6769,7 +6885,7 @@
       },
       "publishedAt": "2026-08-07T23:30:00.000Z",
       "url": "https://news.nate.com/view/20260808n02688?mid=n1101",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://thumbnews.nateimg.co.kr/view610///news.nateimg.co.kr/orgImg/mt/2026/08/08/mt_1786146364704_930317_0.jpg",
       "imageChecked": true
     },
@@ -10772,7 +10888,7 @@
       },
       "publishedAt": "2026-08-04T23:53:06.000Z",
       "url": "https://www.mk.co.kr/news/realestate/12117308",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://pimg.mk.co.kr/news/cms/202608/05/news-p.v1.20260805.2c15aeaf36c54faf8dea4012fe05d2bd_R.png",
       "imageChecked": true
     },
@@ -10819,7 +10935,7 @@
       },
       "publishedAt": "2026-08-04T23:50:20.000Z",
       "url": "https://www.mk.co.kr/news/business/12117302",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://pimg.mk.co.kr/news/cms/202608/05/news-p.v1.20260805.0e66d7280a1c4d36bac9eba2a76acb65_R.jpg",
       "imageChecked": true
     },
@@ -10905,7 +11021,7 @@
       },
       "publishedAt": "2026-08-04T23:00:00.000Z",
       "url": "https://www.asiae.co.kr/article/2026080507400834685",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://cphoto.asiae.co.kr/listimglink/1/2026080507382469802_1785883104.jpg",
       "imageChecked": true
     },
@@ -11188,7 +11304,7 @@
       },
       "publishedAt": "2026-08-04T20:20:17.000Z",
       "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608041143134250709&section=S1N11",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://image.dnews.co.kr/photo/photo/2026/08/04/202608041143134250709-2-681972.jpg",
       "imageChecked": true
     },
@@ -11696,7 +11812,7 @@
       },
       "publishedAt": "2026-08-04T13:16:29.000Z",
       "url": "https://www.hankyung.com/article/202608045055i",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://img.hankyung.com/photo/202608/ZA.45142646.1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -14965,7 +15081,7 @@
       },
       "publishedAt": "2026-08-01T21:48:54.000Z",
       "url": "https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4428169",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://news.einfomax.co.kr/news/photo/202608/4428169_333987_407.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -15021,7 +15137,7 @@
       },
       "publishedAt": "2026-08-01T13:30:00.000Z",
       "url": "https://www.etnews.com/20260730000336",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://img.etnews.com/news/article/2026/07/30/news-p.v1.20260730.b32997d1d666422e9ed0eb159154a7a6_P1.jpg",
       "imageChecked": true
     },
@@ -16987,7 +17103,7 @@
       },
       "publishedAt": "2026-07-30T09:05:27.000Z",
       "url": "https://www.asiae.co.kr/article/2026073018052716624",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://cphoto.asiae.co.kr/listimglink/1/2026073017554964873_1785401749.png",
       "imageChecked": true,
       "relatedArticles": [
@@ -17360,7 +17476,7 @@
       },
       "publishedAt": "2026-07-30T07:22:00.000Z",
       "url": "https://biz.chosun.com/en/en-it/2026/07/30/4GI4SIAVC5FGZMV4ZEB23UY3AY/",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://biz.chosun.com/pf/resources/images/meta_default.png?d=464",
       "imageChecked": true
     },
@@ -17473,7 +17589,7 @@
       },
       "publishedAt": "2026-07-30T07:10:45.000Z",
       "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=606811",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://cdn.mdtoday.co.kr/news/photo/202607/606811_307427_1785395445.png",
       "imageChecked": true
     },
@@ -18186,7 +18302,7 @@
       },
       "publishedAt": "2026-07-29T21:51:36.000Z",
       "url": "https://www.mk.co.kr/news/business/12111432",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/30/news-p.v1.20260730.4094ba1bf1f945489dbbce34e0cda6c6_R.jpg",
       "imageChecked": true
     },
@@ -18476,7 +18592,7 @@
       },
       "publishedAt": "2026-07-29T19:30:00.000Z",
       "url": "https://www.donga.com/news/amp/all/20260729/134382334/2",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/07/29/134382333.3.jpg",
       "imageChecked": true
     },
@@ -20619,7 +20735,7 @@
       },
       "publishedAt": "2026-07-28T10:07:43.000Z",
       "url": "https://finance.yahoo.com/markets/stocks/articles/trane-technologies-tt-faces-fresh-100743870.html",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": null
     },
     {
@@ -25354,7 +25470,7 @@
       },
       "publishedAt": "2026-07-24T00:25:21.000Z",
       "url": "https://www.channelnews.com.au/how-hisense-is-quietly-winning-australias-appliance-tv-war-while-rivals-lose-ground/",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://www.channelnews.com.au/wp-content/uploads/2025/11/image-1-3.png",
       "imageChecked": true
     },
@@ -25911,7 +26027,7 @@
       },
       "publishedAt": "2026-07-23T14:22:00.000Z",
       "url": "https://kalkinemedia.com/us/stocks/consumer/whirlpool-nysewhr-faces-fresh-valuation-crossroads",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://kalkinemedia.com/storage/uploads/original/TV_12_24_2024_11_38_06_670008.jpg",
       "imageChecked": true
     },
@@ -26432,7 +26548,7 @@
       },
       "publishedAt": "2026-07-23T04:52:11.000Z",
       "url": "https://www.etnews.com/20260723000286",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://img.etnews.com/news/article/2024/09/22/news-p.v1.20240922.f3491a926fa14e408b0a6c0539b2d226_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -26492,7 +26608,7 @@
       },
       "publishedAt": "2026-07-23T02:24:42.000Z",
       "url": "http://www.china.org.cn/2026-07/23/content_118613747.shtml",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": null
     },
     {
@@ -26625,7 +26741,7 @@
       },
       "publishedAt": "2026-07-23T02:00:00.000Z",
       "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260722_0003719055",
-      "linkCheckedAt": "2026-08-11T00:52:23.433Z",
+      "linkCheckedAt": "2026-08-14T03:23:59.910Z",
       "image": "https://img1.newsis.com/2026/07/22/NISI20260722_0002193037_web.jpg",
       "imageChecked": true
     },
