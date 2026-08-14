@@ -1,7 +1,50 @@
 {
-  "updatedAt": "2026-08-14T11:38:31.983Z",
+  "updatedAt": "2026-08-14T12:41:12.688Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4890,
+      "lens": "소비자",
+      "grade": "주요",
+      "impact": 4.2,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "삼성전자"
+      ],
+      "tags": [
+        "삼성전자",
+        "수출",
+        "AI",
+        "원가부담"
+      ],
+      "headline": "삼성전자, AI 호조로 상반기 미국 수출 두 배…원가 부담은 4.9조 증가",
+      "summary": "삼성전자가 AI 호조에 힘입어 상반기 미국 수출이 두 배로 늘었으나, 원가 부담은 4조9000억 원 증가한 것으로 나타났다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "AI 호조로 상반기 미국 수출 두 배 증가"
+        },
+        {
+          "type": "content",
+          "text": "상반기 원가 부담은 4조9000억 원 늘어남"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.g-enews.com/article/Industry/2026/08/20260814191847895227fa31d75c_1"
+      },
+      "publishedAt": "2026-08-14T10:26:08.000Z",
+      "url": "https://www.g-enews.com/article/Industry/2026/08/20260814191847895227fa31d75c_1",
+      "linkCheckedAt": "2026-08-14T12:38:40.698Z",
+      "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=20260806081241034940c8c1c064d22114611240.jpg",
+      "imageChecked": true
+    },
     {
       "id": 4880,
       "lens": "경쟁사",
@@ -90,6 +133,46 @@
       "imageChecked": true
     },
     {
+      "id": 4895,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "북미무역협정",
+        "관세",
+        "통상정책",
+        "로비"
+      ],
+      "headline": "미국 완성차 빅3, 북미무역협정 갱신 앞두고 로비 돌입",
+      "summary": "미국 완성차 빅3가 북미무역협정 갱신을 앞두고 로비에 박차를 가하고 있으며, 현대차와 토요타의 관세 유불리에 촉각을곤두세우고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 완성차 빅3가 북미무역협정 갱신을 앞두고 로비에 박차를 가함"
+        },
+        {
+          "type": "content",
+          "text": "현대차와 토요타가 상대적으로 관세 타격을 입을지 여부에 촉각을 세움"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.businesspost.co.kr/BP?command=article_view&num=444808"
+      },
+      "publishedAt": "2026-08-14T06:06:38.000Z",
+      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=444808",
+      "linkCheckedAt": "2026-08-14T12:38:40.698Z",
+      "image": null
+    },
+    {
       "id": 4863,
       "lens": "거시",
       "grade": "주시",
@@ -172,7 +255,18 @@
       "url": "https://news.tf.co.kr/read/economy/2354305.htm",
       "linkCheckedAt": "2026-08-14T05:23:39.483Z",
       "image": "https://img.tf.co.kr/article/home/2026/08/14/202695251786683935.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4896,
+          "headline": "백악관, 한국을 중국 관세 우회 '환적 40개국'으로 지목",
+          "url": "https://m.tf.co.kr/amp/economy/2354305.htm",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-14T05:07:00.000Z"
+        }
+      ]
     },
     {
       "id": 4862,
@@ -219,15 +313,15 @@
       "thumbFace": true
     },
     {
-      "id": 4865,
+      "id": 4891,
       "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.4,
+      "grade": "주요",
+      "impact": 3.6,
       "factors": {
         "salesRelevance": 4,
         "timeUrgency": 3,
         "marketSize": 3,
-        "sourceReliability": 3
+        "sourceReliability": 4
       },
       "products": [],
       "competitors": [
@@ -235,26 +329,29 @@
       ],
       "tags": [
         "스마트홈",
-        "신사업",
         "B2B",
-        "주거·공간"
+        "신사업"
       ],
-      "headline": "반도건설, LG전자 등과 스마트홈 서비스 협력",
-      "summary": "반도건설이 LG전자, 현대HT, HT비욘드와 함께 스마트홈 서비스 구축을 위한 협력을 추진합니다.",
+      "headline": "반도건설, LG전자와 스마트홈 서비스 개발 협력",
+      "summary": "반도건설이 LG전자와 손잡고 스마트홈 서비스 개발에 나선다. 양사는 주거 공간과 가전을 연계한 스마트홈 솔루션을 구축할 예정이다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "반도건설이 LG전자 등과 스마트홈 서비스 협력 체결"
+          "text": "반도건설은 LG전자와 스마트홈 서비스 개발 파트너십 체결"
+        },
+        {
+          "type": "content",
+          "text": "주거 공간과 가전을 연계한 스마트홈 솔루션 공동 구축 추진"
         }
       ],
       "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.topdaily.kr/articles/111471"
+        "name": "Google News - LG Global",
+        "url": "https://mbiz.heraldcorp.com/article/10841442"
       },
-      "publishedAt": "2026-08-14T01:57:00.000Z",
-      "url": "https://www.topdaily.kr/articles/111471",
-      "linkCheckedAt": "2026-08-14T05:23:39.483Z",
-      "image": "https://assets.repress.co.kr/photos/2423c4c9c4bf56628c1960b4877fbaf2/thumb.png",
+      "publishedAt": "2026-08-14T02:19:38.000Z",
+      "url": "https://mbiz.heraldcorp.com/article/10841442",
+      "linkCheckedAt": "2026-08-14T12:38:40.698Z",
+      "image": "https://wimg.heraldcorp.com/news/cms/2026/08/14/news-p.v1.20260814.8439b1ed9cf14c9b828802a3d94108b7_T1.png",
       "imageChecked": true,
       "relatedArticles": [
         {
@@ -274,15 +371,6 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-14T01:54:54.000Z"
-        },
-        {
-          "id": 4867,
-          "headline": "반도건설, LG전자와 스마트홈 서비스 개발 협력",
-          "url": "https://mbiz.heraldcorp.com/article/10841442",
-          "source": {
-            "name": "Google News - LG Global"
-          },
-          "publishedAt": "2026-08-14T02:19:38.000Z"
         },
         {
           "id": 4864,
@@ -319,6 +407,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-14T06:54:59.000Z"
+        },
+        {
+          "id": 4865,
+          "headline": "반도건설, LG전자 등과 스마트홈 서비스 협력",
+          "url": "https://www.topdaily.kr/articles/111471",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-14T01:57:00.000Z"
         }
       ]
     },
@@ -951,7 +1048,18 @@
       "url": "https://m.economictimes.com/industry/cons-products/durables/lg-electronics-india-sees-bigger-screens-premium-appliances-powering-fy27-growth/articleshow/133212700.cms",
       "linkCheckedAt": "2026-08-14T11:36:05.835Z",
       "image": "https://img.etimg.com/thumb/msid-133213487,width-1200,height-630,imgsize-119840,overlay-economictimes/articleshow.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 4894,
+          "headline": "LG전자 인도 주가 4.5% 상승…프리미엄화 호조",
+          "url": "https://www.tradingview.com/news/moneycontrol:4386e89f6094b:0-lg-electronics-india-stock-jumps-4-5-after-strong-q1-brokerages-bullish-on-premiumisation-margin-gains/",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-14T04:06:00.000Z"
+        }
+      ]
     },
     {
       "id": 4809,
@@ -3961,7 +4069,7 @@
       },
       "publishedAt": "2026-08-11T10:02:09.000Z",
       "url": "https://www.thelec.net/news/articleView.html?idxno=12949",
-      "linkCheckedAt": "2026-08-11T12:38:14.216Z",
+      "linkCheckedAt": "2026-08-14T12:38:19.947Z",
       "image": "https://cdn.thelec.net/news/photo/202608/12949_13059_232.jpg",
       "imageChecked": true
     },
@@ -7050,7 +7158,7 @@
       },
       "publishedAt": "2026-08-08T12:08:13.000Z",
       "url": "https://www.timesnownews.com/technology-science/ditaa-2026-lg-indias-sanjay-chitkara-sees-long-lasting-appliances-as-an-opportunity-not-a-threat-article-155386574",
-      "linkCheckedAt": "2026-08-11T12:37:53.748Z",
+      "linkCheckedAt": "2026-08-14T12:38:19.947Z",
       "image": "assets/img/topics/retail.svg",
       "imageChecked": true,
       "imageOriginal": "https://images.timesnownews.com/thumb/msid-155386583,thumbsize-1566448,width-1280,height-720,resizemode-75/155386583.jpg",
