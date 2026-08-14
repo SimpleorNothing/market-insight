@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T18:41:24.769Z",
+  "updatedAt": "2026-08-14T19:43:56.547Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -86,6 +86,50 @@
       "imageChecked": true,
       "imageOriginal": "https://pimg.mk.co.kr/news/cms/202608/15/20260815_01170104000002_M00.jpg",
       "thumbFace": true
+    },
+    {
+      "id": 4920,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 2.9,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 4
+      },
+      "products": [
+        "HVAC"
+      ],
+      "competitors": [
+        "Carrier",
+        "Trane"
+      ],
+      "tags": [
+        "HVAC",
+        "스마트홈",
+        "신제품"
+      ],
+      "headline": "트레인·아메리칸 스탠다드, 신형 스마트 온도조절기 출시",
+      "summary": "트레인과 아메리칸 스탠다드가 주택 시장을 겨냥한 새로운 스마트 온도조절기 제품군을 새롭게 선보였다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "트레인과 아메리칸 스탠다드가 신형 스마트 온도조절기를 출시함"
+        },
+        {
+          "type": "content",
+          "text": "주택 빌더 및 소비자 대상 최신 공조 제어 솔루션 제공"
+        }
+      ],
+      "source": {
+        "name": "Google News - HVAC Majors",
+        "url": "https://www.builderonline.com/products/hvac/product-pick-of-the-week-trane-american-standard-launch-new-smart-thermostats/"
+      },
+      "publishedAt": "2026-08-14T13:26:48.000Z",
+      "url": "https://www.builderonline.com/products/hvac/product-pick-of-the-week-trane-american-standard-launch-new-smart-thermostats/",
+      "linkCheckedAt": "2026-08-14T19:41:31.724Z",
+      "image": null
     },
     {
       "id": 4900,
@@ -602,6 +646,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-14T13:26:49.000Z"
+        },
+        {
+          "id": 4915,
+          "headline": "반도건설·LG전자, '가전 연동형 스마트홈 서비스 개발' MOU 체결",
+          "url": "https://www.junggi.co.kr/news/articleView.html?idxno=37461",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-14T09:47:55.000Z"
         }
       ]
     },
