@@ -1,7 +1,99 @@
 {
-  "updatedAt": "2026-08-14T20:25:11.105Z",
+  "updatedAt": "2026-08-14T21:17:30.080Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 4921,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "미중 무역",
+        "통상 정책",
+        "미국"
+      ],
+      "headline": "트럼프, 중국산 드론 최대 100% 관세 및 동맹국 15% 부과 추진",
+      "summary": "도널드 트럼프 미국 대통령이 국가안보 우려를 이유로 중국산 드론에 최대 100%의 관세 부과를 추진하며, 한국 등 동맹국 제품에는 15%의 관세를 부과하기로 했다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "중국산 드론에 최대 100% 관세 부과 추진 및 불법환적 단속 강화"
+        },
+        {
+          "type": "content",
+          "text": "25kg 이상 및 열화상 기능 제품이 주요 대상"
+        },
+        {
+          "type": "content",
+          "text": "한국 등 동맹국 제품에는 15% 관세 부과 예정"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/world/12128611"
+      },
+      "publishedAt": "2026-08-14T21:00:26.000Z",
+      "url": "https://www.mk.co.kr/news/world/12128611",
+      "linkCheckedAt": "2026-08-14T21:14:53.645Z",
+      "image": "https://pimg.mk.co.kr/news/cms/202608/15/news-p.v1.20260814.328562e1612c44438a22439456de2c98_R.png",
+      "imageChecked": true
+    },
+    {
+      "id": 4922,
+      "lens": "기술",
+      "grade": "주시",
+      "impact": 3,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [],
+      "tags": [
+        "로봇청소기",
+        "AI",
+        "음성인식",
+        "스마트홈"
+      ],
+      "headline": "매틱, 음성·손짓 제어하는 '매틱 큐스' 로봇청소기 공개",
+      "summary": "미국 로봇 기업 매틱이 음성과 손짓으로 제어 가능한 '매틱 큐스' 기능을 로봇청소기에 추가했다. “헤이 매틱” 호출로 최대 10m 거리에서 음성을 인식하며, 특정 위치를 가리키거나 다양한 명령을 이해한다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국 로봇 기업 매틱은 '매틱 큐스' 기능을 추가한 로봇청소기를 선보였다."
+        },
+        {
+          "type": "content",
+          "text": "“헤이 매틱” 호출 시 최대 10m 거리에서도 음성을 인식할 수 있다."
+        },
+        {
+          "type": "content",
+          "text": "청소할 곳을 가리키며 음성 명령을 내리면 해당 위치로 이동해 청소한다."
+        }
+      ],
+      "source": {
+        "name": "전자신문",
+        "url": "https://www.etnews.com/20260814000229"
+      },
+      "publishedAt": "2026-08-14T21:00:00.000Z",
+      "url": "https://www.etnews.com/20260814000229",
+      "linkCheckedAt": "2026-08-14T21:14:53.645Z",
+      "image": "https://img.etnews.com/news/article/2026/08/14/news-p.v1.20260814.fccad7a9d0e44262b863eb886215121f_P1.jpg",
+      "imageChecked": true
+    },
     {
       "id": 4914,
       "lens": "소비자",
@@ -304,6 +396,48 @@
       "linkCheckedAt": "2026-08-14T08:57:23.534Z",
       "image": "https://biz.chosun.com/resizer/v2/ZDKQJNGBIJHLBCBIMLN7BTRP2U.jpg?auth=5f5cb9680c63689ebb0eabaafd6e1742f96e64f49f252c44928893956c5f3b82&width=572&height=300&smart=true",
       "imageChecked": true
+    },
+    {
+      "id": 4924,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "인도",
+        "생산",
+        "수요",
+        "LG전자"
+      ],
+      "headline": "LG전자 인도 법인, 페스티벌 시즌 대비 생산 확대",
+      "summary": "인도 시장에서 가격 변동에도 견조한 수요가 이어짐에 따라 LG전자 인도 법인이 다가오는 페스티벌 시즌을 대비해 생산량을 늘리고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 인도 법인 페스티벌 시즌 대비 생산 확대"
+        },
+        {
+          "type": "content",
+          "text": "가격 변동에도 인도 시장 가전 수요 견조하게 유지"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.moneycontrol.com/news/companies/consumer-electronics/lg-electronics-india-sees-resilient-demand-despite-price-hikes-ramps-up-manufacturing-for-festive-demand-exports-14005459.html"
+      },
+      "publishedAt": "2026-08-14T06:31:07.000Z",
+      "url": "https://www.moneycontrol.com/news/companies/consumer-electronics/lg-electronics-india-sees-resilient-demand-despite-price-hikes-ramps-up-manufacturing-for-festive-demand-exports-14005459.html",
+      "linkCheckedAt": "2026-08-14T21:14:53.645Z",
+      "image": null
     },
     {
       "id": 4895,
