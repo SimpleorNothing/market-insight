@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T14:10:45.744Z",
+  "updatedAt": "2026-08-14T15:43:38.553Z",
   "schemaVersion": "v2",
   "items": [
     {
@@ -220,6 +220,49 @@
       "imageChecked": true
     },
     {
+      "id": 4907,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "인도",
+        "생산",
+        "수요",
+        "페스티벌"
+      ],
+      "headline": "LG전자 인도 법인, 페스티벌 시즌 대비 생산 확대",
+      "summary": "LG전자 인도 법인이 가격 인상 압박 속에서도 수요가 유지됨에 따라 다가오는 페스티벌 시즌을 대비해 생산을 확대하고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자 인도 법인이 페스티벌 시즌 대비 생산을 확대함"
+        },
+        {
+          "type": "content",
+          "text": "가격 인상에도 불구하고 인도 시장에서 가전 수요가 견조하게 유지됨"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.moneycontrol.com/news/companies/consumer-electronics/lg-electronics-india-sees-resilient-demand-despite-price-hikes-ramps-up-manufacturing-for-festive-demand-exports-14005459.html"
+      },
+      "publishedAt": "2026-08-14T06:31:07.000Z",
+      "url": "https://www.moneycontrol.com/news/companies/consumer-electronics/lg-electronics-india-sees-resilient-demand-despite-price-hikes-ramps-up-manufacturing-for-festive-demand-exports-14005459.html",
+      "linkCheckedAt": "2026-08-14T15:41:15.227Z",
+      "image": "https://images.moneycontrol.com/static-mcnews/2024/12/20241206102154_LG-india.jpg",
+      "imageChecked": true
+    },
+    {
       "id": 4895,
       "lens": "정책",
       "grade": "주요",
@@ -304,12 +347,12 @@
       "imageChecked": true
     },
     {
-      "id": 4872,
+      "id": 4912,
       "lens": "정책",
       "grade": "긴급",
-      "impact": 4.5,
+      "impact": 4.9,
       "factors": {
-        "salesRelevance": 4,
+        "salesRelevance": 5,
         "timeUrgency": 5,
         "marketSize": 5,
         "sourceReliability": 4
@@ -317,41 +360,36 @@
       "products": [],
       "competitors": [],
       "tags": [
-        "통상",
+        "통상정책",
         "관세",
-        "백악관",
+        "미국",
         "중국"
       ],
-      "headline": "백악관, 한국을 중국 관세 우회 통로인 환적 40개국으로 지목",
-      "summary": "미국 백악관이 한국을 중국의 관세 우회 통로인 '환적 40개국' 중 하나로 지목했습니다. 향후 관련 통상 압박 및 원산지 규정 강화 가능성이 주목됩니다.",
+      "headline": "백악관, 환적 40개국에 한국 지목…중국 관세 우회 통로로 지적",
+      "summary": "백악관이 중국 관세 우회 통로가 되는 환적 40개국 중 하나로 한국을 지목하며 통상 압박이 고조되고 있습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "미국 백악관이 한국을 환적 40개국 중 하나로 지목"
-        },
-        {
-          "type": "content",
-          "text": "한국을 중국의 관세 우회 통로로 규정하며 통상 압박 시사"
+          "text": "백악관이 중국 관세 우회 통로가 되는 환적 40개국 중 하나로 한국을 지목함"
         }
       ],
       "source": {
         "name": "Google News - 통상·관세 정책 KR",
-        "url": "https://news.tf.co.kr/read/economy/2354305.htm"
+        "url": "https://m.tf.co.kr/amp/economy/2354305.htm"
       },
-      "publishedAt": "2026-08-14T05:07:29.000Z",
-      "url": "https://news.tf.co.kr/read/economy/2354305.htm",
-      "linkCheckedAt": "2026-08-14T05:23:39.483Z",
-      "image": "https://img.tf.co.kr/article/home/2026/08/14/202695251786683935.jpg",
-      "imageChecked": true,
+      "publishedAt": "2026-08-14T05:07:00.000Z",
+      "url": "https://m.tf.co.kr/amp/economy/2354305.htm",
+      "linkCheckedAt": "2026-08-14T15:41:15.227Z",
+      "image": null,
       "relatedArticles": [
         {
-          "id": 4896,
-          "headline": "백악관, 한국을 중국 관세 우회 '환적 40개국'으로 지목",
-          "url": "https://m.tf.co.kr/amp/economy/2354305.htm",
+          "id": 4872,
+          "headline": "백악관, 한국을 중국 관세 우회 통로인 환적 40개국으로 지목",
+          "url": "https://news.tf.co.kr/read/economy/2354305.htm",
           "source": {
             "name": "Google News - 통상·관세 정책 KR"
           },
-          "publishedAt": "2026-08-14T05:07:00.000Z"
+          "publishedAt": "2026-08-14T05:07:29.000Z"
         }
       ]
     },
@@ -513,6 +551,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-14T01:57:00.000Z"
+        },
+        {
+          "id": 4905,
+          "headline": "반도건설, LG전자 등과 스마트홈 서비스 MOU 체결",
+          "url": "https://www.betanews.net/article/view/beta202608140060",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-14T13:26:49.000Z"
         }
       ]
     },
@@ -2843,12 +2890,12 @@
       "imageChecked": true
     },
     {
-      "id": 4736,
+      "id": 4911,
       "lens": "경쟁사",
-      "grade": "참고",
-      "impact": 2.4,
+      "grade": "주시",
+      "impact": 2.8,
       "factors": {
-        "salesRelevance": 2,
+        "salesRelevance": 3,
         "timeUrgency": 2,
         "marketSize": 3,
         "sourceReliability": 3
@@ -2860,25 +2907,27 @@
       "tags": [
         "미디어",
         "인사",
-        "북미"
+        "경영진"
       ],
       "headline": "미디어 아메리카, 저스틴 라인케 신임 사장 선임",
-      "summary": "미디어 아메리카 코퍼레이션이 저스틴 라인케를 새로운 사장으로 임명했습니다.",
+      "summary": "미디어 아메리카 코퍼레이션이 저스틴 라인케를 새로운 사장으로 선임했다고 발표했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "미디어 아메리카 코퍼레이션이 신임 사장으로 저스틴 라인케를 임명"
+          "text": "미디어 아메리카 코퍼레이션이 저스틴 라인케를 사장으로 임명함"
         }
       ],
       "source": {
         "name": "Google News - Midea Global",
-        "url": "https://www.morningstar.com/news/pr-newswire/20260812ny25512/midea-america-corporation-appoints-justin-reinke-as-president"
+        "url": "https://www.loudounnow.com/online_features/press_releases/midea-america-corporation-appoints-justin-reinke-as-president/article_705d69c7-28f6-569d-a7c6-3e60474064b3.html"
       },
-      "publishedAt": "2026-08-12T22:27:05.000Z",
-      "url": "https://www.morningstar.com/news/pr-newswire/20260812ny25512/midea-america-corporation-appoints-justin-reinke-as-president",
-      "linkCheckedAt": "2026-08-13T03:58:50.863Z",
-      "image": "https://images.contentstack.io/v3/assets/blt4eb669caa7dc65b2/blta7dd42ebdd7b93b8/61899b34a3c7df383578294c/morningstar-og.png",
+      "publishedAt": "2026-08-12T21:59:00.000Z",
+      "url": "https://www.loudounnow.com/online_features/press_releases/midea-america-corporation-appoints-justin-reinke-as-president/article_705d69c7-28f6-569d-a7c6-3e60474064b3.html",
+      "linkCheckedAt": "2026-08-14T15:41:15.227Z",
+      "image": "assets/img/topics/news.svg",
       "imageChecked": true,
+      "imageOriginal": "https://bloximages.chicago2.vip.townnews.com/loudounnow.com/content/tncms/assets/v3/editorial/c/f6/cf6fee6b-9a72-5d9d-b685-1dbff88ac2f9/6a7d6ab2e541f.image.jpg?crop=1254%2C658%2C0%2C297&resize=1200%2C630&order=crop%2Cresize",
+      "thumbFace": true,
       "relatedArticles": [
         {
           "id": 4780,
@@ -2897,6 +2946,15 @@
             "name": "Google News - Midea Global"
           },
           "publishedAt": "2026-08-12T21:59:00.000Z"
+        },
+        {
+          "id": 4736,
+          "headline": "미디어 아메리카, 저스틴 라인케 신임 사장 선임",
+          "url": "https://www.morningstar.com/news/pr-newswire/20260812ny25512/midea-america-corporation-appoints-justin-reinke-as-president",
+          "source": {
+            "name": "Google News - Midea Global"
+          },
+          "publishedAt": "2026-08-12T22:27:05.000Z"
         }
       ]
     },
@@ -10252,7 +10310,7 @@
       },
       "publishedAt": "2026-08-05T12:03:08.000Z",
       "url": "https://www.datatooza.com/article/202608052103085976cd1e7846b9_80",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://cgeimage.commutil.kr/datatooza202508_www/img/default_bimg.png?p=003",
       "imageChecked": true
     },
@@ -10458,7 +10516,7 @@
       },
       "publishedAt": "2026-08-05T09:29:53.000Z",
       "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=238393",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://cdn.ezyeconomy.com/news/thumbnail/202608/238393_139779_655_v150.jpg",
       "imageChecked": true
     },
@@ -10500,7 +10558,7 @@
       },
       "publishedAt": "2026-08-05T09:08:36.000Z",
       "url": "https://www.tradingview.com/news/urn:summary_document_report:quartr.com:3692922:0-whirlpool-q1-fy27-net-profit-declined-year-over-year-to-10-288-lakhs-key-finance-executive-resigned/",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
       "imageChecked": true
     },
@@ -10731,7 +10789,7 @@
       },
       "publishedAt": "2026-08-05T07:30:00.000Z",
       "url": "https://www.hellodd.com/news/articleView.html?idxno=112726",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://cdn.hellodd.com/news/thumbnail/202608/112726_337251_4455_v150.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -15207,7 +15265,7 @@
       },
       "publishedAt": "2026-08-02T10:23:57.000Z",
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-stock-looks-undervalued-on-earnings-but-mixed",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true
     },
@@ -15414,7 +15472,7 @@
       },
       "publishedAt": "2026-08-02T09:33:46.000Z",
       "url": "https://www.hankyung.com/article/2026080202191",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://static.hankyung.com/img/logo/logo-news-sns.png?v=20201130",
       "imageChecked": true,
       "relatedArticles": [
@@ -15496,7 +15554,7 @@
       },
       "publishedAt": "2026-08-02T09:00:00.000Z",
       "url": "https://www.ajunews.com/amp/20260802145635368",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://image.ajunews.com/content/image/2026/08/02/20260802150505667831.jpg",
       "imageChecked": true
     },
@@ -15582,7 +15640,7 @@
       },
       "publishedAt": "2026-08-02T06:18:30.000Z",
       "url": "https://www.sunstar.com.ph/amp/story/davao/lg-imperial-launch-free-laundry-for-gensan-families",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://cf-images.assettype.com/sunstar%2F2026-08-02%2F4xw7i04b%2FMans-Carpio-seeks-TRO-vs-subpoena-issued-by-HOR-Committee-on-Justice202608021412560000.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
       "imageChecked": true
     },
@@ -16261,7 +16319,7 @@
       },
       "publishedAt": "2026-07-31T15:46:00.000Z",
       "url": "https://www.popularmechanics.com/home/g35900013/best-dishwashers/",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://hips.hearstapps.com/hmg-prod/images/pop-dishwasher-697385e50468d.jpg?crop=1.00xw:0.752xh;0,0.168xh&resize=1200:*",
       "imageChecked": true
     },
@@ -22782,7 +22840,7 @@
       },
       "publishedAt": "2026-07-27T06:55:00.000Z",
       "url": "https://www.moneycontrol.com/news/business/small-ticket-loans-emerge-as-the-new-engine-of-india-s-consumption-boom-13979179.html",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://images.moneycontrol.com/static-mcnews/2024/12/20241212063302_BeFunky-collage-2024-12-12T120122.717.jpg",
       "imageChecked": true
     },
@@ -26143,7 +26201,7 @@
       },
       "publishedAt": "2026-07-23T23:02:50.000Z",
       "url": "https://mexicobusiness.news/trade-and-investment/news/trane-expands-solar-self-generation-monterrey-plant",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-07/pexels-quang-nguyen-vinh-222549-6876537.jpg?h=4938c091&itok=mzMhovP7",
       "imageChecked": true
     },
@@ -26534,7 +26592,7 @@
       },
       "publishedAt": "2026-07-23T18:36:00.000Z",
       "url": "https://www.plasticsnews.com/processors/extrusion/pn-ilpea-closing-anderson-plant-electrolux-impact/",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": null
     },
     {
@@ -27569,7 +27627,7 @@
       },
       "publishedAt": "2026-07-23T00:00:00.000Z",
       "url": "https://economist.co.kr/article/view/ecn202607220029",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": "https://economist.co.kr/data/ecn/image/2026/07/22/ecn20260722000038.800x.0.png",
       "imageChecked": true
     },
@@ -28583,7 +28641,7 @@
       },
       "publishedAt": "2026-07-22T01:24:25.000Z",
       "url": "https://www.msn.com/en-us/money/companies/samsung-cuts-hundreds-of-us-consumer-electronics-jobs-ahead-of-texas-hq-move/ar-AA28f2tm?gemSnapshotKey=GM591B05F4-snapshot-4&uxmode=ruby&cvid=6a5e7a3d8ac343f29f833d7ba0d0d8b2&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": null,
       "relatedArticles": [
         {
@@ -45587,7 +45645,7 @@
       },
       "publishedAt": "2026-06-23T07:00:00.000Z",
       "url": "https://www.plasticsnews.com/mergers-acquisitions/pn-bizlink-buys-pas-appliance-systems/",
-      "linkCheckedAt": "2026-08-11T14:10:55.256Z",
+      "linkCheckedAt": "2026-08-14T15:40:31.610Z",
       "image": null
     },
     {
@@ -60990,6 +61048,44 @@
       "url": "https://www.statista.com/statistics/220929/revenue-of-bsh-since-2005/",
       "image": null,
       "linkCheckedAt": "2026-08-13T17:48:25.742Z"
+    },
+    {
+      "id": 4913,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.1,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "로보틱스",
+        "신사업",
+        "경쟁사동향"
+      ],
+      "headline": "LG전자, 2026년을 로봇 사업 도약의 해로 삼는다",
+      "summary": "LG전자가 2026년을 로봇 사업 확장을 위한 중요한 전환점으로 만들 계획이라고 밝혔습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 2026년을 로봇 사업 확장의 핵심 해로 삼음"
+        }
+      ],
+      "source": {
+        "name": "Google News - Appliance New Business Models",
+        "url": "https://www.koreaherald.com/article/10700551"
+      },
+      "publishedAt": "2026-03-23T07:00:00.000Z",
+      "url": "https://www.koreaherald.com/article/10700551",
+      "linkCheckedAt": "2026-08-14T15:41:15.227Z",
+      "image": "https://wimg.heraldcorp.com/news/cms/2026/03/23/news-p.v1.20260323.ff405ed2eb21458a91966fca24a8999c_T1.jpg",
+      "imageChecked": true
     },
     {
       "id": 2179,
