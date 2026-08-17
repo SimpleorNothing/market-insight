@@ -3,7 +3,7 @@
 시장 동향을 Daily로 센싱합니다. RSS 자동 수집 + Gemini AI 분류 + 사업부 영향 리포트 생성을 한 시스템으로 통합.
 
 **배포 URL:** `https://mi.samsungda.net`
-**수집 주기:** 1시간 (GitHub Actions cron)
+**수집 주기:** 4시간 (GitHub Actions cron, 수동 실행 지원)
 **분류 모델:** Gemini 3.5 Flash-Lite (`gemini-3.5-flash-lite`)
 **제품 영향 보고서:** Gemini 3.6 Flash (`gemini-3.6-flash`)
 
@@ -49,7 +49,7 @@ market-insight/                         (= 레포 루트, mi.samsungda.net 으�
 │   └── package.json
 ├── .github/
 │   └── workflows/
-│       └── update-news.yml             1시간 주기 자동 실행
+│       └── update-news.yml             4시간 주기 자동 실행
 ├── .nojekyll
 ├── .gitignore
 └── README.md
@@ -153,7 +153,9 @@ Gemini 3.5 Flash-Lite 가격은 Google Gemini API 가격표를 기준으로 확�
 - 일간: $0.276
 - **월간 약 $8 (약 1.1만원)**
 
-`maxArticlesPerRun: 30` 한계로 비용 폭주 차단됨.
+`maxArticlesPerRun: 30` 한계와 `data/processing-cache.json`의 30일 처리 이력으로
+동일한 skip·사전필터 기사의 재호출을 차단합니다. 기술 실패는 1→6→24시간 간격으로
+재시도하며, 분류 기준 버전이나 기사 본문이 바뀌면 다시 평가합니다.
 
 ## 로컬 테스트
 
@@ -216,7 +218,7 @@ npm run build:standalone
 1. Actions 탭에서 실패 로그 확인
 2. `GEMINI_API_KEY` 또는 `GOOGLE_API_KEY` Secret 등록 여부 확인
 3. RSS URL 응답 확인 (매체 측 RSS 폐쇄·이전 可)
-4. API 사용량 확인 (Google AI Studio)
+4. Actions 로그의 Gemini 호출·입출력 토큰·예상비용과 Google AI Studio 사용량 확인
 
 ### 분류 결과가 이상한 경우
 
@@ -224,7 +226,8 @@ npm run build:standalone
 
 ### Actions cron 지연
 
-GitHub Actions cron 은 무료 플랜에서 최대 1시간 지연 발생 可. 즉시 실행이 필요하면 `workflow_dispatch` 수동 트리거 사용.
+GitHub Actions cron 은 4시간 주기로 실행되며 플랫폼 상황에 따라 지연될 수 있습니다.
+즉시 실행이 필요하면 `workflow_dispatch` 수동 트리거를 사용합니다.
 
 ## 사내 보안 고려사항
 
