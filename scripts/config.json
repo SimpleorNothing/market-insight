@@ -667,8 +667,35 @@
   },
   "limits": {
     "_comment": "1회 실행 처리 제한 (API 비용 보호용).",
-    "maxArticlesPerRun": 70,
+    "maxArticlesPerRun": 30,
     "maxArticlesPerSource": 8,
     "minHeadlineLength": 10
+  },
+  "processingCache": {
+    "_comment": "AI 재호출 방지. skip/사전필터는 장기 보관하고 기술 실패는 지수형 재시도.",
+    "classifierVersion": "mi-v1.4-cost-guard",
+    "skipTtlDays": 30,
+    "prefilterTtlDays": 30,
+    "failureBackoffHours": [1, 6, 24],
+    "maxEntries": 20000
+  },
+  "preFilter": {
+    "_comment": "명백한 무관 제목만 차단. 제품 신호 또는 경쟁사+전략 신호면 AI 분류로 우선 통과.",
+    "productSignals": [
+      "가전", "냉장고", "냉동고", "세탁기", "건조기", "식기세척기", "오븐", "인덕션", "에어컨", "공조", "HVAC", "히트펌프", "청소기", "로봇청소기", "스마트홈", "SmartThings", "ThinQ", "appliance", "refrigerator", "washer", "dryer", "dishwasher", "cooktop", "air conditioner", "heat pump"
+    ],
+    "strategicSignals": [
+      "실적", "가이던스", "매출", "영업이익", "공장", "생산", "투자", "CAPEX", "수주", "출시", "신사업", "구독", "렌탈", "관세", "통상", "에너지효율", "earnings", "revenue", "factory", "plant", "production", "investment", "launch", "tariff"
+    ],
+    "strongBlockPatterns": [
+      "부고|별세|장례|obituary|funeral",
+      "카지노|무료 스핀|casino|sportsbook",
+      "징역|구속|살인|폭행|절도|성폭행|crime|sentenced to prison",
+      "프로야구|프로축구|배구|농구|챔피언십|올림픽|football club|high school.*(?:football|volleyball|basketball)",
+      "BTS|그래미|아이돌|연예인|concert|celebrity",
+      "아파트 분양|분양가|전세 매물|월세 매물|주택 매물|home sales|real estate listings|homes? for sale",
+      "관광버스|교통사고|강진|지진 사망|실종자|tour bus|earthquake.*(?:dead|killed)",
+      "학교 동문|학교 행사|장학금 수여|school reunion"
+    ]
   }
 }
