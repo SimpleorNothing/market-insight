@@ -3,6 +3,17 @@ const API_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 export const GEMINI_FLASH_LITE_MODEL = "gemini-3.5-flash-lite";
 export const GEMINI_FLASH_MODEL = "gemini-3.6-flash";
 
+const usageStats = {
+  calls: 0,
+  inputTokens: 0,
+  outputTokens: 0,
+  totalTokens: 0,
+};
+
+export function getGeminiUsageStats() {
+  return { ...usageStats };
+}
+
 export function geminiApiKey(env = process.env) {
   return String(env.GEMINI_API_KEY || env.GOOGLE_API_KEY || "").trim();
 }
@@ -49,6 +60,11 @@ export async function generateGemini({
   }
 
   const data = await res.json();
+  const usage = data.usageMetadata || {};
+  usageStats.calls += 1;
+  usageStats.inputTokens += Number(usage.promptTokenCount || 0);
+  usageStats.outputTokens += Number(usage.candidatesTokenCount || 0);
+  usageStats.totalTokens += Number(usage.totalTokenCount || 0);
   const text = (data.candidates?.[0]?.content?.parts || [])
     .map((part) => part.text || "")
     .join("")

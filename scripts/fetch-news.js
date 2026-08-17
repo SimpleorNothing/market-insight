@@ -18,6 +18,7 @@ import {
   GEMINI_FLASH_LITE_MODEL,
   geminiApiKey,
   generateGemini,
+  getGeminiUsageStats,
 } from "./gemini-client.mjs";
 import Parser from "rss-parser";
 import { normalizeUrl, sourceHeadlineKey } from "./url-normalize.js";
@@ -39,6 +40,7 @@ const CURATION_CFG = await readFile(join(__dirname, "curation.json"), "utf-8")
   .catch(() => ({}));
 
 const NEWS_PATH = join(ROOT, "data", "news.json");
+const PROCESSING_CACHE_PATH = join(ROOT, "data", "processing-cache.json");
 const DRY_RUN = process.env.DRY_RUN === "1";
 const RUN_DATE = new Date().toISOString().slice(0, 10);
 
@@ -58,6 +60,93 @@ const BROWSER_UA =
 // ===== Utilities =====
 function urlHash(url) {
   return createHash("sha256").update(url).digest("hex").slice(0, 12);
+}
+
+function contentHash(item) {
+  return createHash("sha256")
+    .update(`${item.headline || ""}\n${item.rawContent || ""}`)
+    .digest("hex")
+    .slice(0, 16);
+}
+
+function isoAfterHours(hours) {
+  return new Date(Date.now() + hours * 60 * 60 * 1000).toISOString();
+}
+
+function ageDays(iso) {
+  const t = new Date(iso || 0).getTime();
+  return Number.isFinite(t) ? (Date.now() - t) / 86400000 : Infinity;
+}
+
+async function loadProcessingCache() {
+  try {
+    const parsed = JSON.parse(await readFile(PROCESSING_CACHE_PATH, "utf-8"));
+    return parsed && parsed.entries ? parsed : { schemaVersion: "v1", entries: {} };
+  } catch {
+    return { schemaVersion: "v1", entries: {} };
+  }
+}
+
+function pruneProcessingCache(cache) {
+  const cfg = CONFIG.processingCache || {};
+  const maxAge = Math.max(cfg.skipTtlDays || 30, cfg.prefilterTtlDays || 30, 30);
+  const rows = Object.entries(cache.entries || {})
+    .filter(([, entry]) => ageDays(entry.processedAt) <= maxAge)
+    .sort((a, b) => String(b[1].processedAt).localeCompare(String(a[1].processedAt)))
+    .slice(0, cfg.maxEntries || 20000);
+  cache.entries = Object.fromEntries(rows);
+}
+
+function cachedDecision(item, cache) {
+  const cfg = CONFIG.processingCache || {};
+  const key = urlHash(normalizeUrl(item.link));
+  const entry = cache.entries?.[key];
+  if (!entry || entry.contentHash !== contentHash(item)) return null;
+  if (entry.status === "failure") {
+    return entry.retryAfter && new Date(entry.retryAfter).getTime() > Date.now()
+      ? entry.status
+      : null;
+  }
+  if (entry.classifierVersion !== cfg.classifierVersion) return null;
+  const ttl = entry.status === "prefilter"
+    ? cfg.prefilterTtlDays || 30
+    : cfg.skipTtlDays || 30;
+  return ageDays(entry.processedAt) <= ttl ? entry.status : null;
+}
+
+function setCacheEntry(cache, item, fields) {
+  const key = urlHash(normalizeUrl(item.link));
+  cache.entries[key] = {
+    headline: item.headline,
+    contentHash: contentHash(item),
+    classifierVersion: CONFIG.processingCache?.classifierVersion || "v1",
+    processedAt: new Date().toISOString(),
+    ...fields,
+  };
+}
+
+function strongPrefilterReason(headline) {
+  const cfg = CONFIG.preFilter || {};
+  const text = String(headline || "");
+  const lower = text.toLowerCase();
+  const hasProduct = (cfg.productSignals || []).some((s) =>
+    lower.includes(String(s).toLowerCase())
+  );
+  const hasStrategic = (cfg.strategicSignals || []).some((s) =>
+    lower.includes(String(s).toLowerCase())
+  );
+  const hasCompetitor = detectCompetitors(text).length > 0;
+  if (hasProduct || (hasCompetitor && hasStrategic)) {
+    return null;
+  }
+  for (const raw of cfg.strongBlockPatterns || []) {
+    try {
+      if (new RegExp(raw, "i").test(text)) return raw;
+    } catch {
+      // 잘못된 운영 정규식 하나가 전체 수집을 중단하지 않도록 무시한다.
+    }
+  }
+  return null;
 }
 
 function gradeFromImpact(impact) {
@@ -708,7 +797,7 @@ async function fetchAllRss() {
   return all;
 }
 
-function dedupeAndFilter(fresh, existing) {
+function dedupeAndFilter(fresh, existing, processingCache) {
   // URL 정규화 키: AMP 변형·추적 파라미터·모바일 미러가 다른 URL로 재유입돼
   // LLM 분류를 중복 호출하는 것을 차단 (저장된 url 원문은 변형하지 않음)
   const existingHashes = new Set(
@@ -717,6 +806,7 @@ function dedupeAndFilter(fresh, existing) {
   const seen = new Set();
   const seenHeadlines = new Set();
   const blocked = [];
+  let cached = 0;
   const kept = [];
 
   for (const it of fresh) {
@@ -730,6 +820,19 @@ function dedupeAndFilter(fresh, existing) {
     if (hk && seenHeadlines.has(hk)) continue;
     if (hk) seenHeadlines.add(hk);
 
+    const prior = cachedDecision(it, processingCache);
+    if (prior) {
+      cached++;
+      continue;
+    }
+
+    const strongReason = strongPrefilterReason(it.headline);
+    if (strongReason) {
+      blocked.push({ headline: it.headline, reason: strongReason });
+      setCacheEntry(processingCache, it, { status: "prefilter", reason: strongReason });
+      continue;
+    }
+
     const blockReason = isBlockedByKeyword(it.headline);
     if (blockReason) {
       blocked.push({ headline: it.headline, reason: blockReason });
@@ -741,6 +844,7 @@ function dedupeAndFilter(fresh, existing) {
   if (blocked.length > 0) {
     log(`키워드 사전 필터로 ${blocked.length}건 제외`);
   }
+  if (cached > 0) log(`처리 이력 캐시로 ${cached}건 AI 재분류 방지`);
   return kept;
 }
 
@@ -1143,7 +1247,7 @@ async function classifyOne(item, retry = false, hint = "", preText = null) {
   return parsed;
 }
 
-async function classifyAll(items, startId, preTexts = null) {
+async function classifyAll(items, startId, processingCache, preTexts = null) {
   const toProcess = items.slice(0, CONFIG.limits.maxArticlesPerRun);
   const classified = [];
   let nextId = startId;
@@ -1158,6 +1262,7 @@ async function classifyAll(items, startId, preTexts = null) {
 
       if (cls.lens === "skip") {
         skipCount++;
+        setCacheEntry(processingCache, item, { status: "skip", reason: "model_skip" });
         log(`  → skip`);
       } else {
         const impact = computeImpact(cls.factors);
@@ -1182,6 +1287,8 @@ async function classifyAll(items, startId, preTexts = null) {
           url: item.link,
           linkCheckedAt: item.linkCheckedAt,
         });
+        const key = urlHash(normalizeUrl(item.link));
+        delete processingCache.entries[key];
         log(`  → ${cls.lens} / ${grade} (impact ${impact})`);
       }
       if (!preTexts || preTexts.get(item) == null) {
@@ -1189,6 +1296,17 @@ async function classifyAll(items, startId, preTexts = null) {
       }
     } catch (err) {
       failCount++;
+      const key = urlHash(normalizeUrl(item.link));
+      const previous = processingCache.entries?.[key];
+      const attempts = previous?.status === "failure" ? (previous.attempts || 0) + 1 : 1;
+      const backoffs = CONFIG.processingCache?.failureBackoffHours || [1, 6, 24];
+      const backoffHours = backoffs[Math.min(attempts - 1, backoffs.length - 1)] || 24;
+      setCacheEntry(processingCache, item, {
+        status: "failure",
+        reason: String(err.message || err).slice(0, 200),
+        attempts,
+        retryAfter: isoAfterHours(backoffHours),
+      });
       log(`  ! 분류 실패: ${err.message}`);
     }
   }
@@ -1375,6 +1493,9 @@ async function main() {
   log("=== DA Market Insight v2 뉴스 갱신 시작 ===");
 
   const existing = await loadExisting();
+  const processingCache = await loadProcessingCache();
+  const processingCacheBefore = JSON.stringify(processingCache.entries || {});
+  pruneProcessingCache(processingCache);
   log(`기존 뉴스 ${existing.items.length}건 로드`);
 
   // schema migration check - v1 data가 있으면 무시하고 새로 시작
@@ -1449,24 +1570,40 @@ async function main() {
 
   await resolveFreshLinks(fresh);
 
-  const deduped = dedupeAndFilter(fresh, existing);
+  const deduped = dedupeAndFilter(fresh, existing, processingCache);
   const newOnes = await dropDeadFreshLinks(deduped);
   log(`중복·필터·링크확인 後 분류 대상 ${newOnes.length}건`);
 
   const startId = Math.max(0, ...existing.items.map((i) => i.id || 0)) + 1;
 
   const classified = newOnes.length
-    ? await classifyAll(newOnes, startId)
+    ? await classifyAll(newOnes, startId, processingCache)
     : [];
   if (newOnes.length === 0) log("신규 분류 대상 없음");
   else log(`AI 분류 완료: ${classified.length}건 저장 대상`);
 
   await enrichImages(classified); // 신규 분류분에 og:image 부착(토큰 비용 0)
 
-  // 인물 증명사진 썸네일 → 토픽 일러스트 교체 (신규분 전량 + 기존분 회전 배치)
+  // 인물 증명사진 썸네일 → 토픽 일러스트 교체 (비용 보호: 신규 저장 기사만 판별)
   const faceNew = await applyPortraitThumbnails(classified, classified.length);
-  const backlogN = CONFIG.portraitDetection?.backlogPerRun ?? 12;
-  const faceChecked = faceNew + (await applyPortraitThumbnails(existing.items, backlogN));
+  const faceChecked = faceNew;
+
+  pruneProcessingCache(processingCache);
+  const processingCacheChanged =
+    processingCacheBefore !== JSON.stringify(processingCache.entries || {});
+  if (processingCacheChanged) {
+    await writeFile(
+      PROCESSING_CACHE_PATH,
+      JSON.stringify({ ...processingCache, updatedAt: new Date().toISOString() }, null, 2)
+    );
+    log(`처리 이력 캐시 갱신: ${Object.keys(processingCache.entries || {}).length}건`);
+  }
+
+  const usage = getGeminiUsageStats();
+  const estimatedUsd = usage.inputTokens * 0.30 / 1_000_000 + usage.outputTokens * 2.50 / 1_000_000;
+  log(
+    `Gemini 사용량: ${usage.calls}회, 입력 ${usage.inputTokens} tokens, 출력 ${usage.outputTokens} tokens, 예상 $${estimatedUsd.toFixed(4)}`
+  );
 
   // 보존 기간 정리 → 같은 사건 기사 묶음 → 최신순 정렬
   const pruned = prune(
@@ -1493,7 +1630,7 @@ async function main() {
     finalItems.length !== existing.items.length ||
     backfilled > 0;
   if (!changed) {
-    log("변경 없음");
+    log("뉴스 변경 없음 (처리 이력 캐시는 갱신됨)");
     return;
   }
 
@@ -1514,7 +1651,17 @@ async function main() {
 }
 
 // 재사용을 위한 export (reclassify.mjs 等에서 분류 로직 재활용)
-export { CONFIG, CLASSIFY_SYSTEM, classifyOne, buildUserPrompt, computeImpact, gradeFromImpact };
+export {
+  CONFIG,
+  CLASSIFY_SYSTEM,
+  classifyOne,
+  buildUserPrompt,
+  computeImpact,
+  gradeFromImpact,
+  strongPrefilterReason,
+  cachedDecision,
+  setCacheEntry,
+};
 
 // 직접 실행(node fetch-news.js)일 때만 전체 파이프라인 구동. import 時엔 실행 안 함.
 if (import.meta.url === pathToFileURL(process.argv[1] || "").href) {
