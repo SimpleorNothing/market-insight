@@ -91,6 +91,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-08
 | PR | 일자 | 내용 |
 |---|---|---|
+| #127 | 08-17 | Reduce MI news update costs |
 | #126 | 08-06 | fix: MI 정책 후순위 및 과거 이벤트 제외 |
 
 ### 2026-07
