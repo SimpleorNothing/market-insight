@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "fetch": "node fetch-news.js",
-    "build:standalone": "node build-standalone.mjs"
+    "build:standalone": "node build-standalone.mjs",
+    "test:cost-guard": "node test-cost-guard.mjs"
   },
   "dependencies": {
     "rss-parser": "^3.13.0"
