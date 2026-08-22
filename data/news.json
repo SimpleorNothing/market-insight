@@ -1,7 +1,253 @@
 {
-  "updatedAt": "2026-08-22T16:16:49.765Z",
+  "updatedAt": "2026-08-22T20:16:12.219Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 5332,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "보복관세",
+        "캐나다",
+        "미국",
+        "통상정책"
+      ],
+      "headline": "캐나다, 9월 8일부터 미국산 철강·가전 등에 보복 관세 부과",
+      "summary": "캐나다 총리가 9월 8일부터 미국을 상대로 철강, 가전, 유제품 등에 보복 관세를 부과하겠다고 발표했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "캐나다 총리, 9월 8일부터 미국에 보복 관세 부과 발표"
+        },
+        {
+          "type": "content",
+          "text": "보복 관세 집중 품목으로 철강, 가전, 유제품 지정"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4431334"
+      },
+      "publishedAt": "2026-08-22T18:02:16.000Z",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4431334",
+      "linkCheckedAt": "2026-08-22T20:14:26.467Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://cdn.news.einfomax.co.kr/news/thumbnail/202608/4431334_338620_32_v150.jpg",
+      "thumbFace": true,
+      "relatedArticles": [
+        {
+          "id": 5346,
+          "headline": "캐나다, 미국산 제품에 9월 8일부터 보복 관세 부과",
+          "url": "https://abc7news.com/post/us-canada-tariffs-news-imposes-50-20-billion-worth-canadian-products-says-will-retaliate/19718120/",
+          "source": {
+            "name": "Google News - US Trade Policy"
+          },
+          "publishedAt": "2026-08-22T13:33:23.000Z"
+        }
+      ]
+    },
+    {
+      "id": 5343,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "통상",
+        "미국",
+        "캐나다"
+      ],
+      "headline": "캐나다, 미국 50% 관세에 보복 예고… USTR 추가 대응",
+      "summary": "미국의 50% 관세 조치에 캐나다가 보복을 예고했으며, 미국 무역대표부는 추가 대응 추진 입장을 밝혔다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "캐나다는 미국의 50% 관세 부과 방침에 대해 보복 조치를 예고함"
+        },
+        {
+          "type": "content",
+          "text": "미국 무역대표부(USTR)는 이에 맞서 추가 대응을 추진하겠다고 밝힘"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://biz.chosun.com/international/international_general/2026/08/23/OUEMFY2JSZHHBLO35UVT53QVE4/?outputType=amp"
+      },
+      "publishedAt": "2026-08-22T16:38:00.000Z",
+      "url": "https://biz.chosun.com/international/international_general/2026/08/23/OUEMFY2JSZHHBLO35UVT53QVE4/?outputType=amp",
+      "linkCheckedAt": "2026-08-22T20:14:26.467Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://biz.chosun.com/resizer/v2/IUAR4ZDLIRO5TB4HEDLR4F3ECM.jpg?auth=70b4014c8739fd35e2ce6a3db8214dbfe378089b9221b4bf405840c93e8aee92&width=1200&height=630&smart=true",
+      "thumbFace": true
+    },
+    {
+      "id": 5340,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상정책",
+        "관세",
+        "캐나다",
+        "미국"
+      ],
+      "headline": "캐나다 총리, 美에 보복관세 '맞불'…철강·낙농품 부과",
+      "summary": "캐나다가 미국에 맞서 철강 및 낙농품 등을 대상으로 보복관세를 부과한다고 발표했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "캐나다 총리, 미국에 보복관세 맞불 대응 발표"
+        },
+        {
+          "type": "content",
+          "text": "철강 및 낙농품 등을 보복관세 부과 대상으로 지정"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260823000800087"
+      },
+      "publishedAt": "2026-08-22T16:22:11.000Z",
+      "url": "https://www.yna.co.kr/amp/view/AKR20260823000800087",
+      "linkCheckedAt": "2026-08-22T20:14:26.467Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://img5.yna.co.kr/etc/inner/KR/2026/08/23/AKR20260823000800087_01_i_P4.jpg",
+      "thumbFace": true,
+      "relatedArticles": [
+        {
+          "id": 5341,
+          "headline": "캐나다, 미국의 50% 관세 맞서 철강·낙농품 보복 조치",
+          "url": "https://news.nate.com/view/20260823n00544?mid=n1101",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-22T18:14:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 5345,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.5,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "무역",
+        "미국",
+        "캐나다"
+      ],
+      "headline": "미국, 캐나다산 제품 200억 달러어치에 50% 관세 부과",
+      "summary": "미국이 200억 달러 규모의 캐나다산 제품에 50%의 관세를 부과했으며, 캐나다 역시 보복 관세 부과로 대응할 예정입니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국, 200억 달러 규모 캐나다산 제품에 50% 관세 부과"
+        },
+        {
+          "type": "content",
+          "text": "캐나다, 미국의 조치에 대응해 보복 관세 부과 방침"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.pbs.org/newshour/world/u-s-imposes-50-tariffs-on-20-billion-worth-of-canadian-products-canada-says-it-will-retaliate"
+      },
+      "publishedAt": "2026-08-22T15:30:49.000Z",
+      "url": "https://www.pbs.org/newshour/world/u-s-imposes-50-tariffs-on-20-billion-worth-of-canadian-products-canada-says-it-will-retaliate",
+      "linkCheckedAt": "2026-08-22T20:14:26.467Z",
+      "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/08/2026-08-20T125619Z_462463637_RC262NA7TZJM_RTRMADP_3_USA-TRUMP-TARIFFS-CANADA-1024x683.jpg",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 5342,
+          "headline": "미국, 캐나다산 제품에 50% 관세 부과",
+          "url": "https://www.g-enews.com/article/Global-Biz/2026/08/2026082219081387152bd56fbc3c_1",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-22T10:12:09.000Z"
+        }
+      ]
+    },
+    {
+      "id": 5339,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 3.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Electrolux"
+      ],
+      "tags": [
+        "일렉트로룩스",
+        "실적",
+        "경쟁사동향"
+      ],
+      "headline": "일렉트로룩스, 2026년 2분기 실적 예상치 상회",
+      "summary": "일렉트로룩스의 2026년 2분기 실적이 예상치를 상회하며 주가가 저점에서 벗어나는 흐름을 보였습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "일렉트로룩스의 2026년 2분기 실적이 시장 예상치를 상회함"
+        },
+        {
+          "type": "content",
+          "text": "실적 호조에 힘입어 주가가 저점 대비 안정적인 흐름을 유지함"
+        }
+      ],
+      "source": {
+        "name": "Google News - Electrolux",
+        "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/electrolux-stock-holds-well-off-its-lows-as-q2-2026-earnings-beat/69986577"
+      },
+      "publishedAt": "2026-08-22T13:36:11.000Z",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/electrolux-stock-holds-well-off-its-lows-as-q2-2026-earnings-beat/69986577",
+      "linkCheckedAt": "2026-08-22T20:14:26.467Z",
+      "image": "https://mdb.ad-hoc-news.de/bild/bild-2706742_1920_1080.webp",
+      "imageChecked": true
+    },
     {
       "id": 5321,
       "lens": "경쟁사",
@@ -44,6 +290,48 @@
       "linkCheckedAt": "2026-08-22T16:15:00.116Z",
       "image": "https://www.megabites.com.ph/wp-content/uploads/2026/08/20260820_155800.webp",
       "imageChecked": true
+    },
+    {
+      "id": 5336,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.4,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 2,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "인도",
+        "수출",
+        "제조거점",
+        "글로벌전략"
+      ],
+      "headline": "LG 인도, 수출 전략 확대 및 50개국 제조 거점 추진",
+      "summary": "LG 인도가 수출 전략을 확대하며 50개국을 아우르는 제조 거점 구축을 추진한다고 밝혔다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG 인도가 수출 전략을 대폭 확대함."
+        },
+        {
+          "type": "content",
+          "text": "50개 시장을 대상으로 한 제조 거점 확보를 추진함."
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.bwpeople.in/article/lg-india-expands-export-strategy-eyes-50-market-manufacturing-footprint-620400"
+      },
+      "publishedAt": "2026-08-22T12:14:35.000Z",
+      "url": "https://www.bwpeople.in/article/lg-india-expands-export-strategy-eyes-50-market-manufacturing-footprint-620400",
+      "linkCheckedAt": "2026-08-22T20:14:26.467Z",
+      "image": null
     },
     {
       "id": 5288,
@@ -174,6 +462,47 @@
       "imageChecked": true,
       "imageOriginal": "https://ichef.bbci.co.uk/news/1200/branded_korean/ef5d/live/88423690-9ddd-11f1-b109-879e35c24276.jpg",
       "thumbFace": true
+    },
+    {
+      "id": 5347,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "무역협정",
+        "미국",
+        "캐나다"
+      ],
+      "headline": "미국·캐나다, 관세 협상 결렬…무역전쟁 심화",
+      "summary": "미국과 캐나다가 관세 협상에 실패하면서 무역 갈등이 더욱 심화되고 있습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국과 캐나다 관세 협상 최종 결렬"
+        },
+        {
+          "type": "content",
+          "text": "양국 간 무역전쟁 심화 양상"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://www.cnbc.com/2026/08/21/us-canada-fail-to-reach-a-tariff-deal-deepen-trade-war.html"
+      },
+      "publishedAt": "2026-08-22T04:28:44.000Z",
+      "url": "https://www.cnbc.com/2026/08/21/us-canada-fail-to-reach-a-tariff-deal-deepen-trade-war.html",
+      "linkCheckedAt": "2026-08-22T20:14:26.467Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/108350989-1787066637128-gettyimages-2290467632-AFP_C4XH3RT.jpeg?v=1787066701&w=1920&h=1080",
+      "imageChecked": true
     },
     {
       "id": 5284,
@@ -421,6 +750,15 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-22T06:00:03.000Z"
+        },
+        {
+          "id": 5308,
+          "headline": "LG전자, 나이지리아 세탁기 시장 공략 강화",
+          "url": "https://authorityngr.com/2026/08/21/lg-redefines-laundry-care-for-nigerian-families-with-smarter-washing-solutions/",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-21T06:47:00.000Z"
         }
       ]
     },
@@ -669,53 +1007,17 @@
             "name": "Google News - LG Global"
           },
           "publishedAt": "2026-08-21T01:07:15.000Z"
-        }
-      ]
-    },
-    {
-      "id": 5308,
-      "lens": "경쟁사",
-      "grade": "참고",
-      "impact": 1.9,
-      "factors": {
-        "salesRelevance": 2,
-        "timeUrgency": 1,
-        "marketSize": 2,
-        "sourceReliability": 3
-      },
-      "products": [
-        "세탁기"
-      ],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "LG전자",
-        "세탁기",
-        "나이지리아",
-        "해외시장"
-      ],
-      "headline": "LG전자, 나이지리아 세탁기 시장 공략 강화",
-      "summary": "LG전자가 스마트한 세탁 솔루션을 통해 나이지리아 가정의 세탁 경험을 새롭게 정의한다고 밝혔습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "LG전자가 스마트 세탁 솔루션 발표"
         },
         {
-          "type": "content",
-          "text": "나이지리아 가정의 세탁 관리 혁신"
+          "id": 5335,
+          "headline": "삼성전자, IDEA 2026서 접근성 디자인 임팩트 상 포함 45개 수상",
+          "url": "https://finance.biggo.com/news/3a03dd24-6091-4865-b696-08d5fe130e2a",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-08-21T08:05:00.000Z"
         }
-      ],
-      "source": {
-        "name": "Google News - LG Global",
-        "url": "https://authorityngr.com/2026/08/21/lg-redefines-laundry-care-for-nigerian-families-with-smarter-washing-solutions/"
-      },
-      "publishedAt": "2026-08-21T06:47:00.000Z",
-      "url": "https://authorityngr.com/2026/08/21/lg-redefines-laundry-care-for-nigerian-families-with-smarter-washing-solutions/",
-      "linkCheckedAt": "2026-08-22T12:23:07.151Z",
-      "image": "https://authorityngr.com/wp-content/uploads/2026/08/IMG-20260821-WA0010.jpg",
-      "imageChecked": true
+      ]
     },
     {
       "id": 5280,
@@ -2007,6 +2309,44 @@
       ]
     },
     {
+      "id": 5344,
+      "lens": "경쟁사",
+      "grade": "주시",
+      "impact": 3.2,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 3,
+        "marketSize": 4,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "Midea"
+      ],
+      "tags": [
+        "신사업",
+        "로보틱스",
+        "공급망"
+      ],
+      "headline": "Black Sesame, Midea 로보틱스 공급망 진입",
+      "summary": "Black Sesame Technologies가 Midea의 로보틱스 공급망에 진입했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Black Sesame Technologies가 Midea의 로보틱스 공급망에 합류"
+        }
+      ],
+      "source": {
+        "name": "Google News - Appliance New Business Models",
+        "url": "https://autonews.gasgoo.com/articles/news/black-sesame-technologies-enters-mideas-robotics-supply-chain-2090024130912215041"
+      },
+      "publishedAt": "2026-08-19T11:01:43.000Z",
+      "url": "https://autonews.gasgoo.com/articles/news/black-sesame-technologies-enters-mideas-robotics-supply-chain-2090024130912215041",
+      "linkCheckedAt": "2026-08-22T20:14:26.467Z",
+      "image": "https://gascloud.gasgoo.com/production/2026/08/fb426e63-2850-49ba-81e6-21b65409fcdf-1787164342.png",
+      "imageChecked": true
+    },
+    {
       "id": 5117,
       "lens": "경쟁사",
       "grade": "주요",
@@ -2476,7 +2816,7 @@
       },
       "publishedAt": "2026-08-18T15:01:00.000Z",
       "url": "https://www.joongang.co.kr/article/25454255",
-      "linkCheckedAt": "2026-08-18T16:23:30.540Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202608/19/df774f21-aa18-4389-bc74-b36a7b991041.jpg",
       "imageChecked": true
     },
@@ -2519,7 +2859,7 @@
       },
       "publishedAt": "2026-08-18T12:49:38.000Z",
       "url": "https://www.moomoo.com/news/post/74839205/hisense-home-appliances-h1-profit-drops-20-revenue-slips-5",
-      "linkCheckedAt": "2026-08-18T16:23:30.540Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": null,
       "relatedArticles": [
         {
@@ -2879,6 +3219,15 @@
             "name": "Google News - 캐리어/오텍캐리어 KR"
           },
           "publishedAt": "2026-08-18T21:00:00.000Z"
+        },
+        {
+          "id": 5338,
+          "headline": "데이터센터 냉각 수요 증가에 트레인·캐리어 수혜",
+          "url": "https://www.fool.com/investing/2026/08/20/data-centers-dont-just-need-power-they-need-coolin/",
+          "source": {
+            "name": "Google News - HVAC Majors"
+          },
+          "publishedAt": "2026-08-20T21:45:00.000Z"
         }
       ]
     },
@@ -4579,7 +4928,7 @@
       },
       "publishedAt": "2026-08-15T05:00:00.000Z",
       "url": "https://www.seoulfn.com/news/articleView.html?idxno=635690",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": "https://cdn.seoulfn.com/news/photo/202608/635690_437206_506.jpg",
       "imageChecked": true
     },
@@ -4621,7 +4970,7 @@
       },
       "publishedAt": "2026-08-15T02:20:01.000Z",
       "url": "https://www.mk.co.kr/news/economy/12128710",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": "https://pimg.mk.co.kr/news/cms/202608/15/news-p.v1.20260814.d03b09d69a7e405d85a590f9771632ac_R.png"
     },
     {
@@ -14641,7 +14990,7 @@
       },
       "publishedAt": "2026-08-05T22:50:06.000Z",
       "url": "https://mexicobusiness.news/aerospace/news/mexicos-aspa-seeks-labor-voice-usmca-review",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-08/ser-piloto-de-avion-todo-lo-que-necesitas-saber.jpg?h=f5e164fa&itok=q_VLEBaP",
       "imageChecked": true
     },
@@ -14681,7 +15030,7 @@
       },
       "publishedAt": "2026-08-05T20:50:00.000Z",
       "url": "https://www.mt.co.kr/amp/industry/2026/08/06/2026080515012758773",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/08/2026080515012758773_1.jpg",
       "imageChecked": true
     },
@@ -17350,7 +17699,7 @@
       },
       "publishedAt": "2026-08-04T13:32:10.000Z",
       "url": "https://www.investing.com/news/company-news/whirlpool-q2-2026-slides-pricing-actions-drive-margin-recovery-plan-93CH-4834559",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": null
     },
     {
@@ -22594,7 +22943,7 @@
       },
       "publishedAt": "2026-07-30T09:12:40.000Z",
       "url": "https://zdnet.co.kr/view/?no=20260730180632",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": "https://image.zdnet.co.kr/2026/01/07/ec251639463c00611bde2bda8cdbf2b1.jpg",
       "imageChecked": true
     },
@@ -23054,7 +23403,7 @@
       },
       "publishedAt": "2026-07-30T07:18:00.000Z",
       "url": "https://www.newspim.com/news/view/20260730001260",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "image": "https://img.newspim.com/news/2026/04/22/2604221629335890_t1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -39970,7 +40319,7 @@
       "url": "https://www.etnews.com/20260713000323",
       "image": "https://img.etnews.com/news/article/2026/07/13/news-p.v1.20260713.e701cdbe19f342e3924f4c9fe2bf7d6e_P1.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T16:22:19.404Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1735,
@@ -40013,7 +40362,7 @@
       "url": "https://www.efn.co.kr/news/articleView.html?idxno=2728",
       "image": "https://cdn.efn.co.kr/news/photo/202607/2728_2490_488.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T16:22:19.404Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1728,
@@ -40056,7 +40405,7 @@
       "url": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3028834",
       "image": "https://cdn.kihoilbo.co.kr/news/photo/202607/3028834_572584_2327.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T16:22:19.404Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1729,
@@ -40094,7 +40443,7 @@
       "publishedAt": "2026-07-13T10:27:07.000Z",
       "url": "https://www.streetinsider.com/New+Coverage/BNP+Paribas+Exane+Starts+Whirlpool+Corporation+%28WHR%29+at+Neutral/26759285.html",
       "image": null,
-      "linkCheckedAt": "2026-08-18T16:22:19.404Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1787,
@@ -40137,7 +40486,7 @@
       "publishedAt": "2026-07-13T08:00:26.000Z",
       "url": "https://www.koreaherald.com/article/10807360",
       "image": null,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1718,
@@ -40181,7 +40530,7 @@
       "url": "https://www.etnews.com/20260713000257",
       "image": "https://img.etnews.com/news/article/2026/07/02/news-p.v1.20260702.04df0d03b0fe47f8af85fd5b9ff3d533_P1.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1776,
@@ -40228,7 +40577,7 @@
       "publishedAt": "2026-07-13T02:22:41.000Z",
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/is-softer-appliance-demand-forcing-whirlpool-whr-to-rethink/amp",
       "image": null,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1714,
@@ -40276,7 +40625,7 @@
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/is-softer-appliance-demand-forcing-whirlpool-whr-to-rethink/amp",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1709,
@@ -40318,7 +40667,7 @@
       "publishedAt": "2026-07-13T00:35:04.000Z",
       "url": "https://www.theguru.co.kr/news/article.html?no=104300",
       "image": null,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1703,
@@ -40361,7 +40710,7 @@
       "url": "https://www.kmecnews.co.kr/news/articleView.html?idxno=50797",
       "image": "https://cdn.kmecnews.co.kr/news/photo/202607/50797_40750_637.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1701,
@@ -40413,7 +40762,7 @@
       "url": "https://www.yna.co.kr/view/AKR20260712045900003",
       "image": "https://img7.yna.co.kr/photo/yna/YH/2026/04/21/PYH2026042100950001300_P4.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "relatedArticles": [
         {
           "id": 1788,
@@ -40470,7 +40819,7 @@
       "url": "https://pokde.net/smart-home/lg-professional-laundry-lineup",
       "image": "https://cdn.pokde.net/wp-content/uploads/2026/07/13031430/lgprofessionalaundrylineupcover.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1697,
@@ -40515,7 +40864,7 @@
       "url": "https://www.gukjenews.com/news/articleView.html?idxno=3633625",
       "image": "https://cdn.gukjenews.com/news/thumbnail/202607/3633625_3797466_45_v150.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1696,
@@ -40555,7 +40904,7 @@
       "url": "https://www.kharn.kr/mobile/article.html?no=31250",
       "image": "https://www.kharn.kr/data/photos/20260728/art_17836675656619_39c752.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1689,
@@ -40599,7 +40948,7 @@
       "url": "https://www.sedaily.com/article/20066667",
       "image": "https://wimg.sedaily.com/news/cms/2026/07/12/news-p.v1.20260712.8031da8d18994d21a04acae52f029439_R.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1691,
@@ -40638,7 +40987,7 @@
       "url": "https://www.etnews.com/20260712000081",
       "image": "https://img.etnews.com/news/article/2026/07/10/news-p.v1.20260710.a80b6370bae94847866b1d1444f5158f_P1.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1690,
@@ -40677,7 +41026,7 @@
       "url": "https://www.etnews.com/20260712000080",
       "image": "https://img.etnews.com/news/article/2026/07/10/news-p.v1.20260710.42cbddb78d404cd78d42d7faf5c438e6_P1.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1699,
@@ -40722,7 +41071,7 @@
       "url": "https://www.etnews.com/20260710000241",
       "image": "https://img.etnews.com/news/article/2026/07/10/news-p.v1.20260710.a21cb10e39674643a47e59fa8c455a6b_P1.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1698,
@@ -40773,7 +41122,7 @@
       "url": "https://v.daum.net/v/0LZndQ8Byy?f=p",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/12/552786-gygG85f/20260712144205640blcf.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1688,
@@ -40819,7 +41168,7 @@
       "url": "https://simplywall.st/stocks/us/consumer-durables/nyse-whr/whirlpool/news/whirlpool-whr-plant-closure-puts-fair-value-narrative-back-i",
       "image": "https://images.simplywall.st/asset/industry/4114000-choice2-main-header/1585186648126",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1683,
@@ -40865,7 +41214,7 @@
       "url": "https://v.daum.net/v/20260712082328580",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/12/segye/20260712082328784wajf.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1681,
@@ -40909,7 +41258,7 @@
       "url": "https://timothysykes.com/news/whirlpoolcorporation-whr-news-2026_07_11/",
       "image": "https://content.timothysykes.com/wp-content/uploads/2026/07/whirlpool-stock-rises-as-whr-accelerates-cost-cuts-and-debt-shuffle.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "relatedArticles": [
         {
           "id": 1694,
@@ -40963,7 +41312,7 @@
       "url": "https://v.daum.net/v/20260711194642740?f=p",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/11/mbn/20260711194643242qulb.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1695,
@@ -41010,7 +41359,7 @@
       "url": "https://ipocentral.in/j-pan-tubular-ipo-drhp-filing-analysis/",
       "image": "https://ipocentral.in/wp-content/uploads/2026/07/J-Pan-Tubular-IPO.webp",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1658,
@@ -41055,7 +41404,7 @@
       "imageChecked": true,
       "imageOriginal": "https://cdn.esnews.kr/news/photo/202607/4965_7951_558.jpg",
       "thumbFace": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1657,
@@ -41108,7 +41457,7 @@
       "url": "https://daily.hankooki.com/news/articleView.html?idxno=1385009",
       "image": "https://cdn.daily.hankooki.com/news/thumbnail/202607/1385009_1566551_425_v150.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1685,
@@ -41154,7 +41503,7 @@
       "imageChecked": true,
       "imageOriginal": "https://s2-valorinternational.glbimg.com/95zd77S888FWPKl9XqObYRCVeI0=/1390x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_37554604729d4b2f9f3eb9ad8a691345/internal_photos/bs/2026/7/3/21WhFtTGKNmqDx9IMOcQ/foto08pri-601-whirlpool-a1.jpg",
       "thumbFace": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1654,
@@ -41198,7 +41547,7 @@
       "url": "https://www.theguru.co.kr/news/article.html?no=104252",
       "image": "https://www.theguru.co.kr/data/photos/20260728/art_17836506840989_a46a94.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1649,
@@ -41240,7 +41589,7 @@
       "publishedAt": "2026-07-10T14:30:00.000Z",
       "url": "https://finance.yahoo.com/small-business/articles/workers-ge-appliances-love-app-143000692.html",
       "image": null,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1648,
@@ -41289,7 +41638,7 @@
       "url": "https://www.newstap.co.kr/news/articleView.html?idxno=330096",
       "image": "https://cdn.newstap.co.kr/news/photo/202607/330096_438069_2219.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1650,
@@ -41316,7 +41665,7 @@
       "url": "https://www.tradingview.com/news/zacks:656d5be00094b:0-can-hamilton-beach-s-expansion-efforts-support-long-term-growth/",
       "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1647,
@@ -41358,7 +41707,7 @@
       "url": "https://seekingalpha.com/article/4921149-why-is-whirlpool-trading-like-housing-never-recovers",
       "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1469577295/image_1469577295.jpg?io=getty-c-w1536",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1639,
@@ -41403,7 +41752,7 @@
       "publishedAt": "2026-07-10T09:59:20.000Z",
       "url": "https://www.msn.com/en-in/lifestyle/shopping/lg-s-home-robot-plan-wants-ai-to-handle-daily-chores-for-users/ar-AA25KV2S?uxmode=ruby&apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
       "image": null,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1625,
@@ -41453,7 +41802,7 @@
       "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/whirlpool-stock-holds-steady-as-appliance-demand-stays-mixed/69736173",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2405014_1200_800.webp",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1624,
@@ -41500,7 +41849,7 @@
       "publishedAt": "2026-07-10T06:22:00.000Z",
       "url": "https://biz.chosun.com/it-science/ict/2026/07/10/H3S2PHZJKVD7NMY75FD4CCLUMA/",
       "image": "https://biz.chosun.com/resizer/v2/GMYGIYTBGRSTOMRTMY2DGZJZMU.jpg?auth=07f46a375b04b79422a1ed7ccbe199dba3e22ff48b2af3dc33b91d85782900c1&width=1200&height=630&smart=true",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "imageChecked": true
     },
     {
@@ -41552,7 +41901,7 @@
       "url": "https://www.hankyung.com/article/202607107666g",
       "image": "https://img.hankyung.com/photo/202607/01.44986277.1.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1619,
@@ -41602,7 +41951,7 @@
       "url": "https://news.samsung.com/kr/%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4-%EC%9A%B0%EB%A6%AC%EC%A7%91-%EA%B0%80%EC%A0%84%EC%9D%84-%EB%8A%98-%EC%B5%9C%EC%83%81%EC%9C%BC%EB%A1%9C-ai-%EA%B5%AC%EB%8F%85%ED%81%B4%EB%9F%BD",
       "image": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/07/10134718/KV_932x524_0710.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1645,
@@ -41648,7 +41997,7 @@
       "url": "https://www.weeklykoreanz.com/post/%EC%A0%84%EA%B8%B0%EB%A3%8C-%EC%9E%A1%EC%95%84%EB%A8%B9%EB%8A%94-%EA%B0%80%EC%A0%84%EC%9D%80-%EB%94%B0%EB%A1%9C-%EC%9E%88%EB%8B%A4",
       "image": "https://static.wixstatic.com/media/658fe5_f00840756a974703b3cd97c6e35af866~mv2.webp/v1/fill/w_1000,h_525,al_c,q_85,usm_0.66_1.00_0.01/658fe5_f00840756a974703b3cd97c6e35af866~mv2.webp",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1632,
@@ -41687,7 +42036,7 @@
       "url": "https://vir.com.vn/midea-group-and-hutchison-ports-sign-supply-chain-mou-156437.html",
       "image": "https://vir.com.vn/stores/news_dataimages/2026/072026/10/10/in_social/785521-photo-1-jpeg-1600x81920260710104042.jpeg?randTime=1783673759",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1662,
@@ -41731,7 +42080,7 @@
       "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=272820",
       "image": "https://www.businesskorea.co.kr/news/thumbnail/202607/272820_280055_2742_v150.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1643,
@@ -41780,7 +42129,7 @@
       "publishedAt": "2026-07-10T02:00:00.000Z",
       "url": "https://www.hankyung.com/article/202607108020i",
       "image": null,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1615,
@@ -41825,7 +42174,7 @@
       "publishedAt": "2026-07-10T00:50:00.000Z",
       "url": "http://www.press9.kr/news/articleView.html?idxno=79249",
       "image": null,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z",
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z",
       "relatedArticles": [
         {
           "id": 1620,
@@ -41880,7 +42229,7 @@
       "url": "https://www.mk.co.kr/news/business/12095018",
       "image": "https://pimg.mk.co.kr/news/cms/202607/10/news-p.v1.20260709.bfbc6a90ca6343258bfc114103ac179c_R.png",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1613,
@@ -41926,7 +42275,7 @@
       "url": "https://www.g-enews.com/article/Global-Biz/2026/07/202607100649548834e7e8286d56_1",
       "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=20250323185749009450c8c1c064d22114611240.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1592,
@@ -41970,7 +42319,7 @@
       "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370156",
       "image": "https://www.electimes.com/news/photo/202607/370156_582722_3110.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1601,
@@ -42013,7 +42362,7 @@
       "url": "https://autonews.gasgoo.com/articles/market-industry/midea-welling-robotics-lands-in-foshan-shunde-production-to-start-in-2027-2075141064233897985",
       "image": "https://gascloud.gasgoo.com/production/2026/07/cd4cb43f-0ed1-4290-ac19-012cecdb47c7-1783615932.png",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1586,
@@ -42056,7 +42405,7 @@
       "url": "https://autonews.gasgoo.com/articles/news/midea-welling-robotics-lands-in-foshan-shunde-production-to-start-in-2027-2075141064233897985",
       "image": "https://gascloud.gasgoo.com/production/2026/07/cd4cb43f-0ed1-4290-ac19-012cecdb47c7-1783615932.png",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1581,
@@ -42106,7 +42455,7 @@
       "url": "https://www.mk.co.kr/en/business/12094560",
       "image": "https://wimg.mk.co.kr/news/cms/202607/09/news-p.v1.20260709.db44969d19114ae79b3ac0723367e727_P1.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1589,
@@ -42155,7 +42504,7 @@
       "url": "http://www.itdaily.kr/news/articleView.html?idxno=240314",
       "image": "https://cdn.itdaily.kr/news/thumbnail/202607/240314_245681_1758_v150.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1577,
@@ -42199,7 +42548,7 @@
       "url": "https://edata.ekn.kr/article/view/ekn202607090006",
       "image": "https://edata.ekn.kr/data/ekn/image/2026/07/09/ekn20260709000013.png",
       "imageChecked": true,
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1571,
@@ -42244,7 +42593,7 @@
       "publishedAt": "2026-07-09T05:53:08.000Z",
       "url": "https://www.mk.co.kr/news/world/12094386",
       "image": "https://pimg.mk.co.kr/news/cms/202607/09/news-p.v1.20260709.371f98ecbd12457daf0678d4c711d9a4_R.png",
-      "linkCheckedAt": "2026-08-18T20:14:16.296Z"
+      "linkCheckedAt": "2026-08-22T20:13:49.032Z"
     },
     {
       "id": 1591,
