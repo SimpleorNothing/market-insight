@@ -1,56 +1,15 @@
 {
-  "updatedAt": "2026-08-24T00:51:18.143Z",
+  "updatedAt": "2026-08-24T04:39:51.436Z",
   "schemaVersion": "v2",
   "items": [
     {
-      "id": 5438,
-      "lens": "거시",
+      "id": 5465,
+      "lens": "기술",
       "grade": "주요",
-      "impact": 3.7,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 4,
-        "marketSize": 5,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [],
-      "tags": [
-        "거시경제",
-        "원자재",
-        "디젤",
-        "유가"
-      ],
-      "headline": "디젤 정제마진 사상 최초 100달러 돌파",
-      "summary": "이란 사태 장기화로 디젤에 병목 현상이 발생하며 정제마진이 사상 최초로 100달러를 돌파했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "이란 사태 장기화로 디젤 시장에 병목 우려 심화"
-        },
-        {
-          "type": "content",
-          "text": "디젤 정제마진이 사상 최초로 100달러를 돌파함"
-        }
-      ],
-      "source": {
-        "name": "매일경제 산업",
-        "url": "https://www.mk.co.kr/news/stock/12134399"
-      },
-      "publishedAt": "2026-08-24T00:33:14.000Z",
-      "url": "https://www.mk.co.kr/news/stock/12134399",
-      "linkCheckedAt": "2026-08-24T00:49:38.627Z",
-      "image": "https://static.mk.co.kr/facebook_mknews.jpg",
-      "imageChecked": true
-    },
-    {
-      "id": 5447,
-      "lens": "경쟁사",
-      "grade": "주요",
-      "impact": 4,
+      "impact": 4.3,
       "factors": {
         "salesRelevance": 4,
-        "timeUrgency": 4,
+        "timeUrgency": 5,
         "marketSize": 4,
         "sourceReliability": 4
       },
@@ -62,30 +21,30 @@
       ],
       "tags": [
         "히트펌프",
-        "HVAC",
-        "삼성전자",
-        "공조"
+        "생산이전",
+        "광주사업장",
+        "HVAC"
       ],
-      "headline": "삼성전자, EHS 히트펌프 보일러 국내 생산…9월 말 양산",
-      "summary": "삼성전자가 EHS 히트펌프 보일러를 국내에서 직접 생산하며 9월 말 본격 양산에 돌입한다.",
+      "headline": "삼성전자, 히트펌프 생산 국내로 이전…9월 광주서 양산",
+      "summary": "삼성전자가 히트펌프 생산 라인을 국내로 이전하며 9월부터 광주 사업장에서 양산에 돌입한다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "삼성전자가 EHS 히트펌프 보일러의 국내 생산을 추진한다."
+          "text": "삼성전자, 히트펌프 생산 라인 국내로 이전 결정"
         },
         {
           "type": "content",
-          "text": "9월 말부터 본격적인 양산에 들어갈 예정이다."
+          "text": "9월부터 광주 사업장에서 본격 양산 시작 예정"
         }
       ],
       "source": {
         "name": "Google News - 한국 가전 산업",
-        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4431400"
+        "url": "https://www.khan.co.kr/article/202608241109001"
       },
-      "publishedAt": "2026-08-23T23:58:23.000Z",
-      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4431400",
-      "linkCheckedAt": "2026-08-24T00:49:38.627Z",
-      "image": "https://cdn.news.einfomax.co.kr/news/thumbnail/202608/4431400_338710_592_v150.jpg",
+      "publishedAt": "2026-08-24T02:09:00.000Z",
+      "url": "https://www.khan.co.kr/article/202608241109001",
+      "linkCheckedAt": "2026-08-24T04:37:50.114Z",
+      "image": "https://img.khan.co.kr/news/2026/08/24/news-p.v1.20260824.a2d74b53831344b5965c4aa3d2277a9f_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
         {
@@ -159,11 +118,141 @@
             "name": "Google News - 한국 가전 산업"
           },
           "publishedAt": "2026-08-23T15:01:00.000Z"
+        },
+        {
+          "id": 5447,
+          "headline": "삼성전자, EHS 히트펌프 보일러 국내 생산…9월 말 양산",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4431400",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-23T23:58:23.000Z"
+        },
+        {
+          "id": 5468,
+          "headline": "삼성, 국내 첫 '히트펌프 보일러' 생산 개시",
+          "url": "https://www.munhwa.com/article/11611524",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-24T02:53:56.000Z"
+        },
+        {
+          "id": 5469,
+          "headline": "삼성전자, EHS 히트펌프 보일러 국내 생산·연 10만대 체제 구축",
+          "url": "https://www.straightnews.co.kr/news/articleViewAmp.html?idxno=309486",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-24T01:43:30.000Z"
+        },
+        {
+          "id": 5467,
+          "headline": "삼성, 광주서 히트펌프 보일러 연 10만 대 국내 생산",
+          "url": "https://www.joongang.co.kr/article/25455598",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-24T02:07:05.000Z"
+        },
+        {
+          "id": 5470,
+          "headline": "삼성전자, EHS 히트펌프 보일러 국내 생산 돌입",
+          "url": "https://www.gasnews.com/news/articleViewAmp.html?idxno=126462",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-24T01:32:38.000Z"
         }
       ]
     },
     {
-      "id": 5455,
+      "id": 5474,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "LG전자",
+        "통상정책",
+        "멕시코",
+        "미국수출",
+        "관세"
+      ],
+      "headline": "LG 글로벌 정책 총괄, 멕시코 외교장관 회동…대미 통상 현안 공유",
+      "summary": "LG그룹 글로벌 정책 전략 총괄이 멕시코 외교장관과 회동을 갖고 대미 통상 리스크 및 주요 현안을 공유했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG그룹 글로벌 정책 전략 총괄과 멕시코 외교장관이 회동을 가짐"
+        },
+        {
+          "type": "content",
+          "text": "대미 통상 리스크와 관련된 주요 현안을 상호 공유함"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.theguru.co.kr/mobile/article.html?no=106171"
+      },
+      "publishedAt": "2026-08-24T01:29:25.000Z",
+      "url": "https://www.theguru.co.kr/mobile/article.html?no=106171",
+      "linkCheckedAt": "2026-08-24T04:37:50.114Z",
+      "image": "https://www.theguru.co.kr/data/photos/20260835/art_17875328241663_19f351.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 5438,
+      "lens": "거시",
+      "grade": "주요",
+      "impact": 3.7,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 4,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "거시경제",
+        "원자재",
+        "디젤",
+        "유가"
+      ],
+      "headline": "디젤 정제마진 사상 최초 100달러 돌파",
+      "summary": "이란 사태 장기화로 디젤에 병목 현상이 발생하며 정제마진이 사상 최초로 100달러를 돌파했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "이란 사태 장기화로 디젤 시장에 병목 우려 심화"
+        },
+        {
+          "type": "content",
+          "text": "디젤 정제마진이 사상 최초로 100달러를 돌파함"
+        }
+      ],
+      "source": {
+        "name": "매일경제 산업",
+        "url": "https://www.mk.co.kr/news/stock/12134399"
+      },
+      "publishedAt": "2026-08-24T00:33:14.000Z",
+      "url": "https://www.mk.co.kr/news/stock/12134399",
+      "linkCheckedAt": "2026-08-24T00:49:38.627Z",
+      "image": "https://static.mk.co.kr/facebook_mknews.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 5472,
       "lens": "정책",
       "grade": "주요",
       "impact": 3.8,
@@ -176,34 +265,84 @@
       "products": [],
       "competitors": [],
       "tags": [
-        "통상",
-        "관세",
         "무역협상",
-        "멕시코"
+        "관세",
+        "멕시코",
+        "미국",
+        "철강"
       ],
-      "headline": "멕시코, 대미 무역협상서 車·철강 관세 캐나다 수준 인하 기대",
-      "summary": "멕시코 정부가 미국과의 무역협상에서 자동차와 철강 분야의 관세가 캐나다와 유사한 수준으로 인하되기를 기대한다고 밝혔다.",
+      "headline": "멕시코, 대미 무역협상서 車·철강 관세 인하 기대",
+      "summary": "멕시코 정부가 미국과의 무역협상 과정에서 자동차와 철강 부문의 관세가 캐나다와 유사한 수준으로 인하되기를 기대한다고 밝혔다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "멕시코는 대미 무역협상 관련 자동차와 철강 관세 인하 기대를 표명함"
+          "text": "멕시코가 대미 무역협상과 관련해 자동차 및 철강 관세 인하를 기대함"
         },
         {
           "type": "content",
-          "text": "캐나다와 비슷한 수준의 관세 인하가 이루어질 것을 기대하는 입장임"
+          "text": "인하 수준은 캐나다와 비슷한 수준이 되기를 희망하는 것으로 전해짐"
         }
       ],
       "source": {
         "name": "Google News - 통상·관세 정책 KR",
-        "url": "https://theguru.co.kr/news/article.html?no=106150"
+        "url": "https://m.kr.investing.com/news/stock-market-news/article-2071538?ampMode=1"
       },
-      "publishedAt": "2026-08-23T23:50:23.000Z",
-      "url": "https://theguru.co.kr/news/article.html?no=106150",
-      "linkCheckedAt": "2026-08-24T00:49:38.627Z",
-      "image": "assets/img/topics/policy.svg",
-      "imageChecked": true,
-      "imageOriginal": "https://www.theguru.co.kr/data/photos/20260835/art_17875282531917_07e61c.jpg",
-      "thumbFace": true
+      "publishedAt": "2026-08-24T00:11:00.000Z",
+      "url": "https://m.kr.investing.com/news/stock-market-news/article-2071538?ampMode=1",
+      "linkCheckedAt": "2026-08-24T04:37:50.114Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 5455,
+          "headline": "멕시코, 대미 무역협상서 車·철강 관세 캐나다 수준 인하 기대",
+          "url": "https://theguru.co.kr/news/article.html?no=106150",
+          "source": {
+            "name": "Google News - 통상·관세 정책 KR"
+          },
+          "publishedAt": "2026-08-23T23:50:23.000Z"
+        }
+      ]
+    },
+    {
+      "id": 5473,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "통상",
+        "관세",
+        "미국",
+        "캐나다"
+      ],
+      "headline": "미·캐나다 무역협상 결렬, 9월 8일 보복관세 예고",
+      "summary": "미국과 캐나다 간 무역협상이 최종 결렬된 가운데, 9월 8일부터 보복관세가 부과될 예정입니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "미국과 캐나다 간의 무역협상이 최종 결렬됨"
+        },
+        {
+          "type": "content",
+          "text": "9월 8일부터 보복관세 조치가 시행될 예정"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://m.tf.co.kr/amp/world/2356947.htm"
+      },
+      "publishedAt": "2026-08-23T22:56:00.000Z",
+      "url": "https://m.tf.co.kr/amp/world/2356947.htm",
+      "linkCheckedAt": "2026-08-24T04:37:50.114Z",
+      "image": "https://img.tf.co.kr/article/home/2026/08/24/202680811787524920.png",
+      "imageChecked": true
     },
     {
       "id": 5453,
@@ -3255,7 +3394,7 @@
       },
       "publishedAt": "2026-08-19T21:43:27.000Z",
       "url": "https://www.nhanews.com/news/articleView.html?idxno=93548",
-      "linkCheckedAt": "2026-08-20T00:47:28.783Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://cdn.nhanews.com/news/thumbnail/202608/93548_35075_4323_v150.jpg",
       "imageChecked": true
     },
@@ -4240,49 +4379,6 @@
       "image": null
     },
     {
-      "id": 5417,
-      "lens": "경쟁사",
-      "grade": "주시",
-      "impact": 3.2,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 3,
-        "marketSize": 4,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "로봇",
-        "휴머노이드",
-        "신사업",
-        "LG전자"
-      ],
-      "headline": "LG전자 로봇 훈련소 방문한 젠슨 황 장녀 \"인크레더블\"",
-      "summary": "젠슨 황의 장녀가 LG전자의 로봇 훈련소를 방문하여 12년치 데이터를 활용한 휴머노이드 로봇 육성 현장을 살펴보고 \"인크레더블\"이라고 평가했습니다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "젠슨 황 장녀가 LG전자 로봇 훈련소를 방문함"
-        },
-        {
-          "type": "content",
-          "text": "12년치 데이터를 활용한 휴머노이드 로봇 육성 현장을 시찰함"
-        }
-      ],
-      "source": {
-        "name": "Google News - 가전 신사업·비즈모델 KR",
-        "url": "https://biz.chosun.com/it-science/ict/2026/08/18/VXBGN4SM5ZA6XAJWDQMGEVQXWI/"
-      },
-      "publishedAt": "2026-08-18T08:27:00.000Z",
-      "url": "https://biz.chosun.com/it-science/ict/2026/08/18/VXBGN4SM5ZA6XAJWDQMGEVQXWI/",
-      "linkCheckedAt": "2026-08-23T16:16:24.422Z",
-      "image": "https://biz.chosun.com/resizer/v2/JUGFZDWZHZFPBMFBUK4WYP5N5M.jpg?auth=330febb339e55863bb5c9b76393058d7d16229f3c4915748606d888ac6700d93&width=1200&height=630&smart=true",
-      "imageChecked": true
-    },
-    {
       "id": 5203,
       "lens": "거시",
       "grade": "주시",
@@ -4750,60 +4846,6 @@
       "linkCheckedAt": "2026-08-22T08:19:13.344Z",
       "image": "https://img.newspim.com/news/2026/08/18/2608181200086590_137_tc.jpg",
       "imageChecked": true
-    },
-    {
-      "id": 5031,
-      "lens": "기술",
-      "grade": "주시",
-      "impact": 2.8,
-      "factors": {
-        "salesRelevance": 3,
-        "timeUrgency": 2,
-        "marketSize": 3,
-        "sourceReliability": 3
-      },
-      "products": [],
-      "competitors": [
-        "LG전자"
-      ],
-      "tags": [
-        "로봇",
-        "피지컬AI",
-        "LG전자",
-        "신사업"
-      ],
-      "headline": "황 CEO 장녀, LG전자 로봇 거점 방문…피지컬AI 협력 확대",
-      "summary": "황 CEO의 장녀가 LG전자의 로봇 거점을 찾아 피지컬AI 분야의 협력 방안을 모색하고 파트너십을 확대할 예정이다.",
-      "summaryPoints": [
-        {
-          "type": "content",
-          "text": "황 CEO 장녀가 LG전자의 로봇 거점을 방문할 예정"
-        },
-        {
-          "type": "content",
-          "text": "양측 간 피지컬AI 협력 범위가 확대될 전망"
-        }
-      ],
-      "source": {
-        "name": "Google News - 한국 가전 산업",
-        "url": "https://www.newstomato.com/ReadNews.aspx?no=1310460"
-      },
-      "publishedAt": "2026-08-17T23:32:47.000Z",
-      "url": "https://www.newstomato.com/ReadNews.aspx?no=1310460",
-      "linkCheckedAt": "2026-08-22T00:46:18.881Z",
-      "image": "https://image.newstomato.com/newsimg/2026/8/18/1310460/attach.jpg?v=202608180832",
-      "imageChecked": true,
-      "relatedArticles": [
-        {
-          "id": 5288,
-          "headline": "젠슨 황 장녀, LG전자 로봇 훈련소 방문",
-          "url": "https://news.mtn.co.kr/news-detail/2026081710465549685",
-          "source": {
-            "name": "Google News - 경쟁사 로봇·미래사업 KR"
-          },
-          "publishedAt": "2026-08-17T02:19:16.000Z"
-        }
-      ]
     },
     {
       "id": 5034,
@@ -5473,6 +5515,76 @@
       "linkCheckedAt": "2026-08-20T20:21:16.046Z",
       "image": "https://images.timesnownews.com/thumb/msid-155708462,thumbsize-251142,width-1280,height-720,resizemode-75/155708462.jpg",
       "imageChecked": true
+    },
+    {
+      "id": 5475,
+      "lens": "경쟁사",
+      "grade": "주요",
+      "impact": 4,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "로보틱스",
+        "협력",
+        "신사업"
+      ],
+      "headline": "젠슨 황 장녀, LG전자 로봇 훈련소 방문…협력 주목",
+      "summary": "젠슨 황의 장녀가 LG전자의 로봇 훈련소를 방문하여 양사 간 로봇 분야 협력을 구체화할 예정으로 주목받고 있다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "젠슨 황 장녀가 내일 LG전자 로봇 훈련소를 방문할 예정"
+        },
+        {
+          "type": "content",
+          "text": "양사 간 로봇 분야 협력이 구체화될 것으로 주목됨"
+        }
+      ],
+      "source": {
+        "name": "Google News - 가전 신사업·비즈모델 KR",
+        "url": "https://news.kbs.co.kr/news/view.do?ncd=8638619"
+      },
+      "publishedAt": "2026-08-17T05:03:00.000Z",
+      "url": "https://news.kbs.co.kr/news/view.do?ncd=8638619",
+      "linkCheckedAt": "2026-08-24T04:37:50.114Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 5417,
+          "headline": "LG전자 로봇 훈련소 방문한 젠슨 황 장녀 \"인크레더블\"",
+          "url": "https://biz.chosun.com/it-science/ict/2026/08/18/VXBGN4SM5ZA6XAJWDQMGEVQXWI/",
+          "source": {
+            "name": "Google News - 가전 신사업·비즈모델 KR"
+          },
+          "publishedAt": "2026-08-18T08:27:00.000Z"
+        },
+        {
+          "id": 5288,
+          "headline": "젠슨 황 장녀, LG전자 로봇 훈련소 방문",
+          "url": "https://news.mtn.co.kr/news-detail/2026081710465549685",
+          "source": {
+            "name": "Google News - 경쟁사 로봇·미래사업 KR"
+          },
+          "publishedAt": "2026-08-17T02:19:16.000Z"
+        },
+        {
+          "id": 5031,
+          "headline": "황 CEO 장녀, LG전자 로봇 거점 방문…피지컬AI 협력 확대",
+          "url": "https://www.newstomato.com/ReadNews.aspx?no=1310460",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-08-17T23:32:47.000Z"
+        }
+      ]
     },
     {
       "id": 5008,
@@ -6839,7 +6951,7 @@
       },
       "publishedAt": "2026-08-14T06:31:07.000Z",
       "url": "https://www.moneycontrol.com/news/companies/consumer-electronics/lg-electronics-india-sees-resilient-demand-despite-price-hikes-ramps-up-manufacturing-for-festive-demand-exports-14005459.html",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://images.moneycontrol.com/static-mcnews/2024/12/20241206102154_LG-india.jpg",
       "imageChecked": true
     },
@@ -8927,7 +9039,7 @@
       },
       "publishedAt": "2026-08-13T02:00:00.000Z",
       "url": "https://www.etnews.com/20260812000270",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://img.etnews.com/news/article/2026/08/12/news-p.v1.20260812.b0ba26fc50434048968e5e28e51ae6ee_P1.png",
       "imageChecked": true
     },
@@ -9018,7 +9130,7 @@
       },
       "publishedAt": "2026-08-13T01:01:53.000Z",
       "url": "https://www.ddaily.co.kr/page/view/2026081217422305018",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://www.ddaily.co.kr/photos/2026/08/10/2026081022190501672_l.jpg",
       "imageChecked": true
     },
@@ -9061,7 +9173,7 @@
       },
       "publishedAt": "2026-08-13T01:01:00.000Z",
       "url": "https://www.yna.co.kr/amp/view/AKR20260813029900003",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://img4.yna.co.kr/etc/inner/KR/2026/08/13/AKR20260813029900003_02_i_P4.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -9154,7 +9266,7 @@
       },
       "publishedAt": "2026-08-13T00:57:19.000Z",
       "url": "https://www.etnews.com/20260813000071",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://img.etnews.com/news/article/2026/08/13/news-p.v1.20260813.acf3f47ad3854f4d9ebde601f33d7669_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -9260,7 +9372,7 @@
       },
       "publishedAt": "2026-08-13T00:46:26.000Z",
       "url": "http://www.businessreport.kr/news/articleView.html?idxno=53563",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": null
     },
     {
@@ -9388,7 +9500,7 @@
       },
       "publishedAt": "2026-08-13T00:00:35.000Z",
       "url": "https://www.mt.co.kr/stock/2026/08/13/2026081308584856079",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/08/2026081308584856079_1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -12519,7 +12631,7 @@
       },
       "publishedAt": "2026-08-10T03:00:00.000Z",
       "url": "https://www.asiae.co.kr/article/2026081009380193822",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "assets/img/topics/aircon.svg",
       "imageChecked": true,
       "imageOriginal": "https://cphoto.asiae.co.kr/listimglink/1/2026081009361574725_1786322175.jpg",
@@ -12577,7 +12689,7 @@
       },
       "publishedAt": "2026-08-10T03:00:00.000Z",
       "url": "https://www.mk.co.kr/news/economy/12122617",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://pimg.mk.co.kr/news/cms/202608/10/news-p.v1.20260810.a92a8350bc694facba5ac57ee154ba9b_R.jpg",
       "imageChecked": true
     },
@@ -12618,7 +12730,7 @@
       },
       "publishedAt": "2026-08-10T02:42:25.000Z",
       "url": "https://www.mk.co.kr/news/economy/12122699",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://pimg.mk.co.kr/news/cms/202608/10/news-p.v1.20260810.0105f1238f0847a48d53489f77c39f77_R.jpg",
       "imageChecked": true
     },
@@ -12661,7 +12773,7 @@
       },
       "publishedAt": "2026-08-10T02:38:00.000Z",
       "url": "https://v.daum.net/v/20260810113831553",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/10/551757-p7t5OYl/20260810113832655vflk.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -15248,7 +15360,7 @@
       },
       "publishedAt": "2026-08-06T13:12:00.000Z",
       "url": "https://www.prnewswire.com/news-releases/daikin-joins-climate-week-nyc-2026-as-climate-group-gold-partner-to-advance-energy-security-and-resilience-302845023.html",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "assets/img/topics/aircon.svg",
       "imageChecked": true,
       "imageOriginal": "https://mmx.prnewswire.com/media/MS1964861/David-Calabrese-Executive-Vice-President-Daikin.jpg?id=OA2828329&p=facebook",
@@ -20466,7 +20578,7 @@
       },
       "publishedAt": "2026-08-03T15:05:07.000Z",
       "url": "https://www.seoul.co.kr/news/economy/industry/2026/08/04/20260804030001",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://img.seoul.co.kr//img/upload/2026/08/04/SSC_20260804000503_O2.png",
       "imageChecked": true
     },
@@ -20632,7 +20744,7 @@
       },
       "publishedAt": "2026-08-03T09:00:00.000Z",
       "url": "https://www.etnews.com/20260803000146",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://img.etnews.com/news/article/2026/08/03/news-p.v1.20260803.658dc9bdce4e441d97ea27dc38822749_P1.png",
       "imageChecked": true
     },
@@ -27779,7 +27891,7 @@
       },
       "publishedAt": "2026-07-28T12:20:44.000Z",
       "url": "https://www.mk.co.kr/news/world/12109874",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/28/rcv.YNA.20260728.PGT20260728043801009_R.jpg",
       "imageChecked": true
     },
@@ -27824,7 +27936,7 @@
       },
       "publishedAt": "2026-07-28T10:31:05.000Z",
       "url": "https://m.economictimes.com/magazines/panache/whirlpool-invests-over-rs-245-crore-to-expand-refrigerator-manufacturing-capacity-in-india/articleshow/132682012.cms",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://img.etimg.com/thumb/msid-132682030,width-1200,height-630,imgsize-149994,overlay-etpanache/articleshow.jpg",
       "imageChecked": true
     },
@@ -34998,7 +35110,7 @@
       },
       "publishedAt": "2026-07-22T06:41:55.000Z",
       "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=201625",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://cdn.energydaily.co.kr/news/photo/202607/201625_201392_415.jpg",
       "imageChecked": true
     },
@@ -35041,7 +35153,7 @@
       },
       "publishedAt": "2026-07-22T06:04:16.000Z",
       "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=370551",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://www.electimes.com/news/photo/202607/370551_583220_1521.jpg",
       "imageChecked": true
     },
@@ -35143,7 +35255,7 @@
       },
       "publishedAt": "2026-07-22T05:27:14.000Z",
       "url": "https://www.theguru.co.kr/news/article.html?no=104741",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://www.theguru.co.kr/data/photos/20260730/art_17846848719231_b25894.jpg",
       "imageChecked": true
     },
@@ -35295,7 +35407,7 @@
       },
       "publishedAt": "2026-07-22T00:52:35.000Z",
       "url": "https://www.theguru.co.kr/news/article.html?no=104715",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://www.theguru.co.kr/data/photos/20260730/art_1784680308101_aa63af.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -35414,7 +35526,7 @@
       },
       "publishedAt": "2026-07-22T00:17:00.000Z",
       "url": "https://finance.yahoo.com/markets/stocks/articles/whirlpool-whr-stock-gets-fair-001745024.html",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": null
     },
     {
@@ -35714,7 +35826,7 @@
       },
       "publishedAt": "2026-07-21T21:31:00.000Z",
       "url": "https://www.ytn.co.kr/_ln/0104_202607220631468245",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://image.ytn.co.kr/general/jpg/2026/0722/202607220631468245_t.jpg",
@@ -35753,7 +35865,7 @@
       },
       "publishedAt": "2026-07-21T21:26:34.000Z",
       "url": "https://www.g-enews.com/article/Global-Biz/2026/07/2026072206232160572bd56fbc3c_1",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=20260722062505011762bd56fbc3c21121419978.jpg",
       "imageChecked": true
     },
@@ -35836,7 +35948,7 @@
       },
       "publishedAt": "2026-07-21T15:43:00.000Z",
       "url": "https://kr.investing.com/news/economy-news/article-93CH-2023330",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z",
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z",
       "image": null
     },
     {
@@ -54301,7 +54413,7 @@
       "publishedAt": "2026-06-18T20:03:48.000Z",
       "url": "https://www.joongang.co.kr/article/25437891",
       "image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202606/19/e8942f33-4fb2-4a92-9882-4aff408e5f3e.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 892,
@@ -54335,7 +54447,7 @@
       "publishedAt": "2026-06-18T10:44:37.000Z",
       "url": "https://smestreet.in/sectors/lg-electronics-unveils-french-door-refrigerator-with-smart-features-12051009",
       "image": "https://img-cdn.publive.online/fit-in/1200x675/smstreet/media/media_files/2026/06/18/lg-unveils-french-door-refrigerator-with-smart-features-2026-06-18-15-59-39.png",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 810,
@@ -54368,7 +54480,7 @@
       "publishedAt": "2026-06-18T08:37:30.000Z",
       "url": "https://www.korea.kr/multi/visualNewsView.do?newsId=148966744",
       "image": "https://www.korea.kr/newsWeb/resources/attaches/2026.06/18/b9a61e195a977f16ae1b2f6c7fda6ec4.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 811,
@@ -54406,7 +54518,7 @@
       "publishedAt": "2026-06-18T08:35:01.000Z",
       "url": "https://www.realclearmarkets.com/2026/06/18/tariffs_havent_helped_whirlpool_1189350.html",
       "image": "https://assets.realclear.com/images/71/719897_6_.jpeg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 823,
@@ -54438,7 +54550,7 @@
       "publishedAt": "2026-06-18T08:12:00.000Z",
       "url": "https://biz.chosun.com/en/en-it/2026/06/18/CGXYBHJBWBGXPKBRMHYYEOZG6E/",
       "image": "https://biz.chosun.com/resizer/v2/XHCJQTDMKFEO3M2T4XPAC4XJWM.jpg?auth=2cf75b77e1316e2db0941b18203a05b948ab452a84ce33bf6be69cecae32950a&width=1200&height=630&smart=true",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 821,
@@ -54472,7 +54584,7 @@
       "publishedAt": "2026-06-18T07:20:00.000Z",
       "url": "https://health.chosun.com/site/data/html_dir/2026/06/18/2026061802289.html",
       "image": "https://health.chosun.com/site/data/img_dir/2026/06/18/2026061802283_0.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 809,
@@ -54505,7 +54617,7 @@
       "publishedAt": "2026-06-18T03:08:16.000Z",
       "url": "https://www.aitimes.kr/news/articleView.html?idxno=40568",
       "image": "https://cdn.aitimes.kr/news/thumbnail/202606/40568_61180_32_v150.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 801,
@@ -54546,7 +54658,7 @@
       "publishedAt": "2026-06-18T00:02:39.000Z",
       "url": "https://www.yna.co.kr/amp/view/AKR20260618029900003",
       "image": "https://img7.yna.co.kr/etc/inner/KR/2026/06/18/AKR20260618029900003_01_i_P4.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 803,
@@ -54579,7 +54691,7 @@
       "publishedAt": "2026-06-17T23:42:36.000Z",
       "url": "https://www.snmnews.com/news/articleView.html?idxno=570920",
       "image": null,
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 796,
@@ -54612,7 +54724,7 @@
       "publishedAt": "2026-06-17T21:00:00.000Z",
       "url": "https://www.m-i.kr/news/articleView.html?idxno=1382656",
       "image": "https://cdn.m-i.kr/news/thumbnail/202606/1382656_1169761_124_v150.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 797,
@@ -54646,7 +54758,7 @@
       "publishedAt": "2026-06-17T21:00:00.000Z",
       "url": "https://www.newspim.com/news/view/20260617001009",
       "image": "https://img.newspim.com/news/2026/06/17/2606171721174170_t1.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 794,
@@ -54679,7 +54791,7 @@
       "publishedAt": "2026-06-17T20:30:40.000Z",
       "url": "https://www.steeldaily.co.kr/news/articleViewAmp.html?idxno=200872",
       "image": "https://www.steeldaily.co.kr/news/photo/202606/200872_194559_2930.png",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 800,
@@ -54712,7 +54824,7 @@
       "publishedAt": "2026-06-17T20:20:20.000Z",
       "url": "https://m.dnews.co.kr/m_home/view.jsp?idxno=202606161441254370568",
       "image": "https://image.dnews.co.kr/photo/photo/2026/06/16/202606161441254370568-2-671757.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 795,
@@ -54752,7 +54864,7 @@
       "publishedAt": "2026-06-17T20:00:00.000Z",
       "url": "https://www.hani.co.kr/arti/economy/marketing/1264077.html",
       "image": "https://flexible.img.hani.co.kr/flexible/normal/970/582/imgdb/child/2026/0618/53_17817473318314_20250722504457.webp",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 793,
@@ -54785,7 +54897,7 @@
       "publishedAt": "2026-06-17T19:07:30.000Z",
       "url": "https://www.mayerbrown.com/en/news/2026/06/mayer-brown-represents-whirlpool-in-2-billion-senior-secured-abl-credit-facility",
       "image": "https://www.mayerbrown.com/cdn-cgi/image/width=400,quality=90,format=jpeg/-/media/images/tile-images-for-insights-and-news/tile_bucket-300x400_33.jpg?rev=9bb64d307d564121aa6292da9aa1e35a",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 785,
@@ -54819,7 +54931,7 @@
       "publishedAt": "2026-06-17T16:44:26.000Z",
       "url": "https://www.dailycar.co.kr/content/news.html?type=view&autoId=61845",
       "image": "https://www.dailycar.co.kr/data/news_xml_img/Id0000000303/ns151169.webp",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 843,
@@ -54853,7 +54965,7 @@
       "publishedAt": "2026-06-17T15:55:32.000Z",
       "url": "https://www.kitchenbathdesign.com/whirlpool-corp-to-expand-u-s-footprint",
       "image": "https://sola-images.s3.us-west-2.amazonaws.com/wp-content/uploads/2026/06/17123459/Whirlpool_Logo_On_Gradient.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 788,
@@ -54887,7 +54999,7 @@
       "publishedAt": "2026-06-17T15:55:32.000Z",
       "url": "https://www.kitchenbathdesign.com/whirlpool-corp-to-expand-u-s-footprint/",
       "image": "https://sola-images.s3.us-west-2.amazonaws.com/wp-content/uploads/2026/06/17123459/Whirlpool_Logo_On_Gradient.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 787,
@@ -54920,7 +55032,7 @@
       "publishedAt": "2026-06-17T15:30:00.000Z",
       "url": "https://www.donga.com/news/amp/all/20260617/134131351/2",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/06/17/134131350.3.jpg",
-      "linkCheckedAt": "2026-08-20T00:46:18.420Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 790,
@@ -54959,7 +55071,7 @@
       "publishedAt": "2026-06-17T15:10:39.000Z",
       "url": "https://aimagazine.com/news/ai-agentic-factory-system-boosts-midea-global-supply",
       "image": null,
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 791,
@@ -54994,7 +55106,7 @@
       "publishedAt": "2026-06-17T15:02:00.000Z",
       "url": "https://www.joongang.co.kr/article/25437700",
       "image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202606/18/d7736395-febb-4d17-8b18-ff7197b7d4f5.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 792,
@@ -55035,7 +55147,7 @@
       "publishedAt": "2026-06-17T07:09:48.000Z",
       "url": "https://v.daum.net/v/97FY0MMVZG",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202606/17/sbscnbc/20260617160948919flgf.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 774,
@@ -55074,7 +55186,7 @@
       "publishedAt": "2026-06-17T05:16:51.000Z",
       "url": "https://www.etnews.com/20260617000291",
       "image": "https://img.etnews.com/news/article/2026/05/27/news-p.v1.20260527.814b12a033114583abe663d3d0e3127f_P1.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 776,
@@ -55107,7 +55219,7 @@
       "publishedAt": "2026-06-17T03:30:35.000Z",
       "url": "https://platum.kr/archives/289121",
       "image": "https://cdn.platum.kr/wp-content/uploads/2026/06/1781604477541.png",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 773,
@@ -55140,7 +55252,7 @@
       "publishedAt": "2026-06-16T23:40:00.000Z",
       "url": "https://www.etnews.com/20260616000329",
       "image": "https://img.etnews.com/news/article/2026/06/16/news-p.v1.20260616.f5199f490b2041c283308bbd8d3d6a96_P1.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 779,
@@ -55174,7 +55286,7 @@
       "publishedAt": "2026-06-16T23:04:48.000Z",
       "url": "https://cbs2iowa.com/news/local/final-day-of-work-for-whirlpool-amana-employees-affected-by-end-of-second-shift-production",
       "image": "https://cbs2iowa.com/resources/media2/16x9/1061/1320/4x0/90/612c93a3-14b9-405e-addf-59ce5e1c6100-WhirlpoolAmana.png",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 772,
@@ -55209,7 +55321,7 @@
       "publishedAt": "2026-06-16T21:01:00.000Z",
       "url": "https://www.viva100.com/article/20260616500567",
       "image": "https://stqnq5ux4599.edge.naverncp.com/data2//content/image/2026/06/16/.cache/512/20260616500565.jpg?v=20260705143006",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 771,
@@ -55248,7 +55360,7 @@
       "publishedAt": "2026-06-16T21:00:00.000Z",
       "url": "https://www.news1.kr/industry/general-industry/6199238",
       "image": "https://i3n.news1.kr/system/photos/2026/5/27/7927529/high.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 768,
@@ -55284,7 +55396,7 @@
       "publishedAt": "2026-06-16T17:56:00.000Z",
       "url": "https://www.plasticsnews.com/processors/injection-molding/pn-plastic-products-closing-west-branch-molding-plant-whirlpool/",
       "image": "https://www.plasticsnews.com/resizer/v2/QUH7GYCHAVCINB3GIK62MBHI2I.jpg?auth=e5c65d9c6e40045b5db137c2a11c6a8f272d208ac07c5556775706700b5a6fb2#.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 765,
@@ -55316,7 +55428,7 @@
       "publishedAt": "2026-06-16T15:44:57.000Z",
       "url": "https://www.seoul.co.kr/news/economy/industry/2026/06/17/20260617030002",
       "image": "https://img.seoul.co.kr//img/n24/seoul_share.png",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 764,
@@ -55353,7 +55465,7 @@
       "publishedAt": "2026-06-16T15:30:00.000Z",
       "url": "https://www.donga.com/news/amp/all/20260616/134098594/1",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/06/16/134098604.1.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 760,
@@ -55392,7 +55504,7 @@
       "publishedAt": "2026-06-16T11:10:09.000Z",
       "url": "https://www.mobigyaan.com/lg-physical-ai-cloid-robot-thinq-smart-living",
       "image": "https://www.mobigyaan.com/wp-content/uploads/2026/06/LG-Physical-AI-CLOiD-robot-ThinQ-smart-living-1.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 758,
@@ -55424,7 +55536,7 @@
       "publishedAt": "2026-06-16T10:29:09.000Z",
       "url": "https://www.investing.com/news/analyst-ratings/rbc-capital-cuts-whirlpool-stock-price-target-on-debt-costs-93CH-4744106",
       "image": null,
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 767,
@@ -55461,7 +55573,7 @@
       "publishedAt": "2026-06-16T10:00:15.000Z",
       "url": "https://www.bloomberg.com/opinion/articles/2026-06-16/whirlpool-shows-how-tariffs-backfire-on-their-biggest-supporters",
       "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i9qCKvxMG.Vk/v1/1200x820.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 761,
@@ -55497,7 +55609,7 @@
       "publishedAt": "2026-06-16T09:14:32.000Z",
       "url": "https://www.fonearena.com/blog/485157/lg-zero-labor-home-physical-ai-cloid-robot-ecosystem.html",
       "image": "https://images.fonearena.com/blog/wp-content/uploads/2026/01/LG-ClOiD-Home-Robot.jpg",
-      "linkCheckedAt": "2026-08-20T04:28:56.448Z"
+      "linkCheckedAt": "2026-08-24T04:37:03.670Z"
     },
     {
       "id": 762,
