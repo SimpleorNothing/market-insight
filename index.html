@@ -41,26 +41,27 @@
       </div>
     </header>
 
-    <section class="stats-grid" aria-label="렌즈별 KPI">
+    <section class="stats-grid" aria-label="경쟁사별 KPI">
       <div class="stat-card stat-card--neutral" data-lensgroup="" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">전체</p>
         <p class="stat-card__value">
           <span id="statTotal">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--neutral" data-lensgroup="소비자" role="button" tabindex="0" aria-pressed="false">
-        <p class="stat-card__label">소비자</p>
+      <!-- 상위 2개 경쟁사 카드 — 라벨·data-lensgroup 은 stat-cards.js 가 조회기간 기준으로 채운다 -->
+      <div class="stat-card stat-card--neutral" id="statCardTop1" data-lensgroup="" role="button" tabindex="0" aria-pressed="false" hidden>
+        <p class="stat-card__label" id="statTop1Label">—</p>
         <p class="stat-card__value">
-          <span id="statConsumer">0</span><span class="stat-card__unit">건</span>
+          <span id="statTop1">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--neutral" data-lensgroup="경쟁사" role="button" tabindex="0" aria-pressed="false">
-        <p class="stat-card__label">경쟁사</p>
+      <div class="stat-card stat-card--neutral" id="statCardTop2" data-lensgroup="" role="button" tabindex="0" aria-pressed="false" hidden>
+        <p class="stat-card__label" id="statTop2Label">—</p>
         <p class="stat-card__value">
-          <span id="statCompetitorLens">0</span><span class="stat-card__unit">건</span>
+          <span id="statTop2">0</span><span class="stat-card__unit">건</span>
         </p>
       </div>
-      <div class="stat-card stat-card--neutral" data-lensgroup="기타" role="button" tabindex="0" aria-pressed="false">
+      <div class="stat-card stat-card--neutral" data-lensgroup="__기타__" role="button" tabindex="0" aria-pressed="false">
         <p class="stat-card__label">기타</p>
         <p class="stat-card__value">
           <span id="statOther">0</span><span class="stat-card__unit">건</span>
@@ -218,6 +219,7 @@
   </div>
 
   <script src="assets/js/app.js?v=20260723"></script>
+  <script src="assets/js/stat-cards.js?v=20260901"></script>
   <script src="assets/js/topic-group.js?v=20260725"></script>
   <script src="assets/js/thumb-link.js?v=20260708"></script>
   <script src="assets/js/screening-info.js?v=20260712d"></script>
