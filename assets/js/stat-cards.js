@@ -12,6 +12,10 @@
   // '기타' 카드의 그룹 키. app.js 의 기존 분기("소비자"/"경쟁사"/"기타")와 충돌하지 않도록
   // 센티널 값을 쓴다 — 원본 getFilteredNews 는 이 값을 무시하고 통과시킨다.
   var OTHER_KEY = "__기타__";
+  // 랭킹에서 제외할 회사. config.json 의 competitors 에는 자사(삼성전자)도 포함돼 있으나,
+  // 이 카드는 "경쟁사 중 누가 많이 움직였나"를 보는 용도라 자사는 후보에서 민다.
+  // (제외된 회사의 기사는 '기타'로 합산되며, 하단 경쟁사 칩 필터에서는 그대로 선택 가능)
+  var EXCLUDE = ["삼성전자"];
 
   // renderStats() 가 조회기간 기준으로 매번 재계산하는 상위 경쟁사 목록
   var TOP = [];
@@ -42,7 +46,7 @@
       var seen = Object.create(null);
       (n.competitors || []).forEach(function (c) {
         var name = (c || "").trim();
-        if (!name || seen[name]) return;
+        if (!name || seen[name] || EXCLUDE.indexOf(name) !== -1) return;
         seen[name] = true;
         counts[name] = (counts[name] || 0) + 1;
       });
