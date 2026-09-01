@@ -91,6 +91,7 @@ Google News RSS 등 18개 피드 (scripts/config.json rssSources)
 ### 2026-09
 | PR | 일자 | 내용 |
 |---|---|---|
+| #130 | 09-01 | fix(ui): KPI 카드 경쟁사 랭킹에서 자사(삼성전자) 제외 |
 | #129 | 09-01 | feat(ui): 상단 KPI 카드를 상위 2개 경쟁사 + 기타로 전환 |
 
 ### 2026-08
