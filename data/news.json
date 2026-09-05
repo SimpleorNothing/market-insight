@@ -1,7 +1,129 @@
 {
-  "updatedAt": "2026-09-05T08:00:46.459Z",
+  "updatedAt": "2026-09-05T11:40:55.965Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 6111,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.5,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 1,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "냉장고"
+      ],
+      "competitors": [
+        "LG전자",
+        "월풀"
+      ],
+      "tags": [
+        "냉장고",
+        "소비자평가",
+        "브랜드순위"
+      ],
+      "headline": "고객 평가에서 LG와 월풀 앞선 냉장고 브랜드",
+      "summary": "Mashed 보도에 따르면 고객 평가에서 LG전자와 월풀을 제치고 상위 평가를 받은 냉장고 브랜드가 조명받았다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "Mashed에서 고객 평가 기반 냉장고 브랜드 순위를 보도함"
+        },
+        {
+          "type": "content",
+          "text": "해당 브랜드가 LG전자와 월풀을 상회하는 평가를 획득함"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Home Appliances",
+        "url": "https://www.mashed.com/2247897/jd-power-highest-rated-refrigerator-brand-samsung/"
+      },
+      "publishedAt": "2026-09-05T11:03:00.000Z",
+      "url": "https://www.mashed.com/2247897/jd-power-highest-rated-refrigerator-brand-samsung/",
+      "linkCheckedAt": "2026-09-05T11:39:03.855Z",
+      "image": "https://www.mashed.com/img/gallery/the-refrigerator-brand-customers-rated-above-lg-and-whirlpool/l-intro-1788203110.jpg",
+      "imageChecked": true
+    },
+    {
+      "id": 6110,
+      "lens": "기술",
+      "grade": "주요",
+      "impact": 4.3,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 4,
+        "sourceReliability": 4
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "인공지능",
+        "스마트홈",
+        "씽큐",
+        "LG전자"
+      ],
+      "headline": "LG전자, 집 밖서 AI 홈과 대화하는 '씽큐 클로' 공개",
+      "summary": "LG전자가 집 밖에서도 AI 홈과 대화할 수 있는 '씽큐 클로'를 새롭게 공개했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 집 밖에서도 AI 홈과 대화 가능한 '씽큐 클로' 공개"
+        }
+      ],
+      "source": {
+        "name": "Google News - 한국 가전 산업",
+        "url": "https://www.newstomato.com/ReadNews.aspx?no=1312648"
+      },
+      "publishedAt": "2026-09-05T09:31:34.000Z",
+      "url": "https://www.newstomato.com/ReadNews.aspx?no=1312648",
+      "linkCheckedAt": "2026-09-05T11:39:03.855Z",
+      "image": "https://image.newstomato.com/newsimg/2026/9/5/1312648/attach.jpg?v=202609051831",
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 6102,
+          "headline": "LG전자, ThinQ On에 능동형 AI 에이전트 적용 및 카카오톡 연동",
+          "url": "https://biz.chosun.com/en/en-it/2026/09/05/ERAUCJFBAVAZJEJKNW4XYPKI2I/?outputType=amp",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-09-05T04:30:00.000Z"
+        },
+        {
+          "id": 6082,
+          "headline": "LG전자, 씽큐클로로 맞춤형 AI 에이전트 구축",
+          "url": "https://www.asiae.co.kr/article/enterprise-CEO/2026090506592185595",
+          "source": {
+            "name": "Google News - 한국 가전 산업"
+          },
+          "publishedAt": "2026-09-05T01:00:00.000Z"
+        },
+        {
+          "id": 6101,
+          "headline": "LG전자, 연말까지 ThinQ Claw AI 에이전트 출시 예정",
+          "url": "https://mbiz.heraldcorp.com/article/10863476",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-09-05T01:00:00.000Z"
+        },
+        {
+          "id": 6103,
+          "headline": "LG전자, 씽큐 클로 기반 AI 홈 허들 허물기 나서",
+          "url": "https://www.asiae.co.kr/en/article/2026090506592185595",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-09-05T01:00:00.000Z"
+        }
+      ]
+    },
     {
       "id": 6094,
       "lens": "소비자",
@@ -94,14 +216,14 @@
       "imageChecked": true
     },
     {
-      "id": 6103,
+      "id": 6116,
       "lens": "기술",
       "grade": "주요",
-      "impact": 4.2,
+      "impact": 3.6,
       "factors": {
-        "salesRelevance": 4,
+        "salesRelevance": 3,
         "timeUrgency": 4,
-        "marketSize": 5,
+        "marketSize": 4,
         "sourceReliability": 4
       },
       "products": [],
@@ -111,52 +233,35 @@
       "tags": [
         "AI",
         "스마트홈",
-        "씽큐"
+        "씽큐온",
+        "카카오톡"
       ],
-      "headline": "LG전자, 씽큐 클로 기반 AI 홈 허들 허물기 나서",
-      "summary": "LG전자가 씽큐 클로를 통해 AI 홈의 장벽을 허물고 맞춤형 에이전트 구축을 목표로 한다고 밝혔다.",
+      "headline": "LG전자, 씽큐 온에 능동형 AI 에이전트 적용 및 카카오톡 연동",
+      "summary": "LG전자가 씽큐 온(ThinQ On)에 능동형 AI 에이전트를 도입하고, 카카오톡과 연동하는 홈챗 기능을 선보였다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "LG전자가 씽큐 클로를 활용해 AI 홈의 장벽을 허물겠다고 발표함"
+          "text": "LG전자가 씽큐 온에 능동형 AI 에이전트를 강화함"
         },
         {
           "type": "content",
-          "text": "사용자 맞춤형 에이전트 구축을 목표로 전략을 추진 중"
+          "text": "카카오톡과의 홈챗 연동 기능을 도입함"
         }
       ],
       "source": {
         "name": "Google News - LG Global",
-        "url": "https://www.asiae.co.kr/en/article/2026090506592185595"
+        "url": "https://biz.chosun.com/en/en-it/2026/09/05/ERAUCJFBAVAZJEJKNW4XYPKI2I/?outputType=amp"
       },
-      "publishedAt": "2026-09-05T01:00:00.000Z",
-      "url": "https://www.asiae.co.kr/en/article/2026090506592185595",
-      "linkCheckedAt": "2026-09-05T07:58:39.580Z",
+      "publishedAt": "2026-09-05T04:30:00.000Z",
+      "url": "https://biz.chosun.com/en/en-it/2026/09/05/ERAUCJFBAVAZJEJKNW4XYPKI2I/?outputType=amp",
+      "linkCheckedAt": "2026-09-05T11:39:03.855Z",
       "image": "assets/img/topics/tech.svg",
       "imageChecked": true,
-      "imageOriginal": "https://cphoto.asiae.co.kr/listimglink/1/2026090506554916943_1788558950.jpg",
+      "imageOriginal": "https://biz.chosun.com/resizer/v2/AMUTO5AZR5ATVFGHVL3XY6IJNE.jpg?auth=932739f387718684e54629df9a59c1ce5481339657595aeecf404be72510864f&width=1200&height=630&smart=true",
       "thumbFace": true,
       "relatedArticles": [
         {
-          "id": 6102,
-          "headline": "LG전자, ThinQ On에 능동형 AI 에이전트 적용 및 카카오톡 연동",
-          "url": "https://biz.chosun.com/en/en-it/2026/09/05/ERAUCJFBAVAZJEJKNW4XYPKI2I/?outputType=amp",
-          "source": {
-            "name": "Google News - LG Global"
-          },
-          "publishedAt": "2026-09-05T04:30:00.000Z"
-        },
-        {
-          "id": 6082,
-          "headline": "LG전자, 씽큐클로로 맞춤형 AI 에이전트 구축",
-          "url": "https://www.asiae.co.kr/article/enterprise-CEO/2026090506592185595",
-          "source": {
-            "name": "Google News - 한국 가전 산업"
-          },
-          "publishedAt": "2026-09-05T01:00:00.000Z"
-        },
-        {
-          "id": 6101,
+          "id": 6115,
           "headline": "LG전자, 연말까지 ThinQ Claw AI 에이전트 출시 예정",
           "url": "https://mbiz.heraldcorp.com/article/10863476",
           "source": {
@@ -4141,7 +4246,7 @@
       },
       "publishedAt": "2026-08-30T13:48:25.000Z",
       "url": "https://www.energykorea.co.kr/news/articleView.html?idxno=66175",
-      "linkCheckedAt": "2026-08-30T15:48:39.998Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://cdn.energykorea.co.kr/news/photo/202608/66175_57315_482.jpg",
       "imageChecked": true
     },
@@ -4186,7 +4291,7 @@
       },
       "publishedAt": "2026-08-30T12:29:16.000Z",
       "url": "https://v.daum.net/v/20260830212916930",
-      "linkCheckedAt": "2026-08-30T15:48:39.998Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202608/30/551731-YCbg9of/20260830212917440ffvu.jpg",
       "imageChecked": true
     },
@@ -4228,7 +4333,7 @@
       },
       "publishedAt": "2026-08-30T09:31:03.000Z",
       "url": "https://www.vietnam.vn/ko/dam-phan-thuong-mai-my-canada-dut-ganh-giua-duong-mexico-co-the-thanh-tam-diem-tiep-theo",
-      "linkCheckedAt": "2026-08-30T15:48:39.998Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/30/1788080024098_image-psd-520260830151149.jpeg",
       "imageChecked": true
     },
@@ -5241,7 +5346,7 @@
       },
       "publishedAt": "2026-08-28T12:46:49.000Z",
       "url": "https://www.marketscreener.com/news/midea-group-s-profit-rises-slightly-in-h1-ce7858dfdf8af421",
-      "linkCheckedAt": "2026-08-30T15:48:39.998Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": null,
       "relatedArticles": [
         {
@@ -5782,7 +5887,7 @@
       },
       "publishedAt": "2026-08-27T23:40:00.000Z",
       "url": "https://futurefive.com.au/story/lg-expands-a-grade-energy-savings-across-home-appliances",
-      "linkCheckedAt": "2026-08-30T15:48:39.998Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://futurefive.com.au/uploads/story/2026/08/28/compatible_LG_Energy_Leadership__1_-story-317779.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -7323,7 +7428,7 @@
       },
       "publishedAt": "2026-08-26T07:10:44.000Z",
       "url": "https://www.munhwa.com/article/11612293",
-      "linkCheckedAt": "2026-08-30T15:48:39.998Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://wimg.munhwa.com/news/cms/2026/08/26/news-p.v1.20260826.02646ad6d25a4b4fa213af0ede428784_R.png",
       "imageChecked": true,
       "relatedArticles": [
@@ -8957,7 +9062,7 @@
       },
       "publishedAt": "2026-08-24T11:32:29.000Z",
       "url": "https://www.bizcommunity.com/article/whirlpool-launches-the-w5-built-in-oven-set-in-sa-bringing-premium-smart-cooking-within-reach-186406a",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://biz-file.com/c/2608/820370-1200x624.png?5",
       "imageChecked": true
     },
@@ -9220,7 +9325,7 @@
       },
       "publishedAt": "2026-08-24T08:09:32.000Z",
       "url": "https://www.newstomato.com/ReadNews.aspx?no=1311231",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "assets/img/topics/news.svg",
       "imageChecked": true,
       "imageOriginal": "https://image.newstomato.com/newsimg/2026/8/24/1311231/attach.jpg?v=202608241709",
@@ -18305,7 +18410,7 @@
       },
       "publishedAt": "2026-08-13T10:26:19.000Z",
       "url": "https://www.mk.co.kr/news/world/12126982",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "assets/img/topics/tech.svg",
       "imageChecked": true,
       "imageOriginal": "https://pimg.mk.co.kr/news/cms/202608/13/news-p.v1.20260813.10b0eabb77af48ea9f30e3d84e7c0c86_R.png",
@@ -18442,7 +18547,7 @@
       },
       "publishedAt": "2026-08-13T10:13:00.000Z",
       "url": "https://www.prnewswire.co.uk/news-releases/lg-instaview-refrigerator-surpasses-5-3-million-in-global-sales-302850747.html",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://mmx.prnewswire.com/media/MS1969182/LG-InstaView.jpg?id=OA2880936&p=facebook",
       "imageChecked": true
     },
@@ -18539,7 +18644,7 @@
       },
       "publishedAt": "2026-08-13T08:10:15.000Z",
       "url": "https://www.mysmartprice.com/gear/appliances/appliances-news/haier-598l-3-door-side-by-side-refrigerator-review/?amp",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://assets.mspimages.in/hi/wp-content/uploads/sites/5/2026/08/haier35.jpg",
       "imageChecked": true
     },
@@ -24777,7 +24882,7 @@
       },
       "publishedAt": "2026-08-07T06:24:00.000Z",
       "url": "https://biz.sbs.co.kr/article/20000327366",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://img.biz.sbs.co.kr/upload/2026/08/07/Giv1786084841514.jpg",
@@ -24822,7 +24927,7 @@
       },
       "publishedAt": "2026-08-07T04:57:16.000Z",
       "url": "https://www.etnews.com/20260807000210?m=1",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": null,
       "relatedArticles": [
         {
@@ -24901,7 +25006,7 @@
       },
       "publishedAt": "2026-08-07T04:56:19.000Z",
       "url": "https://builtoffsite.com.au/news/admares-expands-australian-smart-factory-plans-with-bosch-partnership/",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://builtoffsite.com.au/wp-content/uploads/2026/08/admares-smart-factory-digital-housing-manufacturing-platform.jpg",
       "imageChecked": true
     },
@@ -26103,7 +26208,7 @@
       },
       "publishedAt": "2026-08-05T23:02:27.000Z",
       "url": "https://stock.mk.co.kr/news/view/1045287",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://stock.mk.co.kr/photos/20260323/PYH2026032305450001301_P4.jpg",
       "imageChecked": true
     },
@@ -29901,7 +30006,7 @@
       },
       "publishedAt": "2026-08-03T21:03:25.000Z",
       "url": "https://www.steeldaily.co.kr/news/articleViewAmp.html?idxno=201839",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://www.steeldaily.co.kr/news/photo/202608/201839_196528_1540.png",
       "imageChecked": true
     },
@@ -29993,7 +30098,7 @@
       },
       "publishedAt": "2026-08-03T21:00:00.000Z",
       "url": "https://www.etnews.com/20260803000393",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://img.etnews.com/news/article/2026/08/03/news-p.v1.20260803.341ade5fddc8400c937d291fc20d1661_P1.jpg",
       "imageChecked": true
     },
@@ -32589,7 +32694,7 @@
       },
       "publishedAt": "2026-07-31T20:45:09.000Z",
       "url": "https://www.therobotreport.com/kuka-deploys-automation-management-platform-north-american-automakers/",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://www.therobotreport.com/wp-content/uploads/2026/07/KTPO-KUKA-Toledo-Production.jpg",
       "imageChecked": true
     },
@@ -37417,7 +37522,7 @@
       },
       "publishedAt": "2026-07-28T16:23:57.000Z",
       "url": "https://news.samsung.com/us/samsung-is-the-most-awarded-brand-in-j-d-power-2026-u-s-appliance-satisfaction-study/",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://news.samsung.com/us/wp-content/themes/samsung-newsroom-2023/assets/theme-images/default-card.png",
       "imageChecked": true
     },
@@ -44386,7 +44491,7 @@
       },
       "publishedAt": "2026-07-22T16:00:00.000Z",
       "url": "https://www.prnewswire.com/news-releases/whirlpool-corporation-to-collaborate-with-growthloop-on-direct-to-consumer-strategy-302831364.html",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://mmx.prnewswire.com/media/MS1890533/growthloop-Whirlpool-announcement.jpg?id=OA2778332&p=facebook",
       "imageChecked": true,
       "relatedArticles": [
@@ -44440,7 +44545,7 @@
       },
       "publishedAt": "2026-07-22T16:00:00.000Z",
       "url": "https://www.stocktitan.net/news/WHR/whirlpool-corporation-to-collaborate-with-growth-loop-on-direct-to-pnchrc93j9en.html",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z",
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z",
       "image": "https://static.stocktitan.net/company-logo/whr-lg.png?v=3022c9b91f",
       "imageChecked": true
     },
@@ -66480,7 +66585,7 @@
       "publishedAt": "2026-06-14T04:36:03.000Z",
       "url": "https://v.daum.net/v/20260614133603787",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202606/14/dt/20260614133605039jcvl.png",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 702,
@@ -66515,7 +66620,7 @@
       "publishedAt": "2026-06-14T04:13:00.000Z",
       "url": "https://www.albawaba.com/business/pr/lg-electronics-launches-dualcool%E2%84%A2-ai-gcc-1630138",
       "image": "https://www.albawaba.com/sites/default/files/styles/default/public/2026-06/unnamed%20%281%29_7.jpg?itok=ZxydiE9V",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 700,
@@ -66548,7 +66653,7 @@
       "publishedAt": "2026-06-14T00:28:18.000Z",
       "url": "https://www.yna.co.kr/amp/view/MYH20260614003300038",
       "image": "https://img6.yna.co.kr/mpic/YH/2026/06/14/MYH20260614003300038_P1.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 691,
@@ -66581,7 +66686,7 @@
       "publishedAt": "2026-06-13T23:22:21.000Z",
       "url": "https://www.hvacrj.co.kr/news/articleView.html?idxno=31018",
       "image": "https://cdn.hvacrj.co.kr/news/photo/202606/31018_33467_102.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 690,
@@ -66614,7 +66719,7 @@
       "publishedAt": "2026-06-13T21:03:05.000Z",
       "url": "https://v.daum.net/v/20260614060305175",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202606/14/sbscnbc/20260614060308664ksjm.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 693,
@@ -66649,7 +66754,7 @@
       "publishedAt": "2026-06-13T19:15:00.000Z",
       "url": "https://www.slashgear.com/2192087/common-problems-with-whirlpool-dishwashers/",
       "image": "https://www.slashgear.com/img/gallery/5-common-problems-with-whirlpool-dishwashers/l-intro-1781182358.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 685,
@@ -66690,7 +66795,7 @@
       "publishedAt": "2026-06-13T12:12:16.000Z",
       "url": "https://themachinemaker.com/news/lg-electronics-unveils-ai-powered-home-ecosystem/",
       "image": "https://themachinemaker.com/wp-content/uploads/2024/06/LGE.png",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 687,
@@ -66723,7 +66828,7 @@
       "publishedAt": "2026-06-13T11:56:00.000Z",
       "url": "http://www.bizwnews.com/news/articleView.html?idxno=138540",
       "image": "https://cdn.bizwnews.com/news/thumbnail/202606/138540_154085_1954_v150.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 705,
@@ -66758,7 +66863,7 @@
       "publishedAt": "2026-06-13T11:38:58.000Z",
       "url": "https://techeconomy.ng/hisense-lg-deal-now-clearly-a-plan-to-dominate-market-led-by-samsung-tcl/",
       "image": "https://techeconomy.ng/wp-content/uploads/2026/01/Hisense-smart-home-ecosystem-2026-Kitchen-ConnectLife.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 680,
@@ -66791,7 +66896,7 @@
       "publishedAt": "2026-06-13T10:00:00.000Z",
       "url": "https://www.ardentnews.co.kr/news/articleView.html?idxno=15336",
       "image": "https://cdn.ardentnews.co.kr/news/thumbnail/202606/15336_64250_1911_v150.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 679,
@@ -66824,7 +66929,7 @@
       "publishedAt": "2026-06-13T05:20:32.000Z",
       "url": "https://newneek.co/@newneek/article/41373",
       "image": null,
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 683,
@@ -66856,7 +66961,7 @@
       "publishedAt": "2026-06-13T05:00:00.000Z",
       "url": "https://news.jtbc.co.kr/article/NB12303042",
       "image": "https://thumb.jtbc.co.kr/photo/r600x0/etc/2026/06/11/20260611173205245429.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 678,
@@ -66888,7 +66993,7 @@
       "publishedAt": "2026-06-13T04:00:00.000Z",
       "url": "https://www.khan.co.kr/article/202606131300001",
       "image": "https://img.khan.co.kr/news/2026/06/13/news-p.v1.20260608.8087cee9deed41a59dad633a87da0b6a_P1.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 676,
@@ -66921,7 +67026,7 @@
       "publishedAt": "2026-06-13T01:26:15.000Z",
       "url": "https://www.g-enews.com/article/Global-Biz/2026/06/2026061310215879242bd56fbc3c_1",
       "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=20260613102417018442bd56fbc3c21121419978.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 673,
@@ -66954,7 +67059,7 @@
       "publishedAt": "2026-06-12T23:00:02.000Z",
       "url": "https://www.youthdaily.co.kr/mobile/article.html?no=220614",
       "image": "https://www.youthdaily.co.kr/data/photos/20260624/art_17812257485491_a61fcc.jpg",
-      "linkCheckedAt": "2026-08-30T15:47:52.529Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 675,
@@ -66987,7 +67092,7 @@
       "publishedAt": "2026-06-12T22:20:00.000Z",
       "url": "https://www.stocktitan.net/news/WHR/whirlpool-announces-cash-tender-offer-early-xu9izhq76l38.html",
       "image": "https://www.stocktitan.net/news_covers/Whirlpool_Announces_Cash_Tender_Offer_Early_Results_1070308.webp",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 669,
@@ -67020,7 +67125,7 @@
       "publishedAt": "2026-06-12T19:34:15.000Z",
       "url": "https://seekingalpha.com/article/4914653-whirlpool-upside-is-clouded-by-sector-instability-rating-downgrade",
       "image": null,
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 707,
@@ -67058,7 +67163,7 @@
       "publishedAt": "2026-06-12T17:05:00.000Z",
       "url": "https://www.indiasnews.net/news/279118804/ai-driven-homes-set-to-become-mainstream-as-connected-living-gains-momentum",
       "image": "https://image.chitra.live/api/v1/wps/68fd04e/c366b7eb-4315-4a84-8dc1-4632f45265f9/0/ANI-20260612101009-600x315.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 706,
@@ -67092,7 +67197,7 @@
       "publishedAt": "2026-06-12T15:01:57.000Z",
       "url": "https://menafn.com/1111251925/LG-Brings-User-Friendly-Design-To-The-Laundry-Room-With-LG-Comfort-Kit",
       "image": null,
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 670,
@@ -67129,7 +67234,7 @@
       "publishedAt": "2026-06-12T09:35:24.000Z",
       "url": "https://www.whalesbook.com/corporate-news/English/technology/LG-Electronics-India-Targets-Zero-Labor-Home-with-AI-and-Localized-Manufacturing/6a2bd1b0fc2170b28e1aab74",
       "image": "https://images.whalesbook.com/corporate-news/images/images/mqaqdzwg79ce.jpeg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 663,
@@ -67162,7 +67267,7 @@
       "publishedAt": "2026-06-12T09:04:22.000Z",
       "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=369045",
       "image": "https://www.electimes.com/news/photo/202606/369045_581217_5320.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 662,
@@ -67203,7 +67308,7 @@
       "publishedAt": "2026-06-12T08:57:50.000Z",
       "url": "https://www.fonearena.com/blog/484963/lg-zero-labor-home-ecosystem.html",
       "image": "https://images.fonearena.com/blog/wp-content/uploads/2026/06/LG-AI-Home-ecosystem-2026.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 657,
@@ -67238,7 +67343,7 @@
       "publishedAt": "2026-06-12T08:35:56.000Z",
       "url": "https://ket.kr/news/article.html?no=38762",
       "image": "https://www.ket.kr/data/photos/20260624/art_17812273306758_eb674f.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 672,
@@ -67273,7 +67378,7 @@
       "publishedAt": "2026-06-12T08:01:04.000Z",
       "url": "https://www.g-enews.com/article/Industry/2026/06/202606121654181740112616b072_1",
       "image": "https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=2026061216594105087112616b0722112125164.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 819,
@@ -67309,7 +67414,7 @@
       "publishedAt": "2026-06-12T07:54:15.000Z",
       "url": "https://www.bizcommunity.com/article/whirlpool-reinforces-its-commitment-to-south-african-homes-with-the-launch-of-the-new-w11-collection-289057a",
       "image": "https://biz-file.com/c/2606/813680-1200x624.png?5",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 658,
@@ -67342,7 +67447,7 @@
       "publishedAt": "2026-06-12T07:38:24.000Z",
       "url": "https://www.kharn.kr/mobile/article.html?no=31038",
       "image": "https://www.kharn.kr/data/photos/20260625/art_17814705150514_85ba2a.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 653,
@@ -67376,7 +67481,7 @@
       "publishedAt": "2026-06-12T07:03:00.000Z",
       "url": "https://www.newspim.com/news/view/20260612000999",
       "image": "https://img.newspim.com/news/2026/06/12/2606121553338020_487_tc.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 652,
@@ -67408,7 +67513,7 @@
       "publishedAt": "2026-06-12T07:02:02.000Z",
       "url": "https://v.daum.net/v/20260612160202647",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202606/12/khan/20260612160203992unku.png",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 770,
@@ -67439,7 +67544,7 @@
       "publishedAt": "2026-06-12T07:00:00.000Z",
       "url": "https://global.chinadaily.com.cn/a/202606/10/WS6a28c425a310d6866eb4d66c.html",
       "image": null,
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 655,
@@ -67479,7 +67584,7 @@
       "publishedAt": "2026-06-12T04:54:11.000Z",
       "url": "https://www.electronicsforyou.biz/industry-buzz/lg-targets-doubling-revenue-in-india-brazil-saudi-arabia-by-2030/",
       "image": "https://www.electronicsforyou.biz/.within.website/x/cmd/anubis/static/img/pensive.webp?cacheBuster=devel",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 649,
@@ -67512,7 +67617,7 @@
       "publishedAt": "2026-06-12T01:39:52.000Z",
       "url": "https://www.asiae.co.kr/visual-news/article/2026061210314816431",
       "image": "https://cphoto.asiae.co.kr/listimglink/1/2026061208311797139_1781220676.png",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 644,
@@ -67547,7 +67652,7 @@
       "publishedAt": "2026-06-11T23:00:00.000Z",
       "url": "https://news.samsung.com/kr/%EC%8B%9D%EC%9E%AC%EB%A3%8C-%EB%B3%B4%EA%B3%A0-%EC%95%8C%EC%95%84%EC%84%9C-%EB%A0%88%EC%8B%9C%ED%94%BC-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-%EB%83%89%EC%9E%A5%EA%B3%A0%EC%82%BC%EC%84%B1",
       "image": "https://img.kr.news.samsung.com/kr/wp-content/uploads/2026/06/11182913/932x524_DA_0612.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 643,
@@ -67580,7 +67685,7 @@
       "publishedAt": "2026-06-11T20:29:37.000Z",
       "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN42I1B1:0-hsbc-s-long-position-in-h-shares-of-midea-group-decreases-to-8-29-on-june-05-says-hkex/",
       "image": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 648,
@@ -67615,7 +67720,7 @@
       "publishedAt": "2026-06-11T18:45:00.000Z",
       "url": "https://www.investors.com/stock-lists/ibd-big-cap-20/home-appliances-sharkninja-stock-breakout/",
       "image": null,
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 650,
@@ -67649,7 +67754,7 @@
       "publishedAt": "2026-06-11T15:40:26.000Z",
       "url": "https://www.streetinsider.com/PRNewswire/LG+ELECTRONICS+BRINGS+USER-FRIENDLY+DESIGN+TO+THE+LAUNDRY+ROOM+WITH+LG+COMFORT+KIT/26634322.html",
       "image": null,
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 635,
@@ -67684,7 +67789,7 @@
       "publishedAt": "2026-06-11T15:30:00.000Z",
       "url": "https://www.donga.com/news/amp/all/20260611/134094956/2",
       "image": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/06/11/134094955.4.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 632,
@@ -67718,7 +67823,7 @@
       "publishedAt": "2026-06-11T12:33:22.000Z",
       "url": "https://www.aitimes.kr/news/articleView.html?idxno=40469",
       "image": "https://cdn.aitimes.kr/news/thumbnail/202606/40469_61043_3229_v150.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 633,
@@ -67755,7 +67860,7 @@
       "publishedAt": "2026-06-11T12:25:49.000Z",
       "url": "https://www.financialexpress.com/business/news/lg-leans-on-india-to-win-the-race-to-the-ai-home/4264794/lite/",
       "image": "https://images.financialexpressdigital.com/2026/06/lg.jpg",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 651,
@@ -67794,7 +67899,7 @@
       "publishedAt": "2026-06-11T09:54:22.000Z",
       "url": "https://www.chosun.com/english/industry-en/2026/06/11/VJVSY4WFKNDHXHOQ2NFOZQWHF4/",
       "image": "https://www.chosun.com/resizer/v2/WZAGM5WF5BAQZDT4NWNQPRNAVE.jpg?auth=26bdeb70102d358fddb35250fb91be3e141f9722a01920609162d3b60f083580&width=1200&height=630&focal=758,263",
-      "linkCheckedAt": "2026-08-30T18:57:21.986Z"
+      "linkCheckedAt": "2026-09-05T11:38:03.635Z"
     },
     {
       "id": 628,
