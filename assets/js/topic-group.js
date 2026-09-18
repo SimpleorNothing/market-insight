@@ -87,6 +87,36 @@
     return result;
   }
 
+  // '경쟁사별' 보기 전용 정렬: 실제 경쟁사 그룹을 항상 먼저(기사수 내림차순) 보여주고,
+  // 그 뒤에 '경쟁사 미분류'에서 재분할된 토픽 버킷을 아래 고정 순서로 붙인다.
+  // (기존 sortGroups 는 기사수 우선이라 가구·인테리어 등 토픽이 경쟁사보다 위로 올라왔음)
+  // 매칭 우선순위(TOPIC_GROUPS 순서)와 표시 순서는 별개로 관리한다.
+  var COMPETITOR_TOPIC_ORDER = [
+    "가구·인테리어",
+    "美 통상·관세 (USMCA)",
+    "환경·에너지 규제",
+    "거시·공급망",
+    MISC,
+  ];
+
+  function sortCompetitorView(result) {
+    function topicRank(key) {
+      var i = COMPETITOR_TOPIC_ORDER.indexOf(key);
+      return i >= 0 ? i : -1; // -1 = 실제 경쟁사 그룹
+    }
+    result.sort(function (a, b) {
+      var ar = topicRank(a.key);
+      var br = topicRank(b.key);
+      var ac = ar < 0;
+      var bc = br < 0;
+      if (ac && !bc) return -1;
+      if (bc && !ac) return 1;
+      if (ac && bc) return b.items.length - a.items.length;
+      return ar - br;
+    });
+    return result;
+  }
+
   // app.js 전역 makeGroups 가 정의된 뒤에만 감싼다(로드 순서: app.js → 이 파일).
   if (typeof makeGroups !== "function") return;
   var original = makeGroups;
@@ -120,8 +150,8 @@
         bucketByTopic(misc).forEach(function (v, k) {
           groups.push({ key: k, items: v });
         });
-        groups = sortGroups(groups);
       }
+      groups = sortCompetitorView(groups);
     }
     return groups;
   };
