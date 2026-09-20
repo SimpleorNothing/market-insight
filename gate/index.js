@@ -5,10 +5,15 @@
 // 포탈과 같은 SSO 게이트를 통과한 요청만, 읽기 전용 토큰으로 GitHub 저장소에서
 // 파일을 읽어 돌려준다(레포 자체가 진실원 — Actions가 주기적으로 data/news.json을 갱신).
 //
+// /data/* 는 사람 로그인 없이 기계(다른 Worker·GitHub Actions)가 소비한다.
+// 이 경로만, "Authorization: Bearer <MI_DATA_TOKEN>" 헤더가 정확히 일치할 때
+// SSO 게이트를 우회한다. 헤더가 없거나 틀리면 여전히 로그인 화면으로 막힌다.
+//
 // 배포:
 //   cd gate && npx wrangler deploy
 //   npx wrangler secret put SITE_PASSWORD   # 포탈과 "같은 값"
 //   npx wrangler secret put GITHUB_TOKEN    # market-insight 저장소 Contents: Read-only 전용 토큰
+//   npx wrangler secret put MI_DATA_TOKEN   # /data/* 기계 소비용 — 호출하는 쪽에도 동일 값을 등록
 // DNS: mi.samsungda.net 이 GitHub Pages를 가리키고 있으면, Custom Domain을
 //      이 Worker로 붙일 때 기존 DNS 레코드를 대체해야 한다(대시보드에서 교체 승인).
 
@@ -19,9 +24,25 @@ const REPO = "market-insight";
 const BRANCH = "main";
 const API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents";
 
-// 저장소가 비공개이므로 게이트를 우회하는 경로는 없다(예전의 /data/ 공개 예외 제거).
-// 기계 소비용 클라이언트가 /data/ 를 읽어야 하면 별도 토큰 방식으로 추가할 것.
+// SSO 게이트를 사람 로그인으로 우회하는 경로는 없다(저장소가 비공개이므로).
+// /data/* 는 아래 fetch() 안에서 MI_DATA_TOKEN 검증으로 별도 처리한다.
 const OPEN_PATHS = [];
+const DATA_PREFIX = "/data/";
+
+function timingSafeEqual(a, b) {
+  if (typeof a !== "string" || typeof b !== "string" || a.length !== b.length) return false;
+  let r = 0;
+  for (let i = 0; i < a.length; i++) r |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return r === 0;
+}
+
+function hasValidDataToken(request, env) {
+  if (!env.MI_DATA_TOKEN) return false;
+  const auth = request.headers.get("authorization") || "";
+  const m = /^Bearer (.+)$/.exec(auth);
+  if (!m) return false;
+  return timingSafeEqual(m[1], env.MI_DATA_TOKEN);
+}
 
 const TYPES = {
   html: "text/html; charset=utf-8",
@@ -54,11 +75,16 @@ export default {
       return new Response("Service not configured", { status: 503 });
     }
 
-    const blocked = await guard(request, env, url, {
-      title: "Market Sensing",
-      openPaths: OPEN_PATHS,
-    });
-    if (blocked) return blocked;
+    const isDataPath = url.pathname === "/data" || url.pathname.startsWith(DATA_PREFIX);
+    const dataTokenOk = isDataPath && hasValidDataToken(request, env);
+
+    if (!dataTokenOk) {
+      const blocked = await guard(request, env, url, {
+        title: "Market Sensing",
+        openPaths: OPEN_PATHS,
+      });
+      if (blocked) return blocked;
+    }
 
     let path = url.pathname;
     if (path === "" || path === "/") path = "/index.html";
