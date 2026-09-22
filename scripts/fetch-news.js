@@ -1328,6 +1328,7 @@ async function classifyAll(items, startId, processingCache, preTexts = null) {
             name: item.source,
             url: item.link,
           },
+          region: item.region,
           publishedAt: item.publishedAt,
           url: item.link,
           linkCheckedAt: item.linkCheckedAt,
@@ -1424,11 +1425,25 @@ function dedupeMerged(items) {
   let foldedGroups = 0;
   let foldedTotal = 0;
   for (const group of clusters.values()) {
-    group.sort(
-      (a, b) =>
+    // LG전자가 얽힌 사건은 영어 매체(번역/재보도)보다 한글 원문 기사를 카드 대표(링크)로
+    // 우선한다. headline·summary는 원문 언어와 무관하게 항상 한국어로 재작성되므로
+    // (CLASSIFY_SYSTEM 규칙), 대표 선정에서 갈리는 건 실제 클릭 시 열리는 원문 링크뿐이다.
+    // region: KR(한국어 원문 피드) vs Global/US(영어 원문 피드). 과거 적재분(region 없음)은
+    // 기존 impact 기준으로만 정렬됨 — 소급 아님, 다음 크론부터 적용.
+    const isLgCluster = group.some((it) =>
+      (it.competitors || []).includes("LG전자")
+    );
+    group.sort((a, b) => {
+      if (isLgCluster) {
+        const aKr = a.region === "KR" ? 1 : 0;
+        const bKr = b.region === "KR" ? 1 : 0;
+        if (aKr !== bKr) return bKr - aKr;
+      }
+      return (
         (b.impact || 0) - (a.impact || 0) ||
         new Date(b.publishedAt) - new Date(a.publishedAt)
-    );
+      );
+    });
     const rep = group[0];
 
     // 대표 기사에 나머지 멤버 + 각 멤버가 이전 회차에 이미 보유한 관련기사를 병합해 보존.
