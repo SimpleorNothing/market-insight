@@ -1,7 +1,103 @@
 {
   "schemaVersion": "v1",
-  "updatedAt": "2026-10-26T09:34:44.784Z",
+  "updatedAt": "2026-10-26T18:02:31.651Z",
   "entries": {
+    "78551412c664": {
+      "headline": "처음 마주치는 안내 화면을 설명하는 마작 천화 확률 - Calgary Roughnecks",
+      "contentHash": "4e65146a14a8edc3",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:02:26.657Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "bbfaf77404a6": {
+      "headline": "Double Check Your Smart Home Devices To See If They Meet This Industry Standard - BGR",
+      "contentHash": "44cc21a803d0d523",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:02:21.292Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "76ba4be72908": {
+      "headline": "Put your chores on easy mode with 9 Samsung AI appliance deals at Best Buy – up to 49% off - Tom's Guide",
+      "contentHash": "49509400c3a2a5c4",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:02:18.639Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "9fd6dd39c5d8": {
+      "headline": "Hisense Home Appliances Announces Subscription Of Wealth Management Products - TradingView",
+      "contentHash": "bd5e99febecaadcd",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:02:12.776Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "d288869e6a20": {
+      "headline": "이재명 대통령 \"CPTPP, 피할 수 없지만 임기 내 타결은 어려워\"…농어민 반발 속 직접 소통 나선 이유는? 🤝 - 뉴닉",
+      "contentHash": "2e38bc63e71257e7",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:02:07.011Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "608c3c291597": {
+      "headline": "Haier Smart Home Co., Ltd. (600690.SS) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "contentHash": "c242fa6504735e5d",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:02:01.571Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "943e66a4a6aa": {
+      "headline": "[인사] SBS 미디어그룹 - 연합뉴스",
+      "contentHash": "e9a86a21417c77c7",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:01:56.534Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "34a37525ec62": {
+      "headline": "Fortescue is using KUKA welding robots to handle 6 MW charging cables [video] - Electrek",
+      "contentHash": "83fd51838487436e",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:01:55.124Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "31b18ddd62c1": {
+      "headline": "Whirlpool Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call - Benzinga",
+      "contentHash": "3bf3073dec3a116b",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:01:50.366Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "3eb392a55c83": {
+      "headline": "홍수 취재하던 기자가 물속으로?…침수차량 운전자 '극적 구조'",
+      "contentHash": "a46c8b344c80aafe",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:01:45.370Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "8504c0882fd5": {
+      "headline": "헨리 존슨 플라이트스코프 회장 “진심 골퍼에겐 믿을 수 있는 데이터를, 사업자는 부담 적고·관리 쉽게 해야죠”",
+      "contentHash": "01b818909d567820",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:01:43.832Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "fb147854772f": {
+      "headline": "프로야구 롯데, 이동욱 전 NC 감독 새 사령탑으로 선임",
+      "contentHash": "491144aa9ad3868d",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-26T18:01:32.465Z",
+      "status": "prefilter",
+      "reason": "프로야구|프로축구|배구|농구|챔피언십|올림픽|football club|high school.*(?:football|volleyball|basketball)"
+    },
     "89bc48b5c142": {
       "headline": "Best Fridge Freezer 2026: Tested fridges for all kitchen sizes and budgets - Trusted Reviews",
       "contentHash": "0cb55dc5b7fb678d",
@@ -11293,87 +11389,7 @@
       "processedAt": "2026-09-26T18:55:11.889Z",
       "status": "skip",
       "reason": "model_skip"
-    },
-    "7ea3d6c87c4a": {
-      "headline": "“역시 안세영”…‘1일 2경기’ 강행군에도 32강 20분, 16강 35분만에 승리",
-      "contentHash": "fc0502baa3f88959",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:29:58.406Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "cf9530c11c74": {
-      "headline": "Complete Care Plumbing Releases Hard Water Treatment Guide as TX Demand Grows - markets.businessinsider.com",
-      "contentHash": "b3681f401f1f5103",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:29:51.109Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "9a98d266717d": {
-      "headline": "EU proposes A-to-G energy labels for data centers as AI power demand climbs - Cryptopolitan",
-      "contentHash": "df07942a4a3d6b0f",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:29:39.571Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "a99d19150756": {
-      "headline": "PSG 회장 알켈라이피, 리그1 중계권 이해충돌 혐의로 수사받아 - 연합뉴스",
-      "contentHash": "4aafaede772484b2",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:29:32.479Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "46075f53d4f1": {
-      "headline": "기관이 끌어올린 ‘칠천피’…삼성전자에 5.7조 쏠렸다[투자360] - 헤럴드경제",
-      "contentHash": "68ef791e3a8484a1",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:29:26.892Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "9199df8197df": {
-      "headline": "비 와도 '부캉이' 보러 북항으로…추석 연휴에만 23만명 몰렸다",
-      "contentHash": "a88818b73c7bed3d",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:29:25.451Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "cae7222bf640": {
-      "headline": "[속보] 1243회 로또 1등 12명, ‘26억’ 대박…‘9, 18, 24, 38, 43, 44’",
-      "contentHash": "bce40b84b17ab953",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:29:24.130Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "7b2169a52e87": {
-      "headline": "\"South Korea-Mexico Trade Agreement Needed\"... Also Attends K-Pop Concert - news.sbs.co.kr",
-      "contentHash": "17f1571fe001b5c4",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:28:30.739Z",
-      "status": "prefilter",
-      "reason": "BTS|그래미|아이돌|연예인|concert|celebrity"
-    },
-    "75b1cd803650": {
-      "headline": "[속보] 여자농구, 일본 꺾고 AG 금메달…12년 만에 남녀 동반 우승",
-      "contentHash": "1c9440fe21135a8f",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:28:30.735Z",
-      "status": "prefilter",
-      "reason": "프로야구|프로축구|배구|농구|챔피언십|올림픽|football club|high school.*(?:football|volleyball|basketball)"
-    },
-    "67c967bf6e3e": {
-      "headline": "여자팀도 금메달… 한국 농구, 아이치·나고야 AG서 金3 ‘위업’ 달성",
-      "contentHash": "49dc962e7d48c0da",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-26T15:28:30.734Z",
-      "status": "prefilter",
-      "reason": "프로야구|프로축구|배구|농구|챔피언십|올림픽|football club|high school.*(?:football|volleyball|basketball)"
     }
   },
-  "nextClassificationSource": "Google News - 가구·인테리어 업계 KR"
+  "nextClassificationSource": "Google News - 가구·인테리어 시장·트렌드 KR"
 }
