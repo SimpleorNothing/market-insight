@@ -1,7 +1,79 @@
 {
   "schemaVersion": "v1",
-  "updatedAt": "2026-10-27T03:09:58.687Z",
+  "updatedAt": "2026-10-27T09:32:08.091Z",
   "entries": {
+    "766e2dc4ef8b": {
+      "headline": "LG Electronics launches Korea Grand Festival appliance deals and coupon packs - Chosunbiz",
+      "contentHash": "fa2e2b73616815aa",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:31:20.458Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "bc269e954b7c": {
+      "headline": "LG전자, 내달 말까지 온·오프라인 가전 할인 - IT조선",
+      "contentHash": "6a2c4346d856153d",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:31:13.838Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "9992eb570371": {
+      "headline": "[단독] 용산 금싸라기땅 333평 전시관, 관람객은 1명…공공기여 부실논란",
+      "contentHash": "f0e42a980f399c4c",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:31:11.129Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "36ec59450006": {
+      "headline": "Amazon just dropped this Dyson vacuum to its best price ever - St. Cloud Times",
+      "contentHash": "a8ba41b1fab336b1",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:31:03.275Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "7549b7bb8f5b": {
+      "headline": "Morgan Stanley Adjusts Midea Group's Price Target to 105 Yuan - marketscreener.com",
+      "contentHash": "917d216269cd2614",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:30:42.772Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "320c2c5027d7": {
+      "headline": "LG Electronics to hold online and in-store appliance discount event from Thursday - 헤럴드경제",
+      "contentHash": "86d5474ac210a06c",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:30:40.443Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "61e9373dbe30": {
+      "headline": "\"이익 눈높이 높아진 삼전닉스…빅테크 실적에 주가향방 달려\"",
+      "contentHash": "ee4e50434f60b57c",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:30:34.847Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "d9ae97339147": {
+      "headline": "'삼성전자 기밀유출' 안승호 전 부사장 2심 징역 3년‥법정 구속 - MBC 뉴스",
+      "contentHash": "2686475f94987eee",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:29:43.747Z",
+      "status": "prefilter",
+      "reason": "징역|구속|살인|폭행|절도|성폭행|crime|sentenced to prison"
+    },
+    "3346884ccb6c": {
+      "headline": "대전 스토킹 피해 신고 여성 살해한 40대 남성 구속",
+      "contentHash": "ee2cd951b3c33bbe",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-27T09:29:43.746Z",
+      "status": "prefilter",
+      "reason": "징역|구속|살인|폭행|절도|성폭행|crime|sentenced to prison"
+    },
     "e155914f2c0c": {
       "headline": "Johnson Controls International Reports Soon: How Has The Stock Reacted To Past Earnings? - Trefis",
       "contentHash": "bc641b765e7ad047",
@@ -287,14 +359,6 @@
       "contentHash": "0cb55dc5b7fb678d",
       "classifierVersion": "mi-v1.4-cost-guard",
       "processedAt": "2026-10-26T09:34:11.659Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "af7927701db4": {
-      "headline": "로봇 교육·장애인 일터 개선…로보락, 사회 공헌 확대 - 서울경제",
-      "contentHash": "91380f3a8b715543",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-10-26T09:34:10.412Z",
       "status": "skip",
       "reason": "model_skip"
     },
@@ -11287,5 +11351,5 @@
       "reason": "징역|구속|살인|폭행|절도|성폭행|crime|sentenced to prison"
     }
   },
-  "nextClassificationSource": "Google News - 가전 신사업·비즈모델 KR"
+  "nextClassificationSource": "Google News - Whirlpool"
 }
