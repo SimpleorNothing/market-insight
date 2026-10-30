@@ -1,7 +1,103 @@
 {
   "schemaVersion": "v1",
-  "updatedAt": "2026-10-30T17:35:28.990Z",
+  "updatedAt": "2026-10-30T23:26:55.464Z",
   "entries": {
+    "1245dd2463bb": {
+      "headline": "전국 강심장 모여라! 귀신과 춤 추고 잘만 따라하면 50만원이 넝쿨째 [페스티벌 플러스]",
+      "contentHash": "6ad4b8e42ce30ecb",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:59.917Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "1d4c5ee4389b": {
+      "headline": "신세계까사, '쓱데이' 참여…까사미아 캄포 연중 최대 혜택 - 아시아경제",
+      "contentHash": "c78533ed1566a49f",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:57.642Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "11a5b981845d": {
+      "headline": "삼성전자, 브랜드가치 7년 연속 세계 5위 - 한국관세신문",
+      "contentHash": "e906ed33425970a8",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:47.956Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "d6f1eed67c6d": {
+      "headline": "Electrolux CEO Yannick Fierling adds more shares to his portfolio - www.marketscreener.com",
+      "contentHash": "8c9e7b6fa3945837",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:46.843Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "c77b00d4c1e7": {
+      "headline": "Annie Lennox, Tom Morello, Desmond Child & More Honored at 2026 SONA Awards:’The Songwriter Prom’ - Billboard",
+      "contentHash": "b39e41ad660b6089",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:44.369Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "fc8049fdcb0e": {
+      "headline": "KUKA Robotics 2026 System Partner Event - A3 Association for Advancing Automation",
+      "contentHash": "4000ef6b1618458e",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:41.801Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "ae9eabd6aa8b": {
+      "headline": "만든 사람도 먹지 말라는 中 소시지·만두…\"닭 목·뼈 갈아 만들었다\"",
+      "contentHash": "e3820fc3a3826801",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:33.371Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "3f4105f74595": {
+      "headline": "北, 대북제재감시팀 조롱 “제재 곳간 이미 바닥…우리에겐 안통해”",
+      "contentHash": "8a5283afa2cfc645",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:32.302Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "811c9ef60723": {
+      "headline": "LG전자 베스트샵, 코리아 그랜드 페스티벌서 가전 할인 프로모션 진행 - 데일리안",
+      "contentHash": "011ecbb449645384",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:28.515Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "c85535c81675": {
+      "headline": "The dreame H12 PRO Wet Dry Vacuum Is $70 Off at Amazon - SammyGuru",
+      "contentHash": "83cae0989a66c881",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:27.471Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "fecb8ef304d5": {
+      "headline": "A big update for Google Home is rolling out to users now — and it addresses problems with Gemini and Matter devices - TechRadar",
+      "contentHash": "dd5a7552956835fe",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:25:24.913Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "5d3572dbe2ed": {
+      "headline": "“필기시험 30번 넘게 떨어져”…87ｍ 무면허 운전에 6개월 징역, 이유가",
+      "contentHash": "08f57bbb154227cb",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T23:24:43.242Z",
+      "status": "prefilter",
+      "reason": "징역|구속|살인|폭행|절도|성폭행|crime|sentenced to prison"
+    },
     "2cb9cff59443": {
       "headline": "[오늘의 IR] 삼성전자ㆍ현대자동차ㆍ두산로보틱스 등 - 이투데이",
       "contentHash": "2e9db55f959d862b",
@@ -1999,14 +2095,6 @@
       "contentHash": "5a2f25f149f4d3d9",
       "classifierVersion": "mi-v1.4-cost-guard",
       "processedAt": "2026-10-25T22:14:26.207Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "c85535c81675": {
-      "headline": "Dreame Vacuums and BLACK+DECKER Dustbuster Are Up to 35% Off at Amazon - SammyGuru",
-      "contentHash": "acad5e58e9b1e284",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-10-25T22:14:25.040Z",
       "status": "skip",
       "reason": "model_skip"
     },
@@ -11661,55 +11749,7 @@
       "processedAt": "2026-10-01T03:25:19.565Z",
       "status": "skip",
       "reason": "model_skip"
-    },
-    "6b66e2475005": {
-      "headline": "Whirlpool Apprentices Complete Capstone Project - Chattanoogan.com Breaking News",
-      "contentHash": "f2d19391ce38b2af",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T23:23:57.600Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "b9e7a797dac1": {
-      "headline": "김지용 검증 끝났나…이 대통령, 이례적 연속 방어 “친윤 논란? 중수청 망치는 것”",
-      "contentHash": "19130f32fcccfed9",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T23:23:53.293Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "db29d493c896": {
-      "headline": "Linkind Matter Smart Light Bulbs Drop to $13.99 on Amazon - SammyGuru",
-      "contentHash": "a6352f4da12e1d1d",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T23:23:43.161Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "d573f6a72f45": {
-      "headline": "에너지 효율성과 편안함과 안전을위한 이상적인 솔루션 - VOI.ID",
-      "contentHash": "b330ad84209acadb",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T23:23:23.378Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "3b6bdc7c9f37": {
-      "headline": "Whirlpool in a water tank reveals long-predicted wave turbulence - Phys.org",
-      "contentHash": "b6aea262238f6239",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T23:23:20.987Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "bff4a40a1b8d": {
-      "headline": "Whirlpool Corp. Campaign Tied To Milestone Anniversary - Kitchen & Bath Design News",
-      "contentHash": "20a10b21c040a985",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T23:23:18.222Z",
-      "status": "skip",
-      "reason": "model_skip"
     }
   },
-  "nextClassificationSource": "Google News - 가전 소비·유통 KR"
+  "nextClassificationSource": "전자신문"
 }
