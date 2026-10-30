@@ -1,7 +1,111 @@
 {
   "schemaVersion": "v1",
-  "updatedAt": "2026-10-29T23:46:52.799Z",
+  "updatedAt": "2026-10-30T03:49:36.790Z",
   "entries": {
+    "2770c44d8c0b": {
+      "headline": "Home Assistant and local AI, the guide to a private smart home (2026) - Pasquale Pillitteri",
+      "contentHash": "e0c4aec99a33b2a7",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:49.293Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "1b8aee201a70": {
+      "headline": "삼성전자 ‘최대 75조’ 주주환원 남았다…배당 받으려면 ‘12월 28일’까지[biz-플러스] - 서울경제",
+      "contentHash": "a0b82527d4aaf7b2",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:40.903Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "18bbc50d575e": {
+      "headline": "Goldman Sachs lowers Whirlpool stock price target - TheStreet",
+      "contentHash": "ad29281ff24f1b9e",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:31.041Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "138a91b37029": {
+      "headline": "57주년 맞은 삼성전자, \"지금은 자축보다 경쟁력 냉정하게 돌아볼 때\" - 조선일보",
+      "contentHash": "641433cbbd2438a4",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:29.844Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "8227624fae76": {
+      "headline": "'최악의 하루' 구글 알파벳, 하루 새 시총 670조원 증발… 주가 13% 폭락",
+      "contentHash": "3cad3f7c5344b1b6",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:27.239Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "1692252671cd": {
+      "headline": "[속보] 일본은행, 기준금리 동결…1.25% 유지",
+      "contentHash": "32311de89ad65612",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:26.174Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "d42a84eb7b33": {
+      "headline": "Google is cleaning up Home’s messiest bugs, with fixes for cameras, Matter devices, and more - Android Authority",
+      "contentHash": "397792ef4a843e41",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:20.466Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "2404a6b21056": {
+      "headline": "\"Smelly Shoes\" That Once Stumped Manufacturers Now Double Sales, Spurring a Thriving Hundred-Million-Yuan Booming Market - eu.36kr.com",
+      "contentHash": "bfaa27c1b178b44d",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:19.400Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "0a402f168cc0": {
+      "headline": "\"한파에 난방가전 수요 껑충\"...롯데하이마트, 11월 겨울가전 할인 나선다 - 소비자경제",
+      "contentHash": "11b23aae8f74c2a3",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:18.185Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "c927c7b39212": {
+      "headline": "\"美, 국내 생산확대 車업체에 관세완화 방침…아우디에 확약\" - 연합뉴스",
+      "contentHash": "148f418f3bc52223",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:48:12.390Z",
+      "status": "skip",
+      "reason": "model_skip"
+    },
+    "2cac1db0bea5": {
+      "headline": "'국민 아버지' 최불암, 입원치료 중 별세… 향년 87세, '파하~' 웃음 남기고 떠났다",
+      "contentHash": "63087a1a6a4d416c",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:47:24.343Z",
+      "status": "prefilter",
+      "reason": "부고|별세|장례|obituary|funeral"
+    },
+    "83a29937ea4c": {
+      "headline": "다섯살 딸 갈비뼈 부러질 때까지 맞았는데…친모 “교통사고 당했어요”",
+      "contentHash": "1f40ea6e9657b4de",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:47:24.342Z",
+      "status": "prefilter",
+      "reason": "관광버스|교통사고|강진|지진 사망|실종자|tour bus|earthquake.*(?:dead|killed)"
+    },
+    "1a35a3652aa5": {
+      "headline": "'프로페서X' '피카드 함장' 패트릭 스튜어트 별세… 향년 86세",
+      "contentHash": "aa815782178ef2c9",
+      "classifierVersion": "mi-v1.4-cost-guard",
+      "processedAt": "2026-10-30T03:47:24.342Z",
+      "status": "prefilter",
+      "reason": "부고|별세|장례|obituary|funeral"
+    },
     "f6f105d5f68a": {
       "headline": "Johnson Controls International PLC (JCI) (Q4 2026) Earnings Call Highlights: Record $23 Billion ... - Yahoo Finance",
       "contentHash": "e36de45e480ee394",
@@ -11541,55 +11645,7 @@
       "processedAt": "2026-09-30T10:09:38.396Z",
       "status": "prefilter",
       "reason": "징역|구속|살인|폭행|절도|성폭행|crime|sentenced to prison"
-    },
-    "dcf9448883e0": {
-      "headline": "3 Appliance Brands That Are Owned By Bosch - Mashed",
-      "contentHash": "312574f8e1a2050b",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T03:19:08.215Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "3b52359746c5": {
-      "headline": "Videos: Fortec 2 Ultra Robot Arm in 3D: KUKA KR800 Visualization - A3 Association for Advancing Automation",
-      "contentHash": "d856ceacec9265f3",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T03:19:07.033Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "bae81dc584b8": {
-      "headline": "Whirlpool Corporation (NYSE:WHR) Given Average Recommendation of \"Reduce\" by Brokerages - marketbeat.com",
-      "contentHash": "ba48047a725c559f",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T03:19:05.918Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "4dc67c09f10c": {
-      "headline": "여성 1인가구 밀집지역에 경찰 드론·순찰로봇 투입",
-      "contentHash": "eb049786e69ca99d",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T03:18:58.850Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "04fd20b88f21": {
-      "headline": "KT알파 쇼핑, 10월 가을 쇼핑 성수기 공략…패션·식품·리빙 강화 - news1.kr",
-      "contentHash": "28eb2da6aec80bf8",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T03:18:57.699Z",
-      "status": "skip",
-      "reason": "model_skip"
-    },
-    "3d5012cd0694": {
-      "headline": "What's next after House rebukes Trump's tariffs on Canada? - ABC News - Breaking News, Latest News and Videos",
-      "contentHash": "8f20fda906b0155a",
-      "classifierVersion": "mi-v1.4-cost-guard",
-      "processedAt": "2026-09-30T03:18:45.514Z",
-      "status": "skip",
-      "reason": "model_skip"
     }
   },
-  "nextClassificationSource": "Google News - Electrolux"
+  "nextClassificationSource": "Google News - 가구·인테리어 시장·트렌드 KR"
 }
