@@ -1,7 +1,91 @@
 {
-  "updatedAt": "2026-11-14T14:43:19.992Z",
+  "updatedAt": "2026-11-14T20:18:27.436Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 10265,
+      "lens": "정책",
+      "grade": "주요",
+      "impact": 3.8,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 3,
+        "marketSize": 5,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "무역협정",
+        "멕시코",
+        "미국"
+      ],
+      "headline": "트럼프, 멕시코 향해 관세 위협 재차 경고",
+      "summary": "도널드 트럼프 미국 대통령 당선인이 멕시코를 상대로 관세 위협을 다시 제기했으며, 셰인바움 멕시코 대통령은 중국과의 관계를 준비하고 있음.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "트럼프가 멕시코를 향해 관세 위협을 재차 경고함"
+        },
+        {
+          "type": "content",
+          "text": "셰인바움 멕시코 대통령은 중국과의 관계 강화를 준비 중"
+        }
+      ],
+      "source": {
+        "name": "Google News - US Trade Policy",
+        "url": "https://mexiconewsdaily.com/news/trump-tariff-sheinbaum-china-trip-mexico-week-in-review/"
+      },
+      "region": "US",
+      "publishedAt": "2026-11-14T20:02:08.000Z",
+      "url": "https://mexiconewsdaily.com/news/trump-tariff-sheinbaum-china-trip-mexico-week-in-review/",
+      "linkCheckedAt": "2026-11-14T20:16:53.472Z",
+      "image": null
+    },
+    {
+      "id": 10263,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 4.6,
+      "factors": {
+        "salesRelevance": 4,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "구리",
+        "관세",
+        "EU",
+        "통상정책",
+        "무역규제"
+      ],
+      "headline": "EU, 베트남·중국·멕시코·우즈벡산 구리 파이프 반덤핑 관세 부과",
+      "summary": "유럽연합(EU)이 베트남, 중국, 멕시코, 우즈베키스탄에서 수입되는 구리 파이프에 대해 잠정적인 반덤핑 관세를 부과했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "유럽연합(EU)이 베트남, 중국, 멕시코, 우즈베키스탄산 구리 파이프에 반덤핑 관세 부과"
+        },
+        {
+          "type": "content",
+          "text": "해당 수입품에 대해 잠정적인 관세 조치가 시행됨"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.vietnam.vn/ko/eu-ap-thue-chong-ban-pha-gia-tam-thoi-doi-voi-san-pham-ong-dong-nhap-khau-tu-viet-nam-trung-quoc-mexico-va-uzbekistan"
+      },
+      "region": "KR",
+      "publishedAt": "2026-11-14T15:56:36.000Z",
+      "url": "https://www.vietnam.vn/ko/eu-ap-thue-chong-ban-pha-gia-tam-thoi-doi-voi-san-pham-ong-dong-nhap-khau-tu-viet-nam-trung-quoc-mexico-va-uzbekistan",
+      "linkCheckedAt": "2026-11-14T20:16:53.472Z",
+      "image": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/11/14/1794671037836_2a07579a-88d3-4252-9a80-ae7a3368cb18.jpeg",
+      "imageChecked": true
+    },
     {
       "id": 10256,
       "lens": "정책",
@@ -401,6 +485,48 @@
       "imageChecked": true,
       "imageOriginal": "https://www.chosun.com/resizer/v2/22M4HFMS6BEYZCRVC47SRSRBQE.jpg?auth=eea4d945ebddbeab4f2b400110b29c3f23c0ff806bccf895415bded7e79b0ef0&width=1200&height=630&smart=true",
       "thumbFace": true
+    },
+    {
+      "id": 10260,
+      "lens": "경쟁사",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [
+        "LG전자"
+      ],
+      "tags": [
+        "해외전시",
+        "글로벌전략"
+      ],
+      "headline": "LG전자, 나이지리아 아부다비에서 한국형 혁신 기술 선보여",
+      "summary": "LG전자가 나이지리아 아부다비에서 한국의 혁신 기술을 선보이는 행사를 개최했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "LG전자가 나이지리아 아부다비에서 혁신 기술을 전시함"
+        },
+        {
+          "type": "content",
+          "text": "한국형 혁신을 현지 시장에 소개하는 행사 진행"
+        }
+      ],
+      "source": {
+        "name": "Google News - LG Global",
+        "url": "https://www.thisdaylive.com/2026/11/05/lg-electronics-showcases-korean-innovation-in-abuja-2/"
+      },
+      "region": "Global",
+      "publishedAt": "2026-11-13T14:56:58.000Z",
+      "url": "https://www.thisdaylive.com/2026/11/05/lg-electronics-showcases-korean-innovation-in-abuja-2/",
+      "linkCheckedAt": "2026-11-14T20:16:53.472Z",
+      "image": "https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/LG-Showcases.jpg",
+      "imageChecked": true
     },
     {
       "id": 10234,
@@ -1131,6 +1257,50 @@
       "linkCheckedAt": "2026-11-12T21:59:44.526Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-11/brecht-corbeel----lYkJ6R3k-unsplash%20%281%29.jpg?h=96316014&itok=YcDki8aQ",
       "imageChecked": true
+    },
+    {
+      "id": 10269,
+      "lens": "정책",
+      "grade": "긴급",
+      "impact": 5,
+      "factors": {
+        "salesRelevance": 5,
+        "timeUrgency": 5,
+        "marketSize": 5,
+        "sourceReliability": 5
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "관세",
+        "통상정책",
+        "미국",
+        "멕시코"
+      ],
+      "headline": "트럼프, 이민 차단 실패 시 멕시코 관세 2배 인상 경고",
+      "summary": "트럼프 미국 대통령 당선인이 거대한 이민 행렬 차단을 압박하며, 이를 막지 못할 경우 멕시코산 제품에 부과되는 관세를 현재의 2배로 인상하겠다고 경고했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "트럼프는 이민 행렬이 미국을 침공하고 있다고 언급함"
+        },
+        {
+          "type": "content",
+          "text": "이민 차단 조치를 시행하지 못할 경우 멕시코 관세를 2배로 인상 경고"
+        }
+      ],
+      "source": {
+        "name": "Google News - 통상·관세 정책 KR",
+        "url": "https://www.koreadaily.com/article/20261112081408139"
+      },
+      "region": "KR",
+      "publishedAt": "2026-11-12T20:41:00.000Z",
+      "url": "https://www.koreadaily.com/article/20261112081408139",
+      "linkCheckedAt": "2026-11-14T20:16:53.472Z",
+      "image": "assets/img/topics/policy.svg",
+      "imageChecked": true,
+      "imageOriginal": "https://www.koreadaily.com/data/photo/thumbnail/2026/11/13/fce10174-4104-40d5-9d36-7291058c94eb.jpg",
+      "thumbFace": true
     },
     {
       "id": 10224,
@@ -2537,6 +2707,48 @@
       "imageChecked": true
     },
     {
+      "id": 10271,
+      "lens": "소비자",
+      "grade": "참고",
+      "impact": 2.4,
+      "factors": {
+        "salesRelevance": 2,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "스마트홈",
+        "센서",
+        "IoT",
+        "소비자"
+      ],
+      "headline": "주요 플랫폼 호환되는 50파운드 미만 신형 스마트 센서 공개",
+      "summary": "대부분의 주요 플랫폼과 호환되며 50파운드 미만의 가격으로 출시된 신형 스마트 센서가 소개되었습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "대부분의 주요 스마트홈 플랫폼과 호환되는 신형 센서 공개"
+        },
+        {
+          "type": "content",
+          "text": "판매 가격은 50파운드 미만으로 책정됨"
+        }
+      ],
+      "source": {
+        "name": "Google News - Appliance Tech (Refrigerant/AI/SmartHome)",
+        "url": "https://www.t3.com/home-living/smart-home/this-new-smart-sensor-works-with-most-major-platforms-and-costs-less-than-gbp50"
+      },
+      "region": "Global",
+      "publishedAt": "2026-11-11T08:00:00.000Z",
+      "url": "https://www.t3.com/home-living/smart-home/this-new-smart-sensor-works-with-most-major-platforms-and-costs-less-than-gbp50",
+      "linkCheckedAt": "2026-11-14T20:16:53.472Z",
+      "image": "https://cdn.mos.cms.futurecdn.net/iEEiNyPjqFhDiNo6BDCbaZ-1150-80.jpg",
+      "imageChecked": true
+    },
+    {
       "id": 10111,
       "lens": "소비자",
       "grade": "참고",
@@ -3886,7 +4098,18 @@
       "url": "https://indiantelevision.com/mam/whirlpool-india-q2-revenue-rises-13-7-per-cent-as-profit-declines-40-per-cent/",
       "linkCheckedAt": "2026-11-12T01:46:02.949Z",
       "image": "https://indiantelevision.com/wp-content/uploads/2026/11/Whirlpool-1000x600.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 10261,
+          "headline": "월풀, 2분기 매출 증가에도 이익 감소",
+          "url": "https://www.tradingview.com/news/urn:summary_document_report:quartr.com:3967033:0-whirlpool-higher-q2-revenue-contrasted-with-lower-profit-h1-operating-cash-flow-strengthened/",
+          "source": {
+            "name": "Google News - Whirlpool"
+          },
+          "publishedAt": "2026-11-09T11:18:17.000Z"
+        }
+      ]
     },
     {
       "id": 10122,
@@ -4854,6 +5077,15 @@
             "name": "Google News - TCL Hisense Panasonic Global"
           },
           "publishedAt": "2026-11-09T12:17:00.000Z"
+        },
+        {
+          "id": 10266,
+          "headline": "아르첼릭, COP31서 가정 에너지 절감 커넥티드 가전 공개",
+          "url": "https://ca.finance.yahoo.com/news/cop31-beko-showcase-connected-appliances-120200999.html",
+          "source": {
+            "name": "Google News - TCL Hisense Panasonic Global"
+          },
+          "publishedAt": "2026-11-09T12:02:00.000Z"
         }
       ]
     },
@@ -14259,7 +14491,7 @@
       "region": "US",
       "publishedAt": "2026-10-30T16:23:28.000Z",
       "url": "https://mexico-now.com/mexico-and-india-start-talks-for-a-trade-agreement/",
-      "linkCheckedAt": "2026-10-30T17:33:24.624Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://mexico-now.com/wp-content/uploads/2026/10/HVunfEFWsAAOps1.webp",
       "imageChecked": true
     },
@@ -14543,7 +14775,7 @@
       "region": "Global",
       "publishedAt": "2026-10-30T12:44:38.000Z",
       "url": "https://tech.sportskeeda.com/refrigerator/news-haier-in-vista-552l-five-door-refrigerator-goes-sale-india-259990-rupees-zero-gap-built-in-fitting",
-      "linkCheckedAt": "2026-10-30T17:33:24.624Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://staticg.sportskeeda.com/editor/2026/10/ed312-17933641417955-1920.jpg",
       "imageChecked": true
     },
@@ -14672,7 +14904,7 @@
       "region": "KR",
       "publishedAt": "2026-10-30T07:20:35.000Z",
       "url": "https://www.edaily.co.kr/News/Read?newsId=05175846645618168&mediaCodeNo=257",
-      "linkCheckedAt": "2026-10-30T17:33:24.624Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/10/PS26103001413.jpg",
       "imageChecked": true
     },
@@ -14980,7 +15212,7 @@
       "region": "KR",
       "publishedAt": "2026-10-30T01:20:06.000Z",
       "url": "https://www.boannews.com/news/articleView.html?idxno=146888",
-      "linkCheckedAt": "2026-10-30T17:33:24.624Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cdn.boannews.com/news/photo/202610/146888_129547_1838.jpg",
       "imageChecked": true
     },
@@ -15023,7 +15255,7 @@
       "region": "US",
       "publishedAt": "2026-10-30T01:12:42.000Z",
       "url": "https://eu.36kr.com/en/p/4046964415707392",
-      "linkCheckedAt": "2026-10-30T17:33:24.624Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://img.36krcdn.com/hsossms/20261029/v2_e5e8870be7c244ceb5154c7b7b36b5fb@000000@ai_oswg834365oswg2048oswg2048_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
       "imageChecked": true
     },
@@ -16287,7 +16519,7 @@
       "region": "Global",
       "publishedAt": "2026-10-29T00:00:49.000Z",
       "url": "https://www.digitimes.com/news/a20261029VL203/lg-demand-business-earnings-lg-electronics.html",
-      "linkCheckedAt": "2026-10-30T17:33:24.624Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://img.digitimes.com/newsshow/20261029vl203_files/1_b.jpg",
       "imageChecked": true
     },
@@ -16411,7 +16643,7 @@
       "region": "Global",
       "publishedAt": "2026-10-28T23:10:14.000Z",
       "url": "https://finance.yahoo.com/energy/articles/lennox-international-lii-adds-smart-231014152.html",
-      "linkCheckedAt": "2026-10-30T17:33:24.624Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": null
     },
     {
@@ -19876,7 +20108,7 @@
       "region": "US",
       "publishedAt": "2026-10-26T20:27:00.000Z",
       "url": "https://www.wsj.com/business/earnings/whirlpool-whr-3q-earnings-report-2026-stock-2fb041aa",
-      "linkCheckedAt": "2026-10-30T17:33:24.624Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": null
     },
     {
@@ -27803,7 +28035,7 @@
       "region": "KR",
       "publishedAt": "2026-10-20T08:11:01.000Z",
       "url": "https://www.econovill.com/news/articleView.html?idxno=754291",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cdn.econovill.com/news/thumbnail/202610/754291_730998_4954_v150.jpg",
       "imageChecked": true
     },
@@ -27850,7 +28082,7 @@
       "region": "KR",
       "publishedAt": "2026-10-20T08:06:53.000Z",
       "url": "https://kbthink.com/news-list/view.html?newsId=20261020170654460",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://kbthink.com/content/dam/tam-dcp-cms/kbthink/KB%EC%9D%98",
       "relatedArticles": [
         {
@@ -27904,7 +28136,7 @@
       "region": "KR",
       "publishedAt": "2026-10-20T08:00:00.000Z",
       "url": "https://www.etnews.com/20261020000283",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://img.etnews.com/news/article/2026/10/20/news-p.v1.20261020.82f22fb4296a4ee5a0d70c747bf168f1_P1.jpg",
       "imageChecked": true
     },
@@ -27983,7 +28215,7 @@
       "region": "KR",
       "publishedAt": "2026-10-20T06:09:06.000Z",
       "url": "https://www.electimes.com/news/articleViewAmp.html?idxno=373650",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://www.electimes.com/news/photo/202610/373650_587247_4652.png",
       "imageChecked": true
     },
@@ -49105,7 +49337,7 @@
       "region": "Global",
       "publishedAt": "2026-09-28T10:57:00.000Z",
       "url": "https://en.prnasia.com/releases/apac/lg-brings-k-lifestyle-experiences-to-hong-kong-through-cultural-collaborations-549772.shtml",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://mmx.prnasia.com/media/MS1997259/20260928034251EDT_image_3.jpg?id=OA2973189&p=medium600",
       "imageChecked": true
     },
@@ -49142,7 +49374,7 @@
       "region": "KR",
       "publishedAt": "2026-09-28T10:47:00.000Z",
       "url": "https://www.incheonilbo.com/news/articleView.html?idxno=1332998",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cdn.incheonilbo.com/news/thumbnail/202609/1332998_673731_522_v150.jpg",
       "imageChecked": true
     },
@@ -49184,7 +49416,7 @@
       "region": "KR",
       "publishedAt": "2026-09-28T09:49:49.000Z",
       "url": "https://www.mt.co.kr/world/2026/09/28/2026092818395862686",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/09/2026092818395862686_1.jpg",
       "imageChecked": true
     },
@@ -49665,7 +49897,7 @@
       "region": "KR",
       "publishedAt": "2026-09-28T05:11:08.000Z",
       "url": "https://www.elle.co.kr/article/1910325",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://www.elle.co.kr/resources/online/thumbnail/hf/2026/09/23/c59db181-74eb-4549-8344-64853dfb0416.jpg"
     },
     {
@@ -49752,7 +49984,7 @@
       "region": "KR",
       "publishedAt": "2026-09-28T01:49:58.000Z",
       "url": "https://www.newsway.co.kr/news/view?ud=2026092810261222892",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://nimage.newsway.co.kr/photo/2026/09/28/20260928002821_1200.jpg",
       "imageChecked": true
     },
@@ -51834,7 +52066,7 @@
       "region": "Global",
       "publishedAt": "2026-09-25T14:04:20.000Z",
       "url": "https://vacuumwars.com/dyson-v10-konical-and-v8-cyclone-release/",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://vacuumwars.com/wp-content/uploads/2026/06/Dyson-V8-Cyclone-and-V10-Conical-Launch.png",
       "imageChecked": true
     },
@@ -57278,7 +57510,7 @@
       },
       "publishedAt": "2026-09-20T05:38:00.000Z",
       "url": "https://www.viva100.com/article/20260920500372",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://stqnq5ux4599.edge.naverncp.com/data2//content/image/2026/09/20/.cache/512/20260920500296.png?v=20260921001259",
       "imageChecked": true
     },
@@ -58005,7 +58237,7 @@
       },
       "publishedAt": "2026-09-18T21:38:50.000Z",
       "url": "https://texasborderbusiness.com/jorge-torres-says-u-s-mexico-trade-talks-could-bring-critical-certainty-to-border-economy/",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://texasborderbusiness.com/wp-content/uploads/2026/09/torres-cross.jpg",
@@ -67914,7 +68146,7 @@
       },
       "publishedAt": "2026-09-10T11:10:05.000Z",
       "url": "http://www.ekn.kr/web/view.php?key=20260910020223062",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://www.ekn.kr/mnt/file/202609/news-p.v1.20260910.03137bcdece14e6b94a8061de1ca0c3d_R.jpg",
       "imageChecked": true
     },
@@ -70138,7 +70370,7 @@
       },
       "publishedAt": "2026-09-08T07:00:00.000Z",
       "url": "https://www.etnews.com/20260908000278",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://img.etnews.com/news/article/2026/09/08/news-p.v1.20260908.9bcb9c4eee684c488f3f9acd06ac499f_P1.png",
       "imageChecked": true
     },
@@ -70181,7 +70413,7 @@
       },
       "publishedAt": "2026-09-08T06:39:50.000Z",
       "url": "http://www.inews24.com/view/2003300",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://image.inews24.com/v1/641d1950ef6bd5.jpg",
       "imageChecked": true
     },
@@ -70264,7 +70496,7 @@
       },
       "publishedAt": "2026-09-08T03:02:00.000Z",
       "url": "https://en.people.cn/n3/2026/0908/c90000-20497184.html",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://en.people.cn/img/FOREIGN/2021/02/313100/source/imgs/tit0.png",
       "imageChecked": true
     },
@@ -70943,7 +71175,7 @@
       },
       "publishedAt": "2026-09-07T09:14:50.000Z",
       "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169646",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cdn.it.chosun.com/news/thumbnail/202609/2023092169646_451943_457_v150.jpg",
       "imageChecked": true
     },
@@ -71473,7 +71705,7 @@
       },
       "publishedAt": "2026-09-07T00:00:00.000Z",
       "url": "https://www.asiae.co.kr/en/article/2026090413223568431",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cphoto.asiae.co.kr/listimglink/1/2026090413213916335_1788495699.jpg",
       "imageChecked": true
     },
@@ -74779,7 +75011,7 @@
       },
       "publishedAt": "2026-09-02T13:16:48.000Z",
       "url": "https://www.tikr.com/blog/whirlpool-whr-stock-plunges-debt-load-investor-concerns?",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://res.cloudinary.com/tikr/images/w_600,h_400,c_scale/f_webp,q_auto/v1788348081/images/WHR-stock_12836765a20/WHR-stock_12836765a20.png?_i=AA",
       "imageChecked": true
     },
@@ -76308,7 +76540,7 @@
       },
       "publishedAt": "2026-08-31T10:46:26.000Z",
       "url": "https://www.marketscreener.com/news/nomura-adjusts-midea-group-s-price-target-to-99-50-yuan-from-98-50-yuan-keeps-at-buy-ce7858dcde8bf224",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": null
     },
     {
@@ -79678,7 +79910,7 @@
       },
       "publishedAt": "2026-08-26T22:08:45.000Z",
       "url": "https://sammyguru.com/samsung-subscribe-trademark-home-appliances/",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://sammyguru.com/wp-content/uploads/2026/08/Samsung-32-cu.-ft.-three-door-French-door-smart-refrigerator.jpg",
       "imageChecked": true
     },
@@ -79777,7 +80009,7 @@
       },
       "publishedAt": "2026-08-26T20:50:27.000Z",
       "url": "https://biz.heraldcorp.com/article/10853407",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://wimg.heraldcorp.com/news/cms/2026/08/27/news-p.v1.20260827.1298b27989404c1d88163e7cd1c09a3f_T1.png",
       "imageChecked": true
     },
@@ -79883,7 +80115,7 @@
       },
       "publishedAt": "2026-08-26T20:00:00.000Z",
       "url": "https://www.mt.co.kr/amp/economy/2026/08/27/2026082614280964304",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/08/2026082614280964304_1.jpg",
       "imageChecked": true
     },
@@ -79929,7 +80161,7 @@
       },
       "publishedAt": "2026-08-26T19:45:00.000Z",
       "url": "https://www.slashgear.com/2240543/jd-power-2026-appliance-satisfaction-study-top-refrigerator-brand/",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://www.slashgear.com/img/gallery/not-lg-or-whirlpool-this-refrigerator-brand-tops-jd-powers-2026-appliance-satisfaction-study/l-intro-1787197297.jpg",
       "imageChecked": true
     },
@@ -79968,7 +80200,7 @@
       },
       "publishedAt": "2026-08-26T18:38:54.000Z",
       "url": "https://mexico-now.com/bosch-expands-its-plant-in-nuevo-leon/",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://mexico-now.com/wp-content/uploads/2026/08/bosch-mexico-ramas-leon-industrial.jpg",
       "imageChecked": true
     },
@@ -80010,7 +80242,7 @@
       },
       "publishedAt": "2026-08-26T17:07:44.000Z",
       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/whirlpool-stock-slips-after-a-weak-quarter-and-cautious-outlook/70005274",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://mdb.ad-hoc-news.de/bild/bild-2701699_1920_1080.webp",
       "imageChecked": true,
       "relatedArticles": [
@@ -82192,7 +82424,7 @@
       },
       "publishedAt": "2026-08-24T08:50:00.000Z",
       "url": "https://www.mt.co.kr/industry/2026/08/24/2026082414470811610",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/08/2026082414470811610_1.jpg",
       "imageChecked": true
     },
@@ -84230,7 +84462,7 @@
       },
       "publishedAt": "2026-08-22T13:25:53.000Z",
       "url": "https://www.megabites.com.ph/haier-turns-abenson-greenhills-store-into-a-home-of-possibilities-with-new-smart-appliances/",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://www.megabites.com.ph/wp-content/uploads/2026/08/20260820_155800.webp",
       "imageChecked": true,
       "relatedArticles": [
@@ -84449,7 +84681,7 @@
       },
       "publishedAt": "2026-08-22T05:38:48.000Z",
       "url": "http://www.theonetv.kr/news/articleView.html?idxno=252370",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://cdn.theonetv.kr/news/thumbnail/202608/252370_255260_3634_v150.jpg",
@@ -84614,7 +84846,7 @@
       },
       "publishedAt": "2026-08-22T03:07:02.000Z",
       "url": "https://www.vietnam.vn/ko/my-dam-phan-thuong-mai-moi-voi-mexico-thao-go-bat-dong-voi-canada-va-brazil",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/22/1787366196152_my-dam-phan-thu-w720t0-di2633d366d6090311t11024l1-my-11112.webp",
       "imageChecked": true
     },
@@ -87004,7 +87236,7 @@
       },
       "publishedAt": "2026-08-18T15:01:00.000Z",
       "url": "https://www.joongang.co.kr/article/25454255",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202608/19/df774f21-aa18-4389-bc74-b36a7b991041.jpg",
       "imageChecked": true
     },
@@ -87047,7 +87279,7 @@
       },
       "publishedAt": "2026-08-18T12:49:38.000Z",
       "url": "https://www.moomoo.com/news/post/74839205/hisense-home-appliances-h1-profit-drops-20-revenue-slips-5",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": null,
       "relatedArticles": [
         {
@@ -89091,7 +89323,7 @@
       },
       "publishedAt": "2026-08-15T05:00:00.000Z",
       "url": "https://www.seoulfn.com/news/articleView.html?idxno=635690",
-      "linkCheckedAt": "2026-10-30T23:23:54.241Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cdn.seoulfn.com/news/photo/202608/635690_437206_506.jpg",
       "imageChecked": true
     },
@@ -112400,7 +112632,7 @@
       },
       "publishedAt": "2026-07-26T23:00:00.000Z",
       "url": "https://dealsite.co.kr/articles/165934",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "assets/img/topics/news.svg",
       "imageChecked": true,
       "imageOriginal": "https://dtd31o1ybbmk8.cloudfront.net/photos/2026/07/24/333c4281de514eb086411839457f9b7b/thumb.jpg",
@@ -112840,7 +113072,7 @@
       },
       "publishedAt": "2026-07-26T13:35:42.000Z",
       "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=388920",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://www.fntoday.co.kr/news/thumbnail/202607/388920_311999_950_v150.jpg",
       "imageChecked": true
     },
@@ -112982,7 +113214,7 @@
       },
       "publishedAt": "2026-07-26T08:57:17.000Z",
       "url": "https://www.hankyung.com/article/2026072665821",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://img.hankyung.com/photo/202607/AA.45151342.1.jpg",
       "imageChecked": true
     },
@@ -113026,7 +113258,7 @@
       },
       "publishedAt": "2026-07-26T08:00:00.000Z",
       "url": "https://daily.hankooki.com/news/articleView.html?idxno=1389207",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cdn.daily.hankooki.com/news/thumbnail/202607/1389207_1570200_3456_v150.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -113105,7 +113337,7 @@
       },
       "publishedAt": "2026-07-26T06:18:40.000Z",
       "url": "https://v.daum.net/v/20260726151840710?f=p",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/26/khan/20260726151842274qdpd.jpg",
@@ -114123,7 +114355,7 @@
       },
       "publishedAt": "2026-07-24T18:02:09.000Z",
       "url": "https://mexicobusiness.news/automotive/news/usmca-tightens-auto-rules-week-automotive",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/2026-07/MBN-2025-Thumbnails-TheWeekIn-Automotive_2.jpg?h=0a43b1f9&itok=hGCVYd1J",
       "imageChecked": true
     },
@@ -114164,7 +114396,7 @@
       },
       "publishedAt": "2026-07-24T17:59:46.000Z",
       "url": "https://kvia.com/news/border/2026/07/24/mexico-faces-critical-usmca-talks-as-manufacturing-shifts-threaten-juarez/",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://kvia.b-cdn.net/2019/12/MGN_1280x720_91210C00-XAQTJ.jpg",
       "imageChecked": true
     },
@@ -114333,7 +114565,7 @@
       },
       "publishedAt": "2026-07-24T16:00:04.000Z",
       "url": "https://www.dairyherd.com/news/u-s-pressures-canada-dairy-trade-usmca-review-heats",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": null
     },
     {
@@ -114415,7 +114647,7 @@
       },
       "publishedAt": "2026-07-24T13:57:42.000Z",
       "url": "https://www.nytimes.com/article/trump-tariffs-trade.html",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": null
     },
     {
@@ -114456,7 +114688,7 @@
       },
       "publishedAt": "2026-07-24T13:00:00.000Z",
       "url": "https://mexicobusiness.news/policyandeconomy/news/usmca-uncertainty-how-trade-review-risks-mexicos-gdp-growth",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://mexicobusiness.news/sites/default/files/styles/crop_16_9/public/pictures/2025-11/large-Greyhound-Trading-img-2025-Renato-Campos-1-MBN.jpg?h=61e19443&itok=A2Hexfeh",
@@ -114499,7 +114731,7 @@
       },
       "publishedAt": "2026-07-24T12:00:36.000Z",
       "url": "https://www.mk.co.kr/news/economy/12107028",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/24/rcv.YNA.20260323.PYH2026032313630001300_R.jpg",
       "imageChecked": true
     },
@@ -114624,7 +114856,7 @@
       },
       "publishedAt": "2026-07-24T09:11:52.000Z",
       "url": "http://www.e2news.com/news/articleViewAmp.html?idxno=332642",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cdn.e2news.com/news/photo/202607/332642_230645_383.jpg",
       "imageChecked": true
     },
@@ -114668,7 +114900,7 @@
       },
       "publishedAt": "2026-07-24T07:48:04.000Z",
       "url": "https://www.esgeconomy.com/news/articleView.html?idxno=16160",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://cdn.esgeconomy.com/news/thumbnail/202607/16160_23803_1522_v150.jpg",
       "imageChecked": true
     },
@@ -114710,7 +114942,7 @@
       },
       "publishedAt": "2026-07-24T06:11:58.000Z",
       "url": "https://www.huffingtonpost.kr/article/258973",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "assets/img/topics/retail.svg",
       "imageChecked": true,
       "imageOriginal": "https://cdn.huffingtonpost.kr/news/photo/202607/202607244224.jpg?v=258973",
@@ -114794,7 +115026,7 @@
       },
       "publishedAt": "2026-07-24T04:57:50.000Z",
       "url": "https://www.mk.co.kr/news/english/12106579",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/24/rcv.YNA.20260724.PYH2026072404350001300_R.jpg",
       "imageChecked": true
     },
@@ -114839,7 +115071,7 @@
       },
       "publishedAt": "2026-07-24T04:57:02.000Z",
       "url": "https://www.mk.co.kr/news/economy/12106574",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://pimg.mk.co.kr/news/cms/202607/24/news-p.v1.20250910.d34d7194d482454daefe84d47fa36730_R.jpg",
       "imageChecked": true
     },
@@ -114882,7 +115114,7 @@
       },
       "publishedAt": "2026-07-24T04:55:00.000Z",
       "url": "https://finance.biggo.com/news/42be6c43-b537-4eb1-8839-7344c3310053",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://img.biggo.com/hTUahsLGG7gTwK3bdYihZRlzMC59CwDe3zDk1ZQGrhw/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3LzQyYmU2YzQzLWI1MzctNGViMS04ODM5LTczNDRjMzMxMDA1M18xNzg0ODY5NDU2X2RlZmF1bHQuanBn.jpg",
       "imageChecked": true
     },
@@ -114926,7 +115158,7 @@
       },
       "publishedAt": "2026-07-24T02:47:00.000Z",
       "url": "https://www.newspim.com/news/view/20260724000362",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://img.newspim.com/news/2026/07/24/2607241036379540_t1.jpg",
       "imageChecked": true
     },
@@ -120425,7 +120657,7 @@
       },
       "publishedAt": "2026-07-19T07:00:00.000Z",
       "url": "https://www.sportschosun.com/en/culture/2026-07-19/202607190100114520007247",
-      "linkCheckedAt": "2026-10-30T17:32:01.010Z",
+      "linkCheckedAt": "2026-11-14T20:16:05.710Z",
       "image": "https://www.sportschosun.com/article/html/2026/07/19/2026071901001145200072471_w.jpg",
       "imageChecked": true,
       "relatedArticles": [
