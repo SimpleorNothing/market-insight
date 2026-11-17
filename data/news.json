@@ -1,7 +1,48 @@
 {
-  "updatedAt": "2026-11-16T17:46:28.003Z",
+  "updatedAt": "2026-11-17T02:44:55.273Z",
   "schemaVersion": "v2",
   "items": [
+    {
+      "id": 10344,
+      "lens": "기술",
+      "grade": "참고",
+      "impact": 2.2,
+      "factors": {
+        "salesRelevance": 1,
+        "timeUrgency": 3,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [],
+      "competitors": [],
+      "tags": [
+        "스마트홈",
+        "허브",
+        "음성제어",
+        "매터"
+      ],
+      "headline": "스위치봇, 음성 제어·컬러 디스플레이 탑재 허브 4 출시",
+      "summary": "스위치봇이 음성 제어, 컬러 디스플레이, 매터(Matter)를 지원하는 신제품 '허브 4'를 글로벌 시장에 출시했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "스위치봇이 음성 제어 기능을 갖춘 허브 4를 공개함"
+        },
+        {
+          "type": "content",
+          "text": "컬러 디스플레이와 매터 표준을 지원하는 스마트홈 허브 신제품임"
+        }
+      ],
+      "source": {
+        "name": "Google News - Appliance Tech (Refrigerant/AI/SmartHome)",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaTN4V3YyMkJmUHd4ZUhZTlA5YU9xZldPMm5xQ2FpM0lNZ0w1dERwLW10bWtQQjJlaUtuS2hDRFRVa0ZkQXlGUXhfU1lSdmFhcXVSaWhwQi16bUdvbTZOSnNyTFRjb1BicTk4cFcxOUN3dlJzNkhzNUE2bWFORElDTTMtbXkyd1dpRGI0el9NNDBWeWRZNERuV3lITkU1bjA?oc=5"
+      },
+      "region": "Global",
+      "publishedAt": "2026-11-17T01:38:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaTN4V3YyMkJmUHd4ZUhZTlA5YU9xZldPMm5xQ2FpM0lNZ0w1dERwLW10bWtQQjJlaUtuS2hDRFRVa0ZkQXlGUXhfU1lSdmFhcXVSaWhwQi16bUdvbTZOSnNyTFRjb1BicTk4cFcxOUN3dlJzNkhzNUE2bWFORElDTTMtbXkyd1dpRGI0el9NNDBWeWRZNERuV3lITkU1bjA?oc=5",
+      "linkCheckedAt": "2026-11-17T02:43:23.514Z",
+      "image": null
+    },
     {
       "id": 10341,
       "lens": "정책",
@@ -131,7 +172,18 @@
       "url": "https://finance.biggo.com/news/cb772790-8610-4af9-a57b-7ee09036781e",
       "linkCheckedAt": "2026-11-16T17:44:05.170Z",
       "image": "https://img.biggo.com/vn9IxMfzJMA__NRDeMh1kvFI4-AEljPHtUuuT1x5gIQ/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTExL2NiNzcyNzkwLTg2MTAtNGFmOS1hNTdiLTdlZTA5MDM2NzgxZV8xNzk0ODMxMTU4X2RlZmF1bHQuanBn.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 10353,
+          "headline": "중국 10월 소형가전 수출 20.9% 증가",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1jTTI5N0RoSjdzT0FubWU2OXFiUmtfWEY4Y0JHdWNhN1NoMHRMbER6VFA2akNBcG5EWkdWUUhRcXYzcTNXX3gxcGRoVHg5YWk0ZHNVTjlCdEJENzBzSVgzU2xJVkFFZTNiaVNmdlA2TTNzVENWSkE?oc=5",
+          "source": {
+            "name": "Google News - Appliance Consumer & Retail US"
+          },
+          "publishedAt": "2026-11-16T12:05:00.000Z"
+        }
+      ]
     },
     {
       "id": 10334,
@@ -488,6 +540,15 @@
             "name": "Google News - AI·친환경 가전 기술 KR"
           },
           "publishedAt": "2026-11-16T05:22:38.000Z"
+        },
+        {
+          "id": 10354,
+          "headline": "삼성전자 김영진 파트장, 에어컨 에너지효율 1등급 달성 '최고상'",
+          "url": "https://www.skenews.kr/news/articleView.html?idxno=53423",
+          "source": {
+            "name": "Google News - AI·친환경 가전 기술 KR"
+          },
+          "publishedAt": "2026-11-16T08:40:46.000Z"
         }
       ]
     },
@@ -561,6 +622,15 @@
             "name": "Google News - Appliance New Business Models"
           },
           "publishedAt": "2026-11-16T09:48:14.000Z"
+        },
+        {
+          "id": 10352,
+          "headline": "LG전자, 휴머노이드 로봇 품질 경쟁력 강화 착수",
+          "url": "https://www.topdaily.kr/articles/112929",
+          "source": {
+            "name": "Google News - 경쟁사 로봇·미래사업 KR"
+          },
+          "publishedAt": "2026-11-16T08:35:00.000Z"
         }
       ]
     },
@@ -684,6 +754,50 @@
       "linkCheckedAt": "2026-11-15T15:10:17.273Z",
       "image": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/11/15/1794736739803_mcfit-2026-midea-vinh-danh-tho-lap-dieu-hoa-dong-nam-a-719.jpeg",
       "imageChecked": true
+    },
+    {
+      "id": 10345,
+      "lens": "소비자",
+      "grade": "주시",
+      "impact": 2.8,
+      "factors": {
+        "salesRelevance": 3,
+        "timeUrgency": 2,
+        "marketSize": 3,
+        "sourceReliability": 3
+      },
+      "products": [
+        "청소기"
+      ],
+      "competitors": [
+        "로보락"
+      ],
+      "tags": [
+        "로보락",
+        "로봇청소기",
+        "리뷰"
+      ],
+      "headline": "로보락 Saros 20 Flow 리뷰 공개",
+      "summary": "기즈모도는 로보락 Saros 20 Flow 제품에 대한 리뷰를 통해 고가의 가격대를 언급하며 평가를 보도했습니다.",
+      "summaryPoints": [
+        {
+          "type": "content",
+          "text": "기즈모도에서 로보락 Saros 20 Flow 리뷰를 보도함"
+        },
+        {
+          "type": "content",
+          "text": "제품의 높은 가격대에 대한 평가가 언급됨"
+        }
+      ],
+      "source": {
+        "name": "Google News - Robot Vacuum & Small Appliance Rivals",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41ZUpRT1g3c3RsOHBQc0lBeHZJVlVsZlZLOFFFUXBYeXBFMkVjbmdoMThzeF9WWUNmWlVjSGJ4TFlkT2NsT2tjNHk1VUhBckk0YldFcHI1YVNlY045TWNFZWRzanlBVVhfTUF0MA?oc=5"
+      },
+      "region": "Global",
+      "publishedAt": "2026-11-15T13:30:28.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41ZUpRT1g3c3RsOHBQc0lBeHZJVlVsZlZLOFFFUXBYeXBFMkVjbmdoMThzeF9WWUNmWlVjSGJ4TFlkT2NsT2tjNHk1VUhBckk0YldFcHI1YVNlY045TWNFZWRzanlBVVhfTUF0MA?oc=5",
+      "linkCheckedAt": "2026-11-17T02:43:23.514Z",
+      "image": null
     },
     {
       "id": 10294,
@@ -1041,6 +1155,15 @@
             "name": "Google News - 가전 소비·유통 KR"
           },
           "publishedAt": "2026-11-16T01:37:32.000Z"
+        },
+        {
+          "id": 10348,
+          "headline": "LG전자 테네시 공장, 세탁 가전 누적 1000만 대 달성",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9BdDdDUVprS3Y5SHZFYzByckZYelpYMmFZeGVkb1BLaEJ1aTN5OFpTQnJhS2hVazFsYXBybE1VaWZiQkVqeVZVcTZzeFp2SUNPcHgzX0VoTQ?oc=5",
+          "source": {
+            "name": "Google News - LG Global"
+          },
+          "publishedAt": "2026-11-15T05:35:34.000Z"
         }
       ]
     },
@@ -3931,12 +4054,12 @@
       ]
     },
     {
-      "id": 10132,
+      "id": 10350,
       "lens": "정책",
-      "grade": "주시",
-      "impact": 3.2,
+      "grade": "주요",
+      "impact": 3.6,
       "factors": {
-        "salesRelevance": 3,
+        "salesRelevance": 4,
         "timeUrgency": 2,
         "marketSize": 5,
         "sourceReliability": 3
@@ -3946,27 +4069,41 @@
       "tags": [
         "EU",
         "에코디자인",
-        "수리권",
+        "수리의무화",
         "규제"
       ],
-      "headline": "EU, 에코디자인 수리 가능성 요건 검토 착수",
-      "summary": "EU가 에코디자인 규정 내 수리 가능성 요건에 대한 이해관계자 의견 수렴을 진행 중입니다.",
+      "headline": "EU, 에코디자인 수리 가능성 요건 협의 개시",
+      "summary": "EU가 제품 폐기를 줄이고 수리를 장려하기 위한 에코디자인 수리 가능성 요건에 대한 이해관계자 협의를 진행하고 있습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "EU가 에코디자인 수리 가능성 요건 관련 협의를 진행함"
+          "text": "EU가 에코디자인 수리 가능성 요건 관련 협의를 진행 중"
+        },
+        {
+          "type": "content",
+          "text": "폐기를 줄이고 수리를 장려하는 규제안 마련 추진"
         }
       ],
       "source": {
         "name": "Google News - EU Energy Regulation",
-        "url": "https://www.lewissilkin.com/insights/2026/11/11/fix-it-dont-bin-it-the-eu-consults-on-ecodesign-repairability-requirements-102o8u9"
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZEpySTU3Ml9FN2l1aGpWWXlKaGFGeDdRbjJfVU5aX3N4QW00WWxrQmVjQjFIcF9BZGotR1pPMlJ5SVpVNVRlcEp3aUQ4c0tkLUE2YXJvYXN4aFBGT2ptb0JKMng2Q3R0T1BfcnR5SXNqZnhJbERaeU5NUWlhOVdwbWcxckF1SGU3OWFVYWdoeVpoRzhOTHVXZ0hWMXpqcm5Zc1JKOW5wd1N5eWtWZWszYjd0aS1uZ1ZSNzVQLS1Ea1VYYU5Ub3pNODlR?oc=5"
       },
       "region": "EU",
       "publishedAt": "2026-11-11T10:52:15.000Z",
-      "url": "https://www.lewissilkin.com/insights/2026/11/11/fix-it-dont-bin-it-the-eu-consults-on-ecodesign-repairability-requirements-102o8u9",
-      "linkCheckedAt": "2026-11-11T19:05:03.749Z",
-      "image": "https://edge.sitecorecloud.io/lewissilkin1267-lewissilkinc0b3-production2ebf-9a4c/media/Project/Lewis-Silkin/Lewis-Silkin/migratedpassles/2026/11/11/fix-it-dont-bin-it-the-eu-consults-on-ecodesign-repairability-requirements-102o8u9.jpg",
-      "imageChecked": true
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZEpySTU3Ml9FN2l1aGpWWXlKaGFGeDdRbjJfVU5aX3N4QW00WWxrQmVjQjFIcF9BZGotR1pPMlJ5SVpVNVRlcEp3aUQ4c0tkLUE2YXJvYXN4aFBGT2ptb0JKMng2Q3R0T1BfcnR5SXNqZnhJbERaeU5NUWlhOVdwbWcxckF1SGU3OWFVYWdoeVpoRzhOTHVXZ0hWMXpqcm5Zc1JKOW5wd1N5eWtWZWszYjd0aS1uZ1ZSNzVQLS1Ea1VYYU5Ub3pNODlR?oc=5",
+      "linkCheckedAt": "2026-11-17T02:43:23.514Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 10132,
+          "headline": "EU, 에코디자인 수리 가능성 요건 검토 착수",
+          "url": "https://www.lewissilkin.com/insights/2026/11/11/fix-it-dont-bin-it-the-eu-consults-on-ecodesign-repairability-requirements-102o8u9",
+          "source": {
+            "name": "Google News - EU Energy Regulation"
+          },
+          "publishedAt": "2026-11-11T10:52:15.000Z"
+        }
+      ]
     },
     {
       "id": 10118,
@@ -4509,7 +4646,18 @@
       "url": "https://www.yna.co.kr/amp/view/AKR20261111091100030",
       "linkCheckedAt": "2026-11-11T11:42:20.152Z",
       "image": "https://img0.yna.co.kr/etc/inner/KR/2026/11/11/AKR20261111091100030_01_i_P4.jpg",
-      "imageChecked": true
+      "imageChecked": true,
+      "relatedArticles": [
+        {
+          "id": 10347,
+          "headline": "시몬스, 이천 복합문화공간서 '일루미네이션 콘서트' 개최",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9rR1BYLTJucWpDal9CWXVKYkhXVEhxV0s3OGR0UnZDbzJ0UDljdHdmYVdZTjV4SU1VRG5CdDdXNEJpQm5tZDdZMzh1TFhxWDBVenliUExGX0FVTUF2M3JhetIBYEFVX3lxTE9rR1BYLTJucWpDal9CWXVKYkhXVEhxV0s3OGR0UnZDbzJ0UDljdHdmYVdZTjV4SU1VRG5CdDdXNEJpQm5tZDdZMzh1TFhxWDBVenliUExGX0FVTUF2M3Jheg?oc=5",
+          "source": {
+            "name": "Google News - 가구·인테리어 업계 KR"
+          },
+          "publishedAt": "2026-11-11T02:46:06.000Z"
+        }
+      ]
     },
     {
       "id": 10161,
@@ -4926,7 +5074,7 @@
       "image": null
     },
     {
-      "id": 10254,
+      "id": 10349,
       "lens": "정책",
       "grade": "주시",
       "impact": 2.6,
@@ -4942,12 +5090,12 @@
         "Gree"
       ],
       "tags": [
-        "정책",
         "규제개혁",
-        "제조업"
+        "제조업",
+        "미국상원"
       ],
       "headline": "제조업체들, 상원의 허가 시스템 개혁 추진 환영",
-      "summary": "제조업계가 기존의 손상된 허가 시스템을 개혁하기 위한 상원의 움직임을 환영하고 나섰습니다.",
+      "summary": "제조업체들이 미국 상원의 낙후된 허가 시스템 개혁 추진 움직임에 환영의 뜻을 표명했습니다.",
       "summaryPoints": [
         {
           "type": "content",
@@ -4955,19 +5103,18 @@
         },
         {
           "type": "content",
-          "text": "기존의 비효율적인 허가 제도의 개혁을 요구하는 목소리"
+          "text": "기존의 낙후된 허가 체계 개선을 요구하는 목소리 반영"
         }
       ],
       "source": {
         "name": "Google News - Haier Gree Hisense",
-        "url": "https://foxbaltimore.com/news/nation-world/manufacturers-applaud-senate-drive-to-reform-broken-permitting-system"
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWjVrUWpXUGMwQWxlbnR1LUxVczREVThlUHhmU013NnVac3V3bW1HM2ZyV1VaeElBQWJRQTJfMkRwU3hMMWhOR3NLaV9MZDVhNnV3TVpHMTV3VGdzR0lPcllsMVhUVVRQUlN5clhUNUtrX3RWb0JTSGpKMWw2OGdMbW5vcFhZcVV4ZmVteHd2c3V6am9BZDJOYU5GVFpTWFJtWko4Ml9GWmFJY0FMWTAwWUJ3?oc=5"
       },
       "region": "Global",
       "publishedAt": "2026-11-10T22:58:46.000Z",
-      "url": "https://foxbaltimore.com/news/nation-world/manufacturers-applaud-senate-drive-to-reform-broken-permitting-system",
-      "linkCheckedAt": "2026-11-14T14:41:08.791Z",
-      "image": "https://foxbaltimore.com/resources/media2/16x9/5866/1320/0x306/90/4422631c-d6bd-41e5-b376-12014078ca39-GettyImages2229077546.jpg",
-      "imageChecked": true,
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWjVrUWpXUGMwQWxlbnR1LUxVczREVThlUHhmU013NnVac3V3bW1HM2ZyV1VaeElBQWJRQTJfMkRwU3hMMWhOR3NLaV9MZDVhNnV3TVpHMTV3VGdzR0lPcllsMVhUVVRQUlN5clhUNUtrX3RWb0JTSGpKMWw2OGdMbW5vcFhZcVV4ZmVteHd2c3V6am9BZDJOYU5GVFpTWFJtWko4Ml9GWmFJY0FMWTAwWUJ3?oc=5",
+      "linkCheckedAt": "2026-11-17T02:43:23.514Z",
+      "image": null,
       "relatedArticles": [
         {
           "id": 10240,
@@ -4977,6 +5124,15 @@
             "name": "Google News - Haier Gree Hisense"
           },
           "publishedAt": "2026-11-11T10:32:31.000Z"
+        },
+        {
+          "id": 10254,
+          "headline": "제조업체들, 상원의 허가 시스템 개혁 추진 환영",
+          "url": "https://foxbaltimore.com/news/nation-world/manufacturers-applaud-senate-drive-to-reform-broken-permitting-system",
+          "source": {
+            "name": "Google News - Haier Gree Hisense"
+          },
+          "publishedAt": "2026-11-10T22:58:46.000Z"
         }
       ]
     },
@@ -5668,7 +5824,7 @@
       "image": null
     },
     {
-      "id": 10063,
+      "id": 10346,
       "lens": "기술",
       "grade": "참고",
       "impact": 2.4,
@@ -5685,31 +5841,36 @@
       "tags": [
         "하이센스",
         "기술트렌드",
-        "신기술",
-        "2027전망"
+        "전망"
       ],
       "headline": "하이센스 매튜 글린, 2027년 주도할 신기술 트렌드 전망",
-      "summary": "하이센스의 매튜 글린이 2027년 가전 및 주방·욕실 시장을 주도할 주요 신기술 트렌드를 공개했다.",
+      "summary": "하이센스의 매튜 글린이 2027년에 가전 및 기술 시장을 지배할 주요 신기술 트렌드를 공개했습니다.",
       "summaryPoints": [
         {
           "type": "content",
-          "text": "하이센스의 매튜 글린이 2027년 주도할 기술 트렌드 공개"
-        },
-        {
-          "type": "content",
-          "text": "KBBFocus를 통해 향후 시장에 미칠 신기술 전망 발표"
+          "text": "하이센스의 매튜 글린이 2027년 지배할 신기술 트렌드를 공개함"
         }
       ],
       "source": {
         "name": "Google News - TCL Hisense Panasonic Global",
-        "url": "https://kbbfocus.com/news/6623-hisenses-matthew-glynn-reveals-the-emerging-tech-trends-set-to-dominate-in-2027"
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdzJzM1VqR1l1U1FIcFo4NmpaSlRyMk05ckF5NVJ4VXRqV0dsOHJPNzBhdUNsNFVSZU96clJJMzVNVnU0V05YSzRMSVZuTTRSNGF0N2NEbngxUmppYk54SHhaODVLTFpWS25qQmgyc1BfT1N2dlhlU1BCM1JmWUJjYzZmeVhmTG12MEtScUJTMmhKQmtWZ1BUZWVUN1IzYWFoUUdWeXVDSVFtNW4zZ1hj?oc=5"
       },
       "region": "Global",
       "publishedAt": "2026-11-10T07:30:21.000Z",
-      "url": "https://kbbfocus.com/news/6623-hisenses-matthew-glynn-reveals-the-emerging-tech-trends-set-to-dominate-in-2027",
-      "linkCheckedAt": "2026-11-10T15:58:57.912Z",
-      "image": "https://kbbfocus.com/storage/images/adverts/18-advert-1789654019.gif",
-      "imageChecked": true
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdzJzM1VqR1l1U1FIcFo4NmpaSlRyMk05ckF5NVJ4VXRqV0dsOHJPNzBhdUNsNFVSZU96clJJMzVNVnU0V05YSzRMSVZuTTRSNGF0N2NEbngxUmppYk54SHhaODVLTFpWS25qQmgyc1BfT1N2dlhlU1BCM1JmWUJjYzZmeVhmTG12MEtScUJTMmhKQmtWZ1BUZWVUN1IzYWFoUUdWeXVDSVFtNW4zZ1hj?oc=5",
+      "linkCheckedAt": "2026-11-17T02:43:23.514Z",
+      "image": null,
+      "relatedArticles": [
+        {
+          "id": 10063,
+          "headline": "하이센스 매튜 글린, 2027년 주도할 신기술 트렌드 전망",
+          "url": "https://kbbfocus.com/news/6623-hisenses-matthew-glynn-reveals-the-emerging-tech-trends-set-to-dominate-in-2027",
+          "source": {
+            "name": "Google News - TCL Hisense Panasonic Global"
+          },
+          "publishedAt": "2026-11-10T07:30:21.000Z"
+        }
+      ]
     },
     {
       "id": 10087,
@@ -15056,7 +15217,7 @@
       "region": "KR",
       "publishedAt": "2026-11-01T01:36:28.000Z",
       "url": "https://www.ajunews.com/amp/20261101103229278",
-      "linkCheckedAt": "2026-11-01T03:36:43.150Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://image.ajunews.com/content/image/2026/11/01/20261101103614349854.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -15200,7 +15361,7 @@
       "region": "KR",
       "publishedAt": "2026-10-31T22:00:00.000Z",
       "url": "http://www.inews24.com/view/2021042",
-      "linkCheckedAt": "2026-11-01T03:36:43.150Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://image.inews24.com/v1/49950bcd4a058b.jpg",
       "imageChecked": true
     },
@@ -19200,7 +19361,7 @@
       "region": "KR",
       "publishedAt": "2026-10-28T08:16:30.000Z",
       "url": "https://www.yna.co.kr/view/AKR20261028115802527",
-      "linkCheckedAt": "2026-11-01T03:36:43.150Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://img4.yna.co.kr/photo/yna/YH/2026/10/28/PYH2026102814600001300_P4.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -20742,7 +20903,7 @@
       "region": "KR",
       "publishedAt": "2026-10-27T05:35:21.000Z",
       "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610271101151320312",
-      "linkCheckedAt": "2026-11-01T03:36:43.150Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://image.dnews.co.kr/photo/photo/2026/10/27/202610271101151320312-2-700529.jpg",
       "imageChecked": true
     },
@@ -27507,7 +27668,7 @@
       "region": "KR",
       "publishedAt": "2026-10-21T12:08:13.000Z",
       "url": "https://www.hidomin.com/news/articleView.html?idxno=725984",
-      "linkCheckedAt": "2026-11-01T10:55:32.989Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://cdn.hidomin.com/news/photo/202610/725984_428887_0813.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -27865,7 +28026,7 @@
       "region": "KR",
       "publishedAt": "2026-10-21T07:20:13.000Z",
       "url": "https://www.ddaily.co.kr/page/view/2026102115403361050",
-      "linkCheckedAt": "2026-11-01T10:55:32.989Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null,
       "relatedArticles": [
         {
@@ -27980,7 +28141,7 @@
       "region": "KR",
       "publishedAt": "2026-10-21T07:15:49.000Z",
       "url": "https://www.finomy.com/news/articleView.html?idxno=264251",
-      "linkCheckedAt": "2026-11-01T10:55:32.989Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://cdn.finomy.com/news/thumbnail/202610/264251_258586_5751_v150.jpg",
       "imageChecked": true
     },
@@ -29091,7 +29252,7 @@
       "region": "US",
       "publishedAt": "2026-10-20T17:41:49.000Z",
       "url": "https://mexiconewsdaily.com/politics/mexico-us-trade-deal-close-sheinbaum-mananera-tuesday/",
-      "linkCheckedAt": "2026-11-01T10:55:32.989Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -30172,7 +30333,7 @@
       "region": "Global",
       "publishedAt": "2026-10-19T22:03:12.000Z",
       "url": "https://androidguys.com/reviews/smart-home-reviews/anker-eufy-omni-e35-vacuum/",
-      "linkCheckedAt": "2026-11-01T10:55:32.989Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://i0.wp.com/androidguys.com/wp-content/uploads/2026/10/Anker-eufy-Omni-E35-Vacuum-07.webp?fit=1200%2C900&#038;ssl=1",
       "imageChecked": true
     },
@@ -34631,7 +34792,7 @@
       "region": "Global",
       "publishedAt": "2026-10-15T21:45:56.000Z",
       "url": "https://datacentremagazine.com/news/daikin-applied-expands-modular-solutions-facility-in-phoenix",
-      "linkCheckedAt": "2026-11-01T10:55:32.989Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -44841,7 +45002,7 @@
       "region": "Global",
       "publishedAt": "2026-10-05T02:19:57.000Z",
       "url": "https://www.bwmarketingworld.com/article/ac-consumer-durables-prices-rise-5-8-ahead-of-diwali-626778",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -48536,7 +48697,7 @@
       "region": "KR",
       "publishedAt": "2026-09-30T02:34:01.000Z",
       "url": "https://www.thelec.kr/news/articleView.html?idxno=62986",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://cdn.thelec.kr/news/photo/202609/62986_49632_1832.jpg",
       "imageChecked": true
     },
@@ -48734,7 +48895,7 @@
       "region": "KR",
       "publishedAt": "2026-09-29T22:21:55.000Z",
       "url": "https://dealsite.co.kr/articles/169514",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://dtd31o1ybbmk8.cloudfront.net/photos/2026/08/19/ec0a4d49a39d4c90876a7fc869ee8fe9/thumb.jpg",
       "imageChecked": true
     },
@@ -49152,7 +49313,7 @@
       "region": "US",
       "publishedAt": "2026-09-29T17:40:28.000Z",
       "url": "https://www.alcircle.com/news/us-mexico-trade-review-faces-delay-with-automotive-rules-and-metal-tariffs-in-focus-121361",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://assets.alcircle.com/dynamic/prod/news/20260929160953143_42d7de108_lg.webp",
       "imageChecked": true
     },
@@ -49490,7 +49651,7 @@
       "region": "Global",
       "publishedAt": "2026-09-29T12:31:13.000Z",
       "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -51068,7 +51229,7 @@
       "region": "KR",
       "publishedAt": "2026-09-28T07:17:00.000Z",
       "url": "https://www.etoday.co.kr/news/view/2629922",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://img.etoday.co.kr/pto_db/2026/09/20260928173551_2394166_722_203.jpg",
       "imageChecked": true
     },
@@ -51310,7 +51471,7 @@
       "region": "KR",
       "publishedAt": "2026-09-28T05:43:11.000Z",
       "url": "https://www.m-i.kr/news/articleViewAmp.html?idxno=1418545",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://www.m-i.kr/news/photo/202609/1418545_1207025_5847.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -56205,7 +56366,7 @@
       "region": "KR",
       "publishedAt": "2026-09-23T05:38:21.000Z",
       "url": "https://www.mt.co.kr/industry/2026/09/23/2026092314043594832",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/09/2026092314043594832_1.jpg",
       "imageChecked": true
     },
@@ -57429,7 +57590,7 @@
       },
       "publishedAt": "2026-09-21T21:15:00.000Z",
       "url": "https://www.kjzz.org/fronteras-desk/2026-09-21/mexico-looks-to-reduce-u-s-trade-deficit-as-usmca-negotiations-continue",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "assets/img/topics/policy.svg",
       "imageChecked": true,
       "imageOriginal": "https://npr.brightspotcdn.com/dims4/default/41e1342/2147483647/strip/true/crop/2300x1208+0+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F56%2Fcf%2F337e368e46268733c894c5bc0b66%2F092126-sheinbaum.jpg",
@@ -57551,7 +57712,7 @@
       },
       "publishedAt": "2026-09-21T19:30:00.000Z",
       "url": "https://tv.edaily.co.kr/News/NewsRead?NewsId=01574406645582744&Kind=257",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://image.edaily.co.kr/images/photo/files/NP/S/2026/09/PS26092200048.jpg",
       "imageChecked": true
     },
@@ -57689,7 +57850,7 @@
       },
       "publishedAt": "2026-09-21T14:06:22.000Z",
       "url": "https://www.electroluxgroup.com/en/news/electrolux-midea-appliance-manufacturing-goes-live-in-anderson/",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -58379,7 +58540,7 @@
       },
       "publishedAt": "2026-09-21T00:18:46.000Z",
       "url": "https://www.munhwa.com/article/11618454",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://wimg.munhwa.com/news/cms/2026/09/21/news-p.v1.20260921.e7914eb96bde49ac879633bf5f8674b3_R.jpg",
       "imageChecked": true
     },
@@ -65265,7 +65426,7 @@
       },
       "publishedAt": "2026-09-15T05:36:43.000Z",
       "url": "https://www.ngonews.kr/news/articleView.html?idxno=238222",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://cdn.ngonews.kr/news/photo/202609/238222_242800_1710.jpg",
       "imageChecked": true
     },
@@ -65301,7 +65462,7 @@
       },
       "publishedAt": "2026-09-15T05:23:48.000Z",
       "url": "https://bestmediainfo.com/mediainfo/mediainfo-marketing/festive-battle-in-home-appliances-shifts-from-discounts-to-upgrades-12533748",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -65341,7 +65502,7 @@
       },
       "publishedAt": "2026-09-15T05:23:00.000Z",
       "url": "https://www.newspim.com/news/view/20260915000576",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://img.newspim.com/news/2026/08/04/2608041708132480_t1.jpg",
       "imageChecked": true
     },
@@ -65425,7 +65586,7 @@
       },
       "publishedAt": "2026-09-15T02:05:05.000Z",
       "url": "http://www.financialreview.co.kr/news/articleView.html?idxno=44851",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -65465,7 +65626,7 @@
       },
       "publishedAt": "2026-09-15T00:59:00.000Z",
       "url": "https://www.m-i.kr/news/articleViewAmp.html?idxno=1413967",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://www.m-i.kr/news/photo/202609/1413967_1202349_2458.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -75935,7 +76096,7 @@
       },
       "publishedAt": "2026-09-03T08:30:00.000Z",
       "url": "https://www.etnews.com/20260903000330",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://img.etnews.com/news/article/2026/09/03/news-p.v1.20260903.98a0c6960b5e4a618b72975c081e22ca_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -76299,7 +76460,7 @@
       },
       "publishedAt": "2026-09-03T00:04:34.000Z",
       "url": "https://insiderph.com/lg-takes-ai-beyond-appliances-to-coordinate-the-connected-home",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://insiderph.com/uploads/articles/thumb_1788392834702_avisxy2drcqwh0lum67z-800x600.webp?v=1",
       "imageChecked": true
     },
@@ -76628,7 +76789,7 @@
       },
       "publishedAt": "2026-09-02T11:07:57.000Z",
       "url": "https://www.mynewsdesk.com/robert-bosch-gmbh/pressreleases/bosch-is-launching-its-first-heat-pump-washer-dryers-the-all-in-one-solution-for-perfect-results-3457842?utm_source=rss&utm_medium=rss&utm_campaign=Alert&utm_content=pressrelease",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://mnd-assets.mynewsdesk.com/image/upload/b_auto,c_pad,f_jpeg,h_630,q_auto:good,w_1200/iruj5ypnm5ebdjarw3sbcm",
       "imageChecked": true
     },
@@ -76672,7 +76833,7 @@
       },
       "publishedAt": "2026-09-02T11:07:56.000Z",
       "url": "https://www.mynewsdesk.com/robert-bosch-gmbh/pressreleases/bosch-launches-its-new-range-of-single-door-fridges-and-freezers-designed-for-capacity-freshness-and-flexibility-3457835?utm_source=rss&utm_medium=rss&utm_campaign=Alert&utm_content=pressrelease",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://mnd-assets.mynewsdesk.com/image/upload/b_auto,c_pad,f_jpeg,h_630,q_auto:good,w_1200/atnhrq71h4v3aesxzdbsez",
       "imageChecked": true
     },
@@ -79952,7 +80113,7 @@
       },
       "publishedAt": "2026-08-28T15:26:24.000Z",
       "url": "https://www.mk.co.kr/news/world/12139245",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "assets/img/topics/climate.svg",
       "imageChecked": true,
       "imageOriginal": "https://pimg.mk.co.kr/news/cms/202608/29/20260829_01170101000002_M00.jpg",
@@ -80131,7 +80292,7 @@
       },
       "publishedAt": "2026-08-28T09:53:24.000Z",
       "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=202654",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://cdn.energydaily.co.kr/news/photo/202608/202654_202303_5317.png",
       "imageChecked": true
     },
@@ -80953,7 +81114,7 @@
       },
       "publishedAt": "2026-08-27T05:56:00.000Z",
       "url": "https://www.asiatime.co.kr/article/20260827500306",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://csossihettpx2597658.cdn.gov-ntruss.com/data2/content/image/2026/08/27/.cache/512/20260827500301.jpg",
       "imageChecked": true
     },
@@ -86572,7 +86733,7 @@
       },
       "publishedAt": "2026-08-21T13:27:33.000Z",
       "url": "https://www.business-standard.com/amp/companies/news/lg-electronics-sees-india-emerging-as-key-manufacturing-and-export-hub-126082101162_1.html",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2025-06/19/thumb/fitandfill/1200X628/1750308847-406.jpg",
       "imageChecked": true
     },
@@ -88548,7 +88709,7 @@
       },
       "publishedAt": "2026-08-19T02:08:07.000Z",
       "url": "https://www.etnews.com/20260819000147",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://img.etnews.com/news/article/2026/08/19/news-p.v1.20260819.f961b4855fba46079dcf699a192bff47_P1.jpg",
       "imageChecked": true,
       "relatedArticles": [
@@ -90768,7 +90929,7 @@
       },
       "publishedAt": "2026-08-15T07:33:14.000Z",
       "url": "https://www.mt.co.kr/stock/2026/08/14/2026081408510419242",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://thumb.mt.co.kr/cdn-cgi/image/w=1200,h=1200,fit=cover,bg=white,f=auto,quality=high,sharpen=2,g=face/21/2026/08/2026081408510419242_1.jpg",
       "imageChecked": true
     },
@@ -94406,7 +94567,7 @@
       },
       "publishedAt": "2026-08-12T07:16:25.000Z",
       "url": "https://www.etnews.com/20260812000388",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://img.etnews.com/news/article/2026/08/12/news-p.v1.20260812.72145d8d70f84e1186e883698cdc553c_P1.png",
       "imageChecked": true
     },
@@ -104612,7 +104773,7 @@
       },
       "publishedAt": "2026-08-03T20:18:28.000Z",
       "url": "https://seekingalpha.com/news/4623884-whirlpool-falls-after-posting-a-surprise-q2-loss",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null,
       "relatedArticles": [
         {
@@ -105499,7 +105660,7 @@
       },
       "publishedAt": "2026-08-03T01:05:46.000Z",
       "url": "http://www.ksdaily.co.kr/news/articleView.html?idxno=110357",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -105538,7 +105699,7 @@
       },
       "publishedAt": "2026-08-03T01:03:15.000Z",
       "url": "https://mb.com.ph/2026/08/03/lg-instaview-refrigerator-surprises-53-million-in-global-sales",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://mb.com.ph/manilabulletin/uploads/images/2026/08/03/120566.webp",
       "imageChecked": true
     },
@@ -124963,7 +125124,7 @@
       "url": "https://www.trendforce.com/news/2026/07/15/news-ar-boom-attracts-new-entrants-from-apparel-home-appliances-and-audio-industries/",
       "image": "https://img.trendforce.com/blog/wp-content/uploads/2025/08/20172229/wearable-glasses-Freepik-20250820-624x416.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1797,
@@ -125008,7 +125169,7 @@
       "url": "https://www.buildaustralia.com.au/business_insight/lg-eco-solutions-sees-strong-hvac-demand/",
       "image": "https://www.buildaustralia.com.au/wp-content/uploads/2026/07/shutterstock_2803772173-1000x667-1.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1779,
@@ -125053,7 +125214,7 @@
       "imageChecked": true,
       "imageOriginal": "https://image.dnews.co.kr/photo/photo/2026/07/13/202607132332164080015-2-677613.jpg",
       "thumbFace": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1945,
@@ -125094,7 +125255,7 @@
       "publishedAt": "2026-07-14T17:24:00.000Z",
       "url": "http://www.msn.com/ko-kr/news/other/%EC%98%A4%ED%85%8D%EC%BA%90%EB%A6%AC%EC%96%B4-%EC%8A%B5%EA%B8%B0%EC%99%80-%EC%A0%84%EA%B8%B0%EB%A3%8C-%EC%9E%A1%EC%9D%80-%EC%9D%B8%EB%B2%84%ED%84%B0-%EC%A0%9C%EC%8A%B5%EA%B8%B0-%EC%B6%9C%EC%8B%9C/ar-AA26paHt?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
       "image": null,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1791,
@@ -125132,7 +125293,7 @@
       "publishedAt": "2026-07-14T15:20:00.000Z",
       "url": "https://www.moomoo.com/news/post/72948210/whirlpool-price-target-cut-to-42-00-share-from-50?futusource=news_newspage_recommend",
       "image": null,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1773,
@@ -125174,7 +125335,7 @@
       "publishedAt": "2026-07-14T14:22:39.000Z",
       "url": "https://hypebeast.kr/2026/7/rocco-gohar-world-limited-edition-fridge-launch-details",
       "image": "https://hypebeast.kr/2026/7/https&#x3A;&#x2F;&#x2F;image-cdn.hypb.st&#x2F;https&#x25;3A&#x25;2F&#x25;2Fkr.hypebeast.com&#x25;2Ffiles&#x25;2F2026&#x25;2F07&#x25;2Frocco-gohar-world-limited-edition-fridge-launch-details-tw.jpg&#x3F;w&#x3D;1080&cbr&#x3D;1&q&#x3D;90&fit&#x3D;max",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1771,
@@ -125216,7 +125377,7 @@
       "url": "https://www.mk.co.kr/news/world/12098716",
       "image": "https://static.mk.co.kr/facebook_mknews.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1770,
@@ -125265,7 +125426,7 @@
       "publishedAt": "2026-07-14T12:00:00.000Z",
       "url": "https://finance.yahoo.com/media-advertising/articles/lg-tops-consumer-reports-reliability-120000866.html",
       "image": null,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1806,
@@ -125311,7 +125472,7 @@
       "url": "https://finance.biggo.com/news/4a46cd91-ea99-4bb8-9c94-db87a56a01e5",
       "image": "https://img.biggo.com/SEy6KzO449oizOH5OZF1CE-c7gsJKJDo1AIo-S5uQ0c/fit/1720/0/sm/1/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA3LzRhNDZjZDkxLWVhOTktNGJiOC05Yzk0LWRiODdhNTZhMDFlNV8xNzg0MDMwNjUzX2RlZmF1bHQuanBn.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1764,
@@ -125363,7 +125524,7 @@
       "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=847113",
       "image": "https://cdn.newsworks.co.kr/news/thumbnail/202607/847113_805983_3348_v150.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1918,
@@ -125408,7 +125569,7 @@
       "url": "https://v.daum.net/v/uNyL531yj3?f=p",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/14/akn/20260714141129957bqgz.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1756,
@@ -125451,7 +125612,7 @@
       "url": "https://v.daum.net/v/20260714100150346",
       "image": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202607/14/ZDNetKorea/20260714100152048zwjn.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1754,
@@ -125498,7 +125659,7 @@
       "url": "https://www.yna.co.kr/view/AKR20260714028700003",
       "image": "https://img6.yna.co.kr/etc/inner/KR/2026/07/14/AKR20260714028700003_01_i_P4.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "relatedArticles": [
         {
           "id": 1765,
@@ -125556,7 +125717,7 @@
       "publishedAt": "2026-07-13T22:53:19.000Z",
       "url": "https://www.briefs.co/news/whirlpool-just-cut-its-profit-forecast-in-half-and-killed-its-dividend/",
       "image": null,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1746,
@@ -125600,7 +125761,7 @@
       "url": "https://www.nocutnews.co.kr/news/6547546",
       "image": "https://file2.nocutnews.co.kr/newsroom/image/2026/07/13/202607132036489035_0.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1747,
@@ -125644,7 +125805,7 @@
       "url": "https://www.techspot.com/news/113084-ge-appliances-replacing-fixed-factory-shifts-app-workers.html",
       "image": "https://www.techspot.com/images2/news/bigimage/2026/07/2026-07-13-image.jpg",
       "imageChecked": true,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1736,
@@ -125695,7 +125856,7 @@
       "publishedAt": "2026-07-13T15:47:28.000Z",
       "url": "https://www.smartkarma.com/insights/whirlpool-corporation-s-10-price-hike-can-it-beat-a-7-4-demand-drop?utm_medium=feed&utm_source=RSS",
       "image": null,
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z"
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z"
     },
     {
       "id": 1733,
@@ -136303,7 +136464,7 @@
       },
       "publishedAt": "2026-06-23T07:00:00.000Z",
       "url": "https://www.plasticsnews.com/mergers-acquisitions/pn-bizlink-buys-pas-appliance-systems/",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": null
     },
     {
@@ -151558,7 +151719,7 @@
       },
       "publishedAt": "2026-03-23T07:00:00.000Z",
       "url": "https://www.koreaherald.com/article/10700551",
-      "linkCheckedAt": "2026-11-01T03:35:42.691Z",
+      "linkCheckedAt": "2026-11-17T02:42:31.774Z",
       "image": "https://wimg.heraldcorp.com/news/cms/2026/03/23/news-p.v1.20260323.ff405ed2eb21458a91966fca24a8999c_T1.jpg",
       "imageChecked": true
     },
